@@ -65,7 +65,7 @@ function openPipe(inputtsv, parsecsv, transformcsv, outputloki) {
 
 var lastend;
 function fixPlace(input) {
-	if ('IndexName_1' in input) {
+	if ('IndexName_1' in input && input['IndexName_1'] != "") {
 		var output = {
 			zone: input.ZoneID,
 			id: input.Number,
@@ -162,7 +162,7 @@ function fixZone(input) {
 }
 
 function fixSpeaker(input) {
-	if ('Code' in input) {
+	if ('FirstName' in input && input['FirstName'] != "") {
 		var output = {
 			id: input.ID,
 			code: createCode([input.FirstName, input.Surname].join(" ")),

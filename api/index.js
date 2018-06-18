@@ -136,20 +136,21 @@ exports.getKinds = async () => {
 			});
 		}
 	});
-	kinds.sort();
-	return kinds.filter(arrayUnique);
+	return kinds.filter(arrayUnique).sort();
 }
 
 
 exports.getSuggestions = async () => {
 	var suggestions = [];
 	db.tables.Place.find().forEach(function(place) {
-		place.names.forEach(function(name) {
-			suggestions.push({name: name.name, type: 'Name'});
-		});
-		kinds.forEach(function(kind) {
-			suggestions.push({name: kind, type: 'Kind'});
-		});
+		for (name in place.names) {
+			suggestions.push({name: name, type: 'Name'});
+		}
+		if ('kinds' in place) {
+			place.kinds.forEach(function(kind) {
+				suggestions.push({name: kind, type: 'Kind'});
+			});
+		}
 	});
 	db.tables.Zone.find().forEach(function(zone) {
 		suggestions.push({name: zone.name, type: 'Zone'});
@@ -164,7 +165,6 @@ exports.getSuggestions = async () => {
 	db.tables.Speaker.find().forEach(function(speaker) {
 		suggestions.push({name: speaker.name, type: 'Speaker'});
 		suggestions.push({name: cleanArray([speaker.fullname.title, speaker.fullname.first, (speaker.fullname.nick ? "(" + speaker.fullname.nick + ")" : null), speaker.fullname.middle, speaker.fullname.last, speaker.fullname.suffix]).join(" "), type: 'Speaker'});
-		suggestions.push({name: speaker.fullname, type: 'Speaker'});
 	});
 	return suggestions.filter(arrayUnique);
 }
