@@ -111,14 +111,12 @@ exports.getZone = async (code) => {
 	var zone = db.tables.Zone.find({code: code})[0];
 	zone.file = '/media/audio/' + zone.id + '.mp3';
 	removeLokiMeta(zone);
-	/*
 	zone.region = db.tables.Region.find({id: zone.region})[0];
 	removeLokiMeta(zone.region);
 	zone.region.island = db.tables.Island.find({id: zone.region.island})[0];
 	removeLokiMeta(zone.region.island);
 	zone.region.part = db.tables.Part.find({id: zone.region.part})[0];
 	removeLokiMeta(zone.region.part);
-	*/
 	zone.places = db.tables.Place.chain().find({zone: zone.id}).simplesort('id').data();
 	zone.places.forEach(function(place) {
 		delete place.meta;
@@ -138,7 +136,6 @@ exports.getKinds = async () => {
 	});
 	return kinds.filter(arrayUnique).sort();
 }
-
 
 exports.getSuggestions = async () => {
 	var suggestions = [];

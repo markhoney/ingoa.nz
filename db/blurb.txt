@@ -1,0 +1,97 @@
+home	"<p style=""font-style: italic;"">Ngā Ingoa o Aotearoa (The Names of New Zealand) is probably the first ""pronouncing dictionary"" that is literally ""pronouncing"". The 10,200 <a href=""/name"">names</a> are spoken by 132 native <a href=""/speaker"">speakers</a> of Māori, chosen by each other as the best speakers for their areas.</p>
+<img src=""/images/speaker/collage.jpg"" class=""pull-right img-thumbnail img-responsive"" style=""margin-left: 20px;"" itemprop=""image"">
+<p>They include such famous names as <a href=""/speaker/johnr"">John Rangihau</a>, <a href=""/speaker/wiremu"">Wiremu Parker</a>, <a href=""/speaker/billk"">Bill Kere Kere</a>, <a href=""/speaker/ruka"">Ruka Broughton</a>, <a href=""/speaker/eruera"">Eruera Manuera</a>, <a href=""/speaker/tupi"">Tupi Puriri</a>, <a href=""/speaker/magda"">Magda Wallscott</a>, <a href=""/speaker/island"">Island Love</a>, and <a href=""/speaker/matenga"">Matenga Baker</a>. Mainly elders, most of the speakers have since died. Because they say only names in their own <a href=""/region"">areas</a>, local accents are automatically accommodated.</p>
+<p>The list includes geographic features down to the larger <a href=""/feature/hill"">hills</a> and <a href=""/feature/stream"">streams</a>, all <a href=""/feature/settlement"">human settlements</a>, <a href=""/feature/suburb"">suburbs</a> and <a href=""/feature/school"">schools</a>, <a href=""/feature/marae"">marae</a>, <a href=""/feature/meetinghouse"">meeting houses</a> and <a href=""/feature/dininghall"">dining halls</a> and many other <a href=""/feature"">features</a>. The <a href=""/island/south"">South Island</a> volume includes the original Māori names of many features now known by English ones.</p>
+<p>The names are sorted into 177 clearly defined ""<a href=""/zone"">Zones</a>"", and are in alphabetical order within each Zone, so that any name can be found quickly. Originally booklets for each region indexed the names alphabetically and by Zone, and a map of the Zones was enclosed with each cassette. The dictionary is intended especially for broadcasters and those who have to speak in public, but everyone who wants to pronounce placenames as Māori words will find it valuable.</p>
+<p><a href=""/author"">Hugh Young</a> took ten years of his spare time recording and editing the dictionary, after securing the approval of trust boards and tribal authorities throughout the country. He made two tours of the lower <a href=""/island/north"">North Island</a> in 1984 to record <a href=""/part/1"">Part 1</a>, untold forays into the north in 1986-90 to record <a href=""/part/2"">Part 2</a>, and two journeys the length of the <a href=""/island/south"">South Island</a> in 1992 and 1993 to record <a href=""/part/3"">Part 3</a>.</p>
+<p>The dictionary does not give the names' meanings. That would take more than a lifetime, and would be done better by Māori in each area, since meanings involve mana and tapu to a much greater extent.</p>
+<p>Placename pronunciation is the one aspect of Māoritanga that every Pākehā has to deal with. If a Māori pronunciation of the names became standard, that would help support the language, this country's oldest human artifact and one of its endangered species.</p>
+<p>Ngā Ingoa o Aotearoa is <a href=""https://archive.org/details/Nga_Ingoa_o_Aotearoa"" target=""_blank"">on file at the Internet Archive</a>.</p>"
+bio	Hugh Young was born in Christchurch and hated history at high school. He graduated in zoology and worked as a journalist and broadcaster in Christchurch, Auckland, Whangarei, Honiara (Solomon Islands), Gisborne, Napier and Wellington. As well as creating this oral dictionary, he has written a <a href="http://www.sil.org/resources/archives/2525" target="_blank">dictionary of Solomon Islands Pijin</a>. He lives on a cliff with a spectacular view of Kapiti and sometimes Ruapehu and/or Taranaki. He has no time for cats.
+author	<div itemscope itemtype="http://schema.org/Person"><!--<img src="/images/hugh.jpg" class="pull-right img-thumbnail img-responsive" style="margin-left: 20px;" itemprop="image">--><p itemprop="description">{{bio}}</p><p>For further information contact <span itemprop="name">Hugh</span> via phone/fax <a href="tel:+64 4 239 9341" itemprop="faxNumber">+64 4 239 9341</a>, phone <a href="tel:+64 21 896 737" itemprop="telephone">+64 21 896 737</a> or email <a href="mailto:hugh@ingoa.nz" itemprop="email">hugh@ingoa.nz</a>.</p></div>
+api	The data on this website is available in the most popular formats for consumption by other software - XML and JSON. Any page on this site can be requested with a .xml or .json extension to receive the required version. Alternatively, a request to any page with an HTML Accept header of "application/xml" or "application/json" will cause the appropriate version of the data to be offered. For JSON requests, JSONP callbacks are allowed. As an example, you can check out the following pages: <ul><li><a href="/island/north.xml">http://ingoa.nz/island/north.xml</a></li><li><a href="/island/south.json">http://ingoa.nz/island/south.json</a></li><li><a href="/island/south.json?callback=test">http://ingoa.nz/island/south.json?callback=test</a></li></ul> For any questions or issues regarding the API, please email <a href="mailto:admin@ingoa.nz">admin@ingoa.nz</a>.
+map	"<div id=""map""></div>
+<script>
+ google.load('visualization', '1', {'packages': ['map']});
+ google.setOnLoadCallback(drawMap);
+ function drawMap() {
+  var data = google.visualization.arrayToDataTable({{locations}});
+  var options = { showTip: true };
+  var map = new google.visualization.Map(document.getElementById('map'));
+  map.draw(data, options);
+ };
+</script>"
+menu	"        <li><a href=""/index.php"">Home</a></li>
+        <li><a href=""/location"">Locations</a></li>
+        <li><a href=""/speaker"">Speakers</a></li>
+        <li><a href=""/feature"">Features</a></li>
+        <li><a href=""/about"">About</a></li>
+        <li><a href=""/author"">Author</a></li>
+        <li><a href=""/api"">API</a></li>
+"
+license	"<p>Copyright &copy; <a href=""/author"">Hugh Young</a> 1985, 1991 and 1994. The booklets and recordings may not be resold for profit. They may be copied for educational purposes. Copies should be clearly identified as such.</p>
+<p><a rel=""license"" href=""http://creativecommons.org/licenses/by-nc-sa/3.0/nz/"" target=""_blank""><img alt=""Creative Commons License"" style=""border-width:0"" src=""https://i.creativecommons.org/l/by-nc-sa/3.0/nz/88x31.png"" /></a><br />This work is licensed under a <a rel=""license"" href=""http://creativecommons.org/licenses/by-nc-sa/3.0/nz/"" target=""_blank"">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 New Zealand License</a>.</p>"
+html	"<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset=""UTF-8"">
+  <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">
+  <title>{{title}}</title>
+  <meta property=""og:locale"" content=""en_US"" />
+  <meta property=""og:type"" content=""website"" />
+  <meta property=""og:title"" content=""{{title}}"" />
+  <meta property=""og:site_name"" content=""Ngā Ingoa o Aotearoa"" />
+  <meta property=""og:image"" content="""" />
+  <link rel=""shortcut icon"" href=""/favicon.ico"" type=""image/x-icon"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+  <link rel=""stylesheet"" href=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"">
+  <!--<link rel=""stylesheet"" href=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"">-->
+  <link rel=""stylesheet"" href=""https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/simplex/bootstrap.min.css"">
+  <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.23.3/css/theme.bootstrap.min.css"">
+  <!--<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>-->
+  <link rel=""stylesheet"" href=""/ingoa.css"">
+  <script src=""https://code.jquery.com/jquery-2.1.4.min.js""></script>
+  <script src=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js""></script>
+  <script src=""https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.23.3/js/jquery.tablesorter.min.js""></script>
+  <script src=""https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.23.3/js/jquery.tablesorter.widgets.min.js""></script>
+  <script type=""text/javascript"" src=""https://www.google.com/jsapi""></script>
+  <script type=""text/javascript"" src=""/ingoa.js""></script>
+ </head>
+ <body>
+  <div id=""page"" class=""container"">
+   <div class=""row"">
+    <div class=""col-md-12"" id=""title"">
+     <h1><a href=""/index.php"">Ngā Ingoa o Aotearoa</a></h1>
+     <h2><a href=""/index.php"">An oral dictionary of Māori placenames</a></h2>
+    </div>
+   </div>
+   <div class=""row"">
+    <div class=""col-md-12"" id=""menu"">
+     <nav class=""navbar navbar-default"">
+      <div class=""container-fluid"">
+       <ul class=""nav navbar-nav"">
+        {{menu}}
+       </ul>
+       <form class=""navbar-form navbar-right"" role=""search"">
+        <div class=""form-group"">
+         <input type=""text"" class=""form-control"" placeholder=""Search"" name=""search"">
+        </div>
+        <button type=""submit"" class=""btn btn-default"">Search</button>
+      </form>
+      </div>
+     </nav>
+    </div>
+   </div>
+   <div class=""row"">
+    <div class=""col-md-12"" id=""content"">
+     {{content}}
+    </div>
+   </div>
+   <div class=""row"" id=""footer"">
+    <div class=""col-md-12"" id=""disclaimer"">
+     {{license}}
+    </div>
+   </div>
+  </div>
+ </body>
+</html>"

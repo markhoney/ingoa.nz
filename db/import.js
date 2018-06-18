@@ -65,7 +65,7 @@ function openPipe(inputtsv, parsecsv, transformcsv, outputloki) {
 
 var lastend;
 function fixPlace(input) {
-	if ('IndexName_1' in input && input['IndexName_1'] != "") {
+	if (input['IndexName_1']) {
 		var output = {
 			zone: input.ZoneID,
 			id: input.Number,
@@ -105,9 +105,9 @@ function fixPlace(input) {
 			}
 		});
 		for (i = 1; i <= 3; i++) {
-			if (input["GeoName_" + i]) {
-				output.names[input["GeoName_" + i]].googlemap = "https://www.google.co.nz/maps/place/" + input["GeoName_" + i];
-				output.names[input["GeoName_" + i]].categories.push("Geo");
+			if (input["GooglePlaceName_" + i]) {
+				output.names[input["GooglePlaceName_" + i]].location = [{type: "Google Place Name", value: input["GooglePlaceName_" + i]}];
+				output.names[input["GooglePlaceName_" + i]].categories.push("Location");
 			}
 		}
 		for (i = 1; i <= 4; i++) {
@@ -133,36 +133,36 @@ function fixZone(input) {
 		name: input.Name,
 		tereo: input.TeReo,
 		region: input.RegionID,
-		boundary: input.Boundary,
-		imagemap: {
-			map: input.ImageMap,
-			areas: []
+		geo: {
+			boundary: input.Boundary,
+			imagemap: {
+				map: input.ImageMap,
+				areas: []
+			},
+			location: [],
 		},
-		location: [
-			{
-				type: "Google Place Name",
-				value: input.GeoName
-			}
-		],
 		notes: input.Notes
 	};
 	for (i = 1; i <= 2; i++) { // , audio: {start: input.Start, end: input.End}
 		["Small", "Large"].forEach(function(type) {
 			if (input["GooglePlaceID" + type + "_" + i]) {
-				output.location.push({type: "Google Place ID", size: type, value: input["GooglePlaceID" + type + "_" + i]});
+				output.geo.location.push({type: "Google Place ID", size: type, value: input["GooglePlaceID" + type + "_" + i]});
 			}
 		});
 	}
+	if (input.GooglePlaceName) {
+		output.geo.location.push({type: "Google Place Name", value: input["GooglePlaceName"]});
+	}
 	for (i = 1; i <= 2; i++) {
 		if (input["ImageMapAreaType_" + i]) {
-			output.imagemap.areas.push({type: input["ImageMapAreaType_" + i], coords: input["ImageMapAreaCoords_" + i]});
+			output.geo.imagemap.areas.push({type: input["ImageMapAreaType_" + i], coords: input["ImageMapAreaCoords_" + i]});
 		}
 	}
 	return cleanobj(output);
 }
 
 function fixSpeaker(input) {
-	if ('FirstName' in input && input['FirstName'] != "") {
+	if (input['FirstName']) {
 		var output = {
 			id: input.ID,
 			code: createCode([input.FirstName, input.Surname].join(" ")),
@@ -178,7 +178,9 @@ function fixSpeaker(input) {
 				suffix: input.Suffix
 			},
 			notes: input.Notes,
-			location: input.Location,
+			geo: {
+				recorded: input.Location
+			},
 			url: input.URL
 		}
 		return cleanobj(output);
@@ -227,12 +229,18 @@ function importIslands() {
 			name: record.Name,
 			tereo: record.TeReo,
 			description: record.Description,
-			location: [
-				{
-					type: "Google Place ID",
-					value: record.GooglePlaceID
-				}
-			]
+			geo: {
+				location: [
+					{
+						type: "Google Place ID",
+						value: record.GooglePlaceID
+					},
+					{
+						type: "Google Place Name",
+						value: record.GeoName
+					}
+				]
+			}
 		};
 		callback(null, cleanobj(output));
 	});
@@ -255,7 +263,9 @@ function importParts() {
 				end: record.Ended,
 				launch: record.Launched
 			},
-			distance: record.DistanceKM,
+			geo: {
+				distance: record.DistanceKM
+			},
 			funding: record.Funding,
 			format: record.Format,
 			description: record.Description,
@@ -302,13 +312,19 @@ function importRegions() {
 			tereo: record.TeReo,
 			island: record.IslandID,
 			part: record.PartID,
-			location: [
-				{
-					type: "Google Place ID",
-					size: "Large",
-					value: record.GooglePlaceID
-				}
-			]
+			geo: {
+				location: [
+					{
+						type: "Google Place ID",
+						size: "Large",
+						value: record.GooglePlaceID
+					},
+					{
+						type: "Google Place Name",
+						value: record.GooglePlaceName
+					}
+				]
+			},
 		};
 		callback(null, cleanobj(output));
 	});
