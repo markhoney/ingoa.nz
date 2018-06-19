@@ -8,9 +8,6 @@
 				<div><p v-html="zone.description"></p></div>
 			</div>
 		</v-card-title>
-		<v-card-actions>
-			<v-btn flat color="orange"><nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})">{{$tc('detail', 2) | titlecase}}</nuxt-link></v-btn>
-		</v-card-actions>
 	</v-card>
 </template>
 

@@ -17,8 +17,8 @@ export default {
     regions
   },
   async asyncData (context) {
-    const {data} = await axios.get('/api/islands/' + context.params.island + '/regions');
-    return {island: data};
+    const island = await axios.get('/api/islands/' + context.params.island + '/regions');
+    return {island: island.data};
   },
   head () {
     return {

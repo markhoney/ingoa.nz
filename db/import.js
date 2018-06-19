@@ -132,7 +132,7 @@ function fixZone(input) {
 		location: {
 			boundary: input.Boundary,
 			imagemap: {
-				map: input.ImageMap,
+				map: input.ImageMapID,
 				areas: []
 			},
 			areas: {}
@@ -297,7 +297,10 @@ function importRegions() {
 			part: record.PartID,
 			location: {
 				googleplaceid: record.GooglePlaceID,
-				googleplacename: record.GooglePlaceName
+				googleplacename: record.GooglePlaceName,
+				imagemap: {
+					map: record.ImageMapID
+				}
 			}
 		};
 		callback(null, cleanobj(output));

@@ -13,7 +13,10 @@
 				<v-btn flat><nuxt-link :to="localePath({name: 'speakers'})">{{$tc('speaker', 2) | titlecase}}</nuxt-link></v-btn>
 			</v-toolbar-items>
 			<v-spacer></v-spacer>
-			<nuxt-link v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :key="locale.code" :to="switchLocalePath(locale.code)">{{locale.name}}</nuxt-link>
+			<nuxt-link v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :key="locale.code" :to="switchLocalePath(locale.code)" class="mt-4 text-xs-center">
+				<img :src="locale.image" /><br />
+				{{locale.name}}
+			</nuxt-link>
 			<!--<nuxt-link v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :key="locale.code" :to="switchLocalePath(locale.code)" v-html="locale.svg"></nuxt-link>-->
 		</v-toolbar>
 		<v-container>

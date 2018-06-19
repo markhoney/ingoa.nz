@@ -7,10 +7,6 @@
 				<h3 v-if="region.tereo != region.name">{{region.tereo}}</h3>
 			</div>
 		</v-card-title>
-		<v-card-actions>
-			<v-btn flat color="orange"><nuxt-link :to="localePath({name: 'regions-region', params: {region: region.code}})">{{$tc('detail', 2) | titlecase}}</nuxt-link></v-btn>
-			<v-btn flat color="orange"><nuxt-link :to="localePath({name: 'regions-region-zones', params: {region: region.code}})">{{$tc('zone', 2) | titlecase}}</nuxt-link></v-btn>
-		</v-card-actions>
 	</v-card>
 </template>
 

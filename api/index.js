@@ -2,22 +2,6 @@ const {createError} = require('micro');
 
 const db = require('../db/loki.js');
 db(function(db) {
-/*
-function removeLokiMeta(input) {
-	var output = Object.assign({}, input);
-	delete output.meta;
-	delete output.$loki;
-	return output;
-}
-
-function removeLokiMetas(input) {
-	var output = Object.assign({}, input);
-	for (obj in output) {
-		output[obj] = removeLokiMeta(output[obj]);
-	}
-	return output;
-}
-*/
 
 function removeLokiMeta(obj) {
 	var copy = Object.assign({}, obj);
@@ -56,18 +40,6 @@ function fixSpeaker(obj) {
 	return speaker;
 }
 
-function getSpeakers() {
-	var speakers = db.tables.Speaker.chain().find().simplesort('id').data();
-	for (speaker in speakers) {
-		speakers[speaker] = fixSpeaker(speakers[speaker]);
-	}
-	return speakers;
-}
-
-function getSpeaker(filter) {
-	return fixSpeaker(db.tables.Speaker.find(filter)[0]);
-}
-
 function fixIsland(obj) {
 	var island = removeLokiMeta(obj);
 	island.image = {
@@ -75,18 +47,6 @@ function fixIsland(obj) {
 		banner: '/media/images/island/' + island.code + '-banner.jpg'
 	};
 	return island;
-}
-
-function getIslands() {
-	var islands = db.tables.Island.chain().find().simplesort('id').data();
-	for (island in islands) {
-		islands[island] = fixIsland(islands[island]);
-	}
-	return islands;
-}
-
-function getIsland(filter) {
-	return fixIsland(db.tables.Island.find(filter)[0]);
 }
 
 function fixPart(obj) {
@@ -97,18 +57,12 @@ function fixPart(obj) {
 	return part;
 }
 
-function getParts() {
-	var parts = db.tables.Part.chain().find().simplesort('id').data();
-	for (part in parts) {
-		parts[part] = fixPart(parts[part]);
-	}
-	return parts;
-}
-
-function getPart(filter) {
-	var part = fixPart(db.tables.Part.find(filter)[0]);
-	part.island = getIsland(filter);
-	return part;
+function fixImageMap(obj) {
+	var imagemap = removeLokiMeta(obj);
+	imagemap.image = {
+		map: '/media/images/imagemap/' + imagemap.code + '.jpg'
+	};
+	return imagemap;
 }
 
 function fixRegion(obj) {
@@ -117,21 +71,6 @@ function fixRegion(obj) {
 		landscape: '/media/images/region/' + region.code + '-landscape.png',
 		banner: '/media/images/region/' + region.code + '-banner.jpg'
 	}
-	return region;
-}
-
-function getRegions(filter) {
-	var regions = db.tables.Region.chain().find(filter).simplesort('id').data();
-	for (region in regions) {
-		regions[region] = fixRegion(regions[region]);
-	}
-	return regions;
-}
-
-function getRegion(filter) {
-	var region = fixRegion(db.tables.Region.find(filter)[0]);
-	region.island = getIsland({id: region.island});
-	region.part = getPart({id: region.part});
 	return region;
 }
 
@@ -145,7 +84,104 @@ function fixZone(obj) {
 	return zone;
 }
 
-function getZones(filter) {
+exports.getSpeakers = async () => {
+	var speakers = db.tables.Speaker.chain().find().simplesort('id').data();
+	for (speaker in speakers) {
+		speakers[speaker] = fixSpeaker(speakers[speaker]);
+	}
+	return speakers;
+}
+
+exports.getSpeaker = async (filter) => {
+	var speaker = fixSpeaker(db.tables.Speaker.find(filter)[0]);
+	// Add zones spoken, etc
+	return speaker;
+}
+
+exports.getParts = async (filter, depth) => {
+	var parts = db.tables.Part.chain().find().simplesort('id').data();
+	for (part in parts) {
+		parts[part] = fixPart(parts[part]);
+		if (depth) {
+			parts[part].regions = await exports.getRegions({part: parts[part].id}, depth - 1);
+		}
+	}
+	return parts;
+}
+
+exports.getPart = async (filter, depth) => {
+	var part = fixPart(db.tables.Part.find(filter)[0]);
+	part.island = await exports.getIsland({id: part.island});
+	if (depth) {
+		part.regions = await exports.getRegions({part: part.id}, depth - 1);
+	}
+	return part;
+}
+
+exports.getImageMaps = async (filter, depth) => {
+	var imagemaps = db.tables.ImageMap.chain().find(filter).simplesort('id').data();
+	for (imagemap in imagemaps) {
+		imagemaps[imagemap] = fixImageMap(imagemaps[imagemap]);
+		if (depth) {
+			imagemaps[imagemap].regions = await exports.getRegions({"location.imagemap.map": imagemaps[imagemap].id}, depth - 1);
+		}
+	}
+	return imagemaps;
+}
+
+exports.getImageMap = async (filter, depth) => {
+	var imagemap = fixImageMap(db.tables.ImageMap.find(filter)[0]);
+	imagemap.island = await exports.getIsland({id: imagemap.island});
+	if (depth) {
+		imagemap.regions = await exports.getRegions({"location.imagemap.map": imagemap.id}, depth - 1);
+	}
+	return imagemap;
+}
+
+exports.getIslands = async (filter, depth) => {
+	var islands = db.tables.Island.chain().find(filter).simplesort('id').data();
+	for (island in islands) {
+		islands[island] = fixIsland(islands[island]);
+		islands[island].location = {
+			imagemaps: await exports.getImageMaps({island: islands[island].id})
+		};
+		if (depth) {
+			islands[island].regions = await exports.getRegions({island: islands[island].id}, depth - 1);
+		}
+	}
+	return islands;
+}
+
+exports.getIsland = async (filter, depth) => {
+	var island = fixIsland(db.tables.Island.find(filter)[0]);
+	if (depth) {
+		island.regions = await exports.getRegions({island: island.id}, depth - 1);
+	}
+	return island;
+}
+
+exports.getRegions = async (filter, depth) => {
+	var regions = db.tables.Region.chain().find(filter).simplesort('id').data();
+	for (region in regions) {
+		regions[region] = fixRegion(regions[region]);
+		if (depth) {
+			regions[region].zones = await exports.getZones({region: regions[region].id});
+		}
+	}
+	return regions;
+}
+
+exports.getRegion = async (filter, depth) => {
+	var region = fixRegion(db.tables.Region.find(filter)[0]);
+	region.island = await exports.getIsland({id: region.island});
+	region.part = await exports.getPart({id: region.part});
+	if (depth) {
+		region.zones = await exports.getZones({region: region.id});
+	}
+	return region;
+}
+
+exports.getZones = async (filter) => {
 	var zones = db.tables.Zone.chain().find(filter).simplesort('id').data();
 	for (zone in zones) {
 		zones[zone] = fixZone(zones[zone]);
@@ -153,119 +189,33 @@ function getZones(filter) {
 	return zones;
 }
 
-function getZone(filter) {
+exports.getZone = async (filter) => {
 	var zone = fixZone(db.tables.Zone.find(filter)[0]);
-	zone.region = getRegion({id: zone.region});
-	zone.places = getPlaces({zone: zone.id});
+	zone.region = await exports.getRegion({id: zone.region});
+	zone.places = await exports.getPlaces({zone: zone.id});
 	return zone;
 }
 
-function getPlaces(filter) {
-	return db.tables.Place.chain().find(filter).simplesort('id').data();
-}
-
-
-exports.getSpeakers = async () => {
-	return getSpeakers();
-}
-
-exports.getSpeaker = async (speaker) => {
-	return getSpeaker({code: speaker});
-}
-
-exports.getIslands = async () => {
-	return getIslands();
-}
-
-exports.getIsland = async (island) => {
-	return getIsland({code: island});
-}
-
-exports.getParts = async () => {
-	return getParts();
-}
-
-exports.getPart = async (part) => {
-	return getPart({code: part});
-}
-
-exports.getRegions = async () => {
-	return getRegions();
-}
-
-exports.getRegion = async (region) => {
-	return getRegion({code: region});
-}
-exports.getZones = async () => {
-	return getZones();
-}
-
-exports.getZone = async (zone) => {
-	return getZone({code: zone});
-}
-
-exports.getIslandsRegions = async () => {
-	var islands = getIslands();
-	for (island in islands) {
-		islands[island].regions = getRegions({island: islands[island].id});
-	}
-	return islands;
-}
-
-exports.getIslandRegions = async (code) => {
-	var island = getIsland({code: code});
-	island.regions = getRegions({island: island.id});
-	return island;
-}
-
-exports.getIslandRegionsZones = async (code) => {
-	var island = getIsland({code: code});
-	island.regions = getRegions({island: island.id});
-	for (region in island.regions) {
-		island.regions[region].zones = getZones({region: island.regions[region].id});
-	}
-	return island;
-}
-
-exports.getIslandsRegionsZones = async () => {
-	var islands = getIslands();
-	for (island in islands) {
-		islands[island].regions = getRegions({island: islands[island].id});
-		for (region in islands[island].regions) {
-			islands[island].regions[region].zones = getZones({region: islands[island].regions[region].id});
-		}
-	}
-	return islands;
-}
-
-exports.getRegionsZones = async () => {
-	var regions = getRegions();
-	for (region in regions) {
-		regions[region].zones = getZones({region: regions[region].id});
-	}
-	return regions;
-}
-
-exports.getRegionZones = async (code) => {
-	var region = getRegion({code: code});
-	region.zones = getZones({region: region.id});
-	return region;
+exports.getPlaces = async (filter) => {
+	var places = db.tables.Place.chain().find(filter).simplesort('id').data();
+	return removeLokiMetas(places);
 }
 
 exports.getKinds = async () => {
 	var kinds = [];
 	db.tables.Place.find().forEach(function(place) {
 		if ('kinds' in place) {
-			place.kinds.forEach(function(kind) {
+			for (kind in place.kinds) {
 				kinds.push(kind);
-			});
+			}
 		}
 	});
 	return kinds.filter(arrayUnique).sort();
 }
 
-exports.getKind = async () => {
-
+exports.getKind = async (kind) => {
+	db.tables.Place.find({$efinedin: {"kinds." + kind: 'string'}}).forEach(function(place) {
+	});
 }
 
 exports.getSuggestions = async () => {
@@ -275,9 +225,9 @@ exports.getSuggestions = async () => {
 			suggestions.push({name: name, type: 'Name'});
 		}
 		if ('kinds' in place) {
-			place.kinds.forEach(function(kind) {
+			for (kind in place.kinds) {
 				suggestions.push({name: kind, type: 'Kind'});
-			});
+			}
 		}
 	});
 	db.tables.Zone.find().forEach(function(zone) {

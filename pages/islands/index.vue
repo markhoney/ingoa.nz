@@ -1,25 +1,21 @@
 <template>
   <section>
     <h1>{{$tc('island', 2) | titlecase}}</h1>
-			<v-layout>
-			<v-flex xs12 sm6 md4 v-for="island in islands" v-bind:key="island.code" class="pa-2">
-				<island :island="island"/>
-			</v-flex>
-		</v-layout>
+		<islands :islands="islands"/>
   </section>
 </template>
 
 <script>
 import axios from '~/plugins/axios'
-import island from '~/components/island.vue'
+import islands from '~/components/islands.vue'
 
 export default {
 	components: {
-    island
+    islands
   },
   async asyncData () {
-    const {data} = await axios.get('/api/islands')
-    return {islands: data}
+    const {islands} = await axios.get('/api/islands')
+    return {islands: islands}
   },
   head () {
     return {
