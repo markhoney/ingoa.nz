@@ -1,29 +1,22 @@
 <template>
   <section>
     <h1>{{$tc('island', 2) | titlecase}}</h1>
-		<v-flex xs12 sm6 offset-sm3>
-      <v-card v-for="island in islands" v-bind:key="island.code">
-        <nuxt-link :to="localePath({name: 'island-code', params: {code: island.code}})"><v-card-media :src="island.banner" height="180px"></v-card-media></nuxt-link>
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline mb-0"><nuxt-link :to="localePath({name: 'island-code', params: {code: island.code}})">{{island.name}}</nuxt-link></h3>
-						<h3>{{island.tereo}}</h3>
-            <div><p v-html="island.description"></p></div>
-          </div>
-        </v-card-title>
-        <v-card-actions>
-          <v-btn flat color="orange"><nuxt-link :to="localePath({name: 'island-code', params: {code: island.code}})">{{$tc('detail', 2) | titlecase}}</nuxt-link></v-btn>
-          <v-btn flat color="orange">Regions</v-btn>
-          <v-btn flat color="orange">Zones</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
+			<v-layout>
+			<v-flex xs12 sm6 md4 v-for="island in islands" v-bind:key="island.code" class="pa-2">
+				<island :island="island"/>
+			</v-flex>
+		</v-layout>
   </section>
 </template>
+
 <script>
 import axios from '~/plugins/axios'
+import island from '~/components/island.vue'
 
 export default {
+	components: {
+    island
+  },
   async asyncData () {
     const {data} = await axios.get('/api/island')
     return {islands: data}

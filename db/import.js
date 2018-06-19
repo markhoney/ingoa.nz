@@ -72,13 +72,16 @@ function fixPlace(input) {
 			code: createCode(input.IndexName_1),
 			name: input.IndexName_1,
 			names: {},
-			kinds: [],
+			kinds: {},
 			see: [],
 			notes: input.Notes
 		};
-		["UnspokenName", "ExtendedName", "VariantName", "MisspelledName", "IndexName_1", "IndexName_2", "IndexName_3", "CommonName", "GeoName_1", "GeoName_2", "GeoName_3"].forEach(function(name) {
-			if (input[name]) {
-				output.names[input[name]] = {categories: []};
+		["UnspokenName", "ExtendedName", "VariantName", "MisspelledName", "CommonName", "IndexName_1", "IndexName_2", "IndexName_3"].forEach(function(name) {
+			output.names[input[name]] = {categories: []};
+		});
+		["Extended", "Variant", "Misspelled", "Common", "Unspoken"].forEach(function(name) { // , "Fixed"
+			if (input[name + "Name"]) {
+				output.names[input[name + "Name"]].categories.push(name);
 			}
 		});
 		for (i = 1; i <= 3; i++) {
@@ -99,17 +102,6 @@ function fixPlace(input) {
 				}
 			}
 		}
-		["Extended", "Variant", "Misspelled", "Common", "Unspoken"].forEach(function(name) { // , "Fixed"
-			if (input[name + "Name"]) {
-				output.names[input[name + "Name"]].categories.push(name);
-			}
-		});
-		for (i = 1; i <= 3; i++) {
-			if (input["GooglePlaceName_" + i]) {
-				output.names[input["GooglePlaceName_" + i]].location = [{type: "Google Place Name", value: input["GooglePlaceName_" + i]}];
-				output.names[input["GooglePlaceName_" + i]].categories.push("Location");
-			}
-		}
 		for (i = 1; i <= 4; i++) {
 			if (input["SeeZoneID_" + i] || input["SeeName_" + i]) {
 				output.see.push({zone: input["SeeZoneID_" + i] || input.Zone, name: input["SeeName_" + i], notes: input["SeeNotes_" + i]});
@@ -117,9 +109,13 @@ function fixPlace(input) {
 		}
 		for (i = 1; i <= 4; i++) {
 			if (input["Kind_" + i]) {
-				//output.kinds.push({name: sentenceCase(input["Kind_" + i])});
-				output.kinds.push(sentenceCase(input["Kind_" + i]));
-				// Need to sort out the superscripts that join names together
+				var kind = sentenceCase(input["Kind_" + i]);
+				output.kinds[kind] = {
+					group: input["Super_" + i],
+					location: {
+						googleplacename: input["GooglePlaceName_" + i]
+					}
+				};
 			}
 		}
 		return cleanobj(output);
@@ -133,29 +129,24 @@ function fixZone(input) {
 		name: input.Name,
 		tereo: input.TeReo,
 		region: input.RegionID,
-		geo: {
+		location: {
 			boundary: input.Boundary,
 			imagemap: {
 				map: input.ImageMap,
 				areas: []
 			},
-			location: [],
+			areas: {}
 		},
 		notes: input.Notes
 	};
-	for (i = 1; i <= 2; i++) { // , audio: {start: input.Start, end: input.End}
-		["Small", "Large"].forEach(function(type) {
-			if (input["GooglePlaceID" + type + "_" + i]) {
-				output.geo.location.push({type: "Google Place ID", size: type, value: input["GooglePlaceID" + type + "_" + i]});
-			}
-		});
+	var areas = input.Name.split("/");
+	for (area in areas) {
+		output.location.areas[areas[area]] = {googleplaceid: input["GooglePlaceIDLarge_" + (area + 1)] || input["GooglePlaceIDSmall_" + (area + 1)]};
 	}
-	if (input.GooglePlaceName) {
-		output.geo.location.push({type: "Google Place Name", value: input["GooglePlaceName"]});
-	}
+	output.location.googleplacename = input["GooglePlaceName"];
 	for (i = 1; i <= 2; i++) {
-		if (input["ImageMapAreaType_" + i]) {
-			output.geo.imagemap.areas.push({type: input["ImageMapAreaType_" + i], coords: input["ImageMapAreaCoords_" + i]});
+		if (input["ImageMapAreaShape_" + i]) {
+			output.location.imagemap.areas.push({shape: input["ImageMapAreaShape_" + i], coords: input["ImageMapAreaCoords_" + i]});
 		}
 	}
 	return cleanobj(output);
@@ -178,7 +169,7 @@ function fixSpeaker(input) {
 				suffix: input.Suffix
 			},
 			notes: input.Notes,
-			geo: {
+			location: {
 				recorded: input.Location
 			},
 			url: input.URL
@@ -229,17 +220,9 @@ function importIslands() {
 			name: record.Name,
 			tereo: record.TeReo,
 			description: record.Description,
-			geo: {
-				location: [
-					{
-						type: "Google Place ID",
-						value: record.GooglePlaceID
-					},
-					{
-						type: "Google Place Name",
-						value: record.GeoName
-					}
-				]
+			location: {
+				googleplaceid: record.GooglePlaceID,
+				googleplacename: record.GooglePlaceName
 			}
 		};
 		callback(null, cleanobj(output));
@@ -263,7 +246,7 @@ function importParts() {
 				end: record.Ended,
 				launch: record.Launched
 			},
-			geo: {
+			location: {
 				distance: record.DistanceKM
 			},
 			funding: record.Funding,
@@ -312,19 +295,10 @@ function importRegions() {
 			tereo: record.TeReo,
 			island: record.IslandID,
 			part: record.PartID,
-			geo: {
-				location: [
-					{
-						type: "Google Place ID",
-						size: "Large",
-						value: record.GooglePlaceID
-					},
-					{
-						type: "Google Place Name",
-						value: record.GooglePlaceName
-					}
-				]
-			},
+			location: {
+				googleplaceid: record.GooglePlaceID,
+				googleplacename: record.GooglePlaceName
+			}
 		};
 		callback(null, cleanobj(output));
 	});

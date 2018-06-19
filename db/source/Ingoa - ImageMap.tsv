@@ -1,6 +1,6 @@
-Name	Code	ID	Island	IslandID	Start	End
-Lower North Island	lowernorth	1	North Island	1	1984-01-01	1985-01-01
-Central North Island	centralnorth	2	North Island	1	1986-01-01	1991-01-01
-Auckland and Northland	uppernorth	3	North Island	1	1988-01-01	1991-01-01
-Northern and Eastern South Island	uppersouth	4	South Island	2	1991-01-01	1994-01-01
-Southern and Western South Island	lowersouth	5	South Island	2	1991-01-01	1994-01-01
+Name	ID	IslandID	Start	End
+Lower North Island	1	1	1984-01-01	1985-01-01
+Central North Island	2	1	1986-01-01	1991-01-01
+Auckland and Northland	3	1	1988-01-01	1991-01-01
+Northern and Eastern South Island	4	2	1991-01-01	1994-01-01
+Southern and Western South Island	5	2	1991-01-01	1994-01-01

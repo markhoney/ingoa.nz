@@ -20,14 +20,18 @@ function removeLokiMetas(input) {
 */
 
 function removeLokiMeta(obj) {
-	delete obj.meta;
-	delete obj.$loki;
+	var copy = Object.assign({}, obj);
+	delete copy.meta;
+	delete copy.$loki;
+	return copy;
 }
 
 function removeLokiMetas(objs) {
-	objs.forEach(function(obj) {
-		removeLokiMeta(obj);
+	var copy = Object.assign({}, objs);
+	copy.forEach(function(obj) {
+		obj = removeLokiMeta(obj);
 	});
+	return copy;
 }
 
 function cleanArray(actual) {
@@ -44,85 +48,202 @@ function arrayUnique(value, index, self) {
 	return self.indexOf(value) === index;
 }
 
-exports.getSpeakers = async () => {
-	var speakers = db.tables.Speaker.chain().find().simplesort('id').data();
-	removeLokiMetas(speakers);
-	return speakers;
-}
-
-exports.getSpeaker = async (code) => {
-	var speaker = db.tables.Speaker.find({code: code})[0];
-	removeLokiMeta(speaker);
+function fixSpeaker(obj) {
+	var speaker = removeLokiMeta(obj);
+	speaker.images = {
+		portrait: '/media/images/speaker/' + speaker.code + '-portrait.jpg'
+	};
 	return speaker;
 }
 
-exports.getIslands = async () => {
+function getSpeakers() {
+	var speakers = db.tables.Speaker.chain().find().simplesort('id').data();
+	speakers.forEach(function(speaker) {
+		speaker = fixSpeaker(speaker);
+	});
+	return speakers;
+}
+
+function getSpeaker(id) {
+	return fixSpeaker(db.tables.Speaker.find({id: id})[0]);
+}
+
+function fixIsland(obj) {
+	var island = removeLokiMeta(obj);
+	island.images = {
+		landscape: '/media/images/island/' + island.code + '-landscape.png',
+		banner: '/media/images/island/' + island.code + '-banner.jpg'
+	};
+	return island;
+}
+
+function getIslands() {
 	var islands = db.tables.Island.chain().find().simplesort('id').data();
-	removeLokiMetas(islands);
+	for (island in islands) {
+		islands[island] = fixIsland(islands[island]);
+	}
+	return islands;
+}
+
+function getIsland(id) {
+	return fixIsland(db.tables.Island.find({id: id})[0]);
+}
+
+function fixPart(obj) {
+	var part = removeLokiMeta(obj);
+	part.images = {
+		front: '/media/images/part/' + part.code + '-front.png'
+	};
+	return part;
+}
+
+function getParts() {
+	var parts = db.tables.Part.chain().find().simplesort('id').data();
+	for (part in parts) {
+		parts[part] = fixPart(parts[part]);
+	}
+	return parts;
+}
+
+function getPart(id) {
+	return fixPart(db.tables.Part.find({id: id})[0]);
+}
+
+function fixRegion(obj) {
+	var region = removeLokiMeta(obj);
+	region.images = {
+		landscape: '/media/images/region/' + region.code + '.png',
+		banner: '/media/images/region/' + region.code + '.jpg'
+	}
+	return region;
+}
+
+function getRegions(filter) {
+	var regions = db.tables.Region.chain().find(filter).simplesort('id').data();
+	for (region in regions) {
+		regions[region] = fixRegion(regions[region]);
+	}
+	return regions;
+}
+
+function getRegion(id) {
+	var region = fixRegion(db.tables.Region.find({id: id})[0]);
+	region.island = getIsland({id: region.island});
+	region.part = getPart({id: region.part});
+	return region;
+}
+
+function fixZone(obj) {
+	var zone = removeLokiMeta(obj);
+	zone.images = {
+		landscape: '/media/images/island/' + zone.code + '-landscape.png',
+		banner: '/media/images/island/' + zone.code + '-banner.jpg'
+	};
+	zone.audio = '/media/audio/' + zone.id + '.mp3';
+	return zone;
+}
+
+function getZones(filter) {
+	var zones = db.tables.Zone.chain().find(filter).simplesort('id').data();
+	for (zone in zones) {
+		zones[zone] = fixZone(zones[zone]);
+	}
+	return zones;
+}
+
+function getZone(id) {
+	var zone = fixZone(db.tables.Zone.find({id: id})[0]);
+	zone.region = getRegion({id: zone.region});
+	zone.region.island = getIsland({id: zone.region.island});
+	zone.region.part = getPart({id: zone.region.part});
+	return zone;
+}
+
+exports.getSpeakers = async () => {
+	return getSpeakers();
+}
+
+exports.getSpeaker = async (code) => {
+	return getSpeaker({code: code});
+}
+
+exports.getIslands = async () => {
+	return getIslands();
+}
+
+exports.getIsland = async (code) => {
+	return getIsland({code: code});
+}
+
+exports.getParts = async () => {
+	return getParts();
+}
+
+exports.getPart = async (code) => {
+	return getPart({code: code});
+}
+
+exports.getRegions = async () => {
+	return getRegions();
+}
+
+exports.getRegion = async (code) => {
+	return getRegion({code: code});
+}
+exports.getZones = async () => {
+	return getZones();
+}
+
+exports.getZone = async (code) => {
+	return getZone({code: code});
+}
+
+exports.getIslandsRegions = async () => {
+	var islands = getIslands();
+	for (island in islands) {
+		islands[island].regions = getRegions({island: islands[island].id});
+	}
+	return islands;
+}
+
+exports.getIslandRegions = async (code) => {
+	var island = getIsland({code: code});
+	island.regions = getRegions({island: island.id});
+	return island;
+}
+
+exports.getIslandRegionsZones = async (code) => {
+	var island = getIsland({code: code});
+	island.regions = getRegions({island: island.id});
+	for (region in island.regions) {
+		island.regions[region].zones = getZones({region: island.regions[region].id});
+	}
+	return island;
+}
+
+exports.getIslandsRegionsZones = async () => {
+	var islands = getIslands();
 	islands.forEach(function(island) {
-		island.image = '/media/images/island/' + island.code + '.png';
-		island.banner = '/media/images/island/' + island.code + '.jpg';
+		island.regions = getRegions({island: island.id});
+		island.regions.forEach(function(region) {
+			region.zones = getZones({region: region.id});
+		});
 	});
 	return islands;
 }
 
-exports.getIsland = async (code) => {
-	var island = db.tables.Island.find({code: code})[0];
-	removeLokiMeta(island);
-	return island;
-}
-
-exports.getParts = async () => {
-	var parts = db.tables.Part.chain().find().simplesort('id').data();
-	removeLokiMetas(parts);
-	return parts;
-}
-
-exports.getPart = async (code) => {
-	var part = db.tables.Part.find({code: code})[0];
-	removeLokiMeta(part);
-	return part;
-}
-
-exports.getRegions = async () => {
-	var regions = db.tables.Region.chain().find().simplesort('id').data();
-	removeLokiMetas(regions);
+exports.getRegionsZones = async () => {
+	var regions = getRegions();
 	regions.forEach(function(region) {
-		region.image = '/media/images/region/' + region.code + '.png';
-		region.banner = '/media/images/region/' + region.code + '.jpg';
+		region.zones = getZones({region: region.id});
 	});
 	return regions;
 }
 
-exports.getRegion = async (code) => {
-	var region = db.tables.Region.find({code: code})[0];
-	removeLokiMeta(region);
-	return region;
-}
-
-
-exports.getZones = async () => {
-	var zones = db.tables.Zone.chain().find().simplesort('id').data();
-	removeLokiMetas(zones);
-	return zones;
-}
-
-exports.getZone = async (code) => {
-	var zone = db.tables.Zone.find({code: code})[0];
-	zone.file = '/media/audio/' + zone.id + '.mp3';
-	removeLokiMeta(zone);
-	zone.region = db.tables.Region.find({id: zone.region})[0];
-	removeLokiMeta(zone.region);
-	zone.region.island = db.tables.Island.find({id: zone.region.island})[0];
-	removeLokiMeta(zone.region.island);
-	zone.region.part = db.tables.Part.find({id: zone.region.part})[0];
-	removeLokiMeta(zone.region.part);
-	zone.places = db.tables.Place.chain().find({zone: zone.id}).simplesort('id').data();
-	zone.places.forEach(function(place) {
-		delete place.meta;
-		delete place.$loki;
-	});
-	return zone;
+exports.getRegionZones = async (code) => {
+	var region = getRegion({code: code});
+	region.zones = getZones({region: region.id});
+	return regions;
 }
 
 exports.getKinds = async () => {
@@ -135,6 +256,10 @@ exports.getKinds = async () => {
 		}
 	});
 	return kinds.filter(arrayUnique).sort();
+}
+
+exports.getKind = async () => {
+
 }
 
 exports.getSuggestions = async () => {
