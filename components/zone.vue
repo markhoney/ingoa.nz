@@ -4,7 +4,7 @@
 		<v-card-title primary-title>
 			<div>
 				<h3 class="headline mb-0"><nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})">{{zone.name}}</nuxt-link></h3>
-				<h3 v-if="zone.tereo !- zone.name">{{zone.tereo}}</h3>
+				<h3 v-if="zone.tereo != zone.name">{{zone.tereo}}</h3>
 				<div><p v-html="zone.description"></p></div>
 			</div>
 		</v-card-title>

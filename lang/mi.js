@@ -8,7 +8,7 @@ export default {
 	spoken: 'korerohia e',
 	name: 'ingoa',
 	region: 'whaitua',
-	zone: 'rohe',
+	zone: 'hauni',
 	island: 'motu',
 	part: 'wāhanga',
 	speaker: 'kaikōrero',

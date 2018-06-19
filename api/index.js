@@ -138,8 +138,8 @@ function getRegion(filter) {
 function fixZone(obj) {
 	var zone = removeLokiMeta(obj);
 	zone.image = {
-		landscape: '/media/images/island/' + zone.code + '-landscape.png',
-		banner: '/media/images/island/' + zone.code + '-banner.jpg'
+		landscape: '/media/images/zone/' + zone.code + '-landscape.png',
+		banner: '/media/images/zone/' + zone.code + '-banner.jpg'
 	};
 	zone.audio = '/media/audio/' + zone.id + '.mp3';
 	return zone;
