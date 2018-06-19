@@ -13,7 +13,7 @@ import axios from '~/plugins/axios'
 
 export default {
   async asyncData () {
-    const {data} = await axios.get('/api/region/zone')
+    const {data} = await axios.get('/api/regions/zones')
     return {zones: data}
   },
   head () {
