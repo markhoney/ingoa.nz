@@ -11,13 +11,15 @@
 <script>
 import axios from '~/plugins/axios'
 import regions from '~/components/regions.vue'
+import imagemaps from '~/components/imagemaps.vue'
 
 export default {
 	components: {
     regions
   },
   async asyncData (context) {
-    const island = await axios.get('/api/islands/' + context.params.island + '/regions');
+    //const island = await axios.get('/api/islands/' + context.params.island + '/regions');
+    const imagemaps = await axios.get('/api/imagemaps/' + context.params.island + '/regions');
     return {island: island.data};
   },
   head () {
