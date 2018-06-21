@@ -2,9 +2,15 @@
   <section>
     <h1 class="display-2">{{$tc('region', 2) | titlecase}}</h1>
 		<template v-for="island in islands">
-			<v-subheader class="display-1 mt-5 mb-3" :key="island.name"><nuxt-link :to="localePath({name: 'islands-island', params: {island: island.code}})">{{island.name}}</nuxt-link></v-subheader>
-			<v-subheader class="display-1 mb-4" :key="island.name" v-if="island.tereo != island.name">{{island.tereo}}</v-subheader>
-			<regions :regions="island.regions" :key="island.name" />
+			<v-subheader class="display-1 mt-5 mb-3" :key="island.name.en">
+				<nuxt-link :to="localePath({name: 'islands-island', params: {island: island.code}})">
+					{{localeName(island.name)}}
+				</nuxt-link>
+			</v-subheader>
+			<v-subheader class="display-1 mb-4" :key="island.name.mi" v-if="localeBothNames(island.name)">
+				{{localeAltName(island.name)}}
+			</v-subheader>
+			<regions :regions="island.regions" :key="island.code" />
 		</template>
   </section>
 </template>
@@ -18,8 +24,8 @@ export default {
     regions
   },
   async asyncData () {
-    const {islands} = await axios.get('/api/islands/regions')
-    return {islands: islands}
+    const {data} = await axios.get('/api/islands?depth=1')
+    return {islands: data}
   },
   head () {
     return {

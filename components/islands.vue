@@ -11,7 +11,7 @@ import island from '~/components/island.vue'
 
 export default {
 	props: {
-		islands: Object
+		islands: Array
 	},
 	components: {
     island

@@ -24,12 +24,12 @@
 import axios from '~/plugins/axios'
 
 export default {
-	nuxtI18n: {
+	/*nuxtI18n: {
     paths: {
       en: '/about',
       mi: '/mo'
     }
-  },
+  },*/
   head () {
     return {
       title: 'About'

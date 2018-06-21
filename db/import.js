@@ -16,10 +16,10 @@ db(function(db) {
 const lokiStream = (table) => {
   const writable = new stream.Writable({
     objectMode: true,
-    write: async (record, encoding, next) => {
+    write: async (input, encoding, next) => {
 			try {
-				//console.log(record);
-				await db.tables[table].insert(record);
+				//console.log(input);
+				await db.tables[table].insert(input);
 				next();
 			} catch(err) {
 				console.log(err);
@@ -70,7 +70,11 @@ function fixPlace(input) {
 			zone: input.ZoneID,
 			id: input.Number,
 			code: createCode(input.IndexName_1),
-			name: input.IndexName_1,
+			//name: input.IndexName_1,
+			name: {
+				en: input.CommonName,
+				mi: input.IndexName_1
+			},
 			names: {},
 			kinds: {},
 			see: [],
@@ -84,7 +88,7 @@ function fixPlace(input) {
 				output.names[input[name + "Name"]].categories.push(name);
 			}
 		});
-		for (i = 1; i <= 3; i++) {
+		for (var i = 1; i <= 3; i++) {
 			if (input["IndexName_" + i]) {
 				output.names[input["IndexName_" + i]].index = i;
 				if (input["SpokenName_" + i]) {
@@ -102,12 +106,12 @@ function fixPlace(input) {
 				}
 			}
 		}
-		for (i = 1; i <= 4; i++) {
+		for (var i = 1; i <= 4; i++) {
 			if (input["SeeZoneID_" + i] || input["SeeName_" + i]) {
 				output.see.push({zone: input["SeeZoneID_" + i] || input.Zone, name: input["SeeName_" + i], notes: input["SeeNotes_" + i]});
 			}
 		}
-		for (i = 1; i <= 4; i++) {
+		for (var i = 1; i <= 4; i++) {
 			if (input["Kind_" + i]) {
 				var kind = sentenceCase(input["Kind_" + i]);
 				output.kinds[kind] = {
@@ -126,8 +130,12 @@ function fixZone(input) {
 	var output = {
 		id: input.ID,
 		code: createCode(input.Name),
-		name: input.Name,
-		tereo: input.TeReo,
+		//name: input.Name,
+		//tereo: input.TeReo,
+		name: {
+			en: (input.Name == input.TeReo ? null : input.Name),
+			mi: input.TeReo
+		},
 		region: input.RegionID,
 		location: {
 			boundary: input.Boundary,
@@ -140,13 +148,16 @@ function fixZone(input) {
 		notes: input.Notes
 	};
 	var areas = input.Name.split("/");
-	for (area in areas) {
+	for (var area in areas) {
 		output.location.areas[areas[area]] = {googleplaceid: input["GooglePlaceIDLarge_" + (area + 1)] || input["GooglePlaceIDSmall_" + (area + 1)]};
 	}
 	output.location.googleplacename = input["GooglePlaceName"];
-	for (i = 1; i <= 2; i++) {
+	for (var i = 1; i <= 2; i++) {
 		if (input["ImageMapAreaShape_" + i]) {
-			output.location.imagemap.areas.push({shape: input["ImageMapAreaShape_" + i], coords: input["ImageMapAreaCoords_" + i]});
+			output.location.imagemap.areas.push({
+				shape: input["ImageMapAreaShape_" + i],
+				coords: input["ImageMapAreaCoords_" + i]
+			});
 		}
 	}
 	return cleanobj(output);
@@ -170,7 +181,7 @@ function fixSpeaker(input) {
 			},
 			notes: input.Notes,
 			location: {
-				recorded: input.Location
+				inputed: input.Location
 			},
 			url: input.URL
 		}
@@ -182,8 +193,8 @@ function importPlaces() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Place.tsv'));
 	const outputloki = lokiStream("Place");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
-		callback(null, fixPlace(record));
+	const transformcsv = csv.transform(function(input, callback) {
+		callback(null, fixPlace(input));
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
@@ -193,8 +204,8 @@ function importZones() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Zone.tsv'));
 	const outputloki = lokiStream("Zone");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
-		callback(null, fixZone(record));
+	const transformcsv = csv.transform(function(input, callback) {
+		callback(null, fixZone(input));
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
@@ -203,8 +214,8 @@ function importSpeakers() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Speaker.tsv'));
 	const outputloki = lokiStream("Speaker");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
-		callback(null, fixSpeaker(record));
+	const transformcsv = csv.transform(function(input, callback) {
+		callback(null, fixSpeaker(input));
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
@@ -213,16 +224,20 @@ function importIslands() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Island.tsv'));
 	const outputloki = lokiStream("Island");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
+	const transformcsv = csv.transform(function(input, callback) {
 		var output = {
-			id: record.ID,
-			code: createCode(record.Name),
-			name: record.Name,
-			tereo: record.TeReo,
-			description: record.Description,
+			id: input.ID,
+			code: createCode(input.Name),
+			//name: input.Name,
+			//tereo: input.TeReo,
+			name: {
+				en: (input.Name == input.TeReo ? null : input.Name),
+				mi: input.TeReo
+			},
+			description: input.Description,
 			location: {
-				googleplaceid: record.GooglePlaceID,
-				googleplacename: record.GooglePlaceName
+				googleplaceid: input.GooglePlaceID,
+				googleplacename: input.GooglePlaceName
 			}
 		};
 		callback(null, cleanobj(output));
@@ -234,27 +249,31 @@ function importParts() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Part.tsv'));
 	const outputloki = lokiStream("Part");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
+	const transformcsv = csv.transform(function(input, callback) {
 		var output = {
-			id: record.ID,
-			code: createCode(record.Name),
-			name: record.Name,
-			tereo: record.TeReo,
-			island: record.IslandID,
+			id: input.ID,
+			code: createCode(input.Name),
+			//name: input.Name,
+			//tereo: input.TeReo,
+			name: {
+				en: (input.Name == input.TeReo ? null : input.Name),
+				mi: input.TeReo
+			},
+			island: input.IslandID,
 			dates: {
-				start: record.Started,
-				end: record.Ended,
-				launch: record.Launched
+				start: input.Started,
+				end: input.Ended,
+				launch: input.Launched
 			},
 			location: {
-				distance: record.DistanceKM
+				distance: input.DistanceKM
 			},
-			funding: record.Funding,
-			format: record.Format,
-			description: record.Description,
+			funding: input.Funding,
+			format: input.Format,
+			description: input.Description,
 			notes: {
-				text: record.NotesText,
-				recording: record.NotesRecording
+				text: input.NotesText,
+				inputing: input.NotesRecording
 			}
 		};
 		callback(null, cleanobj(output));
@@ -266,17 +285,36 @@ function importImageMaps() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - ImageMap.tsv'));
 	const outputloki = lokiStream("ImageMap");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
+	const transformcsv = csv.transform(function(input, callback) {
 		var output = {
-			id: record.ID,
-			code: createCode(record.Name),
-			name: record.Name,
-			island: record.IslandID,
+			id: input.ID,
+			code: createCode(input.Name),
+			//name: input.Name,
+			name: {
+				en: (input.Name == input.TeReo ? null : input.Name),
+				mi: input.TeReo
+			},
+			island: input.IslandID,
 			dates: {
-				start: record.Start,
-				end: record.End
-			}
+				start: input.Start,
+				end: input.End
+			},
+			imagemaplinks: []
 		};
+		for (var i = 1; i <= 2; i++) {
+			if (input["MapLinkID_" + i]) {
+				output.imagemaplinks.push({
+					map: input.ID,
+					maplink: input["MapLinkID_" + i],
+					areas: [
+						{
+							shape: input["MapLinkShape_" + i],
+							coords: input["MapLinkCoords_" + i]
+						}
+					]
+				});
+			}
+		}
 		callback(null, cleanobj(output));
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
@@ -287,19 +325,23 @@ function importRegions() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Region.tsv'));
 	const outputloki = lokiStream("Region");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
-	const transformcsv = csv.transform(function(record, callback) {
+	const transformcsv = csv.transform(function(input, callback) {
 		var output = {
-			id: record.ID,
-			code: createCode(record.Name),
-			name: record.Name,
-			tereo: record.TeReo,
-			island: record.IslandID,
-			part: record.PartID,
+			id: input.ID,
+			code: createCode(input.Name),
+			//name: input.Name,
+			//tereo: input.TeReo,
+			name: {
+				en: (input.Name == input.TeReo ? null : input.Name),
+				mi: input.TeReo
+			},
+			island: input.IslandID,
+			part: input.PartID,
 			location: {
-				googleplaceid: record.GooglePlaceID,
-				googleplacename: record.GooglePlaceName,
+				googleplaceid: input.GooglePlaceID,
+				googleplacename: input.GooglePlaceName,
 				imagemap: {
-					map: record.ImageMapID
+					map: input.ImageMapID
 				}
 			}
 		};

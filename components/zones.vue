@@ -11,7 +11,7 @@ import zone from '~/components/zone.vue'
 
 export default {
 	props: {
-		zones: Object
+		zones: Array
 	},
 	components: {
     zone

@@ -5528,8 +5528,8 @@ ZoneID	Zone	Number	SpokenName_1	Speaker_1	Start_1	End_1	#VALUE!	SpokenName_2	Spe
 129	Islands off Bream Head	8	MĀui-MUA	Hare Te Raharaha Kake	27.33	28.36	1.03													also	Motu Muka	also Motu Muka			Motu Muka												Māuimua			Lady Alice Island (a Chicken)		island											
 129	Islands off Bream Head	9	MĀui-PAE	Hare Te Raharaha Kake	29.63	30.51	0.88																														Māuipae			Coppermine Island (a Chicken)		island											
 129	Islands off Bream Head	10	MĀui-ROto	Hare Te Raharaha Kake	32.06	33.19	1.13													also	Whatupuke	also Whatupuke			Whatupuke												Māuiroto			a Chicken		island											
-129	Islands off Bream Head	11	MĀui-TAha	Hare Te Raharaha Kake	34.5	35.61	1.11													also	Motu Wairaka, Tawataa	also Motu Wairaka, Tawataa			Motu Wairaka				Tawataa								Māuitaha			a Chicken		island											
-129	Islands off Bream Head	12	MĀui-TIkitiki-ā-TAranga	Hare Te Raharaha Kake	36.96	39.39	2.43																														Māuitikitikiātaranga			a Chicken		island											
+129	Islands off Bream Head	11	MĀui-TAha	Hare Te Raharaha Kake	34.5	35.61	1.11													also	Motu Wairaka, Tawataa	also Motu Wairaka, Tawatawa			Motu Wairaka				Tawataa								Māuitaha			a Chicken		island											
+129	Islands off Bream Head	12	MĀui-TIkitiki-ā-TAranga	Hare Te Raharaha Kake	36.96	39.39	2.43													also	Araara																Māuitikitikiātaranga			a Chicken		island											
 129	Islands off Bream Head	13	MOtu KApiti	Hare Te Raharaha Kake	40.58	41.69	1.11																														Motu Kapiti			a Poor Knight		island											
 129	Islands off Bream Head	14	MOtu-MUka	Hare Te Raharaha Kake	43.98	44.95	0.97													also	Māui Mua	also Māui Mua			Māui Mua												Motumuka			Lady Alice Island (a Chicken)		island											
 129	Islands off Bream Head	15	MOtu-NUku·NUku-HAU	Hare Te Raharaha Kake	47.42	48.94	1.52											Motunukuhau		also	Whatupuke	also Whatupuke			Whatupuke												Motunukunukuhau	Motunukuhau		a Chicken		island											
@@ -5685,143 +5685,141 @@ ZoneID	Zone	Number	SpokenName_1	Speaker_1	Start_1	End_1	#VALUE!	SpokenName_2	Spe
 131	Bay of Islands	105	Umu-HĀpuku	Tupi Puriri	276.49	277.58	1.09																														Umuhāpuku					hall	x										
 131	Bay of Islands	106	WAEwae-TŌrea	Tupi Puriri	280.25	281.54	1.29																														Waewaetōrea					island											
 131	Bay of Islands	107	WAI-Aruhē	Tupi Puriri	284.12	285.28	1.16																														Waiaruhē					river											
-131	Bay of Islands	108	WAI-HĀhā	Tupi Puriri	285.82	286.03	0.21																														Waihāhā					locality	15										
-131	Bay of Islands	109	WAI-HArakeke	Tupi Puriri	287.46	288.58	1.12																														Waiharakeke					stream											
-131	Bay of Islands	110	WAI-HOU	Tupi Puriri	290.41	291.63	1.22																														Waihou					river		Valley		locality							
-131	Bay of Islands	111	WAI-KAre	Tupi Puriri	293.31	294.21	0.90																														Waikare					harbour		locality									
-131	Bay of Islands	112	WAImate	Tupi Puriri	296.08	296.94	0.86																														Waimate			Waimate North		locality											
-131	Bay of Islands	113	WAI-ō-MIO	Tupi Puriri	297.73	298.39	0.66																														Waiōmio					marae	2a	caves		locality							
-131	Bay of Islands	114	WAIpapa	Tupi Puriri	300.49	301.48	0.99																														Waipapa					locality											
-131	Bay of Islands	115	WAItangi	Tupi Puriri	303.18	303.96	0.78																														Waitangi					river		historic site	1								
-131	Bay of Islands	116	WHĀngai	Tupi Puriri	305.41	306.19	0.78									Whāngae			Whāngae																		Whāngai	Whāngae				locality											
-131	Bay of Islands	117	WHAnga-MŪmū	Tupi Puriri	307.78	308.46	0.68																														Whangamūmū					harbour		locality									
-131	Bay of Islands	118	WHAnga-RUru	Tupi Puriri	310.47	311.48	1.01																														Whangaruru					harbour		beach		localities							
-131	Bay of Islands	119	WHIti-Ora	Tupi Puriri	312.61	313.65	1.04																														Whitiora					meeting house	17										
-131	Bay of Islands	120	wikiTŌria	Tupi Puriri	315.12	316.03	0.91																														Wikitōria					treaty grounds	1a										
-131	Bay of Islands	121	WIwiki	Tupi Puriri	317.69	318.91	1.22																														Wiwiki					cape											
-131	Bay of Islands	122			320.13	320.77	0.64																																														
+131	Bay of Islands	108	WAI-HĀhā	Tupi Puriri	287.46	288.58	1.12																														Waihāhā					locality	15										
+131	Bay of Islands	109	WAI-HArakeke	Tupi Puriri	290.41	291.63	1.22																														Waiharakeke					stream											
+131	Bay of Islands	110	WAI-HOU	Tupi Puriri	293.31	294.21	0.90																														Waihou					river		Valley		locality							
+131	Bay of Islands	111	WAI-KAre	Tupi Puriri	296.08	296.94	0.86																														Waikare					harbour		locality									
+131	Bay of Islands	112	WAImate	Tupi Puriri	297.73	298.39	0.66																														Waimate			Waimate North		locality											
+131	Bay of Islands	113	WAI-ō-MIO	Tupi Puriri	300.49	301.48	0.99																														Waiōmio					marae	2a	caves		locality							
+131	Bay of Islands	114	WAIpapa	Tupi Puriri	303.18	303.96	0.78																														Waipapa					locality											
+131	Bay of Islands	115	WAItangi	Tupi Puriri	305.41	306.19	0.78																														Waitangi					river		historic site	1								
+131	Bay of Islands	116	WHĀngai	Tupi Puriri	307.78	308.46	0.68									Whāngae			Whāngae																		Whāngai	Whāngae				locality											
+131	Bay of Islands	117	WHAnga-MŪmū	Tupi Puriri	310.47	311.48	1.01																														Whangamūmū					harbour		locality									
+131	Bay of Islands	118	WHAnga-RUru	Tupi Puriri	312.61	313.65	1.04																														Whangaruru					harbour		beach		localities							
+131	Bay of Islands	119	WHIti-Ora	Tupi Puriri	315.12	316.03	0.91																														Whitiora					meeting house	17										
+131	Bay of Islands	120	wikiTŌria	Tupi Puriri	317.69	318.91	1.22																														Wikitōria					treaty grounds	1a										
+131	Bay of Islands	121	WIwiki	Tupi Puriri	320.13	320.77	0.64																														Wiwiki					cape											
 132	Whangaroa	0	Intro	Hugh Young	1.33	3.58	2.25																														Intro					intro											
 132	Whangaroa	1	Aka-TEre	Tarawau Kira	6	6.85	0.85																														Akatere					peak											
 132	Whangaroa	2	Āpu-te-REwa	Tarawau Kira	7.71	8.69	0.98																														Āputerewa					locality											
-132	Whangaroa	3	Awa-ROA	Tarawau Kira	10.31	11.04	0.73	Pupuke		13.13	13.97																										Awaroa					river											
-132	Whangaroa	4	HAraweka	Tarawau Kira	15.88	16.63	0.75																														Haraweka			a Cavalli island		island											
-132	Whangaroa	5	HAUnga	Tarawau Kira	18.34	19.12	0.78																														Haunga					peak											
-132	Whangaroa	6	HĪ·HĪ	Tarawau Kira	19.86	20.73	0.87																														Hīhī					beach											
-132	Whangaroa	7	HIku-RUA	Tarawau Kira	22.71	23.32	0.61																														Hikurua					stream											
-132	Whangaroa	8	HOpekako	Tarawau Kira	24.75	25.82	1.07																														Hopekako			St Peters		peak											
-132	Whangaroa	9	HOro-NUI	Tarawau Kira	26.99	27.9	0.91																														Horonui					island											
-132	Whangaroa	10	HOro-ROA	Tarawau Kira	29.52	30.3	0.78																														Hororoa					point											
-132	Whangaroa	11	Kāea	Tarawau Kira	32.19	33.1	0.91									Kaeo																					Kāea	Kaeo				river		township									
-132	Whangaroa	12	KAhanga-ROA	Tarawau Kira	35.29	36.05	0.76																														Kahangaroa					island											
-132	Whangaroa	13	KĀ-HOE	Tarawau Kira	38.81	40.16	1.35																														Kāhoe					locality											
-132	Whangaroa	14	KAInga PĪpī-WAI	Tarawau Kira	42.39	43.41	1.02											Pipiwai																			Kainga Pīpīwai					region											
-132	Whangaroa	15	KAranga-HApe	Tarawau Kira	45.19	46.01	0.82																														Karangahape					meeting house	6										
-132	Whangaroa	16	KĒnana	Tarawau Kira	47.78	48.85	1.07																														Kēnana			(<i>Canaan</i>)		marae	2	meeting house	2	locality							
-132	Whangaroa	17	KĪ KŌpū	Tarawau Kira	51.27	52.05	0.78																														Kī Kōpū					dining hall	4										
-132	Whangaroa	18	KOhu-MAru	Tarawau Kira	53.76	54.85	1.09																														Kohumaru					river		locality									
-132	Whangaroa	19	MĀhine-PUA	Tarawau Kira	57.79	58.61	0.82																														Māhinepua			Stephenson Island		island		bay		locality							
-132	Whangaroa	20	maNGA·Iti	Tarawau Kira	60.4	61.41	1.01																														Mangaiti					marae	11										
-132	Whangaroa	21	MĀngā-PĀ	Tarawau Kira	63.18	64.02	0.84																														Māngāpā					stream		locality									
-132	Whangaroa	22	MAnga-WHEro	Tarawau Kira	65.5	66.37	0.87																														Mangawhero					locality	1										
-132	Whangaroa	23	MAngo-NUI	Tarawau Kira	67.47	68.24	0.77																														Mangonui			Bergan Point 		harbour		point		locality							
-132	Whangaroa	24	MĀpuna	Tarawau Kira	70.13	71.06	0.93																														Māpuna					rock											
-132	Whangaroa	25	maTAngirau	Tarawau Kira	72.72	73.6	0.88																														Matangirau					marae	6	locality									
-132	Whangaroa	26	maTAUri	Tarawau Kira	75.79	76.88	1.09																														Matauri					bay	3										
-132	Whangaroa	27	MAta-WHErohia	Tarawau Kira	78.47	80.01	1.54																														Matawherohia					locality											
-132	Whangaroa	28	MAUnga-TAniwha	Tarawau Kira	80.94	81.78	0.84																														Maungataniwha					peak		range									
-132	Whangaroa	29	MOtu-Eka	Tarawau Kira	83.29	84.34	1.05									Motuweka		Motuweka																			Motueka	Motuweka		Flat Island		island											
-132	Whangaroa	30	MOtu-eKA·Iti	Tarawau Kira	85.48	86.54	1.06																														Motuekaiti					island											
-132	Whangaroa	31	MOtu-HArakeke	Tarawau Kira	87.46	88.59	1.13																														Motuharakeke			a Cavalli island		island											
-132	Whangaroa	32	MOtu-KAha·kaha	Tarawau Kira	90.4	91.24	0.84																														Motukahakaha					bay											
-132	Whangaroa	33	MOtu-KApa	Tarawau Kira	93.74	94.59	0.85																														Motukapa					island											
-132	Whangaroa	34	MOtu-kaWA·Iti	Tarawau Kira	96.27	97.43	1.16																														Motukawaiti			Step Island (a Cavalli island)		island											
-132	Whangaroa	35	MOtu-KAwa-NUI	Tarawau Kira	98.32	99.07	0.75																														Motukawanui			a Cavalli island		island											
-132	Whangaroa	36	MOtu-KEO	Tarawau Kira	100.26	101.43	1.17																														Motukeo					island											
-132	Whangaroa	37	MOtu-KŪkupa	Tarawau Kira	102.62	103.52	0.90									Motukupa		Motukupa																			Motukūkupa	Motukupa		a Cavalli island		island											
-132	Whangaroa	38	MOtu-MUka	Tarawau Kira	105.56	106.54	0.98																														Motumuka					island											
-132	Whangaroa	39	MOtu-RAhu·rahu	Tarawau Kira	107.49	108.61	1.12																														Moturahurahu					island											
-132	Whangaroa	40	MOtu-TĀkupa	Tarawau Kira	109.82	110.62	0.80																														Motutākupa			a Cavalli island		island											
-132	Whangaroa	41	MOtu-TApere	Tarawau Kira	111.81	112.39	0.58																														Motutapere			a Cavalli island		island											
-132	Whangaroa	42	MOtu-TArawera	Tarawau Kira	113.35	114.19	0.84																														Motutarawera					island											
-132	Whangaroa	43	MOtu-WAI	Tarawau Kira	115.16	116.26	1.10																														Motuwai			Red Island		island											
-132	Whangaroa	44	MOtu-WĪwī	Tarawau Kira	117.51	118.61	1.10									Motuiwi		Motuiwi																			Motuwīwī	Motuiwi				island											
-132	Whangaroa	45	NGĀI-TŪpango	Tarawau Kira	119.86	120.66	0.80																														Ngāitūpango					meeting house	7										
-132	Whangaroa	46	NGĀi-PUhi	Tarawau Kira	122.42	123.67	1.25																														Ngāipuhi					meeting house	3										
-132	Whangaroa	47	NGĀti-ruaMAhue	Tarawau Kira	124.51	125.35	0.84																														Ngātiruamahue					meeting house	5										
+132	Whangaroa	3	Awa-ROA	Tarawau Kira	10.31	11.04	0.73									Pupuke																					Awaroa					river											
+132	Whangaroa	4	HAraweka	Tarawau Kira	13.13	13.97	0.84																														Haraweka			a Cavalli island		island											
+132	Whangaroa	5	HAUnga	Tarawau Kira	15.88	16.63	0.75																														Haunga					peak											
+132	Whangaroa	6	HĪ·HĪ	Tarawau Kira	18.34	19.12	0.78																														Hīhī					beach											
+132	Whangaroa	7	HIku-RUA	Tarawau Kira	19.86	20.73	0.87																														Hikurua					stream											
+132	Whangaroa	8	HOpekako	Tarawau Kira	22.71	23.32	0.61																														Hopekako			St Peters		peak											
+132	Whangaroa	9	HOro-NUI	Tarawau Kira	24.75	25.82	1.07																														Horonui					island											
+132	Whangaroa	10	HOro-ROA	Tarawau Kira	26.99	27.9	0.91																														Hororoa					point											
+132	Whangaroa	11	Kāea	Tarawau Kira	29.52	30.3	0.78									Kaeo																					Kāea	Kaeo				river		township									
+132	Whangaroa	12	KAhanga-ROA	Tarawau Kira	32.19	33.1	0.91																														Kahangaroa					island											
+132	Whangaroa	13	KĀ-HOE	Tarawau Kira	35.29	36.05	0.76																														Kāhoe					locality											
+132	Whangaroa	14	KAInga PĪpī-WAI	Tarawau Kira	38.81	40.16	1.35											Pipiwai																			Kainga Pīpīwai					region											
+132	Whangaroa	15	KAranga-HApe	Tarawau Kira	42.39	43.41	1.02																														Karangahape					meeting house	6										
+132	Whangaroa	16	KĒnana	Tarawau Kira	45.19	46.01	0.82																														Kēnana			(<i>Canaan</i>)		marae	2	meeting house	2	locality							
+132	Whangaroa	17	KĪ KŌpū	Tarawau Kira	47.78	48.85	1.07																														Kī Kōpū					dining hall	4										
+132	Whangaroa	18	KOhu-MAru	Tarawau Kira	51.27	52.05	0.78																														Kohumaru					river		locality									
+132	Whangaroa	19	MĀhine-PUA	Tarawau Kira	53.76	54.85	1.09																														Māhinepua			Stephenson Island		island		bay		locality							
+132	Whangaroa	20	maNGA·Iti	Tarawau Kira	57.79	58.61	0.82																														Mangaiti					marae	11										
+132	Whangaroa	21	MĀngā-PĀ	Tarawau Kira	60.4	61.41	1.01																														Māngāpā					stream		locality									
+132	Whangaroa	22	MAnga-WHEro	Tarawau Kira	63.18	64.02	0.84																														Mangawhero					locality	1										
+132	Whangaroa	23	MAngo-NUI	Tarawau Kira	65.5	66.37	0.87																														Mangonui			Bergan Point 		harbour		point		locality							
+132	Whangaroa	24	MĀpuna	Tarawau Kira	67.47	68.24	0.77																														Māpuna					rock											
+132	Whangaroa	25	maTAngirau	Tarawau Kira	70.13	71.06	0.93																														Matangirau					marae	6	locality									
+132	Whangaroa	26	maTAUri	Tarawau Kira	72.72	73.6	0.88																														Matauri					bay	3										
+132	Whangaroa	27	MAta-WHErohia	Tarawau Kira	75.79	76.88	1.09																														Matawherohia					locality											
+132	Whangaroa	28	MAUnga-TAniwha	Tarawau Kira	78.47	80.01	1.54																														Maungataniwha					peak		range									
+132	Whangaroa	29	MOtu-Eka	Tarawau Kira	80.94	81.78	0.84									Motuweka		Motuweka																			Motueka	Motuweka		Flat Island		island											
+132	Whangaroa	30	MOtu-eKA·Iti	Tarawau Kira	83.29	84.34	1.05																														Motuekaiti					island											
+132	Whangaroa	31	MOtu-HArakeke	Tarawau Kira	85.48	86.54	1.06																														Motuharakeke			a Cavalli island		island											
+132	Whangaroa	32	MOtu-KAha·kaha	Tarawau Kira	87.46	88.59	1.13																														Motukahakaha					bay											
+132	Whangaroa	33	MOtu-KApa	Tarawau Kira	90.4	91.24	0.84																														Motukapa					island											
+132	Whangaroa	34	MOtu-kaWA·Iti	Tarawau Kira	93.74	94.59	0.85																														Motukawaiti			Step Island (a Cavalli island)		island											
+132	Whangaroa	35	MOtu-KAwa-NUI	Tarawau Kira	96.27	97.43	1.16																														Motukawanui			a Cavalli island		island											
+132	Whangaroa	36	MOtu-KEO	Tarawau Kira	98.32	99.07	0.75																														Motukeo					island											
+132	Whangaroa	37	MOtu-KŪkupa	Tarawau Kira	100.26	101.43	1.17									Motukupa		Motukupa																			Motukūkupa	Motukupa		a Cavalli island		island											
+132	Whangaroa	38	MOtu-MUka	Tarawau Kira	102.62	103.52	0.90																														Motumuka					island											
+132	Whangaroa	39	MOtu-RAhu·rahu	Tarawau Kira	105.56	106.54	0.98																														Moturahurahu					island											
+132	Whangaroa	40	MOtu-TĀkupa	Tarawau Kira	107.49	108.61	1.12																														Motutākupa			a Cavalli island		island											
+132	Whangaroa	41	MOtu-TApere	Tarawau Kira	109.82	110.62	0.80																														Motutapere			a Cavalli island		island											
+132	Whangaroa	42	MOtu-TArawera	Tarawau Kira	111.81	112.39	0.58																														Motutarawera					island											
+132	Whangaroa	43	MOtu-WAI	Tarawau Kira	113.35	114.19	0.84																														Motuwai			Red Island		island											
+132	Whangaroa	44	MOtu-WĪwī	Tarawau Kira	115.16	116.26	1.10									Motuiwi		Motuiwi																			Motuwīwī	Motuiwi				island											
+132	Whangaroa	45	NGĀI-TŪpango	Tarawau Kira	117.51	118.61	1.10																														Ngāitūpango					meeting house	7										
+132	Whangaroa	46	NGĀi-PUhi	Tarawau Kira	119.86	120.66	0.80																														Ngāipuhi					meeting house	3										
+132	Whangaroa	47	NGĀti-ruaMAhue	Tarawau Kira	122.42	123.67	1.25																														Ngātiruamahue					meeting house	5										
 132	Whangaroa	48	Nukumai				0.00									Nukumai																					Nukumai					meeting house	8a										
-132	Whangaroa	49	NUku-TAUnga	Tarawau Kira	126.32	127.24	0.92																														Nukutaunga			a Cavalli island		island											
-132	Whangaroa	50	ō-HĀ-KIri	Tarawau Kira	129.18	130.08	0.90																														Ōhākiri			St Pauls		peak											
-132	Whangaroa	51	o-HAUroro	Tarawau Kira	131.57	132.77	1.20																														Ohauroro			Peach Island		island											
-132	Whangaroa	52	ō-kāHAU-TAUmanga	Tarawau Kira	134.02	134.84	0.82																														Ōkāhautaumanga					peak											
-132	Whangaroa	53	ŌMAte	Tarawau Kira	136.3	137.2	0.90																														Ōmate					island											
-132	Whangaroa	54	ō-MAUnu	Tarawau Kira	138.63	139.62	0.99																														Ōmaunu					stream		locality									
-132	Whangaroa	55	ō-PŌ-NUI	Tarawau Kira	141.07	141.9	0.83																														Ōpōnui					point											
-132	Whangaroa	56	Oro-TEre	Tarawau Kira	143.71	144.53	0.82																														Orotere					locality											
-132	Whangaroa	57	Ō-ruA·Iti	Tarawau Kira	146.05	146.56	0.51																														Ōruaiti					locality											
-132	Whangaroa	58	Ōruru	Tarawau Kira	148.55	149.5	0.95																														Ōruru					locality											
-132	Whangaroa	59	o-TAngaroa	Tarawau Kira	151.02	151.81	0.79																														Otangaroa					river		locality									
-132	Whangaroa	60	o-TOnga	Tarawau Kira	153.76	154.54	0.78																														Otonga					point											
-132	Whangaroa	61	Oto-ROA	Tarawau Kira	156.48	156.99	0.51									o-Toroa																					Otoroa					locality											
-132	Whangaroa	62	PĀ	Tarawau Kira	158.04	158.77	0.73																														Pā					island											
-132	Whangaroa	63	PĀnaki	Tarawau Kira	160.58	161.42	0.84									Panak			Panak																		Pānaki					island											
-132	Whangaroa	64	PApakura	Tarawau Kira	162.77	163.57	0.80																														Papakura					pek											
-132	Whangaroa	65	paRĀoa-NUI	Tarawau Kira	165.13	166.09	0.96																														Parāoanui					locality											
-132	Whangaroa	66	PĀ-RUA	Tarawau Kira	167.18	167.79	0.61																														Pārua					bay											
-132	Whangaroa	67	PAtunga	Tarawau Kira	168.96	169.6	0.64															but see Te Patunga															Patunga																
-132	Whangaroa	68	PIA·PIA	Tarawau Kira	171.68	172.29	0.61																														Piapia					bay											
-132	Whangaroa	69	PĪnea	Tarawau Kira	174.17	175.07	0.90																														Pīnea					point											
-132	Whangaroa	70	PŪhanga-TOhoraka	Tarawau Kira	176.72	177.08	0.36																														Pūhangatohoraka					peak											
-132	Whangaroa	71	PUke-TAkahia	Tarawau Kira	178.91	179.52	0.61																														Puketakahia					point											
-132	Whangaroa	72	PUpuke	Tarawau Kira	180.61	181.63	1.02																														Pupuke					point											
-132	Whangaroa	73	RAngi-KĀpiti	Tarawau Kira	183.55	184.19	0.64																														Rangikāpiti					river		locality	5								
-132	Whangaroa	74	RĪriwha	Tarawau Kira	185.88	186.77	0.89																														Rīriwha					head											
-132	Whangaroa	75	TAE-MĀro	Tarawau Kira	189.13	189.76	0.63															on Stephenson Island															Taemāro					peak											
-132	Whangaroa	76	taHĀwai	Tarawau Kira	190.52	191.15	0.63																														Tahāwai					bay		locality									
-132	Whangaroa	77	TAkahī	Tarawau Kira	192.85	193.64	0.79																														Takahī					marae	5										
-132	Whangaroa	78	TAkakurī	Tarawau Kira	196.35	197.07	0.72																														Takakurī			Haystack Island		island											
-132	Whangaroa	79	TAka-RAU	Tarawau Kira	199.43	200.09	0.66																														Takarau					stream		block									
-132	Whangaroa	80	TĀkou	Tarawau Kira	201.58	202.26	0.68																														Tākou					bay											
-132	Whangaroa	81	taRAIre	Tarawau Kira	203.67	204.45	0.78																														Taraire					Bay		locality									
-132	Whangaroa	82	TAraIre	Tarawau Kira	204.95	206.35	1.40																														Taraire					stream											
-132	Whangaroa	83	TAra·tara	Tarawau Kira	207.35	208.19	0.84																														Taratara					rock											
-132	Whangaroa	84	TAU te RAngiMArie	Tarawau Kira	210.01	210.77	0.76																														Tau te Rangimarie					meeting house	11										
-132	Whangaroa	85	TAUpō	Tarawau Kira	212.76	214.1	1.34																														Taupō					Bay		locality									
-132	Whangaroa	86	TAUranga	Tarawau Kira	214.9	215.59	0.69																														Tauranga					Bay		Valley		localities							
-132	Whangaroa	87	te Āniwa·niwa TOA	Tarawau Kira	216.65	217.4	0.75																														Te Āniwaniwa Toa			Rainbow Warrior		historic wreck											
-132	Whangaroa	88	te Aroha	Tarawau Kira	219.04	219.75	0.71																														Te Aroha					meeting house	1										
-132	Whangaroa	89	te Awa-ROA	Tarawau Kira	221.33	222.27	0.94																														Te Awaroa					meeting house	5										
-132	Whangaroa	90	te HUIa	Tarawau Kira	224.08	224.78	0.70																														Te Huia					locality											
-132	Whangaroa	91	te KIripaka	Tarawau Kira	225.79	226.53	0.74																														Te Kiripaka					marae	7										
-132	Whangaroa	92	te MAhimahi	Tarawau Kira	227.75	228.53	0.78																														Te Mahimahi					locality											
-132	Whangaroa	93	te NGAIre	Tarawau Kira	229.67	230.39	0.72									Te Ngaere			Te Ngaere																		Te Ngaire	Te Ngaere				rock		locality 	7								
-132	Whangaroa	94	te PAtunga	Tarawau Kira	231.12	234.22	3.10																														Te Patunga	Patunga				marae	4	locality 	4								
-132	Whangaroa	95	te PEne	Tarawau Kira	235.82	236.61	0.79																														Te Pene					peak											
-132	Whangaroa	96	te POkopoko ō HIne-NUI-te-PŌ	Tarawau Kira	237.7	238.73	1.03																														Te Pokopoko ō Hine-nui-te-pō			Whangaroa Head		head											
-132	Whangaroa	97	te REInga	Tarawau Kira	239.98	241.45	1.47																														Te Reinga					bay											
-132	Whangaroa	98	te ROto-MAnu-AO	Tarawau Kira	243.72	244.59	0.87																														Te Rotomanuao					peak											
-132	Whangaroa	99	te Ure-NUI ō MĀui	Tarawau Kira	247.88	248.75	0.87																														Te Urenui ō Māui			Whangaroa Head		head											
-132	Whangaroa	100	te WĀtea	Tarawau Kira	251.01	251.71	0.70																														Te Wātea					meeting house	4										
-132	Whangaroa	101	te WHAnga-ROA	Tarawau Kira	253.3	254.09	0.79																														Te Whangaroa					harbour		bay									
-132	Whangaroa	102	te-KUra	Tarawau Kira	255.38	256.2	0.82																														Tekura					rocks											
-132	Whangaroa	103	TŌtara 	Tarawau Kira	257.4	258.34	0.94																														Tōtara 			Tōtara North		locality											
-132	Whangaroa	104	TŌu-WAI	Tarawau Kira	259.85	260.55	0.70																														Tōuwai					stream		bay									
-132	Whangaroa	105	Upoko-RAU	Tarawau Kira	261.66	262.88	1.22																														Upokorau					locality											
-132	Whangaroa	106	WAIari	Tarawau Kira	263.9	264.74	0.84																														Waiari					locality											
-132	Whangaroa	107	WAIaua	Tarawau Kira	265.98	266.91	0.93																														Waiaua					bay											
-132	Whangaroa	108	WAI-HApa	Tarawau Kira	267.44	268.41	0.97																														Waihapa					locality											
-132	Whangaroa	109	WAI-MAhana	Tarawau Kira	269.21	270.13	0.92																														Waimahana					locality	10										
-132	Whangaroa	110	te WAI-NUI	Tarawau Kira	271.72	272.56	0.84																														Te Wainui	Wainui				river		bay		marae	8						
-132	Whangaroa	111	WAI-One-PŪ	Tarawau Kira	273.91	274.89	0.98																														Waionepū					stream	10										
-132	Whangaroa	112	waiRĀkau	Tarawau Kira	275.95	276.88	0.93																														Wairākau					bay											
-132	Whangaroa	113	waiRAUpō	Tarawau Kira	277.93	278.99	1.06																														Wairaupō			Milford Island		island											
-132	Whangaroa	114	te wai-TApu	Tarawau Kira	280.89	281.76	0.87																														Te Waitapu	Waitapu				stream		bay									
-132	Whangaroa	115	WAI-TĀruke	Tarawau Kira	283.77	284.64	0.87																														Waitāruke					locality											
-132	Whangaroa	116	WEka-RUA	Tarawau Kira	286.02	286.9	0.88																														Wekarua			Sugarloaf Island		island											
-132	Whangaroa	117	WHAInga-ROA	Tarawau Kira	288.69	289.62	0.93																														Whaingaroa					harbour		bay		towship							
-132	Whangaroa	118	whaKA·Angi	Tarawau Kira	291.15	291.99	0.84																														Whakaangi					peak											
-132	Whangaroa	119	whaka·RĀrā	Tarawau Kira	292.81	293.73	0.92																														Whakarārā					mountain											
-132	Whangaroa	120	WHAnga-ROA	Tarawau Kira			0.00															See also Whaingaroa															Whangaroa																
-132	Whangaroa	121	WHAtu-PUke	Tarawau Kira			0.00																														Whatupuke					island											
+132	Whangaroa	49	NUku-TAUnga	Tarawau Kira	124.51	125.35	0.84																														Nukutaunga			a Cavalli island		island											
+132	Whangaroa	50	ō-HĀ-KIri	Tarawau Kira	126.32	127.24	0.92																														Ōhākiri			St Pauls		peak											
+132	Whangaroa	51	o-HAUroro	Tarawau Kira	129.18	130.08	0.90																														Ohauroro			Peach Island		island											
+132	Whangaroa	52	ō-kāHAU-TAUmanga	Tarawau Kira	131.57	132.77	1.20																														Ōkāhautaumanga					peak											
+132	Whangaroa	53	ŌMAte	Tarawau Kira	134.02	134.84	0.82																														Ōmate					island											
+132	Whangaroa	54	ō-MAUnu	Tarawau Kira	136.3	137.2	0.90																														Ōmaunu					stream		locality									
+132	Whangaroa	55	ō-PŌ-NUI	Tarawau Kira	138.63	139.62	0.99																														Ōpōnui					point											
+132	Whangaroa	56	Oro-TEre	Tarawau Kira	141.07	141.9	0.83																														Orotere					locality											
+132	Whangaroa	57	Ō-ruA·Iti	Tarawau Kira	143.71	144.53	0.82																														Ōruaiti					locality											
+132	Whangaroa	58	Ōruru	Tarawau Kira	146.05	146.56	0.51																														Ōruru					locality											
+132	Whangaroa	59	o-TAngaroa	Tarawau Kira	148.55	149.5	0.95																														Otangaroa					river		locality									
+132	Whangaroa	60	o-TOnga	Tarawau Kira	151.02	151.81	0.79																														Otonga					point											
+132	Whangaroa	61	Oto-ROA	Tarawau Kira	153.76	154.54	0.78									o-Toroa																					Otoroa					locality											
+132	Whangaroa	62	PĀ	Tarawau Kira	156.48	156.99	0.51																														Pā					island											
+132	Whangaroa	63	PĀnaki	Tarawau Kira	158.04	158.77	0.73									Panak			Panak																		Pānaki					island											
+132	Whangaroa	64	PApakura	Tarawau Kira	160.58	161.42	0.84																														Papakura					pek											
+132	Whangaroa	65	paRĀoa-NUI	Tarawau Kira	162.77	163.57	0.80																														Parāoanui					locality											
+132	Whangaroa	66	PĀ-RUA	Tarawau Kira	165.13	166.09	0.96																														Pārua					bay											
+132	Whangaroa	67	PAtunga	Tarawau Kira	167.18	167.79	0.61															but see Te Patunga															Patunga																
+132	Whangaroa	68	PIA·PIA	Tarawau Kira	168.96	169.6	0.64																														Piapia					bay											
+132	Whangaroa	69	PĪnea	Tarawau Kira	171.68	172.29	0.61																														Pīnea					point											
+132	Whangaroa	70	PŪhanga-TOhoraka	Tarawau Kira	174.17	175.07	0.90																														Pūhangatohoraka					peak											
+132	Whangaroa	71	PUke-TAkahia	Tarawau Kira	176.72	177.6	0.88																														Puketakahia					point											
+132	Whangaroa	72	PUpuke	Tarawau Kira	178.91	179.7	0.79																														Pupuke					point											
+132	Whangaroa	73	RAngi-KĀpiti	Tarawau Kira	180.61	181.63	1.02																														Rangikāpiti					river		locality	5								
+132	Whangaroa	74	RĪriwha	Tarawau Kira	183.55	184.19	0.64																														Rīriwha					head											
+132	Whangaroa	75	TAE-MĀro	Tarawau Kira	185.88	186.77	0.89															on Stephenson Island															Taemāro					peak											
+132	Whangaroa	76	taHĀwai	Tarawau Kira	189.13	189.76	0.63																														Tahāwai					bay		locality									
+132	Whangaroa	77	TAkahī	Tarawau Kira	190.52	191.15	0.63																														Takahī					marae	5										
+132	Whangaroa	78	TAkakurī	Tarawau Kira	192.85	193.64	0.79																														Takakurī			Haystack Island		island											
+132	Whangaroa	79	TAka-RAU	Tarawau Kira	196.35	197.07	0.72																														Takarau					stream		block									
+132	Whangaroa	80	TĀkou	Tarawau Kira	199.43	200.09	0.66																														Tākou					Bay		locality									
+132	Whangaroa	81	taRAIre	Tarawau Kira	201.58	202.26	0.68																														Taraire					stream											
+132	Whangaroa	83	TAra·tara	Tarawau Kira	203.67	204.45	0.78																														Taratara					rock											
+132	Whangaroa	84	TAU te RAngiMArie	Tarawau Kira	204.95	206.35	1.40																														Tau te Rangimarie					meeting house	11										
+132	Whangaroa	85	TAUpō	Tarawau Kira	207.35	208.19	0.84																														Taupō					Bay		locality									
+132	Whangaroa	86	TAUranga	Tarawau Kira	210.01	210.77	0.76																														Tauranga					Bay		Valley		localities							
+132	Whangaroa	87	te Āniwa·niwa TOA	Tarawau Kira	212.76	214.1	1.34																														Te Āniwaniwa Toa			Rainbow Warrior		historic wreck											
+132	Whangaroa	88	te Aroha	Tarawau Kira	214.9	215.59	0.69																														Te Aroha					meeting house	1										
+132	Whangaroa	89	te Awa-ROA	Tarawau Kira	216.65	217.4	0.75																														Te Awaroa					meeting house	5										
+132	Whangaroa	90	te HUIa	Tarawau Kira	219.04	219.75	0.71																														Te Huia					locality											
+132	Whangaroa	91	te KIripaka	Tarawau Kira	221.33	222.27	0.94																														Te Kiripaka					marae	7										
+132	Whangaroa	92	te MAhimahi	Tarawau Kira	224.08	224.78	0.70																														Te Mahimahi					locality											
+132	Whangaroa	93	te NGAIre	Tarawau Kira	225.79	226.53	0.74									Te Ngaere			Te Ngaere																		Te Ngaire	Te Ngaere				rock		locality 	7								
+132	Whangaroa	94	te PAtunga	Tarawau Kira	227.75	228.53	0.78																														Te Patunga	Patunga				marae	4	locality 	4								
+132	Whangaroa	95	te PEne	Tarawau Kira	229.67	230.39	0.72																														Te Pene					peak											
+132	Whangaroa	96	te POkopoko ō HIne-NUI-te-PŌ	Tarawau Kira	231.12	234.6	3.48																														Te Pokopoko ō Hine-nui-te-pō			Whangaroa Head		head											
+132	Whangaroa	97	te REInga	Tarawau Kira	235.82	236.61	0.79																														Te Reinga					bay											
+132	Whangaroa	98	te ROto-MAnu-AO	Tarawau Kira	237.7	238.73	1.03																														Te Rotomanuao					peak											
+132	Whangaroa	99	te Ure-NUI ō MĀui	Tarawau Kira	239.98	241.45	1.47																														Te Urenui ō Māui			Whangaroa Head		head											
+132	Whangaroa	100	te WĀtea	Tarawau Kira	243.72	244.59	0.87																														Te Wātea					meeting house	4										
+132	Whangaroa	101	te WHAnga-ROA	Tarawau Kira	247.88	248.75	0.87																														Te Whangaroa					harbour		bay									
+132	Whangaroa	102	te-KUra	Tarawau Kira	251.01	251.71	0.70																														Tekura					rocks											
+132	Whangaroa	103	TŌtara 	Tarawau Kira	253.3	254.09	0.79																														Tōtara 			Tōtara North		locality											
+132	Whangaroa	104	TŌu-WAI	Tarawau Kira	255.38	256.2	0.82																														Tōuwai					stream		bay									
+132	Whangaroa	105	Upoko-RAU	Tarawau Kira	257.4	258.34	0.94																														Upokorau					locality											
+132	Whangaroa	106	WAIari	Tarawau Kira	259.85	260.55	0.70																														Waiari					locality											
+132	Whangaroa	107	WAIaua	Tarawau Kira	261.66	262.88	1.22																														Waiaua					bay											
+132	Whangaroa	108	WAI-HApa	Tarawau Kira	263.9	264.74	0.84																														Waihapa					locality											
+132	Whangaroa	109	WAI-MAhana	Tarawau Kira	265.98	266.91	0.93																														Waimahana					locality	10										
+132	Whangaroa	110	te WAI-NUI	Tarawau Kira	267.44	268.41	0.97																														Te Wainui	Wainui				river		bay		marae	8						
+132	Whangaroa	111	WAI-One-PŪ	Tarawau Kira	269.21	270.13	0.92																														Waionepū					stream	10										
+132	Whangaroa	112	waiRĀkau	Tarawau Kira	271.72	272.56	0.84																														Wairākau					bay											
+132	Whangaroa	113	waiRAUpō	Tarawau Kira	273.91	274.89	0.98																														Wairaupō			Milford Island		island											
+132	Whangaroa	114	te wai-TApu	Tarawau Kira	275.95	276.88	0.93																														Te Waitapu	Waitapu				stream		bay									
+132	Whangaroa	115	WAI-TĀruke	Tarawau Kira	277.93	278.99	1.06																														Waitāruke					locality											
+132	Whangaroa	116	WEka-RUA	Tarawau Kira	280.89	281.76	0.87																														Wekarua			Sugarloaf Island		island											
+132	Whangaroa	117	WHAInga-ROA	Tarawau Kira	283.77	284.64	0.87																														Whaingaroa					harbour		bay		towship							
+132	Whangaroa	118	whaKA·Angi	Tarawau Kira	286.02	286.9	0.88																														Whakaangi					peak											
+132	Whangaroa	119	whaka·RĀrā	Tarawau Kira	288.69	289.62	0.93																														Whakarārā					mountain											
+132	Whangaroa	120	WHAnga-ROA	Tarawau Kira	291.15	291.99	0.84															See also Whaingaroa															Whangaroa																
+132	Whangaroa	121	WHAtu-PUke	Tarawau Kira	292.81	293.73	0.92																														Whatupuke					island											
 133	North Hokianga	0	Intro	Hugh Young	1.11	3.52	2.41																														Intro					intro											
 133	North Hokianga	1	HOki-Ānga	Joe Toki	5.77	6.89	1.12																														Hokiānga					harbour											
 133	North Hokianga	2	HŪtoia	Joe Toki	7.73	8.76	1.03																														Hūtoia					stream											
@@ -5840,66 +5838,66 @@ ZoneID	Zone	Number	SpokenName_1	Speaker_1	Start_1	End_1	#VALUE!	SpokenName_2	Spe
 133	North Hokianga	15	MOE-TAngi	Joe Toki	30.6	31.52	0.92																														Moetangi					stream											
 133	North Hokianga	16	MŌtītī	Joe Toki	31.96	33.04	1.08																														Mōtītī					island											
 133	North Hokianga	17	MOtu-KAraka	Joe Toki	33.46	34.51	1.05																														Motukaraka					marae	2	locality									
-133	North Hokianga	18	MOtu-KAUri	Joe Toki	35.08	37.49	2.41																														Motukauri					locality											
-133	North Hokianga	19	MOtu-TĪ	Joe Toki	37.92	38.88	0.96																														Motutī					marae	6	meeting house	6	locality							
-133	North Hokianga	20	ngā-HUIa	Joe Toki	39.78	44.54	4.76																														Ngāhuia					meeting house	2										
-133	North Hokianga	21	NGĀpuhi	Joe Toki	44.95	45.78	0.83	PUhi KAI Ariki, PUhi MOAna Ariki, PUhi TAniwha RAU 	Joe Toki	47	47.83																										Ngāpuhi	Puhi Kai Ariki, Puhi Moana Ariki, Puhi Taniwha Rau				meeting house	1										
-133	North Hokianga	22	NGĀti-MAnawa	Joe Toki	48.57	49.56	0.99																														Ngātimanawa					marae	3b	meeting house	3b								
-133	North Hokianga	23	ō-KĀhu	Raureti Harris	50.29	51.28	0.99																														Ōkāhu					stream											
-133	North Hokianga	24	o-MĀhuta	Raureti Harris	52.17	53.07	0.90																														Omāhuta					forest		locality									
-133	North Hokianga	25	ō-MĀkura	Raureti Harris	54	54.83	0.83																														Ōmākura					stream											
-133	North Hokianga	26	ō-PŪrehu	Raureti Harris	55.72	56.7	0.98																														Ōpūrehu					river											
-133	North Hokianga	27	Ori-RĀ	Raureti Harris	57.63	58.38	0.75																														Orirā					locality											
-133	North Hokianga	28	Oro-KAraka	Raureti Harris	59.2	60.03	0.83																														Orokaraka					locality											
-133	North Hokianga	29	Oro-WAU	Raureti Harris	60.92	61.92	1.00																														Orowau					locality											
-133	North Hokianga	30	ō-TEA	Raureti Harris	62.74	63.65	0.91																														Ōtea					locality											
-133	North Hokianga	31	ō-TŪkere	Raureti Harris	64.46	65.59	1.13																														Ōtūkere					river											
-133	North Hokianga	32	PĀ te Oro	Raureti Harris	66.98	68.73	1.75																														Pā te Oro					marae	4										
-133	North Hokianga	33	PĀ-HIko-KUrī	Raureti Harris	69.9	70.71	0.81									Paihikokuri			Paihikokuri																		Pāhikokurī	Paihikokuri				peak											
-133	North Hokianga	34	PAI-ō-KĀtutu	Raureti Harris	71.43	72.25	0.82																														Paiōkātutu					stream											
-133	North Hokianga	35	PAnguRŪ	Raureti Harris	73.05	73.84	0.79									Panguru		Panguru																			Pangurū	Panguru				locality	3										
-133	North Hokianga	36	PĀpata	Raureti Harris	74.84	75.76	0.92																														Pāpata					peak											
-133	North Hokianga	37	PĀponga	Raureti Harris	76.77	77.83	1.06																														Pāponga					locality											
-133	North Hokianga	38	PUke-POto	Raureti Harris	79.27	80.35	1.08																														Pukepoto					peak											
-133	North Hokianga	39	PUke-TŌwai	Raureti Harris	81.13	81.86	0.73																														Puketōwai					peak											
-133	North Hokianga	40	PUtu-TAUā	Raureti Harris	82.49	83.06	0.57																														Pututauā					bay											
-133	North Hokianga	41	RĀhiri	Raureti Harris	83.8	86.04	2.24																														Rāhiri					marae	9										
-133	North Hokianga	42	RAngi 	Raureti Harris	86.6	87.48	0.88																														Rangi					Point		locality	8								
-133	North Hokianga	43	RAngi-Āhua	Raureti Harris	88.34	89.02	0.68																														Rangiāhua					township											
-133	North Hokianga	44	RAngiora	Raureti Harris	90.22	91.16	0.94																														Rangiora					locality											
-133	North Hokianga	45	RĀwhia	Raureti Harris	92.22	93.05	0.83																														Rāwhia					locality											
-133	North Hokianga	46	REEna	Raureti Harris	93.71	94.55	0.84																														Reena				double vowel	locality											
-133	North Hokianga	47	TAI-KArawa	Raureti Harris	95.28	96.14	0.86																														Taikarawa					stream											
-133	North Hokianga	48	TAme·tame	Raureti Harris	96.82	97.37	0.55																														Tametame					region											
-133	North Hokianga	49	TApuwae	Raureti Harris	98.34	99	0.66																														Tapuwae					locality											
-133	North Hokianga	50	TArakeha	Raureti Harris	99.84	100.56	0.72																														Tarakeha					peak											
-133	North Hokianga	51	TAUwhare	Raureti Harris	101.41	102.13	0.72																														Tauwhare					peak											
-133	North Hokianga	52	te Aroha	Bob Harris	102.87	103.71	0.84									Piki	Piki Te Aroha																				Piki te Aroha				Is is likely the speaker was unaware that Piki Te Aroha was the intended name.	meeting house	9										
-133	North Hokianga	53	te HUAhua	Bob Harris	104.56	106.05	1.49																														Te Huahua					locality											
-133	North Hokianga	54	te kaRAE	Bob Harris	106.91	108.06	1.15																														Te Karae					stream		meeting house	4	locality							
-133	North Hokianga	55	te KAraka	Bob Harris	108.88	109.77	0.89																														Te Karaka					locality											
-133	North Hokianga	56	te PUna o te AO MĀrama	Bob Harris	110.68	111.37	0.69																														Te Puna o te Ao Mārama					meeting house	3a										
-133	North Hokianga	57	te ROto-MAnu-AO	Bob Harris	112.21	113.08	0.87																														Te Rotomanuao					peak											
-133	North Hokianga	58	te WAI-POka	Bob Harris	114	114.89	0.89																														Te Waipoka					stream											
+133	North Hokianga	18	MOtu-KAUri	Joe Toki	35.08	36.3	1.22																														Motukauri					locality											
+133	North Hokianga	19	MOtu-TĪ	Joe Toki	36.5	37.49	0.99																														Motutī					marae	6	meeting house	6	locality							
+133	North Hokianga	20	ngā-HUIa	Joe Toki	37.92	38.88	0.96																														Ngāhuia					meeting house	2										
+133	North Hokianga	21	NGĀpuhi	Joe Toki	39.78	40.75	0.97	PUhi KAI Ariki, PUhi MOAna Ariki, PUhi TAniwha RAU 	Joe Toki	40.85	44.54																										Ngāpuhi	Puhi Kai Ariki, Puhi Moana Ariki, Puhi Taniwha Rau				meeting house	1										
+133	North Hokianga	22	NGĀti-MAnawa	Joe Toki	44.95	45.78	0.83																														Ngātimanawa					marae	3b	meeting house	3b								
+133	North Hokianga	23	ō-KĀhu	Raureti Harris	47	47.83	0.83																														Ōkāhu					stream											
+133	North Hokianga	24	o-MĀhuta	Raureti Harris	48.57	49.56	0.99																														Omāhuta					forest		locality									
+133	North Hokianga	25	ō-MĀkura	Raureti Harris	50.29	51.28	0.99																														Ōmākura					stream											
+133	North Hokianga	26	ō-PŪrehu	Raureti Harris	52.17	53.07	0.90																														Ōpūrehu					river											
+133	North Hokianga	27	Ori-RĀ	Raureti Harris	54	54.83	0.83																														Orirā					locality											
+133	North Hokianga	28	Oro-KAraka	Raureti Harris	55.72	56.7	0.98																														Orokaraka					locality											
+133	North Hokianga	29	Oro-WAU	Raureti Harris	57.63	58.38	0.75																														Orowau					locality											
+133	North Hokianga	30	ō-TEA	Raureti Harris	59.2	60.03	0.83																														Ōtea					locality											
+133	North Hokianga	31	ō-TŪkere	Raureti Harris	60.92	61.92	1.00																														Ōtūkere					river											
+133	North Hokianga	32	PĀ te Oro	Raureti Harris	62.74	63.65	0.91																														Pā te Oro					marae	4										
+133	North Hokianga	33	PĀ-HIko-KUrī	Raureti Harris	64.46	65.59	1.13									Paihikokuri			Paihikokuri																		Pāhikokurī	Paihikokuri				peak											
+133	North Hokianga	34	PAI-ō-KĀtutu	Raureti Harris	66.98	68.73	1.75																														Paiōkātutu					stream											
+133	North Hokianga	35	PAnguRŪ	Raureti Harris	69.9	70.71	0.81									Panguru		Panguru																			Pangurū	Panguru				locality	3										
+133	North Hokianga	36	PĀpata	Raureti Harris	71.43	72.25	0.82																														Pāpata					peak											
+133	North Hokianga	37	PĀponga	Raureti Harris	73.05	73.84	0.79																														Pāponga					locality											
+133	North Hokianga	38	PUke-POto	Raureti Harris	74.84	75.76	0.92																														Pukepoto					peak											
+133	North Hokianga	39	PUke-TŌwai	Raureti Harris	76.77	77.83	1.06																														Puketōwai					peak											
+133	North Hokianga	40	PUtu-TAUā	Raureti Harris	79.27	80.35	1.08																														Pututauā					bay											
+133	North Hokianga	41	RĀhiri	Raureti Harris	81.13	81.86	0.73																														Rāhiri					marae	9										
+133	North Hokianga	42	RAngi 	Raureti Harris	82.49	83.06	0.57																														Rangi					Point		locality	8								
+133	North Hokianga	43	RAngi-Āhua	Raureti Harris	83.8	84.95	1.15																														Rangiāhua					township											
+133	North Hokianga	44	RAngiora	Raureti Harris	85.2	86.04	0.84																														Rangiora					locality											
+133	North Hokianga	45	RĀwhia	Raureti Harris	86.6	87.48	0.88																														Rāwhia					locality											
+133	North Hokianga	46	REEna	Raureti Harris	88.34	89.02	0.68																														Reena				double vowel	locality											
+133	North Hokianga	47	TAI-KArawa	Raureti Harris	90.22	91.16	0.94																														Taikarawa					stream											
+133	North Hokianga	48	TAme·tame	Raureti Harris	92.22	93.05	0.83																														Tametame					region											
+133	North Hokianga	49	TApuwae	Raureti Harris	93.71	94.55	0.84																														Tapuwae					locality											
+133	North Hokianga	50	TArakeha	Raureti Harris	95.28	96.14	0.86																														Tarakeha					peak											
+133	North Hokianga	51	TAUwhare	Raureti Harris	96.82	97.37	0.55																														Tauwhare					peak											
+133	North Hokianga	52	te Aroha	Bob Harris	98.34	99	0.66									Piki	Piki Te Aroha																				Piki te Aroha				Is is likely the speaker was unaware that Piki Te Aroha was the intended name.	meeting house	9										
+133	North Hokianga	53	te HUAhua	Bob Harris	99.84	100.56	0.72																														Te Huahua					locality											
+133	North Hokianga	54	te kaRAE	Bob Harris	101.41	102.13	0.72																														Te Karae					stream		meeting house	4	locality							
+133	North Hokianga	55	te KAraka	Bob Harris	102.87	103.71	0.84																														Te Karaka					locality											
+133	North Hokianga	56	te PUna o te AO MĀrama	Bob Harris	104.56	106.05	1.49																														Te Puna o te Ao Mārama					meeting house	3a										
+133	North Hokianga	57	te ROto-MAnu-AO	Bob Harris	106.91	108.06	1.15																														Te Rotomanuao					peak											
+133	North Hokianga	58	te WAI-POka	Bob Harris	108.88	109.77	0.89																														Te Waipoka					stream											
 133	North Hokianga	59	Topi				0.00									Topi																					Topi					peak											
-133	North Hokianga	60	TŌtara	Bob Harris	115.8	116.78	0.98																														Tōtara					point 											
-133	North Hokianga	61	TŪmanako	Bob Harris	117.84	119.17	1.33																														Tūmanako					dining hall	6										
-133	North Hokianga	62	TŪ-MOAna	Bob Harris	120.35	121.18	0.83																														Tūmoana					meeting house	7										
-133	North Hokianga	63	tŪ-te-KĒhua	Bob Harris	122.44	123.35	0.91																														Tūtekēhua					locality											
-133	North Hokianga	64	uMA·Uma-KAroro	Bob Harris	124.42	125.18	0.76																														Umaumakaroro					peak											
-133	North Hokianga	65	Umawera	Bob Harris	125.97	126.94	0.97																														Umawera					locality											
-133	North Hokianga	66	Uru-NGAio	Bob Harris	127.87	128.83	0.96																														Urungaio					locality											
-133	North Hokianga	67	WAI-HOU	Bob Harris	129.77	130.78	1.01																														Waihou					river		stream		marae	5						
-133	North Hokianga	68	WAI-KErehū	Bob Harris	131.78	132.72	0.94																														Waikerehū					stream											
-133	North Hokianga	69	WAI-MĀhe	Bob Harris	133.81	134.61	0.80																														Waimāhe					stream											
-133	North Hokianga	70	WAI-MIrirangi	Bob Harris	135.58	136.47	0.89																														Waimirirangi					meeting house	5										
-133	North Hokianga	71	WAI-PArera	Bob Harris	137.5	138.26	0.76																														Waiparera					marae	8										
-133	North Hokianga	72	WAIpuna	Bob Harris	139.12	140.17	1.05																														Waipuna					marae	3a										
-133	North Hokianga	73	WAItapu	Bob Harris	140.95	141.73	0.78																														Waitapu	Te Waitapu				locality											
-133	North Hokianga	74	WAra·wara	Bob Harris	142.79	143.86	1.07																														Warawara					peak											
-133	North Hokianga	75	whake-NEke·neke	Bob Harris			0.00																														Whakenekeneke					river											
-133	North Hokianga	76	whaka·RApa	Bob Harris			0.00																														Whakarapa					stream											
-133	North Hokianga	77	whaka·teTErekia	Bob Harris			0.00																														Whakateterekia					stream											
+133	North Hokianga	60	TŌtara	Bob Harris	110.68	111.37	0.69																														Tōtara					point 											
+133	North Hokianga	61	TŪmanako	Bob Harris	112.21	113.08	0.87																														Tūmanako					dining hall	6										
+133	North Hokianga	62	TŪ-MOAna	Bob Harris	114	114.89	0.89																														Tūmoana					meeting house	7										
+133	North Hokianga	63	tŪ-te-KĒhua	Bob Harris	115.8	116.78	0.98																														Tūtekēhua					locality											
+133	North Hokianga	64	uMA·Uma-KAroro	Bob Harris	117.84	119.17	1.33																														Umaumakaroro					peak											
+133	North Hokianga	65	Umawera	Bob Harris	120.35	121.18	0.83																														Umawera					locality											
+133	North Hokianga	66	Uru-NGAio	Bob Harris	122.44	123.35	0.91																														Urungaio					locality											
+133	North Hokianga	67	WAI-HOU	Bob Harris	124.42	125.18	0.76																														Waihou					river		stream		marae	5						
+133	North Hokianga	68	WAI-KErehū	Bob Harris	125.97	126.94	0.97																														Waikerehū					stream											
+133	North Hokianga	69	WAI-MĀhe	Bob Harris	127.87	128.83	0.96																														Waimāhe					stream											
+133	North Hokianga	70	WAI-MIrirangi	Bob Harris	129.77	130.78	1.01																														Waimirirangi					meeting house	5										
+133	North Hokianga	71	WAI-PArera	Bob Harris	131.78	132.72	0.94																														Waiparera					marae	8										
+133	North Hokianga	72	WAIpuna	Bob Harris	133.81	134.61	0.80																														Waipuna					marae	3a										
+133	North Hokianga	73	WAItapu	Bob Harris	135.58	136.47	0.89																														Waitapu	Te Waitapu				locality											
+133	North Hokianga	74	WAra·wara	Bob Harris	137.5	138.26	0.76																														Warawara					peak											
+133	North Hokianga	75	whake-NEke·neke	Bob Harris	139.12	140.17	1.05																														Whakenekeneke					river											
+133	North Hokianga	76	whaka·RApa	Bob Harris	140.95	141.73	0.78																														Whakarapa					stream											
+133	North Hokianga	77	whaka·teTErekia	Bob Harris	142.79	143.86	1.07																														Whakateterekia					stream											
 134	Herekino/Broadwood	0	Intro	Hugh Young	1.12	3.2	2.08																														Intro					intro											
 134	Herekino/Broadwood	1	Awaroa	Bob Harris	5.5	6.15	0.65																														Awaroa					river		locality									
 134	Herekino/Broadwood	2	HErekino	Bob Harris	7.22	7.89	0.67																														Herekino					locality											
@@ -5931,7 +5929,7 @@ ZoneID	Zone	Number	SpokenName_1	Speaker_1	Start_1	End_1	#VALUE!	SpokenName_2	Spe
 134	Herekino/Broadwood	28	WAI-o-te-HUe	Bob Harris	57.09	57.9	0.81																														Waiotehue					locality											
 134	Herekino/Broadwood	29	WAItawa	Bob Harris	58.57	59.2	0.63																														Waitawa					peak											
 134	Herekino/Broadwood	30	whaka·maHAratanga	Bob Harris	60.36	61.34	0.98																														Whakamaharatanga					meeting house	1										
-134	Herekino/Broadwood	31	WHĀngā-PĒ	Bob Harris	62.49	63.27	0.78																														Whāngāpē					harbour		locality		marae	2	meeting house	2				
+134	Herekino/Broadwood	31	WHĀngā-PĒ	Bob Harris	62.49	63.27	0.78	timing correct to here																													Whāngāpē					harbour		locality		marae	2	meeting house	2				
 135	Kaitāia	0	Intro	Hugh Young	1.56	3.81	2.25																														Intro					intro											
 135	Kaitāia	1	Ahipara	Ross Gregory	5.96	6.69	0.73																														Ahipara					bay		locality	1								
 135	Kaitāia	2	HUkatere	Ross Gregory	8.38	9.02	0.64																														Hukatere					stream											

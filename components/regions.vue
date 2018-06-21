@@ -11,7 +11,7 @@ import region from '~/components/region.vue'
 
 export default {
 	props: {
-		regions: Object
+		regions: Array
 	},
 	components: {
     region

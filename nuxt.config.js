@@ -24,29 +24,60 @@ module.exports = {
   build: {
     vendor: ['axios']
 	},
-	plugins: ['~plugins/filters.js'],
+	plugins: [
+		'~plugins/filters.js',
+		'~/plugins/mixins'
+	],
 	modules: [
+		'@nuxtjs/axios',
+		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 		'@nuxtjs/pwa',
 		'@nuxtjs/vuetify',
 		['nuxt-i18n', {
-      locales: [{
+			parsePages: false,
+			seo: false,
+			strategy: 'prefix_except_default',
+			defaultLocale: 'en',
+			lazy: true,
+			langDir: 'lang/',
+			locales: [{
 				code: 'en',
 				name: 'English',
 				image: '/media/images/language/en.png',
-				svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><clipPath id="a"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0v30h60V0z" fill="#00247d"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#a)" stroke="#cf142b" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#cf142b" stroke-width="6"/></svg>',
 				file: 'en.js'
 			},
 			{
 				code: 'mi',
 				name: 'Māori',
 				image: '/media/images/language/mi.png',
-				svg: '<svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 108 60"><path fill="#FFF" d="M0 0h1080v600H0"/><path d="M0 80h300a135 135 0 0 1 0 270h780V0H0"/><path fill="#d40000" d="M0 190h300a80 80 0 0 1 0 160 55 55 0 0 0 0-110 110 110 0 0 0 0 220h780v140H0"/></svg>',
 				file: 'mi.js'
 			}],
-			strategy: 'prefix_except_default',
-			defaultLocale: 'en',
-			lazy: true,
-			langDir: 'lang/'
+			pages: {
+				about: {
+					en: '/about',
+					mi: '/mo',
+				},
+				regions: {
+					en: '/regions',
+					mi: '/whaitua'
+				},
+				'regions/_region': {
+					en: '/regions/:region',
+					mi: '/whaitua/:region'
+				},
+				islands: {
+					en: '/islands',
+					mi: '/motu'
+				},
+				'islands/_island': {
+					en: '/islands/:island',
+					mi: '/motu/:island'
+				},
+				zones: {
+					en: '/zones',
+					mi: '/hauni'
+				}
+			}
     }]
 	]
 }

@@ -7,10 +7,10 @@
 			</v-toolbar-title>
 			<v-spacer></v-spacer>
 			<v-toolbar-items>
-				<v-btn flat><nuxt-link :to="localePath({name: 'islands'})">{{$tc('island', 2) | titlecase}}</nuxt-link></v-btn>
-				<v-btn flat><nuxt-link :to="localePath({name: 'regions'})">{{$tc('region', 2) | titlecase}}</nuxt-link></v-btn>
-				<v-btn flat><nuxt-link :to="localePath({name: 'zones'})">{{$tc('zone', 2) | titlecase}}</nuxt-link></v-btn>
-				<v-btn flat><nuxt-link :to="localePath({name: 'speakers'})">{{$tc('speaker', 2) | titlecase}}</nuxt-link></v-btn>
+				<v-btn flat><nuxt-link :to="localePath('islands')">{{$tc('island', 2) | titlecase}}</nuxt-link></v-btn>
+				<v-btn flat><nuxt-link :to="localePath('regions')">{{$tc('region', 2) | titlecase}}</nuxt-link></v-btn>
+				<v-btn flat><nuxt-link :to="localePath('zones')">{{$tc('zone', 2) | titlecase}}</nuxt-link></v-btn>
+				<v-btn flat><nuxt-link :to="localePath('speakers')">{{$tc('speaker', 2) | titlecase}}</nuxt-link></v-btn>
 			</v-toolbar-items>
 			<v-spacer></v-spacer>
 			<nuxt-link v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :key="locale.code" :to="switchLocalePath(locale.code)" class="mt-4 text-xs-center">

@@ -1,8 +1,9 @@
 <template>
   <section>
-    <h1 class="display-2 mt-5">{{island.name}}</h1>
-		<h2 class="display-1 mb-4" v-if="island.tereo != island.name">{{island.tereo}}</h2>
+    <h1 class="display-2 mt-5">{{localeName(island.name)}}</h1>
+		<h2 class="display-1 mb-4">{{localeAltName(island.name)}}</h2>
 		<p v-html="island.description"></p>
+		<imagemaps :imagemaps="island.imagemaps"/>
 		<h3 class="display-1 mt-5 mb-4">{{$tc('region', 2) | titlecase}}</h3>
 		<regions :regions="island.regions"/>
   </section>
@@ -15,11 +16,12 @@ import imagemaps from '~/components/imagemaps.vue'
 
 export default {
 	components: {
-    regions
+		regions,
+		imagemaps
+
   },
   async asyncData (context) {
-    //const island = await axios.get('/api/islands/' + context.params.island + '/regions');
-    const imagemaps = await axios.get('/api/imagemaps/' + context.params.island + '/regions');
+    const island = await axios.get('/api/islands/' + context.params.island + '?depth=1');
     return {island: island.data};
   },
   head () {

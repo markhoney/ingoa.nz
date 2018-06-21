@@ -18,7 +18,7 @@ export default {
   },
   async asyncData (context) {
     const {data} = await axios.get('/api/zones/' + context.params.code);
-    return {data: zone};
+    return {zone: data};
   },
   head () {
     return {

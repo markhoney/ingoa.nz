@@ -17,8 +17,8 @@ export default {
     AudioPlayer
   },
   async asyncData (context) {
-    const {zone} = await axios.get('/api/zones/' + context.params.code);
-    return {zone: zone};
+    const {data} = await axios.get('/api/zones/' + context.params.zone);
+    return {zone: data};
   },
   head () {
     return {

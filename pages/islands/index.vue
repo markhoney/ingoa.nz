@@ -6,16 +6,15 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
 import islands from '~/components/islands.vue'
 
 export default {
 	components: {
     islands
   },
-  async asyncData () {
-    const {islands} = await axios.get('/api/islands')
-    return {islands: islands}
+  async asyncData (context) {
+    const data = await context.app.$axios.$get('/api/islands')
+    return {islands: data}
   },
   head () {
     return {
