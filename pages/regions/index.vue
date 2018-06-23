@@ -2,13 +2,13 @@
   <section>
     <h1 class="display-2">{{$tc('region', 2) | titlecase}}</h1>
 		<template v-for="island in islands">
-			<v-subheader class="display-1 mt-5 mb-3" :key="island.name.en">
+			<v-subheader class="display-1 mt-5 mb-3" :key="island.code">
 				<nuxt-link :to="localePath({name: 'islands-island', params: {island: island.code}})">
-					{{localeName(island.name)}}
+					{{localeName(island.names)}}
 				</nuxt-link>
 			</v-subheader>
-			<v-subheader class="display-1 mb-4" :key="island.name.mi" v-if="localeBothNames(island.name)">
-				{{localeAltName(island.name)}}
+			<v-subheader class="display-1 mb-4" :key="island.name.mi" v-if="localeBothNames(island.names)">
+				{{localeAltName(island.names)}}
 			</v-subheader>
 			<regions :regions="island.regions" :key="island.code" />
 		</template>

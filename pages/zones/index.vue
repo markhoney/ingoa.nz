@@ -1,22 +1,20 @@
 <template>
   <section class="container">
     <h1 class="display-2 mt5 mb4">{{$tc('zone', 2) | titlecase}}</h1>
-    <template v-for="region in regions">
-			<h2 class="headline mt5 mb4" :key="region.name">{{region.name}}</h2>
-			<ul :key="region.name">
-				<li v-for="zone in region.zones" v-bind:key="zone.code">
-					<nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})">{{zone.name}}</nuxt-link>
-				</li>
-			</ul>
-    </template>
+		<zones :regions="regions"/>
   </section>
 </template>
+
 <script>
 import axios from '~/plugins/axios'
+import zones from '~/components/zones.vue'
 
 export default {
+	components: {
+    zones
+  },
   async asyncData () {
-    const {data} = await axios.get('/api/regions/zones')
+    const {data} = await axios.get('/api/regions?depth=1')
     return {regions: data}
   },
   head () {
@@ -26,12 +24,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-ul {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-</style>

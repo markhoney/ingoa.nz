@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1 class="display-2 mt-5">{{region.name}}</h1>
-		<h2 class="display-1 mb-4" v-if="region.tereo != region.name">{{region.tereo}}</h2>
+    <h1 class="display-2 mt-5">{{localeName(region.names)}}</h1>
+		<h2 class="display-1 mb-4" v-if="localeBothNames(region.names)">{{localeAltName(region.names)}}</h2>
 		<h3 class="display-1 mt-5 mb-4">{{$tc('zone', 2) | titlecase}}</h3>
 		<zones :zones="region.zones"/>
   </section>
@@ -16,8 +16,8 @@ export default {
     zones
   },
   async asyncData (context) {
-    const {region} = await axios.get('/api/regions/' + context.params.region + '/zones');
-    return {region: region};
+    const {data} = await axios.get('/api/regions/' + context.params.region + '?depth=1');
+    return {region: data};
   },
   head () {
     return {

@@ -51,7 +51,9 @@ function sentenceCase(sentence) {
 }
 
 function createCode(name) {
-	return name.toLowerCase().replace(/ /g, "_").replace(/\//g, "-").replace(/ʰ/g, "h").replace(/ā/g, "a").replace(/ē/g, "e").replace(/ī/g, "i").replace(/ō/g, "o").replace(/ū/g, "u");
+	if (name) {
+		return name.toLowerCase().replace(/ /g, "_").replace(/\//g, "-").replace(/\(/g, "").replace(/\)/g, "").replace(/ʰ/g, "h").replace(/ā/g, "a").replace(/ē/g, "e").replace(/ī/g, "i").replace(/ō/g, "o").replace(/ū/g, "u");
+	}
 }
 
 
@@ -64,148 +66,123 @@ function openPipe(inputtsv, parsecsv, transformcsv, outputloki) {
 }
 
 var lastend;
-function fixPlace(input) {
-	if (input['IndexName_1']) {
-		var output = {
-			zone: input.ZoneID,
-			id: input.Number,
-			code: createCode(input.IndexName_1),
-			//name: input.IndexName_1,
-			name: {
-				en: input.CommonName,
-				mi: input.IndexName_1
-			},
-			names: {},
-			kinds: {},
-			see: [],
-			notes: input.Notes
-		};
-		["UnspokenName", "ExtendedName", "VariantName", "MisspelledName", "CommonName", "IndexName_1", "IndexName_2", "IndexName_3"].forEach(function(name) {
-			output.names[input[name]] = {categories: []};
-		});
-		["Extended", "Variant", "Misspelled", "Common", "Unspoken"].forEach(function(name) { // , "Fixed"
-			if (input[name + "Name"]) {
-				output.names[input[name + "Name"]].categories.push(name);
-			}
-		});
-		for (var i = 1; i <= 3; i++) {
-			if (input["IndexName_" + i]) {
-				output.names[input["IndexName_" + i]].index = i;
-				if (input["SpokenName_" + i]) {
-					output.names[input["IndexName_" + i]].audio = {start: input["Start_" + i], end: input["End_" + i], speaker: input["Speaker_" + i]};
-					if (input.ZoneID >= 60 && input.Number != 0) {
-						output.names[input["IndexName_" + i]].phonetic = input["SpokenName_" + i];
-					}
-					var prestart = 0;
-					if (input.Number != 0) {
-						prestart = (input["Start_" + i] + lastend) / 2; //.toFixed(2);
-					}
-					output.names[input["IndexName_" + i]].audio.prestart = prestart;
-					output.names[input["IndexName_" + i]].categories.push("Spoken");
-					lastend = input["End_" + i];
-				}
-			}
-		}
-		for (var i = 1; i <= 4; i++) {
-			if (input["SeeZoneID_" + i] || input["SeeName_" + i]) {
-				output.see.push({zone: input["SeeZoneID_" + i] || input.Zone, name: input["SeeName_" + i], notes: input["SeeNotes_" + i]});
-			}
-		}
-		for (var i = 1; i <= 4; i++) {
-			if (input["Kind_" + i]) {
-				var kind = sentenceCase(input["Kind_" + i]);
-				output.kinds[kind] = {
-					group: input["Super_" + i],
-					location: {
-						googleplacename: input["GooglePlaceName_" + i]
-					}
-				};
-			}
-		}
-		return cleanobj(output);
-	}
-}
-
-function fixZone(input) {
-	var output = {
-		id: input.ID,
-		code: createCode(input.Name),
-		//name: input.Name,
-		//tereo: input.TeReo,
-		name: {
-			en: (input.Name == input.TeReo ? null : input.Name),
-			mi: input.TeReo
-		},
-		region: input.RegionID,
-		location: {
-			boundary: input.Boundary,
-			imagemap: {
-				map: input.ImageMapID,
-				areas: []
-			},
-			areas: {}
-		},
-		notes: input.Notes
-	};
-	var areas = input.Name.split("/");
-	for (var area in areas) {
-		output.location.areas[areas[area]] = {googleplaceid: input["GooglePlaceIDLarge_" + (area + 1)] || input["GooglePlaceIDSmall_" + (area + 1)]};
-	}
-	output.location.googleplacename = input["GooglePlaceName"];
-	for (var i = 1; i <= 2; i++) {
-		if (input["ImageMapAreaShape_" + i]) {
-			output.location.imagemap.areas.push({
-				shape: input["ImageMapAreaShape_" + i],
-				coords: input["ImageMapAreaCoords_" + i]
-			});
-		}
-	}
-	return cleanobj(output);
-}
-
-function fixSpeaker(input) {
-	if (input['FirstName']) {
-		var output = {
-			id: input.ID,
-			code: createCode([input.FirstName, input.Surname].join(" ")),
-			name: [input.FirstName, input.Surname].join(" "),
-			gender: input.Gender,
-			fullname: {
-				nick: input.Nickname,
-				title: input.Prefix,
-				alternate: input.AlternateName,
-				first: input.FirstName,
-				middle: input.MiddleNames,
-				last: input.Surname,
-				suffix: input.Suffix
-			},
-			notes: input.Notes,
-			location: {
-				inputed: input.Location
-			},
-			url: input.URL
-		}
-		return cleanobj(output);
-	}
-}
-
 function importPlaces() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Place.tsv'));
 	const outputloki = lokiStream("Place");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
 	const transformcsv = csv.transform(function(input, callback) {
-		callback(null, fixPlace(input));
+		if (input['IndexName_1']) {
+			var output = {
+				zone: input.ZoneID,
+				id: input.Number,
+				code: createCode(input.IndexName_1),
+				codes: {
+					en: createCode(input.CommonName),
+					mi: createCode(input.IndexName_1)
+				},
+				//name: input.IndexName_1,
+				name: input.IndexName_1,
+				names: {
+					en: input.CommonName,
+					mi: input.IndexName_1
+				},
+				names: {},
+				kinds: [],
+				see: [],
+				notes: input.Notes
+			};
+			["UnspokenName", "ExtendedName", "VariantName", "MisspelledName", "CommonName", "IndexName_1", "IndexName_2", "IndexName_3"].forEach(function(name) {
+				output.names[input[name]] = {categories: []};
+			});
+			["Extended", "Variant", "Misspelled", "Common", "Unspoken"].forEach(function(name) { // , "Fixed"
+				if (input[name + "Name"]) {
+					output.names[input[name + "Name"]].categories.push(name);
+				}
+			});
+			for (var i = 1; i <= 3; i++) {
+				if (input["IndexName_" + i]) {
+					output.names[input["IndexName_" + i]].index = i;
+					if (input["SpokenName_" + i]) {
+						output.names[input["IndexName_" + i]].audio = {start: input["Start_" + i], end: input["End_" + i], speaker: input["Speaker_" + i]};
+						if (input.ZoneID >= 60 && input.Number != 0) {
+							output.names[input["IndexName_" + i]].phonetic = input["SpokenName_" + i];
+						}
+						var prestart = 0;
+						if (input.Number != 0) {
+							prestart = (input["Start_" + i] + lastend) / 2; //.toFixed(2);
+						}
+						output.names[input["IndexName_" + i]].audio.prestart = prestart;
+						output.names[input["IndexName_" + i]].categories.push("Spoken");
+						lastend = input["End_" + i];
+					}
+				}
+			}
+			for (var i = 1; i <= 4; i++) {
+				if (input["SeeZoneID_" + i] || input["SeeName_" + i]) {
+					output.see.push({zone: input["SeeZoneID_" + i] || input.Zone, name: input["SeeName_" + i], notes: input["SeeNotes_" + i]});
+				}
+			}
+			for (var i = 1; i <= 4; i++) {
+				if (input["Kind_" + i]) {
+					var kind = sentenceCase(input["Kind_" + i]);
+					/*output.kinds[kind] = {
+						id: i,
+						group: input["Super_" + i]
+					};*/
+					output.kinds.push({
+						kind: kind,
+						group: input["Super_" + i]
+					});
+				}
+			}
+			callback(null, cleanobj(output));
+		}
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
-
 
 function importZones() {
 	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Zone.tsv'));
 	const outputloki = lokiStream("Zone");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
 	const transformcsv = csv.transform(function(input, callback) {
-		callback(null, fixZone(input));
+		var output = {
+			id: input.ID,
+			code: createCode(input.Name),
+			codes: {
+				en: createCode(input.Name == input.TeReo ? null : input.Name),
+				mi: createCode(input.TeReo)
+			},
+			name: input.Name,
+			names: {
+				en: (input.Name == input.TeReo ? null : input.Name),
+				mi: input.TeReo
+			},
+			region: input.RegionID,
+			location: {
+				boundary: input.Boundary,
+				imagemap: {
+					map: input.ImageMapID,
+					areas: []
+				},
+				areas: {}
+			},
+			notes: input.Notes
+		};
+		var areas = input.Name.split("/");
+		for (var area in areas) {
+			output.location.areas[areas[area]] = {googleplaceid: input["GooglePlaceIDLarge_" + (area + 1)] || input["GooglePlaceIDSmall_" + (area + 1)]};
+		}
+		output.location.googleplacename = input["GooglePlaceName"];
+		for (var i = 1; i <= 2; i++) {
+			if (input["ImageMapAreaShape_" + i]) {
+				output.location.imagemap.areas.push({
+					shape: input["ImageMapAreaShape_" + i],
+					coords: input["ImageMapAreaCoords_" + i]
+				});
+			}
+		}
+		callback(null, cleanobj(output));
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
@@ -215,7 +192,30 @@ function importSpeakers() {
 	const outputloki = lokiStream("Speaker");
 	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
 	const transformcsv = csv.transform(function(input, callback) {
-		callback(null, fixSpeaker(input));
+		if (input['FirstName']) {
+			var output = {
+				id: input.ID,
+				code: createCode([input.FirstName, input.Surname].join(" ")),
+				name: [input.FirstName, input.Surname].join(" "),
+				gender: input.Gender,
+				fullname: {
+					nick: input.Nickname,
+					title: input.Prefix,
+					alternate: input.AlternateName,
+					first: input.FirstName,
+					middle: input.MiddleNames,
+					last: input.Surname,
+					suffix: input.Suffix
+				},
+				notes: input.Notes,
+				location: {
+					inputed: input.Location
+				},
+				url: input.URL
+			}
+			return cleanobj(output);
+			callback(null, cleanobj(output));
+		}
 	});
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
@@ -228,9 +228,12 @@ function importIslands() {
 		var output = {
 			id: input.ID,
 			code: createCode(input.Name),
-			//name: input.Name,
-			//tereo: input.TeReo,
-			name: {
+			codes: {
+				en: createCode(input.Name == input.TeReo ? null : input.Name),
+				mi: createCode(input.TeReo)
+			},
+			name: input.Name,
+			names: {
 				en: (input.Name == input.TeReo ? null : input.Name),
 				mi: input.TeReo
 			},
@@ -253,9 +256,12 @@ function importParts() {
 		var output = {
 			id: input.ID,
 			code: createCode(input.Name),
-			//name: input.Name,
-			//tereo: input.TeReo,
-			name: {
+			codes: {
+				en: createCode(input.Name == input.TeReo ? null : input.Name),
+				mi: createCode(input.TeReo)
+			},
+			name: input.Name,
+			names: {
 				en: (input.Name == input.TeReo ? null : input.Name),
 				mi: input.TeReo
 			},
@@ -289,8 +295,12 @@ function importImageMaps() {
 		var output = {
 			id: input.ID,
 			code: createCode(input.Name),
-			//name: input.Name,
-			name: {
+			codes: {
+				en: createCode(input.Name == input.TeReo ? null : input.Name),
+				mi: createCode(input.TeReo)
+			},
+			name: input.Name,
+			names: {
 				en: (input.Name == input.TeReo ? null : input.Name),
 				mi: input.TeReo
 			},
@@ -329,9 +339,12 @@ function importRegions() {
 		var output = {
 			id: input.ID,
 			code: createCode(input.Name),
-			//name: input.Name,
-			//tereo: input.TeReo,
-			name: {
+			codes: {
+				en: createCode(input.Name == input.TeReo ? null : input.Name),
+				mi: createCode(input.TeReo)
+			},
+			name: input.Name,
+			names: {
 				en: (input.Name == input.TeReo ? null : input.Name),
 				mi: input.TeReo
 			},
@@ -350,6 +363,50 @@ function importRegions() {
 	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
 }
 
+function importMeanings() {
+	openpipes++;
+	const inputtsv = fs.createReadStream(path.join(sourcepath, 'Ingoa - Meaning.tsv'));
+	const outputloki = lokiStream("Meaning");
+	const parsecsv = csv.parse({auto_parse: true, delimiter: "	", trim: true, skip_empty_lines: true, columns: true, escape: "\\", quote: "~"});
+	const transformcsv = csv.transform(function(input, callback) {
+		var output = {
+			code: createCode(input.CleanedName),
+			name: input.CleanedName,
+			components: input.Components,
+			meaning: input.Meaning,
+		};
+		callback(null, cleanobj(output));
+	});
+	openPipe(inputtsv, parsecsv, transformcsv, outputloki);
+}
+
+function importGazetteer() {
+	openpipes++;
+	const inputcsv = fs.createReadStream(path.join(sourcepath, 'gaz_names.csv'));
+	const outputloki = lokiStream("Gazetteer");
+	const parsecsv = csv.parse({auto_parse: true, skip_empty_lines: true, columns: true});
+	const transformcsv = csv.transform(function(input, callback) {
+		var output = {
+			id: input.name_id,
+			code: createCode(input.name),
+			name: input.name,
+			district: input.land_district,
+			kinds: {},
+			location: {
+				position: {
+					lat: input.crd_latitude,
+					lng: input.crd_longitude
+				}
+			}
+		};
+		output.kinds[input.feat_type] = {
+			id: 1
+		};
+		callback(null, cleanobj(output));
+	});
+	openPipe(inputcsv, parsecsv, transformcsv, outputloki);
+}
+
 function importAll() {
 	importIslands();
 	importParts();
@@ -358,6 +415,8 @@ function importAll() {
 	importZones();
 	importSpeakers();
 	importPlaces();
+	importMeanings();
+	importGazetteer();
 }
 
 importAll();

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import island from '~/components/island.vue'
+import island from '~/components/island_card.vue'
 
 export default {
 	props: {

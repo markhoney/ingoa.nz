@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<h3>{{current.name}}<span v-if="current.phonetic"> ({{current.phonetic}})</span></h3>
-		<h4 v-if="current.audio.speaker">{{$t('spoken') | initialcase}} {{current.audio.speaker}}</h4>
+		<h3 class="text-xs-center display-2">{{current.name}}<span v-if="current.phonetic"> ({{current.phonetic}})</span></h3>
+		<h4 class="text-xs-center headline" v-if="current.audio.speaker">{{$t('spoken') | initialcase}} {{current.audio.speaker}}</h4>
 		<audio controls ref="audio" @timeupdate='currentTime = $event.target.currentTime'>
 			<source :src="file" type="audio/mpeg" preload="auto" />
 		</audio>
-		<h2>{{$t('name') | titlecase}}</h2>
+		<h2>{{$tc('name', 2) | titlecase}}</h2>
 		<ol start="0">
 			<li v-for="place in placelist" v-bind:key="place.code"><a :href="'#' + place.code">{{place.name}}</a></li>
 		</ol>
@@ -24,13 +24,12 @@ export default {
   data () {
     return {
 			setTime: 0,
-			currentTime: 0,
-			bookmark: {}
+			currentTime: 0
     }
 	},
 	props: {
 		file: String,
-		places: Array
+		places: Object
 	},
 	computed: {
     placelist: function () {
@@ -68,7 +67,7 @@ export default {
 					return currentbookmark;
 				}
 			}
-			return currentbookmark;
+			return currentbookmark || {audio: {}};
 		}
 	},
 	watch: {

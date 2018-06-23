@@ -66,11 +66,17 @@ exports.getImageMaps = async (filter, depth) => {
 		};
 		if (depth >= 0) {
 			for (var map in imagemaps[imagemap].imagemaplinks) {
+				// For some reason, there's an issue with converting the maplink from an imagemap id to a new imagemap object, and the action appears to create a recursion error. I suspect that it's because a new copy of the object is not being created with the LokiJS query, although that doesn't make much sense to me. Maybe a caching issue, with Loki returning the same object when it's asked the same query twice?
 				//imagemaps[imagemap].imagemaplinks[map].maplink = (await exports.getImageMaps({id: imagemaps[imagemap].imagemaplinks[map].maplink}, -1))[0];
 				//imagemaps[imagemap].imagemaplinks[map].maplink = Object.assign({}, (await exports.getImageMaps({id: imagemaps[imagemap].imagemaplinks[map].maplink}, -1))[0]);
 				var maplink = (await exports.getImageMaps({id: imagemaps[imagemap].imagemaplinks[map].maplink}, -1))[0];
-				imagemaps[imagemap].imagemaplinks[map].name = maplink.name;
-				imagemaps[imagemap].imagemaplinks[map].code = maplink.code;
+				imagemaps[imagemap].imagemaplinks[map].linkedmap = {
+					id: imagemaps[imagemap].imagemaplinks[map].maplink,
+					name: maplink.name,
+					names: maplink.names,
+					code: maplink.code,
+					codes: maplink.codes
+				}
 			}
 		}
 		if (depth > 0) {
@@ -79,6 +85,9 @@ exports.getImageMaps = async (filter, depth) => {
 			for (var region in regions) {
 				imagemaps[imagemap].zones = imagemaps[imagemap].zones.concat(regions[region].zones);
 			}
+		}
+		if (imagemaps.length == 1) {
+			imagemaps[imagemap].island = (await exports.getIslands({id: imagemaps[imagemap].island}))[0];
 		}
 	}
 	return imagemaps;

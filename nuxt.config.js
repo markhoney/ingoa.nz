@@ -35,19 +35,20 @@ module.exports = {
 		'@nuxtjs/vuetify',
 		['nuxt-i18n', {
 			parsePages: false,
-			seo: false,
 			strategy: 'prefix_except_default',
 			defaultLocale: 'en',
 			lazy: true,
 			langDir: 'lang/',
 			locales: [{
 				code: 'en',
+				iso: 'en-NZ',
 				name: 'English',
 				image: '/media/images/language/en.png',
 				file: 'en.js'
 			},
 			{
 				code: 'mi',
+				iso: 'mi-NZ',
 				name: 'Māori',
 				image: '/media/images/language/mi.png',
 				file: 'mi.js'

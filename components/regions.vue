@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import region from '~/components/region.vue'
+import region from '~/components/region_card.vue'
 
 export default {
 	props: {

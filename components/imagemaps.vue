@@ -1,9 +1,9 @@
 <template>
 	<v-layout row wrap>
 		<v-flex v-for="imagemap in imagemaps" v-bind:key="imagemap.code" class="pa-2">
-			<h2 class="display-1 mb-0">{{localeName(imagemap.name)}}</h2>
-			<h3 class="headline mb-0">{{localeAltName(imagemap.name)}}</h3>
-			<imagemap :imagemap="imagemap"/>
+			<h2 class="display-1 mb-0">{{localeName(imagemap.names)}}</h2>
+			<h3 class="headline mb-0">{{localeAltName(imagemap.names)}}</h3>
+			<imagemap :imagemap="imagemap" :hash="true"/>
 		</v-flex>
 	</v-layout>
 </template>

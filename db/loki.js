@@ -5,12 +5,12 @@ const db = new loki(path.join(__dirname, 'ingoa.json'), {autoload: true, autoloa
 var callback;
 var output = {};
 function dbinit () {
-	const tablesneeded = {"Speaker": {indices: []}, "Island": {indices: []}, "Part": {indices: []}, "Region": {indices: []}, "ImageMap": {indices: []}, "Zone": {indices: []}, "Place": {indices: ["zone", "name"]}};
+	const tablesneeded = {"Speaker": {}, "Island": {}, "Part": {}, "Region": {}, "ImageMap": {}, "Zone": {}, "Place": {indices: ["zone", "name"]}, "Meaning": {}, "Gazetteer": {}};
 	var tables = {};
 	for (table in tablesneeded) {
 		tables[table] = db.getCollection(table);
 		if (tables[table] === null) {
-			tables[table] = db.addCollection(table, {indices: tablesneeded[table].indices});
+			tables[table] = db.addCollection(table, tablesneeded[table]);
 		}
 	}
 	output = {conn: db, tables: tables};

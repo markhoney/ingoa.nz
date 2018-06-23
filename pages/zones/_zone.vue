@@ -1,10 +1,8 @@
 <template>
   <section>
-    <h1>
-      {{$t('zone') | titlecase}} {{zone.id}}
-    </h1>
-		<h2>{{zone.name}}</h2>
-		<AudioPlayer :file="zone.file" :places="zone.places" />
+		<h2 class="display-2">{{localeName(zone.names)}}</h2>
+		<h3 class="display-1 mb-5">{{localeAltName(zone.names)}}</h3>
+		<AudioPlayer :file="zone.audio" :places="zone.places" />
   </section>
 </template>
 
@@ -17,7 +15,7 @@ export default {
     AudioPlayer
   },
   async asyncData (context) {
-    const {data} = await axios.get('/api/zones/' + context.params.zone);
+    const {data} = await axios.get('/api/zones/' + context.params.zone + '?depth=1');
     return {zone: data};
   },
   head () {
