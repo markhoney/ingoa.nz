@@ -66,6 +66,12 @@ export default {
 			return currentbookmark;
 		}
 	},
+	head: {
+    script: [
+			{src: 'https://unpkg.com/wavesurfer.js/dist/wavesurfer.min.js'},
+			{src: 'https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js'}
+		],
+	},
   mounted () {
 		this.$nextTick(() => {
 			this.wavesurfer = WaveSurfer.create({
@@ -119,12 +125,6 @@ export default {
 				});
 			}*/
 		}
-	},
-	head: {
-    script: [
-			{src: 'https://unpkg.com/wavesurfer.js/dist/wavesurfer.min.js'},
-			{src: 'https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js'}
-		],
 	}
 }
 

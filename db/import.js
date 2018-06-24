@@ -103,7 +103,7 @@ function importPlaces() {
 				if (input["IndexName_" + i]) {
 					output.names[input["IndexName_" + i]].index = i;
 					if (input["SpokenName_" + i]) {
-						output.names[input["IndexName_" + i]].audio = {start: input["Start_" + i], end: input["End_" + i], speaker: input["Speaker_" + i]};
+						output.names[input["IndexName_" + i]].audio = {start: input["Start_" + i], end: input["End_" + i], speaker: input["SpeakerID_" + i]};
 						if (input.ZoneID >= 60 && input.Number != 0) {
 							output.names[input["IndexName_" + i]].phonetic = input["SpokenName_" + i];
 						}
@@ -213,7 +213,6 @@ function importSpeakers() {
 				},
 				url: input.URL
 			}
-			return cleanobj(output);
 			callback(null, cleanobj(output));
 		}
 	});

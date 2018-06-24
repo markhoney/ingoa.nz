@@ -33,7 +33,7 @@ function arrayUnique(value, index, self) {
 }
 
 exports.getSpeakers = async (filter, depth) => {
-	var speakers = db.tables.Speaker.chain().find().simplesort('id').data();
+	var speakers = db.tables.Speaker.chain().find(filter).simplesort('id').data();
 	for (var speaker in speakers) {
 		speakers[speaker] = removeLokiMeta(speakers[speaker]);
 		speakers[speaker].image = {
@@ -62,7 +62,8 @@ exports.getImageMaps = async (filter, depth) => {
 	for (var imagemap in imagemaps) {
 		imagemaps[imagemap] = removeLokiMeta(imagemaps[imagemap]);
 		imagemaps[imagemap].image = {
-			map: '/media/images/imagemap/' + imagemaps[imagemap].code + '.jpg'
+			map: '/media/images/imagemap/' + imagemaps[imagemap].code + '.jpg',
+			trans: '/media/images/imagemap/' + imagemaps[imagemap].code + '-trans.png'
 		};
 		if (depth >= 0) {
 			for (var map in imagemaps[imagemap].imagemaplinks) {

@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<img :src="imagemap.image.map" :alt="imagemap.name" :id="imagemap.code" :usemap="'#map-' + imagemap.code" />
+		<img :src="imagemap.image.trans" :alt="imagemap.name" :id="imagemap.code" :usemap="'#map-' + imagemap.code" />
 		<map :name="'map-' + imagemap.code">
 			<template v-for="zone in imagemap.zones">
 				<template v-for="(area, index) in zone.location.imagemap.areas">
@@ -19,6 +19,9 @@
 </template>
 
 <script>
+/*if (process.browser) {
+	require('image-map');
+}*/
 export default {
 	props: {
 		imagemap: Object,
@@ -27,5 +30,25 @@ export default {
 			default: false
 		}
 	},
+	head: {
+    script: [
+			{src: 'https://unpkg.com/image-map/image-map.min.js'}
+		],
+	},
+	mounted () {
+		this.$nextTick(() => {
+			if (process.browser) {
+				window.onNuxtReady((app) => {
+						ImageMap('img[usemap]');
+				})
+			}
+		});
+	}
 }
 </script>
+
+<style scoped>
+img {
+	max-width: 100%;
+}
+</style>
