@@ -11,9 +11,6 @@
 	</div>
 </template>
 
-<style scoped>
-</style>
-
 <script>
 export default {
   data () {
@@ -32,8 +29,8 @@ export default {
 			var output = [];
 			for (var place in this.places) {
 				var names = [];
-				for (var name in this.places[place].names) {
-					if (this.places[place].names[name].audio) {
+				for (var name in this.places[place].placenames) {
+					if (this.places[place].placenames[name].audio) {
 						names.push(name);
 					}
 				}
@@ -44,11 +41,11 @@ export default {
     bookmarks: function () {
 			var zonebookmarks = [];
 			for (var place in this.places) {
-				for (var name in this.places[place].names) {
-					if (this.places[place].names[name].audio) {
-						this.places[place].names[name].name = name;
-						this.places[place].names[name].code = this.places[place].code;
-						zonebookmarks.push(this.places[place].names[name]);
+				for (var name in this.places[place].placenames) {
+					if (this.places[place].placenames[name].audio) {
+						this.places[place].placenames[name].name = name;
+						this.places[place].placenames[name].code = this.places[place].code;
+						zonebookmarks.push(this.places[place].placenames[name]);
 					}
 				}
 			}

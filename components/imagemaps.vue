@@ -12,11 +12,11 @@
 import imagemap from '~/components/imagemap.vue'
 
 export default {
-	props: {
-		imagemaps: Array
-	},
 	components: {
     imagemap
-  }
+  },
+	props: {
+		imagemaps: Array
+	}
 }
 </script>

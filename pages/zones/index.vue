@@ -6,16 +6,14 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
-import zones from '~/components/zones.vue'
+import zones from '~/components/zones_lists.vue'
 
 export default {
 	components: {
     zones
   },
-  async asyncData () {
-    const {data} = await axios.get('/api/regions?depth=1')
-    return {regions: data}
+  async asyncData ({app}) {
+    return {regions: await app.$axios.$get('/api/regions?depth=1')}
   },
   head () {
     return {

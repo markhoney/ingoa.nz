@@ -26,7 +26,6 @@ module.exports = dispatch()
 	.dispatch('/api/suggestions', ['GET'], async (req, res, {params, query}) => send(res, 200, (await api.getSuggestions())))
 	.dispatch('*', ['GET'], (req, res) => nuxt.render(req, res))
 
-
 /*
 	URLs take the form of:
 

@@ -2,22 +2,19 @@
   <section>
 		<h2 class="display-2">{{localeName(zone.names)}}</h2>
 		<h3 class="display-1 mb-5">{{localeAltName(zone.names)}}</h3>
-		<h2 class="display-2">{{localeName(zone.names)}}</h2>
-		<AudioPlayer :file="zone.audio" :places="zone.places" />
+		<NamePlayer :file="zone.audio" :places="zone.places" />
   </section>
 </template>
 
 <script>
-import axios from '~/plugins/axios'
-import AudioPlayer from '~/components/AudioPlayer.vue'
+import NamePlayer from '~/components/NamePlayer.vue'
 
 export default {
 	components: {
-    AudioPlayer
+    NamePlayer
   },
-  async asyncData (context) {
-    const {data} = await axios.get('/api/zones/' + context.params.zone + '/' + context.params.place + '?depth=1');
-    return {zone: data};
+  async asyncData ({app}) {
+    return {zone: app.$axios.$get('/api/zones/' + app.context.params.zone + '/names/' + app.context.params.name)};
   },
   head () {
     return {

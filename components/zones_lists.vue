@@ -6,16 +6,17 @@
 		</template>
 	</section>
 </template>
+
 <script>
 import zones from '~/components/zones.vue'
 
 export default {
-	props: {
-		regions: Array
-	},
 	components: {
     zones
-  }
+  },
+	props: {
+		regions: Array
+	}
 }
 </script>
 

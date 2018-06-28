@@ -1,6 +1,6 @@
-Name	TeReo	ID	IslandID	Start	End	MapLinkID_1	MapLinkShape_1	MapLinkCoords_1	MapLinkID_2	MapLinkShape_2	MapLinkCoords_2
-Lower North Island	Te Upoko o te Ika	1	1	1984-01-01	1985-01-01	2	poly	112,357,210,339,334,267,315,147,1,1			
-Central North Island	Te Waenganui o te Ika	2	1	1986-01-01	1991-01-01	1	poly	89,560,222,512,483,464,622,452,6655,357,673,364,674,560	3	poly	202,0,218,122,232,148,321,163,341,153,353,110,397,115,397,0
-Auckland and Northland	Tāmaki me te Hiku o te Ika	3	1	1988-01-01	1991-01-01	2	poly	293,693,293,663,310,621,364,630,372,652,388,642,403,604,451,604,451,507,548,507,548,693			
-Northern and Eastern South Island	Te Raki me te Tairawhiti o Te Waipounamu	4	2	1991-01-01	1994-01-01	5	poly	124,500,167,560,0,560,0,413,193,53,237,93,243,211			
-Southern and Western South Island	Te Tonga me te Taihauru o Te Waipounamu	5	2	1991-01-01	1994-01-01	4	poly	387,0,387,25,420,60,150,490,370,490,454,360,454,0			
+Name	TeReo	ID	IslandID	PartID	Start	End	MapLinkID_1	MapLinkShape_1	MapLinkCoords_1	MapLinkID_2	MapLinkShape_2	MapLinkCoords_2
+Lower North Island	Te Upoko [manawa me ngā tira] o te Ika	1	1	1	1984-01-01	1985-01-01	2	poly	112,357,210,339,334,267,315,147,1,1			
+Central North Island	Te Waenganui o te Ika	2	1	1	1986-01-01	1991-01-01	1	poly	89,560,222,512,483,464,622,452,6655,357,673,364,674,560	3	poly	202,0,218,122,232,148,321,163,341,153,353,110,397,115,397,0
+Auckland and Northland	Tāmaki me te Hiku o te Ika	3	1	2	1988-01-01	1991-01-01	2	poly	293,693,293,663,310,621,364,630,372,652,388,642,403,604,451,604,451,507,548,507,548,693			
+Northern and Eastern South Island	Te Raki me te Tairawhiti o Te Waipounamu	4	2	3	1991-01-01	1994-01-01	5	poly	124,500,167,560,0,560,0,413,193,53,237,93,243,211			
+Southern and Western South Island	Te Tonga me te Taihauāuru o Te Waipounamu	5	2	3	1991-01-01	1994-01-01	4	poly	387,0,387,25,420,60,150,490,370,490,454,360,454,0			

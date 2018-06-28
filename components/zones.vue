@@ -9,22 +9,21 @@
 			<nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})">{{localeNames(zone.names)}}</nuxt-link>
 		</li>
 	</ul>
-
 </template>
 
 <script>
 import zone from '~/components/zone_card.vue'
 
 export default {
+	components: {
+    zone
+  },
 	props: {
 		zones: Array,
 		cards: {
 			type: Boolean,
 			default: true
 		}
-	},
-	components: {
-    zone
-  }
+	}
 }
 </script>

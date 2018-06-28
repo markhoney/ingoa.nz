@@ -3,7 +3,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Launch via NPM",
+			"name": "Dev",
 			"runtimeExecutable": "npm",
 			"runtimeArgs": [
 				"run",
@@ -28,7 +28,7 @@
 			}
 		},
 		{
-			"name": "Debug Chrome",
+			"name": "Chrome",
 			"type": "chrome",
 			"request": "launch",
 			"url": "http://localhost:3000",

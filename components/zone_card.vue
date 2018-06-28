@@ -1,6 +1,6 @@
 <template>
 	<v-card>
-		<nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})"><v-card-media :src="zone.image.landscape" height="180px"></v-card-media></nuxt-link><!--  height="180px" -->
+		<nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})"><v-card-media :src="zone.image.landscape" height="160px"></v-card-media></nuxt-link><!--  height="180px" -->
 		<v-card-title primary-title>
 			<div>
 				<h3 class="headline mb-0"><nuxt-link :to="localePath({name: 'zones-zone', params: {zone: zone.code}})">{{localeName(zone.names)}}</nuxt-link></h3>
@@ -15,6 +15,6 @@
 export default {
 	props: {
 		zone: Object
-	},
+	}
 }
 </script>

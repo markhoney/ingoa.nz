@@ -16,16 +16,14 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
 import regions from '~/components/regions.vue'
 
 export default {
 	components: {
     regions
   },
-  async asyncData () {
-    const {data} = await axios.get('/api/islands?depth=1')
-    return {islands: data}
+  async asyncData ({app}) {
+    return {islands: await app.$axios.$get('/api/islands?depth=1')}
   },
   head () {
     return {

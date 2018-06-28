@@ -1,25 +1,33 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+//	parser: 'babel-eslint',
+	'parserOptions': {
+		parser: 'babel-eslint',
+	},
   env: {
     browser: true,
     node: true
   },
-  extends: 'standard',
-  // required to lint *.vue files
+  extends: [
+		'standard',
+	//	'plugin:vue/recommended',
+		'plugin:vue/essential',
+		'prettier'
+	],
   plugins: [
-    'html'
+//		'html',
+		'vue'
   ],
-  // add your custom rules here
   rules: {
-    // allow paren-less arrow functions
     'arrow-parens': 0,
-    // allow async-await
     'generator-star-spacing': 0,
-    // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    // do not allow console.logs etc...
-    'no-console': 2
+		'no-console': 2,
+		'indent': [1, 'tab'],
+		'no-tabs': 0,
+		'spaced-comment': [1, 'never'],
+		'space-before-function-paren': [1, 'never'],
+		'semi': [1, 'always']
   },
   globals: {}
 }

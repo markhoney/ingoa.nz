@@ -8,16 +8,14 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
 import zones from '~/components/zones.vue'
 
 export default {
 	components: {
     zones
   },
-  async asyncData (context) {
-    const {data} = await axios.get('/api/regions/' + context.params.region + '?depth=1');
-    return {region: data};
+  async asyncData ({app}) {
+    return {region: await app.$axios.$get('/api/regions/' + app.context.params.region + '?depth=1')};
   },
   head () {
     return {

@@ -14,9 +14,8 @@ export default {
 	components: {
     islands
   },
-  async asyncData () {
-    const {data} = await axios.get('/api/islands')
-    return {islands: data}
+  async asyncData ({app}) {
+    return {islands: await app.$axios.$get('/api/islands')}
   },
   head () {
     return {

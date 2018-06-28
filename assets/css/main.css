@@ -1,4 +1,11 @@
-html
-{
-  font-family: Tahoma, Arial, sans-serif;
+html {
+  font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+#wave audio {
+	margin-top: 2em;
 }

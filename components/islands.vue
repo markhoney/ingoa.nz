@@ -10,12 +10,12 @@
 import island from '~/components/island_card.vue'
 
 export default {
-	props: {
-		islands: Array
-	},
 	components: {
     island
-  }
+  },
+	props: {
+		islands: Array
+	}
 }
 </script>
 

@@ -1,27 +1,27 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
-  head: {
+	/*
+	** Headers of the page
+	*/
+	head: {
 		//title: 'Ngā Ingoa o Aotearoa',
 		titleTemplate: '%s | Ngā Ingoa o Aotearoa',
-    meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', meta: 'description', content: 'Ngā Ingoa o Aotearoa: An oral dictionary of Māori placenames'}
-    ],
-    link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
-    ]
-  },
-  /*
-  ** Global CSS
-  */
-  css: ['~assets/css/main.css'],
-  /*
-  ** Add axios globally
-  */
-  build: {
+		meta: [
+			{charset: 'utf-8'},
+			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
+			{hid: 'description', meta: 'description', content: 'Ngā Ingoa o Aotearoa: An oral dictionary of Māori placenames'}
+		],
+		link: [
+			{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+		]
+	},
+	/*
+	** Global CSS
+	*/
+	css: ['~assets/css/main.css'],
+	/*
+	** Add axios globally
+	*/
+	build: {
 		vendor: ['axios']
 	},
 	plugins: [
@@ -31,6 +31,7 @@ module.exports = {
 	modules: [
 		'@nuxtjs/axios',
 		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
+		'nuxt-trailingslash-module',
 		'@nuxtjs/pwa',
 		'@nuxtjs/vuetify',
 		['nuxt-i18n', {
@@ -56,7 +57,7 @@ module.exports = {
 			pages: {
 				about: {
 					en: '/about',
-					mi: '/mo',
+					mi: '/mo'
 				},
 				regions: {
 					en: '/regions',
@@ -79,6 +80,6 @@ module.exports = {
 					mi: '/hauni'
 				}
 			}
-    }]
+		}]
 	]
 }

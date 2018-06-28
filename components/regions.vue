@@ -10,11 +10,11 @@
 import region from '~/components/region_card.vue'
 
 export default {
-	props: {
-		regions: Array
-	},
 	components: {
     region
-  }
+  },
+	props: {
+		regions: Array
+	}
 }
 </script>

@@ -6,22 +6,19 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
 import zones from '~/components/zones.vue'
 
 export default {
 	components: {
 		zones
   },
-  async asyncData (context) {
-    const {data} = await axios.get('/api/islands/' + context.params.island + '?depth=2')
-    return {island: data}
+  async asyncData ({app}) {
+    return {island: await app.$axios.$get('/api/islands/' + app.context.params.island + '?depth=2')}
   },
   head () {
     return {
       title: 'Zones'
     }
-
   }
 }
 </script>
