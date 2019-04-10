@@ -3,6 +3,8 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 module.exports = {
 	mode: 'universal',
+	srcDir: 'src/client/',
+
 	head: {
 		//title: pkg.name,
 		titleTemplate: '%s | ' + pkg.name,
@@ -20,27 +22,27 @@ module.exports = {
 			}
 		]
 	},
-	loading: { color: '#fff' },
+
+	loading: {color: '#f00'},
+
 	css: [
 		'~/assets/style/app.styl'
 	],
+
 	router: {
     prefetchLinks: (process.env.NODE_ENV === 'production'),
 	},
+
 	plugins: [
-		'@/plugins/vuetify',
+		'~/plugins/vuetify',
 		'~/plugins/filters',
 		'~/plugins/mixins',
 		'~/plugins/googlemaps',
 		//'~/plugins/gql.js'
 	],
 
-	/*
-	** Nuxt.js modules
-	*/
 	modules: [
 		'@nuxtjs/apollo',
-		'@nuxtjs/axios',
 		'@nuxtjs/pwa',
 		'@nuxtjs/sitemap',
 		['@nuxtjs/google-analytics', {
@@ -59,19 +61,19 @@ module.exports = {
 						code: 'en',
 						iso: 'en-NZ',
 						name: 'English',
-						image: '/media/images/language/en.png',
+						image: '/img/language/en.png',
 						file: 'en.json',
 					},
 					{
 						code: 'mi',
 						iso: 'mi-NZ',
 						name: 'Māori',
-						image: '/media/images/language/mi.png',
+						image: '/img/language/mi.png',
 						file: 'mi.json',
 					},
 				],
 				parsePages: false,
-				pages: require('./locales/pages.json'),
+				pages: require('./src/client/locales/pages.json'),
 			},
 		],
 	],
@@ -83,9 +85,6 @@ module.exports = {
 		},
 	},
 
-	/*
-	** Build configuration
-	*/
 	build: {
 		transpile: ['vuetify/lib', /^vue2-google-maps($|\/)/],
 		plugins: [new VuetifyLoaderPlugin()],
@@ -94,10 +93,7 @@ module.exports = {
 				import: ['~assets/style/variables.styl']
 			}
 		},
-		/*
-		** You can extend webpack config here
-		*/
 		extend(config, ctx) {
 		}
 	}
-}
+};

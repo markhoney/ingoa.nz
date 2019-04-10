@@ -1,6 +1,6 @@
-# ingoa.nz
+# Ngā Ingoa o Aotearoa: An oral dictionary of Māori placenames
 
-> Ngā Ingoa o Aotearoa: An oral dictionary of Māori placenames
+> ingoa.nz
 
 ## Build Setup
 
@@ -23,7 +23,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## To Do
 
-~~Always request IDs~~
-~~Generate Bookmarks~~
-~~Round coords~~
-~~Add island, part and zone IDs to audio component - make dynamic GQL request~~
+- ~~Always request IDs~~
+- ~~Generate Bookmarks~~
+- ~~Round coords~~
+- ~~Add island, part and zone IDs to audio component - make dynamic GQL request~~

@@ -1,4 +1,5 @@
 ingoa.nz {
-	root /dist
-	gzip
+	proxy / localhost:3000 {
+		transparent
+	}
 }
