@@ -1,0 +1,4 @@
+ingoa.nz {
+	root /dist
+	gzip
+}

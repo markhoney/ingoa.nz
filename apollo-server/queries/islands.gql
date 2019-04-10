@@ -1,0 +1,17 @@
+{
+	islands {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		images {
+			landscape
+		}
+		audio {
+			file
+		}
+		description
+	}
+}

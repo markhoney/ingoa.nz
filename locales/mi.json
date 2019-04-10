@@ -1,0 +1,41 @@
+{
+	"title": "Ngā Ingoa o Aotearoa",
+	"subtitle": "He papakupu kōrero o ngā ingoa wāhi",
+	"intro": "The pages of this website are not the dictionary. The audio recordings are the dictionary. The pages are just a guide to the recorded words. They are a dictionary of the pronunciations of placenames only, not their meanings. The places are sorted into \"Zones\", and each Zone is about the size of a county. They are divided by tribe and also along lines of convenience. To distinguish the Zones from the places, the Zones have English names, \"where such have been bestowed.\"",
+	"disclaimer": "Just because a name has been put in a particular Zone, or is spoken by a particular person, that does not mean I claim that the place belongs to any particular people. That is not what this dictionary is for, but every name had to be assigned to somebody.",
+	"instructions": "Please choose an island to find the place name you are looking for, or use the search box at the top of this page.",
+	"copyright": "Copyright &copy; <a href=\"/about#author\">Hugh Young</a> 1985, 1991 and 1994. The booklets and recordings may not be resold for profit. They may be copied for educational purposes. Copies should be clearly identified as such.",
+	"datalicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png\" /></a> This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.",
+	"codelicense": "The code used in this project is released under the <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GPL3 License</a>, and is available on <a href=\"https://github.com/markhoney/ingoa.nz\">GitHub</a>.",
+	"about": "Ngā Ingoa o Aotearoa (The Names of New Zealand) is probably the first \"pronouncing dictionary\" that is literally \"pronouncing\". The 10,200 <a href=\"/name\">names</a> are spoken by 139 native <a href=\"/speaker\">speakers</a> of Māori, chosen by each other as the best speakers for their areas.",
+	"imagemap": "Click on a zone on the map below to be taken to the placenames for that zone (hover over the map to see the names of the zones).",
+	"location": "wāhi",
+	"island": "motu",
+	"part": "wāhanga",
+	"map": "mahere",
+	"region": "whaitua",
+	"zone": "\"hauni\"",
+	"place": "wāhi",
+	"name": "ingoa",
+	"placename": "ingoa wāhi",
+	"feature": "momo",
+	"speaker": "kaikōrero",
+	"group": "kohinga",
+	"iwi": "iwi",
+	"spoken": "i kōrerotia e",
+	"detail": "mōhiohio",
+	"$vuetify": {
+		"dataIterator": {
+			"rowsPerPageText": "Items per page:",
+			"rowsPerPageAll": "All",
+			"pageText": "{0}-{1} of {2}",
+			"noResultsText": "No matching records found",
+			"nextPage": "Next page",
+			"prevPage": "Previous page"
+		},
+		"dataTable": {
+			"rowsPerPageText": "Rows per page:"
+		},
+		"noDataText": "No data available"
+	}
+}

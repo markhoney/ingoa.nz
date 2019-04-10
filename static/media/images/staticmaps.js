@@ -12,7 +12,7 @@ db(function(db) {
 		});
 	};
 
-	const baseURL = 'https://maps.googleapis.com/maps/api/staticmap?size=640x400&scale=2&maptype=satellite&key=AIzaSyCFyKQuNDJvm4BIqhV_hgcb5JQV8kVYE-Q&center=';
+	const baseURL = 'https://maps.googleapis.com/maps/api/staticmap?size=640x400&scale=2&maptype=satellite&key=AIzaSyBF9_cnkkul1wOVNGqYwdeRxHy8LEfwajE&center=';
 
 	db.tables.Island.find().forEach(function(island) {
 		if ('location' in island) {

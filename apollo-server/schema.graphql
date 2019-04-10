@@ -1,0 +1,468 @@
+type images {
+	banner: String
+	landscape: String
+	portrait: String
+	front: String
+	back: String
+}
+
+type slugs {
+	en: String
+	mi: String
+}
+
+type nameparts {
+	nick: String
+	title: String
+	alternate: String
+	first: String
+	middle: String
+	last: String
+	suffix: String
+}
+
+type phonetic {
+	markdown: String
+	html: String
+}
+
+type names {
+	en: String
+	mi: String
+	ascii: String
+	phonetic: phonetic
+	transliteration: String
+	parts: nameparts
+	full: String
+}
+
+type spoken {
+	pre: Float
+	start: Float
+	end: Float
+	post: Float
+	speaker_id: String
+	speaker_code: String
+	speaker: speaker
+}
+
+type meaning {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	components: String
+	meaning: String
+}
+
+type name {
+	_id: ID!
+	name: names
+	zone_id: String
+	spoken: spoken
+	categories: [String]
+	meaning: meaning
+	identical: [name]
+	similar: [name]
+}
+
+type place {
+	_id: ID!
+	name: names
+	zone_id: String
+	feature_id: String
+	feature_code: String
+	feature: feature
+	plural: Boolean
+	groups: [membership]
+	location: location
+}
+
+type links {
+	wikipedia: String
+	homepage: String
+}
+
+type membership {
+	group_id: String
+	group_code: String
+	group: group
+	subgroup_id: String
+}
+
+type group {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	feature: feature
+	plural: Boolean
+	place: place
+	type: String
+	placenames: [placename]
+}
+
+type notes {
+	name: String
+	speech: String
+	spelling: String
+	place: String
+}
+
+type see {
+	zone_id: String
+	zone_code: String
+	zone: zone
+	placename_id: String
+	placename_code: String
+	placename: placename
+	type: String
+}
+
+type addendum {
+	zone_id: String
+	zone_code: String
+	zone: zone
+}
+
+type placename {
+	_id: ID!
+	code: String
+	zone_id: String
+	zone_code: String
+	zone: zone
+	part_id: String
+	part_code: String
+	part: part
+	island_id: String
+	island_code: String
+	island: island
+	number: Int
+	featured: Int
+	names: [name]
+	places: [place]
+	see: [see]
+	zone_ids: [String]
+	zones: [zone]
+	notes: notes
+}
+
+type googleplace {
+	id: String
+	name: String
+}
+
+type area {
+	name: names
+	location: location
+}
+
+type location {
+	googleplace: googleplace
+	position: position
+	bounds: bounds
+	window: window
+}
+
+type position {
+	lat: Float
+	lng: Float
+}
+
+type bounds {
+	ne: position
+	sw: position
+}
+
+type window {
+	center: position
+	zoom: Int
+}
+
+type audio {
+	file: String
+	length: Int
+	size: Int
+}
+
+type zone {
+	_id: ID!
+	code: String
+	number: Int
+	slug: slugs
+	name: names
+	audio: audio
+	images: images
+	previous: zone
+	next: zone
+	region_id: String
+	region_code: String
+	region: region
+	maplink: maplink
+	part_id: String
+	part_code: String
+	part: part
+	island_id: String
+	island_code: String
+	island: island
+	boundary: String
+	gazetteer: String
+	areas: [area]
+	placenames: [placename]
+	bookmarks: [name]
+	featured: [placename]
+	speaker_ids: [String]
+	speakers: [speaker]
+	iwi_ids: [String]
+	ngaiwi: [iwi]
+	notes: String
+}
+
+type speaker {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	gender: String
+	notes: String
+	recorded: String
+	url: String
+	zones: [zone]
+	placenames: [placename]
+}
+
+type island {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	audio: audio
+	images: images
+	zones: [zone]
+	regions: [region]
+	maps: [map]
+	parts: [part]
+	placenames: [placename]
+	bookmarks: [name]
+	speakers: [speaker]
+	description: String
+	location: location
+}
+
+type dates {
+	start: String
+	end: String
+	launch: String
+}
+
+type partnotes {
+	text: String
+	recording: String
+}
+
+type part {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	audio: audio
+	images: images
+	previous: part
+	next: part
+	island_id: String
+	island_code: String
+	island: island
+	zones: [zone]
+	placenames: [placename]
+	bookmarks: [name]
+	speakers: [speaker]
+	dates: dates
+	distance: Int
+	funding: String
+	format: String
+	description: String
+	notes: partnotes
+	regions: [region]
+	maps: [map]
+}
+
+type maparea {
+	shape: String
+	coords: [Int]
+}
+
+type maplink {
+	map_id: String
+	map: map
+	mapareas: [maparea]
+}
+
+type map {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	images: images
+	island_id: String
+	island_code: String
+	island: island
+	part_id: String
+	part_code: String
+	part: part
+	dates: dates
+	maplinks: [maplink]
+	zones: [zone]
+	regions: [region]
+}
+
+type region {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	images: images
+	previous: region
+	next: region
+	island_id: String
+	island_code: String
+	island: island
+	part_id: String
+	part_code: String
+	part: part
+	map_id: String
+	map_code: String
+	map: map
+	zones: [zone]
+}
+
+type feature {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	images: images
+	plural: String
+	order: Int
+	gazetteer: String
+	placenames: [placename]
+}
+
+type iwi {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	zones: [zone]
+	links: links
+}
+
+type gazetteer {
+	_id: ID!
+	name: String
+	district: String
+	feature: String
+	location: location
+}
+
+input pagination {
+	size: Int
+	start: Int
+	page: Int
+}
+
+input sort {
+	field: String
+	order: Int
+}
+
+input find {
+	_id: String
+	code: String
+}
+
+input filter {
+	field: String
+	value: String
+}
+
+type Query {
+	islands(
+		pagination: pagination
+		sort: sort
+	): [island]
+	island(
+		filter: find
+	): island
+	parts(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [part]
+	part(
+		filter: find
+	): part
+	maps(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [map]
+	map(
+		filter: find
+	): map
+	regions(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [region]
+	region(
+		filter: find
+	): region
+	zones(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [zone]
+	zone(
+		filter: find
+	): zone
+	speakers(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [speaker]
+	speaker(
+		filter: find
+	): speaker
+	groups(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [group]
+	group(
+		filter: find
+	): group
+	features(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [feature]
+	feature(
+		filter: find
+	): feature
+	ngaiwi(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [iwi]
+	iwi(
+		filter: find
+	): iwi
+	placenames(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [placename]
+	placename(
+		filter: find
+	): placename
+}

@@ -1,0 +1,703 @@
+ID	Zone	Number	Name	TeReo	Feature	FeatureID	FeaturePlural	Wikipedia
+gr_0-2	0	2	Lake Ellesmere	Te Waihora	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Ellesmere_/_Te_Waihora
+gr_0-3	0	3	Lake Hāwea	Hāwea	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_H%C4%81wea
+gr_0-4	0	4	Lake Manapōuri	Manapōuri	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Manapouri
+gr_0-5	0	5	Lake Okataina	Okataina	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Okataina
+gr_0-6	0	6	Lake Rotomā	Rotomā	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Rotoma
+gr_0-7	0	7	Lake Wānaka	Wānaka	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Wanaka
+gr_0-8	0	8	Little Barrier Island	Hauturu	Island	fe_134		https://en.wikipedia.org/wiki/Little_Barrier_Island
+gr_0-9	0	9	Moeraki Peninsula	Moeraki	Peninsula	fe_198		https://en.wikipedia.org/wiki/Moeraki
+gr_0-10	0	10	Muttonbird Islands	Titi	Islands	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands
+gr_0-11	0	11	North Islands		Islands	fe_134	1	
+gr_0-12	0	12	Auckland War Memorial Museum	Tāmaki Paenga Hira	Museum	fe_180		https://en.wikipedia.org/wiki/Auckland_War_Memorial_Museum
+gr_0-13	0	13	Pelorus Sound	Te Hoiere	Sound	fe_252		https://en.wikipedia.org/wiki/Pelorus_Sound
+gr_0-14	0	14	Pitt Island	Rangiauria	Island	fe_134		https://en.wikipedia.org/wiki/Pitt_Island
+gr_0-15	0	15	Poor Knights Islands	Tawhiti Rahi	Islands	fe_134	1	https://en.wikipedia.org/wiki/Poor_Knights_Islands
+gr_0-16	0	16	Port Levy	Koukourarata	Port	fe_206		https://en.wikipedia.org/wiki/Port_Levy
+gr_0-17	0	17	Port Underwood	Te Whanganui	Port	fe_206		https://en.wikipedia.org/wiki/Port_Underwood
+gr_0-18	0	18	Queen Charlotte Sound	Tōtaranui	Sound	fe_252		https://en.wikipedia.org/wiki/Queen_Charlotte_Sound_(New_Zealand)
+gr_0-19	0	19	Rangitoto Island	Rangitoto	Island	fe_134		https://en.wikipedia.org/wiki/Rangitoto_Island
+gr_0-20	0	20	Rangitoto Islands		Islands	fe_134	1	https://en.wikipedia.org/wiki/Rangitoto_Islands
+gr_0-21	0	21	Resolution Island	Tau Moana	Island	fe_134		https://en.wikipedia.org/wiki/Resolution_Island_(New_Zealand)
+gr_0-22	0	22	Tory Channel	Kura Te Au	Channel	fe_45		https://en.wikipedia.org/wiki/Tory_Channel
+gr_0-23	0	23	Breaksea Islands		Islands	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands
+gr_0-24	0	24		Waikouaiti	Town	fe_282		https://en.wikipedia.org/wiki/Waikouaiti
+gr_0-25	0	25	West Muttonbird Islands		Islands	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands
+gr_0-26	0	26	Rabbit Islands	Motorua	Islands	fe_134	1	https://en.wikipedia.org/wiki/Rabbit_Island,_New_Zealand
+gr_0-27	0	27	Three Kings Islands	Manawatāwhi	Islands	fe_134	1	https://en.wikipedia.org/wiki/Three_Kings_Islands
+gr_0-28	0	28	Hen and Chickens		Islands	fe_134	1	https://en.wikipedia.org/wiki/Hen_and_Chicken_Islands
+gr_0-29	0	29	Cavalli Islands		Islands	fe_134	1	https://en.wikipedia.org/wiki/Cavalli_Islands
+gr_0-30	0	30	Chetwode Islands		Islands	fe_134	1	https://en.wikipedia.org/wiki/Chetwode_Islands
+gr_0-31	0	31	Chatham Islands	Wharekauri	Islands	fe_134	1	https://en.wikipedia.org/wiki/Chatham_Islands
+gr_0-32	0	32	Chalky Inlet	Taiari	Inlet	fe_132		https://en.wikipedia.org/wiki/Chalky_Island_(New_Zealand)
+gr_0-33	0	33	Chickens	Marotiri	Islands	fe_134	1	https://en.wikipedia.org/wiki/Hen_and_Chicken_Islands
+gr_0-34	0	34	D'Urville Island	Rangitoto Ki Te Tonga	Island	fe_134		https://en.wikipedia.org/wiki/D%27Urville_Island_(New_Zealand)
+gr_0-35	0	35	East Muttonbird Islands		Islands	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands
+gr_0-36	0	36	Great Barrier Island	Aotea	Island	fe_134		https://en.wikipedia.org/wiki/Great_Barrier_Island
+gr_0-37	0	37	Great Mercury Island	Ahuahu	Island	fe_134		https://en.wikipedia.org/wiki/Mercury_Islands
+gr_0-1	0	1	Arapawa Island	Arapaoa	Island	fe_134		https://en.wikipedia.org/wiki/Arapaoa_Island
+gr_1-2	1	2		Tapu te Ranga Marae	Marae	fe_156		
+gr_2-1	2	1		Tāpiri Marae	Marae	fe_156		
+gr_2-2	2	2		Waiwhetū Marae	Marae	fe_156		
+gr_2-3	2	3		Wainuiōmata Marae	Marae	fe_156		
+gr_4-1	4	1		Maraeroa Marae	Marae	fe_156		
+gr_4-2	4	2		Takapūāhia Marae	Marae	fe_156		
+gr_4-3	4	3		Hongoeka Marae	Marae	fe_156		
+gr_6-1	6	1		Katihīkū Marae	Marae	fe_156		
+gr_6-2	6	2		Raukawa Marae	Marae	fe_156		
+gr_6-3	6	3		Wehiwehi Marae	Marae	fe_156		
+gr_6-5	6	5		Tūkōrehe Marae	Marae	fe_156		
+gr_7-1	7	1		Kawiu Marae	Marae	fe_156		
+gr_7-2	7	2		Kohu-Tūroa Marae	Marae	fe_156		
+gr_8-1	8	1		Huia Marae	Marae	fe_156		
+gr_8-2	8	2		Kererū Marae	Marae	fe_156		
+gr_8-3	8	3		Matau Marae	Marae	fe_156		
+gr_8-4	8	4		Motuiti Marae	Marae	fe_156		
+gr_8-5	8	5		Paranui Marae	Marae	fe_156		
+gr_8-6	8	6		Whakawehi Marae	Marae	fe_156		
+gr_8-7	8	7		Tūranga Marae	Marae	fe_156		
+gr_9-1	9	1		Puketōtara Marae	Marae	fe_156		
+gr_9-2	9	2		Rangiōtu Marae	Marae	fe_156		
+gr_10-1	10	1		Aorangi Marae	Marae	fe_156		
+gr_10-2	10	2		Kauwhata Marae	Marae	fe_156		
+gr_11-1	11	1		Parewahawaha Marae	Marae	fe_156		
+gr_11-2	11	2		Parewanui Marae	Marae	fe_156		
+gr_12-1	12	1		Ngā Pōtaka Marae	Marae	fe_156		
+gr_12-2	12	2		Poupatatē Marae	Marae	fe_156		
+gr_12-3	12	3		Te Hiiri Marae	Marae	fe_156		
+gr_12-4	12	4		Te Hou Hou Marae	Marae	fe_156		
+gr_12-5	12	5		Tokorangi Marae	Marae	fe_156		
+gr_13-1	13	1	Whitikaupeka meeting house		Marae	fe_156		
+gr_13-2	13	2		Ōpaea Marae	Marae	fe_156		
+gr_13-3	13	3		Ōruamātua Marae	Marae	fe_156		
+gr_14-1	14	1		Tirorangi Marae	Marae	fe_156		
+gr_14-2	14	2		Maungārongo Marae	Marae	fe_156		
+gr_14-3	14	3		Rakatepauma Marae	Marae	fe_156		
+gr_16-1	16	1		Hīrangi Marae	Marae	fe_156		
+gr_16-2	16	2		Korohe Marae	Marae	fe_156		
+gr_16-3	16	3		Ōtūkou Marae	Marae	fe_156		
+gr_16-4	16	4		Tokaanu Marae	Marae	fe_156		
+gr_16-5	16	5		Waihī Marae	Marae	fe_156		
+gr_16-6	16	6		Waitetoko Marae	Marae	fe_156		
+gr_17-1	17	1		Maroa Marae	Marae	fe_156		
+gr_17-2	17	2		Mōkai Marae	Marae	fe_156		
+gr_17-3	17	3		Nukuhau Marae	Marae	fe_156		
+gr_17-4	17	4		Ōngāroto Marae	Marae	fe_156		
+gr_17-5	17	5		Oruanui Marae	Marae	fe_156		
+gr_17-6	17	6		Pākira Marae	Marae	fe_156		
+gr_17-7	17	7		Te Rangīta Marae	Marae	fe_156		
+gr_17-8	17	8	Haukapanui meeting house		Marae	fe_156		
+gr_17-9	17	9		Waipāhīhī Marae	Marae	fe_156		
+gr_19-1	19	1		Kauangaroa Marae	Marae	fe_156		
+gr_19-2	19	2		Rātana Pā	Marae	fe_156		
+gr_19-3	19	3		Tini Waitara Marae	Marae	fe_156		
+gr_19-4	19	4		Turakina Marae	Marae	fe_156		
+gr_19-5	19	5		Whangaehu Marae	Marae	fe_156		
+gr_20-1	20	1		Ātene Marae	Marae	fe_156		
+gr_20-2	20	2		Mangātoa Pā	Marae	fe_156		
+gr_20-3	20	3		Ōperiki Pā	Marae	fe_156		
+gr_20-4	20	4		Ōtoko Marae	Marae	fe_156		
+gr_20-5	20	5		Pungarehu Marae	Marae	fe_156		
+gr_20-6	20	6		Pūtiki-Wharanui Marae	Marae	fe_156		
+gr_20-7	20	7		Tawhitinui Marae	Marae	fe_156		
+gr_20-8	20	8		Te Ao Hou Marae	Marae	fe_156		
+gr_21-1	21	1		Matahiwi Marae	Marae	fe_156		
+gr_21-2	21	2		Patiarero Marae	Marae	fe_156		
+gr_21-3	21	3		Rānana Marae	Marae	fe_156		
+gr_21-4	21	4		Te Ao Mārama Marae	Marae	fe_156		
+gr_21-5	21	5		Tirorangi Marae	Marae	fe_156		
+gr_21-6	21	6		Poutama Whare Wānanga	Marae	fe_156		
+gr_22-1	22	1		Kauriki Marae	Marae	fe_156		
+gr_22-2	22	2		Manu Ariki Marae	Marae	fe_156		
+gr_22-3	22	3		Ngāpūwaiwaha Marae	Marae	fe_156		
+gr_22-4	22	4		Ngāpūwaiwaha Marae	Marae	fe_156		
+gr_22-5	22	5		Tuhua Marae	Marae	fe_156		
+gr_22-6	22	6		Wharauroa Marae	Marae	fe_156		
+gr_24-1	24	1		Ngātimaru Marae	Marae	fe_156		
+gr_24-2	24	2		Pūrangi Marae	Marae	fe_156		
+gr_24-3	24	3		Te Upoko-o-te-Whenua Marae	Marae	fe_156		
+gr_25-1	25	1		Kai-iwi Marae	Marae	fe_156		
+gr_25-2	25	2		Kai-iwi Marae	Marae	fe_156		
+gr_25-3	25	3		Moumāhaki Marae	Marae	fe_156		
+gr_25-4	25	4		Tauranga-ika	Marae	fe_156		
+gr_25-5	25	5		Pākaraka Pā	Marae	fe_156		
+gr_25-6	25	6		Takirau Marae	Marae	fe_156		
+gr_25-7	25	7		Te Ihupuku Marae	Marae	fe_156		
+gr_25-8	25	8		Whenuakura Marae	Marae	fe_156		
+gr_26-1	26	1		Taiporohēnui Marae	Marae	fe_156		
+gr_26-2	26	2		Meremere Marae	Marae	fe_156		
+gr_26-3	26	3		Ngātiki Marae	Marae	fe_156		
+gr_26-4	26	4		Pariroa Pā	Marae	fe_156		
+gr_26-5	26	5		Te Waioturi Marae	Marae	fe_156		
+gr_26-6	26	6	Rangiharuru meeting house		Marae	fe_156		
+gr_26-7	26	7		Te Tākere Marae	Marae	fe_156		
+gr_26-8	26	8		Ōhangai Marae	Marae	fe_156		
+gr_27-1	27	1		Kānihi Marae	Marae	fe_156		
+gr_27-2	27	2	Kumea-mai-te-Waka meeting house		Marae	fe_156		
+gr_27-3	27	3		Ōeo Marae	Marae	fe_156		
+gr_27-4	27	4		Taikātū Marae	Marae	fe_156		
+gr_27-5	27	5		Tawhiti-nui Marae	Marae	fe_156		
+gr_27-6	27	6		Te Weriweri Marae	Marae	fe_156		
+gr_27-7	27	7		Waiōkura Marae	Marae	fe_156		
+gr_28-1	28	1	Moana-i-Kauria meeting house		Marae	fe_156		
+gr_28-2	28	2		Parihaka Pā	Marae	fe_156		
+gr_28-3	28	3		Pōtaka Marae	Marae	fe_156		
+gr_28-4	28	4		Pūniho Marae	Marae	fe_156		
+gr_29-1	29	1		Manukorihi	Marae	fe_156		
+gr_29-2	29	2		Mururaupatu Marae	Marae	fe_156		
+gr_29-3	29	3		Ōwae Marae	Marae	fe_156		
+gr_29-4	29	4		Pukerangiora Pā	Marae	fe_156		
+gr_29-5	29	5	Rangimārie Arts & Crafts Centre		Marae	fe_156		
+gr_33-1	33	1		Te Oreore-o-te-kata-ā-Hine-Mātaki Marae	Marae	fe_156		
+gr_37-1	37	1		Mākirikiri Marae	Marae	fe_156		
+gr_37-2	37	2		Poherau Marae	Marae	fe_156		
+gr_37-3	37	3		Te Ahu-a-Turanga Marae	Marae	fe_156		
+gr_38-1	38	1		Rongaomaraeroa Marae	Marae	fe_156		
+gr_39-1	39	1		Kauheihei	Marae	fe_156		
+gr_39-2	39	2		Rākautātahi Marae	Marae	fe_156		
+gr_39-3	39	3		Tapairu Marae	Marae	fe_156		
+gr_39-4	39	4		Whatuiāpiti Marae	Marae	fe_156		
+gr_40-1	40	1		Houngarea Marae	Marae	fe_156		
+gr_40-10	40	10		Taupunga Marae	Marae	fe_156		
+gr_40-11	40	11		Waiohiki Marae	Marae	fe_156		
+gr_40-12	40	12		Waipatu Marae	Marae	fe_156		
+gr_40-2	40	2		Kahurānaki Marae	Marae	fe_156		
+gr_40-3	40	3		Kahurangi Marae	Marae	fe_156		
+gr_40-4	40	4		Korongatā Marae	Marae	fe_156		
+gr_40-5	40	5		Mangaroa Marae	Marae	fe_156		
+gr_40-6	40	6		Mihiroa Marae	Marae	fe_156		
+gr_40-7	40	7		Ruahāpia Marae	Marae	fe_156		
+gr_40-8	40	8		Taraia Marae	Marae	fe_156		
+gr_41-1	41	1		Arapaoanui Marae	Marae	fe_156		
+gr_41-10	41	10		Tāngoio Marae	Marae	fe_156		
+gr_41-11	41	11		Te Āwhina Marae	Marae	fe_156		
+gr_41-12	41	12		Te Hāroto Marae	Marae	fe_156		
+gr_41-13	41	13		Te Ūranga Waka Marae	Marae	fe_156		
+gr_41-14	41	14		Timi Kara Marae	Marae	fe_156		
+gr_41-2	41	2		Kohupātiki Marae	Marae	fe_156		
+gr_41-3	41	3		Korokipo Marae	Marae	fe_156		
+gr_41-4	41	4		Mōhaka Marae	Marae	fe_156		
+gr_41-5	41	5		Mōteo Marae	Marae	fe_156		
+gr_41-6	41	6		Ōmāhū Marae	Marae	fe_156		
+gr_41-7	41	7		Parirangi Marae	Marae	fe_156		
+gr_41-8	41	8		Poraiti Marae	Marae	fe_156		
+gr_41-9	41	9		Rūnanga Marae	Marae	fe_156		
+gr_42-1	42	1		Arimāwha Marae	Marae	fe_156		
+gr_42-10	42	10		Rangiahua Marae	Marae	fe_156		
+gr_42-11	42	11		Ruataniwha Marae	Marae	fe_156		
+gr_42-12	42	12		Tākitimu Marae	Marae	fe_156		
+gr_42-13	42	13		Taihoa Marae	Marae	fe_156		
+gr_42-14	42	14		Tawhiti-a-maru Marae	Marae	fe_156		
+gr_42-15	42	15		Te Huki Marae	Marae	fe_156		
+gr_42-16	42	16		Te Kahu-o-te-Rangi Marae	Marae	fe_156		
+gr_42-17	42	17		Te Karaona Marae	Marae	fe_156		
+gr_42-19	42	19		Te Kotahitanga Marae	Marae	fe_156		
+gr_42-2	42	2		Hikuwai Marae	Marae	fe_156		
+gr_42-20	42	20		Te Rauhina Marae	Marae	fe_156		
+gr_42-21	42	21		Tiakiwai Marae	Marae	fe_156		
+gr_42-22	42	22		Whākirangi Marae	Marae	fe_156		
+gr_42-23	42	23		Whakakī Marae	Marae	fe_156		
+gr_42-24	42	24		Whetūmārama Marae	Marae	fe_156		
+gr_42-3	42	3		Hinekōrako Marae	Marae	fe_156		
+gr_42-4	42	4		Hinemihi Marae	Marae	fe_156		
+gr_42-5	42	5		Hurumoa Marae	Marae	fe_156		
+gr_42-6	42	6		Iwitea Marae	Marae	fe_156		
+gr_42-7	42	7		Kahungunu Marae	Marae	fe_156		
+gr_42-8	42	8		Pākohai Marae	Marae	fe_156		
+gr_42-9	42	9		Pūtahi Marae	Marae	fe_156		
+gr_43-1	43	1		Kaiuku Marae	Marae	fe_156		
+gr_43-10	43	10		Tuahuru Marae	Marae	fe_156		
+gr_43-11	43	11		Wai-a-uru Marae	Marae	fe_156		
+gr_43-2	43	2		Mahanga Marae	Marae	fe_156		
+gr_43-3	43	3		Manutai Marae	Marae	fe_156		
+gr_43-4	43	4		Marahara Marae	Marae	fe_156		
+gr_43-5	43	5		Nūhaka Marae	Marae	fe_156		
+gr_43-6	43	6		Ruāwharo Marae	Marae	fe_156		
+gr_43-7	43	7		Tāne-nui-a-Rangi Marae	Marae	fe_156		
+gr_43-8	43	8		Tama Kahu Marae	Marae	fe_156		
+gr_43-9	43	9		Te Rehu Marae	Marae	fe_156		
+gr_44-1	44	1		Maraetaha Marae	Marae	fe_156		
+gr_44-10	44	10		Wakatō Marae	Marae	fe_156		
+gr_44-2	44	2		Mokonui-ā-rangi Marae	Marae	fe_156		
+gr_44-3	44	3		Muriwai Marae	Marae	fe_156		
+gr_44-4	44	4		Ngātapa Marae	Marae	fe_156		
+gr_44-5	44	5		Ōhako Marae	Marae	fe_156		
+gr_44-6	44	6		Pāhou Marae	Marae	fe_156		
+gr_44-7	44	7		Pākowhai Marae	Marae	fe_156		
+gr_44-8	44	8		Rongopai Marae	Marae	fe_156		
+gr_44-9	44	9		Tākitimu Marae	Marae	fe_156		
+gr_45-1	45	1		Mangatū Marae	Marae	fe_156		
+gr_45-2	45	2		Rangatira Marae	Marae	fe_156		
+gr_45-3	45	3		Tākipū Marae	Marae	fe_156		
+gr_45-4	45	4		Tapu-i-Hikitia Marae	Marae	fe_156		
+gr_46-1	46	1		Pārihi-Mānihi Marae	Marae	fe_156		
+gr_46-2	46	2		Tārere Marae	Marae	fe_156		
+gr_46-3	46	3		Te Kuri-a-Tuatai Marae	Marae	fe_156		
+gr_46-4	46	4		Waerenga-ā-hika Marae	Marae	fe_156		
+gr_47-1	47	1		Te Poho-o-Rāwiri Marae	Marae	fe_156		
+gr_47-2	47	2		Whāngārā Marae	Marae	fe_156		
+gr_48-1	48	1		Anaura Marae	Marae	fe_156		
+gr_48-2	48	2		Hauiti Marae	Marae	fe_156		
+gr_48-4	48	4		Kurī Marae	Marae	fe_156		
+gr_48-5	48	5	Te Amowhiu meeting house		Marae	fe_156		
+gr_48-6	48	6		Te Rāwheoro Marae	Marae	fe_156		
+gr_49-1	49	1		Kiekie Marae	Marae	fe_156		
+gr_49-2	49	2		Mihikango Marae	Marae	fe_156		
+gr_49-3	49	3		Pākirikiri Marae	Marae	fe_156		
+gr_49-4	49	4		Te Ariuru Marae	Marae	fe_156		
+gr_49-5	49	5		Tuatini Marae	Marae	fe_156		
+gr_49-6	49	6		Waiparapara Marae	Marae	fe_156		
+gr_49-8	49	8		Whareponga Marae	Marae	fe_156		
+gr_50-1	50	1		Hīruhārama Marae	Marae	fe_156		
+gr_50-10	50	10		Pōtaka Marae	Marae	fe_156		
+gr_50-11	50	11		Rāhui-o-Kehu Marae	Marae	fe_156		
+gr_50-12	50	12		Reporua Marae	Marae	fe_156		
+gr_50-13	50	13	Rauru-nui-ā-Toi meeting house		Marae	fe_156		
+gr_50-14	50	14		Taumata-puhi Marae	Marae	fe_156		
+gr_50-15	50	15		Te Aro Wera Marae	Marae	fe_156		
+gr_50-16	50	16		Te Horo Marae	Marae	fe_156		
+gr_50-17	50	17		Te Rāhui Marae	Marae	fe_156		
+gr_50-18	50	18		Tūwhakairiora Marae	Marae	fe_156		
+gr_50-19	50	19		Waiōmatatini Marae	Marae	fe_156		
+gr_50-2	50	2		Hinepare Marae	Marae	fe_156		
+gr_50-20	50	20		Waitākaro Marae	Marae	fe_156		
+gr_50-21	50	21		Whakapaorangi Marae	Marae	fe_156		
+gr_50-22	50	22		Whenua-ā-kura Marae	Marae	fe_156		
+gr_50-23	50	23		Te Araroa Marae	Marae	fe_156		
+gr_50-3	50	3		Horoera Marae	Marae	fe_156		
+gr_50-4	50	4		Kākāriki Marae	Marae	fe_156		
+gr_50-5	50	5		Kariaka Marae	Marae	fe_156		
+gr_50-6	50	6		Mākarika Marae	Marae	fe_156		
+gr_50-7	50	7		Mangahāngea Marae	Marae	fe_156		
+gr_50-8	50	8		Pāhau Marae	Marae	fe_156		
+gr_50-9	50	9		Penu Marae	Marae	fe_156		
+gr_51-1	51	1		Kaiaio Marae	Marae	fe_156		
+gr_51-10	51	10		Whangaparāoa Marae	Marae	fe_156		
+gr_51-11	51	11		Whitianga Marae	Marae	fe_156		
+gr_51-2	51	2		Maruohinemaka Marae	Marae	fe_156		
+gr_51-3	51	3		Ōtūwhare Marae	Marae	fe_156		
+gr_51-4	51	4		Pāhaoa Marae	Marae	fe_156		
+gr_51-5	51	5		Pōtaka Marae	Marae	fe_156		
+gr_51-6	51	6		Te Papa-o-Mārere Marae	Marae	fe_156		
+gr_51-7	51	7		Te Papa-o-Wharekura Marae	Marae	fe_156		
+gr_51-8	51	8		Waiōrore Marae	Marae	fe_156		
+gr_51-9	51	9		Wairūrū Marae	Marae	fe_156		
+gr_53-1	53	1		Kutarere Marae	Marae	fe_156		
+gr_53-2	53	2		Roimata Marae	Marae	fe_156		
+gr_53-4	53	4		Te Rere Pā	Marae	fe_156		
+gr_53-5	53	5		Waiotahe Pā	Marae	fe_156		
+gr_53-6	53	6	Tūtāmure meeting house		Marae	fe_156		
+gr_53-7	53	7	Irapuāia meeting house		Marae	fe_156		
+gr_53-8	53	8	Muriwai meeting house		Marae	fe_156		
+gr_53-9	53	9	Ruamoko meeting house		Marae	fe_156		
+gr_54-1	54	1		Matahī Marae	Marae	fe_156		
+gr_54-10	54	10		Tuapō Marae	Marae	fe_156		
+gr_54-11	54	11		Whakarae Marae	Marae	fe_156		
+gr_54-12	54	12	Te Poho-o-Tamatea meeting house		Marae	fe_156		
+gr_54-13	54	13		Rāroa Pā	Marae	fe_156		
+gr_54-2	54	2		Ōmuriwaka Marae	Marae	fe_156		
+gr_54-3	54	3		Piripari Marae	Marae	fe_156		
+gr_54-4	54	4	Rāhiri-o-te-Rangi meeting house		Marae	fe_156		
+gr_54-5	54	5		Tātaiahape Marae	Marae	fe_156		
+gr_54-6	54	6		Tāwhana Marae	Marae	fe_156		
+gr_54-7	54	7		Tauanui Marae	Marae	fe_156		
+gr_54-8	54	8		Te Ao Hou Marae	Marae	fe_156		
+gr_54-9	54	9		Te Pou-ā-Hīnau Marae	Marae	fe_156		
+gr_55-1	55	1		Ngāhina Marae	Marae	fe_156		
+gr_55-10	55	10		Waikirikiri Marae	Marae	fe_156		
+gr_55-2	55	2		Ōhotu Marae	Marae	fe_156		
+gr_55-3	55	3		Ōtenuku Marae	Marae	fe_156		
+gr_55-4	55	4	Ōwhakatoro meeting house		Marae	fe_156		
+gr_55-5	55	5		Tauarau Marae	Marae	fe_156		
+gr_55-6	55	6		Te Papakāinga Marae	Marae	fe_156		
+gr_55-7	55	7		Te Pou-ā-Hīnau Marae	Marae	fe_156		
+gr_55-8	55	8		Te Rewarewa Marae	Marae	fe_156		
+gr_55-9	55	9		Tōtara Marae	Marae	fe_156		
+gr_56-1	56	1		Kākānui Marae	Marae	fe_156		
+gr_56-10	56	10		Kākahu Tāpiki Marae	Marae	fe_156		
+gr_56-11	56	11		Pāpueru Marae	Marae	fe_156		
+gr_56-2	56	2		Mātaatua Marae	Marae	fe_156		
+gr_56-3	56	3		Ōhaua-te-Rangi Marae	Marae	fe_156		
+gr_56-4	56	4		Ōpūtao Marae	Marae	fe_156		
+gr_56-5	56	5		Ōtekura Marae	Marae	fe_156		
+gr_56-6	56	6		Tātāhoata Marae	Marae	fe_156		
+gr_56-7	56	7		Te Umuroa Marae	Marae	fe_156		
+gr_56-8	56	8		Uhiārae Marae	Marae	fe_156		
+gr_56-9	56	9		Tāne-nui-ā-Rangi	House	fe_129		
+gr_57-1	57	1		Kūhā Pā	Marae	fe_156		
+gr_57-2	57	2		Waimako Marae	Marae	fe_156		
+gr_58-1	58	1		Moewhare Marae	Marae	fe_156		
+gr_58-2	58	2		Murumurunga Marae	Marae	fe_156		
+gr_58-3	58	3		Rangitahi Pā	Marae	fe_156		
+gr_58-4	58	4		Tīpapa Marae	Marae	fe_156		
+gr_58-5	58	5		Waikotikoti Marae	Marae	fe_156		
+gr_58-6	58	6		Whirinaki Pā	Marae	fe_156		
+gr_59-1	59	1		Kōkōhīnau Marae	Marae	fe_156		
+gr_59-10	59	10		Tū-te-Ao Marae	Marae	fe_156		
+gr_59-11	59	11		Uira-roa Marae	Marae	fe_156		
+gr_59-12	59	12		Wairaka Marae	Marae	fe_156		
+gr_59-2	59	2		Ōmataroa Marae	Marae	fe_156		
+gr_59-3	59	3		Poroporo Marae	Marae	fe_156		
+gr_59-4	59	4		Puawairua Marae	Marae	fe_156		
+gr_59-5	59	5		Ruaihona Marae	Marae	fe_156		
+gr_59-6	59	6		Taiwhakāea Marae	Marae	fe_156		
+gr_59-7	59	7		Te Māpou Marae	Marae	fe_156		
+gr_59-8	59	8		Te Rangi Houhiri Marae	Marae	fe_156		
+gr_59-9	59	9		Toroa Marae	Marae	fe_156		
+gr_60-1	60	1		Ōniao Pā	Marae	fe_156		
+gr_60-2	60	2		Umutahi Pā	Marae	fe_156		
+gr_60-3	60	3		Rangitihi Pā	Marae	fe_156		
+gr_61-1	61	1		Waitahanui Pā	Marae	fe_156		
+gr_61-2	61	2		Pukehina Pā	Marae	fe_156		
+gr_62-1	62	1		Kāhumatamomoe Pā	Marae	fe_156		
+gr_62-2	62	2		Te Tākinga Pā	Marae	fe_156		
+gr_62-3	62	3		Ōhau Pā	Marae	fe_156		
+gr_62-4	62	4		Pounamunui Pā	Marae	fe_156		
+gr_62-5	62	5	Rangitihi meeting house		Marae	fe_156		
+gr_62-6	62	6	Pikiao meeting house		Marae	fe_156		
+gr_63-1	63	1		Tapuaekura Pā	Marae	fe_156		
+gr_63-2	63	2		Ruatō Pā	Marae	fe_156		
+gr_63-3	63	3		Waikohatu Pā	Marae	fe_156		
+gr_63-4	63	4		Taurua Pā	Marae	fe_156		
+gr_63-5	63	5		Te Waiiti Pā	Marae	fe_156		
+gr_63-6	63	6		Tapuaeharuru Pā	Marae	fe_156		
+gr_63-7	63	7		Punawhakarēia Pā	Marae	fe_156		
+gr_64-1	64	1		Mātai-Kōtare Pā	Marae	fe_156		
+gr_64-2	64	2		Te Ruamatā Pā	Marae	fe_156		
+gr_64-3	64	3		Pikirangi Pā	Marae	fe_156		
+gr_66-1	66	1		Waimahana Pā	Marae	fe_156		
+gr_66-2	66	2		Mātaārae Pā	Marae	fe_156		
+gr_66-3	66	3		Ōhaki Pā	Marae	fe_156		
+gr_67-1	67	1		Rongomaipāpā Pā	Marae	fe_156		
+gr_67-2	67	2		Kearoa Pā	Marae	fe_156		
+gr_68-1	68	1		Te Pākira Pā	Marae	fe_156		
+gr_68-14	68	14		Hinemihi	Marae	fe_156		
+gr_68-2	68	2		Te Iringa Pā	Marae	fe_156		
+gr_68-3	68	3		Rotowhio Pā	Marae	fe_156		
+gr_69-1	69	1		Te Papai-ō-uru Pā	Marae	fe_156		
+gr_69-3	69	3		Mātaatua Marae	Marae	fe_156		
+gr_69-4	69	4		Tūtānekai Pā	Marae	fe_156		
+gr_69-5	69	5	Apumoana meeting house		Marae	fe_156		
+gr_69-6	69	6		Hinemihi Pā	Marae	fe_156		
+gr_69-7	69	7	Hurunga-o-te-Rangi meeting house		Marae	fe_156		
+gr_69-8	69	8		Tārewa Pā	Marae	fe_156		
+gr_69-9	69	9	Tūmahaurangi meeting house		Marae	fe_156		
+gr_71-1	71	1		Tarukenga Pā	Marae	fe_156		
+gr_71-2	71	2		Rangiwewehi Pā	Marae	fe_156		
+gr_71-3	71	3		Waitetī Pā	Marae	fe_156		
+gr_71-4	71	4		Te Purei	Marae	fe_156		
+gr_71-5	71	5		Te Kurī	Marae	fe_156		
+gr_72-1	72	1	Tāwakeheimoa meeting house		Marae	fe_156		
+gr_73-1	73	1		Te Awhe Pā	Marae	fe_156		
+gr_73-2	73	2		Whakaue Pā	Marae	fe_156		
+gr_74-1	74	1		Manoeka Pā	Marae	fe_156		
+gr_74-2	74	2		Waitangi Pā	Marae	fe_156		
+gr_74-3	74	3		Te Paamu Pā	Marae	fe_156		
+gr_74-4	74	4		Rangiuru Pā	Marae	fe_156		
+gr_74-5	74	5		Te Mataī Pā	Marae	fe_156		
+gr_74-6	74	6		Te Kahika Pā	Marae	fe_156		
+gr_75-1	75	1	Tamatea-ki-te-huatahi meeting house		Marae	fe_156		
+gr_75-2	75	2	Te Hiinga o te Rā meeting house		Marae	fe_156		
+gr_76-1	76	1		Te Rereātūkāhia Marae	Marae	fe_156		
+gr_76-10	76	10		Kutaroa Marae	Marae	fe_156		
+gr_76-11	76	11		Maungatapu Marae	Marae	fe_156		
+gr_76-12	76	12		Whareroa Marae	Marae	fe_156		
+gr_76-13	76	13		Mangatawa Marae	Marae	fe_156		
+gr_76-15	76	15	Tahinga-o-te-Rā meeting house		Marae	fe_156		
+gr_76-16	76	16		Hūria Marae	Marae	fe_156		
+gr_76-2	76	2		Hairīni Marae	Marae	fe_156		
+gr_76-3	76	3		Tūāpiro Marae	Marae	fe_156		
+gr_76-4	76	4		Te Pura Wairoa Marae	Marae	fe_156		
+gr_76-5	76	5		Peterehema Marae	Marae	fe_156		
+gr_76-7	76	7		Ōpounui	Marae	fe_156		
+gr_76-8	76	8	Rangihouhiri meeting house		Marae	fe_156		
+gr_76-9	76	9		Ōpureora Marae	Marae	fe_156		
+gr_79-1	79	1	Waihī Community Marae		Marae	fe_156		
+gr_79-2	79	2		Pūkewa Marae	Marae	fe_156		
+gr_85-1	85	1		Mātai Whetū Marae	Marae	fe_156		
+gr_86-1	86	1		Ngahu Toitoi Marae	Marae	fe_156		
+gr_86-2	86	2		Te Pai ō Hauraki Marae	Marae	fe_156		
+gr_87-1	87	1		Tūī Pā	Marae	fe_156		
+gr_88-1	88	1		Mangatangi Marae	Marae	fe_156		
+gr_88-3	88	3		Tūī	Marae	fe_156		
+gr_89-1	89	1		Whakatīwai Marae	Marae	fe_156		
+gr_90-1	90	1		Mōkaukohunui Marae	Marae	fe_156		
+gr_90-2	90	2		Napinapi Pā	Marae	fe_156		
+gr_90-3	90	3		Ngā Miro ā Huiao Marae	Marae	fe_156		
+gr_90-4	90	4		Āria Marae	Marae	fe_156		
+gr_90-5	90	5		Māniaroa Marae	Marae	fe_156		
+gr_91-1	91	1		Mīringa te Kakara Marae	Marae	fe_156		
+gr_91-2	91	2		Te Hape Marae	Marae	fe_156		
+gr_91-3	91	3	Rērēahu meeting house		Marae	fe_156		
+gr_91-4	91	4		Te Ihingārangi Marae	Marae	fe_156		
+gr_92-1	92	1	Te Tokanganui-ā-Noho meeting house		Marae	fe_156		
+gr_92-2	92	2		Otewā Marae	Marae	fe_156		
+gr_92-3	92	3	Te Kōrapa meeting house		Marae	fe_156		
+gr_92-4	92	4		Te Ahoroa Marae	Marae	fe_156		
+gr_92-5	92	5		Te Kuiti Pā	Marae	fe_156		
+gr_92-6	92	6		Tomotuki Marae	Marae	fe_156		
+gr_92-7	92	7		Mōtītī Pā	Marae	fe_156		
+gr_92-8	92	8		Mangarama Marae	Marae	fe_156		
+gr_93-1	93	1		Haurua	Marae	fe_156		
+gr_93-2	93	2	Waipātōtō meeting house		Marae	fe_156		
+gr_93-3	93	3		Kaputuhi Marae	Marae	fe_156		
+gr_94-1	94	1		Kahotea Pā	Marae	fe_156		
+gr_94-2	94	2		Te Keeti Marae	Marae	fe_156		
+gr_95-1	95	1		Maketū Pā	Marae	fe_156		
+gr_95-10	95	10	Te Mānia Sleeping House		Marae	fe_156		
+gr_95-2	95	2		Ōkapu Marae	Marae	fe_156		
+gr_95-3	95	3		Taharoa Marae	Marae	fe_156		
+gr_95-4	95	4		Mōkai-kāinga Marae	Marae	fe_156		
+gr_95-5	95	5		Hīona Marae	Marae	fe_156		
+gr_95-6	95	6		Te Koraha Marae	Marae	fe_156		
+gr_95-7	95	7		Waipapa Marae	Marae	fe_156		
+gr_95-8	95	8		Rākaunui Marae	Marae	fe_156		
+gr_95-9	95	9		Te Rauāmoa Marae	Marae	fe_156		
+gr_96-1	96	1		Waingaro Marae	Marae	fe_156		
+gr_96-2	96	2		Poihākena Marae	Marae	fe_156		
+gr_96-3	96	3		Miria te Kakara Marae	Marae	fe_156		
+gr_96-4	96	4		Oneparepare Marae	Marae	fe_156		
+gr_96-5	96	5		Te Kaharoa Marae	Marae	fe_156		
+gr_96-6	96	6		Te Tihi ō Moerangi marae	Marae	fe_156		
+gr_97-1	97	1		Pou-ā-Kani Marae	Marae	fe_156		
+gr_98-1	98	1	Ngā Waka Hall		Marae	fe_156		
+gr_98-2	98	2		Papa o te Aroha Marae	Marae	fe_156		
+gr_98-3	98	3		Ōngāroto Marae	Marae	fe_156		
+gr_98-4	98	4	Pakake-Taiari meeting house		Marae	fe_156		
+gr_98-6	98	6		Te Whānau Ānoa Marae	Marae	fe_156		
+gr_99-1	99	1		Te Ruapeka Marae	Marae	fe_156		
+gr_99-10	99	10		Pāparāmu Marae	Marae	fe_156		
+gr_99-11	99	11		Te Ōmeka Marae	Marae	fe_156		
+gr_99-12	99	12		Ōkauia Pā	Marae	fe_156		
+gr_99-2	99	2		Whakaaratamaiti Marae	Marae	fe_156		
+gr_99-3	99	3		Mangakāretu Marae	Marae	fe_156		
+gr_99-4	99	4		Pikitū Marae	Marae	fe_156		
+gr_99-5	99	5		Mātiti Marae	Marae	fe_156		
+gr_99-7	99	7		Kuranui Marae	Marae	fe_156		
+gr_99-8	99	8		Ngātira Haere Marae	Marae	fe_156		
+gr_99-9	99	9		Te Ūkaipō Marae	Marae	fe_156		
+gr_100-1	100	1		Rukumoana Pā	Marae	fe_156		
+gr_100-2	100	2		Kaia te Mata Marae	Marae	fe_156		
+gr_100-3	100	3		Raungaiti Marae	Marae	fe_156		
+gr_100-4	100	4		Hukunui Marae	Marae	fe_156		
+gr_100-5	100	5		Tauwhare Marae	Marae	fe_156		
+gr_101-1	101	1		Maungatautari Marae	Marae	fe_156		
+gr_101-2	101	2	Rangiatea meeting house		Marae	fe_156		
+gr_101-3	101	3		Ōtautahanga Marae	Marae	fe_156		
+gr_101-4	101	4		Aotearoa Pā	Marae	fe_156		
+gr_101-5	101	5		Rāwhti Roa Marae	Marae	fe_156		
+gr_102-1	102	1	Ōtāwhao meeting house		Marae	fe_156		
+gr_102-2	102	2		Pūrekireki Marae	Marae	fe_156		
+gr_102-3	102	3		Te Haona Kaha Marae	Marae	fe_156		
+gr_103-1	103	1		Kirikiriroa Marae	Marae	fe_156		
+gr_103-2	103	2		Hui te Rangiora Marae	Marae	fe_156		
+gr_103-3	103	3		Miropiko	Marae	fe_156		
+gr_103-5	103	5		Ngāti Hamutana Marae	Marae	fe_156		
+gr_104-1	104	1		Tūrangawaewae Marae	Marae	fe_156		
+gr_104-2	104	2		Ngāruawāhia	Town	fe_282		
+gr_104-3	104	3		Taupiri	Town	fe_282		
+gr_104-4	104	4		Waikeri Pā	Marae	fe_156		
+gr_105-1	105	1		Waahi Marae	Marae	fe_156		
+gr_105-2	105	2		Te Kauri Marae	Marae	fe_156		
+gr_105-3	105	3		Te Ōhākī Marae	Marae	fe_156		
+gr_105-4	105	4		Kaitumutumu Marae	Marae	fe_156		
+gr_106-1	106	1		Taniwha Marae	Marae	fe_156		
+gr_106-2	106	2		Rangiriri	Marae	fe_156		
+gr_106-3	106	3		Horahora Marae	Marae	fe_156		
+gr_106-4	106	4		Waikare Marae	Marae	fe_156		
+gr_106-5	106	5		Te Pou o Mangatāwhiri Marae	Marae	fe_156		
+gr_107-1	107	1		Te Kotahitanga Marae	Marae	fe_156		
+gr_107-2	107	2		Ōraeroa Marae	Marae	fe_156		
+gr_107-3	107	3		Tauranganui Marae	Marae	fe_156		
+gr_107-4	107	4		Ngā Tai E Rua Marae	Marae	fe_156		
+gr_107-5	107	5	Te Ōhākīāte Puea Sleeping House		Marae	fe_156		
+gr_107-6	107	6	Ngā Hau E Wha Hall		Marae	fe_156		
+gr_108-1	108	1	Te Uwira meeting house		Marae	fe_156		
+gr_108-2	108	2		Rere-te-Whioi Marae	Marae	fe_156		
+gr_108-3	108	3		Whātāpaka Marae	Marae	fe_156		
+gr_108-4	108	4		Waiau Pā	Marae	fe_156		
+gr_109-1	109	1		Ngāti Papakura Marae	Marae	fe_156		
+gr_110-1	110	1		Umupuia Marae	Marae	fe_156		
+gr_111-1	111	1		Piritahi Marae	Marae	fe_156		
+gr_113-1	113	1		Mōtaerehe Marae	Marae	fe_156		
+gr_113-2	113	2		Kāwā Marae	Marae	fe_156		
+gr_114-1	114	1		Māngere Marae	Marae	fe_156		
+gr_114-2	114	2		Te Ihuamataoho Marae	Marae	fe_156		
+gr_114-3	114	3		Mātaatua Marae	Marae	fe_156		
+gr_114-4	114	4		Ōtara Marae	Marae	fe_156		
+gr_114-5	114	5		Ngā Hau E Whā Marae	Marae	fe_156		
+gr_114-6	114	6	Matuku Tūrēia Dining Hall		Marae	fe_156		
+gr_114-7	114	7	Parehuia meeting house		Marae	fe_156		
+gr_114-8	114	8	Aorere College		Marae	fe_156		
+gr_116-1	116	1		Ōrākei Marae	Marae	fe_156		
+gr_116-10	116	10		Ruapōtaka Marae	Marae	fe_156		
+gr_116-11	116	11	Waiatarau Community Centre		Community Centre	fe_58		
+gr_116-12	116	12	Kahurangi Ki Maungawhau meeting house		Marae	fe_156		
+gr_116-13	116	13		Kuru Takawaenga Marae	Marae	fe_156		
+gr_116-14	116	14		Waipapa Marae	Marae	fe_156		
+gr_116-15	116	15		Kōkiri Ki Maungarei Marae	Marae	fe_156		
+gr_116-16	116	16		Whare Hui	Marae	fe_156		
+gr_116-2	116	2		Te Tira Hōu Marae	Marae	fe_156		
+gr_116-3	116	3	St Sep's		Marae	fe_156		
+gr_116-4	116	4	Hotunui meeting house		Marae	fe_156		
+gr_116-5	116	5		Te Unga Waka Marae	Marae	fe_156		
+gr_116-6	116	6		Te Akootetūī Marae	Marae	fe_156		
+gr_116-7	116	7	Tūtahi Tonu meeting house		Marae	fe_156		
+gr_116-8	116	8		Māhurehure Marae	Marae	fe_156		
+gr_117-1	117	1		Hoani Waititi Marae	Marae	fe_156		
+gr_117-2	117	2		Kākāriki Marae	Marae	fe_156		
+gr_117-3	117	3		Ōpānuku Marae	Marae	fe_156		
+gr_117-4	117	4	Te Kōtuku meeting house		Marae	fe_156		
+gr_119-1	119	1	Te Kāmaka meeting house		Marae	fe_156		
+gr_120-1	120	1		Haranui Marae	Marae	fe_156		
+gr_120-2	120	2		Kākānui Marae	Marae	fe_156		
+gr_120-3	120	3	Whiti-te-Rā meeting house		Marae	fe_156		
+gr_120-4	120	4		Puatahi Marae	Marae	fe_156		
+gr_122-1	122	1		Rangituanui Marae	Marae	fe_156		
+gr_123-1	123	1		Kākāraea Marae	Marae	fe_156		
+gr_123-2	123	2		Te Pounga Marae	Marae	fe_156		
+gr_124-1	124	1		Taitā Marae	Marae	fe_156		
+gr_124-10	124	10	Pihirau meeting house		Marae	fe_156		
+gr_124-2	124	2		Rīpia Marae	Marae	fe_156		
+gr_124-3	124	3		Ōtūrei Marae	Marae	fe_156		
+gr_124-4	124	4		Te Houhanga Marae	Marae	fe_156		
+gr_124-5	124	5		Aoroa	Locality	fe_154		
+gr_124-6	124	6		Pouto Marae	Marae	fe_156		
+gr_124-7	124	7		Waihauā Marae	Marae	fe_156		
+gr_124-8	124	8		Tinopai Marae	Marae	fe_156		
+gr_124-9	124	9		Toetoe Marae	Marae	fe_156		
+gr_125-1	125	1		Kaihū Marae	Marae	fe_156		
+gr_125-2	125	2		Waikaraka Marae	Marae	fe_156		
+gr_125-3	125	3		Waikarā Marae	Marae	fe_156		
+gr_125-4	125	4		Pāhinui Marae	Marae	fe_156		
+gr_125-5	125	5		Matatina Marae	Marae	fe_156		
+gr_125-6	125	6		Ahikiwi Marae	Marae	fe_156		
+gr_125-7	125	7	Ngāti Toro meeting house		Marae	fe_156		
+gr_126-1	126	1		Tauteihiihi Marae	Marae	fe_156		
+gr_126-10	126	10		Tāhekeroa Marae	Marae	fe_156		
+gr_126-11	126	11		Puhi Moana Ariki Marae	Marae	fe_156		
+gr_126-12	126	12		Moehau Marae	Marae	fe_156		
+gr_126-13	126	13		Motukiore Marae	Marae	fe_156		
+gr_126-14	126	14		Mātaitauā Marae	Marae	fe_156		
+gr_126-2	126	2		Maraeroa Marae	Marae	fe_156		
+gr_126-3	126	3		Te Kotahitanga Marae	Marae	fe_156		
+gr_126-4	126	4	Te Herenga o te Aroha meeting house		Marae	fe_156		
+gr_126-5	126	5		Waiwhatawhata Marae	Marae	fe_156		
+gr_126-6	126	6		Paremata Marae	Marae	fe_156		
+gr_126-7	126	7	Te Whakamaharatanga meeting house		Marae	fe_156		
+gr_126-8	126	8	Te Piitī meeting house		Marae	fe_156		
+gr_126-9	126	9		Mōria Marae	Marae	fe_156		
+gr_127-1	127	1		Te Iringa Marae	Marae	fe_156		
+gr_127-12	127	12	Ngati Toro meeting house		Marae	fe_156		
+gr_127-13	127	13		Pātearoha Marae	Marae	fe_156		
+gr_127-2	127	2		Ngāti Koro Marae	Marae	fe_156		
+gr_127-3	127	3		Te Kotahitanga Marae	Marae	fe_156		
+gr_127-4	127	4	Te Aroha meeting house		Marae	fe_156		
+gr_127-5	127	5		Te Hūruhi Marae	Marae	fe_156		
+gr_127-6	127	6		Pukerātā Marae	Marae	fe_156		
+gr_127-7	127	7		Te Riingi Marae	Marae	fe_156		
+gr_127-8	127	8	Nukutawhiti meeting house		Marae	fe_156		
+gr_128-1	128	1		Whāngārei Terenga Parāoa Marae	Marae	fe_156		
+gr_128-10	128	10		Takahiwai Marae	Marae	fe_156		
+gr_128-11	128	11		Pā te Aroha Marae	Marae	fe_156		
+gr_128-12	128	12		Tītoki	Locality	fe_154		
+gr_128-2	128	2		Onerahi Marae	Marae	fe_156		
+gr_128-3	128	3		Pēhiāweri Marae	Marae	fe_156		
+gr_128-4	128	4		Te Maungaārongo Marae	Marae	fe_156		
+gr_128-5	128	5		Korokota Marae	Marae	fe_156		
+gr_128-6	128	6	Te Paea Soldiers' Memorial		Marae	fe_156		
+gr_128-7	128	7		Te Horo Marae	Marae	fe_156		
+gr_128-8	128	8	Paratene te Manu meeting house		Marae	fe_156		
+gr_128-9	128	9		Whakapoumahara Marae	Marae	fe_156		
+gr_130-1	130	1		Kaikou Marae	Marae	fe_156		
+gr_130-2	130	2		Mōtatau Marae	Marae	fe_156		
+gr_130-3	130	3		Akerama Marae	Marae	fe_156		
+gr_130-4	130	4	Matawaia meeting house		Marae	fe_156		
+gr_130-5	130	5		Whakapara Marae	Marae	fe_156		
+gr_131-1	131	1		Tou Rangatira	Marae	fe_156		
+gr_131-10	131	10		Tauwhara Marae	Marae	fe_156		
+gr_131-11	131	11		Te Kāretu Marae	Marae	fe_156		
+gr_131-12	131	12		Ngātiwai Marae	Marae	fe_156		
+gr_131-13	131	13	Orautu Hall		Marae	fe_156		
+gr_131-14	131	14	Te Tūriki meeting house		Marae	fe_156		
+gr_131-15	131	15	Pare meeting house		Marae	fe_156		
+gr_131-16	131	16		Maurea Pā	Marae	fe_156		
+gr_131-17	131	17	Whitiora meeting house		Marae	fe_156		
+gr_131-2	131	2		Waiōmio Marae	Marae	fe_156		
+gr_131-3	131	3		Porowini Marae	Marae	fe_156		
+gr_131-4	131	4	Punaruku meeting house		Marae	fe_156		
+gr_131-5	131	5		Te Rāwhiti Marae	Marae	fe_156		
+gr_131-6	131	6		Oromāhoe Marae	Marae	fe_156		
+gr_131-7	131	7		Mihi Wira Marae	Marae	fe_156		
+gr_131-8	131	8	Ngāti Rāhiri meeting house		Marae	fe_156		
+gr_131-9	131	9	Parawhenua meeting house		Marae	fe_156		
+gr_132-1	132	1	Te Aroha meeting house		Marae	fe_156		
+gr_132-10	132	10		Waimahana	Locality	fe_154		
+gr_132-11	132	11		Mangaiti Marae	Marae	fe_156		
+gr_132-2	132	2		Kēnana	Marae	fe_156		
+gr_132-3	132	3	Ngāipuhi meeting house		Marae	fe_156		
+gr_132-4	132	4		Te Patunga Marae	Marae	fe_156		
+gr_132-5	132	5		Takahī Marae	Marae	fe_156		
+gr_132-6	132	6		Matangirau Marae	Marae	fe_156		
+gr_132-7	132	7		Te Kiripaka Marae	Marae	fe_156		
+gr_132-8	132	8		Te Wainui Marae	Marae	fe_156		
+gr_133-1	133	1		Mangaamuka Marae	Marae	fe_156		
+gr_133-2	133	2		Motukaraka Marae	Marae	fe_156		
+gr_133-3	133	3		Ngātimanawa Marae	Marae	fe_156		
+gr_133-4	133	4		Pā te Oro Marae	Marae	fe_156		
+gr_133-5	133	5		Waihou Marae	Marae	fe_156		
+gr_133-6	133	6		Motutī Marae	Marae	fe_156		
+gr_133-7	133	7		Mātihetihe Marae	Marae	fe_156		
+gr_133-8	133	8		Waiparera Marae	Marae	fe_156		
+gr_133-9	133	9		Rāhiri Marae	Marae	fe_156		
+gr_134-1	134	1		Manukau Marae	Marae	fe_156		
+gr_134-2	134	2		Whāngāpē Marae	Marae	fe_156		
+gr_134-3	134	3		Taiao Marae	Marae	fe_156		
+gr_135-1	135	1		Rōma Marae	Marae	fe_156		
+gr_135-2	135	2		Te Kauhanga Marae	Marae	fe_156		
+gr_135-3	135	3		Te Paatū Marae	Marae	fe_156		
+gr_135-5	135	5		Te Rarawa Marae	Marae	fe_156		
+gr_135-6	135	6		Waimanoni Marae	Marae	fe_156		
+gr_135-7	135	7		Oturu Marae	Marae	fe_156		
+gr_135-8	135	8		Wainui Marae	Marae	fe_156		
+gr_136-1	136	1		Whatuwhiwhi Marae	Marae	fe_156		
+gr_136-2	136	2		Parapara Marae	Marae	fe_156		
+gr_137-1	137	1		Te Hiku o te Ika Marae	Marae	fe_156		
+gr_137-2	137	2	Waimirirangi meeting house		Marae	fe_156		
+gr_137-3	137	3		Paparore Marae	Marae	fe_156		
+gr_137-4	137	4		Karepōnia Marae	Marae	fe_156		
+gr_137-5	137	5		Waimanoni Marae	Marae	fe_156		
+gr_139-2	139	2		Hurinui Orangi Marae	Marae	fe_156		
+gr_139-5	139	5	Tama Nui o te Ao Kātoa Hall		Marae	fe_156		
+gr_140-1	140	1	Farewell Spit		Marae	fe_156		
+gr_141-1	141	1		Te Āwhina Marae	Marae	fe_156		
+gr_143-1	143	1		Whakatū Marae	Marae	fe_156		
+gr_144-2	144	2		Te Hora Marae	Marae	fe_156		
+gr_145-1	145	1		Waikawa Marae	Marae	fe_156		
+gr_146-1	146	1		Ōmaka Marae	Marae	fe_156		
+gr_146-2	146	2		Wairau Pā	Marae	fe_156		
+gr_147-1	147	1		Whakatakahanga Marae	Marae	fe_156		
+gr_147-2	147	2		Mangamaunu Marae	Marae	fe_156		
+gr_149-1	149	1		Kaiapōhia Pā	Marae	fe_156		
+gr_149-2	149	2		Tuahiwi	Locality	fe_154		
+gr_150-1	150	1		Rehua Marae	Marae	fe_156		
+gr_150-2	150	2		Ngā Hau E Whā Marae	Marae	fe_156		
+gr_150-3	150	3		Te Rau Oriwa Marae	Marae	fe_156		
+gr_150-4	150	4	Te Rongo Pai meeting house		Marae	fe_156		
+gr_151-1	151	1	Te Wheke meeting house		Marae	fe_156		
+gr_152-1	152	1		Ōnuku Marae	Marae	fe_156		
+gr_152-2	152	2		Mako Marae	Marae	fe_156		
+gr_153-1	153	1		Taumutu Marae	Marae	fe_156		
+gr_154-1	154	1		Arowhenua Pā	Marae	fe_156		
+gr_154-2	154	2		Hakatere Marae	Marae	fe_156		
+gr_156-1	156	1		Waihao Marae	Marae	fe_156		
+gr_158-1	158	1	Uenuku meeting house		Marae	fe_156		
+gr_160-1	160	1		Ōtākou Marae	Marae	fe_156		
+gr_160-2	160	2		Ārai te Uru Marae	Marae	fe_156		
+gr_160-3	160	3		Puketeraki Marae	Marae	fe_156		
+gr_160-4	160	4	Mataatua meeting house		Marae	fe_156		
+gr_165-1	165	1		Ōteikarama Marae	Marae	fe_156		
+gr_165-2	165	2		Te Hono Ki Ngāi Tāhu Marae	Marae	fe_156		
+gr_166-1	166	1		Murihiku Marae	Marae	fe_156		
+gr_166-2	166	2		Te Rau Aroha Marae	Marae	fe_156		
+gr_173-1	173	1		Tapuwae Marae	Marae	fe_156		

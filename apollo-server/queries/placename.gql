@@ -1,0 +1,30 @@
+query placename($code: String) {
+	placename(code: $code) {
+		_id
+		code
+		island_id
+		number
+		names {
+			name {
+				mi
+				en
+				ascii
+			}
+			audio {
+				start
+				end
+				speaker_id
+				file
+			}
+		}
+		places {
+			_id
+			name {
+				en
+				mi
+				ascii
+			}
+			feature_id
+		}
+	}
+}

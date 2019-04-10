@@ -1,0 +1,1006 @@
+ID	Number	PlaceName	CleanedName	Components	Meaning
+me_1	1	Ahuroa	Ahuroa	ahu: mound; roa: long	Long mound
+me_2	2	Aoroa	Aoroa	ao: cloud; roa: long	Long cloud
+me_3	3	Aotearoa	Aotearoa	ao: cloud; tea: white; roa: long	Land of the long white cloud
+me_4	4	Aramoana	Aramoana	ara: path; moana: sea	Sea pathway
+me_5	5	Aranui	Aranui	ara: path; nui: great	Great pathway
+me_6	6	Arapae	Arapae	ara: path; pae: ridgeway	Pathway along the ridge
+me_7	7	Arapito	Arapito	ara: path; pito: end or extremity	End of the path
+me_8	8	Arapōhue	Arapōhue	ara: path; pōhue: climbing plant	Path of the climbing plant
+me_9	9	Arapuni	Arapuni	ara: path; puni: blocked or covered	Blocked path
+me_10	10	Ararātā	Ararātā	ara: path; rātā: native tree	Rātā tree path
+me_11	11	Ararimu	Ararimu	ara: path; rimu: native tree	Rimu tree path
+me_12	12	Ararua	Ararua	ara: path; rua: two	Two paths
+me_13	13	Arataha	Arataha	ara: path; taha: side	Side path
+me_14	14	Aratapu	Aratapu	ara: path; tapu: sacred or restricted	Sacred path
+me_15	15	Aratiatia Lakes, Aratiatia Rapids	Aratiatia	ara: path; tiatia: pegs	Pegged ladder
+me_16	16	Aratika	Aratika	ara: path; tika: correct or straight	Direct path
+me_17	17	Aratoro	Aratoro	ara: path; toro: discover	Path of discovery
+me_18	18	Aropaonui	Aropaonui	aro: kidney fat; paoa: to bash	Bashed kidney fat
+me_19	19	Aukati	Aukati	au: line; kati: block	Frontier
+me_20	20	Auripo	Auripo	au: current; ripo: whirlpool, or eddying	Eddying current
+me_21	21	Auroa	Auroa	au: cloud or mist; roa: long	Long cloud
+me_22	22	Awa	Awa	awa: river	River
+me_23	23	Awahōhonu River	Awahōhonu	awa: river; hōhonu: deep	Deep river
+me_24	24	Awahōu	Awahōu	awa: river; hōu: new	New river
+me_25	25	Awaiti	Awaiti	awa: river; iti: little	Little river
+me_26	26	Awa-kāeaea	Awa-kāeaea	awa: valley or stream; kāeaea: the sparrow-hawk	Sparrow-hawk stream
+me_27	27	Awakeri	Awakeri	awa: river; keri: dig	Ditch or trench
+me_28	28	Awakino	Awakino	awa: river; kino: bad, evil, or of bad appearance	Bad creek
+me_29	29	Awamangu	Awamangu	awa: river; mangu: black	Black river
+me_30	30	Awamarino	Awamarino	awa: stream; marino: calm	Calm stream
+me_31	31	Awamoana	Awamoana	awa: stream; moana: sea	Sea stream
+me_32	32	Awamoko	Awamoko	awa: stream; moko: lizard	Lizard stream
+me_33	33	Awanui	Awanui	awa: river; nui: large	Large river
+me_34	34	Awapikopiko	Awapikopiko	awa: stream; pikopiko: winding about	Winding stream
+me_35	35	Awapuni	Awapuni	awa: stream; puni: blocked up	Blocked-up river
+me_36	36	Awarere	Awarere	awa: stream; rere: to flow	Flowing stream
+me_37	37	Awariki	Awariki	awa: river; riki: small	Little river
+me_38	38	Awaroa	Awaroa	awa: river or valley; roa: long	Long river
+me_39	39	Awarua	Awarua	awa: stream or river; rua: two	Two streams
+me_40	40	Awatere River	Awatere	awa: river; tere: swift	Swift river
+me_41	41	Awatoitoi	Awatoitoi	awa: stream; toitoi: giant bully	Giant bully stream
+me_42	42	Awatōtō	Awatōtō	awa: stream; tōtō: hauling place	Stream for hauling (canoes)
+me_43	43	Awatuna	Awatuna	awa: stream; tuna: eel	Eel stream
+me_44	44	Eketāhuna	Eketāhuna	eke: run aground or land; tāhuna: sandbank	Land on the sandbank
+me_45	45	Epiha	Epiha	Māori form of biblical name Ephesus	Ephesus
+me_46	46	Erua	Erua	e: used before cardinal numbers from two to nine; rua: two	Two
+me_47	47	Hāpua-waikawa	Hāpua-waikawa	hāpua: pool; wai: water; kawa: bitter	Pool of bitter water
+me_48	48	Haumoana	Haumoana	hau: wind; moana: sea	Sea breeze
+me_49	49	Haunui	Haunui	hau: wind; nui: big or many	Strong wind
+me_50	50	Hiwinui	Hiwinui	hiwi: ridge; nui: big	Big ridge
+me_51	51	Hokanui	Hokanui	hoka: projecting sharply upwards; nui: large	Large projection
+me_52	52	Houipapa	Houipapa	houi: lacebark; papa: flat	Ribbonwood flat
+me_53	53	Houpoto	Houpoto	hou: feathers; poto: short	Short feathers
+me_54	54	Hukanui	Hukanui	huka: foam, frost or snow; nui: big	Heavy snow
+me_55	55	Hukerenui	Hukerenui	hukere: cascade; nui: large	Large cascade
+me_56	56	Hurimoana	Hurimoana	huri: to overflow; moana: ocean	Overflowing ocean
+me_57	57	Ihumātao	Ihumātao	ihu: nose; mātao: cold	Cold nose
+me_58	58	Ihumoana	Ihumoana	ihu: nose; moana: sea	Nose into the sea
+me_59	59	Ikawai	Ikawai	ika: fish; wai: water	Waters of fish
+me_60	60	Kā Pukehore	Kā Pukehore	A descriptive name, kā (ngā): the; puke: hill; hore: bare (the peaks were bare of vegetation)	The bare hills
+me_61	61	Kā Pukemāeroero	Kā Pukemāeroero	kā (ngā): the; puke: hill; māeroero: ogres of the South Island forests	The hill of ogres
+me_62	62	Kaharoa	Kaharoa	kaha: net; roa: long	Large net
+me_63	63	Kaiata	Kaiata	kai: to eat: ata: early morning	Eating in the morning
+me_64	64	Kaiaua	Kaiaua	kai: to eat; aua: mullet or herrings	Eating mullets
+me_65	65	Kai-Hau-o-Kupe	Kai-Hau-o-Kupe	kai: to eat; hau: wind; o: of; Kupe	The place where Kupe ‘ate wind’
+me_66	66	Kaihiku	Kaihiku	kai: te eat; hiku: tail of a fish	Eating a fish tail
+me_67	67	Kaihinu	Kaihinu	kai: food; hinu: fat	Food preserved in fat
+me_68	68	Kaihu	Kaihu	An abbreviation of kai-hu-a-Ihenga, kai: to eat; hu: secretly; a: of; Ihenga	Eat secretly
+me_69	69	Kaikarae	Kaikarae	kai: food; karae: seabird	Eat a seabird
+me_70	70	Kaikōura	Kaikōura	kai: to eat; koura: crayfish	Eat crayfish
+me_71	71	Kaikūmera Bay	Kaikūmera	kai: to eat; kūmera (alternate spelling of kūmara): sweet potato	Eat kūmara
+me_72	72	Kaimāī	Kaimāī	kai: food or to eat; māī: mussels, or slightly fermented food	Eat fermented food
+me_73	73	Kaimamaku	Kaimamaku	kai: food or to eat; mamaku: edible tree-fern	Eat edible tree-fern
+me_74	74	Kaimanawa Mountains	Kaimanawa	kai: food or to eat; manawa: breath (also meaning heart or emotion)	Breath for food
+me_75	75	Kaimangō	Kaimangō	kai: food or to eat; mangō: shark	Eating shark
+me_76	76	Kaimata	Kaimata	kaimata: unripe or uncooked food	Eat raw food
+me_77	77	Kaimātaitai	Kaimātaitai	kai: food; mātaitai: salty	Eat seafood
+me_78	78	Kaimaumau	Kaimaumau	kai: food; maumau: to waste	Eat food
+me_79	79	Kaimiro	Kaimiro	kai: food or to eat; miro: a tree	Eat miro berries
+me_80	80	Kainamu	Kainamu	kai: to eat; namu: sandflies	Eat sandflies
+me_81	81	Kāingaroa	Kāingaroa	kāinga: area of land; roa: long	Long area of land
+me_82	82	Kāingaroa Plain	Kāingaroa	Kāinga: place where food has been cooked and eaten; roa: long	Long meal
+me_83	83	Kaipākirikiri	Kaipākirikiri	kai: food; pākirikiri: rock cod	Eating rock cod
+me_84	84	Kaipara Flats	Kaipara	kai: te eat; para: fern-root	Eat fern-root
+me_85	85	Kaiparoro	Kaiparoro	kai: to eat; paroro: bad weather	Eating up bad weather
+me_86	86	Kaipō Bay	Kaipō	kai: to eat; pō: night	Eat night
+me_87	87	Kaipuke	Kaipuke	kai: to eat; puke: swell, flood	Ship (wave eater)
+me_88	88	Kaipūpū	Kaipūpū	kai: food; pūpū: shellfish	Eat shellfish
+me_89	89	Kairākau	Kairākau	kai: to eat; rākau: wood.	Eat wood
+me_90	90	Kairaki	Kairaki	kai: eat; raki (South Island form of rangi); sky	Sky eater
+me_91	91	Kairara	Kairara	kai: food; rara: to be spread out on a stage for drying in the sun	Food spread out on a stage to dry
+me_92	92	Kairua	Kairua	kai: food; rua: pit	Food pit
+me_93	93	Kaitakata	Kaitakata	South Island variant of Kaitangata – kai: to eat; tangata: man	Man eater (South Island form)
+me_94	94	Kaitangata	Kaitangata	kai: to eat; tangata: man	Man eater
+me_95	95	Kaitangiweka	Kaitangiweka	kai: food; tangi: to cry; weka: wood hen	Crying of the weka for food
+me_96	96	Kaitapeha	Kaitapeha	kai: to eat; tapeha: rind or skin	Eat the rind
+me_97	97	Kaitawa	Kaitawa	kai: food; tawa: tree or berries	Eat tawa berries
+me_98	98	Kaitieke	Kaitieke	kai: to eat; tieke: the saddleback bird	Eat the saddleback bird
+me_99	99	Kaitoke	Kaitoke	kai: to eat, or food; take: worm	Eat worms
+me_100	100	Kaitoki	Kaitoki	kai: food; toki: adze	Food for the adze
+me_101	101	Kaituna	Kaituna	kai: to eat; tuna: eel	Eat eels
+me_102	102	Kai-waha-onepū	Kai-waha-onepū	kai: food; waha: mouth; onepū: sand	Biting the sand
+me_103	103	Kaiwaka	Kaiwaka	kai: to eat; waka: canoe	Eating the canoes
+me_104	104	Kaiwera	Kaiwera	kai: food; wera: hot	Hot food
+me_105	105	Kaiwharawhara	Kaiwharawhara	kai: food or to eat; wharawhara: the fruit of the astelia	Eat the fruit of the astelia
+me_106	106	Kakīroa	Kakīroa	kakī: neck or throat; roa: large	Long neck
+me_107	107	Kararoa	Kararoa	kara: this word has many meanings, one of which is old man; roa: tall	Tall elderly man
+me_108	108	Kauroa	Kauroa	kau: to swim; roa: long	Long swim
+me_109	109	Kereone	Kereone	kere: earth; one: sand or sandy	Sandy earth
+me_110	110	Kererū	Kererū	kererū: wood pigeon	Wood pigeon
+me_111	111	Keteketerau	Keteketerau	ketekete: click the tongue; rau: many times	Click the tongue repeatedly
+me_112	112	Ketetahi springs	Ketetahi	Kete: basket; tahi: one	One spring
+me_113	113	Kihikihi	Kihikihi	kihikihi: cicada	Cicada
+me_114	114	Kihitū	Kihitū	kihi: to strip off; tū: girdle or belt to which a maro (loincloth) was attached	Strip off the girdle
+me_115	115	Kioreroa	Kioreroa	kiore: native rat; roa: long	Long rat
+me_116	116	Kirkiriroa	Kirkiriroa	kirikiri: gravel; roa: long	Long gravel
+me_117	117	Kiwinui	Kiwinui	kiwi: bird; nui: many	Many kiwi birds
+me_118	118	Kōhīnui	Kōhīnui	kōhī: dark mud (used in dyeing), heavy rain, skeleton, youth, etc.; nui: large, many or plenty	Plenty of dark mud
+me_119	119	Kohukohunui	Kohukohunui	Lit: kohukohu: mist; nui: big or many	Great mist
+me_120	120	Kōpūtai	Kōpūtai	kōpū: full; tai: tide	Full tide
+me_121	121	Kōputaroa	Kōputaroa	kōputa: snare for catching parakeets; roa: long	Long snare for catching parakeets
+me_122	122	Kōpūwai	Kōpūwai	kōpū: belly or full; wai: water	Water swallower
+me_123	123	Korakonui	Korakonui	korako: albino; nui: big	Large albino (bird)
+me_124	124	Kororāreka	Kororāreka	kororā: blue penguin; reka: sweet or tasty	Tasty blue penguin
+me_125	125	Kōtuku	Kōtuku	kōku: white heron	White heron
+me_126	126	Kōtuku-moana	Kōtuku-moana	kōtuku: white heron; moana: lake	Lake of white herons
+me_127	127	Kōurarau	Kōurarau	kōura: crayfish; rau: many	Many crayfish
+me_128	128	Koutunui	Koutunui	koutu: headland; nui: large	Large headland
+me_129	129	Kumeroa	Kumeroa	kume: to pull; roa: long	Long drag
+me_130	130	Kuranui	Kuranui	kura: red; nui: large red birds	Big red (birds)
+me_131	131	Makakahikatoa	Makakahikatoa	maka: strike; kahikatoa: red mānuka (Leptospermum scoparium) or more probably a weapon made from this wood	Striking with mānuka stick
+me_132	132	Makarānui	Makarānui	makarā: to come and go; nui: many	Much coming and going
+me_133	133	Mākikihi	Mākikihi	ma: stream; kikihi: cicada (Amphipsalta cingulata)	Cicada stream
+me_134	134	Mākirikiri	Mākirikiri	ma: stream: kirikiri: gravel	Gravelly stream
+me_135	135	Mākōhine Valley	Mākōhine	mā: stream; kōhine: girl	Young woman's stream
+me_136	136	Mākōtuku	Mākōtuku	mā: stream; kōtuku: white heron	White heron stream
+me_137	137	Mākōwhai	Mākōwhai	Mā: stream; kōwhai: tree	Kōwhai tree stream
+me_138	138	Mākurī	Mākurī	mā: stream; kurī: dog	Dog stream
+me_139	139	Māmāranui	Māmāranui	mā: stream; māra: farm or cultivation; nui: large or many	Stream for many gardens
+me_140	140	Manaroa	Manaroa	mana: power or prestige; roa: great or long	Enduring prestige
+me_141	141	Mangaharakeke	Mangaharakeke	manga: stream; harakeke: flax bush	Stream of flax
+me_142	142	Mangahoe	Mangahoe	manga: stream; hoe: canoe paddle	Stream of canoe paddles
+me_143	143	Mangahouhounui Stream	Mangahouhounui	manga: stream; houhou: five-finger tree; nui: large or many	Stream of many five finger trees
+me_144	144	Mangaiti	Mangaiti	manga: stream; iti: tiny	Small stream
+me_145	145	Mangakāhia	Mangakāhia	manga: stream; kāhia or kōhia: native passion vine	Stream of New Zealand passionfruit
+me_146	146	Mangakino	Mangakino	manga: stream; kino: bad, usless or stagnant	Stagnant stream
+me_147	147	Mangakura	Mangakura	manga: stream; kura: red or red ochre	Stream of red ochre
+me_148	148	Mangamāhoe	Mangamāhoe	manga: stream; māhoe: native tree, whiteywood (Melicytus ramiflorus)	Māhoe stream
+me_149	149	Mangamahu	Mangamahu	manga: stream; mahu: gentle	Gentle stream
+me_150	150	Mangamaire	Mangamaire	manga: stream; maire: native tree	Maire stream
+me_151	151	Mangamuka	Mangamuka	manga: stream; muka: the furled shoot of the nīkau palm	Stream of the furled shoot of the nīkau palm
+me_152	152	Mangamutu	Mangamutu	manga: stream; mutu: finished	Finished stream
+me_153	153	Mangangarongaro: Mangangarongaro Stream	Mangangarongaro	manga: stream; ngarongaro: somewhat abated	Abated stream
+me_154	154	Manganui-a-te-Ao	Manganui-a-te-Ao	manga: stream; nui: great; a: of; te: the; ao: world	Great stream of the world
+me_155	155	Mangaohae	Mangaohae	manga: stream o: of; Hae	The stream of Hae
+me_156	156	Mangaohutu	Mangaohutu	manga: stream; o: of; Hutu	The stream of Hutu
+me_157	157	Mangaonoho	Mangaonoho	manga: stream; o: of; Noho	The stream of Noho
+me_158	158	Mangaorapa	Mangaorapa	manga: stream; o: of; Rapa	The stream of Rapa
+me_159	159	Mangaore	Mangaore	manga: stream; ore: to poke with a stick, or to bore a hole	The stream where a hole was bored
+me_160	160	Mangaotaki	Mangaotaki	manga: stream; o: of; taki: oratory or to make a speech	Stream of oratory
+me_161	161	Mangaowera: Mangaowera Stream	Mangaowera	manga: stream; o: of; Wera	The stream of Wera
+me_162	162	Mangapai	Mangapai	manga: stream; pai: good	Good stream
+me_163	163	Mangapēhi	Mangapēhi	manga: stream; pēhi: troubled	Stream of trouble
+me_164	164	Mangapiko	Mangapiko	manga: stream; piko: bent or crooked	Winding stream
+me_165	165	Mangapōuri	Mangapōuri	manga: stream; pōuri: dark	Dark stream
+me_166	166	Mangapu	Mangapu	manga: stream; pū: double	Double stream
+me_167	167	Mangapuaka	Mangapuaka	manga: stream ; puaka: bird snare or rimu tree	Bird snare stream
+me_168	168	Mangapūrua	Mangapūrua	manga: stream; pūrua: abundant or plenty	Abundant stream
+me_169	169	Mangarakau	Mangarakau	manga: stream; rākau: tree	Stream of trees
+me_170	170	Mangaramarama	Mangaramarama	manga: stream; ramarama: native shrub	Stream of the ramarama shrub
+me_171	171	Mangarapa	Mangarapa	manga: stream; rapa: broad or spread out	Broad stream
+me_172	172	Mangarātā	Mangarātā	manga: stream; rata: native tree	Rātā stream
+me_173	173	Mangarawa	Mangarawa	manga: stream; rawa: swamp	Swampy stream
+me_174	174	Mangarimu	Mangarimu	manga: stream; rimu: native tree	Rimu stream
+me_175	175	Mangaroa	Mangaroa	manga: stream; roa: long	Long stream
+me_176	176	Mangatahi	Mangatahi	manga: stream; tahi: single	Single stream
+me_177	177	Mangatainoka	Mangatainoka	manga: stream; tainoka: native broom	Native broom stream
+me_178	178	Mangatangi	Mangatangi	manga: stream; tangi: weeping or sounding	Stream of weeping
+me_179	179	Mangatapu	Mangatapu	manga: stream; tapu: sacred or forbidden	Sacred stream
+me_180	180	Mangatarata	Mangatarata	manga: stream; tarata: native tree known as lemonwood	Lemonwood stream
+me_181	181	Mangatāwhiri	Mangatāwhiri	manga: stream; tāwhiri: native tree	Tāwhiri tree stream
+me_182	182	Mangatea	Mangatea	manga: stream; tea: white or clear	Clear stream
+me_183	183	Mangateparu	Mangateparu	manga: stream; te: the paru: mud, dirt, dirty or deep	Stream of mud
+me_184	184	Mangatepopo	Mangatepopo	manga: stream; te: the; popo: anything rotten or decayed	Stream of rotten items
+me_185	185	Mangateretere	Mangateretere	manga: stream; teretere: swiftly flowing	Swiftly flowing river
+me_186	186	Mangatī	Mangatī	manga: stream; tī: cabbage tree	Cabbage-tree stream
+me_187	187	Mangatina	Mangatina	manga: stream; tina: exhausted	Exhausted at the stream
+me_188	188	Mangatoetoe	Mangatoetoe	manga: stream; toetoe: native grass	Toetoe stream
+me_189	189	Mangatuna	Mangatuna	manga: stream; tuna: eel	Eel stream
+me_190	190	Mangawara	Mangawara	manga: stream; wara: to make an indistinct sound	Quiet stream
+me_191	191	Mangaweka:	Mangaweka:	manga: stream; weka: wood-hen	Weka stream
+me_192	192	Mangawhata	Mangawhata	manga: stream; whata: a raised storehouse for food	Raised storehouse stream
+me_193	193	Mangawhero	Mangawhero	manga: stream; whero: red	Red stream
+me_194	194	Mangōnui	Mangōnui	mangō: shark; nui: large or many	Great shark
+me_195	195	Mānia-rauhea	Mānia-rauhea	mānia: plain of flat land; rauhea: tussock grass	Plain of shining tussock
+me_196	196	Māniatoto	Māniatoto	mānia: plain; o: of; toto: blood	Plain of blood
+me_197	197	Māniatutu	Māniatutu	mānia: plain; tutu: a native tree	Tutu-tree plain
+me_198	198	Mānui	Mānui	mā: stream; nui: large	Large stream
+me_199	199	Maraenui	Maraenui	marae: courtyard or meeting area; nui: large	Great marae
+me_200	200	Maraeroa	Maraeroa	marae: courtyard or meeting area; roa: long	Long marae
+me_201	201	Maraetai	Maraetai	marae: courtyard or meeting area; tai: coast	Coastal marae
+me_202	202	Māraroa	Māraroa	māra: cultivated area; roa: long, long lasting	Long lasting cultivations
+me_203	203	Matakanui	Matakanui	mata: face; ka: blow or scar; nui: large	Scarred face of a large cliff
+me_204	204	Mataroa	Mataroa	mata: headland or bluff; roa: long	Long headland
+me_205	205	Maunga Mā	Maunga Mā	maunga: mountain; mā: white	White mountain
+me_206	206	Maunga-atua	Maunga-atua	maunga: mountain; atua: gods	Mountain of the gods
+me_207	207	Maungaharuru	Maungaharuru	maunga: mountain; haruru: to rumble	Rumbling mountain
+me_208	208	Maungahaumi	Maungahaumi	maunga: mountain; haumi: timber to lengthen or raise the sides of a canoe	Mountain of canoe timber
+me_209	209	Maungakaramea	Maungakaramea	maunga: mountain; karamea: red ochre or speargrass	Red ochre mountain
+me_210	210	Maungakiekie	Maungakiekie	maunga: mountain; kiekie: a climbing plant	Kiekie plant mountain
+me_211	211	Maunganui	Maunganui	maunga: mountain; nui: tall or large	Large mountain
+me_212	212	Maungapōhatu	Maungapōhatu	maunga: mountain; pōhatu: rock or stone	Rocky mountain
+me_213	213	Maungaraki	Maungaraki	maunga: mountain or mountains; raki: north	Northern mountain
+me_214	214	Maungaroa	Maungaroa	maunga: mountain; roa: long	Long mountain
+me_215	215	Maungataketake	Maungataketake	maunga: mountain; taketake: base, long-established or well-founded	Broad mountain
+me_216	216	Maungataniwha	Maungataniwha	maunga: mountain; taniwha: supernatural creature	Taniwha mountain
+me_217	217	Maungatāpere	Maungatāpere	maunga: mountain; tāpere: red, volcanic earth	Mountain of red volcanic earth
+me_218	218	Maungatapu	Maungatapu	maunga: mountain; tapu: sacred or forbidden	Sacred mountain
+me_219	219	Maungatautari	Maungatautari	maunga: mountain; tautari: an upright stick	Mountain of the upright stick
+me_220	220	Maungatī	Maungatī	maunga: mountain; tī: cabbage tree	Cabbage tree mountain
+me_221	221	Maungatua	Maungatua	maunga: mountain; a: of; atua: god	Mountain of the gods
+me_222	222	Maungatūroto	Maungatūroto	maunga: mountain; tū: to stand; roto: lake	Mountain standing up in lagoons
+me_223	223	Maungawera	Maungawera	maunga: mountain; wera: burnt or hot	Burnt mountain
+me_224	224	Maungawhau	Maungawhau	maunga: mountain; whau: a native tree	Whau tree mountain
+me_225	225	Māwheranui	Māwheranui	Māwhera: open, widesread; nui: large (referring particularly to the river mouth).	Broad and widespread (river mouth)
+me_226	226	Mititai	Mititai	miti: to lick; tai: tide	Lick the tide
+me_227	227	Moana	Moana	Ocean or large lake	Ocean
+me_228	228	Moanariri	Moanariri	moana: sea; riri: to be angry or to fight	Angry sea
+me_229	229	Moanaroa	Moanaroa	moana: ocean; roa: large or broad	Broad sea
+me_230	230	Moanawhenuapōuri	Moanawhenuapōuri	moana: sea; whenua: land; pōuri: sad or dark	Sombre arm of the sea
+me_231	231	Moeroa	Moeroa	moe: to sleep; roa: long	Long sleep
+me_232	232	Mōkihinui	Mōkihinui	mōkihi: raft made of flax stalks; nui: large	Large flax-stalk raft
+me_233	233	Mokoroa	Mokoroa	moko: tattoo; roa: long	Long tattoo
+me_234	234	Mokoroa: Mokoroa Stream	Mokoroa	moko: lizard; roa; long	Long lizard
+me_235	235	Motuara: Motuara Island	Motuara	motu: island; ara: path	Island in the path (of a canoe)
+me_236	236	Motuarohia: Motuarohia Island	Motuarohia	motu:island; arohia: reconnoitred	Reconnoitred island
+me_237	237	Motukairangi	Motukairangi	motu: island; kairangi: wonderful, chief, or wandering	Wonderful island
+me_238	238	Motukaraka	Motukaraka	motu: clump of trees; karaka: native tree	Clump of karaka trees
+me_239	239	Motukāranui	Motukāranui	Motu: island; karā: basalt; nui: large	Island of large basalt stone
+me_240	240	Motukauatiiti	Motukauatiiti	motu: grove of trees; kauati: rubbing stick for firemaking; iti: little	Little clump of trees used for fire sticks
+me_241	241	Motukauatirahi	Motukauatirahi	motu: grove of trees; kauati: rubbing stick for firemaking; rahi: large	Large clump of trees used for fire sticks
+me_242	242	Motukauri: Motukauri Island	Motukauri	motu: island; kauri: native tree	Clump of kauri trees
+me_243	243	Motukiekie	Motukiekie	motu: island; kiekie: a native plant	Kiekie island
+me_244	244	Motukina	Motukina	motu: island or isolated headland; kina: sea urchin	Kina island
+me_245	245	Motukiore	Motukiore	motu: island; kiore: native rat	Rat island
+me_246	246	Motukokopu	Motukokopu	motu: island; kokopu: cockabully fish	Cockabully island
+me_247	247	Motumāhanga	Motumāhanga	motu: island; māhanga: twin	Twin islands
+me_248	248	Motumaire	Motumaire	motu: island; maire: native tree	Maire island
+me_249	249	Motumaoho	Motumaoho	motu: clump of trees; maoho: to intrude	Intruding clump of trees
+me_250	250	Motunau	Motunau	motu: island; nau: scurvy grass	Scurvy grass island
+me_251	251	Motungārara	Motungārara	motu: island; ngārara: lizard	Lizard island
+me_252	252	Motunui	Motunui	motu: island; nui: large	Large island
+me_253	253	Motuoapa	Motuoapa	motu: island or grove of trees; o: of; Apa	Grove of trees belonging to Apa
+me_254	254	Motu-o-Kura	Motu-o-Kura	motu: island; o: of; Kura	Island of Kura
+me_255	255	Motuopuhi: Motuopuhi Island	Motuopuhi	motu: island; o: of; Puhi	Island of Puhi
+me_256	256	Motuoroi: Motuoroi Island	Motuoroi	motu: island; o: of; Roi	Island of Roi
+me_257	257	Motuotaraia	Motuotaraia	motu: isolated area; o: of; Taraia	Isolated area of Taraia
+me_258	258	Motupipi	Motupipi	motu: island; pipi: common edible shellfish	Pipi island
+me_259	259	Motupiu	Motupiu	motu: island; piu: to swing	Swinging island
+me_260	260	Moturoa	Moturoa	motu: island; roa: long	Long island
+me_261	261	Motutaiko	Motutaiko	motu: island; taiko: petrel	Island of the black petrel
+me_262	262	Motutapu: Motutapu Island	Motutapu	motu: island; tapu: sacred or forbidden	Sacred island
+me_263	263	Motutara: Motutara Island	Motutara	motu: island; tara: gull	Gull island
+me_264	264	Motutawa	Motutawa	motu: island; tawa: a tree	Tawa tree island
+me_265	265	Motutere	Motutere	motu: island; tere: to float	Floating island
+me_266	266	Muritai	Muritai	muri: breeze; tai: sea or tide	Sea breeze
+me_267	267	Muriwai	Muriwai	muri: end; wai: water	Waters’ end
+me_268	268	Ngākawau	Ngākawau	ngā: the; kauwau: shags	The shags
+me_269	269	Ngāmatapōuri	Ngāmatapōuri	ngā: the; matapōuri: black teal	The black teals
+me_270	270	Ngāmoko	Ngāmoko	ngā: the; moko: lizards	The lizards
+me_271	271	Ngāmotu	Ngāmotu	ngā: the; motu: islands	The islands
+me_272	272	Ngāpōhatu	Ngāpōhatu	ngā: the; pōhatu: rocks	The rocks
+me_273	273	Ngāpuhi	Ngāpuhi	ngā: the; puhi: plumes	The plumes
+me_274	274	Ngāpuna	Ngāpuna	ngā; the; puna: springs	The springs
+me_275	275	Ngārimu Bay	Ngārimu Bay	ngā: the; rimu: native tree	The rimu trees
+me_276	276	Ngāroma	Ngāroma	nga: the; roma: currents	The currents
+me_277	277	Ngaionui	Ngaionui	ngaio: a native tree; nui: large or many	Great ngaio tree
+me_278	278	Ngāpuke	Ngāpuke	ngā: the; puke: hills	The hills
+me_279	279	Ngāroto	Ngāroto	ngā: the; roto: lakes	The lakes
+me_280	280	Ngātira	Ngātira	ngā; the; tira: parties of travellers	The parties of travellers
+me_281	281	Ngātuku	Ngātuku	ngā: the; tuku: ridges of a hill	The ridges of a hill
+me_282	282	Ngāūranga	Ngāūranga	ngā: the; ūranga: landing place for canoes	The landing place for canoes
+me_283	283	Ngāurukehu	Ngāurukehu	ngā: the; urukehu: red-haired, fair-skinned Māori	The red-haired, fair-skinned Māori
+me_284	284	Ngāwaka	Ngāwaka	ngā: the; waka: canoes	The canoes
+me_285	285	Ngāwaro	Ngāwaro	ngā: the; waro: burning coals	The burning coals
+me_286	286	Ngāwhā	Ngāwhā	ngāwhā: hot springs	The hot springs
+me_287	287	Ngāwhatu	Ngāwhatu	ngā: the; whatu: eyes	The eyes
+me_288	288	Ngāwī	Ngāwī	ngā: the; wī: native tussock grass	The native tussock grass
+me_289	289	Ngutunui	Ngutunui	ngutu: lip; nui: big	Big lips
+me_290	290	Nukumānia	Nukumānia	nuku: wide extent; mānia: plains	Wide plains
+me_291	291	Nukuroa	Nukuroa	nuku: to move; roa: long	Long travles
+me_292	292	Ōamaru	Ōamaru	ō: place; a: of; Maru	The place of Maru
+me_293	293	Ōaonui	Ōaonui	ō: place of; ao: clouds: nui: many	Place of many clouds
+me_294	294	Ōaro	Ōaro	ō: place of; aro: front	Front-facing place
+me_295	295	Ōeo	Ōeo	ō: place of; eo: louse or lice	Place of lice
+me_296	296	Ōhaeawai	Ōhaeawai	ō: place of; haeawai: thermal waters	Place of thermal waters
+me_297	297	Ōhakune	Ōhakune	ō: place of; hakune: to be careful	Place of care
+me_298	298	Ōhāngai	Ōhāngai	ō: place of; hāngai: opposite, across, or at right angles	Opposite place
+me_299	299	Ōhau	Ōhau	ō: place of; Hau	Place of Hau
+me_300	300	Ōhauiti	Ōhauiti	ō: place of; hau: wind; iti: little	Place of little wind
+me_301	301	Ōhaupō	Ōhaupō	ō: place of; hau: wind; pō: night	Place of a breeze at night
+me_302	302	Ōhawe	Ōhawe	ō: place of; hawe: bend in a river or path	Place of many (river) bends
+me_303	303	Ōhikaiti	Ōhikaiti	ō: place of; hika: a rite involving certain incantations; iti: small	The place of small incantations
+me_304	304	Ōhikanui	Ōhikanui	ō: place of; hika: a rite involving certain incantations; nui: large	The place of large incantations
+me_305	305	Ōhinekura	Ōhinekura	Named after Hinekura	Place of Hinekura
+me_306	306	Ōhinepanea	Ōhinepanea	ō: place of; Hinepanea: probably a personal name	Place of Hinepanea
+me_307	307	Ōhinerau	Ōhinerau	ō: place of; Hinerau, the goddess of whirlwinds	Place of Hinerau
+me_308	308	Ōhinerehia	Ōhinerehia	ō: place of; Hinerehia, a legendary creature or mermaid.	Place of Hinerēhia
+me_309	309	Ōhingahape	Ōhingahape	ō: place of; hinga: fall; hape: crooked foot	Place of a slip causing a crooked foot
+me_310	310	Ōhiwa	Ōhiwa	ō: place of; hiwa: watchful or alert	Place of alertness
+me_311	311	Ōhoka	Ōhoka	ō: place of; hoka: a stake to which a decoy kākā (parrot) was tied. Earlier spelt Hohoka	Place of the stake for a decoy parrot
+me_312	312	Ōhope	Ōhope	ō: place of; hope (or ope): main body of an army	Place of main body of an army
+me_313	313	Ōhotu	Ōhotu	ō: place of; hotu: fifteenth night of the moon	Place of fifteenth night of the moon
+me_314	314	Ōhoukākā	Ōhoukākā	ō: place of; hou: feather; kākā: parrot	Place of the parrot feather
+me_315	315	Ōhura	Ōhura	ō: place of; hura: to uncover, or uncovered spot	Place which is uncovered
+me_316	316	Ōihi	Ōihi	ō: place of; ihi: power or authority	Place of spiritual power
+me_317	317	Ōio	Ōio	ō: place of; io: spur	Place of the spur
+me_318	318	Ōkahu	Ōkahu	ō: place of; Kahu	Place of Kahu
+me_319	319	Ōkahukura	Ōkahukura	ō: place of; Kahukura: atua related to rainbow	Place of Kahukura
+me_320	320	Ōkahutai	Ōkahutai	ō: place; kahu: garment; tai: tide	Place of cloaking waters
+me_321	321	Ōkaihae	Ōkaihae	ō: place of; kai: food; hae: to dislike	Place of disliked food
+me_322	322	Ōkaihau	Ōkaihau	ō: place of; kai: to eat or food; hau: wind	Place of feast of the winds
+me_323	323	Ōkarae	Ōkarae	ō: place of; karae: a seabird	Place of the seabird
+me_324	324	Ōkarahia	Ōkarahia	ō: place of; karahia: assistance called for in war, in this case in vain	Place of a call for assistance
+me_325	325	Ōkareka	Ōkareka	ō: food for a long journey; kareka: sweet or tasty	Sweet food for a long journey
+me_326	326	Ōkārito	Ōkārito	ō: place of; karito: young shoots of the bulrush or raupō	Place of young shoots of the bulrush
+me_327	327	Ōkataina	Ōkataina	ō: place of; kataina: laughter	Place of laughter
+me_328	328	Ōkato	Ōkato	ō: place of; Kato: a personal name	Place of Kato
+me_329	329	Ōkau	Ōkau	ō: place of; kau: to swim	Place of swimming
+me_330	330	Ōkauia	Ōkauia	ō: place of; kauia: articles threaded on string or on a stick	Place of articles threaded on a stick
+me_331	331	Ōkawa	Ōkawa	ō: place of; kawa: bitter	Place of bitter (water)
+me_332	332	Ōkehu	Ōkehu	ō: place of; Kehu: a personal name	Place of Kehu
+me_333	333	Ōkere	Ōkere	ō: place of; kere: to drift or float	Place of drifting
+me_334	334	Ōkete	Ōkete	ō: place of; kete: basket	Place of baskets
+me_335	335	Ōkiato	Ōkiato	ō: place of; kīato: a receptacle for holding sacred objects	Place of receptable for holding sacred objects
+me_336	336	Ōkiwi	Ōkiwi	ō: place of; kiwi: native bird	Place of the kiwi
+me_337	337	Ōkiwi	Ōkiwi	ō: place of; Kiwi	Place of Kiwi
+me_338	338	Ōkoki	Ōkoki	ō: place of; koki: a small canoe	Place of a small canoe
+me_339	339	Ōkoroire	Ōkoroire	ō: place of; koroire: ring-necked native duck, now extinct	Place of the koroire duck
+me_340	340	Ōkōtuku	Ōkōtuku	ō: place of; kōtuku: white heron	Place of the white heron
+me_341	341	Ōkupu	Ōkupu	ō: place of; kupu: message	Place of a message
+me_342	342	Ōkura	Ōkura	ō: place; kura: red	Place of red (clay)
+me_343	343	Ōkuri	Ōkuri	ō: place of; kurī: Polynesian dog	Place of the Polynesian dog
+me_344	344	Ōmaha	Ōmaha	ō: place of; maha: pleasure	Place of pleasure
+me_345	345	Ōmahu	Ōmahu	ō: place of; ō: provisions for a travelling party; Mahu: a personal name	The place where Mahu ran out of food.
+me_346	346	Ōmāio	Ōmāio	ō: place of; māio: calm	Place of calm
+me_347	347	Ōmaka	Ōmaka	ō: place of; maka: South island form of manga (stream)	Place of the stream
+me_348	348	Ōmakau	Ōmakau	ō: place of; makau: spouse	Belonging to husband and wife
+me_349	349	Ōmakere	Ōmakere	ō: place of; makere: to be lost, abandoned or to die	Place of abandonment
+me_350	350	Ōmāmari	Ōmāmari	ō: place of; Māmari: a famous canoe that come from Hawaiki.	Place of Māmari canoe
+me_351	351	Ōmana	Ōmana	ō: place of; Mana: a personal name	Place of Mana
+me_352	352	Ōmanaia	Ōmanaia	ō: place of; Manaia: a personal name	Place of Manaia
+me_353	353	Ōmanawa	Ōmanawa	ō: place of; Manawa: a personal name	Place of Manawa
+me_354	354	Ōmanawanui	Ōmanawanui	ō: place of; manawanui: stout-hearted, long-suffering or forbearing	Place of unswerving dedication
+me_355	355	Ōmāpere	Ōmāpere	ō: place of; māpere: cutty grass	Place of cutty grass
+me_356	356	Ōmarama	Ōmarama	ō: place of; Marama: a personal name	Place of Marama
+me_357	357	Ōmaru	Ōmaru	ō: place of; maru: shelter	Place of shelter
+me_358	358	Ōmarumutu	Ōmarumutu	ō: place of; maru: shade or shelter; mutu: cut off or terminated	Place of cut-off shelter
+me_359	359	Ōmarunui	Ōmarunui	ō: place of; maru: shade; nui: great or much	Place of great shade
+me_360	360	Ōmarupāpaku	Ōmarupāpaku	ō: place of; maru: shade; pāpaku: shallow	Place of shallow shade
+me_361	361	Ōmaui	Ōmaui	ō: place of; Māui	Place of Māui
+me_362	362	Ōmihi	Ōmihi	ō: place of; mihi: greeting; also possibly wailing or lamentation	Place of greeting
+me_363	363	Ōmimi	Ōmimi	ō: place o; mimi: urine	Place of urine
+me_364	364	Ōmoana	Ōmoana	ō: place of; moana: ocean	Place of the sea
+me_365	365	Ōmoeroa	Ōmoeroa	ō: place of; moe: sleep; roa: long	Place of the long sleep
+me_366	366	Ōnaeroa	Ōnaeroa	ō: place of; naeroa: mosquitoes	Place of mosquitoes
+me_367	367	Ōnawe	Ōnawe	ō: place of; nawe: to set on fire	Place of arson
+me_368	368	Ōnehunga	Ōnehunga	ō: place of; nehunga: burial	Place of burial
+me_369	369	Ōnekakā	Ōnekakā	one: sand; kākā: hot	Hot sand
+me_370	370	Onekawa	Onekawa	one: sand; kawa: bitter or sour	Salty soil
+me_371	371	Ōnekeneke	Ōnekeneke	ō: place of; nekeneke: to move gradually	Place of movement
+me_372	372	Onemaewao	Onemaewao	one: sand; Maewao: fairy-like beings	Place of the Maewao (fairy-like beings)
+me_373	373	Oneone	Oneone	oneone: earth, soil	Earth
+me_374	374	Onepoto	Onepoto	one: beach; poto: short	Short beach
+me_375	375	Onepū	Onepū	one: sand; pū: loose	Loose sandy soil
+me_376	376	Onepunui	Onepunui	one: sand; pupuni: covered, fill up	Extensive sand dune
+me_377	377	Onerahi	Onerahi	one: beach; rahi: long or wide	Long beach
+me_378	378	Oneriri	Oneriri	one: beach; riri: combat, battle, fight, to quarrel or be angry	Battle beach
+me_379	379	Oneroa	Oneroa	one: sand or beach; roa: long	Long beach
+me_380	380	Onetahua	Onetahua	one: sand; tahua: heaped up	Heaped-up sand (sand dunes)
+me_381	381	Onetangi	Onetangi	one: sandy beach; tangi: to weep or to sound	Beach of weeping
+me_382	382	Onetapu	Onetapu	one: sand or in this case, desert; tapu: sacred or forbidden	Sacred desert
+me_383	383	Onetea	Onetea	one: sandy soil; tea: light-coloured	Light soil
+me_384	384	Onewhero	Onewhero	one: soil; whero: red	Red soil
+me_385	385	Ōngāroto	Ōngāroto	ō: place of; ngā: the; roto: lakes	Place of the lakes
+me_386	386	Ōngāruānuku	Ōngāruānuku	ō: place; ngā; the; ruānuku: learned people	Place of the learned people
+me_387	387	Ōngarue	Ōngarue	ō: place of; ngarue: to shake, as in an earthquake	Place of shaking
+me_388	388	Ōngātoro	Ōngātoro	ō: place of; Ngātoro: personal name	The place of Ngātoro
+me_389	389	Ōnoke	Ōnoke	ō: place of; noke: earthworm	Place of earthworms
+me_390	390	Ōnuku	Ōnuku	ō: place of; nuku: food for a journey	Place of Nuku
+me_391	391	Ōpaheke	Ōpaheke	ō: place of; paheke: slip or landslide	Place of a landslide
+me_392	392	Ōpaki	Ōpaki	ō: place of; paki: fine weather	Place of fine weather
+me_393	393	Ōpakū	Ōpakū	ō: place of; pakū: to make a sudden sound or report, to resound or to knock	Place of sudden noise
+me_394	394	Ōpanuku	Ōpanuku	ō: place of; Panuku: a personal name	Place of Panuku
+me_395	395	Ōpapa	Ōpapa	ō: place of; papa: flat land	Place of flat land
+me_396	396	Ōpara	Ōpara	ō: place of; para: mud or dust, or a place where sacred ceremonies were performed	Place of mud
+me_397	397	Ōpararā	Ōpararā	ō: place of; parara: to lie open towards	A place which lies open (to the Tasman Sea)
+me_398	398	Ōparau	Ōparau	ō: place of; pa: fortified villages; rau: many; or parau: dissembling or falsehood	Place of many fortified villages; or Place of falsehood
+me_399	399	Ōpārure	Ōpārure	ō: place of; pārure: to plunder	Place of plunder
+me_400	400	Ōpepe	Ōpepe	ō: place of; pepe: moth	Place of the moth
+me_401	401	Ōpihi	Ōpihi	ō: place of; pihi: springing up (referring to plants)	Place of springing-up (plants)
+me_402	402	Ōpiki	Ōpiki	ō: place of; piki: to climb or ascend	Place of climbing
+me_403	403	Ōpito	Ōpito	ō: place of; pito: umbilical cord	Place of umbilical cords
+me_404	404	Ōpoe	Ōpoe	ō: place of; Poe	Place of Poe
+me_405	405	Ōpoho	Ōpoho	ō: place of; Poho	Place of Poho
+me_406	406	Ōpononi	Ōpononi	ō: place of; pou: post; noni: crooked	Place of crooked fishing post
+me_407	407	Ōpōuri	Ōpōuri	ō: place of; pōuri: sadness	Place of sadness
+me_408	408	Ōpoutama	Ōpoutama	ō: place of; poutama: pattern on the tukutuku panels of a whare	Place of the poutama pattern
+me_409	409	Ōpoutere	Ōpoutere	ō: place of; pou: pour out; tere: quickly	The place (where the sea-waters) swiftly empty out
+me_410	410	Ōpua	Ōpua	ō: place of; pua: flower	Place of the flower
+me_411	411	Ōpuke	Ōpuke	ō: place of; puke: hill	Place of the hill
+me_412	412	Ōrākau	Ōrākau	ō: place of; rakau: trees	Place of trees
+me_413	413	Ōrākei	Ōrākei	ō: place of; rākei: adornment	Place of adornment
+me_414	414	Ōrakei Kōrako	Ōrakei Kōrako	ō: place of; rakei: adornment; kōrako: white	Place of adornment near the white (sinter flat)
+me_415	415	Ōranga	Ōranga	ō: place of; ranga: rising ground, hill, sandbank, or fishing ground	Place of rising ground
+me_416	416	Ōrarī	Ōrarī	ō: place of; rarī: butterfish	Place of the butterfish
+me_417	417	Ōrātia	Ōrātia	ō: place of; ra: sun; tia: persistency	Place of long-lingering sun
+me_418	418	Ōrere	Ōrere	ō: place of; rere: waterfall	Place of the waterfall
+me_419	419	Ōreti	Ōreti	ō: place of; reti: snare	Place of the snare
+me_420	420	Ōringi	Ōringi	ō: place of; Ringi	Place of Ringi
+me_421	421	Ōrongo	Ōrongo	ō: place of; rongo: listening-post	Place of the listening post
+me_422	422	Ōrongorongo	Ōrongorongo	o: of; rongorongo: a woman’s name	Place of Rongorongo
+me_423	423	Ōropi	Ōropi	ō: place of; ropi: to cover up	Place of covering up
+me_424	424	Ōroua	Ōroua	ō: place of; roua: dredging for shellfish	Place of dredging for shellfish
+me_425	425	Ōruaiti	Ōruaiti	ō: place of; rua: pit; iti: small	Place of small pit
+me_426	426	Ōruanui	Ōruanui	ō: place of; rua: pit; nui: large or many	Place of many pits
+me_427	427	Ōruawairua	Ōruawairua	ō: place of; rua: two; wairua: soul or spirit	Meeting-place of spirits
+me_428	428	Ōruawharo	Ōruawharo	ō: place of; rua: hole or pit; whārō: stretched out in full length	Place of stretched-out pit
+me_429	429	Ōruawharo	Ōruawharo	ō: place of; Ruawharo: a personal name	Place of Ruawharo
+me_430	430	Ōrukuwai	Ōrukuwai	ō: place of; Rukuwai: a personal name	Place of Rukuwai
+me_431	431	Ōruru	Ōruru	ō: place of; ruru: morepork	Place of the morepork
+me_432	432	Ōrurutūmārō	Ōrurutūmārō	ō: place of; ruru: morepork; tū: stand; mārō: firm	Place of the unmoving morepork
+me_433	433	Ōtāhei	Ōtāhei	ō: place of; tāhei: a bird snare	Place of the bird snare
+me_434	434	Ōtahu	Ōtahu	ō: place of; Tahu: a personal name	Place of Tahu
+me_435	435	Ōtāhūhū	Ōtāhūhū	ō: place of tāhūhū: ridgepole of a house	Place of the ridgepole of a house
+me_436	436	Ōtaihanga	Ōtaihanga	ō: place of: Taihanga: a personal name	Place of Taihanga
+me_437	437	Ōtāika	Ōtāika	ō: place of; tāika: to lie in a heap	Place of lying in a heap
+me_438	438	Ōtakapuneke	Ōtakapuneke	ō: place of; Takapuneke: a personal name	Place of Takapuneke
+me_439	439	Ōtakaro	Ōtakaro	ō: place of; Takaro: a personal name	Place of Takaro
+me_440	440	Ōtakeho	Ōtakeho	ō: place of; Takeho: a personal name	Place of Takeho
+me_441	441	Ōtaki	Ōtaki	ō: place of; taki: stick in	Place of sticking a staff into the ground
+me_442	442	Ōtākiri	Ōtākiri	ō: place of; tākiri: loosening or making free from tapu	Place of loosening or freeing from tapu
+me_443	443	Ōtakou	Ōtakou	ō: place of; tākou: red ochre	Place of red ochre; or place of Tākou
+me_444	444	Ōtama	Ōtama	ō: place of; Tama: a personal name	Place of Tama
+me_445	445	Ōtamakura	Ōtamakura	ō: place of; tama: son; kura: ornamented with red feathers	Place of boy ornamented with red feathers
+me_446	446	Ōtamarākau	Ōtamarākau	ō: place of; tama: young men; rākau: weapons	Place of young warriors
+me_447	447	Ōtamarau	Ōtamarau	ō: place of; Tamarau: a personal name	Place of Tamarau
+me_448	448	Ōtamatea	Ōtamatea	ō: place of; Tamatea: a personal name	Place of Tamatea
+me_449	449	Ōtāne	Ōtāne	ō: place of; tāne: man	Place of a man
+me_450	450	Ōtāngarei	Ōtāngarei	ō: place of; tanga: row or company of people; rei: leaping	Place of group of people leaping
+me_451	451	Ōtangaroa	Ōtangaroa	ō: place of; Tangaroa: a personal name, or the god of the ocean	Place of Tangaroa
+me_452	452	Ōtangihaku	Ōtangihaku	ō: place of; tangi: to sound or weep; haku: to murmur	Place of murmured weeping
+me_453	453	Ōtangimoana	Ōtangimoana	ō: place of; tangi: weeping; moana: waters	Place of weeping waters
+me_454	454	Ōtangiwai	Ōtangiwai	ō: place of; tangi: weeping; wai: waters	Place of weeping waters
+me_455	455	Ōtāpara	Ōtāpara	ō: place of; tāpara: desire, or wooden digging implement	Place of digging implement
+me_456	456	Ōtāpiri	Ōtāpiri	ō: place of; tapiri: a vigorous shoot growing beside the main stem of a plant	Place of vigorous growing shoot
+me_457	457	Ōtara	Ōtara	ō: place of; tara: peak	Place of the peak
+me_458	458	Ōtara	Ōtara	ō: place of; Tara: a personal name	Place of Tara
+me_459	459	Ōtaraia	Ōtaraia	ō: place of; Taraia: a personal name	Place of Taraia
+me_460	460	Ōtaranga	Ōtaranga	ō: place of; taranga: separation	Place of separation
+me_461	461	Ōtatara	Ōtatara	ō: place of; tatara: to untie or loosen	Place of loosening
+me_462	462	Ōtauaki	Ōtauaki	ō: place of; tauaki: to show or expose	Place of exposure
+me_463	463	Ōtautau	Ōtautau	ō: place of; tautau: greenstone ear pendant with a straight shank curved at the lower end	Place of ear pendant
+me_464	464	Ōtāwēwē	Ōtāwēwē	ō: place of: tāwēwē: weighted net	Place of a weighted net
+me_465	465	Ōtāwhao	Ōtāwhao	ō: place of; tāwhao: fragments, refuse or brushwood	Place of brushwood scrub
+me_466	466	Ōtehei	Ōtehei	ō: place of; te: the; hei: neck ornament	Place of the neck ornament
+me_467	467	Ōtehīwai	Ōtehīwai	ō: place of; te: the; hīwai: springing up	Place of springing up of water
+me_468	468	Ōtekura	Ōtekura	ō: place of; te: the; kura: red feather	Place of the red feather
+me_469	469	Ōtepopo	Ōtepopo	ō: place of; te: the; popo: decayed wood	Place of the decayed wood
+me_470	470	Ōtipua	Ōtipua	ō: place of; tipua: enchanted object or person	Place of supernatural creature
+me_471	471	Ōtiria	Ōtiria	ō: place of; tiria: to be planted	Place of planting
+me_472	472	Ōtiwhā	Ōtiwhā	ō: place of: tiwhā: a patch of shell or wood to cover a hole in a kelp bag	Place of patch
+me_473	473	Ōtoatahi	Ōtoatahi	ō: place of; toa: warrior; tahi: one	Place of a single warrior
+me_474	474	Ōtohi	Ōtohi	ō: place of; tohi: ritual ceremony	Place of ceremony
+me_475	475	Ōtoko	Ōtoko	ō: place of; toko: stick or staff	Place of the staff
+me_476	476	Ōtonga	Ōtonga	ō: place of; tonga: south, or south wind	Place of the south wind
+me_477	477	Ōtoroa	Ōtoroa	ō: place of; toroa: albatross	Place of the albatross
+me_478	478	Ōtūkapuarangai	Ōtūkapuarangai	ō: place of; tu: to stand; kapua: cloud; rangi: sky	Place of the standing cloud in the sky
+me_479	479	Ōtūmatua	Ōtūmatua	o: place of; tū: stand; matua: parent	Where the elder stands
+me_480	480	Ōtūmoetai	Ōtūmoetai	ō: place of; tu: to stand; moe: to sleep; tai: tide	Place where the tide stands still as if asleep
+me_481	481	Ōtūpaopao	Ōtūpaopao	ō: place of; tū: to stand; paopao: to break by repeated strokes	Place of standing and breaking
+me_482	482	Ōtūraki	Ōtūraki	ō: place of; tū: to stand; raki (rangi): sky	Place of standing in the sky
+me_483	483	Ōtūrēhua	Ōtūrēhua	ō: place of; tū: to stand; Rēhua: the star Antares	Place where the summer star stands still
+me_484	484	Ōturoto	Ōturoto	ō: place of; Turoto: a personal name	Place of Turoto
+me_485	485	Ōtūru	Ōtūru	ō: place of; Turu: a personal name	Place of Turu
+me_486	486	Ōue	Ōue	ō: place of; Ue: a personal name	Place of Ue
+me_487	487	Ōueroa	Ōueroa	ō: place of; ue: species of flax; roa: long	Place of long flax
+me_488	488	Ōui	Ōui	ō: place of; ui: to ask	Place of questioning
+me_489	489	Ōuruhia	Ōuruhia	ō: place of; uruhia: to be attacked	Place of being attacked
+me_490	490	Ōwahanga	Ōwahanga	ō: place of; wahanga: burden	Place of burden
+me_491	491	Ōwairaka	Ōwairaka	ō: place of; Wairaka, a chieftainess of repute	Place of Wairaka
+me_492	492	Ōwairaka	Ōwairaka	ō: place of; wai: stream; Raka: an ancestor	Place of the stream of Raka
+me_493	493	Ōwaka	Ōwaka	ō: place of; waka: canoe or wooden trough	Place of a canoe
+me_494	494	Ōweka	Ōweka	ō: place of; weka: wood-hen	Place of the weka
+me_495	495	Ōwhango	Ōwhango	ō: place of; whango: hoarse voice or wheezy sound	Place of wheezy noises
+me_496	496	Ōwhata	Ōwhata	ō: place of; whata: elevated stage to protect food from bush rats, and for drying	Place of the elevated stage
+me_497	497	Ōwhawhe	Ōwhawhe	ō: place of; whawhe: put round	The place encircled
+me_498	498	Ōwhiro	Ōwhiro	ō: place of; Whiro	Place of Whiro
+me_499	499	Paehinahina	Paehinahina	pae: ridge, headland; hinahina: a small tree also knwn as mahoe	Hinahina ridge
+me_500	500	Paekākāriki	Paekākāriki	pae: perch or snare; kākāriki: parakeet (Cyanoramphus novaezelandiae)	Parakeet perch
+me_501	501	Paekoka	Paekoka	pae: ridge; koka: an unidentified species of seabird that was caught here	Seabird ridge
+me_502	502	Paeoterangi	Paeoterangi	pae: perching place; o: of; te: the; rangi: sky	Footstool of the sky
+me_503	503	Paerātā	Paerātā	pae: ridge; rātā: native tree	Ridge of the rātā tree
+me_504	504	Paerau	Paerau	pae: ridges or steps; rau: many or a hundred	Many ridges
+me_505	505	Paeroa	Paeroa	pae: ridge of hills; roa: long	Long ridge of hills
+me_506	506	Paetiki	Paetiki	pae: ridge; tiki: carved wooden or stone figure	Ridge of carved figure
+me_507	507	Pakirārahi	Pakirārahi	pakirā: bald; rahi: big	Large bald dome
+me_508	508	Papahīnau	Papahīnau	papa: flat; hīnau: native tree	Hīnau flats
+me_509	509	Papaiti	Papaiti	papa: flat; iti: small	Small flats
+me_510	510	Papakaio	Papakaio	papa: flat; kaio: native tree (South Island form of ngaio)	Kaio tree flats
+me_511	511	Papakura	Papakura	papa: flat; kura: red	Red flats
+me_512	512	Papamoa	Papamoa	papa: flat; moa: raisted mounds for growing vegetables	Raised mounds for growing vegetables on the flats
+me_513	513	Papanui	Papanui	papa: flat; nui: large	Large flat
+me_514	514	Paparangi	Paparangi	papa: flat; rangi: sky	Flat sky
+me_515	515	Paparātā	Paparātā	papa: flat; rātā: native tree	Rātā tree flats
+me_516	516	Paparimu	Paparimu	papa: flat; rimu: native tree	Rimu tree flats
+me_517	517	Paparoa	Paparoa	papa: flat; roa: long	Long flats
+me_518	518	Papatawa	Papatawa	papa: flat; tawa: native tree	Tawa tree flats
+me_519	519	Papatāwhara	Papatāwhara	papa: ground; tāwhara: kiekie flowers	Kiekie flower flats
+me_520	520	Papatoetoe	Papatoetoe	papa: flat; toetoe: native grass	Toetoe grass flat
+me_521	521	Papatōtara	Papatōtara	papa: flat; tōtara: native tree	Tōtara flat
+me_522	522	Papatōwai	Papatōwai	papa: flat; tōwai: native tree	Tōwai tree flat
+me_523	523	Papawai	Papawai	papa: flat; wai: water	Inundated land
+me_524	524	Pāreranui	Pāreranui	pārera: grey duck (Anas superciliosa): nui: large	Large grey duck
+me_525	525	Paretai	Paretai	pare: divert; tai: the tide	River bank
+me_526	526	Paretetaitonga	Paretetaitonga	para: dust; te: the; tai: sea; tonga: south	The dust from the south sea
+me_527	527	Pārewanui	Pārewanui	pā: fortified village; rewa: swamp; nui: large	Fortified village in a large swamp
+me_528	528	Pari-nui-te-ra	Pari-nui-te-ra	pari: cliff; nui: great; te: the; rā: sun	Great cliff in the sun
+me_529	529	Pariparitetai	Pariparitetai	paripari: cliffs; te: the; tai: coast	Cliffs on the coast
+me_530	530	Pariroa	Pariroa	pari: cliff; roa: long	Long cliff
+me_531	531	Pāroa	Pāroa	pā: fortified village; roa: long, broad	Broad fortified village
+me_532	532	Paruroa	Paruroa	paru: mud; roa: long	Long mud
+me_533	533	Paturoa	Paturoa	patu: to strike or kill; roa: long	Much hitting
+me_534	534	Pāuanui	Pāuanui	pāua: shellfish; nui: many or large	Many or large pāua
+me_535	535	Pikowai	Pikowai	piko: corner or bend; wai: stream	Bend in the stream
+me_536	536	Pipiroa	Pipiroa	pipi: cockle; roa: long	Long pipi
+me_537	537	Pīroa	Pīroa	pī: headwaters; roa: long	Long headwaters
+me_538	538	Pōhatunui	Pōhatunui	pōhatu: rock; nui: great	Great rock
+me_539	539	Pōhaturoa	Pōhaturoa	pōhatu: rock; roa: tall	Tall rock
+me_540	540	Pohonui	Pohonui	poho: stomach; nui: big	Big stomach
+me_541	541	Pōhuenui	Pōhuenui	pōhue: convolvulus or other climbing plants; nui: many	Large climbing plant
+me_542	542	Pongaroa	Pongaroa	ponga: tree fern; roa: tall or long	Tall tree fern
+me_543	543	Pōnui	Pōnui	pō: night; nui: long	Long night
+me_544	544	Puatai	Puatai	pua: foam; tai: sea	Foam of the sea
+me_545	545	Pukearuhe	Pukearuhe	puke: hill; aruhe: bitter	Hill of bitterness
+me_546	546	Puhinui	Puhinui	puhi: plume at the bow of a war canoe; nui: large	Large plume at bow of war canoe
+me_547	547	Pukeatua	Pukeatua	puke: hill; atua: god	Hill of the deity
+me_548	548	Pukehinau	Pukehinau	puke: hill; hinau: a native tree	Hīnau tree hill
+me_549	549	Puke-hiwi-tahi	Puke-hiwi-tahi	puke: hill; hiwi: ridge; tahi: one	One-ridge hill
+me_550	550	Pukehuhu	Pukehuhu	puke: hill; huhu: grub	Huhu grub hill
+me_551	551	Pukehuia	Pukehuia	puke: hill; huia: cluster	Cluster of hills
+me_552	552	Pukeiti	Pukeiti	puke: hill; tī: cabbage tree	Cabbage tree hill
+me_553	553	Pukekāhu	Pukekāhu	puke: hill; kāhu: hawk	Hill of the hawk
+me_554	554	Pukekaikiore	Pukekaikiore	puke: hill; kai: to eat; kiore: rat	Hill of the eaten rat
+me_555	555	Pukekākāriki	Pukekākāriki	puke: hill; kākāriki: parakeet	Hill of the parakeet
+me_556	556	Pukekāpia	Pukekāpia	puke: hill; kāpia: kauri gum	Kauri gum hill
+me_557	557	Pukekoikoi	Pukekoikoi	puke: hill; koikoi: pointed	Pointed hill
+me_558	558	Pukekōmā	Pukekōmā	puke: hill; kōmā: light-coloured or bright; or a kind of stone	Light-coloured hill
+me_559	559	Pukekōwhai	Pukekōwhai	puke: hill; kōwhai: native tree	Kōwhai tree hill
+me_560	560	Pukekura	Pukekura	puke: hill; kura: red	Red hill
+me_561	561	Puke-māeroero	Puke-māeroero	puke: hill; māeroero: ogres of the forest	Hill of ogres
+me_562	562	Pukemaori	Pukemaori	puke: hill; māori: Māori	Māori hill
+me_563	563	Pukemarama	Pukemarama	puke: hill; marama: moon	Moon hill
+me_564	564	Pukemātāwai	Pukemātāwai	puke: hill: mātāwai: source of streams	Hill is source of stream
+me_565	565	Pukematekeo	Pukematekeo	puke: hill; mate: end; keo: peak	The hill at the end of the range
+me_566	566	Pukemiro	Pukemiro	puke: hill; miro: native tree	Miro tree hill
+me_567	567	Pukemoko	Pukemoko	puke: hill; moko: tattoo	Hill of tattoos
+me_568	568	Pukemoremore	Pukemoremore	puke: hill; more; a freshwater fish	Hill of many pinbellied freshwater fish
+me_569	569	Pukengahu	Pukengahu	puke: hill; ngahu: point or promontory	Hill
+me_570	570	Pukenui	Pukenui	puke: hill; nui: large	Large hill
+me_571	571	Pukeokahu	Pukeokahu	puke: hill; o: of; Kahu: personal name	Hill of Kahu
+me_572	572	Puke-o-Tara	Puke-o-Tara	puke: hill; o: of; Tara	Hill of Tara
+me_573	573	Pukepiripiri	Pukepiripiri	puke: hill; piripiri: the ‘biddy-bid’ (Acaena anserinifolia)	‘Biddy-bid’ hill
+me_574	574	Pukepito	Pukepito	puke: hill; pito: end	Hill end
+me_575	575	Pukepōhatu	Pukepōhatu	puke: hill; pōhatu: rock	Rock hill
+me_576	576	Pukepoto	Pukepoto	puke: hill; poto: dark blue earth present in a nearby swamp, used as a pigment	Dark blue pigment hill
+me_577	577	Pukerangi	Pukerangi	puke: hill; rangi: sky	Sky hill
+me_578	578	Pukerangiora	Pukerangiora	puke: hill; rangiora: native shrub	Rangiora shrub hill
+me_579	579	Pukerau	Pukerau	puke: hills; rau: a leaf, a hundred or many	Hill of leaves
+me_580	580	Pukerauaruhe	Pukerauaruhe	puke: hill; rauaruhe: bracken fronds	Hill of bracken fronds
+me_581	581	Pukerimu	Pukerimu	puke: hill; rimu: native tree	Rimu tree hill
+me_582	582	Pukeora	Pukeora	puke: hill; ora: well or in good health	Hill of good health
+me_583	583	Pukeroa	Pukeroa	puke: hill; roa: long or tall	Tall hill
+me_584	584	Pukerua	Pukerua	puke: hill; rua: two	Two hills
+me_585	585	Puketaha	Puketaha	puke: hill; taha: side	Hill side
+me_586	586	Puketāpapa	Puketāpapa	puke: hill; tāpapa: edge or flat-topped	Flat-topped hill
+me_587	587	Puketapu	Puketapu	puke: hill; tapu: sacred or forbidden	Sacred hill
+me_588	588	Puketawa	Puketawa	puke: hill; tawa: native tree	Tawa tree hill
+me_589	589	Puketī	Puketī	puke: hill; tī: cabbage tree	Cabbage tree hill
+me_590	590	Puketihi	Puketihi	puke: hill; tihi: top or summit	Summit of the hill
+me_591	591	Puketiro	Puketiro	puke: hill; tiro: view	View from the hill
+me_592	592	Puke-tirohia-marama	Puke-tirohia-marama	puke: hill; tirohia: to survey or view; marama: moon	Hill giving a view of the moon
+me_593	593	Puketoi	Puketoi	puke: hill; toi: summit	Summit of the hill
+me_594	594	Puketōtara	Puketōtara	puke: hill; tōtara tree	Tōtara hill
+me_595	595	Puketūī	Puketūī	puke: hill; tūī: native bird	Tūī hill
+me_596	596	Puketūroto	Puketūroto	puke: hill; tū: to stand; roto: lake	Hillside beside the lake
+me_597	597	Puketutu	Puketutu	puke: hill; tutu: native shrub (Coriaria arborea)	Tutu shrub hill
+me_598	598	Pukewhau	Pukewhau	puke: hill; whau: a native tree	Whau tree hill
+me_599	599	Pukewhero	Pukewhero	puke: hill; whero: red	Red hill
+me_600	600	Pukurahi	Pukurahi	puku: belly; rahi: large	Large belly
+me_601	601	Rāhotu	Rāhotu	rā: sun; hotu: to long for	Long for the sun
+me_602	602	Rākaunui	Rākaunui	rākau: tree; nui: many or large	Many trees
+me_603	603	Rākauroa	Rākauroa	rākau: tree; roa: tall	Tall trees
+me_604	604	Ramaroa	Ramaroa	rama: torch; roa: long	Long torch
+me_605	605	Ranganui	Ranganui	ranga: parade; nui: large	Large parade
+me_606	606	Rangi-roa	Rangi-roa	rangi: sky; roa: long	Long sky
+me_607	607	Rānui	Rānui	rā: sun; nui: many	Plenty of sunshine
+me_608	608	Rapanui	Rapanui	rapa: there are many meanings of rapa, including to seek; nui: many	Much seeking
+me_609	609	Rārangi-roa	Rārangi-roa	rārangi: line or row; roa: long	Long line
+me_610	610	Rāroa	Rāroa	rā; day; roa: long	Long day
+me_611	611	Rātānui	Rātānui	rātā: native tree; nui: large or many	Many or large rātā trees
+me_612	612	Rāwhitiroa	Rāwhitiroa	rā: sun; whiti: to shine; roa: long	Long-shining sun
+me_613	613	Reporoa	Reporoa	repo: swamp; roa: long or wide	Long swamp
+me_614	614	Rimunui	Rimunui	rimu: native tree; nui: many or large	Many or large rimu trees
+me_615	615	Rongotai	Rongotai	rongo: sound; tai: sea	Sound of the sea
+me_616	616	Rotoaira	Rotoaira	roto: lake; a: of; Ira	Lake of Ira
+me_617	617	Roto-a-Tara	Roto-a-Tara	roto: lake; a: of; Tara	Lake of Tara
+me_618	618	Rotoehu	Rotoehu	roto: lake; ehu: turbid	Turbid lake
+me_619	619	Rotoiti	Rotoiti	roto: lake; iti: small	Little lake
+me_620	620	Rotokākahi	Rotokākahi	roto: lake; kākahi: freshwater shellfish	Freshwater shellfish lake
+me_621	621	Rotokauri	Rotokauri	roto: lake; kauri: native tree	Kauri tree lake
+me_622	622	Rotokawa	Rotokawa	roto: lake; kawa; bitter	Bitter lake
+me_623	623	Rotokawau	Rotokawau	roto: lake; kawau: shag	Shag lake
+me_624	624	Rotokohu	Rotokohu	roto: lake; kohu: mist	Misty lake
+me_625	625	Rotokura	Rotokura	roto: lake; kura: red	Red glow of sunset on the water
+me_626	626	Rotoma	Rotoma	roto: lake; ma: clear	Clear lake
+me_627	627	Rotomahana	Rotomahana	roto: lake; mahana: warm	Warm lake
+me_628	628	Rotomanu	Rotomanu	roto: lake; manu: bird	Bird lake
+me_629	629	Rotongaro	Rotongaro	roto: lake; ngaro: hidden or lost	Hidden lake
+me_630	630	Roto-o-rangi	Roto-o-rangi	roto: lake; o: of; rangi: sky	Lake of the sky
+me_631	631	Rotoroa	Rotoroa	roto: lake; roa: long	Long lake
+me_632	632	Rotorua	Rotorua	roto: lake; rua: two	Two lakes
+me_633	633	Rototuna	Rototuna	roto: lake; tuna: eel	Eel lake
+me_634	634	Rotowaro	Rotowaro	roto: lake; waro: coal or glowing embers	Lake of glowing embers
+me_635	635	Ruapuke Island	Ruapuke	rua: two; puke: hills	Two hill island
+me_636	636	Ruaroa	Ruaroa	rua: cave or pit; roa: long	Long pit
+me_637	637	Ruawai	Ruawai	rua: hole; wai: water	Watery hole
+me_638	638	Rukumoana	Rukumoana	ruku: to dive; moana: sea, or deep pool in river	Diving into the pool
+me_639	639	Tāhaenui	Tāhaenui	tāhae: thief; nui: big or many	Many thieves
+me_640	640	Taharoa	Taharoa	taha: coast; roa: long	Long coast
+me_641	641	Tahawai	Tahawai	taha: side; wai: water	Seaside
+me_642	642	Tāhekereroa	Tāhekereroa	tāheke: waterfall; roa: high or long	High waterfall
+me_643	643	Tahoraiti	Tahoraiti	tahora: forest clearing; iti: little	Little forest clearing
+me_644	644	Tāhuhūnui	Tāhuhūnui	tāhūhū: ridge-pole; nui: large	Large ridge-pole
+me_645	645	Tāhunanui	Tāhunanui	tāhuna: shoal or sandbank; nui: large	Large sandbank
+me_646	646	Taiharuru	Taiharuru	tai: sea; haruru: resounding	Resounding sea
+me_647	647	Taikorea	Taikorea	tai: sea; korea: a small canoe	Tide of the small canoe
+me_648	648	Taimate	Taimate	tai: tide; mate: dead	A salt pool blocked off from the tide
+me_649	649	Tainui	Tainui	tai: tide; nui: great	Great tide
+me_650	650	Tairua	Tairua	tai: tides; rua: two	Two tides
+me_651	651	Taitapu	Taitapu	tai: coast; tapu: sacred	Sacred coast
+me_652	652	Taitimu	Taitimu	tai: tide; timu: to ebb	Ebb of the tide
+me_653	653	Taitomo	Taitomo	tai: sea; tomo: shaft	Shaft of the sea
+me_654	654	Takahiwai	Takahiwai	takahi: to trample; wai: water	Trample water
+me_655	655	Takutai	Takutai	taku: coast; tai: sea	Sea coast
+me_656	656	Tangimoana	Tangimoana	tangi: to weep or lament; moana: ocean	Weeping sea
+me_657	657	Tangiwai	Tangiwai	tangi: to cry or weep; wai: water	Weeping water
+me_658	658	Taonui	Taonui	tao: spear; nui: many	Large spear
+me_659	659	Taoroa	Taoroa	tao: spear; roa: long	Long spear
+me_660	660	Tapuwaeroa	Tapuwaeroa	tapuwae: footsteps; roa: long	Long footsteps
+me_661	661	Tātuanui	Tātuanui	tātua: girdle; nui: large or many	Large girdle
+me_662	662	Taumarunui	Taumarunui	taumaru: screen; nui: large	Large screen
+me_663	663	Taumatawhakatangihangakōauauotamateapōkaiwhenuakitanatahu	Taumatawhakatangihangakōauauotamateapōkaiwhenuakitanatahu	taumata: brow of a hill; whakatangihanga: place of sounding or playing; kōauau: flute; o: of; Tamatea-pōkai-whenua; ki: to; tana: his; tahu: lover	The brow of the hill where Tamatea who travelled all over the land played his flute to his lover
+me_664	664	Taumoana	Taumoana	tau: to come to rest (and many other meanings); moana: sea	Come to rest at sea
+me_665	665	Tauranganui	Tauranganui	taura: landing places; nui: many, great	Great landing place
+me_666	666	Tauraroa	Tauraroa	taura: rope; roa: long	Long rope
+me_667	667	Tawanui	Tawanui	tawa: native tree (Beilschmiedia tawa); nui: many	Great tawa tree
+me_668	668	Tāwharanui	Tāwharanui	tāwhara: flower of the kiekie (Freycinetia banksii); nui: many	Many flowers of the kiekie
+me_669	669	Te Araroa	Te Araroa	te: the; ara: path; roa: long	The long path
+me_670	670	Te Awa	Te Awa	te: the; awa: valley or channel	The valley
+me_671	671	Te Awahou	Te Awahou	te: the; awa: river; hou: new	The new river
+me_672	672	Te Awaiti	Te Awaiti	te: the; awa: stream; iti: little	The little stream
+me_673	673	Te Awa-māeroero	Te Awa-māeroero	te: the; awa: river; māeroero: ogres of the South Island forests	The river of the ogres
+me_674	674	Te Awamutu	Te Awamutu	te: the; awa: river; mutu: cut off or ended	The ended river
+me_675	675	Te Awa-parahi	Te Awa-parahi	te: the; awa: valley; parahi: steep	The steep valley
+me_676	676	Te Awaure	Te Awaure	te: the; awa: river; ure: male	The male river
+me_677	677	Te Haehaenga	Te Haehaenga	te: the; haehaenga: torn or lacerated	The laceration
+me_678	678	Te Hana	Te Hana	te: the; hana: glow or gleam	The glow
+me_679	679	Te Hāpara	Te Hāpara	te: the; hāpara: dawn	The dawn
+me_680	680	Te Hāparangi	Te Hāparangi	te: the; hāparangi	The circumstance of shouting
+me_681	681	Te Hāpua	Te Hāpua	te: the; hāpua: lagoon	The lagoon
+me_682	682	Te Hāroto	Te Hāroto	te: the; hāroto: pool	The pool
+me_683	683	Te Henga	Te Henga	te: the; henga: food for a work party	The food for a work party
+me_684	684	Te Hēnui	Te Hēnui	te: the; hē: amongst its several meanings are wrong, erring, error, difficulty, trouble; nui: big	The great mistake
+me_685	685	Te Ika-a-Māui	Te Ika-a-Māui	te: the; ika: fish; a: of; Māui: a personal name	The fish of Māui
+me_686	686	Te Ika-a-Ranganui	Te Ika-a-Ranganui	te: the; ika: fish; a: of; Ranganui: a personal name	The fish of Ranganui
+me_687	687	Te Horo	Te Horo	te: the; horo: landslide	The landslide
+me_688	688	Te Kaha	Te Kaha	te: the; kaha: rope	The rope
+me_689	689	Te Kao	Te Kao	te: the; kao: dried kūmara	The dried kūmara
+me_690	690	Te Kauwhata	Te Kauwhata	te: the; kau: empty; whata: storehouse	The empty storehouse
+me_691	691	Te Kawakawa	Te Kawakawa	te: the; kawakawa: a native shrub	The kawakawa shrub
+me_692	692	Te Kōpua	Te Kōpua	te: the; kōpua: deep pool	The deep pool
+me_693	693	Te Kiri	Te Kiri	te: the; kiri: bark	The bark
+me_694	694	Te Kōhanga	Te Kōhanga	te: the; kōhanga: nest	The nest
+me_695	695	Te Kōwhai	Te Kōwhai	te: the; kōwhai: a tree	The kōwhai tree
+me_696	696	Te Mānia	Te Mānia	te: the; mānia: plain	The plain
+me_697	697	Te Moana	Te Moana	te: the; moana: ocean	The sea
+me_698	698	Te Moana o Toi te Huatahi	Te Moana o Toi te Huatahi	te: the; moana: ocean; o: of; Toi te Huatahi	The ocean of Toi te Huatahi
+me_699	699	Te Moananui	Te Moananui	te: the; moana: ocean; nui: large	The great ocean
+me_700	700	Te Moananui-a-Kiwa	Te Moananui-a-Kiwa	te: the; moana: ocean; nui: large; a: of; Kiwa	The great ocean of Kiwa
+me_701	701	Te Onepū	Te Onepū	te: the; onepū: sand	The sand
+me_702	702	Te Onewa	Te Onewa	te: the; one: earth, soil or land; wa: unenclosed country	Soil of the unenclosed land
+me_703	703	Te Papatapu	Te Papatapu	te: the; papa: flat; tapu: sacred or forbidden	The sacred flat
+me_704	704	Te Puke	Te Puke	te: the; puke: hill	The hill
+me_705	705	Te Tai Tamāhine	Te Tai Tamāhine	te: the; tai: sea, coast; tamāhine: daughter, girl	The female coast
+me_706	706	Te Tai Tamatāne	Te Tai Tamatāne	te: the; tai: sea, coast; tamatāne: son, body	The male coast
+me_707	707	Te Tai o Marokura	Te Tai o Marokura	te: the; tai: sea, coast; o: of; Marokura	The coast of Marokura
+me_708	708	Te Tai o Mahaanui	Te Tai o Mahaanui	te: the; tai: sea, coast; o: of; Mahaanui	The coast of Mahaanui
+me_709	709	Te Tai o Aorere	Te Tai o Aorere	te: the; tai: sea, coast; o: of; Aorere	The coast of Aorere
+me_710	710	Te Tai Poutini	Te Tai Poutini	te: the; tai: sea, coast; Poutini	The coast of Poutini
+me_711	711	Te Tukeroa	Te Tukeroa	te: the ; tuke: elbow or bend; roa: tall	The long bend
+me_712	712	Te Waharoa	Te Waharoa	te: the; waha: to carry on the back; roa: long	The long carry
+me_713	713	Te Wai Pounamu	Te Wai Pounamu	te; the; wai: water; pounamu: greenstone	The greenstone waters
+me_714	714	Te Waiiti	Te Waiiti	te: the; wai: stream; iti: small	The little stream
+me_715	715	Te Waiopani	Te Waiopani	te: the wai: water; o: of; Pani	The water of Pani
+me_716	716	Te Wairoa	Te Wairoa	te: the; wai: river or stream; roa: long	The long stream
+me_717	717	Te Waitere	Te Waitere	te: the; wai: water; tere: swiftly flowing	The swift stream
+me_718	718	Te Wēiti	Te Wēiti	te: the; wē: water; iti: little	The little water
+me_719	719	Te Whare-kai-atua	Te Whare-kai-atua	te: the; whare: house; kai: eat; atua: gods	The abode that consumes deities
+me_720	720	Tīkapa Moana	Tīkapa Moana	tīkapa: mournful; moana: sea	The mournful sea
+me_721	721	Tikinui	Tikinui	tiki: human representation in wood or stone; nui: large or many	The great human carving
+me_722	722	Tinui	Tinui	ti: cabbage tree; nui: large or many	Many cabbage trees
+me_723	723	Tiroa	Tiroa	ti: cabbage tree; roa: tall	Long cabbage tree
+me_724	724	Tiromoana	Tiromoana	tiro: view; moana: ocean	View the sea
+me_725	725	Tironui	Tironui	tiro: view; nui: large or expansive	Expansive view
+me_726	726	Tiroroa	Tiroroa	tiro: view; roa: long	Long view
+me_727	727	Titiroa	Titiroa	titi: long streaks of cloud; roa: long	Long streaks of cloud
+me_728	728	Tokanui	Tokanui	toka: rock; nui: large or many	Large rock
+me_729	729	Tokarahi	Tokarahi	toka: rock; rahi: large or many	Many rocks
+me_730	730	Tokaroa	Tokaroa	toka: rock; roa: tall or long	Tall rock
+me_731	731	Tokoiti	Tokoiti	toko: pole; iti: small	Little pole
+me_732	732	Tokoroa	Tokoroa	toko: pole: roa: long	Long pole
+me_733	733	Tōmoana	Tōmoana	tō: to drag or as far up as; moana: ocean	Drag to the ocean
+me_734	734	Tōtaranui	Tōtaranui	tōtara: trees; nui: many	Many tōtara trees
+me_735	735	Tunanui	Tunanui	tuna: eels; nui: many	Many eels
+me_736	736	Tūranganui	Tūranganui	tūranga: standing; nui: great	Great standing place
+me_737	737	Tūrangaomoana	Tūrangaomoana	tūranga: standing place; o: of; moana: the sea	Resting place of the sea
+me_738	738	Tūtaenui	Tūtaenui	tūtae: dung; nui: large	Large dung
+me_739	739	Umutaoroa	Umutaoroa	umu: oven; taoroa: long spear	Oven of the long spear
+me_740	740	Urenui	Urenui	ure: courage (a figurative expression); nui: great	Great courage
+me_741	741	Utuwai	Utuwai	utu: dip into, in order to fill a bowl; wai: water	Dip into water
+me_742	742	Waianiwaniwa	Waianiwaniwa	wai: water; aniwaniwa: rainbow	Rainbow waters
+me_743	743	Waiapu	Waiapu	wai: water; apu: to swallow	Swallowing river
+me_744	744	Waiareka	Waiareka	wai: water; a: of; reka: sweet or sweetness	Sweet water
+me_745	745	Waiariari	Waiariari	wai: water; ariari: gleaming or undisturbed	Gleaming water
+me_746	746	Waiariki	Waiariki	wai: water; ariki: chief	Waters of the chief
+me_747	747	Waiaro	Waiaro	wai: water; aro: wistful	Wistful water
+me_748	748	Waiatoto	Waiatoto	wai: water; a: of; toto: blood	Water of blood
+me_749	749	Waiau	Waiau	wai: water; au: current	Swirling waters
+me_750	750	Waiaua	Waiaua	wai: water; aua: herring	Waters containing herring
+me_751	751	Waihaha	Waihaha	wai: water; haha: noisy	Noisy water
+me_752	752	Waihakeke	Waihakeke	wai: water; hakeke: wood ear fungus	Wood ear fungus water
+me_753	753	Waihao	Waihao	wai: water; hao: to catch in a net	Water of net fishing
+me_754	754	Waihao	Waihao	wai: river: hao: a species of small eel	Water with eels
+me_755	755	Waihaorunga	Waihaorunga	wai: river: hao: a species of small eel; runga: top or upper part	Water with eels at the top
+me_756	756	Waiharakeke	Waiharakeke	wai: stream; harakeke: flax	Flax stream
+me_757	757	Waiharuru	Waiharuru	wai: water; haruru: to reverberate or rumble	Rumbling waters
+me_758	758	Waihau	Waihau	wai: water; hau: wind	Windy water
+me_759	759	Waiheke	Waiheke	wai: water; heke: to ebb, drip or descend	The descending waters
+me_760	760	Waihemo	Waihemo	wai: water or stream; hemo: to cease	The finished stream
+me_761	761	Waihīnau	Waihīnau	wai: stream; hīnau: a native tree	Hīnau tree stream
+me_762	762	Waihīrere	Waihīrere	wai: water; hīrere: to rush	Rushing waters
+me_763	763	Waihōaka	Waihōaka	wai: stream; hōaka (South Island form of hōanga): sandstone, used for grinding and polishing greenstone	Water of sandstone
+me_764	764	Waihōhepa	Waihōhepa	wai: stream, water; Hohepa: the Maori form of Joseph	The water of Hōhepa
+me_765	765	Waihōhonu	Waihōhonu	wai: river; hōhonu: deep	Deep water
+me_766	766	Waihopo	Waihopo	wai: river; hopo: to be apprehensive or doubtful	A river one fears to cross
+me_767	767	Waihora	Waihora	wai: water; hora: spread out	Spread-out waters
+me_768	768	Waihōu	Waihōu	wai: river; hōu: new	New waters
+me_769	769	Waihua	Waihua	wai: water; hua: fish roe	Fish roe waters
+me_770	770	Waihue	Waihue	wai: river; hue: gourd	River gourd waters
+me_771	771	Wai-iti	Wai-iti	wai: stream; iti: little	Little stream
+me_772	772	Waikākā	Waikākā	wai: water; kākā: parrot	Parrot stream
+me_773	773	Waikākāhi	Waikākāhi	wai: water; kākahi: freshwater shellfish	Waters of freshwater shellfish
+me_774	774	Waikākaho	Waikākaho	wai: water; kākaho: flowering plumes of the toetoe	Waters of the flowering plumes of the toetoe
+me_775	775	Waikanae	Waikanae	wai: water; kanae: mullet	Mullet waters
+me_776	776	Waikaraka	Waikaraka	wai: stream; karaka: native tree	Karaka tree stream
+me_777	777	Waikarakia	Waikarakia	wai: stream; karakia: prayer or incantation	Stream of ritual
+me_778	778	Waikare	Waikare	wai: water; kare: to ripple	Rippling waters
+me_779	779	Waikareiti	Waikareiti	wai: water; kare: to ripple or dash; iti: little	Little waters
+me_780	780	Waikaremoana	Waikaremoana	wai: water; kare: to ripple; moana: sea or large lake	Sea of rippling waters
+me_781	781	Waikāretu	Waikāretu	wai: water; kāretu: a sweet-scented grass	Waters of the kāretu grass
+me_782	782	Waikari	Waikari	wai: water; kari: dig	Dig for water
+me_783	783	Waikato	Waikato	wai: river; kato: to flow	Flowing water
+me_784	784	Waikawa	Waikawa	wai: water; kawa: bitter	Bitter water
+me_785	785	Waikawau	Waikawau	wai: water; kawau: shag	Water of the shag
+me_786	786	Waikererū	Waikererū	wai: water; kererū: wood pigeon	Water of the wood pigeon
+me_787	787	Waikeria	Waikeria	wai: water; keria: dug out	Dug out water
+me_788	788	Waikerikeri	Waikerikeri	wai: water; kerikeri: to rush along violently	Water that rushes along
+me_789	789	Waikiekie	Waikiekie	wai: water; kiekie: a climbing plant	Kiekie waters
+me_790	790	Waikino	Waikino	wai: water; kino: unpleasant, stinking	Harmful waters
+me_791	791	Waikirikiri	Waikirikiri	wai: stream; kirikiri: gravel	Gravelly stream
+me_792	792	Waikite	Waikite	wai: water; kite: to see or gaze upon	Discovered water
+me_793	793	Waikiwi	Waikiwi	wai: stream; kiwi: a flightless nocturnal bird	Kiwi waters
+me_794	794	Waikōau	Waikōau	wai: water; kōau: shag	Waters of the shag
+me_795	795	Waikohu	Waikohu	wai: water; kohu: mist	Misty waters
+me_796	796	Waikōkopu	Waikōkopu	wai: water; kōkopu: cockabully fish	Waters of the cockabully
+me_797	797	Waikōkōwai	Waikōkōwai	wai: water; kōkōwai: red ochre	Waters of the red ochre
+me_798	798	Waikorea	Waikorea	wai: water; korea: a small canoe	Waters of the small canoe
+me_799	799	Waikouaiti	Waikouaiti	wai: stream; koua (the poetical form of kua): to become; iti: little	Stream which has become small
+me_800	800	Waikoukou	Waikoukou	wai: water; koukou: morepork or native owl	Water of the morepork
+me_801	801	Waikōwhai	Waikōwhai	wai: stream; kowhai: native tree	Kōwhai tree waters
+me_802	802	Waikōwhitiwhiti	Waikōwhitiwhiti	wai: water; kōwhitiwhiti: dancing (of water)	Dancing waters
+me_803	803	Waikuku	Waikuku	wai: water; kuku: freshwater mussel	Freshwater mussel waters
+me_804	804	Waikumete	Waikumete	wai: water; kumete: wooden bowl often used to snare wood pigeons	Waters of the kumete bowl
+me_805	805	Waikuta	Waikuta	wai: water; kuta: rushes	Waters of the kuta rushes
+me_806	806	Waimā	Waimā	wai: river; mā: white or clear	Clear water
+me_807	807	Wai-māeroero	Wai-māeroero	wai: water; māeroero: ogres of the South Island forests	Waters of the ogres of the forests
+me_808	808	Waimāhaka	Waimāhaka	wai: waters; māhaka (māhanga): twin	Twin waters
+me_809	809	Waimahora	Waimahora	wai: water; mahora: spread out	Spread out waters
+me_810	810	Waimahuru	Waimahuru	wai; stream; mahuru: placid	Placid waters
+me_811	811	Waimakariri	Waimakariri	wai: river; makariri: cold	Cold river
+me_812	812	Waimamaku	Waimamaku	wai: stream; mamaku: tree-fern	Tree-fern stream
+me_813	813	Waimana	Waimana	wai: stream; mana: esteem or influence	Stream of influence
+me_814	814	Waimangaroa	Waimangaroa	wai: river; manga: tributary; roa: long	River with a long tributary
+me_815	815	Waimangu	Waimangu	wai: water; mangu: black	Black water
+me_816	816	Waimārama	Waimārama	wai: water; mārama: clear	Clear water
+me_817	817	Waimarie	Waimarie	wai: water; marie: quiet	Quiet water
+me_818	818	Waimarino	Waimarino	wai: water or stream; marino: calm or still	Calm stream
+me_819	819	Waimaru	Waimaru	wai; water; maru: shade or sheltered	Sheltered water
+me_820	820	Waimātaitai	Waimātaitai	wai; water; mātaitai: salty or brackish water	Salty water
+me_821	821	Waimate	Waimate	wai: water; mate: dead, sick or stagnant	Stagnant water
+me_822	822	Waimatua	Waimatua	wai: water; matua: large or important	Important water
+me_823	823	Waimatuku	Waimatuku	wai: water; matuku: bittern	Bittern water
+me_824	824	Waimauku	Waimauku	wai: stream; mauku: small ferns	Fern water
+me_825	825	Waimaunga	Waimaunga	wai: stream; maunga: mountain	Mountain stream
+me_826	826	Waimimi	Waimimi	wai: stream; mimi: urine	Urine stream
+me_827	827	Waimiro	Waimiro	wai: stream; miro: a native tree	Miro stream
+me_828	828	Waimotu	Waimotu	wai: water or river; motu: island	Island stream
+me_829	829	Waimumu	Waimumu	wai: stream; mumu: boisterous	Boisterous stream
+me_830	830	Waingake	Waingake	wai: water; ngake: capacious, or the middle section of a fishing net	Waters to fill a large net
+me_831	831	Waingaro	Waingaro	wai: water or stream; ngaro: lost or hidden	Lost stream
+me_832	832	Waingongoro	Waingongoro	wai: river; ngongoro: to snore or gurgle	Gurgling water
+me_833	833	Wainoni	Wainoni	wai: stream; noni: bend or turn	Bendy stream
+me_834	834	Wainui	Wainui	wai: water; nui: large	Large waters
+me_835	835	Wainuiomata	Wainuiomata	wai: stream; nui: big; o: of; Mata: a personal name	Big stream of Mata
+me_836	836	Wainuioru	Wainuioru	wai: water or stream; nui: large; o of; Ru: personal name	Large waters of Ru
+me_837	837	Waiohau	Waiohau	wai: water; o: of; Hau: personal name	Waters of Hau
+me_838	838	Waiohine	Waiohine	wai: river; o: of; Hine	River of Hine
+me_839	839	Waiomatatini	Waiomatatini	wai: water or stream; o: of; Matatini	Stream of Matatini
+me_840	840	Waiomio	Waiomio	wai: water or stream; o: of; Mio	Stream of Mio
+me_841	841	Waiomu	Waiomu	wai: water or stream; o: of; Mu	Stream of Mu
+me_842	842	Waione	Waione	wai: water; one: beach or sand	Stream on the beach
+me_843	843	Waiongana	Waiongana	wai: water or stream; o: of; Ngana	Stream of Ngata
+me_844	844	Wai-ora-a-Tāne	Wai-ora-a-Tāne	wai: water; ora: life; a: of; Tāne	The life-giving water of Tāne
+me_845	845	Waiorongomai	Waiorongomai	wai: water or stream; o: of; Rongomai	Stream of Rongomai
+me_846	846	Waiotahi	Waiotahi	wai: water or stream; o: of; Tahi	Stream of Tahi
+me_847	847	Wai-o-taiki	Wai-o-taiki	te: the; wai: stream; o: of; Taiki	Stream of Taiki
+me_848	848	Waiotapu	Waiotapu	wai: water; o: of; tapu: sacred or reserved	Sacred waters
+me_849	849	Waiotemarama	Waiotemarama	wai: water; o: of; Te Marama	Waters of Te Marama
+me_850	850	Waiotira	Waiotira	wai: water or pool; a: of; tira: to set up sticks for divination	Pool of divination
+me_851	851	Waiotū	Waiotū	wai: water; o: of; Tū: a personal name	Waters of Tū
+me_852	852	Waiouru	Waiouru	wai: river; o:of; uru: west	River of the west
+me_853	853	Waipā	Waipā	wai: river; pā: fortified village or villages	River of fortified villages
+me_854	854	Waipahi	Waipahi	wai: water; Pahi	Stream of Pahi
+me_855	855	Waipāhīhī	Waipāhīhī	wai: water; pāhīhī: welling up or flowing in driblets	Water flowing in driblets
+me_856	856	Waipakaru	Waipakaru	wai: water; pakaru: broken	Stream broken through
+me_857	857	Waipango	Waipango	wai: water; pango: black	Black water
+me_858	858	Waipapa	Waipapa	wai: stream; papa: flat	Stream on flats
+me_859	859	Waipapakauri	Waipapakauri	wai: water; papa: flat; kauri: native tree	Swampy ground where the kauri grow
+me_860	860	Waipaparoa	Waipaparoa	wai: water; papa: flat; roa: long	Stream on long flats
+me_861	861	Waipara	Waipara	wai: water; para: mud, silt or sediment	Silty water
+me_862	862	Waipareira	Waipareira	wai: water; Pareira	Stream of Pareira
+me_863	863	Waipari	Waipari	wai: stream; pari: cliff	Clifftop stream
+me_864	864	Waipati	Waipati	wai: water; pati: shallow or splashing	Shallow waters
+me_865	865	Waipātiki	Waipātiki	wai: water; pātiki: flounder	Flounder waters
+me_866	866	Waipatu	Waipatu	wai: water; patu: struck	Strike water
+me_867	867	Waipeto	Waipeto	wai: stream; peto: to be consumed	Consumed by the stream
+me_868	868	Waipīata	Waipīata	wai: water; pīata: glistening or clear	Clear water
+me_869	869	Waipipi	Waipipi	wai: water; pipi: cockle	Pipi waters
+me_870	870	Waipiro	Waipiro	wai: water; piro: evil-smelling	Evil-smelling water
+me_871	871	Waipōua	Waipōua	wai: water; pō: night; ua: rain	Water from rain in the night
+me_872	872	Waipounamu	Waipounamu	wai: river; pounamu: greenstone	Greenstone waters
+me_873	873	Waipōuri	Waipōuri	wai: water or stream; pōuri: dark or sad.	Dark waters
+me_874	874	Waipū	Waipū	wai: water; pū: reddish in colour	Reddish water
+me_875	875	Waipuhinui	Waipuhinui	wai: water; puhi: plume at the bow of a war canoe; nui: large	Water of the large canoe bow plume
+me_876	876	Waipuku	Waipuku	wai: water; puku: to swell	Swelling water
+me_877	877	Waipukurau	Waipukurau	wai: stream; pukurau: a large white fungus	Stream of the pukurau fungus
+me_878	878	Wairākei	Wairākei	wai: water; rākei: adorning	A place where pools of water were used as mirrors
+me_879	879	Wairangi	Wairangi	wai: water; rangi: sky	Water skies
+me_880	880	Wairarapa	Wairarapa	wai: water; rarapa: glistening	Glistening water
+me_881	881	Waireka	Waireka	wai: water; reka: sweet	Sweet water
+me_882	882	Wairepo	Wairepo	wai: water; repo; swamp	Swampy water
+me_883	883	Wairere	Wairere	wai: water or stream; rere: to flow	Waterfall
+me_884	884	Wairio	Wairio	wai: water or stream; rio: dried up	Dried-up stream
+me_885	885	Wairoa	Wairoa	wai: river or stream; roa: long	Long stream
+me_886	886	Wairongoā	Wairongoā	wai: springs; rongoā: medicine	Medicinal stream
+me_887	887	Wairua	Wairua	wai: stream or river; rua: two	Twin waters
+me_888	888	Wairuna	Wairuna	wai: stream; runa: dock	Dock waters
+me_889	889	Wairunga	Wairunga	wai: water; runga: above	Stream that flows from the mountains
+me_890	890	Waitaanga	Waitaanga	wai: stream; a of; Anga	Stream of Anga
+me_891	891	Waitaha	Waitaha	wai: river or stream; taha: to pass on one side	Backwater
+me_892	892	Waitahanui	Waitahanui	wai: stream; tahanui: a variety of cabbage tree with broad leaves	Stream of cabbage trees
+me_893	893	Waitahora	Waitahora	wai: water; tahora: spread out or open space	Wide-open waters
+me_894	894	Waitahu	Waitahu	wai: stream; tahu: continuous or running in a straight line	Straight-running stream
+me_895	895	Waitahuna	Waitahuna	wai: stream; Tāhuna: a personal name	Stream of Tāhuna
+me_896	896	Waitai	Waitai	wai: water; tai: salt or brackish	Salty water
+me_897	897	Waitakaro	Waitakaro	wai: stream; takaro: to play or wrestle	Wrestling waters
+me_898	898	Waitakaruru	Waitakaruru	wai: water; takaruru: stagnant	Stagnant water
+me_899	899	Waitākere	Waitākere	wai: water or stream; tākere: deep or cascading	Cascading stream
+me_900	900	Waitaki	Waitaki	wai: river; taki (tangi): noisy or weeping	Weeping waters
+me_901	901	Waitāne	Waitāne	wai: river; tāne: man or men	River of men
+me_902	902	Waitangi	Waitangi	wai: waters; tangi: noisy or weeping	Weeping waters
+me_903	903	Waitangiruru	Waitangiruru	wai: water or stream; tangi: to sound; ruru: morepork	Stream that sounds like a morepork
+me_904	904	Waitanguru	Waitanguru	wai: water; tanguru: rushing rapidly	Rapidly rushing water
+me_905	905	Waitao	Waitao	wai: water; tao: spear	Spear waters
+me_906	906	Waitapu	Waitapu	wai: water: tapu: sacred or forbidden	Sacred waters
+me_907	907	Waitaramea	Waitaramea	wai: stream; taramea: speargrass	Speargrass stream
+me_908	908	Waitararoa	Waitararoa	wai:water; tara: sun’s ray or shafts of light; roa: long	First rays of the sun appearing on the water
+me_909	909	Waitārere	Waitārere	wai: stream; tārere: to flow copiously	Copiously flowing waters
+me_910	910	Waitaria	Waitaria	wai: water; taria: to wait for	Waters of waiting
+me_911	911	Waitaruke	Waitaruke	wai: stream; taruke: hurrying	Hurrying stream
+me_912	912	Waitata	Waitata	wai: water; tata: to dash or beat down	Dashing stream
+me_913	913	Waitawa	Waitawa	wai: stream; tawa: tree	Tawa tree stream
+me_914	914	Waitāwheta	Waitāwheta	wai: water; tāwheta: to flounder	Restless stream
+me_915	915	Waitekauri	Waitekauri	wai: stream; te: the; kauri: native tree	Stream of the kauri tree
+me_916	916	Waitepeka	Waitepeka	wai: stream; te: the; peka: branch	Tributary stream
+me_917	917	Waiterimu	Waiterimu	wai: stream; te: the; rimu: native tree	Stream of the rimu tree
+me_918	918	Waiteti	Waiteti	wai: stream; te: the; tī: cabbage tree	Stream of the cabbage tree
+me_919	919	Waitetuna	Waitetuna	wai: stream; te: the; tuna: eel	Stream of the eel
+me_920	920	Waitiri	Waitiri	wai: water or stream; tiri: to toss about or disturb	Disturbed stream
+me_921	921	Waitoa	Waitoa	wai: water; toa: rough or stormy	Rough waters
+me_922	922	Waitoetoe	Waitoetoe	wai: water or stream; toetoe: native grass	Toetoe grass stream
+me_923	923	Waitohi	Waitohi	wai: water; tohi: baptismal rite	Stream for baptismal rite
+me_924	924	Waitohu	Waitohu	wai: water; tohu: to point out	Water that points out the way
+me_925	925	Waitoki	Waitoki	wai: water; toki: adze	Adze waters
+me_926	926	Waitomo	Waitomo	wai: water; tomo: shaft	Shafts from water
+me_927	927	Waitoriki	Waitoriki	wai: water; tōriki: little	Small stream
+me_928	928	Waitōtara	Waitōtara	wai: river; tōtara: native tree	Tōtara tree river
+me_929	929	Waituhi	Waituhi	wai: water; tuhi: to glow	Glowing waters
+me_930	930	Waitūī	Waitūī	wai: water; tūī: bird	Tūī waters
+me_931	931	Waituna	Waituna	wai: stream; tuna: eel	Eel stream
+me_932	932	Waiuku	Waiuku	wai: stream; uku: white clay	Stream with banks of white clay
+me_933	933	Waiuta	Waiuta	wai: river; uta: inland, or to load a burden	Inland river
+me_934	934	Waiwawa	Waiwawa	wai: stream; wawa: roaring	Roaring stream
+me_935	935	Waiwera	Waiwera	wai: water; wera: hot	Hot water
+me_936	936	Wai-whakaata	Wai-whakaata	wai: water; whakaata: to reflect	Reflecting waters
+me_937	937	Waiwhero	Waiwhero	wai: water; whero: red	Red waters
+me_938	938	Waiwhetū	Waiwhetū	wai: stream; whetū: star	Star-reflecting stream
+me_939	939	Waiwhio	Waiwhio	wai: stream; whio: blue or whistling duck	Stream of the blue duck
+me_940	940	Waiwhiu	Waiwhiu	wai: stream; whiu: sudden bend	Sudden bend in the stream
+me_941	941	Wakanui	Wakanui	waka: canoe; nui: large or many	Many waka
+me_942	942	Waronui	Waronui	waro: chasm or coals; nui: large	Large coals
+me_943	943	Waitētē	Waitētē	wai: stream; tētē: shovel-nosed duck, now extinct	Shovel-nosed duck stream
+me_944	944	Wēiti	Wēiti	wē: liquid or water; iti: little	Little waters
+me_945	945	Whakaari	Whakaari	whakaari: To show or expose to view	Expose to view
+me_946	946	Whakaroa	Whakaroa	Whaka (South Island form of whanga): harbour or bay; roa: long	Long harbour
+me_947	947	Whangakoko	Whangakoko	whanga: harbour; koko: corner, or to take up with a shovel	Shovelled harbour
+me_948	948	Whangamarino	Whangamarino	whanga: stretch of water; marino: peaceful	Peaceful harbour
+me_949	949	Whangamata	Whangamata	whanga: harbour; mata: obsidian	Obsidian harbour
+me_950	950	Whangamoa	Whangamoa	whanga: valley or sheltered place; moa: probably the raised mounds in a plantation	Valley with raised mounds in plantation
+me_951	951	Whangamomona	Whangamomona	whanga: valley; momona: fat	Bountiful valley
+me_952	952	Whanganui	Whanganui	whanga: bay; nui: large	Large harbour
+me_953	953	Whanganui-o-Hei	Whanganui-o-Hei	whanga: bay; nui: large; o: of; Hei	Large harbour of Hei
+me_954	954	Whangapara	Whangapara	whanga: harbour; para: sediment	Sedimentary harbour
+me_955	955	Whangaparāoa	Whangaparāoa	whanga: bay; parāoa: whale	Whale bay
+me_956	956	Whangapē	Whangapē	whanga: to wait; pē: fish roe	Fish roe harbour
+me_957	957	Whangapoua	Whangapoua	whanga: bay or harbour; poua: a mollusc	Mollusc harbour
+me_958	958	Whangarā	Whangarā	whanga: bay; rā: sun	Sunny bay
+me_959	959	Whangarātā	Whangarātā	whanga: valley; rātā: native tree	Rātā tree valley
+me_960	960	Whangarei	Whangarei	whanga: waiting; rei: abbreviation of Reipae	Waiting for Reipae
+me_961	961	Whangaripo	Whangaripo	whanga: stretch of water; ripo: deep pool or whirlpool	Deep stretch of water
+me_962	962	Whangaroa	Whangaroa	whanga: harbour; roa: long	Long harbour
+me_963	963	Whangaruru	Whangaruru	whanga: harbour; ruru: morepork	Morepork harbour
+me_964	964	Whangateau	Whangateau	whanga: harbour; te: the; au: current, smoke or mist	Harbour of smoke
+me_965	965	Whangatoetoe	Whangatoetoe	whanga: bay; toetoe: native grass	Toetoe grass bay
+me_966	966	Whānui	Whānui	whānui: wide	Wide-open waters
+me_967	967	Whareroa	Whareroa	whare: house; roa: long	Long house
+me_968	968	Whāro One-roa-a-Tohe	Whāro One-roa-a-Tohe	whāro: stretched out; one: beach; roa: long; a: of; Tohe, a chief	The beach on which Tōhē stretched out
+me_969	969	Whataroa	Whataroa	whata: elevated stage: roa: long or tall	Long, elevated stage
+me_970	970	Whekenui	Whekenui	wheke: octopus; nui: large	Great octopus
+me_971	971	Whenuanui	Whenuanui	whenua: land; nui: large	Great land
+me_972	972	Whenuapai	Whenuapai	whenua: land; pai: good	Good land
+me_973	973	Whānui	Whānui	whānui: broad or wide	Wide
+me_974	974	Wharanui	Wharanui	wharanui: species of flax	Wharanui flax
+me_975	975	Whare	Whare	whare: house	House
+me_976	976	Whareakeake	Whareakeake	whare: house; akeake: poor land, or a species of tree	House on poor land
+me_977	977	Whareama	Whareama	whare: house; ama: carved posts supporting the maihi	House of carved posts
+me_978	978	Wharehine	Wharehine	whare: house; hine: girls or young women	House of young women
+me_979	979	Wharehuanui	Wharehuanui	whare: house; huanui: road or path	House by a path
+me_980	980	Wharehuia	Wharehuia	whare: house; huia (the possessive case of hui): assembled	House of assembly
+me_981	981	Wharehunga	Wharehunga	whare: house; hunga: company of people	Meeting house, or meeting of people in a house
+me_982	982	Wharekaho	Wharekaho	whare: house; kaho: fence rail	Enclosed palisade
+me_983	983	Wharekākā	Wharekākā	whare: probably nesting place; kākā: parrots	Nesting place of parrots
+me_984	984	Wharekōpae	Wharekōpae	whare: house; kōpae: circular	House with a side door
+me_985	985	Wharekōwhiti	Wharekōwhiti	whare: house; kō: father side; whiti: to cross	Cross to house on the far side
+me_986	986	Whareongaonga	Whareongaonga	whare: house; ongaonga: nettle	Nettle house
+me_987	987	Whareora	Whareora	whare: house; ora: safe or in good health	House of good health
+me_988	988	Wharepāina	Wharepāina	whare: house; pāina: to warm oneself	House to warm oneself
+me_989	989	Wharepapa	Wharepapa	whare: house; papa: flat	House flats
+me_990	990	Wharepoa	Wharepoa	whare: house: poa: smouldering or smoking	Smouldering house
+me_991	991	Whareponga	Whareponga	whare: house; ponga: tree-fern	Tree-fern house
+me_992	992	Wharerātā	Wharerātā	whare: house; rātā: native tree	House among the rātā trees
+me_993	993	Whatamangō	Whatamangō	whata: elevated food store: mangō (the same word as makō): shark	A stage for storing dried shark flesh
+me_994	994	Whatatutu	Whatatutu	whata: elevated food platform; tutu: native tree or bush	Storage platform among the tutu bushes
+me_995	995	Whatawhata	Whatawhata	whata: elevated food platform	Elevated food platforms
+me_996	996	Whatitiri	Whatitiri	whatitiri: thunder	Thunder
+me_997	997	Whatiwhatihoe	Whatiwhatihoe	whatiwhati: to break in pieces; hoe: paddle	Paddle broken into pieces
+me_998	998	Whau	Whau	whau: a native tree	Whau tree
+me_999	999	Whāwhārua	Whāwhārua	whāwhā: to feel about; rua: pit	Grope about in kūmara pit
+me_1000	1000	Whenuahōu	Whenuahōu	whenua: land; hōu: new	New land
+me_1001	1001	Whenuakite	Whenuakite	whenua: land; kite: discover	Discovered land
+me_1002	1002	Whenuakura	Whenuakura	whenua: land; kura: red	Red land
+me_1003	1003	Whetūkura	Whetūkura	whetū: star; kura: red	Red star
+me_1004	1004	Whitianga	Whitianga	whitianga: the crossing	The crossing (of a river)
+me_1005	1005	Whitikau	Whitikau	whiti: to cross; kau: to wade	Wade across

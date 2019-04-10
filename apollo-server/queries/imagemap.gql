@@ -1,0 +1,27 @@
+query map($code: String) {
+	map(code: $code) {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		island_id
+		part_id
+		dates {
+			start
+			end
+		}
+		maplinks {
+			map_id
+			mapareas {
+				shape
+				poly
+				coords
+			}
+		}
+		images {
+			portrait
+		}
+	}
+}

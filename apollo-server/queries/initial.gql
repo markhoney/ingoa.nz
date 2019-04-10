@@ -1,0 +1,104 @@
+{
+	islands {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+	}
+	parts {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		island_id
+	}
+	maps {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		island_id
+		part_id
+	}
+	regions {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		island_id
+		part_id
+		map_id
+	}
+	zones {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		island_id
+		region_id
+		part_id
+		speaker_ids
+		iwi_ids
+	}
+	speakers {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+	}
+	groups {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+	}
+	features {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+	}
+	ngaiwi {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+	}
+	placenames {
+		_id
+		code
+		names {
+			name {
+				en
+				mi
+			}
+		}
+		places {
+			name {
+				en
+				mi
+			}
+		}
+		island_id
+		part_id
+		zone_id
+	}
+}

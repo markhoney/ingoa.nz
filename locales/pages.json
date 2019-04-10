@@ -1,0 +1,82 @@
+{
+	"about": {
+	"en": "/about",
+		"mi": "/mo"
+	},
+	"region": {
+		"en": "/region",
+		"mi": "/whaitua"
+	},
+	"region/_region": {
+		"en": "/region/:region",
+		"mi": "/whaitua/:region"
+	},
+	"island": {
+		"en": "/island",
+		"mi": "/motu"
+	},
+	"island/_island": {
+		"en": "/island/:island",
+		"mi": "/motu/:island"
+	},
+	"map": {
+		"en": "/map",
+		"mi": "/map"
+	},
+	"map/_map": {
+		"en": "/map/:map",
+		"mi": "/map/:map"
+	},
+	"zone": {
+		"en": "/zone",
+		"mi": "/hauni"
+	},
+	"zone/_zone": {
+		"en": "/zone/:zone",
+		"mi": "/hauni/:zone"
+	},
+	"speaker": {
+		"en": "/speaker",
+		"mi": "/kaikorero"
+	},
+	"speaker/_speaker": {
+		"en": "/speaker/:speaker",
+		"mi": "/kaikorero/:speaker"
+	},
+	"feature": {
+		"en": "/feature",
+		"mi": "/momo"
+	},
+	"feature/_feature": {
+		"en": "/feature/:feature",
+		"mi": "/momo/:feature"
+	},
+	"group": {
+		"en": "/group",
+		"mi": "/ropu"
+	},
+	"group/_group": {
+		"en": "/group/:group",
+		"mi": "/ropu/:group"
+	},
+	"iwi": {
+		"en": "/iwi",
+		"mi": "/iwi"
+	},
+	"iwi/_iwi": {
+		"en": "/iwi/:iwi",
+		"mi": "/iwi/:iwi"
+	},
+	"old": {
+		"en": "/old",
+		"mi": "/old"
+	},
+	"old/contents": {
+		"en": "/old/contents",
+		"mi": "/old/contents"
+	},
+	"old/_zone": {
+		"en": "/old/:zone",
+		"mi": "/old/:zone"
+	}
+}
