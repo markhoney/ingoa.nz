@@ -14,11 +14,11 @@
 		<h4 v-if="current.spoken.speaker" class="text-xs-center headline">
 			{{$t('spoken') | initialcase}}
 			<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: current.spoken.speaker.code}})">
-				{{localeName(current.spoken.speaker.name)}}
+				{{current.spoken.speaker.name | locale($i18n.locale)}}
 			</nuxt-link>
 		</h4>
-		<waveplayer v-if="wave" :file="file" @time="currentTime = $event" :placenames="placenames" />
-		<htmlplayer v-else      :file="file" @time="currentTime = $event" />
+		<waveplayer v-if="wave" :file="file" :time.sync="currentTime" :placenames="placenames" />
+		<htmlplayer v-else      :file="file" :time.sync="currentTime" />
 		<h2>{{$tc('name', 2) | titlecase}}</h2>
 		<ol start="0">
 			<!--<li v-for="place in placelist" :key="place.code" :class="{active: place.code == current.code}"><a :href="'#' + place.code" v-html="place.name"></a></li>-->
@@ -31,9 +31,9 @@
 					:class="{active: name.name == current.name}"
 					:title="common && current.common ? current.common : ''"
 				>-->
-				<template v-for="(name, index) in placename.names.filter(name => 'spoken' in name)" :class="{active: name.name == current.name}">
+				<span v-for="(name, index) in placename.names.filter(name => 'spoken' in name)" :class="{active: name._id == current._id}" :key="name._id" @click="jump(name.spoken.start)">
 					{{name.name.mi}}<template v-if="index != (placename.names.filter(name => 'spoken' in name).length - 1)">,</template>
-				</template>
+				</span>
 				<!--</nuxt-link>-->
 				<!--<nuxt-link v-if="placename.names.filter(name => 'spoken' in name).length === 0" :to="localePath({name: 'zone-zone-placename', params: {zone: placename.zone.code, placename: placename.code}})">-->
 				<!--<span v-if="placename.names.filter(name => 'spoken' in name).length === 0">
@@ -125,6 +125,11 @@
 			},
 			current: function() {
 				return this.bookmarks.find(bookmark => bookmark.spoken.post >= this.currentTime);
+			},
+		},
+		methods: {
+			jump: function(time) {
+
 			},
 		},
 	};

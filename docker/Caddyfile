@@ -1,5 +1,0 @@
-ingoa.nz {
-	proxy / localhost:3000 {
-		transparent
-	}
-}

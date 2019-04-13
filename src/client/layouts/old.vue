@@ -45,7 +45,7 @@
 </template>
 
 
-<style>
+<style scoped>
 body {
 	background-color: #ffffee;
 	font-family: Ariel, Helvetica, sans-serif;

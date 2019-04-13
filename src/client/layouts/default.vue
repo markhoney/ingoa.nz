@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 html {
 	font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;
 }

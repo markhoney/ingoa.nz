@@ -1,5 +1,5 @@
 <template>
-	<audio class="my-3" controls @timeupdate="$emit('time', $event.target.currentTime)">
+	<audio class="my-3" controls @timeupdate="$emit('update:time', $event.target.currentTime)">
 		<source :src="file" type="audio/mpeg" preload="auto">
 	</audio>
 </template>

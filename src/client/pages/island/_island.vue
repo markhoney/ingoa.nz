@@ -2,7 +2,7 @@
 	<section v-if="island">
 		<imageheader :image="island.images.landscape" :names="island.name" />
 		<p class="ma-5" v-html="island.description" />
-		<player :file="island.audio.file" field="island_id" :value="island._id" :common="true" :wave="false" />
+		<player :file="island.audio.file" field="island_id" :value="island._id" :common="true" :wave="true" />
 		<imagemap v-for="map in island.maps" :key="map.code" :code="map.code" :hash="true" />
 	</section>
 </template>

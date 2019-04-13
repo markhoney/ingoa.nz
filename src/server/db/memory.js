@@ -77,7 +77,7 @@ db.place.forEach(place => {
 	if (place.zone_id) {
 		const district = db.zone.find(zone => zone._id == place.zone_id).gazetteer;
 		const feature = db.feature.find(feature => feature._id == place.feature_id).gazetteer;
-		const gazetteer = db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature && gazetteer.name == place.name.en);
+		const gazetteer = db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en));
 		if (gazetteer) {
 			place.location = place.location || {};
 			place.location.position = gazetteer.position;

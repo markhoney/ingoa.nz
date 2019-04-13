@@ -25,6 +25,8 @@
 </template>
 
 <script>
+	const distinctColors = require('distinct-colors');
+
 	export default {
 		props: {
 			file: String,
@@ -69,7 +71,7 @@
 					waveColor: 'darkorange',
 					progressColor: 'peachpuff',
 					//barWidth: 1,
-					plugins: [WaveSurfer.regions.create()],
+					plugins: [WaveSurfer.regions.create(this.regions)],
 				});
 				this.wavesurfer.on('audioprocess', () => {
 					if (this.throttled) return;
@@ -77,14 +79,38 @@
 					setTimeout(() => {
 						this.throttled = false;
 					}, 100);
-					this.$emit('time', this.wavesurfer.getCurrentTime());
+					this.$emit('update:time', this.wavesurfer.getCurrentTime());
 				});
 				this.wavesurfer.on('seek', () => {
-					this.$emit('time', this.wavesurfer.getCurrentTime());
+					this.$emit('update:time', this.wavesurfer.getCurrentTime());
 				});
 				this.wavesurfer.load(this.file);
-				//addRegions();
+				this.addRegions();
 			});
+		},
+		computed: {
+			names() {
+				return this.placenames.map(placename => placename.names).flat().filter(names => names.spoken);
+			},
+			palette() {
+				return distinctColors({count: this.names.length, lightMin: 70});
+			},
+			regions() {
+				return this.names.map((name, index) => {
+					return {
+						id: name._id,
+						start: name.spoken.start,
+						end: name.spoken.end,
+						attributes: {
+							label: this.maoriName(name.name),
+							//highlight: true,
+						},
+						color: this.palette[index].alpha(0.1).css(),
+						drag: false,
+						resize: false,
+					};
+				});
+			},
 		},
 		methods: {
 			stop() {
@@ -109,43 +135,25 @@
 				this.wavesurfer.toggleMute();
 				this.muted = this.wavesurfer.getMute();
 			},
+			randomColor(alpha) {
+				return ('rgba(' +
+					[
+						~~(Math.random() * 255),
+						~~(Math.random() * 255),
+						~~(Math.random() * 255),
+						alpha || 0.1,
+					] + ')'
+				);
+			},
+			addRegions() {
+				this.wavesurfer.clearRegions();
+				this.regions.forEach(region => {
+					this.wavesurfer.addRegion(region);
+				});
+			},
 		},
 	};
 
-	var addRegions = () => {
-		this.wavesurfer.clearRegions();
-		for (var placename in this.placenames) {
-			for (var name in this.placenames[placename].names) {
-				if ('spoken' in this.placenames[placename].names[name]) {
-					this.wavesurfer.addRegion({
-						id: this.placenames[placename].names[name].spoken.code,
-						start: this.placenames[placename].names[name].spoken.start,
-						end: this.placenames[placename].names[name].spoken.end,
-						attributes: {
-							label: maoriName(this.placenames[placename].names[name].name),
-							highlight: true,
-						},
-						color: randomColor(),
-						drag: false,
-						resize: false,
-					});
-				}
-			}
-		}
-	};
-
-	function randomColor(alpha) {
-		return (
-			'rgba(' +
-			[
-				~~(Math.random() * 255),
-				~~(Math.random() * 255),
-				~~(Math.random() * 255),
-				alpha || 0.1,
-			] +
-			')'
-		);
-	}
 </script>
 
 <style scoped>
@@ -154,7 +162,7 @@
 	}
 	region.wavesurfer-region:before {
 		content: attr(data-region-label);
-		position: absolute;
-		top: 0;
+		/*position: absolute;
+		top: 0;*/
 	}
 </style>

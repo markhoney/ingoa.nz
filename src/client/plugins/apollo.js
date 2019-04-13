@@ -6,13 +6,14 @@ export default function() {
 	if (process.browser) persistCache({
 		cache,
 		storage: window.localStorage,
+		//storage: window.sessionStorage,
 		//maxSize: 134217728,
 		maxSize: 5242880,
-		debug: !(process.env.NODE_ENV === 'production'),
+		debug: process.env.NODE_ENV !== 'production',
 	});
 	return {
-		httpEndpoint: (process.env.BASE_URL || 'http://localhost:3000') + '/api/graphql',
-		//wsEndpoint: 'ws://' + (process.env.HOST || 'localhost') + ':' + (process.env.PORT || 3000) + '/' // + '/api/graphql',
+		httpEndpoint: '/graphql',
+		//wsEndpoint: 'ws://' + (process.env.HOST || 'localhost') + ':' + (process.env.PORT || 3000) + '/' // + '/graphql',
 		//addTypename: false,
 		persisting: true,
 		cache,

@@ -16,7 +16,7 @@ if (!fs.existsSync(jsonpath)) {
 }
 
 if (!json) {
-	const db = require('../sever/db/nedb')(true);
+	const db = require('../server/db/nedb')(true);
 }
 
 const dbStream = table => {
@@ -176,7 +176,7 @@ function importPlacenames() {
 function importZones() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const audioLocation = '/audio/zone/' + input.ID + '.mp3';
-		const audioSize = fs.statSync('static' + audioLocation).size;
+		const audioSize = fs.statSync('src/client/static' + audioLocation).size;
 		var output = {
 			_id: input.ID,
 			number: parseInt(input.Number),
@@ -289,7 +289,7 @@ function importIslands() {
 		let audioSize = 0;
 		if (input.ID != 'is_3') {
 			audioLocation = '/audio/island/' + input.ID + '.mp3';
-			audioSize = fs.statSync('static' + audioLocation).size;
+			audioSize = fs.statSync('src/client/static' + audioLocation).size;
 		}
 		var output = {
 			_id: input.ID,
@@ -320,7 +320,7 @@ function importIslands() {
 function importParts() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		audioLocation = '/audio/part/' + input.ID + '.mp3';
-		audioSize = fs.statSync('static' + audioLocation).size;
+		audioSize = fs.statSync('src/client/static' + audioLocation).size;
 		var output = {
 			_id: input.ID,
 			number: parseInt(input.Number),
@@ -480,7 +480,7 @@ function importIwi() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name || input.TeReo),
+			code: utils.createCode(input.Name),
 			slug: {
 				mi: utils.createCode(input.Name),
 			},

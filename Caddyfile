@@ -1,0 +1,15 @@
+#localhost:443 {
+#	tls self_signed
+
+localhost:80 {
+	tls off
+
+#ingoa.nz {
+	cache
+	proxy /graphql localhost:4000/graphql {
+		transparent
+	}
+	proxy / localhost:3000 {
+		transparent
+	}
+}

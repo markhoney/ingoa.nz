@@ -1,9 +1,8 @@
 version: '3.7'
 
 services:
-  website:
-    container_name: caddy
-    image: caddy
+  ingoa:
+    container_name: ingoa
     build:
       context: .
       dockerfile: Dockerfile
