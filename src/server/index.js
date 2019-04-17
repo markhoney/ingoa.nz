@@ -13,7 +13,7 @@ const db = require('./server/db/memory');
 //const apis = ['rest', 'graphql'];
 const apis = ['graphql'];
 
-app.get('/api/', function (req, res) {
+/*app.get('/api/', function (req, res) {
 	const base = req.originalUrl + (req.originalUrl.endsWith('/') ? '' : '/');
 	res.send(apis.map(collection => {
 		return {
@@ -21,7 +21,7 @@ app.get('/api/', function (req, res) {
 			link: base + collection
 		};
 	}));
-});
+});*/
 
 // GraphQL
 
@@ -47,7 +47,7 @@ if (apis.includes('rest')) {
 	for (var collection in db) {
 		rest.addDatastore(collection, db[collection]);
 	}
-	app.use('/api/rest', rest);
+	app.use('/api', rest);
 }
 
 // End of added code

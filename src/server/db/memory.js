@@ -1,5 +1,4 @@
 //const fs = require('fs');
-const levenshtein = require('js-levenshtein');
 
 const db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'iwi', 'placename', 'meaning', 'gazetteer'].reduce((db, collection) => {
 	db[collection] = require('./json/' + collection + '.json');

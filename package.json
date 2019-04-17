@@ -8,20 +8,23 @@
 		"prepare:db": "node src/data/import.js",
 		"prepare:images": "node static/img/staticmaps.js",
 		"dev": "cross-env NODE_ENV=development NUXT_PORT=4000 NODE_OPTIONS='--max-old-space-size=8192' nodemon src/index.js --watch src/server --ext js,graphql",
-		"dev:simple": "nuxt",
+		"dev:nuxt": "nuxt",
 		"dev:chrome": "yarn dev -- --inspect",
 		"dev:share": "lt --port 4000 --subdomain ingoa",
 		"dev:kill": "taskkill /F /im node.exe",
 		"build": "nuxt build --modern",
 		"build:analyse": "yarn build -- --analyze",
-		"build:docker": "docker-compose build",
 		"start:nuxt": "cross-env NODE_ENV=production nuxt start --modern",
 		"start:apollo": "cross-env NODE_ENV=production node src/server/apollo/index.js",
 		"start:server": "cross-env NODE_ENV=production node src/server/index.js",
 		"prod": "yarn build && yarn prod:apollo & yarn start:nuxt",
 		"prod:pm2": "pm2 start ecosystem.config.js",
-		"prod:docker": "docker-compose up -d --build && docker-compose ps && docker-compose exec ingoa pm2 ps",
-		"generate": "yarn start:apollo & nuxt generate --modern"
+		"docker:build": "docker-compose build",
+		"docker:generate": "yarn generate && docker build -t ingoa-static - < Dockerfile.static",
+		"docker:static": "",
+		"docker:dynamic": "docker-compose up -d --build && docker-compose ps && docker-compose exec ingoa pm2 ps",
+		"generate": "yarn start:apollo & yarn generate:files && pkill --signal SIGINT apollo",
+		"generate:files": "nuxt generate --modern"
 	},
 	"dependencies": {
 		"@nuxtjs/apollo": "^4.0.0-rc4",
@@ -48,6 +51,7 @@
 		"nuxt-i18n": "^5.8.5",
 		"nuxt-leaflet": "0.0.18",
 		"nuxt-trailingslash-module": "^1.1.0",
+		"purgecss": "^1.2.0",
 		"stylus": "^0.54.5",
 		"stylus-loader": "^3.0.2",
 		"vue-object-merge": "^0.1.7",
@@ -70,7 +74,10 @@
 		"nedb-async": "0.0.9",
 		"node-fetch": "^2.3.0",
 		"nodemon": "^1.18.11",
+		"npm-run-all": "^4.1.5",
 		"nuxt-memwatch": "^0.1.1",
-		"pm2": "^3.5.0"
+		"pm2": "^3.5.0",
+		"purgecss-webpack-plugin": "^1.4.0",
+		"rimraf": "^2.6.3"
 	}
 }

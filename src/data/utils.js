@@ -77,7 +77,19 @@ exports.removeMacrons = function(name) {
 exports.createCode = function(name) {
 	if (name) {
 		return exports.replace(name, Object.assign({}, macrons, superscripts, punctuation)).toLowerCase();
+		//return exports.replace(name.en || name.mi, Object.assign({}, macrons, superscripts, punctuation)).toLowerCase();
 	}
+};
+
+exports.createCodeNew = function(name) {
+	return exports.replace(name.en || name.mi, Object.assign({}, macrons, superscripts, punctuation)).toLowerCase();
+};
+
+exports.createSlug = name => {
+	return {
+		en: utils.createCode(name.en === island.name.mi ? null : island.name.en),
+		mi: utils.createCode(name.mi),
+	};
 };
 
 exports.cleanobj = function(o) {

@@ -6,22 +6,20 @@ WORKDIR /app
 
 # Bundle APP files
 COPY package.json .
-COPY ecosystem.config.js .
+#COPY ecosystem.config.js .
+COPY pm2.json .
 COPY nuxt.config.js .
-#COPY Caddyfile /etc/Caddyfile
-COPY Caddyfile .
-#COPY dist ./dist
+COPY Caddyfile.dynamic ./Caddyfile
 COPY src/client ./src/client
 COPY src/server ./src/server
 
 # Install application dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
-RUN curl https://getcaddy.com | bash -s personal http.cache,http.cors
+RUN curl https://getcaddy.com | bash -s personal http.cache,http.cors,http.realip
 RUN yarn install --production
 RUN ./node_modules/.bin/nuxt build --modern
 
 # Expose the listening ports of your app
-EXPOSE 80 443 3000 4000 43554
+EXPOSE 80 443 2015 3000 4000 8000 43554
 
-#CMD tail -f /dev/null
-CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+#CMD ["pm2-runtime", "start", "ecosystem.config.js"]

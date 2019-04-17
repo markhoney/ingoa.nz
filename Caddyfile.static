@@ -1,0 +1,4 @@
+ingoa.nz {
+	cache
+	root /var/www/html
+}

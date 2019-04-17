@@ -1,7 +1,7 @@
-import {execute, makePromise} from 'apollo-link';
-import {createHttpLink} from 'apollo-link-http';
+const {execute, makePromise} = require('apollo-link');
+const {createHttpLink} = require('apollo-link-http');
 const fetch = require('node-fetch');
-import gql from 'graphql-tag';
+const gql = require('graphql-tag');
 
 export default function() {
 	return makePromise(execute(createHttpLink({uri: 'http://localhost:4000/graphql', fetch: fetch}), {query: gql`{
@@ -29,7 +29,7 @@ export default function() {
 		placenames {
 			code
 		}
-	}`})).then(data => {
+	}`})).then(response => {
 		const staticRoutes = [
 			"about",
 			"region",
@@ -45,15 +45,15 @@ export default function() {
 		];
 		return [
 			...staticRoutes,
-			...data.islands.map(island => 'island/' + island.code),
-			...data.regions.map(region => 'region/' + region.code),
-			...data.zones.map(zone => 'zone/' + zone.code),
-			...data.zones.map(zone => 'old/' + zone.code),
-			...data.speakers.map(speaker => 'speaker/' + speaker.code),
-			...data.groups.map(group => 'group/' + group.code),
-			...data.features.map(feature => 'feature/' + feature.code),
-			...data.ngaiwi.map(iwi => 'iwi/' + iwi.code),
-			...data.placenames.map(placename => 'placename/' + placename.code),
+			...response.data.islands.map(island => '/island/' + island.code),
+			...response.data.regions.map(region => '/region/' + region.code),
+			...response.data.zones.map(zone => '/zone/' + zone.code),
+			...response.data.zones.map(zone => '/old/' + zone.code),
+			...response.data.speakers.map(speaker => '/speaker/' + speaker.code),
+			...response.data.groups.map(group => '/group/' + group.code),
+			...response.data.features.map(feature => '/feature/' + feature.code),
+			...response.data.ngaiwi.map(iwi => '/iwi/' + iwi.code),
+			...response.data.placenames.map(placename => '/placename/' + placename.code),
 		];
 	}).catch(error => console.log(`received error ${error}`))
 }

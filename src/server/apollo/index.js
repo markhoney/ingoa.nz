@@ -1,3 +1,4 @@
+process.title = "apollo";
 const {ApolloServer} = require('apollo-server');
 const {importSchema} = require('graphql-import');
 const typeDefs = importSchema('./src/server/apollo/schema.graphql');

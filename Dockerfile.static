@@ -1,0 +1,15 @@
+FROM abiosoft/caddy
+
+LABEL maintainer="Mark Honeychurch <mark@honeychurch.org>"
+
+WORKDIR /srv
+
+# Bundle APP files
+COPY Caddyfile.static /etc/Caddyfile
+COPY dist .
+
+# Install application dependencies
+ENV ACME_AGREE true
+
+# Expose the listening ports of your app
+EXPOSE 80 443 2015
