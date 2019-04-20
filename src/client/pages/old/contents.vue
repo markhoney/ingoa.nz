@@ -37,7 +37,7 @@
 					<td align="right">0</td>
 					<td><a href="text/000.html" target="_blank">Introduction</a></td>
 					<td>Wiremu Parker</td>
-					<td><a href="names/aotearoa.wma" target="_blank">Aotearoa</a><br><a href="names/te-ika-a-maui.wma" target="_blank">Te Ika a M&#257;ui</a></td>
+					<td><a href="names/aotearoa.wma" target="_blank">Aotearoa</a><br><a href="names/te-ika-a-maui.wma" target="_blank">Te Ika a Māui</a></td>
 				</tr>
 				<tr>
 					<td colspan="4">Click on the map to jump to a zone.</td>

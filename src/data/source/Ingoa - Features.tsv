@@ -1,314 +1,314 @@
-ID	Number	Name	Plural	TeReo	Hierarchy	GazetteerName		Gazetteer Name Unmatched
-fe_1	1	AIDS centre				Building		Abyssal Plain
-fe_2	2	Airbase				Building		amenity area
-fe_3	3	Airport				Building		Appellation
-fe_4	4	Anchor stone						Bend
-fe_5	5	Aqueduct						Canyon
-fe_6	6	Area			1	Area		Clearing
-fe_7	7	Arena				Recreation		Coast Feature
-fe_8	8	Arm				Stream		conservation park
-fe_9	9	Arts & crafts centre			39	Building		Crevasse
-fe_10	10	Bank				Bank		Crown Protected Area
-fe_11	11	Bar						Deep
-fe_12	12	Basin	Basins			Basin		ecological area
-fe_13	13	Bath						Escarpment
-fe_14	14	Battle site						Facility
-fe_15	15	Bay	Bays		4	Bay		Fan
-fe_16	16	Beach		Tatahi		Beach		Fracture Zone
-fe_17	17	Ben						Gap
-fe_18	18	Bight						Government purpose reserve
-fe_19	19	Bird sanctuary				sanctuary area		Guyot
-fe_20	20	Block						historic reserve
-fe_21	21	Blowhole						Hole
-fe_22	22	Bluff	Bluffs			Cliff		Ice Feature
-fe_23	23	Boiling lake				Lake		Knoll
-fe_24	24	Borough						Ledge
-fe_25	25	Borstal						Local Government
-fe_26	26	Boulder	Boulders					Marine Feature
-fe_27	27	Boulder bank						marine reserve
-fe_28	28	Boundary						Mound
-fe_29	29	Bridge		Piriti		Bridge		Mud Volcano
-fe_30	30	Burn						national park
-fe_31	31	Bush				Bush		nature reserve
-fe_32	32	Bush reserve				Bush		Place
-fe_33	33	Camp						Plateau
-fe_34	34	Camping area						Railway Crossing
-fe_35	35	Camping ground						Railway Junction
-fe_36	36	Canal				Canal		Railway Line
-fe_37	37	Canoe		Waka	32			Rise
-fe_38	38	Canoe house		Whare Waka	46	Building		Scarp
-fe_39	39	Cape				Cape		scenic reserve
-fe_40	40	Carving		Whakairo				scientific reserve
-fe_41	41	Catholic centre				Building		Sea Valley
-fe_42	42	Cave	Caves	Ana		Cave		Seachannel
-fe_43	43	Cemetery		Urupā				Seamount
-fe_44	44	Centre				Building		Seamount Chain
-fe_45	45	Channel				Channel		Shelf
-fe_46	46	Chapel			34	Building		Shelf-Edge
-fe_47	47	Chasm				Chasm		Sill
-fe_48	48	Church			33	Building		Slope
-fe_49	49	Church house			35	Building		Spur
-fe_50	50	City		Taone		City		Trench
-fe_51	51	Cliff	Cliffs			Cliff		Trig Station
-fe_52	52	Clinic			43	Building		Trough
-fe_53	53	Clubrooms			45	Building		Undersea Feature
-fe_54	54	Coast						wilderness area
-fe_55	55	College		Kura	27	Building		wildlife management area
-fe_56	56	Colliery						
-fe_57	57	Community						
-fe_58	58	Community centre				Building		
-fe_59	59	Community house				Building		
-fe_60	60	Community marae			20	Building		
-fe_61	61	Computer centre				Building		
-fe_62	62	Cone						
-fe_63	63	Convent				Building		
-fe_64	64	Corner						
-fe_65	65	Country						
-fe_66	66	County			2			
-fe_67	67	Cove						
-fe_68	68	Craft house			49	Building		
-fe_69	69	Crater	Craters			Crater		
-fe_70	70	Creche				Building		
-fe_71	71	Creek	Creeks					
-fe_72	72	Crossing						
-fe_73	73	Cultural centre			48	Building		
-fe_74	74	Dam	Dams					
-fe_75	75	Desert				Desert		
-fe_76	76	Dining hall		Whare Kai	55	Building		
-fe_77	77	Dining room						
-fe_78	78	District				District		
-fe_79	79	Divide						
-fe_80	80	Domain						
-fe_81	81	Downs						
-fe_82	82	Entrance						
-fe_83	83	Estuary				Estuary		
-fe_84	84	Falls						
-fe_85	85	Farm						
-fe_86	86	Fault						
-fe_87	87	Ferry						
-fe_88	88	Flagpole			58			
-fe_89	89	Flat	Flats		44	Flat		
-fe_90	90	Floodway						
-fe_91	91	Folly						
-fe_92	92	Ford				Ford		
-fe_93	93	Foreshore						
-fe_94	94	Forest			3	Forest		
-fe_95	95	Forest park				Forest		
-fe_96	96	Fork	Forks			Fork		
-fe_97	97	Fort						
-fe_98	98	Fortress						
-fe_99	99	Freezing works				Building		
-fe_100	100	Garden	Gardens					
-fe_101	101	Geothermal region						
-fe_102	102	Geothermal station						
-fe_103	103	Geriatric hospital				Building		
-fe_104	104	Geyser						
-fe_105	105	Girls' college				Building		
-fe_106	106	Glacier				Glacier		
-fe_107	107	Glen						
-fe_108	108	Golf course				Recreation		
-fe_109	109	Gong		Pahu				
-fe_110	110	Gorge						
-fe_111	111	Greeting						
-fe_112	112	Gulf						
-fe_113	113	Gully						
-fe_114	114	Hall			26	Building		
-fe_115	115	Harbour						
-fe_116	116	Harbour end						
-fe_117	117	Harbour entrance						
-fe_118	118	Harbour mouth						
-fe_119	119	Head	Heads					
-fe_120	120	Headland						
-fe_121	121	High School				Building		
-fe_122	122	Hill	Hills			Hill		
-fe_123	123	Home				Building		
-fe_124	124	Hospice				Building		
-fe_125	125	Hospital				Building		
-fe_126	126	Hostel			40	Building		
-fe_127	127	Hot pool	Hot pools					
-fe_128	128	Hot spring	Hot springs					
-fe_129	129	House			28	Building		
-fe_130	130	Hydro station						
-fe_131	131	IHC school				Building		
-fe_132	132	Inlet						
-fe_133	133	Intro						
-fe_134	134	Island	Islands		5	Island		
-fe_135	135	Islet						
-fe_136	136	Isthmus				Isthmus		
-fe_137	137	Junction			11			
-fe_138	138	Kaika						
-fe_139	139	Kaumātua flats			29			
-fe_140	140	Kauri tree						
-fe_141	141	Kitchen			56	Building		
-fe_142	142	Kōhanga reo			25			
-fe_143	143	Kōkiri centre			24			
-fe_144	144	Kumera god						
-fe_145	145	Lagoon						
-fe_146	146	Lagoon outlet						
-fe_147	147	Lake	Lakes			Lake		
-fe_148	148	Lakelet						
-fe_149	149	Landing						
-fe_150	150	Landmark						
-fe_151	151	Lawn cemetery						
-fe_152	152	Legendary site						
-fe_153	153	Lighthouse				Building		
-fe_154	154	Locality	Localities		13	Locality		
-fe_155	155	Lodge				Building		
-fe_156	156	Marae		Marae	19	Building		
-fe_157	157	Marae complex						
-fe_158	158	Marae gate			59			
-fe_159	159	Marae site						
-fe_160	160	Maritime park						
-fe_161	161	Marshland						
-fe_162	162	Mauri stone						
-fe_163	163	Meeting house			23	Building		
-fe_164	164	Meeting room				Building		
-fe_165	165	Meeting/dining hall			38	Building		
-fe_166	166	Meeting/dining house			37	Building		
-fe_167	167	Memorial hall			36	Building		
-fe_168	168	Memorial house				Building		
-fe_169	169	Memorial reserve						
-fe_170	170	Methanol plant						
-fe_171	171	Methodist Hall				Building		
-fe_172	172	Military camp						
-fe_173	173	Mill						
-fe_174	174	Mine						
-fe_175	175	Monument						
-fe_176	176	Moose Lodge				Building		
-fe_177	177	Mountain	Mountains					
-fe_178	178	Mouth				Stream		
-fe_179	179	Mud pool						
-fe_180	180	Museum				Building		
-fe_181	181	Mysterious military base				Building		
-fe_182	182	National park						
-fe_183	183	Natural arch						
-fe_184	184	Naval station						
-fe_185	185	Neck						
-fe_186	186	Niu pole			57			
-fe_187	187	Ocean						
-fe_188	188	Offshore gas field						
-fe_189	189	Oil well						
-fe_190	190	Old people's home				Building		
-fe_191	191	Pā		Pā	17			
-fe_192	192	Pā site			14			
-fe_193	193	Pahu						
-fe_194	194	Papakainga			16			
-fe_195	195	Park						
-fe_196	196	Pass				Pass		
-fe_197	197	Peak	Peaks			Peak		
-fe_198	198	Peninsula				Peninsula		
-fe_199	199	Pensioner flats				Building		
-fe_200	200	Pinnacle	Pinnacles			Pinnacle		
-fe_201	201	Plain	Plains			Plain		
-fe_202	202	Plant museum				Building		
-fe_203	203	Point	Points			Point		
-fe_204	204	Polytechnic				Building		
-fe_205	205	Pool	Pools			Pool		
-fe_206	206	Port				Port		
-fe_207	207	Portage						
-fe_208	208	Pou whenua		Pou whenua				
-fe_209	209	Power station				Building		
-fe_210	210	Prison				Building		
-fe_211	211	Province						
-fe_212	212	Quay						
-fe_213	213	Racecourse						
-fe_214	214	Radio New Zealand Studio				Building		
-fe_215	215	Radio station				Building		
-fe_216	216	Radio studio						
-fe_217	217	Railway station				Railway Station		
-fe_218	218	Range	Ranges			Range		
-fe_219	219	Rapid	Rapids			Rapid		
-fe_220	220	Reach						
-fe_221	221	Recreation reserve				recreation reserve		
-fe_222	222	Reef	Reefs			Reef		
-fe_223	223	Refinery						
-fe_224	224	Region						
-fe_225	225	Regional park						
-fe_226	226	Research station						
-fe_227	227	Reserve				Reserve (non-CPA)		
-fe_228	228	Reservoir	Reservoirs					
-fe_229	229	Resort						
-fe_230	230	Ridge				Ridge		
-fe_231	231	River	Rivers			Stream		
-fe_232	232	River mouth						
-fe_233	233	River outlet				Stream		
-fe_234	234	Riverboat						
-fe_235	235	Road				Road		
-fe_236	236	Rock	Rocks			Rock		
-fe_237	237	Rock wall						
-fe_238	238	Rockfall						
-fe_239	239	Sacred peak						
-fe_240	240	Sacred site						
-fe_241	241	Saddle				Saddle		
-fe_242	242	Scenic reserve						
-fe_243	243	School				Building		
-fe_244	244	Sea				Sea		
-fe_245	245	Settlement			12			
-fe_246	246	Shoal				Shoal		
-fe_247	247	Shore	Shores					
-fe_248	248	Site			15	Site		
-fe_249	249	Skifield				Recreation		
-fe_250	250	Sleeping house		Whare puni	54	Building		
-fe_251	251	Social hall			41	Building		
-fe_252	252	Sound						
-fe_253	253	Spiral						
-fe_254	254	Spit				Spit		
-fe_255	255	Sports complex			50			
-fe_256	256	Spring	Springs			Spring		
-fe_257	257	Spy station				Building		
-fe_258	258	Square						
-fe_259	259	State forest				Forest		
-fe_260	260	State forest park				Forest		
-fe_261	261	Station						
-fe_262	262	Steamer						
-fe_263	263	Steps						
-fe_264	264	Stone						
-fe_265	265	Store						
-fe_266	266	Storehouse			47	Building		
-fe_267	267	Strait						
-fe_268	268	Stream	Streams		6	Stream		
-fe_269	269	Subtribe			7			
-fe_270	270	Suburb				Suburb		
-fe_271	271	Summit						
-fe_272	272	Swamp						
-fe_273	273	Swimming pool						
-fe_274	274	Te Arikinui's official residence				Building		
-fe_275	275	Teachers' College site			42	Building		
-fe_276	276	Temple			21	Building		
-fe_277	277	Terrace	Terraces			Terrace		
-fe_278	278	Thermal area						
-fe_279	279	Thermal region						
-fe_280	280	Timeball station						
-fe_281	281	Title						
-fe_282	282	Town			8	Town		
-fe_283	283	Town college				Building		
-fe_284	284	Town Point						
-fe_285	285	Town site						
-fe_286	286	Township			9	Town		
-fe_287	287	Track				Track		
-fe_288	288	Training centre				Building		
-fe_289	289	Training ship						
-fe_290	290	Treaty grounds			18			
-fe_291	291	Tree						
-fe_292	292	Tribe						
-fe_293	293	Tunnel						
-fe_294	294	University		Whare wānanga		Building		
-fe_295	295	Valley				Valley		
-fe_296	296	Viaduct						
-fe_297	297	Village			10	Village		
-fe_298	298	Walk						
-fe_299	299	Walkway						
-fe_300	300	Ward						
-fe_301	301	Waterfall				Waterfall		
-fe_302	302	Wetland				Wetland		
-fe_303	303	Whare āwhina		Whare āwhina	31			
-fe_304	304	Whare manuhiri		Whare manuhiri	51			
-fe_305	305	Whare mate		Whare mate	30			
-fe_306	306	Whare moe		Whare moe	52			
-fe_307	307	Whare puni		Whare puni	53			
-fe_308	308	Whare wānanga		Whare wānanga	22			
-fe_309	309	Wilderness						
-fe_310	310	Wildlife refuge						
-fe_311	311	Wood	Woods					
-fe_312	312	Wreck						
-fe_313	313	Yacht club				Building		
+ID	Number	Name	Plural	TeReo	Hierarchy	GazetteerName
+fe_1	1	AIDS centre				Building
+fe_2	2	Airbase				Building
+fe_3	3	Airport				Building
+fe_4	4	Anchor stone				
+fe_5	5	Aqueduct				
+fe_6	6	Area			1	Area
+fe_7	7	Arena				Recreation
+fe_8	8	Arm				Stream
+fe_9	9	Arts & crafts centre			39	Building
+fe_10	10	Bank				Bank
+fe_11	11	Bar				
+fe_12	12	Basin	Basins			Basin
+fe_13	13	Bath				Lake
+fe_14	14	Battle site				
+fe_15	15	Bay	Bays		4	Bay
+fe_16	16	Beach		Tatahi		Beach
+fe_17	17	Ben				Hill
+fe_18	18	Bight				Bay
+fe_19	19	Bird sanctuary				sanctuary area
+fe_20	20	Block				Appellation
+fe_21	21	Blowhole				Coast Feature
+fe_22	22	Bluff	Bluffs			Cliff
+fe_23	23	Boiling lake				Lake
+fe_24	24	Borough				Locality
+fe_25	25	Borstal				Building
+fe_26	26	Boulder	Boulders			Rock
+fe_27	27	Boulder bank				Rock
+fe_28	28	Boundary				
+fe_29	29	Bridge		Piriti		Bridge
+fe_30	30	Burn				
+fe_31	31	Bush				Bush
+fe_32	32	Bush reserve				Bush
+fe_33	33	Camp				
+fe_34	34	Camping area				
+fe_35	35	Camping ground				
+fe_36	36	Canal				Canal
+fe_37	37	Canoe		Waka	32	
+fe_38	38	Canoe house		Whare Waka	46	Building
+fe_39	39	Cape				Cape
+fe_40	40	Carving		Whakairo		
+fe_41	41	Catholic centre				Building
+fe_42	42	Cave	Caves	Ana		Cave
+fe_43	43	Cemetery		Urupā		
+fe_44	44	Centre				Building
+fe_45	45	Channel				Channel
+fe_46	46	Chapel			34	Building
+fe_47	47	Chasm				Chasm
+fe_48	48	Church			33	Building
+fe_49	49	Church house			35	Building
+fe_50	50	City		Taone		City
+fe_51	51	Cliff	Cliffs			Cliff
+fe_52	52	Clinic			43	Building
+fe_53	53	Clubrooms			45	Building
+fe_54	54	Coast				
+fe_55	55	College		Kura	27	Building
+fe_56	56	Colliery				
+fe_57	57	Community				Locality
+fe_58	58	Community centre				Building
+fe_59	59	Community house				Building
+fe_60	60	Community marae			20	Building
+fe_61	61	Computer centre				Building
+fe_62	62	Cone				
+fe_63	63	Convent				Building
+fe_64	64	Corner				
+fe_65	65	Country				
+fe_66	66	County			2	Locality
+fe_67	67	Cove				Bay
+fe_68	68	Craft house			49	Building
+fe_69	69	Crater	Craters			Crater
+fe_70	70	Creche				Building
+fe_71	71	Creek	Creeks			
+fe_72	72	Crossing				
+fe_73	73	Cultural centre			48	Building
+fe_74	74	Dam	Dams			
+fe_75	75	Desert				Desert
+fe_76	76	Dining hall		Whare Kai	55	Building
+fe_77	77	Dining room				Building
+fe_78	78	District				District
+fe_79	79	Divide				
+fe_80	80	Domain				
+fe_81	81	Downs				
+fe_82	82	Entrance				
+fe_83	83	Estuary				Estuary
+fe_84	84	Falls				
+fe_85	85	Farm				
+fe_86	86	Fault				
+fe_87	87	Ferry				
+fe_88	88	Flagpole			58	
+fe_89	89	Flat	Flats		44	Flat
+fe_90	90	Floodway				
+fe_91	91	Folly				
+fe_92	92	Ford				Ford
+fe_93	93	Foreshore				
+fe_94	94	Forest			3	Forest
+fe_95	95	Forest park				Forest
+fe_96	96	Fork	Forks			Fork
+fe_97	97	Fort				
+fe_98	98	Fortress				
+fe_99	99	Freezing works				Building
+fe_100	100	Garden	Gardens			
+fe_101	101	Geothermal region				Locality
+fe_102	102	Geothermal station				
+fe_103	103	Geriatric hospital				Building
+fe_104	104	Geyser				
+fe_105	105	Girls' college				Building
+fe_106	106	Glacier				Glacier
+fe_107	107	Glen				
+fe_108	108	Golf course				Recreation
+fe_109	109	Gong		Pahu		
+fe_110	110	Gorge				
+fe_111	111	Greeting				
+fe_112	112	Gulf				
+fe_113	113	Gully				
+fe_114	114	Hall			26	Building
+fe_115	115	Harbour				
+fe_116	116	Harbour end				
+fe_117	117	Harbour entrance				
+fe_118	118	Harbour mouth				
+fe_119	119	Head	Heads			
+fe_120	120	Headland				
+fe_121	121	High School				Building
+fe_122	122	Hill	Hills			Hill
+fe_123	123	Home				Building
+fe_124	124	Hospice				Building
+fe_125	125	Hospital				Building
+fe_126	126	Hostel			40	Building
+fe_127	127	Hot pool	Hot pools			
+fe_128	128	Hot spring	Hot springs			
+fe_129	129	House			28	Building
+fe_130	130	Hydro station				Building
+fe_131	131	IHC school				Building
+fe_132	132	Inlet				
+fe_133	133	Intro				
+fe_134	134	Island	Islands		5	Island
+fe_135	135	Islet				Island
+fe_136	136	Isthmus				Isthmus
+fe_137	137	Junction			11	
+fe_138	138	Kaika				
+fe_139	139	Kaumātua flats			29	Building
+fe_140	140	Kauri tree				
+fe_141	141	Kitchen			56	Building
+fe_142	142	Kōhanga reo			25	
+fe_143	143	Kōkiri centre			24	Building
+fe_144	144	Kumera god				
+fe_145	145	Lagoon				Lake
+fe_146	146	Lagoon outlet				
+fe_147	147	Lake	Lakes			Lake
+fe_148	148	Lakelet				Lake
+fe_149	149	Landing				
+fe_150	150	Landmark				
+fe_151	151	Lawn cemetery				
+fe_152	152	Legendary site				
+fe_153	153	Lighthouse				Building
+fe_154	154	Locality	Localities		13	Locality
+fe_155	155	Lodge				Building
+fe_156	156	Marae		Marae	19	Building
+fe_157	157	Marae complex				
+fe_158	158	Marae gate			59	
+fe_159	159	Marae site				
+fe_160	160	Maritime park				
+fe_161	161	Marshland				
+fe_162	162	Mauri stone				
+fe_163	163	Meeting house			23	Building
+fe_164	164	Meeting room				Building
+fe_165	165	Meeting/dining hall			38	Building
+fe_166	166	Meeting/dining house			37	Building
+fe_167	167	Memorial hall			36	Building
+fe_168	168	Memorial house				Building
+fe_169	169	Memorial reserve				
+fe_170	170	Methanol plant				Facility
+fe_171	171	Methodist Hall				Building
+fe_172	172	Military camp				Place
+fe_173	173	Mill				
+fe_174	174	Mine				
+fe_175	175	Monument				
+fe_176	176	Moose Lodge				Building
+fe_177	177	Mountain	Mountains			
+fe_178	178	Mouth				Stream
+fe_179	179	Mud pool				
+fe_180	180	Museum				Building
+fe_181	181	Mysterious military base				Building
+fe_182	182	National park				
+fe_183	183	Natural arch				
+fe_184	184	Naval station				
+fe_185	185	Neck				
+fe_186	186	Niu pole			57	
+fe_187	187	Ocean				
+fe_188	188	Offshore gas field				
+fe_189	189	Oil well				
+fe_190	190	Old people's home				Building
+fe_191	191	Pā		Pā	17	
+fe_192	192	Pā site			14	
+fe_193	193	Pahu				
+fe_194	194	Papakainga			16	
+fe_195	195	Park				
+fe_196	196	Pass				Pass
+fe_197	197	Peak	Peaks			Peak
+fe_198	198	Peninsula				Peninsula
+fe_199	199	Pensioner flats				Building
+fe_200	200	Pinnacle	Pinnacles			Pinnacle
+fe_201	201	Plain	Plains			Plain
+fe_202	202	Plant museum				Building
+fe_203	203	Point	Points			Point
+fe_204	204	Polytechnic				Building
+fe_205	205	Pool	Pools			Pool
+fe_206	206	Port				Port
+fe_207	207	Portage				
+fe_208	208	Pou whenua		Pou whenua		
+fe_209	209	Power station				Building
+fe_210	210	Prison				Building
+fe_211	211	Province				
+fe_212	212	Quay				
+fe_213	213	Racecourse				
+fe_214	214	Radio New Zealand Studio				Building
+fe_215	215	Radio station				Building
+fe_216	216	Radio studio				
+fe_217	217	Railway station				Railway Station
+fe_218	218	Range	Ranges			Range
+fe_219	219	Rapid	Rapids			Rapid
+fe_220	220	Reach				
+fe_221	221	Recreation reserve				recreation reserve
+fe_222	222	Reef	Reefs			Reef
+fe_223	223	Refinery				
+fe_224	224	Region				
+fe_225	225	Regional park				
+fe_226	226	Research station				
+fe_227	227	Reserve				Reserve (non-CPA)
+fe_228	228	Reservoir	Reservoirs			
+fe_229	229	Resort				
+fe_230	230	Ridge				Ridge
+fe_231	231	River	Rivers			Stream
+fe_232	232	River mouth				
+fe_233	233	River outlet				Stream
+fe_234	234	Riverboat				
+fe_235	235	Road				Road
+fe_236	236	Rock	Rocks			Rock
+fe_237	237	Rock wall				
+fe_238	238	Rockfall				
+fe_239	239	Sacred peak				
+fe_240	240	Sacred site				
+fe_241	241	Saddle				Saddle
+fe_242	242	Scenic reserve				
+fe_243	243	School				Building
+fe_244	244	Sea				Sea
+fe_245	245	Settlement			12	
+fe_246	246	Shoal				Shoal
+fe_247	247	Shore	Shores			
+fe_248	248	Site			15	Site
+fe_249	249	Skifield				Recreation
+fe_250	250	Sleeping house		Whare puni	54	Building
+fe_251	251	Social hall			41	Building
+fe_252	252	Sound				
+fe_253	253	Spiral				
+fe_254	254	Spit				Spit
+fe_255	255	Sports complex			50	
+fe_256	256	Spring	Springs			Spring
+fe_257	257	Spy station				Building
+fe_258	258	Square				
+fe_259	259	State forest				Forest
+fe_260	260	State forest park				Forest
+fe_261	261	Station				
+fe_262	262	Steamer				
+fe_263	263	Steps				
+fe_264	264	Stone				
+fe_265	265	Store				
+fe_266	266	Storehouse			47	Building
+fe_267	267	Strait				
+fe_268	268	Stream	Streams		6	Stream
+fe_269	269	Subtribe			7	
+fe_270	270	Suburb				Suburb
+fe_271	271	Summit				
+fe_272	272	Swamp				
+fe_273	273	Swimming pool				
+fe_274	274	Te Arikinui's official residence				Building
+fe_275	275	Teachers' College site			42	Building
+fe_276	276	Temple			21	Building
+fe_277	277	Terrace	Terraces			Terrace
+fe_278	278	Thermal area				
+fe_279	279	Thermal region				
+fe_280	280	Timeball station				
+fe_281	281	Title				
+fe_282	282	Town			8	Town
+fe_283	283	Town college				Building
+fe_284	284	Town Point				
+fe_285	285	Town site				
+fe_286	286	Township			9	Town
+fe_287	287	Track				Track
+fe_288	288	Training centre				Building
+fe_289	289	Training ship				
+fe_290	290	Treaty grounds			18	
+fe_291	291	Tree				
+fe_292	292	Tribe				
+fe_293	293	Tunnel				
+fe_294	294	University		Whare wānanga		Building
+fe_295	295	Valley				Valley
+fe_296	296	Viaduct				
+fe_297	297	Village			10	Village
+fe_298	298	Walk				
+fe_299	299	Walkway				
+fe_300	300	Ward				
+fe_301	301	Waterfall				Waterfall
+fe_302	302	Wetland				Wetland
+fe_303	303	Whare āwhina		Whare āwhina	31	
+fe_304	304	Whare manuhiri		Whare manuhiri	51	
+fe_305	305	Whare mate		Whare mate	30	
+fe_306	306	Whare moe		Whare moe	52	
+fe_307	307	Whare puni		Whare puni	53	
+fe_308	308	Whare wānanga		Whare wānanga	22	
+fe_309	309	Wilderness				
+fe_310	310	Wildlife refuge				
+fe_311	311	Wood	Woods			
+fe_312	312	Wreck				
+fe_313	313	Yacht club				Building

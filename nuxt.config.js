@@ -6,20 +6,46 @@ const {createHttpLink} = require('apollo-link-http');
 const fetch = require('node-fetch');
 const gql = require('graphql-tag');
 
+require('dotenv').config({path: './.secrets.env'});
+
+const host = process.env.HOST || 'localhost';
+const graph = 'http://' + host + ':4000/graphql';
+
 module.exports = {
+	env: {
+		graphServer: graph,
+		graphClient: (process.env.BASE_URL && !process.env.BASE_URL.includes(host) ? process.env.BASE_URL + '/graphql' : graph),
+		dev: process.env.NODE_ENV !== 'production',
+		googleMapsAPI: process.env.GOOGLE_API_KEY,
+	},
 	mode: 'universal',
 	srcDir: 'src/client/',
+	modern: true,
+	server: {
+		host: host,
+		port: process.env.PORT || (process.env.dev ? 8000 : 3000),
+	},
+	router: {
+		prefetchLinks: !process.env.dev,
+	},
+	serverMiddleware: [
+		{path: '/graphql', handler: '../server/apollo/middleware.js'},
+	],
+	css: [
+		'@/assets/style/app.styl'
+	],
+	loading: {color: '#f00'},
 
 	head: {
 		//title: pkg.name,
 		titleTemplate: '%s | ' + pkg.name,
 		meta: [
-			{ charset: 'utf-8' },
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: pkg.description }
+			{charset: 'utf-8'},
+			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
+			{hid: 'description', name: 'description', content: pkg.description}
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
 			{
 				rel: 'stylesheet',
 				href:
@@ -28,17 +54,8 @@ module.exports = {
 		]
 	},
 
-	loading: {color: '#f00'},
-
-	css: [
-		'~/assets/style/app.styl'
-	],
-
-	router: {
-    prefetchLinks: (process.env.NODE_ENV === 'production'),
-	},
-
 	generate: {
+		//dir: 'docs',
 		//routes: require('./routes'),
 		routes: function() {
 			return makePromise(execute(createHttpLink({uri: 'http://localhost:4000/graphql', fetch: fetch}), {query: gql`{
@@ -92,16 +109,16 @@ module.exports = {
 					...response.data.ngaiwi.map(iwi => '/iwi/' + iwi.code),
 					//...response.data.placenames.map(placename => '/placename/' + placename.code),
 				];
-			}).catch(error => console.log(`received error ${error}`))
+			}).catch(error => console.log(`received error ${error}`));
 		}
 	},
 
 	plugins: [
-		'~/plugins/vuetify',
-		'~/plugins/filters',
-		'~/plugins/mixins',
-		'~/plugins/googlemaps',
-		//'~/plugins/gql.js'
+		'@/plugins/vuetify',
+		'@/plugins/filters',
+		'@/plugins/mixins',
+		'@/plugins/googlemaps',
+		//'@/plugins/gql.js'
 	],
 
 	modules: [
@@ -110,7 +127,7 @@ module.exports = {
 		'@nuxtjs/sitemap',
 		'@nuxtjs/webpackmonitor',
 		'@nuxtjs/robots',
-		['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
+		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 		//['@nuxtjs/feed', {}],
 		['@nuxtjs/google-analytics', {
 			id: 'UA-45273295-4'
@@ -134,7 +151,7 @@ module.exports = {
 	apollo: {
 		includeNodeModules: true,
 		clientConfigs: {
-			default: '~/plugins/apollo.js'
+			default: '@/plugins/apollo.js'
 		},
 	},
 
@@ -154,6 +171,19 @@ module.exports = {
 		extractCSS: true,
 		optimizeCSS: true,
 		extend(config, ctx) {
-		}
+		},
+		/*babel: {
+			presets({isServer}) {
+				return [
+					[
+						require.resolve('@nuxt/babel-preset-app'),
+						{
+							targets: isServer ? {node: '10'} : {ie: '11'},
+							corejs: {version: 3}
+						}
+					]
+				]
+			}
+		}*/
 	}
 };

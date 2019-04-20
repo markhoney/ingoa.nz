@@ -4,7 +4,7 @@ const http = require('http');
 
 // Import and Set Nuxt.js options
 let config = require('../../nuxt.config.js');
-config.dev = process.env.NODE_ENV !== 'production';
+config.dev = process.env.dev;
 
 async function start() {
 	// Init Nuxt.js

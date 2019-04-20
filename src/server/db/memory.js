@@ -13,11 +13,12 @@ const db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feat
 	{name: 'region', codes: ['island', 'part', 'map'], images: ['banner.jpg', 'landscape.png']},
 	{name: 'zone', codes: ['region', 'part', 'island'], images: ['landscape.png']},
 	{name: 'placename', codes: ['zone', 'part', 'island']},
+	{name: 'group', codes: ['zone']},
 ].forEach(collection => {
 	db[collection.name].forEach(record => {
 		if (collection.codes) {
 			collection.codes.forEach(code => {
-				if (record[code + '_id']) record[code + '_code'] = db[code].find(myrecord => myrecord._id == record[code + '_id']).code;
+				if (record[code + '_id'] && record[code + '_id'] != "zo_0") record[code + '_code'] = db[code].find(myrecord => myrecord._id == record[code + '_id']).code;
 			});
 		}
 		if (collection.images) {
@@ -75,8 +76,12 @@ db.place.forEach(place => {
 	}
 	if (place.zone_id) {
 		const district = db.zone.find(zone => zone._id == place.zone_id).gazetteer;
-		const feature = db.feature.find(feature => feature._id == place.feature_id).gazetteer;
-		const gazetteer = db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en));
+		const feature = db.feature.find(feature => feature._id == place.feature_id);
+		const gazetteer =
+			db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.gazetteer && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en))
+			|| db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.gazetteer && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' ')))
+			|| db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' ')))
+			|| db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en));
 		if (gazetteer) {
 			place.location = place.location || {};
 			place.location.position = gazetteer.position;

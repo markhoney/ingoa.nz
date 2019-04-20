@@ -3,17 +3,16 @@ import {persistCache} from 'apollo-cache-persist';
 
 export default function() {
 	const cache = new InMemoryCache();
-	if (process.browser) persistCache({
+	if (process.client) persistCache({
 		cache,
 		storage: window.localStorage,
 		//storage: window.sessionStorage,
 		//maxSize: 134217728,
 		maxSize: 5242880,
-		debug: process.env.NODE_ENV !== 'production',
+		debug: process.env.dev,
 	});
 	return {
-		httpEndpoint: '/graphql',
-		//wsEndpoint: 'ws://' + (process.env.HOST || 'localhost') + ':' + (process.env.PORT || 3000) + '/' // + '/graphql',
+		httpEndpoint: (process.client ? process.env.graphClient : process.env.graphServer),
 		//addTypename: false,
 		persisting: true,
 		cache,

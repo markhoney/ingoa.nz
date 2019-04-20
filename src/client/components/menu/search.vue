@@ -43,6 +43,16 @@
 					}
 				}
 			}`,
+			maps: gql`{
+				maps {
+					_id
+					code
+					name {
+						en
+						mi
+					}
+				}
+			}`,
 			speakers: gql`{
 				speakers {
 					_id
@@ -110,6 +120,7 @@
 					...this.islands,
 					...this.regions,
 					...this.zones,
+					...this.maps,
 					...this.speakers,
 					...this.groups,
 					...this.features,

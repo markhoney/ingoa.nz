@@ -1,7 +1,7 @@
 <template>
 	<v-layout row wrap>
 		<v-flex v-for="region in regions" :key="region.code" xs12 sm6 md4 class="pa-2">
-			<region :code="region.code"/>
+			<region :code="region.code" />
 		</v-flex>
 	</v-layout>
 </template>

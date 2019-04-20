@@ -1,5 +1,5 @@
 <template>
-	<v-card>
+	<v-card v-if="region">
 		<nuxt-link :to="localePath({name: 'region-region', params: {region: region.code}})">
 			<v-img :src="region.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);">
 				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeName(region.name)}}</h2>

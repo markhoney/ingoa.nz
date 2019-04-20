@@ -2,7 +2,7 @@
 	<section v-if="zone">
 		<imageheader :image="zone.images.landscape" :names="zone.name" :right="'Zone ' + zone.number" />
 		<player :file="zone.audio.file" field="zone_code" :value="zone.code" :wave="false" />
-		<!--<gmap field="zone_code" :value="zone.code" />-->
+		<gmap field="zone_code" :value="zone.code" />
 		<h3>{{$tc('speaker', 2) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
@@ -14,10 +14,10 @@
 		<h3>{{$tc('location', 1) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<island :code="zone.island.code"/>
+				<island :code="zone.island.code" />
 			</v-flex>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<region :code="zone.region.code"/>
+				<region :code="zone.region.code" />
 			</v-flex>
 		</v-layout>
 	</section>
@@ -27,7 +27,7 @@
 	import gql from 'graphql-tag';
 	import imageheader from '@/components/headers/image.vue';
 	import player from '@/components/audio/zone.vue';
-	//import gmap from '@/components/maps/google/places.vue';
+	import gmap from '@/components/maps/google/places.vue';
 	import island from '@/components/islands/card.vue';
 	import region from '@/components/regions/card.vue';
 	import speaker from '@/components/speakers/card.vue';
@@ -36,7 +36,7 @@
 		components: {
 			imageheader,
 			player,
-			//gmap,
+			gmap,
 			island,
 			region,
 			speaker,
@@ -85,7 +85,7 @@
 		},
 		head() {
 			return {
-				title: this.localeName(this.zone.name),
+				title: (this.zone ? this.localeName(this.zone.name) : null),
 			};
 		},
 	};

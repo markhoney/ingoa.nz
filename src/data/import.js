@@ -140,13 +140,13 @@ function importPlacenames() {
 				var groups = [];
 				if (input['Super_' + i]) {
 					groups.push({
-						group_id: 'gr_' + input.ZoneID.slice(3) + '-' + input['Super_' + i],
-						subgroup_id: input['Super_' + i + '.a'] ? 'gr_' + input.ZoneID.slice(3) + '-' + input['Super_' + i] + '-' + input['Super_' + i + '.a'] : null,
+						group_id: 'gr_zo_' + input.ZoneID.slice(3) + '-' + input['Super_' + i],
+						subgroup_id: input['Super_' + i + '.a'] ? 'gr_zo_' + input.ZoneID.slice(3) + '-' + input['Super_' + i] + '-' + input['Super_' + i + '.a'] : null,
 					});
 				}
 				if (input['Super_' + i + '.1']) {
 					groups.push({
-						group_id: input['Super_' + i + '.1'] ? 'gr_' + input.ZoneID.slice(3) + '-' + input['Super_' + i + '.1'] : null,
+						group_id: input['Super_' + i + '.1'] ? 'gr_zo_' + input.ZoneID.slice(3) + '-' + input['Super_' + i + '.1'] : null,
 					});
 				}
 				output.places.push({
@@ -454,6 +454,7 @@ function importGroups() {
 		var output = {
 			_id: input.ID,
 			code: utils.createCode(input.Name || input.TeReo),
+			zone_id: input.ZoneID,
 			slug: {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),

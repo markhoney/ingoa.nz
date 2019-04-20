@@ -84,3 +84,5 @@ dist
 sw.*
 
 caddy.exe
+
+report.*.json

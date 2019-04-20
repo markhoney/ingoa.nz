@@ -1,4 +1,6 @@
-ingoa.nz {
+{$BASE_URL} {
+	tls mark@honeychurch.org
+	log stdout
 	cache
 	root /var/www/html
 }

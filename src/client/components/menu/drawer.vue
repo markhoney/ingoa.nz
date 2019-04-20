@@ -34,6 +34,14 @@
 					</template>
 				</v-list-group>
 			</v-list-group>
+			<v-list-group prepend-icon="map">
+				<v-list-tile slot="activator" :to="localePath('map')">
+					<v-list-tile-title>{{$tc('map', 2) | titlecase}}</v-list-tile-title>
+				</v-list-tile>
+				<v-list-tile v-for="map in maps" :key="map.code" :to="localePath({name: 'map-map', params: {map: map.code}})">
+					<v-list-tile-title>{{localeName(map.name)}}</v-list-tile-title>
+				</v-list-tile>
+			</v-list-group>
 			<v-list-group prepend-icon="account_circle">
 				<v-list-tile slot="activator" :to="localePath('speaker')">
 					<v-list-tile-title>{{$tc('speaker', 2) | titlecase}}</v-list-tile-title>
@@ -54,7 +62,7 @@
 				<v-list-tile slot="activator" :to="localePath('group')">
 					<v-list-tile-title>{{$tc('group', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="group in groups" :key="group.code" :to="localePath({name: 'group-group', params: {group: group.code}})">
+				<v-list-tile v-for="group in groups" :key="group.code" :to="localePath({name: 'group-zone-group', params: {zone: zone_code, group: group.code}})">
 					<v-list-tile-title>{{localeName(group.name)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>-->
@@ -109,6 +117,16 @@
 					}
 				}
 			}`,
+			maps: gql`{
+				maps {
+					_id
+					code
+					name {
+						en
+						mi
+					}
+				}
+			}`,
 			speakers: gql`{
 				speakers {
 					_id
@@ -123,6 +141,7 @@
 				groups {
 					_id
 					code
+					zone_code
 					name {
 						en
 						mi

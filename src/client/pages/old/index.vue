@@ -4,7 +4,7 @@
 			<img src="/img/old/Aotearoa.gif" width="267" height="341" alt="Aotearoa" border="0">
 		</p>
 		<p>
-			<i>Ng&#257; Ingoa o Aotearoa</i> (The Names of New Zealand) is probably the first "pronouncing dictionary" that is literally "pronouncing". The 10,200 names are spoken by 132 native speakers of M&#257;ori, chosen by each other as the best speakers for their areas.
+			<i>Ngā Ingoa o Aotearoa</i> (The Names of New Zealand) is probably the first "pronouncing dictionary" that is literally "pronouncing". The 10,200 names are spoken by 132 native speakers of Māori, chosen by each other as the best speakers for their areas.
 		</p>
 
 		<p>
@@ -12,11 +12,11 @@
 		</p>
 
 		<p>
-			The list includes geographic features down to the larger hills and streams, all human settlements, suburbs and schools, marae, meeting houses and dining halls and many other features. The South Island volume includes the original M&#257;ori names of many features now known by English ones.
+			The list includes geographic features down to the larger hills and streams, all human settlements, suburbs and schools, marae, meeting houses and dining halls and many other features. The South Island volume includes the original Māori names of many features now known by English ones.
 		</p>
 
 		<p>
-			The names are sorted into 177 clearly defined "Zones", and are in alphabetical order within each Zone, so that any name can be found quickly. Booklets for each region index the names alphabetically and by Zone, and a map of the Zones is enclosed with each cassette. The dictionary is intended especially for broadcasters and those who have to speak in public, but everyone who wants to pronounce placenames as M&#257;ori words will find it valuable.
+			The names are sorted into 177 clearly defined "Zones", and are in alphabetical order within each Zone, so that any name can be found quickly. Booklets for each region index the names alphabetically and by Zone, and a map of the Zones is enclosed with each cassette. The dictionary is intended especially for broadcasters and those who have to speak in public, but everyone who wants to pronounce placenames as Māori words will find it valuable.
 		</p>
 
 		<p>
@@ -24,7 +24,7 @@
 		</p>
 
 		<p>
-			The dictionary does not give the names' meanings. That would take more than a lifetime, and would be done better by M&#257;ori in each area, since meanings involve mana and tapu to a much greater extent.
+			The dictionary does not give the names' meanings. That would take more than a lifetime, and would be done better by Māori in each area, since meanings involve mana and tapu to a much greater extent.
 		</p>
 
 		<table style="margin: auto;" cellpadding="10" bgcolor="#ccbb99" border="1">
@@ -66,7 +66,7 @@
 			</tbody>
 		</table>
 		<p>
-			Placename pronunciation is the one aspect of M&#257;oritanga that every P&#257;keh&#257; has to deal with. If a M&#257;ori pronunciation of the names became standard, that would help support the language, this country's oldest human artifact and one of its endangered species.
+			Placename pronunciation is the one aspect of Māoritanga that every Pākehā has to deal with. If a Māori pronunciation of the names became standard, that would help support the language, this country's oldest human artifact and one of its endangered species.
 		</p>
 	</section>
 </template>

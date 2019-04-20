@@ -181,7 +181,7 @@ module.exports = function(db) {
 				return db.island.find(island => island._id == placename.island_id);
 			},
 			zones(placename) {
-				return db.zone.filter(zone => placename.zone_ids.containes(zone._id));
+				return db.zone.filter(zone => placename.zone_ids.contains(zone._id));
 			},
 		},
 
@@ -216,6 +216,9 @@ module.exports = function(db) {
 		},
 
 		group: {
+			zone(group) {
+				return db.zone.find(zone => zone._id == group.zone_id);
+			},
 			feature(group) {
 				return db.feature.find(feature => feature._id == group.feature_id);
 			},

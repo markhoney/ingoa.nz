@@ -3,14 +3,6 @@
 	"en": "/about",
 		"mi": "/mo"
 	},
-	"region": {
-		"en": "/region",
-		"mi": "/whaitua"
-	},
-	"region/_region": {
-		"en": "/region/:region",
-		"mi": "/whaitua/:region"
-	},
 	"island": {
 		"en": "/island",
 		"mi": "/motu"
@@ -18,6 +10,22 @@
 	"island/_island": {
 		"en": "/island/:island",
 		"mi": "/motu/:island"
+	},
+	"part": {
+		"en": "/part",
+		"mi": "/part"
+	},
+	"part/_part": {
+		"en": "/part/:part",
+		"mi": "/part/:part"
+	},
+	"region": {
+		"en": "/region",
+		"mi": "/whaitua"
+	},
+	"region/_region": {
+		"en": "/region/:region",
+		"mi": "/whaitua/:region"
 	},
 	"map": {
 		"en": "/map",
@@ -35,6 +43,22 @@
 		"en": "/zone/:zone",
 		"mi": "/hauni/:zone"
 	},
+	"placename": {
+		"en": "/placename",
+		"mi": "/placename"
+	},
+	"placename/_zone/_placename": {
+		"en": "/placename/:zone/:placename",
+		"mi": "/placename/:zone/:placename"
+	},
+	"group": {
+		"en": "/group",
+		"mi": "/ropu"
+	},
+	"group/_zone/_group": {
+		"en": "/group/:zone/:group",
+		"mi": "/ropu/:zone/:group"
+	},
 	"speaker": {
 		"en": "/speaker",
 		"mi": "/kaikorero"
@@ -50,14 +74,6 @@
 	"feature/_feature": {
 		"en": "/feature/:feature",
 		"mi": "/momo/:feature"
-	},
-	"group": {
-		"en": "/group",
-		"mi": "/ropu"
-	},
-	"group/_group": {
-		"en": "/group/:group",
-		"mi": "/ropu/:group"
 	},
 	"iwi": {
 		"en": "/iwi",

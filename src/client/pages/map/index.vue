@@ -5,7 +5,7 @@
 				<imageheader :image="island.images.landscape" :names="island.name" :to="{name: 'island-island', params: {island: island.code}}" />
 			</v-flex>
 			<v-flex v-for="map in island.maps" :key="map.code" xs12 sm6 md4 class="pa-2">
-				<imagemap :code="map.code"/>
+				<imagemap :code="map.code" />
 			</v-flex>
 		</v-layout>
 	</section>

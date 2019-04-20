@@ -1,7 +1,7 @@
 <template>
 	<section class="elevation-4 pa-5 my-3" style="background-color: #f1f3f4; border-radius: 20px;" v-if="current">
 		<h3 :title="current.name.phonetic" class="text-xs-center display-2">
-			<!--<nuxt-link :to="localePath({name: 'placename-placename', params: {placename: current.code}})">-->
+			<!--<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: current.zone_code, placename: current.code}})">-->
 				{{current.name | maori}}
 			<!--</nuxt-link>-->
 		</h3>
@@ -79,6 +79,7 @@
 					placenames(filter: {field: $field, value: $value}) {
 						_id
 						code
+						zone_code
 						names {
 							_id
 							name {

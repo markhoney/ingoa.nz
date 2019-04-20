@@ -1,9 +1,8 @@
 <template>
 	<v-card v-if="island">
-		<!--<nuxt-link :to="localePath({name: 'island-island', params: {island: island.code}})">
-			<v-img :src="island.images.landscape" height="160" />
-			<v-img :src="require('/static/' + island.images.landscape)" height="160" />
-		</nuxt-link>-->
+		<nuxt-link :to="localePath({name: 'island-island', params: {island: island.code}})">
+			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" />
+		</nuxt-link>
 		<!-- height="180px" -->
 		<v-card-title primary-title>
 			<div>
@@ -12,7 +11,7 @@
 				</h3>
 				<h3>{{localeAltName(island.name)}}</h3>
 				<div>
-					<p v-html="island.description"/>
+					<p v-html="island.description" />
 				</div>
 			</div>
 		</v-card-title>

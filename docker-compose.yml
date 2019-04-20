@@ -3,9 +3,12 @@ version: '3.7'
 services:
   ingoa:
     container_name: ingoa
-    build:
-      context: .
-      dockerfile: Dockerfile.dynamic
+    image: ingoa-dynamic
+#    image: ingoa-static
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.dynamic
+#      dockerfile: Dockerfile.static
     restart: unless-stopped
     ports:
       - 80:80

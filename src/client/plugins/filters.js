@@ -16,11 +16,14 @@ Vue.filter('initialcase', function(text) {
 });
 
 Vue.filter('titlecase', function(text) {
-	if (!text) return null;
+	/*if (!text) return null;
 	if (text === '') return '';
 	return text.replace(/\b\w+/g, function(s) {
 		return s.charAt(0).toUpperCase() + s.substr(1).toLowerCase();
-	});
+	});*/
+	return text.toLowerCase().split(' ').map(function(word) {
+    return word.replace(word[0], word[0].toUpperCase());
+  }).join(' ');
 });
 
 Vue.filter('maori', (name) => { // Return the name in Maori if it exists, or in English otherwise

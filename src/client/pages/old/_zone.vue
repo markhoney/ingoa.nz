@@ -8,7 +8,7 @@
 				<tr>
 					<td width="75">&nbsp;</td>
 					<td>
-						<h2>Ng&#257; Ingoa o Aotearoa</h2>
+						<h2>Ngā Ingoa o Aotearoa</h2>
 						<h1>Zone {{zone.number}} - {{localeName(zone.name)}}</h1>
 					</td>
 				</tr>

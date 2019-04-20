@@ -100,7 +100,7 @@
 		},
 		mounted() {
 			this.$nextTick(() => {
-				if (process.browser) {
+				if (process.client) {
 					window.onNuxtReady(app => {
 						ImageMap('img[usemap]');
 					});

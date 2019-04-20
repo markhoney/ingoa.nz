@@ -93,6 +93,9 @@ type membership {
 type group {
 	_id: ID!
 	code: String
+	zone_id: String
+	zone_code: String
+	zone: zone
 	slug: slugs
 	name: names
 	feature: feature
