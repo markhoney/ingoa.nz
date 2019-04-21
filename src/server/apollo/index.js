@@ -13,6 +13,7 @@ const server = new ApolloServer({
 	typeDefs,
 	resolvers,
 	tracing: process.env.dev,
+	engine: (process.env.dev ? {apiKey: "service:ingoa:78h4D9zEtDLOy15k554-IA"} : null)
 });
 
 server.listen().then(({url}) => {

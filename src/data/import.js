@@ -9,7 +9,10 @@ const utils = require('./utils');
 const sourcepath = path.join(__dirname, 'source');
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
 
-const json = true;
+let json = true;
+if (process.argv.length > 2 && process.argv[2] == 'nedb') {
+	json = false;
+}
 
 if (!fs.existsSync(jsonpath)) {
 	fs.mkdirSync(jsonpath, 744);
