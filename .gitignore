@@ -86,3 +86,5 @@ sw.*
 caddy.exe
 
 report.*.json
+
+.monitor
