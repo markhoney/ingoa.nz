@@ -15,6 +15,7 @@ COPY src/server ./src/server
 
 # Install application dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
+ENV BASE_URL http://localhost:80
 RUN curl https://getcaddy.com | bash -s personal http.cache,http.cors,http.realip
 RUN yarn install --production
 RUN ./node_modules/.bin/nuxt build --modern

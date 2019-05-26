@@ -26,6 +26,8 @@
 
 <script>
 	const distinctColors = require('distinct-colors');
+	import WaveSurfer from 'wavesurfer.js';
+	import RegionPlugin from 'wavesurfer.js/dist/plugin/wavesurfer.regions.min.js';
 
 	export default {
 		props: {
@@ -40,12 +42,6 @@
 				paused: false,
 				muted: false,
 			};
-		},
-		head: {
-			script: [
-				{src: 'https://unpkg.com/wavesurfer.js/dist/wavesurfer.min.js'},
-				{src: 'https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js'}
-			],
 		},
 		watch: {
 			file: function(file) {
@@ -71,7 +67,7 @@
 					waveColor: 'darkorange',
 					progressColor: 'peachpuff',
 					//barWidth: 1,
-					plugins: [WaveSurfer.regions.create(this.regions)],
+					plugins: [RegionPlugin.create(this.regions)],
 				});
 				this.wavesurfer.on('audioprocess', () => {
 					if (this.throttled) return;

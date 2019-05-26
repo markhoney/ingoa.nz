@@ -6,7 +6,7 @@ const {createHttpLink} = require('apollo-link-http');
 const fetch = require('node-fetch');
 const gql = require('graphql-tag');
 
-require('dotenv').config({path: './.secrets.env'});
+require('dotenv').config();
 
 const host = process.env.HOST || 'localhost';
 const graph = 'http://' + host + ':4000/graphql';
@@ -28,9 +28,9 @@ module.exports = {
 	router: {
 		prefetchLinks: !process.env.dev,
 	},
-	serverMiddleware: [
+	/*serverMiddleware: [
 		{path: '/graphql', handler: '../server/apollo/middleware.js'},
-	],
+	],*/
 	css: [
 		'@/assets/style/app.styl'
 	],

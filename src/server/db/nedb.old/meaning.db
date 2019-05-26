@@ -1,0 +1,1005 @@
+{"_id":"me_1","code":"ahuroa","slug":{"mi":"ahuroa"},"name":{"mi":"Ahuroa"},"components":"ahu: mound; roa: long","meaning":"Long mound"}
+{"_id":"me_10","code":"ararata","slug":{"mi":"ararata"},"name":{"mi":"Ararātā"},"components":"ara: path; rātā: native tree","meaning":"Rātā tree path"}
+{"_id":"me_100","code":"kaitoki","slug":{"mi":"kaitoki"},"name":{"mi":"Kaitoki"},"components":"kai: food; toki: adze","meaning":"Food for the adze"}
+{"_id":"me_1000","code":"whenuahou","slug":{"mi":"whenuahou"},"name":{"mi":"Whenuahōu"},"components":"whenua: land; hōu: new","meaning":"New land"}
+{"_id":"me_1001","code":"whenuakite","slug":{"mi":"whenuakite"},"name":{"mi":"Whenuakite"},"components":"whenua: land; kite: discover","meaning":"Discovered land"}
+{"_id":"me_1002","code":"whenuakura","slug":{"mi":"whenuakura"},"name":{"mi":"Whenuakura"},"components":"whenua: land; kura: red","meaning":"Red land"}
+{"_id":"me_1003","code":"whetukura","slug":{"mi":"whetukura"},"name":{"mi":"Whetūkura"},"components":"whetū: star; kura: red","meaning":"Red star"}
+{"_id":"me_1004","code":"whitianga","slug":{"mi":"whitianga"},"name":{"mi":"Whitianga"},"components":"whitianga: the crossing","meaning":"The crossing (of a river)"}
+{"_id":"me_1005","code":"whitikau","slug":{"mi":"whitikau"},"name":{"mi":"Whitikau"},"components":"whiti: to cross; kau: to wade","meaning":"Wade across"}
+{"_id":"me_101","code":"kaituna","slug":{"mi":"kaituna"},"name":{"mi":"Kaituna"},"components":"kai: to eat; tuna: eel","meaning":"Eat eels"}
+{"_id":"me_102","code":"kai-waha-onepu","slug":{"mi":"kai-waha-onepu"},"name":{"mi":"Kai-waha-onepū"},"components":"kai: food; waha: mouth; onepū: sand","meaning":"Biting the sand"}
+{"_id":"me_103","code":"kaiwaka","slug":{"mi":"kaiwaka"},"name":{"mi":"Kaiwaka"},"components":"kai: to eat; waka: canoe","meaning":"Eating the canoes"}
+{"_id":"me_104","code":"kaiwera","slug":{"mi":"kaiwera"},"name":{"mi":"Kaiwera"},"components":"kai: food; wera: hot","meaning":"Hot food"}
+{"_id":"me_105","code":"kaiwharawhara","slug":{"mi":"kaiwharawhara"},"name":{"mi":"Kaiwharawhara"},"components":"kai: food or to eat; wharawhara: the fruit of the astelia","meaning":"Eat the fruit of the astelia"}
+{"_id":"me_106","code":"kakiroa","slug":{"mi":"kakiroa"},"name":{"mi":"Kakīroa"},"components":"kakī: neck or throat; roa: large","meaning":"Long neck"}
+{"_id":"me_107","code":"kararoa","slug":{"mi":"kararoa"},"name":{"mi":"Kararoa"},"components":"kara: this word has many meanings, one of which is old man; roa: tall","meaning":"Tall elderly man"}
+{"_id":"me_108","code":"kauroa","slug":{"mi":"kauroa"},"name":{"mi":"Kauroa"},"components":"kau: to swim; roa: long","meaning":"Long swim"}
+{"_id":"me_109","code":"kereone","slug":{"mi":"kereone"},"name":{"mi":"Kereone"},"components":"kere: earth; one: sand or sandy","meaning":"Sandy earth"}
+{"_id":"me_11","code":"ararimu","slug":{"mi":"ararimu"},"name":{"mi":"Ararimu"},"components":"ara: path; rimu: native tree","meaning":"Rimu tree path"}
+{"_id":"me_110","code":"kereru","slug":{"mi":"kereru"},"name":{"mi":"Kererū"},"components":"kererū: wood pigeon","meaning":"Wood pigeon"}
+{"_id":"me_111","code":"keteketerau","slug":{"mi":"keteketerau"},"name":{"mi":"Keteketerau"},"components":"ketekete: click the tongue; rau: many times","meaning":"Click the tongue repeatedly"}
+{"_id":"me_112","code":"ketetahi","slug":{"mi":"ketetahi"},"name":{"mi":"Ketetahi"},"components":"Kete: basket; tahi: one","meaning":"One spring"}
+{"_id":"me_113","code":"kihikihi","slug":{"mi":"kihikihi"},"name":{"mi":"Kihikihi"},"components":"kihikihi: cicada","meaning":"Cicada"}
+{"_id":"me_114","code":"kihitu","slug":{"mi":"kihitu"},"name":{"mi":"Kihitū"},"components":"kihi: to strip off; tū: girdle or belt to which a maro (loincloth) was attached","meaning":"Strip off the girdle"}
+{"_id":"me_115","code":"kioreroa","slug":{"mi":"kioreroa"},"name":{"mi":"Kioreroa"},"components":"kiore: native rat; roa: long","meaning":"Long rat"}
+{"_id":"me_116","code":"kirkiriroa","slug":{"mi":"kirkiriroa"},"name":{"mi":"Kirkiriroa"},"components":"kirikiri: gravel; roa: long","meaning":"Long gravel"}
+{"_id":"me_117","code":"kiwinui","slug":{"mi":"kiwinui"},"name":{"mi":"Kiwinui"},"components":"kiwi: bird; nui: many","meaning":"Many kiwi birds"}
+{"_id":"me_118","code":"kohinui","slug":{"mi":"kohinui"},"name":{"mi":"Kōhīnui"},"components":"kōhī: dark mud (used in dyeing), heavy rain, skeleton, youth, etc.; nui: large, many or plenty","meaning":"Plenty of dark mud"}
+{"_id":"me_119","code":"kohukohunui","slug":{"mi":"kohukohunui"},"name":{"mi":"Kohukohunui"},"components":"Lit: kohukohu: mist; nui: big or many","meaning":"Great mist"}
+{"_id":"me_12","code":"ararua","slug":{"mi":"ararua"},"name":{"mi":"Ararua"},"components":"ara: path; rua: two","meaning":"Two paths"}
+{"_id":"me_120","code":"koputai","slug":{"mi":"koputai"},"name":{"mi":"Kōpūtai"},"components":"kōpū: full; tai: tide","meaning":"Full tide"}
+{"_id":"me_121","code":"koputaroa","slug":{"mi":"koputaroa"},"name":{"mi":"Kōputaroa"},"components":"kōputa: snare for catching parakeets; roa: long","meaning":"Long snare for catching parakeets"}
+{"_id":"me_122","code":"kopuwai","slug":{"mi":"kopuwai"},"name":{"mi":"Kōpūwai"},"components":"kōpū: belly or full; wai: water","meaning":"Water swallower"}
+{"_id":"me_123","code":"korakonui","slug":{"mi":"korakonui"},"name":{"mi":"Korakonui"},"components":"korako: albino; nui: big","meaning":"Large albino (bird)"}
+{"_id":"me_124","code":"kororareka","slug":{"mi":"kororareka"},"name":{"mi":"Kororāreka"},"components":"kororā: blue penguin; reka: sweet or tasty","meaning":"Tasty blue penguin"}
+{"_id":"me_125","code":"kotuku","slug":{"mi":"kotuku"},"name":{"mi":"Kōtuku"},"components":"kōku: white heron","meaning":"White heron"}
+{"_id":"me_126","code":"kotuku-moana","slug":{"mi":"kotuku-moana"},"name":{"mi":"Kōtuku-moana"},"components":"kōtuku: white heron; moana: lake","meaning":"Lake of white herons"}
+{"_id":"me_127","code":"kourarau","slug":{"mi":"kourarau"},"name":{"mi":"Kōurarau"},"components":"kōura: crayfish; rau: many","meaning":"Many crayfish"}
+{"_id":"me_128","code":"koutunui","slug":{"mi":"koutunui"},"name":{"mi":"Koutunui"},"components":"koutu: headland; nui: large","meaning":"Large headland"}
+{"_id":"me_129","code":"kumeroa","slug":{"mi":"kumeroa"},"name":{"mi":"Kumeroa"},"components":"kume: to pull; roa: long","meaning":"Long drag"}
+{"_id":"me_13","code":"arataha","slug":{"mi":"arataha"},"name":{"mi":"Arataha"},"components":"ara: path; taha: side","meaning":"Side path"}
+{"_id":"me_130","code":"kuranui","slug":{"mi":"kuranui"},"name":{"mi":"Kuranui"},"components":"kura: red; nui: large red birds","meaning":"Big red (birds)"}
+{"_id":"me_131","code":"makakahikatoa","slug":{"mi":"makakahikatoa"},"name":{"mi":"Makakahikatoa"},"components":"maka: strike; kahikatoa: red mānuka (Leptospermum scoparium) or more probably a weapon made from this wood","meaning":"Striking with mānuka stick"}
+{"_id":"me_132","code":"makaranui","slug":{"mi":"makaranui"},"name":{"mi":"Makarānui"},"components":"makarā: to come and go; nui: many","meaning":"Much coming and going"}
+{"_id":"me_133","code":"makikihi","slug":{"mi":"makikihi"},"name":{"mi":"Mākikihi"},"components":"ma: stream; kikihi: cicada (Amphipsalta cingulata)","meaning":"Cicada stream"}
+{"_id":"me_134","code":"makirikiri","slug":{"mi":"makirikiri"},"name":{"mi":"Mākirikiri"},"components":"ma: stream: kirikiri: gravel","meaning":"Gravelly stream"}
+{"_id":"me_135","code":"makohine","slug":{"mi":"makohine"},"name":{"mi":"Mākōhine"},"components":"mā: stream; kōhine: girl","meaning":"Young woman's stream"}
+{"_id":"me_136","code":"makotuku","slug":{"mi":"makotuku"},"name":{"mi":"Mākōtuku"},"components":"mā: stream; kōtuku: white heron","meaning":"White heron stream"}
+{"_id":"me_137","code":"makowhai","slug":{"mi":"makowhai"},"name":{"mi":"Mākōwhai"},"components":"Mā: stream; kōwhai: tree","meaning":"Kōwhai tree stream"}
+{"_id":"me_138","code":"makuri","slug":{"mi":"makuri"},"name":{"mi":"Mākurī"},"components":"mā: stream; kurī: dog","meaning":"Dog stream"}
+{"_id":"me_139","code":"mamaranui","slug":{"mi":"mamaranui"},"name":{"mi":"Māmāranui"},"components":"mā: stream; māra: farm or cultivation; nui: large or many","meaning":"Stream for many gardens"}
+{"_id":"me_14","code":"aratapu","slug":{"mi":"aratapu"},"name":{"mi":"Aratapu"},"components":"ara: path; tapu: sacred or restricted","meaning":"Sacred path"}
+{"_id":"me_140","code":"manaroa","slug":{"mi":"manaroa"},"name":{"mi":"Manaroa"},"components":"mana: power or prestige; roa: great or long","meaning":"Enduring prestige"}
+{"_id":"me_141","code":"mangaharakeke","slug":{"mi":"mangaharakeke"},"name":{"mi":"Mangaharakeke"},"components":"manga: stream; harakeke: flax bush","meaning":"Stream of flax"}
+{"_id":"me_142","code":"mangahoe","slug":{"mi":"mangahoe"},"name":{"mi":"Mangahoe"},"components":"manga: stream; hoe: canoe paddle","meaning":"Stream of canoe paddles"}
+{"_id":"me_143","code":"mangahouhounui","slug":{"mi":"mangahouhounui"},"name":{"mi":"Mangahouhounui"},"components":"manga: stream; houhou: five-finger tree; nui: large or many","meaning":"Stream of many five finger trees"}
+{"_id":"me_144","code":"mangaiti","slug":{"mi":"mangaiti"},"name":{"mi":"Mangaiti"},"components":"manga: stream; iti: tiny","meaning":"Small stream"}
+{"_id":"me_145","code":"mangakahia","slug":{"mi":"mangakahia"},"name":{"mi":"Mangakāhia"},"components":"manga: stream; kāhia or kōhia: native passion vine","meaning":"Stream of New Zealand passionfruit"}
+{"_id":"me_146","code":"mangakino","slug":{"mi":"mangakino"},"name":{"mi":"Mangakino"},"components":"manga: stream; kino: bad, usless or stagnant","meaning":"Stagnant stream"}
+{"_id":"me_147","code":"mangakura","slug":{"mi":"mangakura"},"name":{"mi":"Mangakura"},"components":"manga: stream; kura: red or red ochre","meaning":"Stream of red ochre"}
+{"_id":"me_148","code":"mangamahoe","slug":{"mi":"mangamahoe"},"name":{"mi":"Mangamāhoe"},"components":"manga: stream; māhoe: native tree, whiteywood (Melicytus ramiflorus)","meaning":"Māhoe stream"}
+{"_id":"me_149","code":"mangamahu","slug":{"mi":"mangamahu"},"name":{"mi":"Mangamahu"},"components":"manga: stream; mahu: gentle","meaning":"Gentle stream"}
+{"_id":"me_15","code":"aratiatia","slug":{"mi":"aratiatia"},"name":{"mi":"Aratiatia"},"components":"ara: path; tiatia: pegs","meaning":"Pegged ladder"}
+{"_id":"me_150","code":"mangamaire","slug":{"mi":"mangamaire"},"name":{"mi":"Mangamaire"},"components":"manga: stream; maire: native tree","meaning":"Maire stream"}
+{"_id":"me_151","code":"mangamuka","slug":{"mi":"mangamuka"},"name":{"mi":"Mangamuka"},"components":"manga: stream; muka: the furled shoot of the nīkau palm","meaning":"Stream of the furled shoot of the nīkau palm"}
+{"_id":"me_152","code":"mangamutu","slug":{"mi":"mangamutu"},"name":{"mi":"Mangamutu"},"components":"manga: stream; mutu: finished","meaning":"Finished stream"}
+{"_id":"me_153","code":"mangangarongaro","slug":{"mi":"mangangarongaro"},"name":{"mi":"Mangangarongaro"},"components":"manga: stream; ngarongaro: somewhat abated","meaning":"Abated stream"}
+{"_id":"me_154","code":"manganui-a-te-ao","slug":{"mi":"manganui-a-te-ao"},"name":{"mi":"Manganui-a-te-Ao"},"components":"manga: stream; nui: great; a: of; te: the; ao: world","meaning":"Great stream of the world"}
+{"_id":"me_155","code":"mangaohae","slug":{"mi":"mangaohae"},"name":{"mi":"Mangaohae"},"components":"manga: stream o: of; Hae","meaning":"The stream of Hae"}
+{"_id":"me_156","code":"mangaohutu","slug":{"mi":"mangaohutu"},"name":{"mi":"Mangaohutu"},"components":"manga: stream; o: of; Hutu","meaning":"The stream of Hutu"}
+{"_id":"me_157","code":"mangaonoho","slug":{"mi":"mangaonoho"},"name":{"mi":"Mangaonoho"},"components":"manga: stream; o: of; Noho","meaning":"The stream of Noho"}
+{"_id":"me_158","code":"mangaorapa","slug":{"mi":"mangaorapa"},"name":{"mi":"Mangaorapa"},"components":"manga: stream; o: of; Rapa","meaning":"The stream of Rapa"}
+{"_id":"me_159","code":"mangaore","slug":{"mi":"mangaore"},"name":{"mi":"Mangaore"},"components":"manga: stream; ore: to poke with a stick, or to bore a hole","meaning":"The stream where a hole was bored"}
+{"_id":"me_16","code":"aratika","slug":{"mi":"aratika"},"name":{"mi":"Aratika"},"components":"ara: path; tika: correct or straight","meaning":"Direct path"}
+{"_id":"me_160","code":"mangaotaki","slug":{"mi":"mangaotaki"},"name":{"mi":"Mangaotaki"},"components":"manga: stream; o: of; taki: oratory or to make a speech","meaning":"Stream of oratory"}
+{"_id":"me_161","code":"mangaowera","slug":{"mi":"mangaowera"},"name":{"mi":"Mangaowera"},"components":"manga: stream; o: of; Wera","meaning":"The stream of Wera"}
+{"_id":"me_162","code":"mangapai","slug":{"mi":"mangapai"},"name":{"mi":"Mangapai"},"components":"manga: stream; pai: good","meaning":"Good stream"}
+{"_id":"me_163","code":"mangapehi","slug":{"mi":"mangapehi"},"name":{"mi":"Mangapēhi"},"components":"manga: stream; pēhi: troubled","meaning":"Stream of trouble"}
+{"_id":"me_164","code":"mangapiko","slug":{"mi":"mangapiko"},"name":{"mi":"Mangapiko"},"components":"manga: stream; piko: bent or crooked","meaning":"Winding stream"}
+{"_id":"me_165","code":"mangapouri","slug":{"mi":"mangapouri"},"name":{"mi":"Mangapōuri"},"components":"manga: stream; pōuri: dark","meaning":"Dark stream"}
+{"_id":"me_166","code":"mangapu","slug":{"mi":"mangapu"},"name":{"mi":"Mangapu"},"components":"manga: stream; pū: double","meaning":"Double stream"}
+{"_id":"me_167","code":"mangapuaka","slug":{"mi":"mangapuaka"},"name":{"mi":"Mangapuaka"},"components":"manga: stream ; puaka: bird snare or rimu tree","meaning":"Bird snare stream"}
+{"_id":"me_168","code":"mangapurua","slug":{"mi":"mangapurua"},"name":{"mi":"Mangapūrua"},"components":"manga: stream; pūrua: abundant or plenty","meaning":"Abundant stream"}
+{"_id":"me_169","code":"mangarakau","slug":{"mi":"mangarakau"},"name":{"mi":"Mangarakau"},"components":"manga: stream; rākau: tree","meaning":"Stream of trees"}
+{"_id":"me_17","code":"aratoro","slug":{"mi":"aratoro"},"name":{"mi":"Aratoro"},"components":"ara: path; toro: discover","meaning":"Path of discovery"}
+{"_id":"me_170","code":"mangaramarama","slug":{"mi":"mangaramarama"},"name":{"mi":"Mangaramarama"},"components":"manga: stream; ramarama: native shrub","meaning":"Stream of the ramarama shrub"}
+{"_id":"me_171","code":"mangarapa","slug":{"mi":"mangarapa"},"name":{"mi":"Mangarapa"},"components":"manga: stream; rapa: broad or spread out","meaning":"Broad stream"}
+{"_id":"me_172","code":"mangarata","slug":{"mi":"mangarata"},"name":{"mi":"Mangarātā"},"components":"manga: stream; rata: native tree","meaning":"Rātā stream"}
+{"_id":"me_173","code":"mangarawa","slug":{"mi":"mangarawa"},"name":{"mi":"Mangarawa"},"components":"manga: stream; rawa: swamp","meaning":"Swampy stream"}
+{"_id":"me_174","code":"mangarimu","slug":{"mi":"mangarimu"},"name":{"mi":"Mangarimu"},"components":"manga: stream; rimu: native tree","meaning":"Rimu stream"}
+{"_id":"me_175","code":"mangaroa","slug":{"mi":"mangaroa"},"name":{"mi":"Mangaroa"},"components":"manga: stream; roa: long","meaning":"Long stream"}
+{"_id":"me_176","code":"mangatahi","slug":{"mi":"mangatahi"},"name":{"mi":"Mangatahi"},"components":"manga: stream; tahi: single","meaning":"Single stream"}
+{"_id":"me_177","code":"mangatainoka","slug":{"mi":"mangatainoka"},"name":{"mi":"Mangatainoka"},"components":"manga: stream; tainoka: native broom","meaning":"Native broom stream"}
+{"_id":"me_178","code":"mangatangi","slug":{"mi":"mangatangi"},"name":{"mi":"Mangatangi"},"components":"manga: stream; tangi: weeping or sounding","meaning":"Stream of weeping"}
+{"_id":"me_179","code":"mangatapu","slug":{"mi":"mangatapu"},"name":{"mi":"Mangatapu"},"components":"manga: stream; tapu: sacred or forbidden","meaning":"Sacred stream"}
+{"_id":"me_18","code":"aropaonui","slug":{"mi":"aropaonui"},"name":{"mi":"Aropaonui"},"components":"aro: kidney fat; paoa: to bash","meaning":"Bashed kidney fat"}
+{"_id":"me_180","code":"mangatarata","slug":{"mi":"mangatarata"},"name":{"mi":"Mangatarata"},"components":"manga: stream; tarata: native tree known as lemonwood","meaning":"Lemonwood stream"}
+{"_id":"me_181","code":"mangatawhiri","slug":{"mi":"mangatawhiri"},"name":{"mi":"Mangatāwhiri"},"components":"manga: stream; tāwhiri: native tree","meaning":"Tāwhiri tree stream"}
+{"_id":"me_182","code":"mangatea","slug":{"mi":"mangatea"},"name":{"mi":"Mangatea"},"components":"manga: stream; tea: white or clear","meaning":"Clear stream"}
+{"_id":"me_183","code":"mangateparu","slug":{"mi":"mangateparu"},"name":{"mi":"Mangateparu"},"components":"manga: stream; te: the paru: mud, dirt, dirty or deep","meaning":"Stream of mud"}
+{"_id":"me_184","code":"mangatepopo","slug":{"mi":"mangatepopo"},"name":{"mi":"Mangatepopo"},"components":"manga: stream; te: the; popo: anything rotten or decayed","meaning":"Stream of rotten items"}
+{"_id":"me_185","code":"mangateretere","slug":{"mi":"mangateretere"},"name":{"mi":"Mangateretere"},"components":"manga: stream; teretere: swiftly flowing","meaning":"Swiftly flowing river"}
+{"_id":"me_186","code":"mangati","slug":{"mi":"mangati"},"name":{"mi":"Mangatī"},"components":"manga: stream; tī: cabbage tree","meaning":"Cabbage-tree stream"}
+{"_id":"me_187","code":"mangatina","slug":{"mi":"mangatina"},"name":{"mi":"Mangatina"},"components":"manga: stream; tina: exhausted","meaning":"Exhausted at the stream"}
+{"_id":"me_188","code":"mangatoetoe","slug":{"mi":"mangatoetoe"},"name":{"mi":"Mangatoetoe"},"components":"manga: stream; toetoe: native grass","meaning":"Toetoe stream"}
+{"_id":"me_189","code":"mangatuna","slug":{"mi":"mangatuna"},"name":{"mi":"Mangatuna"},"components":"manga: stream; tuna: eel","meaning":"Eel stream"}
+{"_id":"me_19","code":"aukati","slug":{"mi":"aukati"},"name":{"mi":"Aukati"},"components":"au: line; kati: block","meaning":"Frontier"}
+{"_id":"me_190","code":"mangawara","slug":{"mi":"mangawara"},"name":{"mi":"Mangawara"},"components":"manga: stream; wara: to make an indistinct sound","meaning":"Quiet stream"}
+{"_id":"me_191","code":"mangaweka:","slug":{"mi":"mangaweka:"},"name":{"mi":"Mangaweka:"},"components":"manga: stream; weka: wood-hen","meaning":"Weka stream"}
+{"_id":"me_192","code":"mangawhata","slug":{"mi":"mangawhata"},"name":{"mi":"Mangawhata"},"components":"manga: stream; whata: a raised storehouse for food","meaning":"Raised storehouse stream"}
+{"_id":"me_193","code":"mangawhero","slug":{"mi":"mangawhero"},"name":{"mi":"Mangawhero"},"components":"manga: stream; whero: red","meaning":"Red stream"}
+{"_id":"me_194","code":"mangonui","slug":{"mi":"mangonui"},"name":{"mi":"Mangōnui"},"components":"mangō: shark; nui: large or many","meaning":"Great shark"}
+{"_id":"me_195","code":"mania-rauhea","slug":{"mi":"mania-rauhea"},"name":{"mi":"Mānia-rauhea"},"components":"mānia: plain of flat land; rauhea: tussock grass","meaning":"Plain of shining tussock"}
+{"_id":"me_196","code":"maniatoto","slug":{"mi":"maniatoto"},"name":{"mi":"Māniatoto"},"components":"mānia: plain; o: of; toto: blood","meaning":"Plain of blood"}
+{"_id":"me_197","code":"maniatutu","slug":{"mi":"maniatutu"},"name":{"mi":"Māniatutu"},"components":"mānia: plain; tutu: a native tree","meaning":"Tutu-tree plain"}
+{"_id":"me_198","code":"manui","slug":{"mi":"manui"},"name":{"mi":"Mānui"},"components":"mā: stream; nui: large","meaning":"Large stream"}
+{"_id":"me_199","code":"maraenui","slug":{"mi":"maraenui"},"name":{"mi":"Maraenui"},"components":"marae: courtyard or meeting area; nui: large","meaning":"Great marae"}
+{"_id":"me_2","code":"aoroa","slug":{"mi":"aoroa"},"name":{"mi":"Aoroa"},"components":"ao: cloud; roa: long","meaning":"Long cloud"}
+{"_id":"me_20","code":"auripo","slug":{"mi":"auripo"},"name":{"mi":"Auripo"},"components":"au: current; ripo: whirlpool, or eddying","meaning":"Eddying current"}
+{"_id":"me_200","code":"maraeroa","slug":{"mi":"maraeroa"},"name":{"mi":"Maraeroa"},"components":"marae: courtyard or meeting area; roa: long","meaning":"Long marae"}
+{"_id":"me_201","code":"maraetai","slug":{"mi":"maraetai"},"name":{"mi":"Maraetai"},"components":"marae: courtyard or meeting area; tai: coast","meaning":"Coastal marae"}
+{"_id":"me_202","code":"mararoa","slug":{"mi":"mararoa"},"name":{"mi":"Māraroa"},"components":"māra: cultivated area; roa: long, long lasting","meaning":"Long lasting cultivations"}
+{"_id":"me_203","code":"matakanui","slug":{"mi":"matakanui"},"name":{"mi":"Matakanui"},"components":"mata: face; ka: blow or scar; nui: large","meaning":"Scarred face of a large cliff"}
+{"_id":"me_204","code":"mataroa","slug":{"mi":"mataroa"},"name":{"mi":"Mataroa"},"components":"mata: headland or bluff; roa: long","meaning":"Long headland"}
+{"_id":"me_205","code":"maunga_ma","slug":{"mi":"maunga_ma"},"name":{"mi":"Maunga Mā"},"components":"maunga: mountain; mā: white","meaning":"White mountain"}
+{"_id":"me_206","code":"maunga-atua","slug":{"mi":"maunga-atua"},"name":{"mi":"Maunga-atua"},"components":"maunga: mountain; atua: gods","meaning":"Mountain of the gods"}
+{"_id":"me_207","code":"maungaharuru","slug":{"mi":"maungaharuru"},"name":{"mi":"Maungaharuru"},"components":"maunga: mountain; haruru: to rumble","meaning":"Rumbling mountain"}
+{"_id":"me_208","code":"maungahaumi","slug":{"mi":"maungahaumi"},"name":{"mi":"Maungahaumi"},"components":"maunga: mountain; haumi: timber to lengthen or raise the sides of a canoe","meaning":"Mountain of canoe timber"}
+{"_id":"me_209","code":"maungakaramea","slug":{"mi":"maungakaramea"},"name":{"mi":"Maungakaramea"},"components":"maunga: mountain; karamea: red ochre or speargrass","meaning":"Red ochre mountain"}
+{"_id":"me_21","code":"auroa","slug":{"mi":"auroa"},"name":{"mi":"Auroa"},"components":"au: cloud or mist; roa: long","meaning":"Long cloud"}
+{"_id":"me_210","code":"maungakiekie","slug":{"mi":"maungakiekie"},"name":{"mi":"Maungakiekie"},"components":"maunga: mountain; kiekie: a climbing plant","meaning":"Kiekie plant mountain"}
+{"_id":"me_211","code":"maunganui","slug":{"mi":"maunganui"},"name":{"mi":"Maunganui"},"components":"maunga: mountain; nui: tall or large","meaning":"Large mountain"}
+{"_id":"me_212","code":"maungapohatu","slug":{"mi":"maungapohatu"},"name":{"mi":"Maungapōhatu"},"components":"maunga: mountain; pōhatu: rock or stone","meaning":"Rocky mountain"}
+{"_id":"me_213","code":"maungaraki","slug":{"mi":"maungaraki"},"name":{"mi":"Maungaraki"},"components":"maunga: mountain or mountains; raki: north","meaning":"Northern mountain"}
+{"_id":"me_214","code":"maungaroa","slug":{"mi":"maungaroa"},"name":{"mi":"Maungaroa"},"components":"maunga: mountain; roa: long","meaning":"Long mountain"}
+{"_id":"me_215","code":"maungataketake","slug":{"mi":"maungataketake"},"name":{"mi":"Maungataketake"},"components":"maunga: mountain; taketake: base, long-established or well-founded","meaning":"Broad mountain"}
+{"_id":"me_216","code":"maungataniwha","slug":{"mi":"maungataniwha"},"name":{"mi":"Maungataniwha"},"components":"maunga: mountain; taniwha: supernatural creature","meaning":"Taniwha mountain"}
+{"_id":"me_217","code":"maungatapere","slug":{"mi":"maungatapere"},"name":{"mi":"Maungatāpere"},"components":"maunga: mountain; tāpere: red, volcanic earth","meaning":"Mountain of red volcanic earth"}
+{"_id":"me_218","code":"maungatapu","slug":{"mi":"maungatapu"},"name":{"mi":"Maungatapu"},"components":"maunga: mountain; tapu: sacred or forbidden","meaning":"Sacred mountain"}
+{"_id":"me_219","code":"maungatautari","slug":{"mi":"maungatautari"},"name":{"mi":"Maungatautari"},"components":"maunga: mountain; tautari: an upright stick","meaning":"Mountain of the upright stick"}
+{"_id":"me_22","code":"awa","slug":{"mi":"awa"},"name":{"mi":"Awa"},"components":"awa: river","meaning":"River"}
+{"_id":"me_220","code":"maungati","slug":{"mi":"maungati"},"name":{"mi":"Maungatī"},"components":"maunga: mountain; tī: cabbage tree","meaning":"Cabbage tree mountain"}
+{"_id":"me_221","code":"maungatua","slug":{"mi":"maungatua"},"name":{"mi":"Maungatua"},"components":"maunga: mountain; a: of; atua: god","meaning":"Mountain of the gods"}
+{"_id":"me_222","code":"maungaturoto","slug":{"mi":"maungaturoto"},"name":{"mi":"Maungatūroto"},"components":"maunga: mountain; tū: to stand; roto: lake","meaning":"Mountain standing up in lagoons"}
+{"_id":"me_223","code":"maungawera","slug":{"mi":"maungawera"},"name":{"mi":"Maungawera"},"components":"maunga: mountain; wera: burnt or hot","meaning":"Burnt mountain"}
+{"_id":"me_224","code":"maungawhau","slug":{"mi":"maungawhau"},"name":{"mi":"Maungawhau"},"components":"maunga: mountain; whau: a native tree","meaning":"Whau tree mountain"}
+{"_id":"me_225","code":"mawheranui","slug":{"mi":"mawheranui"},"name":{"mi":"Māwheranui"},"components":"Māwhera: open, widesread; nui: large (referring particularly to the river mouth).","meaning":"Broad and widespread (river mouth)"}
+{"_id":"me_226","code":"mititai","slug":{"mi":"mititai"},"name":{"mi":"Mititai"},"components":"miti: to lick; tai: tide","meaning":"Lick the tide"}
+{"_id":"me_227","code":"moana","slug":{"mi":"moana"},"name":{"mi":"Moana"},"components":"Ocean or large lake","meaning":"Ocean"}
+{"_id":"me_228","code":"moanariri","slug":{"mi":"moanariri"},"name":{"mi":"Moanariri"},"components":"moana: sea; riri: to be angry or to fight","meaning":"Angry sea"}
+{"_id":"me_229","code":"moanaroa","slug":{"mi":"moanaroa"},"name":{"mi":"Moanaroa"},"components":"moana: ocean; roa: large or broad","meaning":"Broad sea"}
+{"_id":"me_23","code":"awahohonu","slug":{"mi":"awahohonu"},"name":{"mi":"Awahōhonu"},"components":"awa: river; hōhonu: deep","meaning":"Deep river"}
+{"_id":"me_230","code":"moanawhenuapouri","slug":{"mi":"moanawhenuapouri"},"name":{"mi":"Moanawhenuapōuri"},"components":"moana: sea; whenua: land; pōuri: sad or dark","meaning":"Sombre arm of the sea"}
+{"_id":"me_231","code":"moeroa","slug":{"mi":"moeroa"},"name":{"mi":"Moeroa"},"components":"moe: to sleep; roa: long","meaning":"Long sleep"}
+{"_id":"me_232","code":"mokihinui","slug":{"mi":"mokihinui"},"name":{"mi":"Mōkihinui"},"components":"mōkihi: raft made of flax stalks; nui: large","meaning":"Large flax-stalk raft"}
+{"_id":"me_233","code":"mokoroa","slug":{"mi":"mokoroa"},"name":{"mi":"Mokoroa"},"components":"moko: tattoo; roa: long","meaning":"Long tattoo"}
+{"_id":"me_234","code":"mokoroa","slug":{"mi":"mokoroa"},"name":{"mi":"Mokoroa"},"components":"moko: lizard; roa; long","meaning":"Long lizard"}
+{"_id":"me_235","code":"motuara","slug":{"mi":"motuara"},"name":{"mi":"Motuara"},"components":"motu: island; ara: path","meaning":"Island in the path (of a canoe)"}
+{"_id":"me_236","code":"motuarohia","slug":{"mi":"motuarohia"},"name":{"mi":"Motuarohia"},"components":"motu:island; arohia: reconnoitred","meaning":"Reconnoitred island"}
+{"_id":"me_237","code":"motukairangi","slug":{"mi":"motukairangi"},"name":{"mi":"Motukairangi"},"components":"motu: island; kairangi: wonderful, chief, or wandering","meaning":"Wonderful island"}
+{"_id":"me_238","code":"motukaraka","slug":{"mi":"motukaraka"},"name":{"mi":"Motukaraka"},"components":"motu: clump of trees; karaka: native tree","meaning":"Clump of karaka trees"}
+{"_id":"me_239","code":"motukaranui","slug":{"mi":"motukaranui"},"name":{"mi":"Motukāranui"},"components":"Motu: island; karā: basalt; nui: large","meaning":"Island of large basalt stone"}
+{"_id":"me_24","code":"awahou","slug":{"mi":"awahou"},"name":{"mi":"Awahōu"},"components":"awa: river; hōu: new","meaning":"New river"}
+{"_id":"me_240","code":"motukauatiiti","slug":{"mi":"motukauatiiti"},"name":{"mi":"Motukauatiiti"},"components":"motu: grove of trees; kauati: rubbing stick for firemaking; iti: little","meaning":"Little clump of trees used for fire sticks"}
+{"_id":"me_241","code":"motukauatirahi","slug":{"mi":"motukauatirahi"},"name":{"mi":"Motukauatirahi"},"components":"motu: grove of trees; kauati: rubbing stick for firemaking; rahi: large","meaning":"Large clump of trees used for fire sticks"}
+{"_id":"me_242","code":"motukauri","slug":{"mi":"motukauri"},"name":{"mi":"Motukauri"},"components":"motu: island; kauri: native tree","meaning":"Clump of kauri trees"}
+{"_id":"me_243","code":"motukiekie","slug":{"mi":"motukiekie"},"name":{"mi":"Motukiekie"},"components":"motu: island; kiekie: a native plant","meaning":"Kiekie island"}
+{"_id":"me_244","code":"motukina","slug":{"mi":"motukina"},"name":{"mi":"Motukina"},"components":"motu: island or isolated headland; kina: sea urchin","meaning":"Kina island"}
+{"_id":"me_245","code":"motukiore","slug":{"mi":"motukiore"},"name":{"mi":"Motukiore"},"components":"motu: island; kiore: native rat","meaning":"Rat island"}
+{"_id":"me_246","code":"motukokopu","slug":{"mi":"motukokopu"},"name":{"mi":"Motukokopu"},"components":"motu: island; kokopu: cockabully fish","meaning":"Cockabully island"}
+{"_id":"me_247","code":"motumahanga","slug":{"mi":"motumahanga"},"name":{"mi":"Motumāhanga"},"components":"motu: island; māhanga: twin","meaning":"Twin islands"}
+{"_id":"me_248","code":"motumaire","slug":{"mi":"motumaire"},"name":{"mi":"Motumaire"},"components":"motu: island; maire: native tree","meaning":"Maire island"}
+{"_id":"me_249","code":"motumaoho","slug":{"mi":"motumaoho"},"name":{"mi":"Motumaoho"},"components":"motu: clump of trees; maoho: to intrude","meaning":"Intruding clump of trees"}
+{"_id":"me_25","code":"awaiti","slug":{"mi":"awaiti"},"name":{"mi":"Awaiti"},"components":"awa: river; iti: little","meaning":"Little river"}
+{"_id":"me_250","code":"motunau","slug":{"mi":"motunau"},"name":{"mi":"Motunau"},"components":"motu: island; nau: scurvy grass","meaning":"Scurvy grass island"}
+{"_id":"me_251","code":"motungarara","slug":{"mi":"motungarara"},"name":{"mi":"Motungārara"},"components":"motu: island; ngārara: lizard","meaning":"Lizard island"}
+{"_id":"me_252","code":"motunui","slug":{"mi":"motunui"},"name":{"mi":"Motunui"},"components":"motu: island; nui: large","meaning":"Large island"}
+{"_id":"me_253","code":"motuoapa","slug":{"mi":"motuoapa"},"name":{"mi":"Motuoapa"},"components":"motu: island or grove of trees; o: of; Apa","meaning":"Grove of trees belonging to Apa"}
+{"_id":"me_254","code":"motu-o-kura","slug":{"mi":"motu-o-kura"},"name":{"mi":"Motu-o-Kura"},"components":"motu: island; o: of; Kura","meaning":"Island of Kura"}
+{"_id":"me_255","code":"motuopuhi","slug":{"mi":"motuopuhi"},"name":{"mi":"Motuopuhi"},"components":"motu: island; o: of; Puhi","meaning":"Island of Puhi"}
+{"_id":"me_256","code":"motuoroi","slug":{"mi":"motuoroi"},"name":{"mi":"Motuoroi"},"components":"motu: island; o: of; Roi","meaning":"Island of Roi"}
+{"_id":"me_257","code":"motuotaraia","slug":{"mi":"motuotaraia"},"name":{"mi":"Motuotaraia"},"components":"motu: isolated area; o: of; Taraia","meaning":"Isolated area of Taraia"}
+{"_id":"me_258","code":"motupipi","slug":{"mi":"motupipi"},"name":{"mi":"Motupipi"},"components":"motu: island; pipi: common edible shellfish","meaning":"Pipi island"}
+{"_id":"me_259","code":"motupiu","slug":{"mi":"motupiu"},"name":{"mi":"Motupiu"},"components":"motu: island; piu: to swing","meaning":"Swinging island"}
+{"_id":"me_26","code":"awa-kaeaea","slug":{"mi":"awa-kaeaea"},"name":{"mi":"Awa-kāeaea"},"components":"awa: valley or stream; kāeaea: the sparrow-hawk","meaning":"Sparrow-hawk stream"}
+{"_id":"me_260","code":"moturoa","slug":{"mi":"moturoa"},"name":{"mi":"Moturoa"},"components":"motu: island; roa: long","meaning":"Long island"}
+{"_id":"me_261","code":"motutaiko","slug":{"mi":"motutaiko"},"name":{"mi":"Motutaiko"},"components":"motu: island; taiko: petrel","meaning":"Island of the black petrel"}
+{"_id":"me_262","code":"motutapu","slug":{"mi":"motutapu"},"name":{"mi":"Motutapu"},"components":"motu: island; tapu: sacred or forbidden","meaning":"Sacred island"}
+{"_id":"me_263","code":"motutara","slug":{"mi":"motutara"},"name":{"mi":"Motutara"},"components":"motu: island; tara: gull","meaning":"Gull island"}
+{"_id":"me_264","code":"motutawa","slug":{"mi":"motutawa"},"name":{"mi":"Motutawa"},"components":"motu: island; tawa: a tree","meaning":"Tawa tree island"}
+{"_id":"me_265","code":"motutere","slug":{"mi":"motutere"},"name":{"mi":"Motutere"},"components":"motu: island; tere: to float","meaning":"Floating island"}
+{"_id":"me_266","code":"muritai","slug":{"mi":"muritai"},"name":{"mi":"Muritai"},"components":"muri: breeze; tai: sea or tide","meaning":"Sea breeze"}
+{"_id":"me_267","code":"muriwai","slug":{"mi":"muriwai"},"name":{"mi":"Muriwai"},"components":"muri: end; wai: water","meaning":"Waters’ end"}
+{"_id":"me_268","code":"ngakawau","slug":{"mi":"ngakawau"},"name":{"mi":"Ngākawau"},"components":"ngā: the; kauwau: shags","meaning":"The shags"}
+{"_id":"me_269","code":"ngamatapouri","slug":{"mi":"ngamatapouri"},"name":{"mi":"Ngāmatapōuri"},"components":"ngā: the; matapōuri: black teal","meaning":"The black teals"}
+{"_id":"me_27","code":"awakeri","slug":{"mi":"awakeri"},"name":{"mi":"Awakeri"},"components":"awa: river; keri: dig","meaning":"Ditch or trench"}
+{"_id":"me_270","code":"ngamoko","slug":{"mi":"ngamoko"},"name":{"mi":"Ngāmoko"},"components":"ngā: the; moko: lizards","meaning":"The lizards"}
+{"_id":"me_271","code":"ngamotu","slug":{"mi":"ngamotu"},"name":{"mi":"Ngāmotu"},"components":"ngā: the; motu: islands","meaning":"The islands"}
+{"_id":"me_272","code":"ngapohatu","slug":{"mi":"ngapohatu"},"name":{"mi":"Ngāpōhatu"},"components":"ngā: the; pōhatu: rocks","meaning":"The rocks"}
+{"_id":"me_273","code":"ngapuhi","slug":{"mi":"ngapuhi"},"name":{"mi":"Ngāpuhi"},"components":"ngā: the; puhi: plumes","meaning":"The plumes"}
+{"_id":"me_274","code":"ngapuna","slug":{"mi":"ngapuna"},"name":{"mi":"Ngāpuna"},"components":"ngā; the; puna: springs","meaning":"The springs"}
+{"_id":"me_275","code":"ngarimu_bay","slug":{"mi":"ngarimu_bay"},"name":{"mi":"Ngārimu Bay"},"components":"ngā: the; rimu: native tree","meaning":"The rimu trees"}
+{"_id":"me_276","code":"ngaroma","slug":{"mi":"ngaroma"},"name":{"mi":"Ngāroma"},"components":"nga: the; roma: currents","meaning":"The currents"}
+{"_id":"me_277","code":"ngaionui","slug":{"mi":"ngaionui"},"name":{"mi":"Ngaionui"},"components":"ngaio: a native tree; nui: large or many","meaning":"Great ngaio tree"}
+{"_id":"me_278","code":"ngapuke","slug":{"mi":"ngapuke"},"name":{"mi":"Ngāpuke"},"components":"ngā: the; puke: hills","meaning":"The hills"}
+{"_id":"me_279","code":"ngaroto","slug":{"mi":"ngaroto"},"name":{"mi":"Ngāroto"},"components":"ngā: the; roto: lakes","meaning":"The lakes"}
+{"_id":"me_28","code":"awakino","slug":{"mi":"awakino"},"name":{"mi":"Awakino"},"components":"awa: river; kino: bad, evil, or of bad appearance","meaning":"Bad creek"}
+{"_id":"me_280","code":"ngatira","slug":{"mi":"ngatira"},"name":{"mi":"Ngātira"},"components":"ngā; the; tira: parties of travellers","meaning":"The parties of travellers"}
+{"_id":"me_281","code":"ngatuku","slug":{"mi":"ngatuku"},"name":{"mi":"Ngātuku"},"components":"ngā: the; tuku: ridges of a hill","meaning":"The ridges of a hill"}
+{"_id":"me_282","code":"ngauranga","slug":{"mi":"ngauranga"},"name":{"mi":"Ngāūranga"},"components":"ngā: the; ūranga: landing place for canoes","meaning":"The landing place for canoes"}
+{"_id":"me_283","code":"ngaurukehu","slug":{"mi":"ngaurukehu"},"name":{"mi":"Ngāurukehu"},"components":"ngā: the; urukehu: red-haired, fair-skinned Māori","meaning":"The red-haired, fair-skinned Māori"}
+{"_id":"me_284","code":"ngawaka","slug":{"mi":"ngawaka"},"name":{"mi":"Ngāwaka"},"components":"ngā: the; waka: canoes","meaning":"The canoes"}
+{"_id":"me_285","code":"ngawaro","slug":{"mi":"ngawaro"},"name":{"mi":"Ngāwaro"},"components":"ngā: the; waro: burning coals","meaning":"The burning coals"}
+{"_id":"me_286","code":"ngawha","slug":{"mi":"ngawha"},"name":{"mi":"Ngāwhā"},"components":"ngāwhā: hot springs","meaning":"The hot springs"}
+{"_id":"me_287","code":"ngawhatu","slug":{"mi":"ngawhatu"},"name":{"mi":"Ngāwhatu"},"components":"ngā: the; whatu: eyes","meaning":"The eyes"}
+{"_id":"me_288","code":"ngawi","slug":{"mi":"ngawi"},"name":{"mi":"Ngāwī"},"components":"ngā: the; wī: native tussock grass","meaning":"The native tussock grass"}
+{"_id":"me_289","code":"ngutunui","slug":{"mi":"ngutunui"},"name":{"mi":"Ngutunui"},"components":"ngutu: lip; nui: big","meaning":"Big lips"}
+{"_id":"me_29","code":"awamangu","slug":{"mi":"awamangu"},"name":{"mi":"Awamangu"},"components":"awa: river; mangu: black","meaning":"Black river"}
+{"_id":"me_290","code":"nukumania","slug":{"mi":"nukumania"},"name":{"mi":"Nukumānia"},"components":"nuku: wide extent; mānia: plains","meaning":"Wide plains"}
+{"_id":"me_291","code":"nukuroa","slug":{"mi":"nukuroa"},"name":{"mi":"Nukuroa"},"components":"nuku: to move; roa: long","meaning":"Long travles"}
+{"_id":"me_292","code":"oamaru","slug":{"mi":"oamaru"},"name":{"mi":"Ōamaru"},"components":"ō: place; a: of; Maru","meaning":"The place of Maru"}
+{"_id":"me_293","code":"oaonui","slug":{"mi":"oaonui"},"name":{"mi":"Ōaonui"},"components":"ō: place of; ao: clouds: nui: many","meaning":"Place of many clouds"}
+{"_id":"me_294","code":"oaro","slug":{"mi":"oaro"},"name":{"mi":"Ōaro"},"components":"ō: place of; aro: front","meaning":"Front-facing place"}
+{"_id":"me_295","code":"oeo","slug":{"mi":"oeo"},"name":{"mi":"Ōeo"},"components":"ō: place of; eo: louse or lice","meaning":"Place of lice"}
+{"_id":"me_296","code":"ohaeawai","slug":{"mi":"ohaeawai"},"name":{"mi":"Ōhaeawai"},"components":"ō: place of; haeawai: thermal waters","meaning":"Place of thermal waters"}
+{"_id":"me_297","code":"ohakune","slug":{"mi":"ohakune"},"name":{"mi":"Ōhakune"},"components":"ō: place of; hakune: to be careful","meaning":"Place of care"}
+{"_id":"me_298","code":"ohangai","slug":{"mi":"ohangai"},"name":{"mi":"Ōhāngai"},"components":"ō: place of; hāngai: opposite, across, or at right angles","meaning":"Opposite place"}
+{"_id":"me_299","code":"ohau","slug":{"mi":"ohau"},"name":{"mi":"Ōhau"},"components":"ō: place of; Hau","meaning":"Place of Hau"}
+{"_id":"me_3","code":"aotearoa","slug":{"mi":"aotearoa"},"name":{"mi":"Aotearoa"},"components":"ao: cloud; tea: white; roa: long","meaning":"Land of the long white cloud"}
+{"_id":"me_30","code":"awamarino","slug":{"mi":"awamarino"},"name":{"mi":"Awamarino"},"components":"awa: stream; marino: calm","meaning":"Calm stream"}
+{"_id":"me_300","code":"ohauiti","slug":{"mi":"ohauiti"},"name":{"mi":"Ōhauiti"},"components":"ō: place of; hau: wind; iti: little","meaning":"Place of little wind"}
+{"_id":"me_301","code":"ohaupo","slug":{"mi":"ohaupo"},"name":{"mi":"Ōhaupō"},"components":"ō: place of; hau: wind; pō: night","meaning":"Place of a breeze at night"}
+{"_id":"me_302","code":"ohawe","slug":{"mi":"ohawe"},"name":{"mi":"Ōhawe"},"components":"ō: place of; hawe: bend in a river or path","meaning":"Place of many (river) bends"}
+{"_id":"me_303","code":"ohikaiti","slug":{"mi":"ohikaiti"},"name":{"mi":"Ōhikaiti"},"components":"ō: place of; hika: a rite involving certain incantations; iti: small","meaning":"The place of small incantations"}
+{"_id":"me_304","code":"ohikanui","slug":{"mi":"ohikanui"},"name":{"mi":"Ōhikanui"},"components":"ō: place of; hika: a rite involving certain incantations; nui: large","meaning":"The place of large incantations"}
+{"_id":"me_305","code":"ohinekura","slug":{"mi":"ohinekura"},"name":{"mi":"Ōhinekura"},"components":"Named after Hinekura","meaning":"Place of Hinekura"}
+{"_id":"me_306","code":"ohinepanea","slug":{"mi":"ohinepanea"},"name":{"mi":"Ōhinepanea"},"components":"ō: place of; Hinepanea: probably a personal name","meaning":"Place of Hinepanea"}
+{"_id":"me_307","code":"ohinerau","slug":{"mi":"ohinerau"},"name":{"mi":"Ōhinerau"},"components":"ō: place of; Hinerau, the goddess of whirlwinds","meaning":"Place of Hinerau"}
+{"_id":"me_308","code":"ohinerehia","slug":{"mi":"ohinerehia"},"name":{"mi":"Ōhinerehia"},"components":"ō: place of; Hinerehia, a legendary creature or mermaid.","meaning":"Place of Hinerēhia"}
+{"_id":"me_309","code":"ohingahape","slug":{"mi":"ohingahape"},"name":{"mi":"Ōhingahape"},"components":"ō: place of; hinga: fall; hape: crooked foot","meaning":"Place of a slip causing a crooked foot"}
+{"_id":"me_31","code":"awamoana","slug":{"mi":"awamoana"},"name":{"mi":"Awamoana"},"components":"awa: stream; moana: sea","meaning":"Sea stream"}
+{"_id":"me_310","code":"ohiwa","slug":{"mi":"ohiwa"},"name":{"mi":"Ōhiwa"},"components":"ō: place of; hiwa: watchful or alert","meaning":"Place of alertness"}
+{"_id":"me_311","code":"ohoka","slug":{"mi":"ohoka"},"name":{"mi":"Ōhoka"},"components":"ō: place of; hoka: a stake to which a decoy kākā (parrot) was tied. Earlier spelt Hohoka","meaning":"Place of the stake for a decoy parrot"}
+{"_id":"me_312","code":"ohope","slug":{"mi":"ohope"},"name":{"mi":"Ōhope"},"components":"ō: place of; hope (or ope): main body of an army","meaning":"Place of main body of an army"}
+{"_id":"me_313","code":"ohotu","slug":{"mi":"ohotu"},"name":{"mi":"Ōhotu"},"components":"ō: place of; hotu: fifteenth night of the moon","meaning":"Place of fifteenth night of the moon"}
+{"_id":"me_314","code":"ohoukaka","slug":{"mi":"ohoukaka"},"name":{"mi":"Ōhoukākā"},"components":"ō: place of; hou: feather; kākā: parrot","meaning":"Place of the parrot feather"}
+{"_id":"me_315","code":"ohura","slug":{"mi":"ohura"},"name":{"mi":"Ōhura"},"components":"ō: place of; hura: to uncover, or uncovered spot","meaning":"Place which is uncovered"}
+{"_id":"me_316","code":"oihi","slug":{"mi":"oihi"},"name":{"mi":"Ōihi"},"components":"ō: place of; ihi: power or authority","meaning":"Place of spiritual power"}
+{"_id":"me_317","code":"oio","slug":{"mi":"oio"},"name":{"mi":"Ōio"},"components":"ō: place of; io: spur","meaning":"Place of the spur"}
+{"_id":"me_318","code":"okahu","slug":{"mi":"okahu"},"name":{"mi":"Ōkahu"},"components":"ō: place of; Kahu","meaning":"Place of Kahu"}
+{"_id":"me_319","code":"okahukura","slug":{"mi":"okahukura"},"name":{"mi":"Ōkahukura"},"components":"ō: place of; Kahukura: atua related to rainbow","meaning":"Place of Kahukura"}
+{"_id":"me_32","code":"awamoko","slug":{"mi":"awamoko"},"name":{"mi":"Awamoko"},"components":"awa: stream; moko: lizard","meaning":"Lizard stream"}
+{"_id":"me_320","code":"okahutai","slug":{"mi":"okahutai"},"name":{"mi":"Ōkahutai"},"components":"ō: place; kahu: garment; tai: tide","meaning":"Place of cloaking waters"}
+{"_id":"me_321","code":"okaihae","slug":{"mi":"okaihae"},"name":{"mi":"Ōkaihae"},"components":"ō: place of; kai: food; hae: to dislike","meaning":"Place of disliked food"}
+{"_id":"me_322","code":"okaihau","slug":{"mi":"okaihau"},"name":{"mi":"Ōkaihau"},"components":"ō: place of; kai: to eat or food; hau: wind","meaning":"Place of feast of the winds"}
+{"_id":"me_323","code":"okarae","slug":{"mi":"okarae"},"name":{"mi":"Ōkarae"},"components":"ō: place of; karae: a seabird","meaning":"Place of the seabird"}
+{"_id":"me_324","code":"okarahia","slug":{"mi":"okarahia"},"name":{"mi":"Ōkarahia"},"components":"ō: place of; karahia: assistance called for in war, in this case in vain","meaning":"Place of a call for assistance"}
+{"_id":"me_325","code":"okareka","slug":{"mi":"okareka"},"name":{"mi":"Ōkareka"},"components":"ō: food for a long journey; kareka: sweet or tasty","meaning":"Sweet food for a long journey"}
+{"_id":"me_326","code":"okarito","slug":{"mi":"okarito"},"name":{"mi":"Ōkārito"},"components":"ō: place of; karito: young shoots of the bulrush or raupō","meaning":"Place of young shoots of the bulrush"}
+{"_id":"me_327","code":"okataina","slug":{"mi":"okataina"},"name":{"mi":"Ōkataina"},"components":"ō: place of; kataina: laughter","meaning":"Place of laughter"}
+{"_id":"me_328","code":"okato","slug":{"mi":"okato"},"name":{"mi":"Ōkato"},"components":"ō: place of; Kato: a personal name","meaning":"Place of Kato"}
+{"_id":"me_329","code":"okau","slug":{"mi":"okau"},"name":{"mi":"Ōkau"},"components":"ō: place of; kau: to swim","meaning":"Place of swimming"}
+{"_id":"me_33","code":"awanui","slug":{"mi":"awanui"},"name":{"mi":"Awanui"},"components":"awa: river; nui: large","meaning":"Large river"}
+{"_id":"me_330","code":"okauia","slug":{"mi":"okauia"},"name":{"mi":"Ōkauia"},"components":"ō: place of; kauia: articles threaded on string or on a stick","meaning":"Place of articles threaded on a stick"}
+{"_id":"me_331","code":"okawa","slug":{"mi":"okawa"},"name":{"mi":"Ōkawa"},"components":"ō: place of; kawa: bitter","meaning":"Place of bitter (water)"}
+{"_id":"me_332","code":"okehu","slug":{"mi":"okehu"},"name":{"mi":"Ōkehu"},"components":"ō: place of; Kehu: a personal name","meaning":"Place of Kehu"}
+{"_id":"me_333","code":"okere","slug":{"mi":"okere"},"name":{"mi":"Ōkere"},"components":"ō: place of; kere: to drift or float","meaning":"Place of drifting"}
+{"_id":"me_334","code":"okete","slug":{"mi":"okete"},"name":{"mi":"Ōkete"},"components":"ō: place of; kete: basket","meaning":"Place of baskets"}
+{"_id":"me_335","code":"okiato","slug":{"mi":"okiato"},"name":{"mi":"Ōkiato"},"components":"ō: place of; kīato: a receptacle for holding sacred objects","meaning":"Place of receptable for holding sacred objects"}
+{"_id":"me_336","code":"okiwi","slug":{"mi":"okiwi"},"name":{"mi":"Ōkiwi"},"components":"ō: place of; kiwi: native bird","meaning":"Place of the kiwi"}
+{"_id":"me_337","code":"okiwi","slug":{"mi":"okiwi"},"name":{"mi":"Ōkiwi"},"components":"ō: place of; Kiwi","meaning":"Place of Kiwi"}
+{"_id":"me_338","code":"okoki","slug":{"mi":"okoki"},"name":{"mi":"Ōkoki"},"components":"ō: place of; koki: a small canoe","meaning":"Place of a small canoe"}
+{"_id":"me_339","code":"okoroire","slug":{"mi":"okoroire"},"name":{"mi":"Ōkoroire"},"components":"ō: place of; koroire: ring-necked native duck, now extinct","meaning":"Place of the koroire duck"}
+{"_id":"me_34","code":"awapikopiko","slug":{"mi":"awapikopiko"},"name":{"mi":"Awapikopiko"},"components":"awa: stream; pikopiko: winding about","meaning":"Winding stream"}
+{"_id":"me_340","code":"okotuku","slug":{"mi":"okotuku"},"name":{"mi":"Ōkōtuku"},"components":"ō: place of; kōtuku: white heron","meaning":"Place of the white heron"}
+{"_id":"me_341","code":"okupu","slug":{"mi":"okupu"},"name":{"mi":"Ōkupu"},"components":"ō: place of; kupu: message","meaning":"Place of a message"}
+{"_id":"me_342","code":"okura","slug":{"mi":"okura"},"name":{"mi":"Ōkura"},"components":"ō: place; kura: red","meaning":"Place of red (clay)"}
+{"_id":"me_343","code":"okuri","slug":{"mi":"okuri"},"name":{"mi":"Ōkuri"},"components":"ō: place of; kurī: Polynesian dog","meaning":"Place of the Polynesian dog"}
+{"_id":"me_344","code":"omaha","slug":{"mi":"omaha"},"name":{"mi":"Ōmaha"},"components":"ō: place of; maha: pleasure","meaning":"Place of pleasure"}
+{"_id":"me_345","code":"omahu","slug":{"mi":"omahu"},"name":{"mi":"Ōmahu"},"components":"ō: place of; ō: provisions for a travelling party; Mahu: a personal name","meaning":"The place where Mahu ran out of food."}
+{"_id":"me_346","code":"omaio","slug":{"mi":"omaio"},"name":{"mi":"Ōmāio"},"components":"ō: place of; māio: calm","meaning":"Place of calm"}
+{"_id":"me_347","code":"omaka","slug":{"mi":"omaka"},"name":{"mi":"Ōmaka"},"components":"ō: place of; maka: South island form of manga (stream)","meaning":"Place of the stream"}
+{"_id":"me_348","code":"omakau","slug":{"mi":"omakau"},"name":{"mi":"Ōmakau"},"components":"ō: place of; makau: spouse","meaning":"Belonging to husband and wife"}
+{"_id":"me_349","code":"omakere","slug":{"mi":"omakere"},"name":{"mi":"Ōmakere"},"components":"ō: place of; makere: to be lost, abandoned or to die","meaning":"Place of abandonment"}
+{"_id":"me_35","code":"awapuni","slug":{"mi":"awapuni"},"name":{"mi":"Awapuni"},"components":"awa: stream; puni: blocked up","meaning":"Blocked-up river"}
+{"_id":"me_350","code":"omamari","slug":{"mi":"omamari"},"name":{"mi":"Ōmāmari"},"components":"ō: place of; Māmari: a famous canoe that come from Hawaiki.","meaning":"Place of Māmari canoe"}
+{"_id":"me_351","code":"omana","slug":{"mi":"omana"},"name":{"mi":"Ōmana"},"components":"ō: place of; Mana: a personal name","meaning":"Place of Mana"}
+{"_id":"me_352","code":"omanaia","slug":{"mi":"omanaia"},"name":{"mi":"Ōmanaia"},"components":"ō: place of; Manaia: a personal name","meaning":"Place of Manaia"}
+{"_id":"me_353","code":"omanawa","slug":{"mi":"omanawa"},"name":{"mi":"Ōmanawa"},"components":"ō: place of; Manawa: a personal name","meaning":"Place of Manawa"}
+{"_id":"me_354","code":"omanawanui","slug":{"mi":"omanawanui"},"name":{"mi":"Ōmanawanui"},"components":"ō: place of; manawanui: stout-hearted, long-suffering or forbearing","meaning":"Place of unswerving dedication"}
+{"_id":"me_355","code":"omapere","slug":{"mi":"omapere"},"name":{"mi":"Ōmāpere"},"components":"ō: place of; māpere: cutty grass","meaning":"Place of cutty grass"}
+{"_id":"me_356","code":"omarama","slug":{"mi":"omarama"},"name":{"mi":"Ōmarama"},"components":"ō: place of; Marama: a personal name","meaning":"Place of Marama"}
+{"_id":"me_357","code":"omaru","slug":{"mi":"omaru"},"name":{"mi":"Ōmaru"},"components":"ō: place of; maru: shelter","meaning":"Place of shelter"}
+{"_id":"me_358","code":"omarumutu","slug":{"mi":"omarumutu"},"name":{"mi":"Ōmarumutu"},"components":"ō: place of; maru: shade or shelter; mutu: cut off or terminated","meaning":"Place of cut-off shelter"}
+{"_id":"me_359","code":"omarunui","slug":{"mi":"omarunui"},"name":{"mi":"Ōmarunui"},"components":"ō: place of; maru: shade; nui: great or much","meaning":"Place of great shade"}
+{"_id":"me_36","code":"awarere","slug":{"mi":"awarere"},"name":{"mi":"Awarere"},"components":"awa: stream; rere: to flow","meaning":"Flowing stream"}
+{"_id":"me_360","code":"omarupapaku","slug":{"mi":"omarupapaku"},"name":{"mi":"Ōmarupāpaku"},"components":"ō: place of; maru: shade; pāpaku: shallow","meaning":"Place of shallow shade"}
+{"_id":"me_361","code":"omaui","slug":{"mi":"omaui"},"name":{"mi":"Ōmaui"},"components":"ō: place of; Māui","meaning":"Place of Māui"}
+{"_id":"me_362","code":"omihi","slug":{"mi":"omihi"},"name":{"mi":"Ōmihi"},"components":"ō: place of; mihi: greeting; also possibly wailing or lamentation","meaning":"Place of greeting"}
+{"_id":"me_363","code":"omimi","slug":{"mi":"omimi"},"name":{"mi":"Ōmimi"},"components":"ō: place o; mimi: urine","meaning":"Place of urine"}
+{"_id":"me_364","code":"omoana","slug":{"mi":"omoana"},"name":{"mi":"Ōmoana"},"components":"ō: place of; moana: ocean","meaning":"Place of the sea"}
+{"_id":"me_365","code":"omoeroa","slug":{"mi":"omoeroa"},"name":{"mi":"Ōmoeroa"},"components":"ō: place of; moe: sleep; roa: long","meaning":"Place of the long sleep"}
+{"_id":"me_366","code":"onaeroa","slug":{"mi":"onaeroa"},"name":{"mi":"Ōnaeroa"},"components":"ō: place of; naeroa: mosquitoes","meaning":"Place of mosquitoes"}
+{"_id":"me_367","code":"onawe","slug":{"mi":"onawe"},"name":{"mi":"Ōnawe"},"components":"ō: place of; nawe: to set on fire","meaning":"Place of arson"}
+{"_id":"me_368","code":"onehunga","slug":{"mi":"onehunga"},"name":{"mi":"Ōnehunga"},"components":"ō: place of; nehunga: burial","meaning":"Place of burial"}
+{"_id":"me_369","code":"onekaka","slug":{"mi":"onekaka"},"name":{"mi":"Ōnekakā"},"components":"one: sand; kākā: hot","meaning":"Hot sand"}
+{"_id":"me_37","code":"awariki","slug":{"mi":"awariki"},"name":{"mi":"Awariki"},"components":"awa: river; riki: small","meaning":"Little river"}
+{"_id":"me_370","code":"onekawa","slug":{"mi":"onekawa"},"name":{"mi":"Onekawa"},"components":"one: sand; kawa: bitter or sour","meaning":"Salty soil"}
+{"_id":"me_371","code":"onekeneke","slug":{"mi":"onekeneke"},"name":{"mi":"Ōnekeneke"},"components":"ō: place of; nekeneke: to move gradually","meaning":"Place of movement"}
+{"_id":"me_372","code":"onemaewao","slug":{"mi":"onemaewao"},"name":{"mi":"Onemaewao"},"components":"one: sand; Maewao: fairy-like beings","meaning":"Place of the Maewao (fairy-like beings)"}
+{"_id":"me_373","code":"oneone","slug":{"mi":"oneone"},"name":{"mi":"Oneone"},"components":"oneone: earth, soil","meaning":"Earth"}
+{"_id":"me_374","code":"onepoto","slug":{"mi":"onepoto"},"name":{"mi":"Onepoto"},"components":"one: beach; poto: short","meaning":"Short beach"}
+{"_id":"me_375","code":"onepu","slug":{"mi":"onepu"},"name":{"mi":"Onepū"},"components":"one: sand; pū: loose","meaning":"Loose sandy soil"}
+{"_id":"me_376","code":"onepunui","slug":{"mi":"onepunui"},"name":{"mi":"Onepunui"},"components":"one: sand; pupuni: covered, fill up","meaning":"Extensive sand dune"}
+{"_id":"me_377","code":"onerahi","slug":{"mi":"onerahi"},"name":{"mi":"Onerahi"},"components":"one: beach; rahi: long or wide","meaning":"Long beach"}
+{"_id":"me_378","code":"oneriri","slug":{"mi":"oneriri"},"name":{"mi":"Oneriri"},"components":"one: beach; riri: combat, battle, fight, to quarrel or be angry","meaning":"Battle beach"}
+{"_id":"me_379","code":"oneroa","slug":{"mi":"oneroa"},"name":{"mi":"Oneroa"},"components":"one: sand or beach; roa: long","meaning":"Long beach"}
+{"_id":"me_38","code":"awaroa","slug":{"mi":"awaroa"},"name":{"mi":"Awaroa"},"components":"awa: river or valley; roa: long","meaning":"Long river"}
+{"_id":"me_380","code":"onetahua","slug":{"mi":"onetahua"},"name":{"mi":"Onetahua"},"components":"one: sand; tahua: heaped up","meaning":"Heaped-up sand (sand dunes)"}
+{"_id":"me_381","code":"onetangi","slug":{"mi":"onetangi"},"name":{"mi":"Onetangi"},"components":"one: sandy beach; tangi: to weep or to sound","meaning":"Beach of weeping"}
+{"_id":"me_382","code":"onetapu","slug":{"mi":"onetapu"},"name":{"mi":"Onetapu"},"components":"one: sand or in this case, desert; tapu: sacred or forbidden","meaning":"Sacred desert"}
+{"_id":"me_383","code":"onetea","slug":{"mi":"onetea"},"name":{"mi":"Onetea"},"components":"one: sandy soil; tea: light-coloured","meaning":"Light soil"}
+{"_id":"me_384","code":"onewhero","slug":{"mi":"onewhero"},"name":{"mi":"Onewhero"},"components":"one: soil; whero: red","meaning":"Red soil"}
+{"_id":"me_385","code":"ongaroto","slug":{"mi":"ongaroto"},"name":{"mi":"Ōngāroto"},"components":"ō: place of; ngā: the; roto: lakes","meaning":"Place of the lakes"}
+{"_id":"me_386","code":"ongaruanuku","slug":{"mi":"ongaruanuku"},"name":{"mi":"Ōngāruānuku"},"components":"ō: place; ngā; the; ruānuku: learned people","meaning":"Place of the learned people"}
+{"_id":"me_387","code":"ongarue","slug":{"mi":"ongarue"},"name":{"mi":"Ōngarue"},"components":"ō: place of; ngarue: to shake, as in an earthquake","meaning":"Place of shaking"}
+{"_id":"me_388","code":"ongatoro","slug":{"mi":"ongatoro"},"name":{"mi":"Ōngātoro"},"components":"ō: place of; Ngātoro: personal name","meaning":"The place of Ngātoro"}
+{"_id":"me_389","code":"onoke","slug":{"mi":"onoke"},"name":{"mi":"Ōnoke"},"components":"ō: place of; noke: earthworm","meaning":"Place of earthworms"}
+{"_id":"me_39","code":"awarua","slug":{"mi":"awarua"},"name":{"mi":"Awarua"},"components":"awa: stream or river; rua: two","meaning":"Two streams"}
+{"_id":"me_390","code":"onuku","slug":{"mi":"onuku"},"name":{"mi":"Ōnuku"},"components":"ō: place of; nuku: food for a journey","meaning":"Place of Nuku"}
+{"_id":"me_391","code":"opaheke","slug":{"mi":"opaheke"},"name":{"mi":"Ōpaheke"},"components":"ō: place of; paheke: slip or landslide","meaning":"Place of a landslide"}
+{"_id":"me_392","code":"opaki","slug":{"mi":"opaki"},"name":{"mi":"Ōpaki"},"components":"ō: place of; paki: fine weather","meaning":"Place of fine weather"}
+{"_id":"me_393","code":"opaku","slug":{"mi":"opaku"},"name":{"mi":"Ōpakū"},"components":"ō: place of; pakū: to make a sudden sound or report, to resound or to knock","meaning":"Place of sudden noise"}
+{"_id":"me_394","code":"opanuku","slug":{"mi":"opanuku"},"name":{"mi":"Ōpanuku"},"components":"ō: place of; Panuku: a personal name","meaning":"Place of Panuku"}
+{"_id":"me_395","code":"opapa","slug":{"mi":"opapa"},"name":{"mi":"Ōpapa"},"components":"ō: place of; papa: flat land","meaning":"Place of flat land"}
+{"_id":"me_396","code":"opara","slug":{"mi":"opara"},"name":{"mi":"Ōpara"},"components":"ō: place of; para: mud or dust, or a place where sacred ceremonies were performed","meaning":"Place of mud"}
+{"_id":"me_397","code":"oparara","slug":{"mi":"oparara"},"name":{"mi":"Ōpararā"},"components":"ō: place of; parara: to lie open towards","meaning":"A place which lies open (to the Tasman Sea)"}
+{"_id":"me_398","code":"oparau","slug":{"mi":"oparau"},"name":{"mi":"Ōparau"},"components":"ō: place of; pa: fortified villages; rau: many; or parau: dissembling or falsehood","meaning":"Place of many fortified villages; or Place of falsehood"}
+{"_id":"me_399","code":"oparure","slug":{"mi":"oparure"},"name":{"mi":"Ōpārure"},"components":"ō: place of; pārure: to plunder","meaning":"Place of plunder"}
+{"_id":"me_4","code":"aramoana","slug":{"mi":"aramoana"},"name":{"mi":"Aramoana"},"components":"ara: path; moana: sea","meaning":"Sea pathway"}
+{"_id":"me_40","code":"awatere","slug":{"mi":"awatere"},"name":{"mi":"Awatere"},"components":"awa: river; tere: swift","meaning":"Swift river"}
+{"_id":"me_400","code":"opepe","slug":{"mi":"opepe"},"name":{"mi":"Ōpepe"},"components":"ō: place of; pepe: moth","meaning":"Place of the moth"}
+{"_id":"me_401","code":"opihi","slug":{"mi":"opihi"},"name":{"mi":"Ōpihi"},"components":"ō: place of; pihi: springing up (referring to plants)","meaning":"Place of springing-up (plants)"}
+{"_id":"me_402","code":"opiki","slug":{"mi":"opiki"},"name":{"mi":"Ōpiki"},"components":"ō: place of; piki: to climb or ascend","meaning":"Place of climbing"}
+{"_id":"me_403","code":"opito","slug":{"mi":"opito"},"name":{"mi":"Ōpito"},"components":"ō: place of; pito: umbilical cord","meaning":"Place of umbilical cords"}
+{"_id":"me_404","code":"opoe","slug":{"mi":"opoe"},"name":{"mi":"Ōpoe"},"components":"ō: place of; Poe","meaning":"Place of Poe"}
+{"_id":"me_405","code":"opoho","slug":{"mi":"opoho"},"name":{"mi":"Ōpoho"},"components":"ō: place of; Poho","meaning":"Place of Poho"}
+{"_id":"me_406","code":"opononi","slug":{"mi":"opononi"},"name":{"mi":"Ōpononi"},"components":"ō: place of; pou: post; noni: crooked","meaning":"Place of crooked fishing post"}
+{"_id":"me_407","code":"opouri","slug":{"mi":"opouri"},"name":{"mi":"Ōpōuri"},"components":"ō: place of; pōuri: sadness","meaning":"Place of sadness"}
+{"_id":"me_408","code":"opoutama","slug":{"mi":"opoutama"},"name":{"mi":"Ōpoutama"},"components":"ō: place of; poutama: pattern on the tukutuku panels of a whare","meaning":"Place of the poutama pattern"}
+{"_id":"me_409","code":"opoutere","slug":{"mi":"opoutere"},"name":{"mi":"Ōpoutere"},"components":"ō: place of; pou: pour out; tere: quickly","meaning":"The place (where the sea-waters) swiftly empty out"}
+{"_id":"me_41","code":"awatoitoi","slug":{"mi":"awatoitoi"},"name":{"mi":"Awatoitoi"},"components":"awa: stream; toitoi: giant bully","meaning":"Giant bully stream"}
+{"_id":"me_410","code":"opua","slug":{"mi":"opua"},"name":{"mi":"Ōpua"},"components":"ō: place of; pua: flower","meaning":"Place of the flower"}
+{"_id":"me_411","code":"opuke","slug":{"mi":"opuke"},"name":{"mi":"Ōpuke"},"components":"ō: place of; puke: hill","meaning":"Place of the hill"}
+{"_id":"me_412","code":"orakau","slug":{"mi":"orakau"},"name":{"mi":"Ōrākau"},"components":"ō: place of; rakau: trees","meaning":"Place of trees"}
+{"_id":"me_413","code":"orakei","slug":{"mi":"orakei"},"name":{"mi":"Ōrākei"},"components":"ō: place of; rākei: adornment","meaning":"Place of adornment"}
+{"_id":"me_414","code":"orakei_korako","slug":{"mi":"orakei_korako"},"name":{"mi":"Ōrakei Kōrako"},"components":"ō: place of; rakei: adornment; kōrako: white","meaning":"Place of adornment near the white (sinter flat)"}
+{"_id":"me_415","code":"oranga","slug":{"mi":"oranga"},"name":{"mi":"Ōranga"},"components":"ō: place of; ranga: rising ground, hill, sandbank, or fishing ground","meaning":"Place of rising ground"}
+{"_id":"me_416","code":"orari","slug":{"mi":"orari"},"name":{"mi":"Ōrarī"},"components":"ō: place of; rarī: butterfish","meaning":"Place of the butterfish"}
+{"_id":"me_417","code":"oratia","slug":{"mi":"oratia"},"name":{"mi":"Ōrātia"},"components":"ō: place of; ra: sun; tia: persistency","meaning":"Place of long-lingering sun"}
+{"_id":"me_418","code":"orere","slug":{"mi":"orere"},"name":{"mi":"Ōrere"},"components":"ō: place of; rere: waterfall","meaning":"Place of the waterfall"}
+{"_id":"me_419","code":"oreti","slug":{"mi":"oreti"},"name":{"mi":"Ōreti"},"components":"ō: place of; reti: snare","meaning":"Place of the snare"}
+{"_id":"me_42","code":"awatoto","slug":{"mi":"awatoto"},"name":{"mi":"Awatōtō"},"components":"awa: stream; tōtō: hauling place","meaning":"Stream for hauling (canoes)"}
+{"_id":"me_420","code":"oringi","slug":{"mi":"oringi"},"name":{"mi":"Ōringi"},"components":"ō: place of; Ringi","meaning":"Place of Ringi"}
+{"_id":"me_421","code":"orongo","slug":{"mi":"orongo"},"name":{"mi":"Ōrongo"},"components":"ō: place of; rongo: listening-post","meaning":"Place of the listening post"}
+{"_id":"me_422","code":"orongorongo","slug":{"mi":"orongorongo"},"name":{"mi":"Ōrongorongo"},"components":"o: of; rongorongo: a woman’s name","meaning":"Place of Rongorongo"}
+{"_id":"me_423","code":"oropi","slug":{"mi":"oropi"},"name":{"mi":"Ōropi"},"components":"ō: place of; ropi: to cover up","meaning":"Place of covering up"}
+{"_id":"me_424","code":"oroua","slug":{"mi":"oroua"},"name":{"mi":"Ōroua"},"components":"ō: place of; roua: dredging for shellfish","meaning":"Place of dredging for shellfish"}
+{"_id":"me_425","code":"oruaiti","slug":{"mi":"oruaiti"},"name":{"mi":"Ōruaiti"},"components":"ō: place of; rua: pit; iti: small","meaning":"Place of small pit"}
+{"_id":"me_426","code":"oruanui","slug":{"mi":"oruanui"},"name":{"mi":"Ōruanui"},"components":"ō: place of; rua: pit; nui: large or many","meaning":"Place of many pits"}
+{"_id":"me_427","code":"oruawairua","slug":{"mi":"oruawairua"},"name":{"mi":"Ōruawairua"},"components":"ō: place of; rua: two; wairua: soul or spirit","meaning":"Meeting-place of spirits"}
+{"_id":"me_428","code":"oruawharo","slug":{"mi":"oruawharo"},"name":{"mi":"Ōruawharo"},"components":"ō: place of; rua: hole or pit; whārō: stretched out in full length","meaning":"Place of stretched-out pit"}
+{"_id":"me_429","code":"oruawharo","slug":{"mi":"oruawharo"},"name":{"mi":"Ōruawharo"},"components":"ō: place of; Ruawharo: a personal name","meaning":"Place of Ruawharo"}
+{"_id":"me_43","code":"awatuna","slug":{"mi":"awatuna"},"name":{"mi":"Awatuna"},"components":"awa: stream; tuna: eel","meaning":"Eel stream"}
+{"_id":"me_430","code":"orukuwai","slug":{"mi":"orukuwai"},"name":{"mi":"Ōrukuwai"},"components":"ō: place of; Rukuwai: a personal name","meaning":"Place of Rukuwai"}
+{"_id":"me_431","code":"oruru","slug":{"mi":"oruru"},"name":{"mi":"Ōruru"},"components":"ō: place of; ruru: morepork","meaning":"Place of the morepork"}
+{"_id":"me_432","code":"orurutumaro","slug":{"mi":"orurutumaro"},"name":{"mi":"Ōrurutūmārō"},"components":"ō: place of; ruru: morepork; tū: stand; mārō: firm","meaning":"Place of the unmoving morepork"}
+{"_id":"me_433","code":"otahei","slug":{"mi":"otahei"},"name":{"mi":"Ōtāhei"},"components":"ō: place of; tāhei: a bird snare","meaning":"Place of the bird snare"}
+{"_id":"me_434","code":"otahu","slug":{"mi":"otahu"},"name":{"mi":"Ōtahu"},"components":"ō: place of; Tahu: a personal name","meaning":"Place of Tahu"}
+{"_id":"me_435","code":"otahuhu","slug":{"mi":"otahuhu"},"name":{"mi":"Ōtāhūhū"},"components":"ō: place of tāhūhū: ridgepole of a house","meaning":"Place of the ridgepole of a house"}
+{"_id":"me_436","code":"otaihanga","slug":{"mi":"otaihanga"},"name":{"mi":"Ōtaihanga"},"components":"ō: place of: Taihanga: a personal name","meaning":"Place of Taihanga"}
+{"_id":"me_437","code":"otaika","slug":{"mi":"otaika"},"name":{"mi":"Ōtāika"},"components":"ō: place of; tāika: to lie in a heap","meaning":"Place of lying in a heap"}
+{"_id":"me_438","code":"otakapuneke","slug":{"mi":"otakapuneke"},"name":{"mi":"Ōtakapuneke"},"components":"ō: place of; Takapuneke: a personal name","meaning":"Place of Takapuneke"}
+{"_id":"me_439","code":"otakaro","slug":{"mi":"otakaro"},"name":{"mi":"Ōtakaro"},"components":"ō: place of; Takaro: a personal name","meaning":"Place of Takaro"}
+{"_id":"me_44","code":"eketahuna","slug":{"mi":"eketahuna"},"name":{"mi":"Eketāhuna"},"components":"eke: run aground or land; tāhuna: sandbank","meaning":"Land on the sandbank"}
+{"_id":"me_440","code":"otakeho","slug":{"mi":"otakeho"},"name":{"mi":"Ōtakeho"},"components":"ō: place of; Takeho: a personal name","meaning":"Place of Takeho"}
+{"_id":"me_441","code":"otaki","slug":{"mi":"otaki"},"name":{"mi":"Ōtaki"},"components":"ō: place of; taki: stick in","meaning":"Place of sticking a staff into the ground"}
+{"_id":"me_442","code":"otakiri","slug":{"mi":"otakiri"},"name":{"mi":"Ōtākiri"},"components":"ō: place of; tākiri: loosening or making free from tapu","meaning":"Place of loosening or freeing from tapu"}
+{"_id":"me_443","code":"otakou","slug":{"mi":"otakou"},"name":{"mi":"Ōtakou"},"components":"ō: place of; tākou: red ochre","meaning":"Place of red ochre; or place of Tākou"}
+{"_id":"me_444","code":"otama","slug":{"mi":"otama"},"name":{"mi":"Ōtama"},"components":"ō: place of; Tama: a personal name","meaning":"Place of Tama"}
+{"_id":"me_445","code":"otamakura","slug":{"mi":"otamakura"},"name":{"mi":"Ōtamakura"},"components":"ō: place of; tama: son; kura: ornamented with red feathers","meaning":"Place of boy ornamented with red feathers"}
+{"_id":"me_446","code":"otamarakau","slug":{"mi":"otamarakau"},"name":{"mi":"Ōtamarākau"},"components":"ō: place of; tama: young men; rākau: weapons","meaning":"Place of young warriors"}
+{"_id":"me_447","code":"otamarau","slug":{"mi":"otamarau"},"name":{"mi":"Ōtamarau"},"components":"ō: place of; Tamarau: a personal name","meaning":"Place of Tamarau"}
+{"_id":"me_448","code":"otamatea","slug":{"mi":"otamatea"},"name":{"mi":"Ōtamatea"},"components":"ō: place of; Tamatea: a personal name","meaning":"Place of Tamatea"}
+{"_id":"me_449","code":"otane","slug":{"mi":"otane"},"name":{"mi":"Ōtāne"},"components":"ō: place of; tāne: man","meaning":"Place of a man"}
+{"_id":"me_45","code":"epiha","slug":{"mi":"epiha"},"name":{"mi":"Epiha"},"components":"Māori form of biblical name Ephesus","meaning":"Ephesus"}
+{"_id":"me_450","code":"otangarei","slug":{"mi":"otangarei"},"name":{"mi":"Ōtāngarei"},"components":"ō: place of; tanga: row or company of people; rei: leaping","meaning":"Place of group of people leaping"}
+{"_id":"me_451","code":"otangaroa","slug":{"mi":"otangaroa"},"name":{"mi":"Ōtangaroa"},"components":"ō: place of; Tangaroa: a personal name, or the god of the ocean","meaning":"Place of Tangaroa"}
+{"_id":"me_452","code":"otangihaku","slug":{"mi":"otangihaku"},"name":{"mi":"Ōtangihaku"},"components":"ō: place of; tangi: to sound or weep; haku: to murmur","meaning":"Place of murmured weeping"}
+{"_id":"me_453","code":"otangimoana","slug":{"mi":"otangimoana"},"name":{"mi":"Ōtangimoana"},"components":"ō: place of; tangi: weeping; moana: waters","meaning":"Place of weeping waters"}
+{"_id":"me_454","code":"otangiwai","slug":{"mi":"otangiwai"},"name":{"mi":"Ōtangiwai"},"components":"ō: place of; tangi: weeping; wai: waters","meaning":"Place of weeping waters"}
+{"_id":"me_455","code":"otapara","slug":{"mi":"otapara"},"name":{"mi":"Ōtāpara"},"components":"ō: place of; tāpara: desire, or wooden digging implement","meaning":"Place of digging implement"}
+{"_id":"me_456","code":"otapiri","slug":{"mi":"otapiri"},"name":{"mi":"Ōtāpiri"},"components":"ō: place of; tapiri: a vigorous shoot growing beside the main stem of a plant","meaning":"Place of vigorous growing shoot"}
+{"_id":"me_457","code":"otara","slug":{"mi":"otara"},"name":{"mi":"Ōtara"},"components":"ō: place of; tara: peak","meaning":"Place of the peak"}
+{"_id":"me_458","code":"otara","slug":{"mi":"otara"},"name":{"mi":"Ōtara"},"components":"ō: place of; Tara: a personal name","meaning":"Place of Tara"}
+{"_id":"me_459","code":"otaraia","slug":{"mi":"otaraia"},"name":{"mi":"Ōtaraia"},"components":"ō: place of; Taraia: a personal name","meaning":"Place of Taraia"}
+{"_id":"me_46","code":"erua","slug":{"mi":"erua"},"name":{"mi":"Erua"},"components":"e: used before cardinal numbers from two to nine; rua: two","meaning":"Two"}
+{"_id":"me_460","code":"otaranga","slug":{"mi":"otaranga"},"name":{"mi":"Ōtaranga"},"components":"ō: place of; taranga: separation","meaning":"Place of separation"}
+{"_id":"me_461","code":"otatara","slug":{"mi":"otatara"},"name":{"mi":"Ōtatara"},"components":"ō: place of; tatara: to untie or loosen","meaning":"Place of loosening"}
+{"_id":"me_462","code":"otauaki","slug":{"mi":"otauaki"},"name":{"mi":"Ōtauaki"},"components":"ō: place of; tauaki: to show or expose","meaning":"Place of exposure"}
+{"_id":"me_463","code":"otautau","slug":{"mi":"otautau"},"name":{"mi":"Ōtautau"},"components":"ō: place of; tautau: greenstone ear pendant with a straight shank curved at the lower end","meaning":"Place of ear pendant"}
+{"_id":"me_464","code":"otawewe","slug":{"mi":"otawewe"},"name":{"mi":"Ōtāwēwē"},"components":"ō: place of: tāwēwē: weighted net","meaning":"Place of a weighted net"}
+{"_id":"me_465","code":"otawhao","slug":{"mi":"otawhao"},"name":{"mi":"Ōtāwhao"},"components":"ō: place of; tāwhao: fragments, refuse or brushwood","meaning":"Place of brushwood scrub"}
+{"_id":"me_466","code":"otehei","slug":{"mi":"otehei"},"name":{"mi":"Ōtehei"},"components":"ō: place of; te: the; hei: neck ornament","meaning":"Place of the neck ornament"}
+{"_id":"me_467","code":"otehiwai","slug":{"mi":"otehiwai"},"name":{"mi":"Ōtehīwai"},"components":"ō: place of; te: the; hīwai: springing up","meaning":"Place of springing up of water"}
+{"_id":"me_468","code":"otekura","slug":{"mi":"otekura"},"name":{"mi":"Ōtekura"},"components":"ō: place of; te: the; kura: red feather","meaning":"Place of the red feather"}
+{"_id":"me_469","code":"otepopo","slug":{"mi":"otepopo"},"name":{"mi":"Ōtepopo"},"components":"ō: place of; te: the; popo: decayed wood","meaning":"Place of the decayed wood"}
+{"_id":"me_47","code":"hapua-waikawa","slug":{"mi":"hapua-waikawa"},"name":{"mi":"Hāpua-waikawa"},"components":"hāpua: pool; wai: water; kawa: bitter","meaning":"Pool of bitter water"}
+{"_id":"me_470","code":"otipua","slug":{"mi":"otipua"},"name":{"mi":"Ōtipua"},"components":"ō: place of; tipua: enchanted object or person","meaning":"Place of supernatural creature"}
+{"_id":"me_471","code":"otiria","slug":{"mi":"otiria"},"name":{"mi":"Ōtiria"},"components":"ō: place of; tiria: to be planted","meaning":"Place of planting"}
+{"_id":"me_472","code":"otiwha","slug":{"mi":"otiwha"},"name":{"mi":"Ōtiwhā"},"components":"ō: place of: tiwhā: a patch of shell or wood to cover a hole in a kelp bag","meaning":"Place of patch"}
+{"_id":"me_473","code":"otoatahi","slug":{"mi":"otoatahi"},"name":{"mi":"Ōtoatahi"},"components":"ō: place of; toa: warrior; tahi: one","meaning":"Place of a single warrior"}
+{"_id":"me_474","code":"otohi","slug":{"mi":"otohi"},"name":{"mi":"Ōtohi"},"components":"ō: place of; tohi: ritual ceremony","meaning":"Place of ceremony"}
+{"_id":"me_475","code":"otoko","slug":{"mi":"otoko"},"name":{"mi":"Ōtoko"},"components":"ō: place of; toko: stick or staff","meaning":"Place of the staff"}
+{"_id":"me_476","code":"otonga","slug":{"mi":"otonga"},"name":{"mi":"Ōtonga"},"components":"ō: place of; tonga: south, or south wind","meaning":"Place of the south wind"}
+{"_id":"me_477","code":"otoroa","slug":{"mi":"otoroa"},"name":{"mi":"Ōtoroa"},"components":"ō: place of; toroa: albatross","meaning":"Place of the albatross"}
+{"_id":"me_478","code":"otukapuarangai","slug":{"mi":"otukapuarangai"},"name":{"mi":"Ōtūkapuarangai"},"components":"ō: place of; tu: to stand; kapua: cloud; rangi: sky","meaning":"Place of the standing cloud in the sky"}
+{"_id":"me_479","code":"otumatua","slug":{"mi":"otumatua"},"name":{"mi":"Ōtūmatua"},"components":"o: place of; tū: stand; matua: parent","meaning":"Where the elder stands"}
+{"_id":"me_48","code":"haumoana","slug":{"mi":"haumoana"},"name":{"mi":"Haumoana"},"components":"hau: wind; moana: sea","meaning":"Sea breeze"}
+{"_id":"me_480","code":"otumoetai","slug":{"mi":"otumoetai"},"name":{"mi":"Ōtūmoetai"},"components":"ō: place of; tu: to stand; moe: to sleep; tai: tide","meaning":"Place where the tide stands still as if asleep"}
+{"_id":"me_481","code":"otupaopao","slug":{"mi":"otupaopao"},"name":{"mi":"Ōtūpaopao"},"components":"ō: place of; tū: to stand; paopao: to break by repeated strokes","meaning":"Place of standing and breaking"}
+{"_id":"me_482","code":"oturaki","slug":{"mi":"oturaki"},"name":{"mi":"Ōtūraki"},"components":"ō: place of; tū: to stand; raki (rangi): sky","meaning":"Place of standing in the sky"}
+{"_id":"me_483","code":"oturehua","slug":{"mi":"oturehua"},"name":{"mi":"Ōtūrēhua"},"components":"ō: place of; tū: to stand; Rēhua: the star Antares","meaning":"Place where the summer star stands still"}
+{"_id":"me_484","code":"oturoto","slug":{"mi":"oturoto"},"name":{"mi":"Ōturoto"},"components":"ō: place of; Turoto: a personal name","meaning":"Place of Turoto"}
+{"_id":"me_485","code":"oturu","slug":{"mi":"oturu"},"name":{"mi":"Ōtūru"},"components":"ō: place of; Turu: a personal name","meaning":"Place of Turu"}
+{"_id":"me_486","code":"oue","slug":{"mi":"oue"},"name":{"mi":"Ōue"},"components":"ō: place of; Ue: a personal name","meaning":"Place of Ue"}
+{"_id":"me_487","code":"oueroa","slug":{"mi":"oueroa"},"name":{"mi":"Ōueroa"},"components":"ō: place of; ue: species of flax; roa: long","meaning":"Place of long flax"}
+{"_id":"me_488","code":"oui","slug":{"mi":"oui"},"name":{"mi":"Ōui"},"components":"ō: place of; ui: to ask","meaning":"Place of questioning"}
+{"_id":"me_489","code":"ouruhia","slug":{"mi":"ouruhia"},"name":{"mi":"Ōuruhia"},"components":"ō: place of; uruhia: to be attacked","meaning":"Place of being attacked"}
+{"_id":"me_49","code":"haunui","slug":{"mi":"haunui"},"name":{"mi":"Haunui"},"components":"hau: wind; nui: big or many","meaning":"Strong wind"}
+{"_id":"me_490","code":"owahanga","slug":{"mi":"owahanga"},"name":{"mi":"Ōwahanga"},"components":"ō: place of; wahanga: burden","meaning":"Place of burden"}
+{"_id":"me_491","code":"owairaka","slug":{"mi":"owairaka"},"name":{"mi":"Ōwairaka"},"components":"ō: place of; Wairaka, a chieftainess of repute","meaning":"Place of Wairaka"}
+{"_id":"me_492","code":"owairaka","slug":{"mi":"owairaka"},"name":{"mi":"Ōwairaka"},"components":"ō: place of; wai: stream; Raka: an ancestor","meaning":"Place of the stream of Raka"}
+{"_id":"me_493","code":"owaka","slug":{"mi":"owaka"},"name":{"mi":"Ōwaka"},"components":"ō: place of; waka: canoe or wooden trough","meaning":"Place of a canoe"}
+{"_id":"me_494","code":"oweka","slug":{"mi":"oweka"},"name":{"mi":"Ōweka"},"components":"ō: place of; weka: wood-hen","meaning":"Place of the weka"}
+{"_id":"me_495","code":"owhango","slug":{"mi":"owhango"},"name":{"mi":"Ōwhango"},"components":"ō: place of; whango: hoarse voice or wheezy sound","meaning":"Place of wheezy noises"}
+{"_id":"me_496","code":"owhata","slug":{"mi":"owhata"},"name":{"mi":"Ōwhata"},"components":"ō: place of; whata: elevated stage to protect food from bush rats, and for drying","meaning":"Place of the elevated stage"}
+{"_id":"me_497","code":"owhawhe","slug":{"mi":"owhawhe"},"name":{"mi":"Ōwhawhe"},"components":"ō: place of; whawhe: put round","meaning":"The place encircled"}
+{"_id":"me_498","code":"owhiro","slug":{"mi":"owhiro"},"name":{"mi":"Ōwhiro"},"components":"ō: place of; Whiro","meaning":"Place of Whiro"}
+{"_id":"me_499","code":"paehinahina","slug":{"mi":"paehinahina"},"name":{"mi":"Paehinahina"},"components":"pae: ridge, headland; hinahina: a small tree also knwn as mahoe","meaning":"Hinahina ridge"}
+{"_id":"me_5","code":"aranui","slug":{"mi":"aranui"},"name":{"mi":"Aranui"},"components":"ara: path; nui: great","meaning":"Great pathway"}
+{"_id":"me_50","code":"hiwinui","slug":{"mi":"hiwinui"},"name":{"mi":"Hiwinui"},"components":"hiwi: ridge; nui: big","meaning":"Big ridge"}
+{"_id":"me_500","code":"paekakariki","slug":{"mi":"paekakariki"},"name":{"mi":"Paekākāriki"},"components":"pae: perch or snare; kākāriki: parakeet (Cyanoramphus novaezelandiae)","meaning":"Parakeet perch"}
+{"_id":"me_501","code":"paekoka","slug":{"mi":"paekoka"},"name":{"mi":"Paekoka"},"components":"pae: ridge; koka: an unidentified species of seabird that was caught here","meaning":"Seabird ridge"}
+{"_id":"me_502","code":"paeoterangi","slug":{"mi":"paeoterangi"},"name":{"mi":"Paeoterangi"},"components":"pae: perching place; o: of; te: the; rangi: sky","meaning":"Footstool of the sky"}
+{"_id":"me_503","code":"paerata","slug":{"mi":"paerata"},"name":{"mi":"Paerātā"},"components":"pae: ridge; rātā: native tree","meaning":"Ridge of the rātā tree"}
+{"_id":"me_504","code":"paerau","slug":{"mi":"paerau"},"name":{"mi":"Paerau"},"components":"pae: ridges or steps; rau: many or a hundred","meaning":"Many ridges"}
+{"_id":"me_505","code":"paeroa","slug":{"mi":"paeroa"},"name":{"mi":"Paeroa"},"components":"pae: ridge of hills; roa: long","meaning":"Long ridge of hills"}
+{"_id":"me_506","code":"paetiki","slug":{"mi":"paetiki"},"name":{"mi":"Paetiki"},"components":"pae: ridge; tiki: carved wooden or stone figure","meaning":"Ridge of carved figure"}
+{"_id":"me_507","code":"pakirarahi","slug":{"mi":"pakirarahi"},"name":{"mi":"Pakirārahi"},"components":"pakirā: bald; rahi: big","meaning":"Large bald dome"}
+{"_id":"me_508","code":"papahinau","slug":{"mi":"papahinau"},"name":{"mi":"Papahīnau"},"components":"papa: flat; hīnau: native tree","meaning":"Hīnau flats"}
+{"_id":"me_509","code":"papaiti","slug":{"mi":"papaiti"},"name":{"mi":"Papaiti"},"components":"papa: flat; iti: small","meaning":"Small flats"}
+{"_id":"me_51","code":"hokanui","slug":{"mi":"hokanui"},"name":{"mi":"Hokanui"},"components":"hoka: projecting sharply upwards; nui: large","meaning":"Large projection"}
+{"_id":"me_510","code":"papakaio","slug":{"mi":"papakaio"},"name":{"mi":"Papakaio"},"components":"papa: flat; kaio: native tree (South Island form of ngaio)","meaning":"Kaio tree flats"}
+{"_id":"me_511","code":"papakura","slug":{"mi":"papakura"},"name":{"mi":"Papakura"},"components":"papa: flat; kura: red","meaning":"Red flats"}
+{"_id":"me_512","code":"papamoa","slug":{"mi":"papamoa"},"name":{"mi":"Papamoa"},"components":"papa: flat; moa: raisted mounds for growing vegetables","meaning":"Raised mounds for growing vegetables on the flats"}
+{"_id":"me_513","code":"papanui","slug":{"mi":"papanui"},"name":{"mi":"Papanui"},"components":"papa: flat; nui: large","meaning":"Large flat"}
+{"_id":"me_514","code":"paparangi","slug":{"mi":"paparangi"},"name":{"mi":"Paparangi"},"components":"papa: flat; rangi: sky","meaning":"Flat sky"}
+{"_id":"me_515","code":"paparata","slug":{"mi":"paparata"},"name":{"mi":"Paparātā"},"components":"papa: flat; rātā: native tree","meaning":"Rātā tree flats"}
+{"_id":"me_516","code":"paparimu","slug":{"mi":"paparimu"},"name":{"mi":"Paparimu"},"components":"papa: flat; rimu: native tree","meaning":"Rimu tree flats"}
+{"_id":"me_517","code":"paparoa","slug":{"mi":"paparoa"},"name":{"mi":"Paparoa"},"components":"papa: flat; roa: long","meaning":"Long flats"}
+{"_id":"me_518","code":"papatawa","slug":{"mi":"papatawa"},"name":{"mi":"Papatawa"},"components":"papa: flat; tawa: native tree","meaning":"Tawa tree flats"}
+{"_id":"me_519","code":"papatawhara","slug":{"mi":"papatawhara"},"name":{"mi":"Papatāwhara"},"components":"papa: ground; tāwhara: kiekie flowers","meaning":"Kiekie flower flats"}
+{"_id":"me_52","code":"houipapa","slug":{"mi":"houipapa"},"name":{"mi":"Houipapa"},"components":"houi: lacebark; papa: flat","meaning":"Ribbonwood flat"}
+{"_id":"me_520","code":"papatoetoe","slug":{"mi":"papatoetoe"},"name":{"mi":"Papatoetoe"},"components":"papa: flat; toetoe: native grass","meaning":"Toetoe grass flat"}
+{"_id":"me_521","code":"papatotara","slug":{"mi":"papatotara"},"name":{"mi":"Papatōtara"},"components":"papa: flat; tōtara: native tree","meaning":"Tōtara flat"}
+{"_id":"me_522","code":"papatowai","slug":{"mi":"papatowai"},"name":{"mi":"Papatōwai"},"components":"papa: flat; tōwai: native tree","meaning":"Tōwai tree flat"}
+{"_id":"me_523","code":"papawai","slug":{"mi":"papawai"},"name":{"mi":"Papawai"},"components":"papa: flat; wai: water","meaning":"Inundated land"}
+{"_id":"me_524","code":"pareranui","slug":{"mi":"pareranui"},"name":{"mi":"Pāreranui"},"components":"pārera: grey duck (Anas superciliosa): nui: large","meaning":"Large grey duck"}
+{"_id":"me_525","code":"paretai","slug":{"mi":"paretai"},"name":{"mi":"Paretai"},"components":"pare: divert; tai: the tide","meaning":"River bank"}
+{"_id":"me_526","code":"paretetaitonga","slug":{"mi":"paretetaitonga"},"name":{"mi":"Paretetaitonga"},"components":"para: dust; te: the; tai: sea; tonga: south","meaning":"The dust from the south sea"}
+{"_id":"me_527","code":"parewanui","slug":{"mi":"parewanui"},"name":{"mi":"Pārewanui"},"components":"pā: fortified village; rewa: swamp; nui: large","meaning":"Fortified village in a large swamp"}
+{"_id":"me_528","code":"pari-nui-te-ra","slug":{"mi":"pari-nui-te-ra"},"name":{"mi":"Pari-nui-te-ra"},"components":"pari: cliff; nui: great; te: the; rā: sun","meaning":"Great cliff in the sun"}
+{"_id":"me_529","code":"pariparitetai","slug":{"mi":"pariparitetai"},"name":{"mi":"Pariparitetai"},"components":"paripari: cliffs; te: the; tai: coast","meaning":"Cliffs on the coast"}
+{"_id":"me_53","code":"houpoto","slug":{"mi":"houpoto"},"name":{"mi":"Houpoto"},"components":"hou: feathers; poto: short","meaning":"Short feathers"}
+{"_id":"me_530","code":"pariroa","slug":{"mi":"pariroa"},"name":{"mi":"Pariroa"},"components":"pari: cliff; roa: long","meaning":"Long cliff"}
+{"_id":"me_531","code":"paroa","slug":{"mi":"paroa"},"name":{"mi":"Pāroa"},"components":"pā: fortified village; roa: long, broad","meaning":"Broad fortified village"}
+{"_id":"me_532","code":"paruroa","slug":{"mi":"paruroa"},"name":{"mi":"Paruroa"},"components":"paru: mud; roa: long","meaning":"Long mud"}
+{"_id":"me_533","code":"paturoa","slug":{"mi":"paturoa"},"name":{"mi":"Paturoa"},"components":"patu: to strike or kill; roa: long","meaning":"Much hitting"}
+{"_id":"me_534","code":"pauanui","slug":{"mi":"pauanui"},"name":{"mi":"Pāuanui"},"components":"pāua: shellfish; nui: many or large","meaning":"Many or large pāua"}
+{"_id":"me_535","code":"pikowai","slug":{"mi":"pikowai"},"name":{"mi":"Pikowai"},"components":"piko: corner or bend; wai: stream","meaning":"Bend in the stream"}
+{"_id":"me_536","code":"pipiroa","slug":{"mi":"pipiroa"},"name":{"mi":"Pipiroa"},"components":"pipi: cockle; roa: long","meaning":"Long pipi"}
+{"_id":"me_537","code":"piroa","slug":{"mi":"piroa"},"name":{"mi":"Pīroa"},"components":"pī: headwaters; roa: long","meaning":"Long headwaters"}
+{"_id":"me_538","code":"pohatunui","slug":{"mi":"pohatunui"},"name":{"mi":"Pōhatunui"},"components":"pōhatu: rock; nui: great","meaning":"Great rock"}
+{"_id":"me_539","code":"pohaturoa","slug":{"mi":"pohaturoa"},"name":{"mi":"Pōhaturoa"},"components":"pōhatu: rock; roa: tall","meaning":"Tall rock"}
+{"_id":"me_54","code":"hukanui","slug":{"mi":"hukanui"},"name":{"mi":"Hukanui"},"components":"huka: foam, frost or snow; nui: big","meaning":"Heavy snow"}
+{"_id":"me_540","code":"pohonui","slug":{"mi":"pohonui"},"name":{"mi":"Pohonui"},"components":"poho: stomach; nui: big","meaning":"Big stomach"}
+{"_id":"me_541","code":"pohuenui","slug":{"mi":"pohuenui"},"name":{"mi":"Pōhuenui"},"components":"pōhue: convolvulus or other climbing plants; nui: many","meaning":"Large climbing plant"}
+{"_id":"me_542","code":"pongaroa","slug":{"mi":"pongaroa"},"name":{"mi":"Pongaroa"},"components":"ponga: tree fern; roa: tall or long","meaning":"Tall tree fern"}
+{"_id":"me_543","code":"ponui","slug":{"mi":"ponui"},"name":{"mi":"Pōnui"},"components":"pō: night; nui: long","meaning":"Long night"}
+{"_id":"me_544","code":"puatai","slug":{"mi":"puatai"},"name":{"mi":"Puatai"},"components":"pua: foam; tai: sea","meaning":"Foam of the sea"}
+{"_id":"me_545","code":"pukearuhe","slug":{"mi":"pukearuhe"},"name":{"mi":"Pukearuhe"},"components":"puke: hill; aruhe: bitter","meaning":"Hill of bitterness"}
+{"_id":"me_546","code":"puhinui","slug":{"mi":"puhinui"},"name":{"mi":"Puhinui"},"components":"puhi: plume at the bow of a war canoe; nui: large","meaning":"Large plume at bow of war canoe"}
+{"_id":"me_547","code":"pukeatua","slug":{"mi":"pukeatua"},"name":{"mi":"Pukeatua"},"components":"puke: hill; atua: god","meaning":"Hill of the deity"}
+{"_id":"me_548","code":"pukehinau","slug":{"mi":"pukehinau"},"name":{"mi":"Pukehinau"},"components":"puke: hill; hinau: a native tree","meaning":"Hīnau tree hill"}
+{"_id":"me_549","code":"puke-hiwi-tahi","slug":{"mi":"puke-hiwi-tahi"},"name":{"mi":"Puke-hiwi-tahi"},"components":"puke: hill; hiwi: ridge; tahi: one","meaning":"One-ridge hill"}
+{"_id":"me_55","code":"hukerenui","slug":{"mi":"hukerenui"},"name":{"mi":"Hukerenui"},"components":"hukere: cascade; nui: large","meaning":"Large cascade"}
+{"_id":"me_550","code":"pukehuhu","slug":{"mi":"pukehuhu"},"name":{"mi":"Pukehuhu"},"components":"puke: hill; huhu: grub","meaning":"Huhu grub hill"}
+{"_id":"me_551","code":"pukehuia","slug":{"mi":"pukehuia"},"name":{"mi":"Pukehuia"},"components":"puke: hill; huia: cluster","meaning":"Cluster of hills"}
+{"_id":"me_552","code":"pukeiti","slug":{"mi":"pukeiti"},"name":{"mi":"Pukeiti"},"components":"puke: hill; tī: cabbage tree","meaning":"Cabbage tree hill"}
+{"_id":"me_553","code":"pukekahu","slug":{"mi":"pukekahu"},"name":{"mi":"Pukekāhu"},"components":"puke: hill; kāhu: hawk","meaning":"Hill of the hawk"}
+{"_id":"me_554","code":"pukekaikiore","slug":{"mi":"pukekaikiore"},"name":{"mi":"Pukekaikiore"},"components":"puke: hill; kai: to eat; kiore: rat","meaning":"Hill of the eaten rat"}
+{"_id":"me_555","code":"pukekakariki","slug":{"mi":"pukekakariki"},"name":{"mi":"Pukekākāriki"},"components":"puke: hill; kākāriki: parakeet","meaning":"Hill of the parakeet"}
+{"_id":"me_556","code":"pukekapia","slug":{"mi":"pukekapia"},"name":{"mi":"Pukekāpia"},"components":"puke: hill; kāpia: kauri gum","meaning":"Kauri gum hill"}
+{"_id":"me_557","code":"pukekoikoi","slug":{"mi":"pukekoikoi"},"name":{"mi":"Pukekoikoi"},"components":"puke: hill; koikoi: pointed","meaning":"Pointed hill"}
+{"_id":"me_558","code":"pukekoma","slug":{"mi":"pukekoma"},"name":{"mi":"Pukekōmā"},"components":"puke: hill; kōmā: light-coloured or bright; or a kind of stone","meaning":"Light-coloured hill"}
+{"_id":"me_559","code":"pukekowhai","slug":{"mi":"pukekowhai"},"name":{"mi":"Pukekōwhai"},"components":"puke: hill; kōwhai: native tree","meaning":"Kōwhai tree hill"}
+{"_id":"me_56","code":"hurimoana","slug":{"mi":"hurimoana"},"name":{"mi":"Hurimoana"},"components":"huri: to overflow; moana: ocean","meaning":"Overflowing ocean"}
+{"_id":"me_560","code":"pukekura","slug":{"mi":"pukekura"},"name":{"mi":"Pukekura"},"components":"puke: hill; kura: red","meaning":"Red hill"}
+{"_id":"me_561","code":"puke-maeroero","slug":{"mi":"puke-maeroero"},"name":{"mi":"Puke-māeroero"},"components":"puke: hill; māeroero: ogres of the forest","meaning":"Hill of ogres"}
+{"_id":"me_562","code":"pukemaori","slug":{"mi":"pukemaori"},"name":{"mi":"Pukemaori"},"components":"puke: hill; māori: Māori","meaning":"Māori hill"}
+{"_id":"me_563","code":"pukemarama","slug":{"mi":"pukemarama"},"name":{"mi":"Pukemarama"},"components":"puke: hill; marama: moon","meaning":"Moon hill"}
+{"_id":"me_564","code":"pukematawai","slug":{"mi":"pukematawai"},"name":{"mi":"Pukemātāwai"},"components":"puke: hill: mātāwai: source of streams","meaning":"Hill is source of stream"}
+{"_id":"me_565","code":"pukematekeo","slug":{"mi":"pukematekeo"},"name":{"mi":"Pukematekeo"},"components":"puke: hill; mate: end; keo: peak","meaning":"The hill at the end of the range"}
+{"_id":"me_566","code":"pukemiro","slug":{"mi":"pukemiro"},"name":{"mi":"Pukemiro"},"components":"puke: hill; miro: native tree","meaning":"Miro tree hill"}
+{"_id":"me_567","code":"pukemoko","slug":{"mi":"pukemoko"},"name":{"mi":"Pukemoko"},"components":"puke: hill; moko: tattoo","meaning":"Hill of tattoos"}
+{"_id":"me_568","code":"pukemoremore","slug":{"mi":"pukemoremore"},"name":{"mi":"Pukemoremore"},"components":"puke: hill; more; a freshwater fish","meaning":"Hill of many pinbellied freshwater fish"}
+{"_id":"me_569","code":"pukengahu","slug":{"mi":"pukengahu"},"name":{"mi":"Pukengahu"},"components":"puke: hill; ngahu: point or promontory","meaning":"Hill"}
+{"_id":"me_57","code":"ihumatao","slug":{"mi":"ihumatao"},"name":{"mi":"Ihumātao"},"components":"ihu: nose; mātao: cold","meaning":"Cold nose"}
+{"_id":"me_570","code":"pukenui","slug":{"mi":"pukenui"},"name":{"mi":"Pukenui"},"components":"puke: hill; nui: large","meaning":"Large hill"}
+{"_id":"me_571","code":"pukeokahu","slug":{"mi":"pukeokahu"},"name":{"mi":"Pukeokahu"},"components":"puke: hill; o: of; Kahu: personal name","meaning":"Hill of Kahu"}
+{"_id":"me_572","code":"puke-o-tara","slug":{"mi":"puke-o-tara"},"name":{"mi":"Puke-o-Tara"},"components":"puke: hill; o: of; Tara","meaning":"Hill of Tara"}
+{"_id":"me_573","code":"pukepiripiri","slug":{"mi":"pukepiripiri"},"name":{"mi":"Pukepiripiri"},"components":"puke: hill; piripiri: the ‘biddy-bid’ (Acaena anserinifolia)","meaning":"‘Biddy-bid’ hill"}
+{"_id":"me_574","code":"pukepito","slug":{"mi":"pukepito"},"name":{"mi":"Pukepito"},"components":"puke: hill; pito: end","meaning":"Hill end"}
+{"_id":"me_575","code":"pukepohatu","slug":{"mi":"pukepohatu"},"name":{"mi":"Pukepōhatu"},"components":"puke: hill; pōhatu: rock","meaning":"Rock hill"}
+{"_id":"me_576","code":"pukepoto","slug":{"mi":"pukepoto"},"name":{"mi":"Pukepoto"},"components":"puke: hill; poto: dark blue earth present in a nearby swamp, used as a pigment","meaning":"Dark blue pigment hill"}
+{"_id":"me_577","code":"pukerangi","slug":{"mi":"pukerangi"},"name":{"mi":"Pukerangi"},"components":"puke: hill; rangi: sky","meaning":"Sky hill"}
+{"_id":"me_578","code":"pukerangiora","slug":{"mi":"pukerangiora"},"name":{"mi":"Pukerangiora"},"components":"puke: hill; rangiora: native shrub","meaning":"Rangiora shrub hill"}
+{"_id":"me_579","code":"pukerau","slug":{"mi":"pukerau"},"name":{"mi":"Pukerau"},"components":"puke: hills; rau: a leaf, a hundred or many","meaning":"Hill of leaves"}
+{"_id":"me_58","code":"ihumoana","slug":{"mi":"ihumoana"},"name":{"mi":"Ihumoana"},"components":"ihu: nose; moana: sea","meaning":"Nose into the sea"}
+{"_id":"me_580","code":"pukerauaruhe","slug":{"mi":"pukerauaruhe"},"name":{"mi":"Pukerauaruhe"},"components":"puke: hill; rauaruhe: bracken fronds","meaning":"Hill of bracken fronds"}
+{"_id":"me_581","code":"pukerimu","slug":{"mi":"pukerimu"},"name":{"mi":"Pukerimu"},"components":"puke: hill; rimu: native tree","meaning":"Rimu tree hill"}
+{"_id":"me_582","code":"pukeora","slug":{"mi":"pukeora"},"name":{"mi":"Pukeora"},"components":"puke: hill; ora: well or in good health","meaning":"Hill of good health"}
+{"_id":"me_583","code":"pukeroa","slug":{"mi":"pukeroa"},"name":{"mi":"Pukeroa"},"components":"puke: hill; roa: long or tall","meaning":"Tall hill"}
+{"_id":"me_584","code":"pukerua","slug":{"mi":"pukerua"},"name":{"mi":"Pukerua"},"components":"puke: hill; rua: two","meaning":"Two hills"}
+{"_id":"me_585","code":"puketaha","slug":{"mi":"puketaha"},"name":{"mi":"Puketaha"},"components":"puke: hill; taha: side","meaning":"Hill side"}
+{"_id":"me_586","code":"puketapapa","slug":{"mi":"puketapapa"},"name":{"mi":"Puketāpapa"},"components":"puke: hill; tāpapa: edge or flat-topped","meaning":"Flat-topped hill"}
+{"_id":"me_587","code":"puketapu","slug":{"mi":"puketapu"},"name":{"mi":"Puketapu"},"components":"puke: hill; tapu: sacred or forbidden","meaning":"Sacred hill"}
+{"_id":"me_588","code":"puketawa","slug":{"mi":"puketawa"},"name":{"mi":"Puketawa"},"components":"puke: hill; tawa: native tree","meaning":"Tawa tree hill"}
+{"_id":"me_589","code":"puketi","slug":{"mi":"puketi"},"name":{"mi":"Puketī"},"components":"puke: hill; tī: cabbage tree","meaning":"Cabbage tree hill"}
+{"_id":"me_59","code":"ikawai","slug":{"mi":"ikawai"},"name":{"mi":"Ikawai"},"components":"ika: fish; wai: water","meaning":"Waters of fish"}
+{"_id":"me_590","code":"puketihi","slug":{"mi":"puketihi"},"name":{"mi":"Puketihi"},"components":"puke: hill; tihi: top or summit","meaning":"Summit of the hill"}
+{"_id":"me_591","code":"puketiro","slug":{"mi":"puketiro"},"name":{"mi":"Puketiro"},"components":"puke: hill; tiro: view","meaning":"View from the hill"}
+{"_id":"me_592","code":"puke-tirohia-marama","slug":{"mi":"puke-tirohia-marama"},"name":{"mi":"Puke-tirohia-marama"},"components":"puke: hill; tirohia: to survey or view; marama: moon","meaning":"Hill giving a view of the moon"}
+{"_id":"me_593","code":"puketoi","slug":{"mi":"puketoi"},"name":{"mi":"Puketoi"},"components":"puke: hill; toi: summit","meaning":"Summit of the hill"}
+{"_id":"me_594","code":"puketotara","slug":{"mi":"puketotara"},"name":{"mi":"Puketōtara"},"components":"puke: hill; tōtara tree","meaning":"Tōtara hill"}
+{"_id":"me_595","code":"puketui","slug":{"mi":"puketui"},"name":{"mi":"Puketūī"},"components":"puke: hill; tūī: native bird","meaning":"Tūī hill"}
+{"_id":"me_596","code":"puketuroto","slug":{"mi":"puketuroto"},"name":{"mi":"Puketūroto"},"components":"puke: hill; tū: to stand; roto: lake","meaning":"Hillside beside the lake"}
+{"_id":"me_597","code":"puketutu","slug":{"mi":"puketutu"},"name":{"mi":"Puketutu"},"components":"puke: hill; tutu: native shrub (Coriaria arborea)","meaning":"Tutu shrub hill"}
+{"_id":"me_598","code":"pukewhau","slug":{"mi":"pukewhau"},"name":{"mi":"Pukewhau"},"components":"puke: hill; whau: a native tree","meaning":"Whau tree hill"}
+{"_id":"me_599","code":"pukewhero","slug":{"mi":"pukewhero"},"name":{"mi":"Pukewhero"},"components":"puke: hill; whero: red","meaning":"Red hill"}
+{"_id":"me_6","code":"arapae","slug":{"mi":"arapae"},"name":{"mi":"Arapae"},"components":"ara: path; pae: ridgeway","meaning":"Pathway along the ridge"}
+{"_id":"me_60","code":"ka_pukehore","slug":{"mi":"ka_pukehore"},"name":{"mi":"Kā Pukehore"},"components":"A descriptive name, kā (ngā): the; puke: hill; hore: bare (the peaks were bare of vegetation)","meaning":"The bare hills"}
+{"_id":"me_600","code":"pukurahi","slug":{"mi":"pukurahi"},"name":{"mi":"Pukurahi"},"components":"puku: belly; rahi: large","meaning":"Large belly"}
+{"_id":"me_601","code":"rahotu","slug":{"mi":"rahotu"},"name":{"mi":"Rāhotu"},"components":"rā: sun; hotu: to long for","meaning":"Long for the sun"}
+{"_id":"me_602","code":"rakaunui","slug":{"mi":"rakaunui"},"name":{"mi":"Rākaunui"},"components":"rākau: tree; nui: many or large","meaning":"Many trees"}
+{"_id":"me_603","code":"rakauroa","slug":{"mi":"rakauroa"},"name":{"mi":"Rākauroa"},"components":"rākau: tree; roa: tall","meaning":"Tall trees"}
+{"_id":"me_604","code":"ramaroa","slug":{"mi":"ramaroa"},"name":{"mi":"Ramaroa"},"components":"rama: torch; roa: long","meaning":"Long torch"}
+{"_id":"me_605","code":"ranganui","slug":{"mi":"ranganui"},"name":{"mi":"Ranganui"},"components":"ranga: parade; nui: large","meaning":"Large parade"}
+{"_id":"me_606","code":"rangi-roa","slug":{"mi":"rangi-roa"},"name":{"mi":"Rangi-roa"},"components":"rangi: sky; roa: long","meaning":"Long sky"}
+{"_id":"me_607","code":"ranui","slug":{"mi":"ranui"},"name":{"mi":"Rānui"},"components":"rā: sun; nui: many","meaning":"Plenty of sunshine"}
+{"_id":"me_608","code":"rapanui","slug":{"mi":"rapanui"},"name":{"mi":"Rapanui"},"components":"rapa: there are many meanings of rapa, including to seek; nui: many","meaning":"Much seeking"}
+{"_id":"me_609","code":"rarangi-roa","slug":{"mi":"rarangi-roa"},"name":{"mi":"Rārangi-roa"},"components":"rārangi: line or row; roa: long","meaning":"Long line"}
+{"_id":"me_61","code":"ka_pukemaeroero","slug":{"mi":"ka_pukemaeroero"},"name":{"mi":"Kā Pukemāeroero"},"components":"kā (ngā): the; puke: hill; māeroero: ogres of the South Island forests","meaning":"The hill of ogres"}
+{"_id":"me_610","code":"raroa","slug":{"mi":"raroa"},"name":{"mi":"Rāroa"},"components":"rā; day; roa: long","meaning":"Long day"}
+{"_id":"me_611","code":"ratanui","slug":{"mi":"ratanui"},"name":{"mi":"Rātānui"},"components":"rātā: native tree; nui: large or many","meaning":"Many or large rātā trees"}
+{"_id":"me_612","code":"rawhitiroa","slug":{"mi":"rawhitiroa"},"name":{"mi":"Rāwhitiroa"},"components":"rā: sun; whiti: to shine; roa: long","meaning":"Long-shining sun"}
+{"_id":"me_613","code":"reporoa","slug":{"mi":"reporoa"},"name":{"mi":"Reporoa"},"components":"repo: swamp; roa: long or wide","meaning":"Long swamp"}
+{"_id":"me_614","code":"rimunui","slug":{"mi":"rimunui"},"name":{"mi":"Rimunui"},"components":"rimu: native tree; nui: many or large","meaning":"Many or large rimu trees"}
+{"_id":"me_615","code":"rongotai","slug":{"mi":"rongotai"},"name":{"mi":"Rongotai"},"components":"rongo: sound; tai: sea","meaning":"Sound of the sea"}
+{"_id":"me_616","code":"rotoaira","slug":{"mi":"rotoaira"},"name":{"mi":"Rotoaira"},"components":"roto: lake; a: of; Ira","meaning":"Lake of Ira"}
+{"_id":"me_617","code":"roto-a-tara","slug":{"mi":"roto-a-tara"},"name":{"mi":"Roto-a-Tara"},"components":"roto: lake; a: of; Tara","meaning":"Lake of Tara"}
+{"_id":"me_618","code":"rotoehu","slug":{"mi":"rotoehu"},"name":{"mi":"Rotoehu"},"components":"roto: lake; ehu: turbid","meaning":"Turbid lake"}
+{"_id":"me_619","code":"rotoiti","slug":{"mi":"rotoiti"},"name":{"mi":"Rotoiti"},"components":"roto: lake; iti: small","meaning":"Little lake"}
+{"_id":"me_62","code":"kaharoa","slug":{"mi":"kaharoa"},"name":{"mi":"Kaharoa"},"components":"kaha: net; roa: long","meaning":"Large net"}
+{"_id":"me_620","code":"rotokakahi","slug":{"mi":"rotokakahi"},"name":{"mi":"Rotokākahi"},"components":"roto: lake; kākahi: freshwater shellfish","meaning":"Freshwater shellfish lake"}
+{"_id":"me_621","code":"rotokauri","slug":{"mi":"rotokauri"},"name":{"mi":"Rotokauri"},"components":"roto: lake; kauri: native tree","meaning":"Kauri tree lake"}
+{"_id":"me_622","code":"rotokawa","slug":{"mi":"rotokawa"},"name":{"mi":"Rotokawa"},"components":"roto: lake; kawa; bitter","meaning":"Bitter lake"}
+{"_id":"me_623","code":"rotokawau","slug":{"mi":"rotokawau"},"name":{"mi":"Rotokawau"},"components":"roto: lake; kawau: shag","meaning":"Shag lake"}
+{"_id":"me_624","code":"rotokohu","slug":{"mi":"rotokohu"},"name":{"mi":"Rotokohu"},"components":"roto: lake; kohu: mist","meaning":"Misty lake"}
+{"_id":"me_625","code":"rotokura","slug":{"mi":"rotokura"},"name":{"mi":"Rotokura"},"components":"roto: lake; kura: red","meaning":"Red glow of sunset on the water"}
+{"_id":"me_626","code":"rotoma","slug":{"mi":"rotoma"},"name":{"mi":"Rotoma"},"components":"roto: lake; ma: clear","meaning":"Clear lake"}
+{"_id":"me_627","code":"rotomahana","slug":{"mi":"rotomahana"},"name":{"mi":"Rotomahana"},"components":"roto: lake; mahana: warm","meaning":"Warm lake"}
+{"_id":"me_628","code":"rotomanu","slug":{"mi":"rotomanu"},"name":{"mi":"Rotomanu"},"components":"roto: lake; manu: bird","meaning":"Bird lake"}
+{"_id":"me_629","code":"rotongaro","slug":{"mi":"rotongaro"},"name":{"mi":"Rotongaro"},"components":"roto: lake; ngaro: hidden or lost","meaning":"Hidden lake"}
+{"_id":"me_63","code":"kaiata","slug":{"mi":"kaiata"},"name":{"mi":"Kaiata"},"components":"kai: to eat: ata: early morning","meaning":"Eating in the morning"}
+{"_id":"me_630","code":"roto-o-rangi","slug":{"mi":"roto-o-rangi"},"name":{"mi":"Roto-o-rangi"},"components":"roto: lake; o: of; rangi: sky","meaning":"Lake of the sky"}
+{"_id":"me_631","code":"rotoroa","slug":{"mi":"rotoroa"},"name":{"mi":"Rotoroa"},"components":"roto: lake; roa: long","meaning":"Long lake"}
+{"_id":"me_632","code":"rotorua","slug":{"mi":"rotorua"},"name":{"mi":"Rotorua"},"components":"roto: lake; rua: two","meaning":"Two lakes"}
+{"_id":"me_633","code":"rototuna","slug":{"mi":"rototuna"},"name":{"mi":"Rototuna"},"components":"roto: lake; tuna: eel","meaning":"Eel lake"}
+{"_id":"me_634","code":"rotowaro","slug":{"mi":"rotowaro"},"name":{"mi":"Rotowaro"},"components":"roto: lake; waro: coal or glowing embers","meaning":"Lake of glowing embers"}
+{"_id":"me_635","code":"ruapuke","slug":{"mi":"ruapuke"},"name":{"mi":"Ruapuke"},"components":"rua: two; puke: hills","meaning":"Two hill island"}
+{"_id":"me_636","code":"ruaroa","slug":{"mi":"ruaroa"},"name":{"mi":"Ruaroa"},"components":"rua: cave or pit; roa: long","meaning":"Long pit"}
+{"_id":"me_637","code":"ruawai","slug":{"mi":"ruawai"},"name":{"mi":"Ruawai"},"components":"rua: hole; wai: water","meaning":"Watery hole"}
+{"_id":"me_638","code":"rukumoana","slug":{"mi":"rukumoana"},"name":{"mi":"Rukumoana"},"components":"ruku: to dive; moana: sea, or deep pool in river","meaning":"Diving into the pool"}
+{"_id":"me_639","code":"tahaenui","slug":{"mi":"tahaenui"},"name":{"mi":"Tāhaenui"},"components":"tāhae: thief; nui: big or many","meaning":"Many thieves"}
+{"_id":"me_64","code":"kaiaua","slug":{"mi":"kaiaua"},"name":{"mi":"Kaiaua"},"components":"kai: to eat; aua: mullet or herrings","meaning":"Eating mullets"}
+{"_id":"me_640","code":"taharoa","slug":{"mi":"taharoa"},"name":{"mi":"Taharoa"},"components":"taha: coast; roa: long","meaning":"Long coast"}
+{"_id":"me_641","code":"tahawai","slug":{"mi":"tahawai"},"name":{"mi":"Tahawai"},"components":"taha: side; wai: water","meaning":"Seaside"}
+{"_id":"me_642","code":"tahekereroa","slug":{"mi":"tahekereroa"},"name":{"mi":"Tāhekereroa"},"components":"tāheke: waterfall; roa: high or long","meaning":"High waterfall"}
+{"_id":"me_643","code":"tahoraiti","slug":{"mi":"tahoraiti"},"name":{"mi":"Tahoraiti"},"components":"tahora: forest clearing; iti: little","meaning":"Little forest clearing"}
+{"_id":"me_644","code":"tahuhunui","slug":{"mi":"tahuhunui"},"name":{"mi":"Tāhuhūnui"},"components":"tāhūhū: ridge-pole; nui: large","meaning":"Large ridge-pole"}
+{"_id":"me_645","code":"tahunanui","slug":{"mi":"tahunanui"},"name":{"mi":"Tāhunanui"},"components":"tāhuna: shoal or sandbank; nui: large","meaning":"Large sandbank"}
+{"_id":"me_646","code":"taiharuru","slug":{"mi":"taiharuru"},"name":{"mi":"Taiharuru"},"components":"tai: sea; haruru: resounding","meaning":"Resounding sea"}
+{"_id":"me_647","code":"taikorea","slug":{"mi":"taikorea"},"name":{"mi":"Taikorea"},"components":"tai: sea; korea: a small canoe","meaning":"Tide of the small canoe"}
+{"_id":"me_648","code":"taimate","slug":{"mi":"taimate"},"name":{"mi":"Taimate"},"components":"tai: tide; mate: dead","meaning":"A salt pool blocked off from the tide"}
+{"_id":"me_649","code":"tainui","slug":{"mi":"tainui"},"name":{"mi":"Tainui"},"components":"tai: tide; nui: great","meaning":"Great tide"}
+{"_id":"me_65","code":"kai-hau-o-kupe","slug":{"mi":"kai-hau-o-kupe"},"name":{"mi":"Kai-Hau-o-Kupe"},"components":"kai: to eat; hau: wind; o: of; Kupe","meaning":"The place where Kupe ‘ate wind’"}
+{"_id":"me_650","code":"tairua","slug":{"mi":"tairua"},"name":{"mi":"Tairua"},"components":"tai: tides; rua: two","meaning":"Two tides"}
+{"_id":"me_651","code":"taitapu","slug":{"mi":"taitapu"},"name":{"mi":"Taitapu"},"components":"tai: coast; tapu: sacred","meaning":"Sacred coast"}
+{"_id":"me_652","code":"taitimu","slug":{"mi":"taitimu"},"name":{"mi":"Taitimu"},"components":"tai: tide; timu: to ebb","meaning":"Ebb of the tide"}
+{"_id":"me_653","code":"taitomo","slug":{"mi":"taitomo"},"name":{"mi":"Taitomo"},"components":"tai: sea; tomo: shaft","meaning":"Shaft of the sea"}
+{"_id":"me_654","code":"takahiwai","slug":{"mi":"takahiwai"},"name":{"mi":"Takahiwai"},"components":"takahi: to trample; wai: water","meaning":"Trample water"}
+{"_id":"me_655","code":"takutai","slug":{"mi":"takutai"},"name":{"mi":"Takutai"},"components":"taku: coast; tai: sea","meaning":"Sea coast"}
+{"_id":"me_656","code":"tangimoana","slug":{"mi":"tangimoana"},"name":{"mi":"Tangimoana"},"components":"tangi: to weep or lament; moana: ocean","meaning":"Weeping sea"}
+{"_id":"me_657","code":"tangiwai","slug":{"mi":"tangiwai"},"name":{"mi":"Tangiwai"},"components":"tangi: to cry or weep; wai: water","meaning":"Weeping water"}
+{"_id":"me_658","code":"taonui","slug":{"mi":"taonui"},"name":{"mi":"Taonui"},"components":"tao: spear; nui: many","meaning":"Large spear"}
+{"_id":"me_659","code":"taoroa","slug":{"mi":"taoroa"},"name":{"mi":"Taoroa"},"components":"tao: spear; roa: long","meaning":"Long spear"}
+{"_id":"me_66","code":"kaihiku","slug":{"mi":"kaihiku"},"name":{"mi":"Kaihiku"},"components":"kai: te eat; hiku: tail of a fish","meaning":"Eating a fish tail"}
+{"_id":"me_660","code":"tapuwaeroa","slug":{"mi":"tapuwaeroa"},"name":{"mi":"Tapuwaeroa"},"components":"tapuwae: footsteps; roa: long","meaning":"Long footsteps"}
+{"_id":"me_661","code":"tatuanui","slug":{"mi":"tatuanui"},"name":{"mi":"Tātuanui"},"components":"tātua: girdle; nui: large or many","meaning":"Large girdle"}
+{"_id":"me_662","code":"taumarunui","slug":{"mi":"taumarunui"},"name":{"mi":"Taumarunui"},"components":"taumaru: screen; nui: large","meaning":"Large screen"}
+{"_id":"me_663","code":"taumatawhakatangihangakoauauotamateapokaiwhenuakitanatahu","slug":{"mi":"taumatawhakatangihangakoauauotamateapokaiwhenuakitanatahu"},"name":{"mi":"Taumatawhakatangihangakōauauotamateapōkaiwhenuakitanatahu"},"components":"taumata: brow of a hill; whakatangihanga: place of sounding or playing; kōauau: flute; o: of; Tamatea-pōkai-whenua; ki: to; tana: his; tahu: lover","meaning":"The brow of the hill where Tamatea who travelled all over the land played his flute to his lover"}
+{"_id":"me_664","code":"taumoana","slug":{"mi":"taumoana"},"name":{"mi":"Taumoana"},"components":"tau: to come to rest (and many other meanings); moana: sea","meaning":"Come to rest at sea"}
+{"_id":"me_665","code":"tauranganui","slug":{"mi":"tauranganui"},"name":{"mi":"Tauranganui"},"components":"taura: landing places; nui: many, great","meaning":"Great landing place"}
+{"_id":"me_666","code":"tauraroa","slug":{"mi":"tauraroa"},"name":{"mi":"Tauraroa"},"components":"taura: rope; roa: long","meaning":"Long rope"}
+{"_id":"me_667","code":"tawanui","slug":{"mi":"tawanui"},"name":{"mi":"Tawanui"},"components":"tawa: native tree (Beilschmiedia tawa); nui: many","meaning":"Great tawa tree"}
+{"_id":"me_668","code":"tawharanui","slug":{"mi":"tawharanui"},"name":{"mi":"Tāwharanui"},"components":"tāwhara: flower of the kiekie (Freycinetia banksii); nui: many","meaning":"Many flowers of the kiekie"}
+{"_id":"me_669","code":"te_araroa","slug":{"mi":"te_araroa"},"name":{"mi":"Te Araroa"},"components":"te: the; ara: path; roa: long","meaning":"The long path"}
+{"_id":"me_67","code":"kaihinu","slug":{"mi":"kaihinu"},"name":{"mi":"Kaihinu"},"components":"kai: food; hinu: fat","meaning":"Food preserved in fat"}
+{"_id":"me_670","code":"te_awa","slug":{"mi":"te_awa"},"name":{"mi":"Te Awa"},"components":"te: the; awa: valley or channel","meaning":"The valley"}
+{"_id":"me_671","code":"te_awahou","slug":{"mi":"te_awahou"},"name":{"mi":"Te Awahou"},"components":"te: the; awa: river; hou: new","meaning":"The new river"}
+{"_id":"me_672","code":"te_awaiti","slug":{"mi":"te_awaiti"},"name":{"mi":"Te Awaiti"},"components":"te: the; awa: stream; iti: little","meaning":"The little stream"}
+{"_id":"me_673","code":"te_awa-maeroero","slug":{"mi":"te_awa-maeroero"},"name":{"mi":"Te Awa-māeroero"},"components":"te: the; awa: river; māeroero: ogres of the South Island forests","meaning":"The river of the ogres"}
+{"_id":"me_674","code":"te_awamutu","slug":{"mi":"te_awamutu"},"name":{"mi":"Te Awamutu"},"components":"te: the; awa: river; mutu: cut off or ended","meaning":"The ended river"}
+{"_id":"me_675","code":"te_awa-parahi","slug":{"mi":"te_awa-parahi"},"name":{"mi":"Te Awa-parahi"},"components":"te: the; awa: valley; parahi: steep","meaning":"The steep valley"}
+{"_id":"me_676","code":"te_awaure","slug":{"mi":"te_awaure"},"name":{"mi":"Te Awaure"},"components":"te: the; awa: river; ure: male","meaning":"The male river"}
+{"_id":"me_677","code":"te_haehaenga","slug":{"mi":"te_haehaenga"},"name":{"mi":"Te Haehaenga"},"components":"te: the; haehaenga: torn or lacerated","meaning":"The laceration"}
+{"_id":"me_678","code":"te_hana","slug":{"mi":"te_hana"},"name":{"mi":"Te Hana"},"components":"te: the; hana: glow or gleam","meaning":"The glow"}
+{"_id":"me_679","code":"te_hapara","slug":{"mi":"te_hapara"},"name":{"mi":"Te Hāpara"},"components":"te: the; hāpara: dawn","meaning":"The dawn"}
+{"_id":"me_68","code":"kaihu","slug":{"mi":"kaihu"},"name":{"mi":"Kaihu"},"components":"An abbreviation of kai-hu-a-Ihenga, kai: to eat; hu: secretly; a: of; Ihenga","meaning":"Eat secretly"}
+{"_id":"me_680","code":"te_haparangi","slug":{"mi":"te_haparangi"},"name":{"mi":"Te Hāparangi"},"components":"te: the; hāparangi","meaning":"The circumstance of shouting"}
+{"_id":"me_681","code":"te_hapua","slug":{"mi":"te_hapua"},"name":{"mi":"Te Hāpua"},"components":"te: the; hāpua: lagoon","meaning":"The lagoon"}
+{"_id":"me_682","code":"te_haroto","slug":{"mi":"te_haroto"},"name":{"mi":"Te Hāroto"},"components":"te: the; hāroto: pool","meaning":"The pool"}
+{"_id":"me_683","code":"te_henga","slug":{"mi":"te_henga"},"name":{"mi":"Te Henga"},"components":"te: the; henga: food for a work party","meaning":"The food for a work party"}
+{"_id":"me_684","code":"te_henui","slug":{"mi":"te_henui"},"name":{"mi":"Te Hēnui"},"components":"te: the; hē: amongst its several meanings are wrong, erring, error, difficulty, trouble; nui: big","meaning":"The great mistake"}
+{"_id":"me_685","code":"te_ika-a-maui","slug":{"mi":"te_ika-a-maui"},"name":{"mi":"Te Ika-a-Māui"},"components":"te: the; ika: fish; a: of; Māui: a personal name","meaning":"The fish of Māui"}
+{"_id":"me_686","code":"te_ika-a-ranganui","slug":{"mi":"te_ika-a-ranganui"},"name":{"mi":"Te Ika-a-Ranganui"},"components":"te: the; ika: fish; a: of; Ranganui: a personal name","meaning":"The fish of Ranganui"}
+{"_id":"me_687","code":"te_horo","slug":{"mi":"te_horo"},"name":{"mi":"Te Horo"},"components":"te: the; horo: landslide","meaning":"The landslide"}
+{"_id":"me_688","code":"te_kaha","slug":{"mi":"te_kaha"},"name":{"mi":"Te Kaha"},"components":"te: the; kaha: rope","meaning":"The rope"}
+{"_id":"me_689","code":"te_kao","slug":{"mi":"te_kao"},"name":{"mi":"Te Kao"},"components":"te: the; kao: dried kūmara","meaning":"The dried kūmara"}
+{"_id":"me_69","code":"kaikarae","slug":{"mi":"kaikarae"},"name":{"mi":"Kaikarae"},"components":"kai: food; karae: seabird","meaning":"Eat a seabird"}
+{"_id":"me_690","code":"te_kauwhata","slug":{"mi":"te_kauwhata"},"name":{"mi":"Te Kauwhata"},"components":"te: the; kau: empty; whata: storehouse","meaning":"The empty storehouse"}
+{"_id":"me_691","code":"te_kawakawa","slug":{"mi":"te_kawakawa"},"name":{"mi":"Te Kawakawa"},"components":"te: the; kawakawa: a native shrub","meaning":"The kawakawa shrub"}
+{"_id":"me_692","code":"te_kopua","slug":{"mi":"te_kopua"},"name":{"mi":"Te Kōpua"},"components":"te: the; kōpua: deep pool","meaning":"The deep pool"}
+{"_id":"me_693","code":"te_kiri","slug":{"mi":"te_kiri"},"name":{"mi":"Te Kiri"},"components":"te: the; kiri: bark","meaning":"The bark"}
+{"_id":"me_694","code":"te_kohanga","slug":{"mi":"te_kohanga"},"name":{"mi":"Te Kōhanga"},"components":"te: the; kōhanga: nest","meaning":"The nest"}
+{"_id":"me_695","code":"te_kowhai","slug":{"mi":"te_kowhai"},"name":{"mi":"Te Kōwhai"},"components":"te: the; kōwhai: a tree","meaning":"The kōwhai tree"}
+{"_id":"me_696","code":"te_mania","slug":{"mi":"te_mania"},"name":{"mi":"Te Mānia"},"components":"te: the; mānia: plain","meaning":"The plain"}
+{"_id":"me_697","code":"te_moana","slug":{"mi":"te_moana"},"name":{"mi":"Te Moana"},"components":"te: the; moana: ocean","meaning":"The sea"}
+{"_id":"me_698","code":"te_moana_o_toi_te_huatahi","slug":{"mi":"te_moana_o_toi_te_huatahi"},"name":{"mi":"Te Moana o Toi te Huatahi"},"components":"te: the; moana: ocean; o: of; Toi te Huatahi","meaning":"The ocean of Toi te Huatahi"}
+{"_id":"me_699","code":"te_moananui","slug":{"mi":"te_moananui"},"name":{"mi":"Te Moananui"},"components":"te: the; moana: ocean; nui: large","meaning":"The great ocean"}
+{"_id":"me_7","code":"arapito","slug":{"mi":"arapito"},"name":{"mi":"Arapito"},"components":"ara: path; pito: end or extremity","meaning":"End of the path"}
+{"_id":"me_70","code":"kaikoura","slug":{"mi":"kaikoura"},"name":{"mi":"Kaikōura"},"components":"kai: to eat; koura: crayfish","meaning":"Eat crayfish"}
+{"_id":"me_700","code":"te_moananui-a-kiwa","slug":{"mi":"te_moananui-a-kiwa"},"name":{"mi":"Te Moananui-a-Kiwa"},"components":"te: the; moana: ocean; nui: large; a: of; Kiwa","meaning":"The great ocean of Kiwa"}
+{"_id":"me_701","code":"te_onepu","slug":{"mi":"te_onepu"},"name":{"mi":"Te Onepū"},"components":"te: the; onepū: sand","meaning":"The sand"}
+{"_id":"me_702","code":"te_onewa","slug":{"mi":"te_onewa"},"name":{"mi":"Te Onewa"},"components":"te: the; one: earth, soil or land; wa: unenclosed country","meaning":"Soil of the unenclosed land"}
+{"_id":"me_703","code":"te_papatapu","slug":{"mi":"te_papatapu"},"name":{"mi":"Te Papatapu"},"components":"te: the; papa: flat; tapu: sacred or forbidden","meaning":"The sacred flat"}
+{"_id":"me_704","code":"te_puke","slug":{"mi":"te_puke"},"name":{"mi":"Te Puke"},"components":"te: the; puke: hill","meaning":"The hill"}
+{"_id":"me_705","code":"te_tai_tamahine","slug":{"mi":"te_tai_tamahine"},"name":{"mi":"Te Tai Tamāhine"},"components":"te: the; tai: sea, coast; tamāhine: daughter, girl","meaning":"The female coast"}
+{"_id":"me_706","code":"te_tai_tamatane","slug":{"mi":"te_tai_tamatane"},"name":{"mi":"Te Tai Tamatāne"},"components":"te: the; tai: sea, coast; tamatāne: son, body","meaning":"The male coast"}
+{"_id":"me_707","code":"te_tai_o_marokura","slug":{"mi":"te_tai_o_marokura"},"name":{"mi":"Te Tai o Marokura"},"components":"te: the; tai: sea, coast; o: of; Marokura","meaning":"The coast of Marokura"}
+{"_id":"me_708","code":"te_tai_o_mahaanui","slug":{"mi":"te_tai_o_mahaanui"},"name":{"mi":"Te Tai o Mahaanui"},"components":"te: the; tai: sea, coast; o: of; Mahaanui","meaning":"The coast of Mahaanui"}
+{"_id":"me_709","code":"te_tai_o_aorere","slug":{"mi":"te_tai_o_aorere"},"name":{"mi":"Te Tai o Aorere"},"components":"te: the; tai: sea, coast; o: of; Aorere","meaning":"The coast of Aorere"}
+{"_id":"me_71","code":"kaikumera","slug":{"mi":"kaikumera"},"name":{"mi":"Kaikūmera"},"components":"kai: to eat; kūmera (alternate spelling of kūmara): sweet potato","meaning":"Eat kūmara"}
+{"_id":"me_710","code":"te_tai_poutini","slug":{"mi":"te_tai_poutini"},"name":{"mi":"Te Tai Poutini"},"components":"te: the; tai: sea, coast; Poutini","meaning":"The coast of Poutini"}
+{"_id":"me_711","code":"te_tukeroa","slug":{"mi":"te_tukeroa"},"name":{"mi":"Te Tukeroa"},"components":"te: the ; tuke: elbow or bend; roa: tall","meaning":"The long bend"}
+{"_id":"me_712","code":"te_waharoa","slug":{"mi":"te_waharoa"},"name":{"mi":"Te Waharoa"},"components":"te: the; waha: to carry on the back; roa: long","meaning":"The long carry"}
+{"_id":"me_713","code":"te_wai_pounamu","slug":{"mi":"te_wai_pounamu"},"name":{"mi":"Te Wai Pounamu"},"components":"te; the; wai: water; pounamu: greenstone","meaning":"The greenstone waters"}
+{"_id":"me_714","code":"te_waiiti","slug":{"mi":"te_waiiti"},"name":{"mi":"Te Waiiti"},"components":"te: the; wai: stream; iti: small","meaning":"The little stream"}
+{"_id":"me_715","code":"te_waiopani","slug":{"mi":"te_waiopani"},"name":{"mi":"Te Waiopani"},"components":"te: the wai: water; o: of; Pani","meaning":"The water of Pani"}
+{"_id":"me_716","code":"te_wairoa","slug":{"mi":"te_wairoa"},"name":{"mi":"Te Wairoa"},"components":"te: the; wai: river or stream; roa: long","meaning":"The long stream"}
+{"_id":"me_717","code":"te_waitere","slug":{"mi":"te_waitere"},"name":{"mi":"Te Waitere"},"components":"te: the; wai: water; tere: swiftly flowing","meaning":"The swift stream"}
+{"_id":"me_718","code":"te_weiti","slug":{"mi":"te_weiti"},"name":{"mi":"Te Wēiti"},"components":"te: the; wē: water; iti: little","meaning":"The little water"}
+{"_id":"me_719","code":"te_whare-kai-atua","slug":{"mi":"te_whare-kai-atua"},"name":{"mi":"Te Whare-kai-atua"},"components":"te: the; whare: house; kai: eat; atua: gods","meaning":"The abode that consumes deities"}
+{"_id":"me_72","code":"kaimai","slug":{"mi":"kaimai"},"name":{"mi":"Kaimāī"},"components":"kai: food or to eat; māī: mussels, or slightly fermented food","meaning":"Eat fermented food"}
+{"_id":"me_720","code":"tikapa_moana","slug":{"mi":"tikapa_moana"},"name":{"mi":"Tīkapa Moana"},"components":"tīkapa: mournful; moana: sea","meaning":"The mournful sea"}
+{"_id":"me_721","code":"tikinui","slug":{"mi":"tikinui"},"name":{"mi":"Tikinui"},"components":"tiki: human representation in wood or stone; nui: large or many","meaning":"The great human carving"}
+{"_id":"me_722","code":"tinui","slug":{"mi":"tinui"},"name":{"mi":"Tinui"},"components":"ti: cabbage tree; nui: large or many","meaning":"Many cabbage trees"}
+{"_id":"me_723","code":"tiroa","slug":{"mi":"tiroa"},"name":{"mi":"Tiroa"},"components":"ti: cabbage tree; roa: tall","meaning":"Long cabbage tree"}
+{"_id":"me_724","code":"tiromoana","slug":{"mi":"tiromoana"},"name":{"mi":"Tiromoana"},"components":"tiro: view; moana: ocean","meaning":"View the sea"}
+{"_id":"me_725","code":"tironui","slug":{"mi":"tironui"},"name":{"mi":"Tironui"},"components":"tiro: view; nui: large or expansive","meaning":"Expansive view"}
+{"_id":"me_726","code":"tiroroa","slug":{"mi":"tiroroa"},"name":{"mi":"Tiroroa"},"components":"tiro: view; roa: long","meaning":"Long view"}
+{"_id":"me_727","code":"titiroa","slug":{"mi":"titiroa"},"name":{"mi":"Titiroa"},"components":"titi: long streaks of cloud; roa: long","meaning":"Long streaks of cloud"}
+{"_id":"me_728","code":"tokanui","slug":{"mi":"tokanui"},"name":{"mi":"Tokanui"},"components":"toka: rock; nui: large or many","meaning":"Large rock"}
+{"_id":"me_729","code":"tokarahi","slug":{"mi":"tokarahi"},"name":{"mi":"Tokarahi"},"components":"toka: rock; rahi: large or many","meaning":"Many rocks"}
+{"_id":"me_73","code":"kaimamaku","slug":{"mi":"kaimamaku"},"name":{"mi":"Kaimamaku"},"components":"kai: food or to eat; mamaku: edible tree-fern","meaning":"Eat edible tree-fern"}
+{"_id":"me_730","code":"tokaroa","slug":{"mi":"tokaroa"},"name":{"mi":"Tokaroa"},"components":"toka: rock; roa: tall or long","meaning":"Tall rock"}
+{"_id":"me_731","code":"tokoiti","slug":{"mi":"tokoiti"},"name":{"mi":"Tokoiti"},"components":"toko: pole; iti: small","meaning":"Little pole"}
+{"_id":"me_732","code":"tokoroa","slug":{"mi":"tokoroa"},"name":{"mi":"Tokoroa"},"components":"toko: pole: roa: long","meaning":"Long pole"}
+{"_id":"me_733","code":"tomoana","slug":{"mi":"tomoana"},"name":{"mi":"Tōmoana"},"components":"tō: to drag or as far up as; moana: ocean","meaning":"Drag to the ocean"}
+{"_id":"me_734","code":"totaranui","slug":{"mi":"totaranui"},"name":{"mi":"Tōtaranui"},"components":"tōtara: trees; nui: many","meaning":"Many tōtara trees"}
+{"_id":"me_735","code":"tunanui","slug":{"mi":"tunanui"},"name":{"mi":"Tunanui"},"components":"tuna: eels; nui: many","meaning":"Many eels"}
+{"_id":"me_736","code":"turanganui","slug":{"mi":"turanganui"},"name":{"mi":"Tūranganui"},"components":"tūranga: standing; nui: great","meaning":"Great standing place"}
+{"_id":"me_737","code":"turangaomoana","slug":{"mi":"turangaomoana"},"name":{"mi":"Tūrangaomoana"},"components":"tūranga: standing place; o: of; moana: the sea","meaning":"Resting place of the sea"}
+{"_id":"me_738","code":"tutaenui","slug":{"mi":"tutaenui"},"name":{"mi":"Tūtaenui"},"components":"tūtae: dung; nui: large","meaning":"Large dung"}
+{"_id":"me_739","code":"umutaoroa","slug":{"mi":"umutaoroa"},"name":{"mi":"Umutaoroa"},"components":"umu: oven; taoroa: long spear","meaning":"Oven of the long spear"}
+{"_id":"me_74","code":"kaimanawa","slug":{"mi":"kaimanawa"},"name":{"mi":"Kaimanawa"},"components":"kai: food or to eat; manawa: breath (also meaning heart or emotion)","meaning":"Breath for food"}
+{"_id":"me_740","code":"urenui","slug":{"mi":"urenui"},"name":{"mi":"Urenui"},"components":"ure: courage (a figurative expression); nui: great","meaning":"Great courage"}
+{"_id":"me_741","code":"utuwai","slug":{"mi":"utuwai"},"name":{"mi":"Utuwai"},"components":"utu: dip into, in order to fill a bowl; wai: water","meaning":"Dip into water"}
+{"_id":"me_742","code":"waianiwaniwa","slug":{"mi":"waianiwaniwa"},"name":{"mi":"Waianiwaniwa"},"components":"wai: water; aniwaniwa: rainbow","meaning":"Rainbow waters"}
+{"_id":"me_743","code":"waiapu","slug":{"mi":"waiapu"},"name":{"mi":"Waiapu"},"components":"wai: water; apu: to swallow","meaning":"Swallowing river"}
+{"_id":"me_744","code":"waiareka","slug":{"mi":"waiareka"},"name":{"mi":"Waiareka"},"components":"wai: water; a: of; reka: sweet or sweetness","meaning":"Sweet water"}
+{"_id":"me_745","code":"waiariari","slug":{"mi":"waiariari"},"name":{"mi":"Waiariari"},"components":"wai: water; ariari: gleaming or undisturbed","meaning":"Gleaming water"}
+{"_id":"me_746","code":"waiariki","slug":{"mi":"waiariki"},"name":{"mi":"Waiariki"},"components":"wai: water; ariki: chief","meaning":"Waters of the chief"}
+{"_id":"me_747","code":"waiaro","slug":{"mi":"waiaro"},"name":{"mi":"Waiaro"},"components":"wai: water; aro: wistful","meaning":"Wistful water"}
+{"_id":"me_748","code":"waiatoto","slug":{"mi":"waiatoto"},"name":{"mi":"Waiatoto"},"components":"wai: water; a: of; toto: blood","meaning":"Water of blood"}
+{"_id":"me_749","code":"waiau","slug":{"mi":"waiau"},"name":{"mi":"Waiau"},"components":"wai: water; au: current","meaning":"Swirling waters"}
+{"_id":"me_75","code":"kaimango","slug":{"mi":"kaimango"},"name":{"mi":"Kaimangō"},"components":"kai: food or to eat; mangō: shark","meaning":"Eating shark"}
+{"_id":"me_750","code":"waiaua","slug":{"mi":"waiaua"},"name":{"mi":"Waiaua"},"components":"wai: water; aua: herring","meaning":"Waters containing herring"}
+{"_id":"me_751","code":"waihaha","slug":{"mi":"waihaha"},"name":{"mi":"Waihaha"},"components":"wai: water; haha: noisy","meaning":"Noisy water"}
+{"_id":"me_752","code":"waihakeke","slug":{"mi":"waihakeke"},"name":{"mi":"Waihakeke"},"components":"wai: water; hakeke: wood ear fungus","meaning":"Wood ear fungus water"}
+{"_id":"me_753","code":"waihao","slug":{"mi":"waihao"},"name":{"mi":"Waihao"},"components":"wai: water; hao: to catch in a net","meaning":"Water of net fishing"}
+{"_id":"me_754","code":"waihao","slug":{"mi":"waihao"},"name":{"mi":"Waihao"},"components":"wai: river: hao: a species of small eel","meaning":"Water with eels"}
+{"_id":"me_755","code":"waihaorunga","slug":{"mi":"waihaorunga"},"name":{"mi":"Waihaorunga"},"components":"wai: river: hao: a species of small eel; runga: top or upper part","meaning":"Water with eels at the top"}
+{"_id":"me_756","code":"waiharakeke","slug":{"mi":"waiharakeke"},"name":{"mi":"Waiharakeke"},"components":"wai: stream; harakeke: flax","meaning":"Flax stream"}
+{"_id":"me_757","code":"waiharuru","slug":{"mi":"waiharuru"},"name":{"mi":"Waiharuru"},"components":"wai: water; haruru: to reverberate or rumble","meaning":"Rumbling waters"}
+{"_id":"me_758","code":"waihau","slug":{"mi":"waihau"},"name":{"mi":"Waihau"},"components":"wai: water; hau: wind","meaning":"Windy water"}
+{"_id":"me_759","code":"waiheke","slug":{"mi":"waiheke"},"name":{"mi":"Waiheke"},"components":"wai: water; heke: to ebb, drip or descend","meaning":"The descending waters"}
+{"_id":"me_76","code":"kaimata","slug":{"mi":"kaimata"},"name":{"mi":"Kaimata"},"components":"kaimata: unripe or uncooked food","meaning":"Eat raw food"}
+{"_id":"me_760","code":"waihemo","slug":{"mi":"waihemo"},"name":{"mi":"Waihemo"},"components":"wai: water or stream; hemo: to cease","meaning":"The finished stream"}
+{"_id":"me_761","code":"waihinau","slug":{"mi":"waihinau"},"name":{"mi":"Waihīnau"},"components":"wai: stream; hīnau: a native tree","meaning":"Hīnau tree stream"}
+{"_id":"me_762","code":"waihirere","slug":{"mi":"waihirere"},"name":{"mi":"Waihīrere"},"components":"wai: water; hīrere: to rush","meaning":"Rushing waters"}
+{"_id":"me_763","code":"waihoaka","slug":{"mi":"waihoaka"},"name":{"mi":"Waihōaka"},"components":"wai: stream; hōaka (South Island form of hōanga): sandstone, used for grinding and polishing greenstone","meaning":"Water of sandstone"}
+{"_id":"me_764","code":"waihohepa","slug":{"mi":"waihohepa"},"name":{"mi":"Waihōhepa"},"components":"wai: stream, water; Hohepa: the Maori form of Joseph","meaning":"The water of Hōhepa"}
+{"_id":"me_765","code":"waihohonu","slug":{"mi":"waihohonu"},"name":{"mi":"Waihōhonu"},"components":"wai: river; hōhonu: deep","meaning":"Deep water"}
+{"_id":"me_766","code":"waihopo","slug":{"mi":"waihopo"},"name":{"mi":"Waihopo"},"components":"wai: river; hopo: to be apprehensive or doubtful","meaning":"A river one fears to cross"}
+{"_id":"me_767","code":"waihora","slug":{"mi":"waihora"},"name":{"mi":"Waihora"},"components":"wai: water; hora: spread out","meaning":"Spread-out waters"}
+{"_id":"me_768","code":"waihou","slug":{"mi":"waihou"},"name":{"mi":"Waihōu"},"components":"wai: river; hōu: new","meaning":"New waters"}
+{"_id":"me_769","code":"waihua","slug":{"mi":"waihua"},"name":{"mi":"Waihua"},"components":"wai: water; hua: fish roe","meaning":"Fish roe waters"}
+{"_id":"me_77","code":"kaimataitai","slug":{"mi":"kaimataitai"},"name":{"mi":"Kaimātaitai"},"components":"kai: food; mātaitai: salty","meaning":"Eat seafood"}
+{"_id":"me_770","code":"waihue","slug":{"mi":"waihue"},"name":{"mi":"Waihue"},"components":"wai: river; hue: gourd","meaning":"River gourd waters"}
+{"_id":"me_771","code":"wai-iti","slug":{"mi":"wai-iti"},"name":{"mi":"Wai-iti"},"components":"wai: stream; iti: little","meaning":"Little stream"}
+{"_id":"me_772","code":"waikaka","slug":{"mi":"waikaka"},"name":{"mi":"Waikākā"},"components":"wai: water; kākā: parrot","meaning":"Parrot stream"}
+{"_id":"me_773","code":"waikakahi","slug":{"mi":"waikakahi"},"name":{"mi":"Waikākāhi"},"components":"wai: water; kākahi: freshwater shellfish","meaning":"Waters of freshwater shellfish"}
+{"_id":"me_774","code":"waikakaho","slug":{"mi":"waikakaho"},"name":{"mi":"Waikākaho"},"components":"wai: water; kākaho: flowering plumes of the toetoe","meaning":"Waters of the flowering plumes of the toetoe"}
+{"_id":"me_775","code":"waikanae","slug":{"mi":"waikanae"},"name":{"mi":"Waikanae"},"components":"wai: water; kanae: mullet","meaning":"Mullet waters"}
+{"_id":"me_776","code":"waikaraka","slug":{"mi":"waikaraka"},"name":{"mi":"Waikaraka"},"components":"wai: stream; karaka: native tree","meaning":"Karaka tree stream"}
+{"_id":"me_777","code":"waikarakia","slug":{"mi":"waikarakia"},"name":{"mi":"Waikarakia"},"components":"wai: stream; karakia: prayer or incantation","meaning":"Stream of ritual"}
+{"_id":"me_778","code":"waikare","slug":{"mi":"waikare"},"name":{"mi":"Waikare"},"components":"wai: water; kare: to ripple","meaning":"Rippling waters"}
+{"_id":"me_779","code":"waikareiti","slug":{"mi":"waikareiti"},"name":{"mi":"Waikareiti"},"components":"wai: water; kare: to ripple or dash; iti: little","meaning":"Little waters"}
+{"_id":"me_78","code":"kaimaumau","slug":{"mi":"kaimaumau"},"name":{"mi":"Kaimaumau"},"components":"kai: food; maumau: to waste","meaning":"Eat food"}
+{"_id":"me_780","code":"waikaremoana","slug":{"mi":"waikaremoana"},"name":{"mi":"Waikaremoana"},"components":"wai: water; kare: to ripple; moana: sea or large lake","meaning":"Sea of rippling waters"}
+{"_id":"me_781","code":"waikaretu","slug":{"mi":"waikaretu"},"name":{"mi":"Waikāretu"},"components":"wai: water; kāretu: a sweet-scented grass","meaning":"Waters of the kāretu grass"}
+{"_id":"me_782","code":"waikari","slug":{"mi":"waikari"},"name":{"mi":"Waikari"},"components":"wai: water; kari: dig","meaning":"Dig for water"}
+{"_id":"me_783","code":"waikato","slug":{"mi":"waikato"},"name":{"mi":"Waikato"},"components":"wai: river; kato: to flow","meaning":"Flowing water"}
+{"_id":"me_784","code":"waikawa","slug":{"mi":"waikawa"},"name":{"mi":"Waikawa"},"components":"wai: water; kawa: bitter","meaning":"Bitter water"}
+{"_id":"me_785","code":"waikawau","slug":{"mi":"waikawau"},"name":{"mi":"Waikawau"},"components":"wai: water; kawau: shag","meaning":"Water of the shag"}
+{"_id":"me_786","code":"waikereru","slug":{"mi":"waikereru"},"name":{"mi":"Waikererū"},"components":"wai: water; kererū: wood pigeon","meaning":"Water of the wood pigeon"}
+{"_id":"me_787","code":"waikeria","slug":{"mi":"waikeria"},"name":{"mi":"Waikeria"},"components":"wai: water; keria: dug out","meaning":"Dug out water"}
+{"_id":"me_788","code":"waikerikeri","slug":{"mi":"waikerikeri"},"name":{"mi":"Waikerikeri"},"components":"wai: water; kerikeri: to rush along violently","meaning":"Water that rushes along"}
+{"_id":"me_789","code":"waikiekie","slug":{"mi":"waikiekie"},"name":{"mi":"Waikiekie"},"components":"wai: water; kiekie: a climbing plant","meaning":"Kiekie waters"}
+{"_id":"me_79","code":"kaimiro","slug":{"mi":"kaimiro"},"name":{"mi":"Kaimiro"},"components":"kai: food or to eat; miro: a tree","meaning":"Eat miro berries"}
+{"_id":"me_790","code":"waikino","slug":{"mi":"waikino"},"name":{"mi":"Waikino"},"components":"wai: water; kino: unpleasant, stinking","meaning":"Harmful waters"}
+{"_id":"me_791","code":"waikirikiri","slug":{"mi":"waikirikiri"},"name":{"mi":"Waikirikiri"},"components":"wai: stream; kirikiri: gravel","meaning":"Gravelly stream"}
+{"_id":"me_792","code":"waikite","slug":{"mi":"waikite"},"name":{"mi":"Waikite"},"components":"wai: water; kite: to see or gaze upon","meaning":"Discovered water"}
+{"_id":"me_793","code":"waikiwi","slug":{"mi":"waikiwi"},"name":{"mi":"Waikiwi"},"components":"wai: stream; kiwi: a flightless nocturnal bird","meaning":"Kiwi waters"}
+{"_id":"me_794","code":"waikoau","slug":{"mi":"waikoau"},"name":{"mi":"Waikōau"},"components":"wai: water; kōau: shag","meaning":"Waters of the shag"}
+{"_id":"me_795","code":"waikohu","slug":{"mi":"waikohu"},"name":{"mi":"Waikohu"},"components":"wai: water; kohu: mist","meaning":"Misty waters"}
+{"_id":"me_796","code":"waikokopu","slug":{"mi":"waikokopu"},"name":{"mi":"Waikōkopu"},"components":"wai: water; kōkopu: cockabully fish","meaning":"Waters of the cockabully"}
+{"_id":"me_797","code":"waikokowai","slug":{"mi":"waikokowai"},"name":{"mi":"Waikōkōwai"},"components":"wai: water; kōkōwai: red ochre","meaning":"Waters of the red ochre"}
+{"_id":"me_798","code":"waikorea","slug":{"mi":"waikorea"},"name":{"mi":"Waikorea"},"components":"wai: water; korea: a small canoe","meaning":"Waters of the small canoe"}
+{"_id":"me_799","code":"waikouaiti","slug":{"mi":"waikouaiti"},"name":{"mi":"Waikouaiti"},"components":"wai: stream; koua (the poetical form of kua): to become; iti: little","meaning":"Stream which has become small"}
+{"_id":"me_8","code":"arapohue","slug":{"mi":"arapohue"},"name":{"mi":"Arapōhue"},"components":"ara: path; pōhue: climbing plant","meaning":"Path of the climbing plant"}
+{"_id":"me_80","code":"kainamu","slug":{"mi":"kainamu"},"name":{"mi":"Kainamu"},"components":"kai: to eat; namu: sandflies","meaning":"Eat sandflies"}
+{"_id":"me_800","code":"waikoukou","slug":{"mi":"waikoukou"},"name":{"mi":"Waikoukou"},"components":"wai: water; koukou: morepork or native owl","meaning":"Water of the morepork"}
+{"_id":"me_801","code":"waikowhai","slug":{"mi":"waikowhai"},"name":{"mi":"Waikōwhai"},"components":"wai: stream; kowhai: native tree","meaning":"Kōwhai tree waters"}
+{"_id":"me_802","code":"waikowhitiwhiti","slug":{"mi":"waikowhitiwhiti"},"name":{"mi":"Waikōwhitiwhiti"},"components":"wai: water; kōwhitiwhiti: dancing (of water)","meaning":"Dancing waters"}
+{"_id":"me_803","code":"waikuku","slug":{"mi":"waikuku"},"name":{"mi":"Waikuku"},"components":"wai: water; kuku: freshwater mussel","meaning":"Freshwater mussel waters"}
+{"_id":"me_804","code":"waikumete","slug":{"mi":"waikumete"},"name":{"mi":"Waikumete"},"components":"wai: water; kumete: wooden bowl often used to snare wood pigeons","meaning":"Waters of the kumete bowl"}
+{"_id":"me_805","code":"waikuta","slug":{"mi":"waikuta"},"name":{"mi":"Waikuta"},"components":"wai: water; kuta: rushes","meaning":"Waters of the kuta rushes"}
+{"_id":"me_806","code":"waima","slug":{"mi":"waima"},"name":{"mi":"Waimā"},"components":"wai: river; mā: white or clear","meaning":"Clear water"}
+{"_id":"me_807","code":"wai-maeroero","slug":{"mi":"wai-maeroero"},"name":{"mi":"Wai-māeroero"},"components":"wai: water; māeroero: ogres of the South Island forests","meaning":"Waters of the ogres of the forests"}
+{"_id":"me_808","code":"waimahaka","slug":{"mi":"waimahaka"},"name":{"mi":"Waimāhaka"},"components":"wai: waters; māhaka (māhanga): twin","meaning":"Twin waters"}
+{"_id":"me_809","code":"waimahora","slug":{"mi":"waimahora"},"name":{"mi":"Waimahora"},"components":"wai: water; mahora: spread out","meaning":"Spread out waters"}
+{"_id":"me_81","code":"kaingaroa","slug":{"mi":"kaingaroa"},"name":{"mi":"Kāingaroa"},"components":"kāinga: area of land; roa: long","meaning":"Long area of land"}
+{"_id":"me_810","code":"waimahuru","slug":{"mi":"waimahuru"},"name":{"mi":"Waimahuru"},"components":"wai; stream; mahuru: placid","meaning":"Placid waters"}
+{"_id":"me_811","code":"waimakariri","slug":{"mi":"waimakariri"},"name":{"mi":"Waimakariri"},"components":"wai: river; makariri: cold","meaning":"Cold river"}
+{"_id":"me_812","code":"waimamaku","slug":{"mi":"waimamaku"},"name":{"mi":"Waimamaku"},"components":"wai: stream; mamaku: tree-fern","meaning":"Tree-fern stream"}
+{"_id":"me_813","code":"waimana","slug":{"mi":"waimana"},"name":{"mi":"Waimana"},"components":"wai: stream; mana: esteem or influence","meaning":"Stream of influence"}
+{"_id":"me_814","code":"waimangaroa","slug":{"mi":"waimangaroa"},"name":{"mi":"Waimangaroa"},"components":"wai: river; manga: tributary; roa: long","meaning":"River with a long tributary"}
+{"_id":"me_815","code":"waimangu","slug":{"mi":"waimangu"},"name":{"mi":"Waimangu"},"components":"wai: water; mangu: black","meaning":"Black water"}
+{"_id":"me_816","code":"waimarama","slug":{"mi":"waimarama"},"name":{"mi":"Waimārama"},"components":"wai: water; mārama: clear","meaning":"Clear water"}
+{"_id":"me_817","code":"waimarie","slug":{"mi":"waimarie"},"name":{"mi":"Waimarie"},"components":"wai: water; marie: quiet","meaning":"Quiet water"}
+{"_id":"me_818","code":"waimarino","slug":{"mi":"waimarino"},"name":{"mi":"Waimarino"},"components":"wai: water or stream; marino: calm or still","meaning":"Calm stream"}
+{"_id":"me_819","code":"waimaru","slug":{"mi":"waimaru"},"name":{"mi":"Waimaru"},"components":"wai; water; maru: shade or sheltered","meaning":"Sheltered water"}
+{"_id":"me_82","code":"kaingaroa","slug":{"mi":"kaingaroa"},"name":{"mi":"Kāingaroa"},"components":"Kāinga: place where food has been cooked and eaten; roa: long","meaning":"Long meal"}
+{"_id":"me_820","code":"waimataitai","slug":{"mi":"waimataitai"},"name":{"mi":"Waimātaitai"},"components":"wai; water; mātaitai: salty or brackish water","meaning":"Salty water"}
+{"_id":"me_821","code":"waimate","slug":{"mi":"waimate"},"name":{"mi":"Waimate"},"components":"wai: water; mate: dead, sick or stagnant","meaning":"Stagnant water"}
+{"_id":"me_822","code":"waimatua","slug":{"mi":"waimatua"},"name":{"mi":"Waimatua"},"components":"wai: water; matua: large or important","meaning":"Important water"}
+{"_id":"me_823","code":"waimatuku","slug":{"mi":"waimatuku"},"name":{"mi":"Waimatuku"},"components":"wai: water; matuku: bittern","meaning":"Bittern water"}
+{"_id":"me_824","code":"waimauku","slug":{"mi":"waimauku"},"name":{"mi":"Waimauku"},"components":"wai: stream; mauku: small ferns","meaning":"Fern water"}
+{"_id":"me_825","code":"waimaunga","slug":{"mi":"waimaunga"},"name":{"mi":"Waimaunga"},"components":"wai: stream; maunga: mountain","meaning":"Mountain stream"}
+{"_id":"me_826","code":"waimimi","slug":{"mi":"waimimi"},"name":{"mi":"Waimimi"},"components":"wai: stream; mimi: urine","meaning":"Urine stream"}
+{"_id":"me_827","code":"waimiro","slug":{"mi":"waimiro"},"name":{"mi":"Waimiro"},"components":"wai: stream; miro: a native tree","meaning":"Miro stream"}
+{"_id":"me_828","code":"waimotu","slug":{"mi":"waimotu"},"name":{"mi":"Waimotu"},"components":"wai: water or river; motu: island","meaning":"Island stream"}
+{"_id":"me_829","code":"waimumu","slug":{"mi":"waimumu"},"name":{"mi":"Waimumu"},"components":"wai: stream; mumu: boisterous","meaning":"Boisterous stream"}
+{"_id":"me_83","code":"kaipakirikiri","slug":{"mi":"kaipakirikiri"},"name":{"mi":"Kaipākirikiri"},"components":"kai: food; pākirikiri: rock cod","meaning":"Eating rock cod"}
+{"_id":"me_830","code":"waingake","slug":{"mi":"waingake"},"name":{"mi":"Waingake"},"components":"wai: water; ngake: capacious, or the middle section of a fishing net","meaning":"Waters to fill a large net"}
+{"_id":"me_831","code":"waingaro","slug":{"mi":"waingaro"},"name":{"mi":"Waingaro"},"components":"wai: water or stream; ngaro: lost or hidden","meaning":"Lost stream"}
+{"_id":"me_832","code":"waingongoro","slug":{"mi":"waingongoro"},"name":{"mi":"Waingongoro"},"components":"wai: river; ngongoro: to snore or gurgle","meaning":"Gurgling water"}
+{"_id":"me_833","code":"wainoni","slug":{"mi":"wainoni"},"name":{"mi":"Wainoni"},"components":"wai: stream; noni: bend or turn","meaning":"Bendy stream"}
+{"_id":"me_834","code":"wainui","slug":{"mi":"wainui"},"name":{"mi":"Wainui"},"components":"wai: water; nui: large","meaning":"Large waters"}
+{"_id":"me_835","code":"wainuiomata","slug":{"mi":"wainuiomata"},"name":{"mi":"Wainuiomata"},"components":"wai: stream; nui: big; o: of; Mata: a personal name","meaning":"Big stream of Mata"}
+{"_id":"me_836","code":"wainuioru","slug":{"mi":"wainuioru"},"name":{"mi":"Wainuioru"},"components":"wai: water or stream; nui: large; o of; Ru: personal name","meaning":"Large waters of Ru"}
+{"_id":"me_837","code":"waiohau","slug":{"mi":"waiohau"},"name":{"mi":"Waiohau"},"components":"wai: water; o: of; Hau: personal name","meaning":"Waters of Hau"}
+{"_id":"me_838","code":"waiohine","slug":{"mi":"waiohine"},"name":{"mi":"Waiohine"},"components":"wai: river; o: of; Hine","meaning":"River of Hine"}
+{"_id":"me_839","code":"waiomatatini","slug":{"mi":"waiomatatini"},"name":{"mi":"Waiomatatini"},"components":"wai: water or stream; o: of; Matatini","meaning":"Stream of Matatini"}
+{"_id":"me_84","code":"kaipara","slug":{"mi":"kaipara"},"name":{"mi":"Kaipara"},"components":"kai: te eat; para: fern-root","meaning":"Eat fern-root"}
+{"_id":"me_840","code":"waiomio","slug":{"mi":"waiomio"},"name":{"mi":"Waiomio"},"components":"wai: water or stream; o: of; Mio","meaning":"Stream of Mio"}
+{"_id":"me_841","code":"waiomu","slug":{"mi":"waiomu"},"name":{"mi":"Waiomu"},"components":"wai: water or stream; o: of; Mu","meaning":"Stream of Mu"}
+{"_id":"me_842","code":"waione","slug":{"mi":"waione"},"name":{"mi":"Waione"},"components":"wai: water; one: beach or sand","meaning":"Stream on the beach"}
+{"_id":"me_843","code":"waiongana","slug":{"mi":"waiongana"},"name":{"mi":"Waiongana"},"components":"wai: water or stream; o: of; Ngana","meaning":"Stream of Ngata"}
+{"_id":"me_844","code":"wai-ora-a-tane","slug":{"mi":"wai-ora-a-tane"},"name":{"mi":"Wai-ora-a-Tāne"},"components":"wai: water; ora: life; a: of; Tāne","meaning":"The life-giving water of Tāne"}
+{"_id":"me_845","code":"waiorongomai","slug":{"mi":"waiorongomai"},"name":{"mi":"Waiorongomai"},"components":"wai: water or stream; o: of; Rongomai","meaning":"Stream of Rongomai"}
+{"_id":"me_846","code":"waiotahi","slug":{"mi":"waiotahi"},"name":{"mi":"Waiotahi"},"components":"wai: water or stream; o: of; Tahi","meaning":"Stream of Tahi"}
+{"_id":"me_847","code":"wai-o-taiki","slug":{"mi":"wai-o-taiki"},"name":{"mi":"Wai-o-taiki"},"components":"te: the; wai: stream; o: of; Taiki","meaning":"Stream of Taiki"}
+{"_id":"me_848","code":"waiotapu","slug":{"mi":"waiotapu"},"name":{"mi":"Waiotapu"},"components":"wai: water; o: of; tapu: sacred or reserved","meaning":"Sacred waters"}
+{"_id":"me_849","code":"waiotemarama","slug":{"mi":"waiotemarama"},"name":{"mi":"Waiotemarama"},"components":"wai: water; o: of; Te Marama","meaning":"Waters of Te Marama"}
+{"_id":"me_85","code":"kaiparoro","slug":{"mi":"kaiparoro"},"name":{"mi":"Kaiparoro"},"components":"kai: to eat; paroro: bad weather","meaning":"Eating up bad weather"}
+{"_id":"me_850","code":"waiotira","slug":{"mi":"waiotira"},"name":{"mi":"Waiotira"},"components":"wai: water or pool; a: of; tira: to set up sticks for divination","meaning":"Pool of divination"}
+{"_id":"me_851","code":"waiotu","slug":{"mi":"waiotu"},"name":{"mi":"Waiotū"},"components":"wai: water; o: of; Tū: a personal name","meaning":"Waters of Tū"}
+{"_id":"me_852","code":"waiouru","slug":{"mi":"waiouru"},"name":{"mi":"Waiouru"},"components":"wai: river; o:of; uru: west","meaning":"River of the west"}
+{"_id":"me_853","code":"waipa","slug":{"mi":"waipa"},"name":{"mi":"Waipā"},"components":"wai: river; pā: fortified village or villages","meaning":"River of fortified villages"}
+{"_id":"me_854","code":"waipahi","slug":{"mi":"waipahi"},"name":{"mi":"Waipahi"},"components":"wai: water; Pahi","meaning":"Stream of Pahi"}
+{"_id":"me_855","code":"waipahihi","slug":{"mi":"waipahihi"},"name":{"mi":"Waipāhīhī"},"components":"wai: water; pāhīhī: welling up or flowing in driblets","meaning":"Water flowing in driblets"}
+{"_id":"me_856","code":"waipakaru","slug":{"mi":"waipakaru"},"name":{"mi":"Waipakaru"},"components":"wai: water; pakaru: broken","meaning":"Stream broken through"}
+{"_id":"me_857","code":"waipango","slug":{"mi":"waipango"},"name":{"mi":"Waipango"},"components":"wai: water; pango: black","meaning":"Black water"}
+{"_id":"me_858","code":"waipapa","slug":{"mi":"waipapa"},"name":{"mi":"Waipapa"},"components":"wai: stream; papa: flat","meaning":"Stream on flats"}
+{"_id":"me_859","code":"waipapakauri","slug":{"mi":"waipapakauri"},"name":{"mi":"Waipapakauri"},"components":"wai: water; papa: flat; kauri: native tree","meaning":"Swampy ground where the kauri grow"}
+{"_id":"me_86","code":"kaipo","slug":{"mi":"kaipo"},"name":{"mi":"Kaipō"},"components":"kai: to eat; pō: night","meaning":"Eat night"}
+{"_id":"me_860","code":"waipaparoa","slug":{"mi":"waipaparoa"},"name":{"mi":"Waipaparoa"},"components":"wai: water; papa: flat; roa: long","meaning":"Stream on long flats"}
+{"_id":"me_861","code":"waipara","slug":{"mi":"waipara"},"name":{"mi":"Waipara"},"components":"wai: water; para: mud, silt or sediment","meaning":"Silty water"}
+{"_id":"me_862","code":"waipareira","slug":{"mi":"waipareira"},"name":{"mi":"Waipareira"},"components":"wai: water; Pareira","meaning":"Stream of Pareira"}
+{"_id":"me_863","code":"waipari","slug":{"mi":"waipari"},"name":{"mi":"Waipari"},"components":"wai: stream; pari: cliff","meaning":"Clifftop stream"}
+{"_id":"me_864","code":"waipati","slug":{"mi":"waipati"},"name":{"mi":"Waipati"},"components":"wai: water; pati: shallow or splashing","meaning":"Shallow waters"}
+{"_id":"me_865","code":"waipatiki","slug":{"mi":"waipatiki"},"name":{"mi":"Waipātiki"},"components":"wai: water; pātiki: flounder","meaning":"Flounder waters"}
+{"_id":"me_866","code":"waipatu","slug":{"mi":"waipatu"},"name":{"mi":"Waipatu"},"components":"wai: water; patu: struck","meaning":"Strike water"}
+{"_id":"me_867","code":"waipeto","slug":{"mi":"waipeto"},"name":{"mi":"Waipeto"},"components":"wai: stream; peto: to be consumed","meaning":"Consumed by the stream"}
+{"_id":"me_868","code":"waipiata","slug":{"mi":"waipiata"},"name":{"mi":"Waipīata"},"components":"wai: water; pīata: glistening or clear","meaning":"Clear water"}
+{"_id":"me_869","code":"waipipi","slug":{"mi":"waipipi"},"name":{"mi":"Waipipi"},"components":"wai: water; pipi: cockle","meaning":"Pipi waters"}
+{"_id":"me_87","code":"kaipuke","slug":{"mi":"kaipuke"},"name":{"mi":"Kaipuke"},"components":"kai: to eat; puke: swell, flood","meaning":"Ship (wave eater)"}
+{"_id":"me_870","code":"waipiro","slug":{"mi":"waipiro"},"name":{"mi":"Waipiro"},"components":"wai: water; piro: evil-smelling","meaning":"Evil-smelling water"}
+{"_id":"me_871","code":"waipoua","slug":{"mi":"waipoua"},"name":{"mi":"Waipōua"},"components":"wai: water; pō: night; ua: rain","meaning":"Water from rain in the night"}
+{"_id":"me_872","code":"waipounamu","slug":{"mi":"waipounamu"},"name":{"mi":"Waipounamu"},"components":"wai: river; pounamu: greenstone","meaning":"Greenstone waters"}
+{"_id":"me_873","code":"waipouri","slug":{"mi":"waipouri"},"name":{"mi":"Waipōuri"},"components":"wai: water or stream; pōuri: dark or sad.","meaning":"Dark waters"}
+{"_id":"me_874","code":"waipu","slug":{"mi":"waipu"},"name":{"mi":"Waipū"},"components":"wai: water; pū: reddish in colour","meaning":"Reddish water"}
+{"_id":"me_875","code":"waipuhinui","slug":{"mi":"waipuhinui"},"name":{"mi":"Waipuhinui"},"components":"wai: water; puhi: plume at the bow of a war canoe; nui: large","meaning":"Water of the large canoe bow plume"}
+{"_id":"me_876","code":"waipuku","slug":{"mi":"waipuku"},"name":{"mi":"Waipuku"},"components":"wai: water; puku: to swell","meaning":"Swelling water"}
+{"_id":"me_877","code":"waipukurau","slug":{"mi":"waipukurau"},"name":{"mi":"Waipukurau"},"components":"wai: stream; pukurau: a large white fungus","meaning":"Stream of the pukurau fungus"}
+{"_id":"me_878","code":"wairakei","slug":{"mi":"wairakei"},"name":{"mi":"Wairākei"},"components":"wai: water; rākei: adorning","meaning":"A place where pools of water were used as mirrors"}
+{"_id":"me_879","code":"wairangi","slug":{"mi":"wairangi"},"name":{"mi":"Wairangi"},"components":"wai: water; rangi: sky","meaning":"Water skies"}
+{"_id":"me_88","code":"kaipupu","slug":{"mi":"kaipupu"},"name":{"mi":"Kaipūpū"},"components":"kai: food; pūpū: shellfish","meaning":"Eat shellfish"}
+{"_id":"me_880","code":"wairarapa","slug":{"mi":"wairarapa"},"name":{"mi":"Wairarapa"},"components":"wai: water; rarapa: glistening","meaning":"Glistening water"}
+{"_id":"me_881","code":"waireka","slug":{"mi":"waireka"},"name":{"mi":"Waireka"},"components":"wai: water; reka: sweet","meaning":"Sweet water"}
+{"_id":"me_882","code":"wairepo","slug":{"mi":"wairepo"},"name":{"mi":"Wairepo"},"components":"wai: water; repo; swamp","meaning":"Swampy water"}
+{"_id":"me_883","code":"wairere","slug":{"mi":"wairere"},"name":{"mi":"Wairere"},"components":"wai: water or stream; rere: to flow","meaning":"Waterfall"}
+{"_id":"me_884","code":"wairio","slug":{"mi":"wairio"},"name":{"mi":"Wairio"},"components":"wai: water or stream; rio: dried up","meaning":"Dried-up stream"}
+{"_id":"me_885","code":"wairoa","slug":{"mi":"wairoa"},"name":{"mi":"Wairoa"},"components":"wai: river or stream; roa: long","meaning":"Long stream"}
+{"_id":"me_886","code":"wairongoa","slug":{"mi":"wairongoa"},"name":{"mi":"Wairongoā"},"components":"wai: springs; rongoā: medicine","meaning":"Medicinal stream"}
+{"_id":"me_887","code":"wairua","slug":{"mi":"wairua"},"name":{"mi":"Wairua"},"components":"wai: stream or river; rua: two","meaning":"Twin waters"}
+{"_id":"me_888","code":"wairuna","slug":{"mi":"wairuna"},"name":{"mi":"Wairuna"},"components":"wai: stream; runa: dock","meaning":"Dock waters"}
+{"_id":"me_889","code":"wairunga","slug":{"mi":"wairunga"},"name":{"mi":"Wairunga"},"components":"wai: water; runga: above","meaning":"Stream that flows from the mountains"}
+{"_id":"me_89","code":"kairakau","slug":{"mi":"kairakau"},"name":{"mi":"Kairākau"},"components":"kai: to eat; rākau: wood.","meaning":"Eat wood"}
+{"_id":"me_890","code":"waitaanga","slug":{"mi":"waitaanga"},"name":{"mi":"Waitaanga"},"components":"wai: stream; a of; Anga","meaning":"Stream of Anga"}
+{"_id":"me_891","code":"waitaha","slug":{"mi":"waitaha"},"name":{"mi":"Waitaha"},"components":"wai: river or stream; taha: to pass on one side","meaning":"Backwater"}
+{"_id":"me_892","code":"waitahanui","slug":{"mi":"waitahanui"},"name":{"mi":"Waitahanui"},"components":"wai: stream; tahanui: a variety of cabbage tree with broad leaves","meaning":"Stream of cabbage trees"}
+{"_id":"me_893","code":"waitahora","slug":{"mi":"waitahora"},"name":{"mi":"Waitahora"},"components":"wai: water; tahora: spread out or open space","meaning":"Wide-open waters"}
+{"_id":"me_894","code":"waitahu","slug":{"mi":"waitahu"},"name":{"mi":"Waitahu"},"components":"wai: stream; tahu: continuous or running in a straight line","meaning":"Straight-running stream"}
+{"_id":"me_895","code":"waitahuna","slug":{"mi":"waitahuna"},"name":{"mi":"Waitahuna"},"components":"wai: stream; Tāhuna: a personal name","meaning":"Stream of Tāhuna"}
+{"_id":"me_896","code":"waitai","slug":{"mi":"waitai"},"name":{"mi":"Waitai"},"components":"wai: water; tai: salt or brackish","meaning":"Salty water"}
+{"_id":"me_897","code":"waitakaro","slug":{"mi":"waitakaro"},"name":{"mi":"Waitakaro"},"components":"wai: stream; takaro: to play or wrestle","meaning":"Wrestling waters"}
+{"_id":"me_898","code":"waitakaruru","slug":{"mi":"waitakaruru"},"name":{"mi":"Waitakaruru"},"components":"wai: water; takaruru: stagnant","meaning":"Stagnant water"}
+{"_id":"me_899","code":"waitakere","slug":{"mi":"waitakere"},"name":{"mi":"Waitākere"},"components":"wai: water or stream; tākere: deep or cascading","meaning":"Cascading stream"}
+{"_id":"me_9","code":"arapuni","slug":{"mi":"arapuni"},"name":{"mi":"Arapuni"},"components":"ara: path; puni: blocked or covered","meaning":"Blocked path"}
+{"_id":"me_90","code":"kairaki","slug":{"mi":"kairaki"},"name":{"mi":"Kairaki"},"components":"kai: eat; raki (South Island form of rangi); sky","meaning":"Sky eater"}
+{"_id":"me_900","code":"waitaki","slug":{"mi":"waitaki"},"name":{"mi":"Waitaki"},"components":"wai: river; taki (tangi): noisy or weeping","meaning":"Weeping waters"}
+{"_id":"me_901","code":"waitane","slug":{"mi":"waitane"},"name":{"mi":"Waitāne"},"components":"wai: river; tāne: man or men","meaning":"River of men"}
+{"_id":"me_902","code":"waitangi","slug":{"mi":"waitangi"},"name":{"mi":"Waitangi"},"components":"wai: waters; tangi: noisy or weeping","meaning":"Weeping waters"}
+{"_id":"me_903","code":"waitangiruru","slug":{"mi":"waitangiruru"},"name":{"mi":"Waitangiruru"},"components":"wai: water or stream; tangi: to sound; ruru: morepork","meaning":"Stream that sounds like a morepork"}
+{"_id":"me_904","code":"waitanguru","slug":{"mi":"waitanguru"},"name":{"mi":"Waitanguru"},"components":"wai: water; tanguru: rushing rapidly","meaning":"Rapidly rushing water"}
+{"_id":"me_905","code":"waitao","slug":{"mi":"waitao"},"name":{"mi":"Waitao"},"components":"wai: water; tao: spear","meaning":"Spear waters"}
+{"_id":"me_906","code":"waitapu","slug":{"mi":"waitapu"},"name":{"mi":"Waitapu"},"components":"wai: water: tapu: sacred or forbidden","meaning":"Sacred waters"}
+{"_id":"me_907","code":"waitaramea","slug":{"mi":"waitaramea"},"name":{"mi":"Waitaramea"},"components":"wai: stream; taramea: speargrass","meaning":"Speargrass stream"}
+{"_id":"me_908","code":"waitararoa","slug":{"mi":"waitararoa"},"name":{"mi":"Waitararoa"},"components":"wai:water; tara: sun’s ray or shafts of light; roa: long","meaning":"First rays of the sun appearing on the water"}
+{"_id":"me_909","code":"waitarere","slug":{"mi":"waitarere"},"name":{"mi":"Waitārere"},"components":"wai: stream; tārere: to flow copiously","meaning":"Copiously flowing waters"}
+{"_id":"me_91","code":"kairara","slug":{"mi":"kairara"},"name":{"mi":"Kairara"},"components":"kai: food; rara: to be spread out on a stage for drying in the sun","meaning":"Food spread out on a stage to dry"}
+{"_id":"me_910","code":"waitaria","slug":{"mi":"waitaria"},"name":{"mi":"Waitaria"},"components":"wai: water; taria: to wait for","meaning":"Waters of waiting"}
+{"_id":"me_911","code":"waitaruke","slug":{"mi":"waitaruke"},"name":{"mi":"Waitaruke"},"components":"wai: stream; taruke: hurrying","meaning":"Hurrying stream"}
+{"_id":"me_912","code":"waitata","slug":{"mi":"waitata"},"name":{"mi":"Waitata"},"components":"wai: water; tata: to dash or beat down","meaning":"Dashing stream"}
+{"_id":"me_913","code":"waitawa","slug":{"mi":"waitawa"},"name":{"mi":"Waitawa"},"components":"wai: stream; tawa: tree","meaning":"Tawa tree stream"}
+{"_id":"me_914","code":"waitawheta","slug":{"mi":"waitawheta"},"name":{"mi":"Waitāwheta"},"components":"wai: water; tāwheta: to flounder","meaning":"Restless stream"}
+{"_id":"me_915","code":"waitekauri","slug":{"mi":"waitekauri"},"name":{"mi":"Waitekauri"},"components":"wai: stream; te: the; kauri: native tree","meaning":"Stream of the kauri tree"}
+{"_id":"me_916","code":"waitepeka","slug":{"mi":"waitepeka"},"name":{"mi":"Waitepeka"},"components":"wai: stream; te: the; peka: branch","meaning":"Tributary stream"}
+{"_id":"me_917","code":"waiterimu","slug":{"mi":"waiterimu"},"name":{"mi":"Waiterimu"},"components":"wai: stream; te: the; rimu: native tree","meaning":"Stream of the rimu tree"}
+{"_id":"me_918","code":"waiteti","slug":{"mi":"waiteti"},"name":{"mi":"Waiteti"},"components":"wai: stream; te: the; tī: cabbage tree","meaning":"Stream of the cabbage tree"}
+{"_id":"me_919","code":"waitetuna","slug":{"mi":"waitetuna"},"name":{"mi":"Waitetuna"},"components":"wai: stream; te: the; tuna: eel","meaning":"Stream of the eel"}
+{"_id":"me_92","code":"kairua","slug":{"mi":"kairua"},"name":{"mi":"Kairua"},"components":"kai: food; rua: pit","meaning":"Food pit"}
+{"_id":"me_920","code":"waitiri","slug":{"mi":"waitiri"},"name":{"mi":"Waitiri"},"components":"wai: water or stream; tiri: to toss about or disturb","meaning":"Disturbed stream"}
+{"_id":"me_921","code":"waitoa","slug":{"mi":"waitoa"},"name":{"mi":"Waitoa"},"components":"wai: water; toa: rough or stormy","meaning":"Rough waters"}
+{"_id":"me_922","code":"waitoetoe","slug":{"mi":"waitoetoe"},"name":{"mi":"Waitoetoe"},"components":"wai: water or stream; toetoe: native grass","meaning":"Toetoe grass stream"}
+{"_id":"me_923","code":"waitohi","slug":{"mi":"waitohi"},"name":{"mi":"Waitohi"},"components":"wai: water; tohi: baptismal rite","meaning":"Stream for baptismal rite"}
+{"_id":"me_924","code":"waitohu","slug":{"mi":"waitohu"},"name":{"mi":"Waitohu"},"components":"wai: water; tohu: to point out","meaning":"Water that points out the way"}
+{"_id":"me_925","code":"waitoki","slug":{"mi":"waitoki"},"name":{"mi":"Waitoki"},"components":"wai: water; toki: adze","meaning":"Adze waters"}
+{"_id":"me_926","code":"waitomo","slug":{"mi":"waitomo"},"name":{"mi":"Waitomo"},"components":"wai: water; tomo: shaft","meaning":"Shafts from water"}
+{"_id":"me_927","code":"waitoriki","slug":{"mi":"waitoriki"},"name":{"mi":"Waitoriki"},"components":"wai: water; tōriki: little","meaning":"Small stream"}
+{"_id":"me_928","code":"waitotara","slug":{"mi":"waitotara"},"name":{"mi":"Waitōtara"},"components":"wai: river; tōtara: native tree","meaning":"Tōtara tree river"}
+{"_id":"me_929","code":"waituhi","slug":{"mi":"waituhi"},"name":{"mi":"Waituhi"},"components":"wai: water; tuhi: to glow","meaning":"Glowing waters"}
+{"_id":"me_93","code":"kaitakata","slug":{"mi":"kaitakata"},"name":{"mi":"Kaitakata"},"components":"South Island variant of Kaitangata – kai: to eat; tangata: man","meaning":"Man eater (South Island form)"}
+{"_id":"me_930","code":"waitui","slug":{"mi":"waitui"},"name":{"mi":"Waitūī"},"components":"wai: water; tūī: bird","meaning":"Tūī waters"}
+{"_id":"me_931","code":"waituna","slug":{"mi":"waituna"},"name":{"mi":"Waituna"},"components":"wai: stream; tuna: eel","meaning":"Eel stream"}
+{"_id":"me_932","code":"waiuku","slug":{"mi":"waiuku"},"name":{"mi":"Waiuku"},"components":"wai: stream; uku: white clay","meaning":"Stream with banks of white clay"}
+{"_id":"me_933","code":"waiuta","slug":{"mi":"waiuta"},"name":{"mi":"Waiuta"},"components":"wai: river; uta: inland, or to load a burden","meaning":"Inland river"}
+{"_id":"me_934","code":"waiwawa","slug":{"mi":"waiwawa"},"name":{"mi":"Waiwawa"},"components":"wai: stream; wawa: roaring","meaning":"Roaring stream"}
+{"_id":"me_935","code":"waiwera","slug":{"mi":"waiwera"},"name":{"mi":"Waiwera"},"components":"wai: water; wera: hot","meaning":"Hot water"}
+{"_id":"me_936","code":"wai-whakaata","slug":{"mi":"wai-whakaata"},"name":{"mi":"Wai-whakaata"},"components":"wai: water; whakaata: to reflect","meaning":"Reflecting waters"}
+{"_id":"me_937","code":"waiwhero","slug":{"mi":"waiwhero"},"name":{"mi":"Waiwhero"},"components":"wai: water; whero: red","meaning":"Red waters"}
+{"_id":"me_938","code":"waiwhetu","slug":{"mi":"waiwhetu"},"name":{"mi":"Waiwhetū"},"components":"wai: stream; whetū: star","meaning":"Star-reflecting stream"}
+{"_id":"me_939","code":"waiwhio","slug":{"mi":"waiwhio"},"name":{"mi":"Waiwhio"},"components":"wai: stream; whio: blue or whistling duck","meaning":"Stream of the blue duck"}
+{"_id":"me_94","code":"kaitangata","slug":{"mi":"kaitangata"},"name":{"mi":"Kaitangata"},"components":"kai: to eat; tangata: man","meaning":"Man eater"}
+{"_id":"me_940","code":"waiwhiu","slug":{"mi":"waiwhiu"},"name":{"mi":"Waiwhiu"},"components":"wai: stream; whiu: sudden bend","meaning":"Sudden bend in the stream"}
+{"_id":"me_941","code":"wakanui","slug":{"mi":"wakanui"},"name":{"mi":"Wakanui"},"components":"waka: canoe; nui: large or many","meaning":"Many waka"}
+{"_id":"me_942","code":"waronui","slug":{"mi":"waronui"},"name":{"mi":"Waronui"},"components":"waro: chasm or coals; nui: large","meaning":"Large coals"}
+{"_id":"me_943","code":"waitete","slug":{"mi":"waitete"},"name":{"mi":"Waitētē"},"components":"wai: stream; tētē: shovel-nosed duck, now extinct","meaning":"Shovel-nosed duck stream"}
+{"_id":"me_944","code":"weiti","slug":{"mi":"weiti"},"name":{"mi":"Wēiti"},"components":"wē: liquid or water; iti: little","meaning":"Little waters"}
+{"_id":"me_945","code":"whakaari","slug":{"mi":"whakaari"},"name":{"mi":"Whakaari"},"components":"whakaari: To show or expose to view","meaning":"Expose to view"}
+{"_id":"me_946","code":"whakaroa","slug":{"mi":"whakaroa"},"name":{"mi":"Whakaroa"},"components":"Whaka (South Island form of whanga): harbour or bay; roa: long","meaning":"Long harbour"}
+{"_id":"me_947","code":"whangakoko","slug":{"mi":"whangakoko"},"name":{"mi":"Whangakoko"},"components":"whanga: harbour; koko: corner, or to take up with a shovel","meaning":"Shovelled harbour"}
+{"_id":"me_948","code":"whangamarino","slug":{"mi":"whangamarino"},"name":{"mi":"Whangamarino"},"components":"whanga: stretch of water; marino: peaceful","meaning":"Peaceful harbour"}
+{"_id":"me_949","code":"whangamata","slug":{"mi":"whangamata"},"name":{"mi":"Whangamata"},"components":"whanga: harbour; mata: obsidian","meaning":"Obsidian harbour"}
+{"_id":"me_95","code":"kaitangiweka","slug":{"mi":"kaitangiweka"},"name":{"mi":"Kaitangiweka"},"components":"kai: food; tangi: to cry; weka: wood hen","meaning":"Crying of the weka for food"}
+{"_id":"me_950","code":"whangamoa","slug":{"mi":"whangamoa"},"name":{"mi":"Whangamoa"},"components":"whanga: valley or sheltered place; moa: probably the raised mounds in a plantation","meaning":"Valley with raised mounds in plantation"}
+{"_id":"me_951","code":"whangamomona","slug":{"mi":"whangamomona"},"name":{"mi":"Whangamomona"},"components":"whanga: valley; momona: fat","meaning":"Bountiful valley"}
+{"_id":"me_952","code":"whanganui","slug":{"mi":"whanganui"},"name":{"mi":"Whanganui"},"components":"whanga: bay; nui: large","meaning":"Large harbour"}
+{"_id":"me_953","code":"whanganui-o-hei","slug":{"mi":"whanganui-o-hei"},"name":{"mi":"Whanganui-o-Hei"},"components":"whanga: bay; nui: large; o: of; Hei","meaning":"Large harbour of Hei"}
+{"_id":"me_954","code":"whangapara","slug":{"mi":"whangapara"},"name":{"mi":"Whangapara"},"components":"whanga: harbour; para: sediment","meaning":"Sedimentary harbour"}
+{"_id":"me_955","code":"whangaparaoa","slug":{"mi":"whangaparaoa"},"name":{"mi":"Whangaparāoa"},"components":"whanga: bay; parāoa: whale","meaning":"Whale bay"}
+{"_id":"me_956","code":"whangape","slug":{"mi":"whangape"},"name":{"mi":"Whangapē"},"components":"whanga: to wait; pē: fish roe","meaning":"Fish roe harbour"}
+{"_id":"me_957","code":"whangapoua","slug":{"mi":"whangapoua"},"name":{"mi":"Whangapoua"},"components":"whanga: bay or harbour; poua: a mollusc","meaning":"Mollusc harbour"}
+{"_id":"me_958","code":"whangara","slug":{"mi":"whangara"},"name":{"mi":"Whangarā"},"components":"whanga: bay; rā: sun","meaning":"Sunny bay"}
+{"_id":"me_959","code":"whangarata","slug":{"mi":"whangarata"},"name":{"mi":"Whangarātā"},"components":"whanga: valley; rātā: native tree","meaning":"Rātā tree valley"}
+{"_id":"me_96","code":"kaitapeha","slug":{"mi":"kaitapeha"},"name":{"mi":"Kaitapeha"},"components":"kai: to eat; tapeha: rind or skin","meaning":"Eat the rind"}
+{"_id":"me_960","code":"whangarei","slug":{"mi":"whangarei"},"name":{"mi":"Whangarei"},"components":"whanga: waiting; rei: abbreviation of Reipae","meaning":"Waiting for Reipae"}
+{"_id":"me_961","code":"whangaripo","slug":{"mi":"whangaripo"},"name":{"mi":"Whangaripo"},"components":"whanga: stretch of water; ripo: deep pool or whirlpool","meaning":"Deep stretch of water"}
+{"_id":"me_962","code":"whangaroa","slug":{"mi":"whangaroa"},"name":{"mi":"Whangaroa"},"components":"whanga: harbour; roa: long","meaning":"Long harbour"}
+{"_id":"me_963","code":"whangaruru","slug":{"mi":"whangaruru"},"name":{"mi":"Whangaruru"},"components":"whanga: harbour; ruru: morepork","meaning":"Morepork harbour"}
+{"_id":"me_964","code":"whangateau","slug":{"mi":"whangateau"},"name":{"mi":"Whangateau"},"components":"whanga: harbour; te: the; au: current, smoke or mist","meaning":"Harbour of smoke"}
+{"_id":"me_965","code":"whangatoetoe","slug":{"mi":"whangatoetoe"},"name":{"mi":"Whangatoetoe"},"components":"whanga: bay; toetoe: native grass","meaning":"Toetoe grass bay"}
+{"_id":"me_966","code":"whanui","slug":{"mi":"whanui"},"name":{"mi":"Whānui"},"components":"whānui: wide","meaning":"Wide-open waters"}
+{"_id":"me_967","code":"whareroa","slug":{"mi":"whareroa"},"name":{"mi":"Whareroa"},"components":"whare: house; roa: long","meaning":"Long house"}
+{"_id":"me_968","code":"wharo_one-roa-a-tohe","slug":{"mi":"wharo_one-roa-a-tohe"},"name":{"mi":"Whāro One-roa-a-Tohe"},"components":"whāro: stretched out; one: beach; roa: long; a: of; Tohe, a chief","meaning":"The beach on which Tōhē stretched out"}
+{"_id":"me_969","code":"whataroa","slug":{"mi":"whataroa"},"name":{"mi":"Whataroa"},"components":"whata: elevated stage: roa: long or tall","meaning":"Long, elevated stage"}
+{"_id":"me_97","code":"kaitawa","slug":{"mi":"kaitawa"},"name":{"mi":"Kaitawa"},"components":"kai: food; tawa: tree or berries","meaning":"Eat tawa berries"}
+{"_id":"me_970","code":"whekenui","slug":{"mi":"whekenui"},"name":{"mi":"Whekenui"},"components":"wheke: octopus; nui: large","meaning":"Great octopus"}
+{"_id":"me_971","code":"whenuanui","slug":{"mi":"whenuanui"},"name":{"mi":"Whenuanui"},"components":"whenua: land; nui: large","meaning":"Great land"}
+{"_id":"me_972","code":"whenuapai","slug":{"mi":"whenuapai"},"name":{"mi":"Whenuapai"},"components":"whenua: land; pai: good","meaning":"Good land"}
+{"_id":"me_973","code":"whanui","slug":{"mi":"whanui"},"name":{"mi":"Whānui"},"components":"whānui: broad or wide","meaning":"Wide"}
+{"_id":"me_974","code":"wharanui","slug":{"mi":"wharanui"},"name":{"mi":"Wharanui"},"components":"wharanui: species of flax","meaning":"Wharanui flax"}
+{"_id":"me_975","code":"whare","slug":{"mi":"whare"},"name":{"mi":"Whare"},"components":"whare: house","meaning":"House"}
+{"_id":"me_976","code":"whareakeake","slug":{"mi":"whareakeake"},"name":{"mi":"Whareakeake"},"components":"whare: house; akeake: poor land, or a species of tree","meaning":"House on poor land"}
+{"_id":"me_977","code":"whareama","slug":{"mi":"whareama"},"name":{"mi":"Whareama"},"components":"whare: house; ama: carved posts supporting the maihi","meaning":"House of carved posts"}
+{"_id":"me_978","code":"wharehine","slug":{"mi":"wharehine"},"name":{"mi":"Wharehine"},"components":"whare: house; hine: girls or young women","meaning":"House of young women"}
+{"_id":"me_979","code":"wharehuanui","slug":{"mi":"wharehuanui"},"name":{"mi":"Wharehuanui"},"components":"whare: house; huanui: road or path","meaning":"House by a path"}
+{"_id":"me_98","code":"kaitieke","slug":{"mi":"kaitieke"},"name":{"mi":"Kaitieke"},"components":"kai: to eat; tieke: the saddleback bird","meaning":"Eat the saddleback bird"}
+{"_id":"me_980","code":"wharehuia","slug":{"mi":"wharehuia"},"name":{"mi":"Wharehuia"},"components":"whare: house; huia (the possessive case of hui): assembled","meaning":"House of assembly"}
+{"_id":"me_981","code":"wharehunga","slug":{"mi":"wharehunga"},"name":{"mi":"Wharehunga"},"components":"whare: house; hunga: company of people","meaning":"Meeting house, or meeting of people in a house"}
+{"_id":"me_982","code":"wharekaho","slug":{"mi":"wharekaho"},"name":{"mi":"Wharekaho"},"components":"whare: house; kaho: fence rail","meaning":"Enclosed palisade"}
+{"_id":"me_983","code":"wharekaka","slug":{"mi":"wharekaka"},"name":{"mi":"Wharekākā"},"components":"whare: probably nesting place; kākā: parrots","meaning":"Nesting place of parrots"}
+{"_id":"me_984","code":"wharekopae","slug":{"mi":"wharekopae"},"name":{"mi":"Wharekōpae"},"components":"whare: house; kōpae: circular","meaning":"House with a side door"}
+{"_id":"me_985","code":"wharekowhiti","slug":{"mi":"wharekowhiti"},"name":{"mi":"Wharekōwhiti"},"components":"whare: house; kō: father side; whiti: to cross","meaning":"Cross to house on the far side"}
+{"_id":"me_986","code":"whareongaonga","slug":{"mi":"whareongaonga"},"name":{"mi":"Whareongaonga"},"components":"whare: house; ongaonga: nettle","meaning":"Nettle house"}
+{"_id":"me_987","code":"whareora","slug":{"mi":"whareora"},"name":{"mi":"Whareora"},"components":"whare: house; ora: safe or in good health","meaning":"House of good health"}
+{"_id":"me_988","code":"wharepaina","slug":{"mi":"wharepaina"},"name":{"mi":"Wharepāina"},"components":"whare: house; pāina: to warm oneself","meaning":"House to warm oneself"}
+{"_id":"me_989","code":"wharepapa","slug":{"mi":"wharepapa"},"name":{"mi":"Wharepapa"},"components":"whare: house; papa: flat","meaning":"House flats"}
+{"_id":"me_99","code":"kaitoke","slug":{"mi":"kaitoke"},"name":{"mi":"Kaitoke"},"components":"kai: to eat, or food; take: worm","meaning":"Eat worms"}
+{"_id":"me_990","code":"wharepoa","slug":{"mi":"wharepoa"},"name":{"mi":"Wharepoa"},"components":"whare: house: poa: smouldering or smoking","meaning":"Smouldering house"}
+{"_id":"me_991","code":"whareponga","slug":{"mi":"whareponga"},"name":{"mi":"Whareponga"},"components":"whare: house; ponga: tree-fern","meaning":"Tree-fern house"}
+{"_id":"me_992","code":"wharerata","slug":{"mi":"wharerata"},"name":{"mi":"Wharerātā"},"components":"whare: house; rātā: native tree","meaning":"House among the rātā trees"}
+{"_id":"me_993","code":"whatamango","slug":{"mi":"whatamango"},"name":{"mi":"Whatamangō"},"components":"whata: elevated food store: mangō (the same word as makō): shark","meaning":"A stage for storing dried shark flesh"}
+{"_id":"me_994","code":"whatatutu","slug":{"mi":"whatatutu"},"name":{"mi":"Whatatutu"},"components":"whata: elevated food platform; tutu: native tree or bush","meaning":"Storage platform among the tutu bushes"}
+{"_id":"me_995","code":"whatawhata","slug":{"mi":"whatawhata"},"name":{"mi":"Whatawhata"},"components":"whata: elevated food platform","meaning":"Elevated food platforms"}
+{"_id":"me_996","code":"whatitiri","slug":{"mi":"whatitiri"},"name":{"mi":"Whatitiri"},"components":"whatitiri: thunder","meaning":"Thunder"}
+{"_id":"me_997","code":"whatiwhatihoe","slug":{"mi":"whatiwhatihoe"},"name":{"mi":"Whatiwhatihoe"},"components":"whatiwhati: to break in pieces; hoe: paddle","meaning":"Paddle broken into pieces"}
+{"_id":"me_998","code":"whau","slug":{"mi":"whau"},"name":{"mi":"Whau"},"components":"whau: a native tree","meaning":"Whau tree"}
+{"_id":"me_999","code":"whawharua","slug":{"mi":"whawharua"},"name":{"mi":"Whāwhārua"},"components":"whāwhā: to feel about; rua: pit","meaning":"Grope about in kūmara pit"}

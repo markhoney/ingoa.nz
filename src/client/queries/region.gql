@@ -1,0 +1,20 @@
+query region($code: String) {
+	region(code: $code) {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		island_id
+		part_id
+		map_id
+		links {
+			wikipedia
+		}
+		images {
+			banner
+			landscape
+		}
+	}
+}

@@ -78,10 +78,10 @@ db.place.forEach(place => {
 		const district = db.zone.find(zone => zone._id == place.zone_id).gazetteer;
 		const feature = db.feature.find(feature => feature._id == place.feature_id);
 		const gazetteer =
-			db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.gazetteer && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en))
-			|| db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.gazetteer && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' ')))
-			|| db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' ')))
-			|| db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en));
+			db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.gazetteer && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en)) ||
+			db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.gazetteer && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' '))) ||
+			db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' '))) ||
+			db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == place.name.mi || gazetteer.name == place.name.en));
 		if (gazetteer) {
 			place.location = place.location || {};
 			place.location.position = gazetteer.position;

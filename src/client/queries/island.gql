@@ -1,0 +1,16 @@
+query island($code: String) {
+	island(code: $code) {
+		_id
+		code
+		name {
+			en
+			mi
+		}
+		images {
+			landscape
+		}
+		audio {
+			file
+		}
+	}
+}

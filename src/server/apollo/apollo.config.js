@@ -1,8 +1,8 @@
 module.exports = {
 	service: {
-		/*endpoint: {
+		localSchemaFile: './schema.graphql',
+		endpoint: {
 			url: "http://localhost:4000"
-		}*/
-		localSchemaFile: './schema.graphql'
+		},
 	}
 };

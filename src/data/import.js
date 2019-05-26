@@ -18,9 +18,11 @@ if (!fs.existsSync(jsonpath)) {
 	fs.mkdirSync(jsonpath, 744);
 }
 
-if (!json) {
+/*if (!json) {
 	const db = require('../server/db/nedb')(true);
-}
+}*/
+
+const db = (json ? null : require('../server/db/nedb')(true));
 
 const dbStream = table => {
 	return new stream.Writable({
