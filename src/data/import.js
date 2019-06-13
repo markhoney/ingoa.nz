@@ -9,20 +9,9 @@ const utils = require('./utils');
 const sourcepath = path.join(__dirname, 'source');
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
 
-let json = true;
-if (process.argv.length > 2 && process.argv[2] == 'nedb') {
-	json = false;
-}
-
 if (!fs.existsSync(jsonpath)) {
 	fs.mkdirSync(jsonpath, 744);
 }
-
-/*if (!json) {
-	const db = require('../server/db/nedb')(true);
-}*/
-
-const db = (json ? null : require('../server/db/nedb')(true));
 
 const dbStream = table => {
 	return new stream.Writable({
@@ -48,18 +37,11 @@ function openPipe(input, output, transformCSVtoObject) {
 		escape: '\\',
 		quote: '~',
 	});
-	if (json) {
-		inputtsv
-			.pipe(inputCSV)
-			.pipe(transformCSVtoObject)
-			.pipe(outputJSON)
-			.pipe(outputToFile);
-	} else {
-		inputtsv
-			.pipe(inputCSV)
-			.pipe(transformCSVtoObject)
-			.pipe(outputObjecttoDB);
-	}
+	inputtsv
+		.pipe(inputCSV)
+		.pipe(transformCSVtoObject)
+		.pipe(outputJSON)
+		.pipe(outputToFile);
 }
 
 function importPlacenames() {
@@ -89,12 +71,11 @@ function importPlacenames() {
 		var names = {};
 		['IndexName_1', 'IndexName_2', 'IndexName_3', 'UnspokenName_1', 'ExtendedName_1', 'ExtendedName_2', 'VariantName_1', 'MisspelledName_1'].forEach(name => {
 			if (input[name]) {
-				var nomacrons = utils.removeMacrons(input[name]);
 				var newname = {
 					name: {
 						en: input.CommonName_1,
 						mi: input[name],
-						ascii: input[name] === nomacrons ? null : nomacrons,
+						ascii: utils.removeMacrons(input[name]),
 					},
 					categories: [],
 				};
@@ -126,6 +107,7 @@ function importPlacenames() {
 		names = utils.cleanobj(names);
 		Object.keys(names).forEach((name, index) => {
 			names[name]._id = 'na_' + input.ID + '-' + index;
+			names[name].code = utils.createCode(names[name].name.mi);
 			output.names.push(names[name]);
 		});
 		output.names[0].name.transliteration = input.Transliteration;
@@ -140,7 +122,7 @@ function importPlacenames() {
 				output.zone_ids.push(input['SeeZoneID_' + i]);
 			}
 		}
-		for (i = 1; i <= 5; i++) {
+		for (i = 1; i <= 7; i++) {
 			if (input['Kind_' + i]) {
 				var groups = [];
 				if (input['Super_' + i]) {
@@ -156,8 +138,10 @@ function importPlacenames() {
 				}
 				output.places.push({
 					_id: 'pl_' + input.ID + '-' + i,
+					code: utils.createCode(input['KindName_' + i]),
 					name: {
 						en: input['KindName_' + i],
+						ascii: utils.removeMacrons(input['KindName_' + i]),
 					},
 					feature_id: input['KindID_' + i],
 					plural: input['KindPlural_' + i] ? true : null,
@@ -533,26 +517,6 @@ function importGazetteer() {
 	});
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
-			/*_id: input.name_id,
-			code: utils.createCode(input.name),
-			slug: {
-				en: utils.createCode(input.name),
-			},
-			name: {
-				en: input.name,
-			},
-			district: input.land_district,
-			kind: {
-				name: {
-					en: input.feat_type,
-				},
-			},
-			location: {
-				position: {
-					lat: parseFloat(input.crd_latitude),
-					lng: parseFloat(input.crd_longitude),
-				},
-			},*/
 			name: input.name,
 			district: input.land_district,
 			feature: input.feat_type,
@@ -563,18 +527,11 @@ function importGazetteer() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	if (json) {
-		inputCSV
-		.pipe(parseCSV)
-		.pipe(transformCSVtoObject)
-		.pipe(outputJSON)
-		.pipe(outputToFile);
-	} else {
-		inputCSV
-			.pipe(parseCSV)
-			.pipe(transformCSVtoObject)
-			.pipe(outputObjecttoDB);
-	}
+	inputCSV
+	.pipe(parseCSV)
+	.pipe(transformCSVtoObject)
+	.pipe(outputJSON)
+	.pipe(outputToFile);
 }
 
 function importAll() {

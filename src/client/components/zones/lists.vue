@@ -1,22 +1,31 @@
 <template>
-	<ul>
-		<li v-for="zone in zones" :key="zone.code">
-			<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: zone.code}})">
-				{{localeNames(zone.name)}}
-			</nuxt-link>
-		</li>
-	</ul>
+	<section>
+		<div v-for="region in regions" :key="region._id">
+			<h2>{{localeName(region.name)}}</h2>
+			<zone field="region_id" :value="region._id" />
+		</div>
+	</section>
 </template>
 
 <script>
-	import zone from '@/components/zones/card.vue';
-
+	import gql from 'graphql-tag';
+	import zone from '@/components/zones/list.vue';
 	export default {
 		components: {
 			zone,
 		},
-		props: {
-			zones: Array,
+		apollo: {
+			regions: {
+				query: gql`query regions {
+					regions {
+						_id
+						name {
+							en
+							mi
+						}
+					}
+				}`,
+			},
 		},
 	};
 </script>

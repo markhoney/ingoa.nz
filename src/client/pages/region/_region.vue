@@ -42,7 +42,7 @@
 		},
 		head() {
 			return {
-				title: this.localeName(this.region.name),
+				title: (this.region ? this.localeName(this.region.name) : ""),
 			};
 		},
 	};

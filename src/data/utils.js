@@ -70,7 +70,8 @@ exports.htmlItalics = function(name) {
 
 exports.removeMacrons = function(name) {
 	if (name) {
-		return exports.replace(name, Object.assign({}, macrons, superscripts));
+		const nomacrons = exports.replace(name, Object.assign({}, macrons, superscripts));
+		if (nomacrons != name) return nomacrons;
 	}
 };
 

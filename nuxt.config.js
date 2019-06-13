@@ -129,9 +129,9 @@ module.exports = {
 		'@nuxtjs/robots',
 		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 		//['@nuxtjs/feed', {}],
-		['@nuxtjs/google-analytics', {
+		/*['@nuxtjs/google-analytics', {
 			id: 'UA-45273295-4'
-		}],
+		}],*/
 		'nuxt-leaflet',
 		'nuxt-trailingslash-module',
 		[

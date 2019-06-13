@@ -1,7 +1,9 @@
 <template>
 	<v-card v-if="island">
 		<nuxt-link :to="localePath({name: 'island-island', params: {island: island.code}})">
-			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" />
+			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);">
+				<slot />
+			</v-img>
 		</nuxt-link>
 		<!-- height="180px" -->
 		<v-card-title primary-title>
@@ -20,7 +22,6 @@
 
 <script>
 	import gql from 'graphql-tag';
-
 	export default {
 		props: {
 			code: String,

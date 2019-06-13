@@ -7,10 +7,32 @@
 </template>
 
 <script>
+	import gql from 'graphql-tag';
 	export default {
 		props: {
-			zones: Array
-		}
+			field: String,
+			value: String,
+		},
+		apollo: {
+			zones: {
+				query: gql`query zones($field: String, $value: String) {
+					zones(filter: {field: $field, value: $value}) {
+						_id
+						code
+						name {
+							en
+							mi
+						}
+					}
+				}`,
+				variables() {
+					return {
+						field: this.field,
+						value: this.value,
+					}
+				},
+			},
+		},
 	}
 </script>
 

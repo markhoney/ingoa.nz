@@ -19,7 +19,8 @@ const server = new ApolloServer({
 	typeDefs,
 	resolvers,
 	tracing: process.env.dev,
-	engine: (process.env.dev ? {apiKey: process.env.APOLLO_ENGINE_KEY} : null)
+	//engine: (process.env.dev ? {apiKey: process.env.APOLLO_ENGINE_KEY} : null)
+	engine: (process.env.NODE_ENV == 'production' ? null : {apiKey: process.env.APOLLO_ENGINE_KEY})
 });
 
 server.listen().then(({url}) => {

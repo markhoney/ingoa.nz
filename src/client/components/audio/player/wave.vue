@@ -125,7 +125,7 @@
 			},
 			download() {
 				//this.wavesurfer.pause()
-				window.open(this.file, 'download');
+				if (process.client) window.open(this.file, 'download');
 			},
 			mute() {
 				this.wavesurfer.toggleMute();

@@ -14,7 +14,9 @@
 		<h3>{{$tc('location', 1) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<island :code="zone.island.code" />
+				<island :code="zone.island.code">
+					<h2>ISLAND</h2>
+				</island>
 			</v-flex>
 			<v-flex xs12 sm6 md4 class="pa-2">
 				<region :code="zone.region.code" />
