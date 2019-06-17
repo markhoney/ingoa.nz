@@ -27,7 +27,6 @@
 					placenames(filter: {field: $field, value: $value}) {
 						_id
 						code
-						zone_code
 						places {
 							_id
 							name {

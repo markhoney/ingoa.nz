@@ -177,6 +177,7 @@ function importZones() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -191,6 +192,7 @@ function importZones() {
 				mapareas: [],
 			},
 			areas: [],
+			district_id: input.AdminDistrictID,
 			boundary: input.Boundary,
 			gazetteer: input.GazetteerDistrict,
 			speaker_ids: [],
@@ -241,6 +243,7 @@ function importSpeakers() {
 				},
 				name: {
 					mi: input.PreferredName,
+					ascii: utils.removeMacrons(input.PreferredName),
 					parts: {
 						nick: input.Nickname,
 						title: input.Prefix,
@@ -290,6 +293,7 @@ function importIslands() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -321,6 +325,7 @@ function importParts() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -364,6 +369,7 @@ function importMaps() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			island_id: input.IslandID,
 			part_id: input.PartID,
@@ -403,6 +409,7 @@ function importRegions() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			island_id: input.IslandID,
 			part_id: input.PartID,
@@ -428,10 +435,17 @@ function importFeatures() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			plural: input.Plural,
 			order: input.Hierarchy,
-			gazetteer: input.GazetteerName,
+			category: {
+				gazetteer: input.GazetteerName,
+				osm: {
+					class: input.OSMClass,
+					type: input.OSMType,
+				},
+			},
 		};
 		callback(null, utils.cleanobj(output));
 	});
@@ -451,6 +465,7 @@ function importGroups() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
+				ascii: utils.removeMacrons(input.TeReo),
 			},
 			feature_id: input.FeatureID,
 			/*feature: {
@@ -476,6 +491,7 @@ function importIwi() {
 			},
 			name: {
 				mi: input.Name,
+				ascii: utils.removeMacrons(input.Name),
 			},
 			links: {
 				wikipedia: input.Wikipedia,
@@ -496,13 +512,34 @@ function importMeanings() {
 			},
 			name: {
 				mi: input.CleanedName,
+				ascii: utils.removeMacrons(input.CleanedName),
 			},
 			components: input.Components,
-			meaning: input.Meaning,
+			translation: input.Meaning,
 		};
 		callback(null, utils.cleanobj(output));
 	});
 	openPipe('Ingoa - Meanings.tsv', 'meaning', transformCSVtoObject);
+}
+
+function importDistricts() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			code: utils.createCode(input.Name),
+			slug: {
+				en: utils.createCode(input.Name),
+			},
+			name: {
+				en: input.Name,
+			},
+			seat: input.Seat,
+			area: parseInt(input.Area),
+			population: parseInt(input.Population),
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Districts.tsv', 'district', transformCSVtoObject);
 }
 
 function importGazetteer() {
@@ -545,6 +582,7 @@ function importAll() {
 	importFeatures();
 	importIwi();
 	importMeanings();
+	importDistricts();
 	importGroups();
 	importGazetteer();
 }

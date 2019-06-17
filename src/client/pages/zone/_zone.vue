@@ -1,13 +1,13 @@
 <template>
 	<section v-if="zone">
 		<imageheader :image="zone.images.landscape" :names="zone.name" :right="'Zone ' + zone.number" />
-		<player :file="zone.audio.file" field="zone_code" :value="zone.code" :wave="false" />
-		<gmap field="zone_code" :value="zone.code" />
+		<player :file="zone.audio.file" field="zone_id" :value="zone._id" :wave="false" />
+		<gmap field="zone_id" :value="zone.code" />
 		<h3>{{$tc('speaker', 2) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
 				<template v-for="speaker in zone.speakers.filter(speaker => speaker.code != 'hugh_young')">
-					<speaker :code="speaker.code" :key="speaker.code" />
+					<speaker field="_id" :value="speaker._id" :key="speaker._id" />
 				</template>
 			</v-flex>
 		</v-layout>

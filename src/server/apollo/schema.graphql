@@ -42,7 +42,6 @@ type spoken {
 	end: Float
 	post: Float
 	speaker_id: String
-	speaker_code: String
 	speaker: speaker
 }
 
@@ -52,7 +51,7 @@ type meaning {
 	slug: slugs
 	name: names
 	components: String
-	meaning: String
+	translation: String
 }
 
 type name {
@@ -61,6 +60,7 @@ type name {
 	zone_id: String
 	spoken: spoken
 	categories: [String]
+	meaning_id: Int
 	meaning: meaning
 	identical: [name]
 	similar: [name]
@@ -71,11 +71,11 @@ type place {
 	name: names
 	zone_id: String
 	feature_id: String
-	feature_code: String
 	feature: feature
 	plural: Boolean
 	groups: [membership]
 	location: location
+	wikidata: String
 }
 
 type links {
@@ -85,7 +85,6 @@ type links {
 
 type membership {
 	group_id: String
-	group_code: String
 	group: group
 	subgroup_id: String
 }
@@ -94,7 +93,6 @@ type group {
 	_id: ID!
 	code: String
 	zone_id: String
-	zone_code: String
 	zone: zone
 	slug: slugs
 	name: names
@@ -114,17 +112,14 @@ type notes {
 
 type see {
 	zone_id: String
-	zone_code: String
 	zone: zone
 	placename_id: String
-	placename_code: String
 	placename: placename
 	type: String
 }
 
 type addendum {
 	zone_id: String
-	zone_code: String
 	zone: zone
 }
 
@@ -132,13 +127,10 @@ type placename {
 	_id: ID!
 	code: String
 	zone_id: String
-	zone_code: String
 	zone: zone
 	part_id: String
-	part_code: String
 	part: part
 	island_id: String
-	island_code: String
 	island: island
 	number: Int
 	featured: Int
@@ -199,15 +191,14 @@ type zone {
 	previous: zone
 	next: zone
 	region_id: String
-	region_code: String
 	region: region
 	maplink: maplink
 	part_id: String
-	part_code: String
 	part: part
 	island_id: String
-	island_code: String
 	island: island
+	district_id: Int
+	district: district
 	boundary: String
 	gazetteer: String
 	areas: [area]
@@ -273,7 +264,6 @@ type part {
 	previous: part
 	next: part
 	island_id: String
-	island_code: String
 	island: island
 	zones: [zone]
 	placenames: [placename]
@@ -287,6 +277,16 @@ type part {
 	notes: partnotes
 	regions: [region]
 	maps: [map]
+}
+
+type district {
+	_id: ID!
+	code: String
+	slug: slugs
+	name: names
+	seat: String
+	area: Int
+	population: Int
 }
 
 type maparea {
@@ -307,10 +307,8 @@ type map {
 	name: names
 	images: images
 	island_id: String
-	island_code: String
 	island: island
 	part_id: String
-	part_code: String
 	part: part
 	dates: dates
 	maplinks: [maplink]
@@ -327,15 +325,22 @@ type region {
 	previous: region
 	next: region
 	island_id: String
-	island_code: String
 	island: island
 	part_id: String
-	part_code: String
 	part: part
 	map_id: String
-	map_code: String
 	map: map
 	zones: [zone]
+}
+
+type osm {
+	class: String
+	type: String
+}
+
+type category {
+	gazetteer: String
+	osm: osm
 }
 
 type feature {
@@ -346,7 +351,7 @@ type feature {
 	images: images
 	plural: String
 	order: Int
-	gazetteer: String
+	category: category
 	placenames: [placename]
 }
 
@@ -452,6 +457,14 @@ type Query {
 	feature(
 		filter: find
 	): feature
+	districts(
+		filter: filter
+		pagination: pagination
+		sort: sort
+	): [district]
+	district(
+		filter: find
+	): district
 	ngaiwi(
 		filter: filter
 		pagination: pagination

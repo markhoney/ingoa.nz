@@ -39,7 +39,7 @@
 					placenames(filter: {field: $field, value: $value}) {
 						_id
 						code
-						zone_code
+						zone_id
 						places {
 							_id
 							name {
@@ -102,7 +102,7 @@
 				this.info.position = place.location.position;
 				this.info.title = this.localeName(place.name);
 				this.info.placename = placename.code;
-				this.info.zone = placename.zone_code || '';
+				this.info.zone = placename.zone_id || '';
 				this.info.text = this.localeName(place.feature.name);
 				if (this.info.id === place._id) {
 					this.info.open = !this.info.open;

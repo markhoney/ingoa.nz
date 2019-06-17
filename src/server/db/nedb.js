@@ -22,7 +22,7 @@ function createCollections(collections) {
 }
 
 module.exports = function(extras) {
-	var collections = ['speaker', 'island', 'part', 'region', 'map', 'zone', 'placename', 'feature', 'iwi', 'group']; // , 'menus', 'suggestions'
+	var collections = ['speaker', 'island', 'part', 'region', 'map', 'zone', 'placename', 'feature', 'iwi', 'group', 'district']; // , 'menus', 'suggestions'
 	if (extras) collections = collections.concat(['meaning', 'gazetteer']); // , 'places'
 	return createCollections(collections);
 };

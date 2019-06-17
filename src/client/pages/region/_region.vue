@@ -9,7 +9,7 @@
 		<h3 class="display-1 mt-5 mb-4">
 			{{$tc('zone', 2) | titlecase}}
 		</h3>
-		<zones field="region_code" :value="$route.params.region" />
+		<zones field="region_id" :value="region._id" />
 	</section>
 </template>
 
@@ -17,14 +17,16 @@
 	import gql from 'graphql-tag';
 	import zones from '@/components/zones/cards.vue';
 
+	const field = "code";
+
 	export default {
 		components: {
 			zones,
 		},
 		apollo: {
 			region: {
-				query: gql`query region($code: String) {
-					region(filter: {code: $code}) {
+				query: gql`query region($value: String) {
+					region(filter: {${field}: $value}) {
 						_id
 						code
 						name {
@@ -35,7 +37,7 @@
 				}`,
 				variables() {
 					return {
-						code: this.$route.params.region,
+						value: this.$route.params.region,
 					}
 				},
 			},

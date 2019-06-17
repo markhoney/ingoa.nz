@@ -19,7 +19,7 @@ module.exports = function(db) {
 
 	return {
 		island: {
-			parts(island) {
+			/*parts(island) {
 				return db.part.filter(part => part.island_id == island._id);
 			},
 			maps(island) {
@@ -31,28 +31,22 @@ module.exports = function(db) {
 			zones(island) {
 				return db.zone.filter(zone => zone.island_id == island._id);
 			},
-			placenames(island) {
-				return db.placename.filter(placename => placename.island_id == island._id);
-			},
-			bookmarks(island) {
-				return getBookmarks(db.placename.filter(placename => placename.island_id == island._id));
-			},
 			speakers(island) {
 				return getSpeakers(db.speaker, db.placename.filter(placename => placename.island_id == island._id));
 			},
+			placenames(island) {
+				return db.placename.filter(placename => placename.island_id == island._id);
+			},*/
+			/*bookmarks(island) {
+				return getBookmarks(db.placename.filter(placename => placename.island_id == island._id));
+			},*/
 			/*image(island) {
 				return getImages('island', island.code, ['banner.png', 'landscape.png', 'portrait.png']);
 			},*/
 		},
 
 		part: {
-			previous(part) {
-				return db.part.find(mypart => mypart._id == 'pa_' + (parseInt(part._id.split('_')[1]) - 1));
-			},
-			next(part) {
-				return db.part.find(mypart => mypart._id == 'pa_' + (parseInt(part._id.split('_')[1]) + 1));
-			},
-			island(part) {
+			/*island(part) {
 				return db.island.find(island => island._id == part.island_id);
 			},
 			maps(part) {
@@ -61,28 +55,31 @@ module.exports = function(db) {
 			regions(part) {
 				return db.region.filter(region => region.part_id == part._id);
 			},
-			zones(part) {
-				return db.zone.filter(zone => zone.part_id == part._id);
+			previous(part) {
+				return db.part.find(mypart => mypart._id == 'pa_' + (parseInt(part._id.split('_')[1]) - 1));
+			},
+			next(part) {
+				return db.part.find(mypart => mypart._id == 'pa_' + (parseInt(part._id.split('_')[1]) + 1));
 			},
 			placenames(part) {
 				return db.placename.filter(placename => placename.part_id == part._id);
-			},
-			bookmarks(part) {
+			},*/
+			/*bookmarks(part) {
 				return getBookmarks(db.placename.filter(placename => placename.part_id == part._id));
 			},
 			speakers(part) {
 				return getSpeakers(db.speaker, db.placename.filter(placename => placename.part_id == part._id));
-			},
+			},*/
 			/*image(part) {
 				return getImages('part', part.code, ['front.jpg']);
 			},*/
 		},
 
-		maplink: {
+		/*maplink: {
 			map(maplink) {
 				return db.map.find(map => map._id == maplink.map_id);
 			},
-		},
+		},*/
 
 		map: {
 			island(map) {
@@ -150,6 +147,9 @@ module.exports = function(db) {
 			region(zone) {
 				return db.region.find(region => region._id == zone.region_id);
 			},
+			district(zone) {
+				return db.district.find(district => district._id == zone.district_id);
+			},
 			placenames(zone) {
 				return db.placename.filter(placename => placename.zone_id == zone._id);
 			},
@@ -187,6 +187,9 @@ module.exports = function(db) {
 
 		name: {
 			meaning(name) {
+				return db.meaning.find(meaning => meaning._id == name.meaning_id);
+			},
+			/*meaning(name) {
 				return db.meaning.find(meaning => meaning.name.mi == name.name.mi);
 			},
 			identical(name) {
@@ -194,7 +197,7 @@ module.exports = function(db) {
 			},
 			similar(name) {
 				return db.name.filter(myname => myname.name.mi != name.name.mi).sort((a, b) => levenshtein(name.name.mi, a.name.mi) - levenshtein(name.name.mi, b.name.mi)).slice(0, 8);
-			},
+			},*/
 		},
 
 		place: {

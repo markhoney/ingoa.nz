@@ -1,0 +1,68 @@
+ID	Zone	Name	Seat	Area	Population
+di_1	127	Far North District	Kaikohe	6677	64400
+di_2	128	Whangarei District	Whangarei	2712	91400
+di_3	124	Kaipara District	Dargaville	3109	23200
+di_4	116	Auckland	Auckland	4940	1695900
+di_5	85	Thames-Coromandel District	Thames	2207	29700
+di_6	86	Hauraki District	Paeroa	1270	19950
+di_7	104	Waikato District	Ngaruawahia	4403	75300
+di_8	100	Matamata-Piako District	Te Aroha	1755	35200
+di_9	103	Hamilton City	Hamilton	110	169300
+di_10	94	Waipa District	Te Awamutu	1470	54000
+di_11	95	Otorohanga District	Otorohanga	1999	10250
+di_12	98	South Waikato District	Tokoroa	1819	24400
+di_13	93	Waitomo District	Te Kuiti	3535	9640
+di_14	15	Taupo District	Taupo	6333	37200
+di_15	73	Western Bay of Plenty District	Greerton	1951	50100
+di_16	76	Tauranga City	Tauranga	135	135000
+di_17	69	Rotorua District	Rotorua	2409	72500
+di_18	59	Whakatane District	Whakatane	4450	35700
+di_19		Kawerau District	Kawerau	24	7080
+di_20	53	Opotiki District	Opotiki	3089	9100
+di_21	46	Gisborne District	Gisborne	8386	49100
+di_22	42	Wairoa District	Wairoa	4077	8230
+di_23	40	Hastings District	Hastings	5227	80600
+di_24	41	Napier City	Napier	105	62800
+di_25	38	Central Hawke's Bay District	Waipawa	3332	14150
+di_26	29	New Plymouth District	New Plymouth	2205	81900
+di_27	24	Stratford District	Stratford	2163	9510
+di_28	26	South Taranaki District	Hawera	3575	28300
+di_29	22	Ruapehu District	Taumarunui	6734	12750
+di_30	20	Whanganui District	Whanganui	2373	45200
+di_31	19	Rangitikei District	Marton	4484	15150
+di_32	10	Manawatu District	Feilding	2657	30800
+di_33	9	Palmerston North City	Palmerston North	395	88700
+di_34	37	Tararua District	Dannevirke	4364	17900
+di_35	7	Horowhenua District	Levin	1064	33000
+di_36	5	Kapiti Coast District	Paraparaumu	731	53200
+di_37	4	Porirua City	Porirua	175	56800
+di_38	3	Upper Hutt City	Upper Hutt	540	43700
+di_39	2	Lower Hutt City	Lower Hutt	376	105900
+di_40	1	Wellington City	Wellington	290	216300
+di_41	33	Masterton District	Masterton	2300	25700
+di_42	33	Carterton District	Carterton	1180	9340
+di_43	32	South Wairarapa District	Martinborough	2387	10450
+di_44	140	Tasman District	Richmond	9616	52100
+di_45	143	Nelson City	Nelson	424	51900
+di_46	146	Marlborough District	Blenheim	10458	46600
+di_47		Buller District	Westport	7942	10150
+di_48	174	Grey District	Greymouth	3474	13550
+di_49	173	Westland District	Hokitika	11828	8890
+di_50	147	Kaikoura District	Kaikoura	2047	3830
+di_51	148	Hurunui District	Amberley	8641	12850
+di_52	149	Waimakariri District	Rangiora	2217	60700
+di_53	150	Christchurch City	Christchurch	1415	388400
+di_54	153	Selwyn District	Rolleston	6381	62200
+di_55	154	Ashburton District	Ashburton	6183	34500
+di_56	155	Timaru District	Timaru	2733	47300
+di_57	157	Mackenzie District	Fairlie	7140	4670
+di_58	156	Waimate District	Waimate	3554	7930
+di_59	177	Chatham Islands Territory	Waitangi	794	650
+di_60	158	Waitaki District	Oamaru	7109	22300
+di_61		Central Otago District	Alexandra	9956	21000
+di_62	162	Queenstown-Lakes District	Queenstown	8719	39100
+di_63	160	Dunedin City	Dunedin	3287	130700
+di_64	161	Clutha District	Balclutha	6334	17700
+di_65	164	Southland District	Invercargill	29552	31400
+di_66	165	Gore District	Gore	1254	12500
+di_67	166	Invercargill City	Invercargill	389	55200
