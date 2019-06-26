@@ -2,12 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const levenshtein = require('js-levenshtein');
 const axios = require('axios');
+const utils = require('../server/db/utils');
 
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
-let db;
 
+let db;
 function readData() {
-	db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'iwi', 'placename', 'meaning', 'district', 'gazetteer'].reduce((db, collection) => {
+	db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'iwi', 'placename', 'meaning', 'district', 'gazetteer', 'overseas'].reduce((db, collection) => {
 		db[collection] = require(path.join(jsonpath, collection + '.json'));
 		//db[collection] = JSON.parse(fs.readFileSync(path.join(jsonpath, collection + '.json')));
 		return db;
@@ -42,12 +43,12 @@ function addPlacenameIDs() {
 	db.placename.forEach(placename => {
 		if (placename.places) {
 			placename.places.forEach(place => {
-				if (!place.zone_id) place.zone_id = placename.zone_id;
+				//if (!place.zone_id) place.zone_id = placename.zone_id;
 				if (!place.placename_id) place.placename_id = placename._id;
 			});
 		}
 		placename.names.forEach(name => {
-			if (!name.zone_id) name.zone_id = placename.zone_id;
+			//if (!name.zone_id) name.zone_id = placename.zone_id;
 			if (!name.placename_id) name.placename_id = placename._id;
 		});
 	});
@@ -115,66 +116,99 @@ function addMeanings() {
 	});
 }
 
-function addGazetteerLocations() {
-	db.place.forEach(place => {
-		if (place.zone_id && (!place.location || (place.location && !place.location.position))) {
-			const zone = db.zone.find(zone => zone._id == place.zone_id);
-			const district = zone.gazetteer;
-			const feature = db.feature.find(feature => feature._id == place.feature_id);
-			const foundplace =
-				   db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.category.gazetteer && (gazetteer.name == place.name.mi || gazetteer.name == place.name.ascii || gazetteer.name == place.name.en))
-				|| db.gazetteer.find(gazetteer => gazetteer.district == district && gazetteer.feature == feature.category.gazetteer && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.ascii, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' ')))
-				|| db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == place.name.mi || gazetteer.name == place.name.ascii || gazetteer.name == place.name.en))
-				|| db.gazetteer.find(gazetteer => gazetteer.district == district && (gazetteer.name == [place.name.mi, feature.name.en].join(' ') || gazetteer.name == [place.name.ascii, feature.name.en].join(' ') || gazetteer.name == [place.name.en, feature.name.en].join(' ')))
-			;
-			if (foundplace) {
-					//console.log(placename, "==", foundplace.display_name.split(",")[0]);
-					place.location = place.location || {};
-				place.location.position = foundplace.position;
-			}
-		}
-	});
-}
-
 async function addNominatimLocations() {
+	let total = 0;
 	const nominatim = axios.create({baseURL: "http://localhost:8080/search/"});
-	//db.place.forEach(async place => {
-	for (const place of db.place) {
-		if (place.zone_id && (!place.location || (place.location && !place.location.position))) {
-			const zone = db.zone.find(zone => zone._id == place.zone_id);
+	for (const placename of db.placename) {
+		if (placename.zone_id && placename.places) {
+			let zone = db.zone.find(zone => zone._id == placename.zone_id);
+			if (placename.addendum_ids) zone = db.zone.find(zone => zone._id == placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
 			const district = db.district.find(district => district._id == zone.district_id);
-			const placename = (place.name.en || place.name.mi) + (district ? ', ' + district.name.en : "");
-			const feature = db.feature.find(feature => feature._id == place.feature_id);
-			const url = encodeURI(placename + '?extratags=1&format=json'); //&limit=1
-			//console.log(url);
-			let geo = {};
-			try {
-				geo = await nominatim.get(url);
-			} catch(error) {
-				//console.log(error);
-			}
-			if (geo.data && geo.data.length) {
-				let foundplace = geo.data.find(placename => placename.class == feature.category.osm.class && placename.type == feature.category.osm.type);
-				if (!foundplace) {
-					foundplace = geo.data.find(placename => placename.display_name.split(",")[0] == place.name.en || placename.display_name.split(",")[0] == place.name.ascii);
-				}
-				if (!foundplace) {
-					foundplace = geo.data.find(placename => placename.class == feature.category.osm.class);
-				}
-				if (foundplace) {
-					//console.log(placename, "==", foundplace.display_name.split(",")[0]);
-					//console.log(foundplace);
-					place.location = place.location || {};
-					place.location.position = {
-						lat: foundplace.lat,
-						lng: foundplace.lon,
-					};
-				} else {
-					//console.log(placename);
+			if (district) {
+				for (const place of placename.places) {
+					if (!place.location || (place.location && !place.location.position)) {
+						const placename = place.name.en || place.name.mi;
+						const feature = db.feature.find(feature => feature._id == place.feature_id);
+						const url = encodeURI(placename + '?addressdetails=1&extratags=1&format=json'); //&limit=1
+						let geo = {};
+						try {
+							geo = await nominatim.get(url);
+						} catch(error) {
+							//console.log(error);
+						}
+						if (geo.data && geo.data.length) {
+							let placenames = geo.data.filter(placename => placename.address.region == district.name.en || placename.address.county == district.name.en);
+							if (placenames.length) {
+								placenames.forEach(placename => {
+									placename.score = 0;
+									if (placename.class == feature.category.osm.class) {
+										placename.score += 1;
+										if (placename.type == feature.category.osm.type) placename.score += 1;
+									}
+									if (placename.class == "landuse" && placename.type == feature.category.osm.landuse) placename.score += 2;
+									const name = utils.simplify(placename.display_name.split(",")[0]);
+									if (name == utils.simplify(place.name.en)) placename.score += 1;
+									if (name == utils.simplify(place.name.en + feature.name.en)) placename.score += 1;
+								});
+								placenames = placenames.sort((a, b) => a.score > b.score);
+								const foundplace = placenames[0];
+								//console.log(placename, "==", name);
+								place.location = place.location || {};
+								place.location.source = "nominatim";
+								place.location.position = {
+									lat: foundplace.lat,
+									lng: foundplace.lon,
+								};
+								place.links = {
+									wikipedia: (foundplace.extratags.wikipedia ? "https://en.wikipedia.org/wiki/" + foundplace.extratags.wikipedia.split(":")[1] : null),
+									wikidata: (foundplace.extratags.wikidata ? "https://www.wikidata.org/wiki/" + foundplace.extratags.wikidata : null),
+									website: foundplace.extratags.website,
+								};
+								total += 1;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
+	console.log(total);
+}
+
+function addGazetteerLocations() {
+	let total = 0;
+	db.gazetteer.forEach(gazetteer => {
+		gazetteer.simple = utils.simplify(gazetteer.name);
+	});
+	db.placename.forEach(placename => {
+		if (placename.zone_id && placename.places) {
+			let zone = db.zone.find(zone => zone._id == placename.zone_id);
+			if (placename.addendum_ids) zone = db.zone.find(zone => zone._id == placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
+			const district = zone.gazetteer;
+			placename.places.forEach(place => {
+				if (!place.location || (place.location && !place.location.position)) {
+					const feature = db.feature.find(feature => feature._id == place.feature_id);
+					const names = [utils.simplify(place.name.mi), utils.simplify(place.name.ascii), utils.simplify([place.name.mi, feature.name.en].join(' ')), utils.simplify([place.name.ascii, feature.name.en].join(' '))];
+					let placenames = db.gazetteer.filter(gazetteer => gazetteer.district == district && names.includes(gazetteer.simple));
+					if (placenames.length) {
+						placenames.forEach(placename => {
+							placename.score = 0;
+							if (placename.feature == feature.category.gazetteer) placename.score += 1;
+						});
+						placenames = placenames.sort((a, b) => a.score > b.score);
+						const foundplace = placenames[0];
+						//console.log(placename, "==", foundplace.display_name.split(",")[0]);
+						place.location = place.location || {};
+						place.location.source = "gazetteer";
+						place.location.position = foundplace.position;
+						total += 1;
+					}
+				}
+			});
+		}
+	});
+	console.log(total);
+	delete db.gazetteer;
 }
 
 function deleteNamesPlaces() {
@@ -184,7 +218,7 @@ function deleteNamesPlaces() {
 
 function writeData() {
 	for (const collection in db) {
-		fs.writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(db[collection]).replace(/^\[{/, "[\n\t{").replace(/}\]$/, "}\n]").replace(/},{/g, "},\n\t{"));
+		fs.writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection])).replace(/^\[{/, "[\n\t{").replace(/}\]$/, "}\n]").replace(/},{/g, "},\n\t{"));
 	}	
 }
 

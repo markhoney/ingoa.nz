@@ -4,7 +4,7 @@ const path = require('path');
 const csv = require('csv');
 const stream = require('stream');
 const JSONStream = require('JSONStream');
-const utils = require('./utils');
+const utils = require('../server/db/utils');
 
 const sourcepath = path.join(__dirname, 'source');
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
@@ -60,7 +60,7 @@ function importPlacenames() {
 			names: [],
 			places: [],
 			see: [],
-			zone_ids: [],
+			addendum_ids: [],
 			notes: {
 				name: input.Note_Name,
 				speech: input.Note_Speech,
@@ -75,7 +75,7 @@ function importPlacenames() {
 					name: {
 						en: input.CommonName_1,
 						mi: input[name],
-						ascii: utils.removeMacrons(input[name]),
+						ascii: utils.ascii(input[name]),
 					},
 					categories: [],
 				};
@@ -119,7 +119,7 @@ function importPlacenames() {
 					type: input.SeeType,
 				});
 			} else if (input['SeeZoneID_' + i]) {
-				output.zone_ids.push(input['SeeZoneID_' + i]);
+				output.addendum_ids.push(input['SeeZoneID_' + i]);
 			}
 		}
 		for (i = 1; i <= 7; i++) {
@@ -141,7 +141,8 @@ function importPlacenames() {
 					code: utils.createCode(input['KindName_' + i]),
 					name: {
 						en: input['KindName_' + i],
-						ascii: utils.removeMacrons(input['KindName_' + i]),
+						mi: input.IndexName_1,
+						ascii: utils.ascii(input['KindName_' + i]),
 					},
 					feature_id: input['KindID_' + i],
 					plural: input['KindPlural_' + i] ? true : null,
@@ -177,7 +178,7 @@ function importZones() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -243,7 +244,7 @@ function importSpeakers() {
 				},
 				name: {
 					mi: input.PreferredName,
-					ascii: utils.removeMacrons(input.PreferredName),
+					ascii: utils.ascii(input.PreferredName),
 					parts: {
 						nick: input.Nickname,
 						title: input.Prefix,
@@ -293,7 +294,7 @@ function importIslands() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -325,7 +326,7 @@ function importParts() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -369,7 +370,7 @@ function importMaps() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			island_id: input.IslandID,
 			part_id: input.PartID,
@@ -409,7 +410,7 @@ function importRegions() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			island_id: input.IslandID,
 			part_id: input.PartID,
@@ -435,7 +436,7 @@ function importFeatures() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			plural: input.Plural,
 			order: input.Hierarchy,
@@ -444,6 +445,7 @@ function importFeatures() {
 				osm: {
 					class: input.OSMClass,
 					type: input.OSMType,
+					landuse: input.OSMLandUse,
 				},
 			},
 		};
@@ -465,7 +467,7 @@ function importGroups() {
 			name: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
-				ascii: utils.removeMacrons(input.TeReo),
+				ascii: utils.ascii(input.TeReo),
 			},
 			feature_id: input.FeatureID,
 			/*feature: {
@@ -491,7 +493,7 @@ function importIwi() {
 			},
 			name: {
 				mi: input.Name,
-				ascii: utils.removeMacrons(input.Name),
+				ascii: utils.ascii(input.Name),
 			},
 			links: {
 				wikipedia: input.Wikipedia,
@@ -512,7 +514,7 @@ function importMeanings() {
 			},
 			name: {
 				mi: input.CleanedName,
-				ascii: utils.removeMacrons(input.CleanedName),
+				ascii: utils.ascii(input.CleanedName),
 			},
 			components: input.Components,
 			translation: input.Meaning,
@@ -520,6 +522,23 @@ function importMeanings() {
 		callback(null, utils.cleanobj(output));
 	});
 	openPipe('Ingoa - Meanings.tsv', 'meaning', transformCSVtoObject);
+}
+
+function importOverseas() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			location: input.Location,
+			city: input.City,
+			country: input.Country,
+			position: {
+				lat: input.Latitude,
+				lng: input.Longitude,
+			}
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Overseas.tsv', 'overseas', transformCSVtoObject);
 }
 
 function importDistricts() {
@@ -533,6 +552,7 @@ function importDistricts() {
 			name: {
 				en: input.Name,
 			},
+			island: input.IslandID,
 			seat: input.Seat,
 			area: parseInt(input.Area),
 			population: parseInt(input.Population),
@@ -582,6 +602,7 @@ function importAll() {
 	importFeatures();
 	importIwi();
 	importMeanings();
+	importOverseas();
 	importDistricts();
 	importGroups();
 	importGazetteer();

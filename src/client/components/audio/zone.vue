@@ -1,7 +1,7 @@
 <template>
 	<section class="elevation-4 pa-5 my-3" style="background-color: #f1f3f4; border-radius: 20px;" v-if="current">
 		<h3 :title="current.name.phonetic" class="text-xs-center display-2">
-			<!--<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: current.zone_id, placename: current.code}})">-->
+			<!--<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: current.zone.code, placename: current.code}})">-->
 				{{current.name | maori}}
 			<!--</nuxt-link>-->
 		</h3>
@@ -17,8 +17,9 @@
 				{{current.spoken.speaker.name | locale($i18n.locale)}}
 			</nuxt-link>
 		</h4>
-		<waveplayer v-if="wave" :file="file" :time.sync="currentTime" :placenames="placenames" />
-		<htmlplayer v-else      :file="file" :time.sync="currentTime" />
+		<!--<waveplayer v-if="wave" :file="file" :time.sync="currentTime" :placenames="placenames" />
+		<htmlplayer v-else      :file="file" :time.sync="currentTime" />-->
+		<htmlplayer ref="audio" :file="file" :time.sync="currentTime" :start="start" :stop="stop" />
 		<h2>{{$tc('name', 2) | titlecase}}</h2>
 		<ol start="0">
 			<!--<li v-for="place in placelist" :key="place.code" :class="{active: place.code == current.code}"><a :href="'#' + place.code" v-html="place.name"></a></li>-->
@@ -31,8 +32,8 @@
 					:class="{active: name.name == current.name}"
 					:title="common && current.common ? current.common : ''"
 				>-->
-				<span v-for="(name, index) in placename.names.filter(name => 'spoken' in name)" :class="{active: name._id == current._id}" :key="name._id" @click="jump(name.spoken.start)">
-					{{name.name.mi}}<template v-if="index != (placename.names.filter(name => 'spoken' in name).length - 1)">,</template>
+				<span v-for="(name, index) in placename.names.filter(name => name.spoken)" :class="[name, {active: name._id == current._id}]" :key="name._id" @click="jump(name.spoken.start, name.spoken.end)">
+					{{name.name.mi}}<template v-if="index != (placename.names.filter(name => name.spoken).length - 1)">,</template>
 				</span>
 				<!--</nuxt-link>-->
 				<!--<nuxt-link v-if="placename.names.filter(name => 'spoken' in name).length === 0" :to="localePath({name: 'zone-zone-placename', params: {zone: placename.zone.code, placename: placename.code}})">-->
@@ -48,21 +49,21 @@
 <script>
 	import gql from 'graphql-tag';
 	import htmlplayer from '@/components/audio/player/html.vue';
-	import waveplayer from '@/components/audio/player/wave.vue';
+	//import waveplayer from '@/components/audio/player/wave.vue';
 
 	export default {
 		components: {
 			htmlplayer,
-			waveplayer,
+			//waveplayer,
 		},
 		props: {
 			file: String,
 			field: String,
 			value: String,
-			wave: {
+			/*wave: {
 				type: Boolean,
 				value: false,
-			},
+			},*/
 			common: {
 				type: Boolean,
 				value: false,
@@ -71,6 +72,9 @@
 		data() {
 			return {
 				currentTime: 0,
+				playing: 0,
+				start: 0,
+				stop: 0,
 			};
 		},
 		apollo: {
@@ -79,7 +83,9 @@
 					placenames(filter: {field: $field, value: $value}) {
 						_id
 						code
-						zone_id
+						zone {
+							code
+						}
 						names {
 							_id
 							name {
@@ -122,6 +128,7 @@
 		computed: {
 			bookmarks: function() {
 				if (this.placenames) return this.placenames.map(placename => placename.names).flat().filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
+				//if (this.placenames) return this.placenames.map(placename => placename.names.filter(name => name.spoken)).flat().sort((a, b) => a.spoken.start - b.spoken.start);
 				return [];
 			},
 			current: function() {
@@ -129,8 +136,14 @@
 			},
 		},
 		methods: {
-			jump: function(time) {
-
+			jump: function(start, stop) {
+				this.stop = stop + 0.1;
+				this.$nextTick(() => {
+					this.start = 0;
+					this.$nextTick(() => {
+						this.start = start;
+					});
+				});
 			},
 		},
 	};
@@ -140,6 +153,9 @@
 	ol {
 		column-width: 12em;
 		list-style-position: inside;
+	}
+	.name {
+		cursor: pointer;
 	}
 	.active {
 		font-weight: bold;

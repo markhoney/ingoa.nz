@@ -3,7 +3,7 @@
 		<!--<h3 class="display-1 mt-5 mb-4">{{$tc('map', 1) | titlecase}}</h3>-->
 		<imagemap :code="code" :hash="true" class="text-xs-center" />
 		<h3 class="display-1 mt-5 mb-4">{{$tc('region', 2) | titlecase}}</h3>
-		<regions field="map_code" :value="code" />
+		<regions field="map.code" :value="code" />
 	</section>
 </template>
 

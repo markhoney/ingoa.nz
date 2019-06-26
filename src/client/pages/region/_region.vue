@@ -9,7 +9,7 @@
 		<h3 class="display-1 mt-5 mb-4">
 			{{$tc('zone', 2) | titlecase}}
 		</h3>
-		<zones field="region_id" :value="region._id" />
+		<zones field="region._id" :value="region._id" />
 	</section>
 </template>
 

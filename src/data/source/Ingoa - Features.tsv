@@ -7,7 +7,7 @@ fe_5	5	Aqueduct					historic	aqueduct
 fe_6	6	Area			1	Area	place	region	
 fe_7	7	Arena				Recreation	sport	multi	recreation_ground
 fe_8	8	Arm				Stream	waterway	stream	
-fe_9	9	Arts & crafts centre			39	Building	craft		
+fe_9	9	Arts & crafts centre			39	Building	craft		commercial
 fe_10	10	Bank				Bank	embankment		
 fe_11	11	Bar					natural		
 fe_12	12	Basin	Basins			Basin	natural		
@@ -22,7 +22,7 @@ fe_20	20	Block				Appellation	building		residential
 fe_21	21	Blowhole				Coast Feature	natural	blowhole	
 fe_22	22	Bluff	Bluffs			Cliff	natural	cliff	
 fe_23	23	Boiling lake				Lake	natural	bay	
-fe_24	24	Borough				Locality	place	borough	
+fe_24	24	Borough				Locality	place	borough	residential
 fe_25	25	Borstal				Building	amenity	prison	
 fe_26	26	Boulder	Boulders			Rock	natural	bare_rock	
 fe_27	27	Boulder bank				Rock	natural	bare_rock	
@@ -39,18 +39,18 @@ fe_37	37	Canoe		Waka	32		historic	ship
 fe_38	38	Canoe house		Whare Waka	46	Building	historic	ship	
 fe_39	39	Cape				Cape	natural	cape	
 fe_40	40	Carving		Whakairo			historic		
-fe_41	41	Catholic centre				Building	building	religious	
+fe_41	41	Catholic centre				Building	building	religious	religious
 fe_42	42	Cave	Caves	Ana		Cave	natural	cave_entrance	
-fe_43	43	Cemetery		Urupā			amenity	grave_yard	
-fe_44	44	Centre				Building	building		
+fe_43	43	Cemetery		Urupā			amenity	grave_yard	cemetery
+fe_44	44	Centre				Building	building		commercial
 fe_45	45	Channel				Channel	natural		
-fe_46	46	Chapel			34	Building	building	chapel	
+fe_46	46	Chapel			34	Building	building	chapel	religious
 fe_47	47	Chasm				Chasm	natural		
-fe_48	48	Church			33	Building	building	church	
-fe_49	49	Church house			35	Building	building	religious	
+fe_48	48	Church			33	Building	building	church	religious
+fe_49	49	Church house			35	Building	building	religious	religious
 fe_50	50	City		Taone		City	place	city	
 fe_51	51	Cliff	Cliffs			Cliff	natural	cliff	
-fe_52	52	Clinic			43	Building	amenity	clinic	
+fe_52	52	Clinic			43	Building	amenity	clinic	commercial
 fe_53	53	Clubrooms			45	Building	building		
 fe_54	54	Coast					natural	coastline	
 fe_55	55	College		Kura	27	Building	amenity	college	
@@ -66,7 +66,7 @@ fe_64	64	Corner					highway		highway
 fe_65	65	Country					place	country	
 fe_66	66	County			2	Locality	place	county	
 fe_67	67	Cove				Bay	natural	bay	
-fe_68	68	Craft house			49	Building	building		
+fe_68	68	Craft house			49	Building	building		commercial
 fe_69	69	Crater	Craters			Crater	natural		
 fe_70	70	Creche				Building	amenity	kindergarten	school
 fe_71	71	Creek	Creeks				waterway	stream	
@@ -83,7 +83,7 @@ fe_81	81	Downs					natural
 fe_82	82	Entrance					waterway	river	
 fe_83	83	Estuary				Estuary	waterway	river	
 fe_84	84	Falls					waterway	waterfall	
-fe_85	85	Farm					building	farm	
+fe_85	85	Farm					building	farm	farmyard
 fe_86	86	Fault					natural		
 fe_87	87	Ferry					historic	ship	
 fe_88	88	Flagpole			58		man_made	flagpole	
@@ -97,7 +97,7 @@ fe_95	95	Forest park				Forest	natural	wood	forest
 fe_96	96	Fork	Forks			Fork	highway		
 fe_97	97	Fort					historic	fort	
 fe_98	98	Fortress					historic	fort	
-fe_99	99	Freezing works				Building	man_made	works	
+fe_99	99	Freezing works				Building	man_made	works	industrial
 fe_100	100	Garden	Gardens				leisure	garden	
 fe_101	101	Geothermal region				Locality	natural	hot_spring	
 fe_102	102	Geothermal station					natural	hot_spring	
@@ -106,7 +106,7 @@ fe_104	104	Geyser					natural	geyser
 fe_105	105	Girls' college				Building	amenity	college	
 fe_106	106	Glacier				Glacier	natural	glacier	
 fe_107	107	Glen					natural		
-fe_108	108	Golf course				Recreation	sport	golf	
+fe_108	108	Golf course				Recreation	sport	golf	recreation_ground
 fe_109	109	Gong		Pahu			tourism	attraction	
 fe_110	110	Gorge					natural		
 fe_111	111	Greeting					spoken		
@@ -127,7 +127,7 @@ fe_125	125	Hospital				Building	amenity	hospital
 fe_126	126	Hostel			40	Building	tourism	hostel	
 fe_127	127	Hot pool	Hot pools				natural	hot_spring	
 fe_128	128	Hot spring	Hot springs				natural	hot_spring	
-fe_129	129	House			28	Building	building		
+fe_129	129	House			28	Building	building		residential
 fe_130	130	Hydro station				Building	power	plant	
 fe_131	131	IHC school				Building	amenity	school	
 fe_132	132	Inlet					waterway	river	
@@ -136,8 +136,8 @@ fe_134	134	Island	Islands		5	Island	place	island
 fe_135	135	Islet				Island	place	islet	
 fe_136	136	Isthmus				Isthmus	natural	isthmus	
 fe_137	137	Junction			11		highway		
-fe_138	138	Kāika					place		
-fe_139	139	Kaumātua flats			29	Building	building	residential	
+fe_138	138	Kāika					place		residential
+fe_139	139	Kaumātua flats			29	Building	building	residential	residential
 fe_140	140	Kauri tree					natural	tree	
 fe_141	141	Kitchen			56	Building	amenity	kitchen	
 fe_142	142	Kōhanga reo			25	Building	amenity	school	
@@ -149,85 +149,85 @@ fe_147	147	Lake	Lakes			Lake	natural	water
 fe_148	148	Lakelet				Lake	natural	water	
 fe_149	149	Landing					waterway		
 fe_150	150	Landmark					tourism	attraction	
-fe_151	151	Lawn cemetery					amenity	grave_yard	
+fe_151	151	Lawn cemetery					amenity	grave_yard	cemetary
 fe_152	152	Legendary site					tourism	attraction	
 fe_153	153	Lighthouse				Building	man_made	lighthouse	
-fe_154	154	Locality	Localities		13	Locality	place	locality	
-fe_155	155	Lodge				Building	building		
-fe_156	156	Marae		Marae	19	Building	building		
+fe_154	154	Locality	Localities		13	Locality	place	locality	residential
+fe_155	155	Lodge				Building	building		residential
+fe_156	156	Marae		Marae	19	Building	building		residential
 fe_157	157	Marae complex					building		residential
 fe_158	158	Marae gate			59		barrier	gate	
-fe_159	159	Marae site					building		
+fe_159	159	Marae site					building		residential
 fe_160	160	Maritime park					boundary	maritime	
 fe_161	161	Marshland					natural	wetland	
 fe_162	162	Mauri stone					natural	stone	
-fe_163	163	Meeting house			23	Building	building		
-fe_164	164	Meeting room				Building	building		
-fe_165	165	Meeting/dining hall			38	Building	building		
-fe_166	166	Meeting/dining house			37	Building	building		
-fe_167	167	Memorial hall			36	Building	building		
-fe_168	168	Memorial house				Building	building		
+fe_163	163	Meeting house			23	Building	building		residential
+fe_164	164	Meeting room				Building	building		residential
+fe_165	165	Meeting/dining hall			38	Building	building		residential
+fe_166	166	Meeting/dining house			37	Building	building		residential
+fe_167	167	Memorial hall			36	Building	building		residential
+fe_168	168	Memorial house				Building	building		residential
 fe_169	169	Memorial reserve					historic	memorial	
-fe_170	170	Methanol plant				Facility	man_made	works	
-fe_171	171	Methodist Hall				Building	building	religious	
-fe_172	172	Military camp				Place	military	barracks	
-fe_173	173	Mill					craft	grinding_mill	
-fe_174	174	Mine					man_made	mineshaft	
+fe_170	170	Methanol plant				Facility	man_made	works	industrial
+fe_171	171	Methodist Hall				Building	building	religious	religious
+fe_172	172	Military camp				Place	military	barracks	military
+fe_173	173	Mill					craft	grinding_mill	industrial
+fe_174	174	Mine					man_made	mineshaft	industrial
 fe_175	175	Monument					historic	monument	
-fe_176	176	Moose Lodge				Building	building		
+fe_176	176	Moose Lodge				Building	building		residential
 fe_177	177	Mountain	Mountains				natural	peak	
 fe_178	178	Mouth				Stream	waterway	river	
 fe_179	179	Mud pool					natural	water	
 fe_180	180	Museum				Building	tourism	museum	
-fe_181	181	Mysterious military base				Building	military		
+fe_181	181	Mysterious military base				Building	military		military
 fe_182	182	National park					boundary	national_park	
 fe_183	183	Natural arch					natural		
-fe_184	184	Naval station					military	naval_base	
+fe_184	184	Naval station					military	naval_base	military
 fe_185	185	Neck					natural		
 fe_186	186	Niu pole			57		tourism	attraction	
 fe_187	187	Ocean					place	ocean	
-fe_188	188	Offshore gas field					man_made	offshore_platform	
-fe_189	189	Oil well					man_made	petroleum_well	
-fe_190	190	Old people's home				Building	amenity	nursing_home	
-fe_191	191	Pā		Pā	17		building		
-fe_192	192	Pā site			14		building		
+fe_188	188	Offshore gas field					man_made	offshore_platform	industrial
+fe_189	189	Oil well					man_made	petroleum_well	industrial
+fe_190	190	Old people's home				Building	amenity	nursing_home	residential
+fe_191	191	Pā		Pā	17		building		residential
+fe_192	192	Pā site			14		building		residential
 fe_193	193	Pahu					tourism	attraction	
 fe_194	194	Papakainga			16		building		
 fe_195	195	Park					leisure	park	
 fe_196	196	Pass				Pass	natural		
 fe_197	197	Peak	Peaks			Peak	natural	peak	
 fe_198	198	Peninsula				Peninsula	natural	peninsula	
-fe_199	199	Pensioner flats				Building	building	residential	
+fe_199	199	Pensioner flats				Building	building	residential	residential
 fe_200	200	Pinnacle	Pinnacles			Pinnacle	natural		
 fe_201	201	Plain	Plains			Plain	natural		
 fe_202	202	Plant museum				Building	tourism	museum	
 fe_203	203	Point	Points			Point	natural	peninsula	
 fe_204	204	Polytechnic				Building	amenity	university	
 fe_205	205	Pool	Pools			Pool	leisure	swimming_pool	
-fe_206	206	Port				Port	waterway	dock	
+fe_206	206	Port				Port	waterway	dock	harbour
 fe_207	207	Portage					route		
 fe_208	208	Pou whenua		Pou whenua			boundary	marker	
-fe_209	209	Power station				Building	power	plant	
+fe_209	209	Power station				Building	power	plant	industrial
 fe_210	210	Prison				Building	amenity	prison	
 fe_211	211	Province					place	province	
 fe_212	212	Quay					man_made	quay	
-fe_213	213	Racecourse					leisure	track	
-fe_214	214	Radio New Zealand Studio				Building	amenity	studio	
-fe_215	215	Radio station				Building	amenity	studio	
-fe_216	216	Radio studio					amenity	studio	
-fe_217	217	Railway station				Railway Station	railway	station	
+fe_213	213	Racecourse					leisure	track	commercial
+fe_214	214	Radio New Zealand Studio				Building	amenity	studio	commercial
+fe_215	215	Radio station				Building	amenity	studio	commercial
+fe_216	216	Radio studio					amenity	studio	commercial
+fe_217	217	Railway station				Railway Station	railway	station	railway
 fe_218	218	Range	Ranges			Range	natural	mountain_range	
 fe_219	219	Rapid	Rapids			Rapid	waterway	rapids	
 fe_220	220	Reach					natural		
 fe_221	221	Recreation reserve				recreation reserve	leisure	nature_reserve	recreation_ground
 fe_222	222	Reef	Reefs			Reef	waterway		
-fe_223	223	Refinery					building	industrial	
+fe_223	223	Refinery					building	industrial	industrial
 fe_224	224	Region					place	region	
 fe_225	225	Regional park					boundary	national_park	
 fe_226	226	Research station					office	research	
 fe_227	227	Reserve				Reserve (non-CPA)	leisure	nature_reserve	
 fe_228	228	Reservoir	Reservoirs				natural	water	
-fe_229	229	Resort					leisure		
+fe_229	229	Resort					leisure		residential
 fe_230	230	Ridge				Ridge	natural	ridge	
 fe_231	231	River	Rivers			Stream	waterway	river	
 fe_232	232	River mouth					waterway	river	
@@ -243,23 +243,23 @@ fe_241	241	Saddle				Saddle	natural	saddle
 fe_242	242	Scenic reserve					leisure	nature_reserve	
 fe_243	243	School				Building	amenity	school	
 fe_244	244	Sea				Sea	place	sea	
-fe_245	245	Settlement			12		place		
+fe_245	245	Settlement			12		place		residential
 fe_246	246	Shoal				Shoal	natural		
 fe_247	247	Shore	Shores				natural	coastline	
 fe_248	248	Site			15	Site	historic		
-fe_249	249	Skifield				Recreation	route	ski	
-fe_250	250	Sleeping house		Whare puni	54	Building	building		
-fe_251	251	Social hall			41	Building	building		
+fe_249	249	Skifield				Recreation	route	ski	recreation_ground
+fe_250	250	Sleeping house		Whare puni	54	Building	building		residential
+fe_251	251	Social hall			41	Building	building		residential
 fe_252	252	Sound					waterway		
 fe_253	253	Spiral					railway		
 fe_254	254	Spit				Spit	natural	peninsula	
 fe_255	255	Sports complex			50		leisure		
 fe_256	256	Spring	Springs			Spring	natural	spring	
-fe_257	257	Spy station				Building	military		
+fe_257	257	Spy station				Building	military		military
 fe_258	258	Square					place	square	
 fe_259	259	State forest				Forest	natural	wood	forest
 fe_260	260	State forest park				Forest	natural	wood	forest
-fe_261	261	Station					railway	station	
+fe_261	261	Station					railway	station	railway
 fe_262	262	Steamer					historic	ship	
 fe_263	263	Steps					highway	steps	
 fe_264	264	Stone					natural	stone	
@@ -272,17 +272,17 @@ fe_270	270	Suburb				Suburb	place	suburb
 fe_271	271	Summit					natural	peak	
 fe_272	272	Swamp					natural	wetland	
 fe_273	273	Swimming pool					leisure	swimming_pool	
-fe_274	274	Te Arikinui's official residence				Building	building		
+fe_274	274	Te Arikinui's official residence				Building	building		residential
 fe_275	275	Teachers' College site			42	Building	amenity	college	
-fe_276	276	Temple			21	Building	building	temple	
+fe_276	276	Temple			21	Building	building	temple	religious
 fe_277	277	Terrace	Terraces			Terrace	natural		
 fe_278	278	Thermal area					natural	hot_spring	
 fe_279	279	Thermal region					natural	hot_spring	
 fe_280	280	Timeball station					historic		
 fe_281	281	Title					name		
-fe_282	282	Town			8	Town	place	town	
-fe_283	283	Town site					place	town	
-fe_284	284	Township			9	Town	place	town	
+fe_282	282	Town			8	Town	place	town	residential
+fe_283	283	Town site					place	town	residential
+fe_284	284	Township			9	Town	place	town	residential
 fe_285	285	Track				Track	highway	footway	
 fe_286	286	Training centre				Building	amenity	school	
 fe_287	287	Training ship					historic	ship	
@@ -293,18 +293,18 @@ fe_291	291	Tunnel					tunnel
 fe_292	292	University		Whare wānanga		Building	amenity	university	
 fe_293	293	Valley				Valley	natural	valley	
 fe_294	294	Viaduct					bridge	viaduct	
-fe_295	295	Village			10	Village	place	village	
+fe_295	295	Village			10	Village	place	village	residential
 fe_296	296	Walk					highway	footway	
 fe_297	297	Walkway					highway	footway	
 fe_298	298	Ward					amenity	hospital	
 fe_299	299	Waterfall				Waterfall	waterway	waterfall	
 fe_300	300	Wetland				Wetland	natural	wetland	
-fe_301	301	Whare āwhina		Whare āwhina	31		building		
-fe_302	302	Whare manuhiri		Whare manuhiri	51		building		
-fe_303	303	Whare mate		Whare mate	30		building		
-fe_304	304	Whare moe		Whare moe	52		building		
-fe_305	305	Whare puni		Whare puni	53		building		
-fe_306	306	Whare wānanga		Whare wānanga	22		building		
+fe_301	301	Whare āwhina		Whare āwhina	31		building		residential
+fe_302	302	Whare manuhiri		Whare manuhiri	51		building		residential
+fe_303	303	Whare mate		Whare mate	30		building		residential
+fe_304	304	Whare moe		Whare moe	52		building		residential
+fe_305	305	Whare puni		Whare puni	53		building		residential
+fe_306	306	Whare wānanga		Whare wānanga	22		building		residential
 fe_307	307	Wilderness					natural		
 fe_308	308	Wildlife refuge					leisure	nature_reserve	
 fe_309	309	Wood	Woods				natural	wood	forest

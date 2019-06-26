@@ -62,7 +62,7 @@
 				<v-list-tile slot="activator" :to="localePath('group')">
 					<v-list-tile-title>{{$tc('group', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="group in groups" :key="group.code" :to="localePath({name: 'group-zone-group', params: {zone: zone_id, group: group.code}})">
+				<v-list-tile v-for="group in groups" :key="group.code" :to="localePath({name: 'group-zone-group', params: {zone: zone.code, group: group.code}})">
 					<v-list-tile-title>{{localeName(group.name)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>-->
@@ -141,7 +141,6 @@
 				groups {
 					_id
 					code
-					zone_id
 					name {
 						en
 						mi

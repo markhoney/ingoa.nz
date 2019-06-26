@@ -51,6 +51,22 @@
 		"en": "/placename/:zone/:placename",
 		"mi": "/placename/:zone/:placename"
 	},
+	"place": {
+		"en": "/place",
+		"mi": "/place"
+	},
+	"place/_zone/_place": {
+		"en": "/place/:zone/:place",
+		"mi": "/place/:zone/:place"
+	},
+	"name": {
+		"en": "/name",
+		"mi": "/name"
+	},
+	"name/_zone/_name": {
+		"en": "/name/:zone/:name",
+		"mi": "/name/:zone/:name"
+	},
 	"group": {
 		"en": "/group",
 		"mi": "/ropu"

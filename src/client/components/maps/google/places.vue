@@ -1,7 +1,7 @@
 <template>
-	<GmapMap ref="gmap" :center="{lat: -40, lng: 175}" :zoom="7" map-type-id="satellite" style="width: 100%; height: 100vh">
+	<GmapMap ref="gmap" :center="{lat: -40, lng: 175}" :zoom="7" map-type-id="satellite" style="width: 100%; height: 80vh">
 		<gmap-info-window :options="{pixelOffset: {width: 0, height: -35}}" :position="info.position" :opened="info.open" @closeclick="info.open = false">
-			<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: info.zone, placename: info.placename}})">{{info.title}}</nuxt-link>
+			<nuxt-link v-if="info.id" :to="localePath({name: 'placename-zone-placename', params: {zone: info.zone, placename: info.placename}})">{{info.title}}</nuxt-link>
 			<br>
 			{{info.text}}
 		</gmap-info-window>
@@ -39,7 +39,9 @@
 					placenames(filter: {field: $field, value: $value}) {
 						_id
 						code
-						zone_id
+						zone {
+							code
+						}
 						places {
 							_id
 							name {
@@ -83,12 +85,12 @@
 			};
 		},
 		computed: {
-			google: gmapApi,
+			google: gmapApi
 		},
 		mounted() {
 			this.$refs.gmap.$mapPromise.then(map => {
-				this.geocoder = new this.google.maps.Geocoder();
-				var bounds = new this.google.maps.LatLngBounds();
+				//this.geocoder = new gmapApi.maps.Geocoder();
+				const bounds = new google.maps.LatLngBounds();
 				this.$refs.markers.forEach(marker => {
 					marker.$markerPromise.then(marker => {
 						bounds.extend(marker.position);
@@ -102,7 +104,7 @@
 				this.info.position = place.location.position;
 				this.info.title = this.localeName(place.name);
 				this.info.placename = placename.code;
-				this.info.zone = placename.zone_id || '';
+				this.info.zone = placename.zone.code || '';
 				this.info.text = this.localeName(place.feature.name);
 				if (this.info.id === place._id) {
 					this.info.open = !this.info.open;

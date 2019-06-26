@@ -26,12 +26,17 @@
 						</a>
 					</td>
 				</tr>
-				<template v-for="placename in zone.placenames">
-					<tr v-for="(name, index) in placename.names" :key="index">
-						<td>{{localeName(name.name)}}</td>
-						<td><template v-for="place in placename.places">{{localeName(place.feature.name)}}&nbsp;&nbsp;&nbsp;&nbsp;</template></td>
-					</tr>
-				</template>
+				<tr>
+					<td colspan="2">
+						<audio controls>
+							<source :src="zone.audio.file" type="audio/mpeg" preload="auto">
+						</audio>
+					</td>
+				</tr>
+				<tr v-for="placename in zone.placenames" :key="placename._id">
+					<td>{{placename.names.map(name => localeName(name.name)).join(", ")}}</td>
+					<td><template v-for="place in placename.places">{{localeName(place.feature.name)}}&nbsp;&nbsp;&nbsp;&nbsp;</template></td>
+				</tr>
 			</tbody>
 		</table>
 		<p v-if="zone.next"><nuxt-link :to="localePath({name: 'old-zone', params: {zone: zone.next.code}})">Next zone</nuxt-link></p>
@@ -114,5 +119,8 @@
 <style scoped>
 	td {
 		padding: 5px;
+	}
+	audio {
+		width: 100%;
 	}
 </style>

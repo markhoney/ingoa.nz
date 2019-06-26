@@ -41,7 +41,6 @@ type spoken {
 	start: Float
 	end: Float
 	post: Float
-	speaker_id: String
 	speaker: speaker
 }
 
@@ -57,10 +56,9 @@ type meaning {
 type name {
 	_id: ID!
 	name: names
-	zone_id: String
 	spoken: spoken
 	categories: [String]
-	meaning_id: Int
+	placename: placename
 	meaning: meaning
 	identical: [name]
 	similar: [name]
@@ -69,22 +67,21 @@ type name {
 type place {
 	_id: ID!
 	name: names
-	zone_id: String
-	feature_id: String
-	feature: feature
 	plural: Boolean
 	groups: [membership]
 	location: location
-	wikidata: String
+	links: links
+	placename: placename
+	feature: feature
 }
 
 type links {
 	wikipedia: String
-	homepage: String
+	wikidata: String
+	website: String
 }
 
 type membership {
-	group_id: String
 	group: group
 	subgroup_id: String
 }
@@ -92,15 +89,16 @@ type membership {
 type group {
 	_id: ID!
 	code: String
-	zone_id: String
-	zone: zone
 	slug: slugs
 	name: names
-	feature: feature
 	plural: Boolean
 	place: place
 	type: String
-	placenames: [placename]
+	zone: zone
+	feature: feature
+	places: [place]
+	previous: group
+	next: group
 }
 
 type notes {
@@ -111,35 +109,28 @@ type notes {
 }
 
 type see {
-	zone_id: String
 	zone: zone
-	placename_id: String
 	placename: placename
 	type: String
 }
 
 type addendum {
-	zone_id: String
 	zone: zone
 }
 
 type placename {
 	_id: ID!
 	code: String
-	zone_id: String
-	zone: zone
-	part_id: String
-	part: part
-	island_id: String
-	island: island
 	number: Int
 	featured: Int
+	notes: notes
+	zone: zone
+	addendum_zones: [zone]
+	see: [see]
+	previous: placename
+	next: placename
 	names: [name]
 	places: [place]
-	see: [see]
-	zone_ids: [String]
-	zones: [zone]
-	notes: notes
 }
 
 type googleplace {
@@ -154,6 +145,7 @@ type area {
 
 type location {
 	googleplace: googleplace
+	source: String
 	position: position
 	bounds: bounds
 	window: window
@@ -188,28 +180,20 @@ type zone {
 	name: names
 	audio: audio
 	images: images
-	previous: zone
-	next: zone
-	region_id: String
-	region: region
-	maplink: maplink
-	part_id: String
-	part: part
-	island_id: String
-	island: island
-	district_id: Int
-	district: district
 	boundary: String
 	gazetteer: String
-	areas: [area]
-	placenames: [placename]
-	bookmarks: [name]
-	featured: [placename]
-	speaker_ids: [String]
-	speakers: [speaker]
-	iwi_ids: [String]
-	ngaiwi: [iwi]
 	notes: String
+	areas: [area]
+	region: region
+	district: district
+	previous: zone
+	next: zone
+	speakers: [speaker]
+	placenames: [placename]
+	addenda: [placename]
+	featured: [placename]
+	maplink: maplink
+	ngaiwi: [iwi]
 }
 
 type speaker {
@@ -221,7 +205,11 @@ type speaker {
 	notes: String
 	recorded: String
 	url: String
+	islands: [island]
+	parts: [part]
 	zones: [zone]
+	previous: speaker
+	next: speaker
 	placenames: [placename]
 }
 
@@ -231,16 +219,16 @@ type island {
 	slug: slugs
 	name: names
 	audio: audio
-	images: images
-	zones: [zone]
-	regions: [region]
-	maps: [map]
-	parts: [part]
-	placenames: [placename]
-	bookmarks: [name]
-	speakers: [speaker]
 	description: String
 	location: location
+	images: images
+	previous: island
+	next: island
+	parts: [part]
+	maps: [map]
+	regions: [region]
+	speakers: [speaker]
+	placenames: [placename]
 }
 
 type dates {
@@ -260,23 +248,20 @@ type part {
 	slug: slugs
 	name: names
 	audio: audio
-	images: images
-	previous: part
-	next: part
-	island_id: String
-	island: island
-	zones: [zone]
-	placenames: [placename]
-	bookmarks: [name]
-	speakers: [speaker]
 	dates: dates
 	distance: Int
 	funding: String
 	format: String
 	description: String
 	notes: partnotes
-	regions: [region]
+	images: images
+	island: island
+	previous: part
+	next: part
 	maps: [map]
+	regions: [region]
+	speakers: [speaker]
+	placenames: [placename]
 }
 
 type district {
@@ -287,6 +272,10 @@ type district {
 	seat: String
 	area: Int
 	population: Int
+	island: island
+	zones: [zone]
+	previous: district
+	next: district
 }
 
 type maparea {
@@ -295,7 +284,6 @@ type maparea {
 }
 
 type maplink {
-	map_id: String
 	map: map
 	mapareas: [maparea]
 }
@@ -305,15 +293,15 @@ type map {
 	code: String
 	slug: slugs
 	name: names
-	images: images
-	island_id: String
-	island: island
-	part_id: String
-	part: part
 	dates: dates
-	maplinks: [maplink]
-	zones: [zone]
+	images: images
+	island: island
+	part: part
+	previous: map
+	next: map
 	regions: [region]
+	zones: [zone]
+	maplinks: [maplink]
 }
 
 type region {
@@ -322,14 +310,11 @@ type region {
 	slug: slugs
 	name: names
 	images: images
+	island: island
+	part: part
+	map: map
 	previous: region
 	next: region
-	island_id: String
-	island: island
-	part_id: String
-	part: part
-	map_id: String
-	map: map
 	zones: [zone]
 }
 
@@ -353,6 +338,8 @@ type feature {
 	order: Int
 	category: category
 	placenames: [placename]
+	previous: feature
+	next: feature
 }
 
 type iwi {
@@ -360,8 +347,10 @@ type iwi {
 	code: String
 	slug: slugs
 	name: names
-	zones: [zone]
 	links: links
+	zones: [zone]
+	previous: iwi
+	next: iwi
 }
 
 type gazetteer {

@@ -18,7 +18,7 @@
 					{{localeAltName(region.name, '&nbsp;')}}
 				</h3>
 				<div>
-					<comma v-if="region.zones" field="region_id" :value="region._id">
+					<comma v-if="region.zones" field="region._id" :value="region._id">
 						Zones:
 					</comma>
 				</div>

@@ -2,7 +2,7 @@
 	<section>
 		<div v-for="region in regions" :key="region._id">
 			<h2>{{localeName(region.name)}}</h2>
-			<zone field="region_id" :value="region._id" />
+			<zone field="region._id" :value="region._id" />
 		</div>
 	</section>
 </template>

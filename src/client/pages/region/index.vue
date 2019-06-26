@@ -12,7 +12,7 @@
 			<v-subheader v-if="localeBothNames(island.name)" :key="island.name.mi" class="display-1 mb-4">
 				{{localeAltName(island.name)}}
 			</v-subheader>
-			<regions :key="island.code" field="island_id" :value="island._id" />
+			<regions :key="island.code" field="island._id" :value="island._id" />
 		</template>
 	</section>
 </template>

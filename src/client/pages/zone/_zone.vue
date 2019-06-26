@@ -1,20 +1,20 @@
 <template>
 	<section v-if="zone">
 		<imageheader :image="zone.images.landscape" :names="zone.name" :right="'Zone ' + zone.number" />
-		<player :file="zone.audio.file" field="zone_id" :value="zone._id" :wave="false" />
-		<gmap field="zone_id" :value="zone.code" />
+		<player :file="zone.audio.file" field="zone._id" :value="zone._id" :wave="false" />
+		<gmap field="zone._id" :value="zone._id" />
 		<h3>{{$tc('speaker', 2) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
 				<template v-for="speaker in zone.speakers.filter(speaker => speaker.code != 'hugh_young')">
-					<speaker field="_id" :value="speaker._id" :key="speaker._id" />
+					<speaker :code="speaker.code" :key="speaker._id" />
 				</template>
 			</v-flex>
 		</v-layout>
 		<h3>{{$tc('location', 1) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<island :code="zone.island.code">
+				<island :code="zone.region.island.code">
 					<h2>ISLAND</h2>
 				</island>
 			</v-flex>
@@ -57,10 +57,10 @@
 						region {
 							_id
 							code
-						}
-						island {
-							_id
-							code
+							island {
+								_id
+								code
+							}
 						}
 						audio {
 							file
