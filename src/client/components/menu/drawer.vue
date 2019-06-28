@@ -3,7 +3,7 @@
 		<v-list>
 			<v-list-tile>
 				<v-list-tile-title>
-					<search />
+					<!--<search />-->
 				</v-list-tile-title>
 			</v-list-tile>
 			<v-list-group prepend-icon="public">

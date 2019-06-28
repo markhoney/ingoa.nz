@@ -1,4 +1,4 @@
-const utils = require('./utils');
+//const utils = require('./utils');
 
 const db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'iwi', 'placename', 'meaning', 'district'].reduce((db, collection) => { // , 'gazetteer'
 	db[collection] = require('./json/' + collection + '.json');
@@ -166,7 +166,7 @@ db.zone.forEach((zone, index) => {
 				place.feature = db.feature.find(feature => feature._id == place.feature_id);
 				if (place.membership) {
 					place.membership.forEach(membership => {
-						membership.group = db.group.find(group => group._id == membership.group_id)
+						membership.group = db.group.find(group => group._id == membership.group_id);
 					});
 				}
 			});
@@ -174,6 +174,66 @@ db.zone.forEach((zone, index) => {
 	});
 });
 delete db.name;
+
+db.search = [];
+
+["island", "part", "map", "region", "zone", "group", "feature", "iwi"].forEach(collection => { // , "speaker"
+	db[collection].forEach(item => {
+		for (const name of Object.values(item.name)) {
+			db.search.push({
+				_id: item._id,
+				__typename: collection,
+				code: item.code,
+				name: name,
+			});
+		}
+	});
+});
+
+db.placename.forEach(placename => {
+	const zone = (placename.zone ? placename.zone.code : null);
+	const part = (placename.part ? placename.part.code : null);
+	const island = (placename.island ? placename.island.code : null);
+	for (const name of Object.values(placename.names[0])) {
+		db.search.push({
+			_id: placename._id,
+			__typename: "placename",
+			code: placename.code,
+			zone: zone,
+			part: part,
+			island: island,
+			name: name,
+		});
+	}
+	placename.names.forEach(names => {
+		for (const name of Object.values(names.name)) {
+			db.search.push({
+				_id: names._id,
+				__typename: "name",
+				code: names.code,
+				zone: zone,
+				part: part,
+				island: island,
+				name: name,
+			});
+		}
+	});
+	if (placename.places) {
+		placename.places.forEach(place => {
+			for (const name of Object.values(place.name)) {
+				db.search.push({
+					_id: place._id,
+					__typename: "place",
+					code: place.code,
+					zone: zone,
+					part: part,
+					island: island,
+					name: name,
+				});
+			}
+		});
+	}
+});
 
 /*for (const collection in db) {
 	db[collection] = utils.cleanobj(db[collection]);

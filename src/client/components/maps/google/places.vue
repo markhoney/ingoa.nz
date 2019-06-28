@@ -89,14 +89,14 @@
 		},
 		mounted() {
 			this.$refs.gmap.$mapPromise.then(map => {
-				//this.geocoder = new gmapApi.maps.Geocoder();
-				const bounds = new google.maps.LatLngBounds();
-				this.$refs.markers.forEach(marker => {
-					marker.$markerPromise.then(marker => {
-						bounds.extend(marker.position);
-						map.fitBounds(bounds);
-					});
-				});
+				this.$map = map;
+			});
+			this.$watch(() => {
+				return this.$refs.markers;
+			},
+			(val) => {
+				console.log("Watch");
+				this.zoomMap();
 			});
 		},
 		methods: {
@@ -113,14 +113,22 @@
 					this.info.id = place._id;
 				}
 			},
-		},
-		getLocation: function(address) {
-			this.geocoder.geocode({address: address}, (results, status) => {
-				if (status === 'OK') {
-					this.currentLocation.lat = results[0].geometry.location.lat();
-					this.currentLocation.lng = results[0].geometry.location.lng();
+			zoomMap: function() {
+				const bounds = new google.maps.LatLngBounds();
+				if (this.$refs.markers) {
+					this.$refs.markers.forEach(marker => {
+						marker.$markerPromise.then(marker => {
+							bounds.extend(marker.position);
+							this.$map.fitBounds(bounds);
+						});
+					});
 				}
-			});
+			},
+		},
+		watch: {
+			placenames: function() {
+				//this.zoomMap();
+			}
 		},
 	};
 </script>
