@@ -88,5 +88,3 @@ caddy.exe
 report.*.json
 
 .monitor
-
-src/client/static/audio/placename
