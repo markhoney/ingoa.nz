@@ -13,11 +13,11 @@
 	},
 	"part": {
 		"en": "/part",
-		"mi": "/part"
+		"mi": "/wahanga"
 	},
 	"part/_part": {
 		"en": "/part/:part",
-		"mi": "/part/:part"
+		"mi": "/wahanga/:part"
 	},
 	"region": {
 		"en": "/region",
@@ -29,11 +29,11 @@
 	},
 	"map": {
 		"en": "/map",
-		"mi": "/map"
+		"mi": "/mahere"
 	},
 	"map/_map": {
 		"en": "/map/:map",
-		"mi": "/map/:map"
+		"mi": "/mahere/:map"
 	},
 	"zone": {
 		"en": "/zone",
@@ -45,27 +45,27 @@
 	},
 	"placename": {
 		"en": "/placename",
-		"mi": "/placename"
+		"mi": "/ingoawahi"
 	},
 	"placename/_zone/_placename": {
 		"en": "/placename/:zone/:placename",
-		"mi": "/placename/:zone/:placename"
+		"mi": "/ingoawahi/:zone/:placename"
 	},
 	"place": {
 		"en": "/place",
-		"mi": "/place"
+		"mi": "/wahi"
 	},
 	"place/_zone/_place": {
 		"en": "/place/:zone/:place",
-		"mi": "/place/:zone/:place"
+		"mi": "/wahi/:zone/:place"
 	},
 	"name": {
 		"en": "/name",
-		"mi": "/name"
+		"mi": "/ingoa"
 	},
 	"name/_zone/_name": {
 		"en": "/name/:zone/:name",
-		"mi": "/name/:zone/:name"
+		"mi": "/ingoa/:zone/:name"
 	},
 	"group": {
 		"en": "/group",

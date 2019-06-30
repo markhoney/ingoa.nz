@@ -11,7 +11,7 @@ type slugs {
 	mi: String
 }
 
-type nameparts {
+type parts {
 	nick: String
 	title: String
 	alternate: String
@@ -26,13 +26,13 @@ type phonetic {
 	html: String
 }
 
-type names {
+type title {
 	en: String
 	mi: String
 	ascii: String
 	phonetic: phonetic
 	transliteration: String
-	parts: nameparts
+	parts: parts
 	full: String
 }
 
@@ -48,14 +48,14 @@ type meaning {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	components: String
 	translation: String
 }
 
 type name {
 	_id: ID!
-	name: names
+	title: title
 	spoken: spoken
 	categories: [String]
 	placename: placename
@@ -66,7 +66,7 @@ type name {
 
 type place {
 	_id: ID!
-	name: names
+	title: title
 	plural: Boolean
 	groups: [membership]
 	location: location
@@ -90,7 +90,7 @@ type group {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	plural: Boolean
 	place: place
 	type: String
@@ -139,7 +139,7 @@ type googleplace {
 }
 
 type area {
-	name: names
+	title: title
 	location: location
 }
 
@@ -177,7 +177,7 @@ type zone {
 	code: String
 	number: Int
 	slug: slugs
-	name: names
+	title: title
 	audio: audio
 	images: images
 	boundary: String
@@ -200,7 +200,7 @@ type speaker {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	gender: String
 	notes: String
 	recorded: String
@@ -217,7 +217,7 @@ type island {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	audio: audio
 	description: String
 	location: location
@@ -246,7 +246,7 @@ type part {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	audio: audio
 	dates: dates
 	distance: Int
@@ -268,7 +268,7 @@ type district {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	seat: String
 	area: Int
 	population: Int
@@ -292,7 +292,7 @@ type map {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	dates: dates
 	images: images
 	island: island
@@ -308,7 +308,7 @@ type region {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	images: images
 	island: island
 	part: part
@@ -332,7 +332,7 @@ type feature {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	images: images
 	plural: String
 	order: Int
@@ -346,7 +346,7 @@ type iwi {
 	_id: ID!
 	code: String
 	slug: slugs
-	name: names
+	title: title
 	links: links
 	zones: [zone]
 	previous: iwi
@@ -359,6 +359,14 @@ type gazetteer {
 	district: String
 	feature: String
 	location: location
+}
+
+type search {
+	_id: ID!
+	type: String
+	code: String
+	name: String
+	zone_code: String
 }
 
 input pagination {
@@ -375,6 +383,10 @@ input sort {
 input find {
 	_id: String
 	code: String
+}
+
+input term {
+	term: String
 }
 
 input filter {
@@ -470,4 +482,13 @@ type Query {
 	placename(
 		filter: find
 	): placename
+	place(
+		filter: find
+	): place
+	name(
+		filter: find
+	): name
+	search(
+		filter: term
+	): search
 }

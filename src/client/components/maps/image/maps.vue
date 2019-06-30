@@ -1,8 +1,8 @@
 <template>
 	<v-layout row wrap>
 		<v-flex v-for="map in maps" :key="map.code" class="pa-2">
-			<h2 class="display-1 mb-0">{{localeName(map.name)}}</h2>
-			<h3 class="headline mb-0">{{localeAltName(map.name)}}</h3>
+			<h2 class="display-1 mb-0">{{localeTitle(map.title)}}</h2>
+			<h3 class="headline mb-0">{{localeAltTitle(map.title)}}</h3>
 			<imagemap :code="map.code" :hash="true" />
 		</v-flex>
 	</v-layout>

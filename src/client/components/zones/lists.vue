@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<div v-for="region in regions" :key="region._id">
-			<h2>{{localeName(region.name)}}</h2>
+			<h2>{{localeTitle(region.title)}}</h2>
 			<zone field="region._id" :value="region._id" />
 		</div>
 	</section>
@@ -19,7 +19,7 @@
 				query: gql`query regions {
 					regions {
 						_id
-						name {
+						title {
 							en
 							mi
 						}

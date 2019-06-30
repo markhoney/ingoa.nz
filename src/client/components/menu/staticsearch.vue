@@ -17,7 +17,7 @@
 				islands {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -27,7 +27,7 @@
 				regions {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -37,7 +37,7 @@
 				zones {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -47,7 +47,7 @@
 				maps {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -57,7 +57,7 @@
 				speakers {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -67,7 +67,7 @@
 				groups {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -77,7 +77,7 @@
 				features {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -87,7 +87,7 @@
 				ngaiwi {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
@@ -99,14 +99,14 @@
 					code
 					names {
 						_id
-						name {
+						title {
 							en
 							mi
 						}
 					}
 					places {
 						_id
-						name {
+						title {
 							en
 							mi
 						}
@@ -142,7 +142,7 @@
 				].map(data => {
 					return {
 						value: '/' + [data.__typename, data.code].join('/'),
-						text: this.localeName(data.name) + ' (' + data.__typename + ')'
+						text: this.localeTitle(data.title) + ' (' + data.__typename + ')'
 					};
 				});
 			}

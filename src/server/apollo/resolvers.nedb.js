@@ -24,12 +24,12 @@ module.exports = function(db) {
 				});
 			},
 			/*code(island) {
-				return utils.createCode(island.name.en || island.name.mi);
+				return utils.createCode(island.title.en || island.title.mi);
 			},
 			slug(island) {
 				return {
-					en: utils.createCode(island.name.en === island.name.mi ? null : island.name.en),
-					mi: utils.createCode(island.name.mi),
+					en: utils.createCode(island.title.en === island.title.mi ? null : island.title.en),
+					mi: utils.createCode(island.title.mi),
 				}
 			},*/
 		},
@@ -179,13 +179,13 @@ module.exports = function(db) {
 
 		name: {
 			meaning(name) {
-				return db.meaning.asyncFindOne({'name.mi': name.name.mi});
+				return db.meaning.asyncFindOne({'title.mi': name.title.mi});
 			},
 			identical(name) {
-				return db.name.asyncFind({'name.mi': name.name.mi});
+				return db.name.asyncFind({'title.mi': name.title.mi});
 			},
 			similar(name) {
-				return db.name.asyncFind({'name.mi': {$ne: name.name.mi}}).sort((a, b) => levenshtein(name.name.mi, a.name.mi) - levenshtein(name.name.mi, b.name.mi)).slice(0, 8);
+				return db.name.asyncFind({'title.mi': {$ne: name.title.mi}}).sort((a, b) => levenshtein(name.title.mi, a.title.mi) - levenshtein(name.title.mi, b.title.mi)).slice(0, 8);
 			},
 		},
 
@@ -242,12 +242,12 @@ module.exports = function(db) {
 			},
 			/*fullname(speaker) {
 				return [
-					speaker.name.parts.title,
-					speaker.name.parts.first,
-					speaker.name.parts.nick ? ( + speaker.name.parts.nick + ) : null,
-					speaker.name.parts.middle,
-					speaker.name.parts.last,
-					speaker.name.parts.suffix,
+					speaker.title.parts.title,
+					speaker.title.parts.first,
+					speaker.title.parts.nick ? ( + speaker.title.parts.nick + ) : null,
+					speaker.title.parts.middle,
+					speaker.title.parts.last,
+					speaker.title.parts.suffix,
 				].filter(a => a).join( );
 			},*/
 		},

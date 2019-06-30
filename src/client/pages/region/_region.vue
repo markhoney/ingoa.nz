@@ -1,10 +1,10 @@
 <template>
 	<section v-if="region">
 		<h1 class="display-2 mt-5">
-			{{localeName(region.name)}}
+			{{localeTitle(region.title)}}
 		</h1>
-		<h2 v-if="localeBothNames(region.name)" class="display-1 mb-4">
-			{{localeAltName(region.name)}}
+		<h2 v-if="localeBothTitles(region.title)" class="display-1 mb-4">
+			{{localeAltTitle(region.title)}}
 		</h2>
 		<h3 class="display-1 mt-5 mb-4">
 			{{$tc('zone', 2) | titlecase}}
@@ -29,7 +29,7 @@
 					region(filter: {${field}: $value}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}
@@ -44,7 +44,7 @@
 		},
 		head() {
 			return {
-				title: (this.region ? this.localeName(this.region.name) : ""),
+				title: (this.region ? this.localeTitle(this.region.title) : ""),
 			};
 		},
 	};

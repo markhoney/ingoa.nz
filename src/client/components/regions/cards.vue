@@ -24,14 +24,14 @@
 					regions(filter: {field: $field, value: $value}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}
 						zones {
 							_id
 							code
-							name {
+							title {
 								en
 								mi
 							}

@@ -7,14 +7,14 @@
 			<v-list dense>
 				<v-menu offset-x open-on-hover v-for="island in islands" :key="island.code">
 					<v-list-tile slot="activator" :to="localePath({name: 'island-island', params: {island: island.code}})">
-						<v-list-tile-title>{{localeName(island.name)}}</v-list-tile-title>
+						<v-list-tile-title>{{localeTitle(island.title)}}</v-list-tile-title>
 						<v-list-tile-action class="justify-end">
 							<v-icon>play_arrow</v-icon>
 						</v-list-tile-action>
 					</v-list-tile>
 					<v-list dense>
 						<v-list-tile v-for="region in island.regions" :key="region.code" :to="localePath({name: 'region-region', params: {region: region.code}})">
-							<v-list-tile-title>{{localeName(region.name)}}</v-list-tile-title>
+							<v-list-tile-title>{{localeTitle(region.title)}}</v-list-tile-title>
 						</v-list-tile>
 					</v-list>
 				</v-menu>
@@ -51,14 +51,14 @@
 				islands {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
 					regions {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}

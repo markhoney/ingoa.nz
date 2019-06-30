@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<template v-for="region in regions">
-			<h2 class="headline mt5 mb4" :key="region.code">{{localeNames(region.name)}}</h2>
+			<h2 class="headline mt5 mb4" :key="region.code">{{localeTitles(region.title)}}</h2>
 			<zones field="region._id" :value="region._id" :cards="false" :key="region.code" />
 		</template>
 	</section>
@@ -24,7 +24,7 @@
 					regions(filter: {field: $field, value: $value}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}

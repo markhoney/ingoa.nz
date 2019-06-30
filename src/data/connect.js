@@ -98,10 +98,10 @@ function addSpeakers() {
 
 function addSimilarIdentical() {
 	db.name.forEach(name => {
-		if (!name.similar_ids && name.name.mi != "Intro") {
-			const identical = db.name.filter(myname => myname.name.mi == name.name.mi);
+		if (!name.similar_ids && name.title.mi != "Intro") {
+			const identical = db.name.filter(myname => myname.title.mi == name.title.mi);
 			name.identical_ids = identical.map(name => name._id);
-			const similar = db.name.filter(myname => myname.name.mi != name.name.mi).sort((a, b) => levenshtein(name.name.mi, a.name.mi) - levenshtein(name.name.mi, b.name.mi)).slice(0, 8);
+			const similar = db.name.filter(myname => myname.title.mi != name.title.mi).sort((a, b) => levenshtein(name.title.mi, a.title.mi) - levenshtein(name.title.mi, b.title.mi)).slice(0, 8);
 			name.similar_ids = similar.map(name => name._id);
 		}
 	});
@@ -109,8 +109,8 @@ function addSimilarIdentical() {
 
 function addMeanings() {
 	db.name.forEach(name => {
-		if (!name.meaning_id && name.name.mi) {
-			const meaning = db.meaning.find(meaning => meaning.name.mi == name.name.mi || meaning.name.mi == name.name.ascii);
+		if (!name.meaning_id && name.title.mi) {
+			const meaning = db.meaning.find(meaning => meaning.title.mi == name.title.mi || meaning.title.mi == name.title.ascii);
 			if (meaning) name.meaning_id = meaning._id;
 		}
 	});
@@ -127,7 +127,7 @@ async function addNominatimLocations() {
 			if (district) {
 				for (const place of placename.places) {
 					if (!place.location || (place.location && !place.location.position)) {
-						const placename = place.name.en || place.name.mi;
+						const placename = place.title.en || place.title.mi;
 						const feature = db.feature.find(feature => feature._id == place.feature_id);
 						const url = encodeURI(placename + '?addressdetails=1&extratags=1&format=json'); //&limit=1
 						let geo = {};
@@ -137,7 +137,7 @@ async function addNominatimLocations() {
 							//console.log(error);
 						}
 						if (geo.data && geo.data.length) {
-							let placenames = geo.data.filter(placename => placename.address.region == district.name.en || placename.address.county == district.name.en);
+							let placenames = geo.data.filter(placename => placename.address.region == district.title.en || placename.address.county == district.title.en);
 							if (placenames.length) {
 								placenames.forEach(placename => {
 									placename.score = 0;
@@ -147,8 +147,8 @@ async function addNominatimLocations() {
 									}
 									if (placename.class == "landuse" && placename.type == feature.category.osm.landuse) placename.score += 2;
 									const name = utils.simplify(placename.display_name.split(",")[0]);
-									if (name == utils.simplify(place.name.en)) placename.score += 1;
-									if (name == utils.simplify(place.name.en + feature.name.en)) placename.score += 1;
+									if (name == utils.simplify(place.title.en)) placename.score += 1;
+									if (name == utils.simplify(place.title.en + feature.title.en)) placename.score += 1;
 								});
 								placenames = placenames.sort((a, b) => a.score > b.score);
 								const foundplace = placenames[0];
@@ -178,7 +178,7 @@ async function addNominatimLocations() {
 function addGazetteerLocations() {
 	let total = 0;
 	db.gazetteer.forEach(gazetteer => {
-		gazetteer.simple = utils.simplify(gazetteer.name);
+		gazetteer.simple = utils.simplify(gazetteer.title);
 	});
 	db.placename.forEach(placename => {
 		if (placename.zone_id && placename.places) {
@@ -188,7 +188,7 @@ function addGazetteerLocations() {
 			placename.places.forEach(place => {
 				if (!place.location || (place.location && !place.location.position)) {
 					const feature = db.feature.find(feature => feature._id == place.feature_id);
-					const names = [utils.simplify(place.name.mi), utils.simplify(place.name.ascii), utils.simplify([place.name.mi, feature.name.en].join(' ')), utils.simplify([place.name.ascii, feature.name.en].join(' '))];
+					const names = [utils.simplify(place.title.mi), utils.simplify(place.title.ascii), utils.simplify([place.title.mi, feature.title.en].join(' ')), utils.simplify([place.title.ascii, feature.title.en].join(' '))];
 					let placenames = db.gazetteer.filter(gazetteer => gazetteer.district == district && names.includes(gazetteer.simple));
 					if (placenames.length) {
 						placenames.forEach(placename => {

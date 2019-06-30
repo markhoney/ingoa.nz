@@ -1,7 +1,7 @@
 <template>
 	<p><slot />
 		<nuxt-link v-for="(zone, index) in zones" :key="zone.code" :to="localePath({name: 'zone-zone', params: {zone: zone.code}})" no-prefetch>
-			{{localeName(zone.name)}}<template v-if="index != (zones.length - 1)">, </template>
+			{{localeTitle(zone.title)}}<template v-if="index != (zones.length - 1)">, </template>
 		</nuxt-link>
 	</p>
 </template>
@@ -20,7 +20,7 @@
 					zones(filter: {field: $field, value: $value}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}

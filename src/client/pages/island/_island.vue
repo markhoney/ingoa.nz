@@ -1,6 +1,6 @@
 <template>
 	<section v-if="island">
-		<imageheader :image="island.images.landscape" :names="island.name" />
+		<imageheader :image="island.images.landscape" :title="island.title" />
 		<p class="ma-5" v-html="island.description" />
 		<player :file="island.audio.file" field="island._id" :value="island._id" :common="true" :wave="true" />
 		<imagemap v-for="map in island.maps" :key="map.code" :code="map.code" :hash="true" />
@@ -25,7 +25,7 @@
 					island(filter: {code: $code}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}
@@ -51,7 +51,7 @@
 		},
 		head() {
 			return {
-				title: (this.island ? this.localeName(this.island.name) : ''),
+				title: (this.island ? this.localeTitle(this.island.title) : ''),
 			};
 		},
 	};

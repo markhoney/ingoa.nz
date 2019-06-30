@@ -44,7 +44,7 @@
 						}
 						places {
 							_id
-							name {
+							title {
 								en
 								mi
 							}
@@ -55,7 +55,7 @@
 								}
 							}
 							feature {
-								name {
+								title {
 									en
 									mi
 								}
@@ -102,10 +102,10 @@
 		methods: {
 			toggleinfo: function(placename, place) {
 				this.info.position = place.location.position;
-				this.info.title = this.localeName(place.name);
+				this.info.title = this.localeTitle(place.title);
 				this.info.placename = placename.code;
 				this.info.zone = placename.zone.code || '';
-				this.info.text = this.localeName(place.feature.name);
+				this.info.text = this.localeTitle(place.feature.title);
 				if (this.info.id === place._id) {
 					this.info.open = !this.info.open;
 				} else {

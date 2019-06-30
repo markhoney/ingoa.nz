@@ -29,7 +29,7 @@
 						code
 						places {
 							_id
-							name {
+							title {
 								en
 								mi
 							}
@@ -40,7 +40,7 @@
 								}
 							}
 							feature {
-								name {
+								title {
 									en
 									mi
 								}

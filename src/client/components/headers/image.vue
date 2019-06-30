@@ -2,9 +2,9 @@
 	<v-container>
 		<v-layout :style="'background-image: url(\'' + image + '\')'" row wrap class="headerimage">
 			<v-flex>
-				<h2 class="display-3" v-if="to"><nuxt-link :to="localePath(to)">{{localeName(names)}}</nuxt-link></h2>
-				<h2 class="display-3" v-else>{{localeName(names)}}</h2>
-				<h3 class="display-2 mb-5">{{localeAltName(names)}}</h3>
+				<h2 class="display-3" v-if="to"><nuxt-link :to="localePath(to)">{{localeTitle(title)}}</nuxt-link></h2>
+				<h2 class="display-3" v-else>{{localeTitle(title)}}</h2>
+				<h3 class="display-2 mb-5">{{localeAltTitle(title)}}</h3>
 			</v-flex>
 			<v-flex>
 				<h2 class="display-2 text-xs-right">{{right}}</h2>
@@ -17,7 +17,7 @@
 	export default {
 		props: {
 			image: String,
-			names: Object,
+			title: Object,
 			to: Object,
 			right: String,
 		},

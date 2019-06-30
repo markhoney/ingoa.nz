@@ -1,6 +1,6 @@
 <template>
 	<section v-if="zone">
-		<imageheader :image="zone.images.landscape" :names="zone.name" :right="'Zone ' + zone.number" />
+		<imageheader :image="zone.images.landscape" :title="zone.title" :right="'Zone ' + zone.number" />
 		<player :file="zone.audio.file" field="zone._id" :value="zone._id" :wave="false" />
 		<gmap field="zone._id" :value="zone._id" />
 		<h3>{{$tc('speaker', 2) | initialcase}}</h3>
@@ -15,7 +15,7 @@
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
 				<island :code="zone.region.island.code">
-					<h2>ISLAND</h2>
+					<h2>{{$tc('island', 1) | uppercase}}</h2>
 				</island>
 			</v-flex>
 			<v-flex xs12 sm6 md4 class="pa-2">
@@ -50,7 +50,7 @@
             _id
 						code
 						number
-						name {
+						title {
 							en
 							mi
 						}
@@ -71,7 +71,7 @@
 						speakers {
 							_id
 							code
-							name {
+							title {
 								en
 								mi
 							}
@@ -87,7 +87,7 @@
 		},
 		head() {
 			return {
-				title: (this.zone ? this.localeName(this.zone.name) : null),
+				title: (this.zone ? this.localeTitle(this.zone.title) : null),
 			};
 		},
 	};

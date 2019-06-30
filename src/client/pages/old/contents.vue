@@ -56,15 +56,15 @@
 					<template v-for="region in map.regions">
 						<tr :key="map.code + region.code">
 							<td align="right">&nbsp;</td>
-							<td valign="bottom"><b style="text-transform: uppercase;">{{localeName(region.name)}}</b></td>
+							<td valign="bottom"><b style="text-transform: uppercase;">{{localeTitle(region.title)}}</b></td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr v-for="zone in region.zones" :key="map.code + region.code + zone.code">
 							<td align="right"><a :name="zone.number" />{{zone.number}}</td>
-							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: zone.code}})">{{localeName(zone.name)}}</nuxt-link></td>
-							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker.code != 'hugh_young')">{{localeName(speaker.name)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
-							<td><span v-for="(name, index) in zone.featured" :key="index">{{maoriName(name)}}<br></span></td>
+							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: zone.code}})">{{localeTitle(zone.title)}}</nuxt-link></td>
+							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker.code != 'hugh_young')">{{localeTitle(speaker.title)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
+							<td><span v-for="(name, index) in zone.featured" :key="index">{{maoriTitle(name.title)}}<br></span></td>
 						</tr>
 					</template>
 				</template>
@@ -87,14 +87,14 @@
 				maps {
 					_id
 					code
-					name {
+					title {
 						en
 						mi
 					}
 					regions {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}
@@ -102,14 +102,14 @@
 							_id
 							code
 							number
-							name {
+							title {
 								en
 								mi
 							}
 							speakers {
 								_id
 								code
-								name {
+								title {
 									en
 									mi
 								}
@@ -118,7 +118,7 @@
 								_id
 								code
 								names {
-									name {
+									title {
 										en
 										mi
 									}

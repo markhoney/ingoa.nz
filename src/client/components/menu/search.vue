@@ -1,32 +1,61 @@
 <template>
-	<v-autocomplete :items="suggestions" v-model="search" prepend-icon="search" />
+	<v-autocomplete no-filter :items="autocomplete" :search-input.sync="input" v-model="selected" prepend-icon="search" />
 </template>
 
 <script>
 	import gql from 'graphql-tag';
 	import search from '@/components/menu/search.vue';
+	//import {setTimeout} from 'timers';
 
 	export default {
 		data() {
 			return {
-				search: ''
+				input: '',
+				term: '',
+				selected: '',
 			}
 		},
 		apollo: {
-			placenames: {
-				query: gql`query search($value: String) {
-					search(filter: {value: $value}) {
+			search: {
+				query: gql`query search($term: String) {
+					search(filter: {term: $term}) {
+						type
+						code
+						name
+						zone_code
+					}
 				}`,
 				variables() {
 					return {
-						value: search,
+						term: this.term,
 					}
 				},
 			},
 		},
+		computed: {
+			autocomplete: function() {
+				if (this.results) {
+					return this.results.map(result => {
+						return {
+							value: "/" + [type, zone_code, code].join("/"),
+							text: result.name,
+						};
+					});
+				}
+			},
+		},
 		watch: {
-			search: function(search) {
-				this.$router.push({path: search});
+			input: function(input) {
+				console.log("Searching...");
+				//this.$router.push({path: input});
+				clearTimeout(this.$timeout);
+				this.$timeout = setTimeout(() => {
+					console.log("Searched!");
+					this.term = input;
+				}, 500);
+			},
+			selected: function(selected) {
+				this.$router.push({path: selected});
 			}
 		},
 	};

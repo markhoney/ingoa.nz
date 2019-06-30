@@ -98,7 +98,7 @@
 						start: name.spoken.start,
 						end: name.spoken.end,
 						attributes: {
-							label: this.maoriName(name.name),
+							label: this.maoriTitle(name.title),
 							//highlight: true,
 						},
 						color: this.palette[index].alpha(0.1).css(),

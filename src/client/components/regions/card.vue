@@ -2,8 +2,8 @@
 	<v-card v-if="region">
 		<nuxt-link :to="localePath({name: 'region-region', params: {region: region.code}})">
 			<v-img :src="region.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);">
-				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeName(region.name)}}</h2>
-				<h3 class="mb-1 headline">{{localeAltName(region.name, '&nbsp;')}}</h3>-->
+				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeTitle(region.title)}}</h2>
+				<h3 class="mb-1 headline">{{localeAltTitle(region.title, '&nbsp;')}}</h3>-->
 				<!--<h2 class="display-3 mb-0">{{$tc('region', 1) | initialcase}}</h2>-->
 			</v-img>
 		</nuxt-link>
@@ -11,15 +11,15 @@
 			<div>
 				<h2 class="headline mb-0" style="clear: both;">
 					<nuxt-link :to="localePath({name: 'region-region', params: {region: region.code}})">
-						{{localeName(region.name)}}
+						{{localeTitle(region.title)}}
 					</nuxt-link>
 				</h2>
 				<h3 class="mb-1">
-					{{localeAltName(region.name, '&nbsp;')}}
+					{{localeAltTitle(region.title, '&nbsp;')}}
 				</h3>
 				<div>
 					<comma v-if="region.zones" field="region._id" :value="region._id">
-						Zones:
+						{{$tc('zone', 2) | initialcase}}:
 					</comma>
 				</div>
 			</div>
@@ -44,14 +44,14 @@
 					region(filter: {code: $code}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}
 						zones {
 							_id
 							code
-							name {
+							title {
 								en
 								mi
 							}

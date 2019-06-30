@@ -1,22 +1,22 @@
 <template>
 	<section v-if="map">
 		<h2 :id="map.code" class="display-1 mb-0 text-xs-center">
-			<nuxt-link :to="localePath({name: 'map-map', params: {map: map.code}})">{{localeName(map.name)}}</nuxt-link>
+			<nuxt-link :to="localePath({name: 'map-map', params: {map: map.code}})">{{localeTitle(map.title)}}</nuxt-link>
 		</h2>
-		<h3 class="headline mb-0 text-xs-center mb-3">{{localeAltName(map.name)}}</h3>
-		<img :src="map.images.portrait" :alt="localeNames(map.name)" :id="map.code" :usemap="'#map-' + map.code">
+		<h3 class="headline mb-0 text-xs-center mb-3">{{localeAltTitle(map.title)}}</h3>
+		<img :src="map.images.portrait" :alt="localeTitles(map.title)" :id="map.code" :usemap="'#map-' + map.code">
 		<map :name="'map-' + map.code">
 			<template v-for="region in map.regions">
 				<template v-for="zone in region.zones">
 					<nuxt-link v-for="(area, index) in zone.maplink.mapareas" :to="localePath({name: 'zone-zone', params: {zone: zone.code}})" :key="zone.code + index"
-						:shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeNames(zone.name)" tag="area" />
-					<!--:alt="localeNames(zone.name)" -->
+						:shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeTitles(zone.title)" tag="area" />
+					<!--:alt="localeTitles(zone.title)" -->
 				</template>
 			</template>
 			<template v-for="link in map.maplinks">
 				<nuxt-link v-for="(area, index) in link.mapareas"
 					:to="localePath(hash ? {name: 'island-island', params: {island: map.island.code}, hash: '#' + link.map.code} : {name: 'island-island', params: {island: map.island.code}})"
-					:key="[link.map.code, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeNames(link.map.name)" tag="area" />
+					:key="[link.map.code, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeTitles(link.map.title)" tag="area" />
 			</template>
 		</map>
 		<p class="text-xs-center">{{$t('imagemap')}}</p>
@@ -43,7 +43,7 @@
 					map(filter: {code: $code}) {
 						_id
 						code
-						name {
+						title {
 							en
 							mi
 						}
@@ -57,7 +57,7 @@
 							zones {
 								_id
 								code
-								name {
+								title {
 									en
 									mi
 								}
@@ -76,7 +76,7 @@
 							map {
 								_id
 								code
-								name {
+								title {
 									en
 									mi
 								}

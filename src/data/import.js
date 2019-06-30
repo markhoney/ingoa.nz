@@ -71,15 +71,15 @@ function importPlacenames() {
 		var names = {};
 		['IndexName_1', 'IndexName_2', 'IndexName_3', 'UnspokenName_1', 'ExtendedName_1', 'ExtendedName_2', 'VariantName_1', 'MisspelledName_1'].forEach(name => {
 			if (input[name]) {
-				var newname = {
-					name: {
+				var title = {
+					title: {
 						en: input.CommonName_1,
 						mi: input[name],
 						ascii: utils.ascii(input[name]),
 					},
 					categories: [],
 				};
-				names[input[name]] = Object.assign({}, names[input[name]], newname);
+				names[input[name]] = Object.assign({}, names[input[name]], title);
 			}
 		});
 		['ExtendedName_1', 'ExtendedName_2', 'VariantName_1', 'MisspelledName_1'].forEach(name => {
@@ -95,8 +95,8 @@ function importPlacenames() {
 						end: parseFloat(input['End_' + i]),
 						speaker_id: input['SpeakerID_' + i],
 					};
-					if (names[input['IndexName_' + i]].name.phonetic) {
-						names[input['IndexName_' + i]].name.phonetic = {
+					if (names[input['IndexName_' + i]].title.phonetic) {
+						names[input['IndexName_' + i]].title.phonetic = {
 							markdown: input['PhoneticName_' + i],
 							html: utils.htmlItalics(input['PhoneticName_' + i]),
 						};
@@ -107,10 +107,10 @@ function importPlacenames() {
 		names = utils.cleanobj(names);
 		Object.keys(names).forEach((name, index) => {
 			names[name]._id = 'na_' + input.ID + '-' + index;
-			names[name].code = utils.createCode(names[name].name.mi);
+			names[name].code = utils.createCode(names[name].title.mi);
 			output.names.push(names[name]);
 		});
-		output.names[0].name.transliteration = input.Transliteration;
+		output.names[0].title.transliteration = input.Transliteration;
 		for (i = 1; i <= 4; i++) {
 			if (input['SeeNameID_' + i]) {
 				output.see.push({
@@ -139,7 +139,7 @@ function importPlacenames() {
 				output.places.push({
 					_id: 'pl_' + input.ID + '-' + i,
 					code: utils.createCode(input['KindName_' + i]),
-					name: {
+					title: {
 						en: input['KindName_' + i],
 						mi: input.IndexName_1,
 						ascii: utils.ascii(input['KindName_' + i]),
@@ -175,7 +175,7 @@ function importZones() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -208,7 +208,7 @@ function importZones() {
 		for (i = 1; i <= 3; i++) {
 			if (input['Area_' + i] || input['TeReo_' + i]) {
 				output.areas.push({
-					name: {
+					title: {
 						en: input['Area_' + i],
 						mi: input['TeReo_' + i],
 					},
@@ -242,7 +242,7 @@ function importSpeakers() {
 				slug: {
 					mi: utils.createCode(input.PreferredName),
 				},
-				name: {
+				title: {
 					mi: input.PreferredName,
 					ascii: utils.ascii(input.PreferredName),
 					parts: {
@@ -291,7 +291,7 @@ function importIslands() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -323,7 +323,7 @@ function importParts() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -367,7 +367,7 @@ function importMaps() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -407,7 +407,7 @@ function importRegions() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -433,7 +433,7 @@ function importFeatures() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -464,7 +464,7 @@ function importGroups() {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
 			},
-			name: {
+			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
@@ -491,7 +491,7 @@ function importIwi() {
 			slug: {
 				mi: utils.createCode(input.Name),
 			},
-			name: {
+			title: {
 				mi: input.Name,
 				ascii: utils.ascii(input.Name),
 			},
@@ -512,7 +512,7 @@ function importMeanings() {
 			slug: {
 				mi: utils.createCode(input.CleanedName),
 			},
-			name: {
+			title: {
 				mi: input.CleanedName,
 				ascii: utils.ascii(input.CleanedName),
 			},
@@ -549,7 +549,7 @@ function importDistricts() {
 			slug: {
 				en: utils.createCode(input.Name),
 			},
-			name: {
+			title: {
 				en: input.Name,
 			},
 			island: input.IslandID,
@@ -574,7 +574,7 @@ function importGazetteer() {
 	});
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
-			name: input.name,
+			title: input.name,
 			district: input.land_district,
 			feature: input.feat_type,
 			position: {
