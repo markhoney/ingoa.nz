@@ -4,7 +4,7 @@
 			<img src="/img/old/Aotearoa.gif" width="267" height="341" alt="Aotearoa" border="0">
 		</p>
 		<p>
-			<i>Ngā Ingoa o Aotearoa</i> (The Names of New Zealand) is probably the first "pronouncing dictionary" that is literally "pronouncing". The 10,200 names are spoken by 132 native speakers of Māori, chosen by each other as the best speakers for their areas.
+			<i>Ngā Ingoa o Aotearoa</i> (The Names of New Zealand) is probably the first "pronouncing dictionary" that is literally "pronouncing". The 8,200 names are spoken by 132 native speakers of Māori, chosen by each other as the best speakers for their areas.
 		</p>
 
 		<p>

@@ -180,7 +180,7 @@ db.search = [];
 ["Island", "Part", "Map", "Region", "Zone", "Group", "Feature", "Iwi", "Speaker"].forEach(collection => {
 	db[collection.toLowerCase()].forEach(item => {
 		for (const title of Object.values(item.title)) {
-			if (title instanceof String) {
+			if (typeof title == "string") {
 				db.search.push({
 					_id: item._id,
 					type: collection.toLowerCase(),
@@ -195,63 +195,6 @@ db.search = [];
 const placenames = {};
 db.placename.forEach(placename => {
 	if (placename.zone) {
-		/*for (const name of Object.values(placename.names[0].title)) {
-			db.search.push({
-				_id: placename._id,
-				type: "placename",
-				code: placename.code,
-				name: name + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Placename)",
-				zone_code: placename.zone.code,
-			});
-		}
-		placename.names.forEach(names => {
-			for (const name of Object.values(names.title)) {
-				db.search.push({
-					_id: names._id,
-					type: "name",
-					code: names.code,
-					name: name + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Name)",
-					zone_code: placename.zone.code,
-				});
-			}
-		});
-		if (placename.places) {
-			placename.places.forEach(place => {
-				for (const name of Object.values(place.title)) {
-					db.search.push({
-						_id: place._id,
-						type: "place",
-						code: place.code,
-						name: name + " - " + (placename.zone.title.mi || placename.zone.title.en) + " (Place)",
-						zone_code: placename.zone.code,
-					});
-				}
-			});
-		}*/
-		/*placename.names.forEach(name => {
-			for (const title of Object.values(name.title)) {
-				db.search.push({
-					_id: name._id,
-					type: "placename",
-					code: placename.code,
-					name: title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Placename)",
-					zone_code: placename.zone.code,
-				});
-			}
-		});
-		if (placename.places) {
-			placename.places.forEach(place => {
-				for (const title of Object.values(place.title)) {
-					db.search.push({
-						_id: place._id,
-						type: "placename",
-						code: placename.code,
-						name: title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Placename)",
-						zone_code: placename.zone.code,
-					});
-				}
-			});
-		}*/
 		placename.names.forEach(name => {
 			for (let title of Object.values(name.title)) {
 				title = title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Placename)";
@@ -280,12 +223,6 @@ db.placename.forEach(placename => {
 		}
 	}
 });
-db.search.concat(Object.values(placenames));
-
-console.log(db.search);
-
-/*for (const collection in db) {
-	db[collection] = utils.cleanobj(db[collection]);
-}*/
+db.search = db.search.concat(Object.values(placenames));
 
 module.exports = db;

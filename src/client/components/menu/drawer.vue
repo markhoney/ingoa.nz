@@ -80,7 +80,8 @@
 
 <script>
 	import gql from 'graphql-tag';
-	import search from '@/components/menu/search.vue';
+	//import search from '@/components/search/dynamic.vue';
+	import search from '@/components/search/autocomplete.vue';
 
 	export default {
 		components: {

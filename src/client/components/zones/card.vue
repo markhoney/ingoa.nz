@@ -1,7 +1,7 @@
 <template>
 	<v-card v-if="zone">
 		<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: zone.code}})">
-			<v-img :src="zone.images.landscape" height="160" />
+			<v-img :src="zone.images.landscape" height="160" alt="" />
 		</nuxt-link><!-- height="180px" -->
 		<v-card-title primary-title>
 			<div>

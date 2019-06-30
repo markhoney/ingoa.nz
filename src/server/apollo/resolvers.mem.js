@@ -77,9 +77,10 @@ module.exports = function(db) {
 				return getRecord(db.placename, args);
 			},
 			search(obj, args) {
-				console.log("Search!");
-				console.log(args);
 				return getSearch(db.search, args.filter.term);
+			},
+			autocomplete(obj, args) {
+				return getAutocomplete(db.search, args.filter.term);
 			},
 		},
 	};
@@ -87,22 +88,21 @@ module.exports = function(db) {
 
 function getSearch(collection, search) {
 	if (search) {
-		const terms = search.split(" ");
 		let count = 0;
-		console.log(terms);
-		console.log(collection);
-		const results = collection.filter(record => {
+		return collection.filter(record => {
 			if (count >= 10) return false;
-			for (const term of terms) {
-				console.log(record.name, term);
+			for (const term of search.split(" ")) {
 				if (!record.name.includes(term)) return false;
 			}
 			count++;
 			return true;
 		});
-		console.log(results);
-		return results;
 	}
+	return [];
+}
+
+function getAutocomplete(collection, search) {
+	if (search.length >= 3) return collection.filter(record => record.name.includes(search));
 	return [];
 }
 

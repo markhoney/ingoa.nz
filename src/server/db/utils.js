@@ -13,6 +13,19 @@ const macrons = {
 	'ū': 'u'
 };
 
+const macronVowels = {
+	'Ā': 'Aa',
+	'Ē': 'Ee',
+	'Ī': 'Ii',
+	'Ō': 'Oo',
+	'Ū': 'Uu',
+	'ā': 'aa',
+	'ē': 'ee',
+	'ī': 'ii',
+	'ō': 'oo',
+	'ū': 'uu'
+};
+
 const superscripts = {
 	'ᴴ': 'H',
 	'ʰ': 'h'
@@ -78,6 +91,17 @@ exports.removeMacrons = function(name) {
 		return exports.replace(name, Object.assign({}, macrons, superscripts));
 	}
 };
+
+exports.longVowelMacrons = function(name) {
+	if (name) {
+		return exports.replace(name, Object.assign({}, macronVowels, superscripts));
+	}
+};
+
+exports.double = function(name) {
+	const nomacrons = exports.longVowelMacrons(name);
+	if (nomacrons != name) return nomacrons;
+}
 
 exports.ascii = function(name) {
 	const nomacrons = exports.removeMacrons(name);

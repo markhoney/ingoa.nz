@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<p>
-			<i>Ngā Ingoa o Aotearoa</i> (The Names of New Zealand) is probably the first "pronouncing dictionary" that is literally "pronouncing". The 10,200 names are spoken by 132 native speakers of Māori, chosen by each other as the best speakers for their areas.
+			<i>Ngā Ingoa o Aotearoa</i> (The Names of New Zealand) is probably the first "pronouncing dictionary" that is literally "pronouncing". The 8,200 names are spoken by 132 native speakers of Māori, chosen by each other as the best speakers for their areas.
 		</p>
 		<p>
 			They include such famous names as John Rangihau, Wiremu Parker, Bill Kere Kere, Ruka Broughton, Eruera Manuera, Tupi Puriri, Magda Wallscott, Island Love, and Matenga Baker. Mainly elders, most of the speakers have since died. Because they say only names in their own areas, local accents are automatically accommodated.

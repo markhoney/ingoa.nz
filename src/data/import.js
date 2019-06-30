@@ -76,6 +76,7 @@ function importPlacenames() {
 						en: input.CommonName_1,
 						mi: input[name],
 						ascii: utils.ascii(input[name]),
+						double: utils.double(input[name]),
 					},
 					categories: [],
 				};
@@ -143,6 +144,7 @@ function importPlacenames() {
 						en: input['KindName_' + i],
 						mi: input.IndexName_1,
 						ascii: utils.ascii(input['KindName_' + i]),
+						double: utils.double(input['KindName_' + i]),
 					},
 					feature_id: input['KindID_' + i],
 					plural: input['KindPlural_' + i] ? true : null,
@@ -179,6 +181,7 @@ function importZones() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -245,6 +248,7 @@ function importSpeakers() {
 				title: {
 					mi: input.PreferredName,
 					ascii: utils.ascii(input.PreferredName),
+					double: utils.double(input.PreferredName),
 					parts: {
 						nick: input.Nickname,
 						title: input.Prefix,
@@ -295,6 +299,7 @@ function importIslands() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -327,6 +332,7 @@ function importParts() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			audio: {
 				file: audioLocation,
@@ -371,6 +377,7 @@ function importMaps() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			island_id: input.IslandID,
 			part_id: input.PartID,
@@ -411,6 +418,7 @@ function importRegions() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			island_id: input.IslandID,
 			part_id: input.PartID,
@@ -437,6 +445,7 @@ function importFeatures() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			plural: input.Plural,
 			order: input.Hierarchy,
@@ -468,6 +477,7 @@ function importGroups() {
 				en: input.Name === input.TeReo ? null : input.Name,
 				mi: input.TeReo,
 				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
 			},
 			feature_id: input.FeatureID,
 			/*feature: {
@@ -494,6 +504,7 @@ function importIwi() {
 			title: {
 				mi: input.Name,
 				ascii: utils.ascii(input.Name),
+				double: utils.double(input.Name),
 			},
 			links: {
 				wikipedia: input.Wikipedia,
@@ -515,6 +526,7 @@ function importMeanings() {
 			title: {
 				mi: input.CleanedName,
 				ascii: utils.ascii(input.CleanedName),
+				double: utils.double(input.CleanedName),
 			},
 			components: input.Components,
 			translation: input.Meaning,

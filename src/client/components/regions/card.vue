@@ -1,7 +1,7 @@
 <template>
 	<v-card v-if="region">
 		<nuxt-link :to="localePath({name: 'region-region', params: {region: region.code}})">
-			<v-img :src="region.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);">
+			<v-img :src="region.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
 				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeTitle(region.title)}}</h2>
 				<h3 class="mb-1 headline">{{localeAltTitle(region.title, '&nbsp;')}}</h3>-->
 				<!--<h2 class="display-3 mb-0">{{$tc('region', 1) | initialcase}}</h2>-->

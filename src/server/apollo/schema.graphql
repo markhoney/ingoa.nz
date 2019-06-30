@@ -490,5 +490,8 @@ type Query {
 	): name
 	search(
 		filter: term
-	): search
+	): [search]
+	autocomplete(
+		filter: term
+	): [search]
 }

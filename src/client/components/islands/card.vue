@@ -1,7 +1,7 @@
 <template>
 	<v-card v-if="island">
 		<nuxt-link :to="localePath({name: 'island-island', params: {island: island.code}})">
-			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);">
+			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
 				<slot />
 			</v-img>
 		</nuxt-link>
