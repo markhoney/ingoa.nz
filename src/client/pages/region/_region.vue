@@ -33,7 +33,6 @@
 				query: gql`query region($slug: String, $lang: String) {
 					region(filter: {slug: $slug, lang: $lang}) {
 						_id
-						code
 						title {
 							en
 							mi

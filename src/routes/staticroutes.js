@@ -125,9 +125,9 @@ makePromise(execute(createHttpLink({uri: 'http://localhost:4000/graphql', fetch:
 		...response.data.speakers.map(speaker => '/mi/' + [mi.speaker, speaker.slug.mi].join("/")),
 		...response.data.features.map(feature => '/' + ['feature', feature.slug.en].join("/")),
 		...response.data.features.map(feature => '/mi/' + [mi.feature, feature.slug.mi].join("/")),
-		...response.data.groups.map(group => '/' + ['group', group.zone.slug.en, group.slug.en].join("/")),
-		...response.data.groups.map(group => '/mi/' + [mi.group, group.zone.slug.mi, group.slug.mi].join("/")),
-		...response.data.placenames.map(placename => '/' + ['placename', placename.zone.slug.en, placename.slug.en].join("/")),
-		...response.data.placenames.map(placename => '/mi/' + [mi.placename, placename.zone.slug.mi, placename.slug.mi].join("/")),
+		//...response.data.groups.map(group => '/' + ['group', group.zone.slug.en, group.slug.en].join("/")),
+		//...response.data.groups.map(group => '/mi/' + [mi.group, group.zone.slug.mi, group.slug.mi].join("/")),
+		//...response.data.placenames.map(placename => '/' + ['placename', placename.zone.slug.en, placename.slug.en].join("/")),
+		//...response.data.placenames.map(placename => '/mi/' + [mi.placename, placename.zone.slug.mi, placename.slug.mi].join("/")),
 	]));
 }).catch(error => console.log(`Received error ${error}`));

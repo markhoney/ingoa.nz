@@ -56,10 +56,10 @@ module.exports = {
 
 	generate: {
 		//dir: 'docs',
-		routes: require('./src/routes/routes'),
-		/*routes: function() {
+		//routes: require('./src/routes/routes'),
+		routes: function() {
 			return require('./routes');
-		}*/
+		}
 	},
 
 	plugins: [
@@ -92,7 +92,7 @@ module.exports = {
 				langDir: 'locales/',
 				locales: require('./src/client/locales/locales.json'),
 				parsePages: false,
-				pages: require('./src/client/locales/pages.js'),
+				pages: require('./src/client/locales/pages.json'),
 				vuex: false,
 			},
 		],
