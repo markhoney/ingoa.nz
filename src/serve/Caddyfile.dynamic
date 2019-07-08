@@ -1,0 +1,11 @@
+{$BASE_URL} {
+	tls mark@honeychurch.org
+	log stdout
+	cache
+	proxy /graphql localhost:4000/graphql {
+		transparent
+	}
+	proxy / localhost:3000 {
+		transparent
+	}
+}

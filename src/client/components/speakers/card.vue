@@ -3,8 +3,8 @@
 		<v-card-title primary-title>
 			<div>
 				<h3 class="headline mb-0">
-					<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: speaker.code}})">
-						{{localeTitle(speaker.title)}}
+					<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: localeCurrent(speaker.slug)}})">
+						{{localeCurrent(speaker.title)}}
 					</nuxt-link>
 				</h3>
 			</div>
@@ -17,14 +17,17 @@
 
 	export default {
 		props: {
-			code: String,
+			id: String,
 		},
 		apollo: {
 			speaker: {
-				query: gql`query speaker($code: String) {
-					speaker(filter: {code: $code}) {
+				query: gql`query speaker($id: String) {
+					speaker(filter: {_id: $id}) {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
@@ -33,7 +36,7 @@
 				}`,
 				variables() {
 					return {
-						code: this.code,
+						id: this.id,
 					}
 				},
 			},

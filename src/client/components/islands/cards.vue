@@ -1,7 +1,7 @@
 <template>
 	<v-layout row wrap>
-		<v-flex v-for="island in islands" :key="island.code" xs12 sm6 md4 class="pa-2">
-			<island :code="island.code" />
+		<v-flex v-for="island in islands" :key="island._id" xs12 sm6 md4 class="pa-2">
+			<island :id="island._id" />
 		</v-flex>
 	</v-layout>
 </template>
@@ -18,7 +18,6 @@
 			islands: gql`{
 				islands {
 					_id
-					code
 				}
 			}`,
 		},

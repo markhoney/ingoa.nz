@@ -8,7 +8,7 @@ const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
 
 let db;
 function readData() {
-	db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'iwi', 'placename', 'meaning', 'district', 'gazetteer', 'overseas'].reduce((db, collection) => {
+	db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'meaning', 'district', 'gazetteer', 'overseas'].reduce((db, collection) => {
 		db[collection] = require(path.join(jsonpath, collection + '.json'));
 		//db[collection] = JSON.parse(fs.readFileSync(path.join(jsonpath, collection + '.json')));
 		return db;
@@ -17,7 +17,7 @@ function readData() {
 
 function getSpeakers(placenames) {
 	const speakers = placenames.map(placename => placename.names).flat().filter(name => name.spoken).map(name => name.spoken.speaker_id);
-	return db.speaker.filter(speaker => speaker.code != "hugh_young" && speakers.includes(speaker._id));
+	return db.speaker.filter(speaker => speaker._id != "sp_37" && speakers.includes(speaker._id));
 }
 
 function linkImages() {
@@ -31,7 +31,7 @@ function linkImages() {
 		db[collection.name].forEach(record => {
 			if (!record.images) {
 				record.images = collection.images.reduce((obj, image) => {
-					obj[image.split('.')[0]] = '/img/' + collection.name + '/' + record.code + '-' + image;
+					obj[image.split('.')[0]] = '/img/' + collection.name + '/' + record.slug.en + '-' + image;
 					return obj;
 				}, {});
 			}

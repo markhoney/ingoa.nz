@@ -1,7 +1,7 @@
 <template>
 	<section class="elevation-4 pa-5 my-3" style="background-color: #f1f3f4; border-radius: 20px;" v-if="current">
 		<h3 :title="current.title.phonetic" class="text-xs-center display-2">
-			<!--<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: current.zone.code, placename: current.code}})">-->
+			<!--<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: localeCurrent(current.zone.slug), placename: localeCurrent(current.slug)}})">-->
 				{{current.title | maori}}
 			<!--</nuxt-link>-->
 		</h3>
@@ -13,8 +13,8 @@
 		</h3>
 		<h4 v-if="current.spoken.speaker" class="text-xs-center headline">
 			{{$t('spoken') | initialcase}}
-			<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: current.spoken.speaker.code}})">
-				{{current.spoken.speaker.title | locale($i18n.locale)}}
+			<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: localeCurrent(current.spoken.speaker.slug)}})">
+				{{current.spoken.speaker.title | locale(this.locale())}}
 			</nuxt-link>
 		</h4>
 		<!--<waveplayer v-if="wave" :file="file" :time.sync="currentTime" :placenames="placenames" />
@@ -22,13 +22,13 @@
 		<htmlplayer ref="audio" :file="file" :time.sync="currentTime" :start="start" :stop="stop" />
 		<h2>{{$tc('name', 2) | titlecase}}</h2>
 		<ol start="0">
-			<!--<li v-for="place in placelist" :key="place.code" :class="{active: place.code == current.code}"><a :href="'#' + place.code" v-html="place.title"></a></li>-->
+			<!--<li v-for="place in placelist" :key="place._id" :class="{active: place._id == current._id}"><a :href="'#' + place._id" v-html="place.title"></a></li>-->
 			<li v-if="placenames.length && placenames[0].names[0].en == 'Intro'">{{placenames[0].names[0].en}}</li>
-			<li v-for="placename in placenames.filter(placename => placename.names[0].en != 'Intro')" :key="placename.code">
+			<li v-for="placename in placenames.filter(placename => placename.names[0].en != 'Intro')" :key="placename._id" v-ripple="{class: 'success--text'}">
 				<!--<nuxt-link
 					v-for="(name, index) in placename.names.filter(name => 'spoken' in name)"
 					:key="name.title.ascii"
-					:to="localePath({name: 'zone-zone-placename', params: {zone: placename.zone.code, placename: placename.code}})"
+					:to="localePath({name: 'zone-zone-placename', params: {zone: localeCurrent(placename.zone.slug), placename: localeCurrent(placename.slug)}})"
 					:class="{active: name.title == current.title}"
 					:title="common && current.common ? current.common : ''"
 				>-->
@@ -36,7 +36,7 @@
 					{{name.title.mi}}<template v-if="index != (placename.names.filter(name => name.spoken).length - 1)">,</template>
 				</span>
 				<!--</nuxt-link>-->
-				<!--<nuxt-link v-if="placename.names.filter(name => 'spoken' in name).length === 0" :to="localePath({name: 'zone-zone-placename', params: {zone: placename.zone.code, placename: placename.code}})">-->
+				<!--<nuxt-link v-if="placename.names.filter(name => 'spoken' in name).length === 0" :to="localePath({name: 'zone-zone-placename', params: {zone: localeCurrent(placename.zone.slug), placename: localeCurrent(placename.slug)}})">-->
 				<!--<span v-if="placename.names.filter(name => 'spoken' in name).length === 0">
 					<del>{{placename.names[0].mi}}</del>
 				</span>-->
@@ -79,12 +79,14 @@
 		},
 		apollo: {
 			placenames: {
-				query: gql`query placenames($field: String, $value: String) {
-					placenames(filter: {field: $field, value: $value}) {
+				query: gql`query placenames($field: String, $value: String, $lang: String) {
+					placenames(filter: {field: $field, value: $value, lang: $lang}) {
 						_id
-						code
 						zone {
-							code
+							slug {
+								en
+								mi
+							}
 						}
 						names {
 							_id
@@ -100,7 +102,10 @@
 								end
 								speaker {
 									_id
-									code
+									slug {
+										en
+										mi
+									}
 									title {
 										en
 										mi
@@ -121,6 +126,7 @@
 					return {
 						field: this.field,
 						value: this.value,
+						lang: this.$i18n.locale,
 					}
 				},
 			},

@@ -43,28 +43,28 @@
 					<td colspan="4">Click on the map to jump to a zone.</td>
 				</tr>
 				<template v-for="map in maps">
-					<tr :key="map.code">
-						<td :id="'m' + map.code" colspan="3"><imagemap :key="map.code" :code="map.code" style="margin: 20px;" /></td>
+					<tr :key="map._id">
+						<td :id="'m' + map._id" colspan="3"><imagemap :key="map._id" :id="map._id" style="margin: 20px;" /></td>
 						<td>&nbsp;</td>
 					</tr>
-					<tr :key="'header' + map.code">
+					<tr :key="'header' + map._id">
 						<td align="right"><a name="m1" />ZONE</td>
 						<td>&nbsp;</td>
 						<td>SPEAKERS</td>
 						<td>SELECTED<br>NAMES</td>
 					</tr>
 					<template v-for="region in map.regions">
-						<tr :key="map.code + region.code">
+						<tr :key="map._id + region._id">
 							<td align="right">&nbsp;</td>
-							<td valign="bottom"><b style="text-transform: uppercase;">{{localeTitle(region.title)}}</b></td>
+							<td valign="bottom"><b style="text-transform: uppercase;">{{localeCurrent(region.title)}}</b></td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
-						<tr v-for="zone in region.zones" :key="map.code + region.code + zone.code">
+						<tr v-for="zone in region.zones" :key="map._id + region._id + zone._id">
 							<td align="right"><a :name="zone.number" />{{zone.number}}</td>
-							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: zone.code}})">{{localeTitle(zone.title)}}</nuxt-link></td>
-							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker.code != 'hugh_young')">{{localeTitle(speaker.title)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
-							<td><span v-for="(name, index) in zone.featured" :key="index">{{maoriTitle(name.title)}}<br></span></td>
+							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: localeCurrent(zone.slug)}})">{{localeCurrent(zone.title)}}</nuxt-link></td>
+							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id != 'sp_37')">{{localeCurrent(speaker.title)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
+							<td><span v-for="(name, index) in zone.featured" :key="index">{{localeMaori(name.title)}}<br></span></td>
 						</tr>
 					</template>
 				</template>
@@ -86,21 +86,22 @@
 			maps: gql`{
 				maps {
 					_id
-					code
 					title {
 						en
 						mi
 					}
 					regions {
 						_id
-						code
 						title {
 							en
 							mi
 						}
 						zones {
 							_id
-							code
+							slug {
+								en
+								mi
+							}
 							number
 							title {
 								en
@@ -108,7 +109,6 @@
 							}
 							speakers {
 								_id
-								code
 								title {
 									en
 									mi
@@ -116,7 +116,6 @@
 							}
 							featured {
 								_id
-								code
 								names {
 									title {
 										en

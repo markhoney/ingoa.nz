@@ -1,6 +1,10 @@
 {
+	"home": {
+		"en": "/index",
+		"mi": "/index"
+	},
 	"about": {
-	"en": "/about",
+		"en": "/about",
 		"mi": "/mo"
 	},
 	"island": {
@@ -19,14 +23,6 @@
 		"en": "/part/:part",
 		"mi": "/wahanga/:part"
 	},
-	"region": {
-		"en": "/region",
-		"mi": "/whaitua"
-	},
-	"region/_region": {
-		"en": "/region/:region",
-		"mi": "/whaitua/:region"
-	},
 	"map": {
 		"en": "/map",
 		"mi": "/mahere"
@@ -35,6 +31,14 @@
 		"en": "/map/:map",
 		"mi": "/mahere/:map"
 	},
+	"region": {
+		"en": "/region",
+		"mi": "/whaitua"
+	},
+	"region/_region": {
+		"en": "/region/:region",
+		"mi": "/whaitua/:region"
+	},
 	"zone": {
 		"en": "/zone",
 		"mi": "/hauni"
@@ -42,6 +46,38 @@
 	"zone/_zone": {
 		"en": "/zone/:zone",
 		"mi": "/hauni/:zone"
+	},
+	"tribe": {
+		"en": "/tribe",
+		"mi": "/iwi"
+	},
+	"tribe/_tribe": {
+		"en": "/tribe/:tribe",
+		"mi": "/iwi/:tribe"
+	},
+	"speaker": {
+		"en": "/speaker",
+		"mi": "/kaikorero"
+	},
+	"speaker/_speaker": {
+		"en": "/speaker/:speaker",
+		"mi": "/kaikorero/:speaker"
+	},
+	"feature": {
+		"en": "/feature",
+		"mi": "/momo"
+	},
+	"feature/_feature": {
+		"en": "/feature/:feature",
+		"mi": "/momo/:feature"
+	},
+	"group": {
+		"en": "/group",
+		"mi": "/ropu"
+	},
+	"group/_zone/_group": {
+		"en": "/group/:zone/:group",
+		"mi": "/ropu/:zone/:group"
 	},
 	"placename": {
 		"en": "/placename",
@@ -66,38 +102,6 @@
 	"name/_zone/_name": {
 		"en": "/name/:zone/:name",
 		"mi": "/ingoa/:zone/:name"
-	},
-	"group": {
-		"en": "/group",
-		"mi": "/ropu"
-	},
-	"group/_zone/_group": {
-		"en": "/group/:zone/:group",
-		"mi": "/ropu/:zone/:group"
-	},
-	"speaker": {
-		"en": "/speaker",
-		"mi": "/kaikorero"
-	},
-	"speaker/_speaker": {
-		"en": "/speaker/:speaker",
-		"mi": "/kaikorero/:speaker"
-	},
-	"feature": {
-		"en": "/feature",
-		"mi": "/momo"
-	},
-	"feature/_feature": {
-		"en": "/feature/:feature",
-		"mi": "/momo/:feature"
-	},
-	"iwi": {
-		"en": "/iwi",
-		"mi": "/iwi"
-	},
-	"iwi/_iwi": {
-		"en": "/iwi/:iwi",
-		"mi": "/iwi/:iwi"
 	},
 	"old": {
 		"en": "/old",

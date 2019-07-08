@@ -1,7 +1,7 @@
 <template>
 	<v-layout row wrap>
-		<v-flex v-for="zone in zones" :key="zone.code" xs12 sm6 md4 class="pa-2">
-			<zone :code="zone.code" />
+		<v-flex v-for="zone in zones" :key="zone._id" xs12 sm6 md4 class="pa-2">
+			<zone :id="zone._id" />
 		</v-flex>
 	</v-layout>
 </template>
@@ -20,16 +20,16 @@
 		},
 		apollo: {
 			zones: {
-				query: gql`query zones($field: String, $value: String) {
-					zones(filter: {field: $field, value: $value}) {
+				query: gql`query zones($field: String, $value: String, $lang: String) {
+					zones(filter: {field: $field, value: $value, lang: $lang}) {
 						_id
-						code
 					}
 				}`,
 				variables() {
 					return {
 						field: this.field,
 						value: this.value,
+						lang: this.$i18n.locale,
 					}
 				},
 			},

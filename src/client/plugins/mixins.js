@@ -2,42 +2,71 @@ import Vue from 'vue';
 
 Vue.mixin({
 	methods: {
+		caseUpper(text) {
+			if (!text) return null;
+			if (text === '') return '';
+			return text.toUpperCase();
+		},
+		caseLower(text) {
+			if (!text) return null;
+			if (text === '') return '';
+			return text.toLowerCase();
+		},
+		caseInitial(text) {
+			if (!text) return null;
+			if (text === '') return '';
+			return text[0].toUpperCase() + text.slice(1);
+		},
+		caseTitle(text) {
+			return text.toLowerCase().split(' ').map(function(word) {
+				return word.replace(word[0], word[0].toUpperCase());
+			}).join(' ');
+		},
+		locale() {
+			//Return the code for the language that is currently selected in i18n
+			return this.$i18n.locale;
+		},
 		localeAlt() {
-			//Return the code for the language that isn't currently selected in i18n
-			if (this.$i18n.locale === 'en') return 'mi';
-			return 'en';
+			//Return the code for the language that is not currently selected in i18n
+			return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)[0].code;
+			//if (this.locale() === 'en') return 'mi';
+			//return 'en';
 		},
-		maoriTitle(title) {
-			//Return the title in Maori if it exists, or in English otherwise
-			if (title) return title.mi || title.en;
+		locales() {
+			//Return an array of locale codes
+			return $i18n.locales.map(locale => locale.code);
 		},
-		englishTitle(title) {
-			//Return the title in Maori if it exists, or in English otherwise
-			if (title) return title.en || title.mi;
+		localeSlug() {
+			//Return the slug field name in the currently selected i18n language
+			return "slug." + this.locale();
 		},
-		localeTitle(title) {
-			//Return the title in the currently selected i18n language if it exists, otherwise return the other title
-			if (title) return title[this.$i18n.locale] || title[this.localeAlt()];
+		localeMaori(langs) {
+			//Return the langs in Maori if it exists, or in English otherwise
+			if (langs) return langs.mi || langs.en;
 		},
-		localeCode(code) {
-			//Return the code in the currently selected i18n language if it exists, otherwise return the other code
-			if (code) return code[this.$i18n.locale] || code[this.localeAlt()];
+		localeEnglish(langs) {
+			//Return the langs in Maori if it exists, or in English otherwise
+			if (langs) return langs.en || langs.mi;
 		},
-		localeAltTitle(title, blank) {
-			//If both translations of the title exist, return the title in the language that isn't currently selected in i18n, otherwise return a blank placeholder
-			if (title && title.en && title.mi) return title[this.localeAlt()];
+		localeCurrent(langs) {
+			//Return the langs in the currently selected i18n language if it exists, otherwise return the other langs
+			if (langs) return langs[this.locale()] || langs[this.localeAlt()];
+		},
+		localeOther(langs, blank) {
+			//If both translations of the langs exist, return the langs in the language that isn't currently selected in i18n, otherwise return a blank placeholder
+			if (langs && langs.en && langs.mi) return langs[this.localeAlt()];
 			return blank;
 		},
-		localeTitles(title) {
-			//Return the title in the currently selected language, followed by the title in the alternative language in brackets, if it exists
-			if (title && this.localeBothTitles(title)) {
-				return title[this.$i18n.locale] + (title[this.localeAlt()] ? ' (' + title[this.localeAlt()] + ')' : '');
+		localeBoth(langs) {
+			//Return the langs in the currently selected language, followed by the langs in the alternative language in brackets, if it exists
+			if (langs && this.localeBothExist(langs)) {
+				return langs[this.locale()] + (langs[this.localeAlt()] ? ' (' + langs[this.localeAlt()] + ')' : '');
 			}
-			return title[this.$i18n.locale] || title[this.localeAlt()];
+			return langs[this.locale()] || langs[this.localeAlt()];
 		},
-		localeBothTitles(title) {
-			//Return true if the title exists in both languages
-			if (title) return title.en && title.mi;
+		localeBothExist(langs) {
+			//Return true if the langs exists in both languages
+			if (langs) return langs.en && langs.mi;
 		},
 	},
 });

@@ -23,10 +23,9 @@
 		},
 		apollo: {
 			placenames: {
-				query: gql`query placenames($field: String, $value: String) {
-					placenames(filter: {field: $field, value: $value}) {
+				query: gql`query placenames($field: String, $value: String, $lang: String) {
+					placenames(filter: {field: $field, value: $value, lang: $lang}) {
 						_id
-						code
 						places {
 							_id
 							title {
@@ -51,7 +50,8 @@
 				variables() {
 					return {
 						field: this.field,
-						value: this.value
+						value: this.value,
+						lang: this.$i18n.locale,
 					}
 				},
 			},

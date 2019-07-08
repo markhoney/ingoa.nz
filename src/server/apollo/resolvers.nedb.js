@@ -157,8 +157,8 @@ module.exports = function(db) {
 			featured(zone) {
 				return db.placenames.asyncFind({zone_id: zone._id, featured: {$exists: true}}); //.sort({featured._id: 1});
 			},
-			ngaiwi(zone) {
-				return db.ngaiwi.asyncFind({_id: {$in: zone.iwi_ids}});
+			tribes(zone) {
+				return db.tribes.asyncFind({_id: {$in: zone.tribe_ids}});
 			},
 		},
 
@@ -252,9 +252,9 @@ module.exports = function(db) {
 			},*/
 		},
 
-		iwi: {
-			zones(iwi) {
-				return db.zones.asyncFind({iwi_id: iwi._id});
+		tribe: {
+			zones(tribe) {
+				return db.zones.asyncFind({tribe_id: tribe._id});
 			},
 		},
 
@@ -313,11 +313,11 @@ module.exports = function(db) {
 			feature(obj, args) {
 				return db.features.asyncFindOne(...params(args));
 			},
-			ngaiwi(obj, args) {
-				return db.ngaiwi.asyncFind(...params(args));
+			tribes(obj, args) {
+				return db.tribes.asyncFind(...params(args));
 			},
-			iwi(obj, args) {
-				return db.ngaiwi.asyncFindOne(...params(args));
+			tribe(obj, args) {
+				return db.tribes.asyncFindOne(...params(args));
 			},
 			placenames(obj, args) {
 				return db.placenames.asyncFind(...params(args));

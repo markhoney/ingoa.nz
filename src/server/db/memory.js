@@ -1,6 +1,6 @@
 //const utils = require('./utils');
 
-const db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'iwi', 'placename', 'meaning', 'district'].reduce((db, collection) => { // , 'gazetteer'
+const db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'meaning', 'district'].reduce((db, collection) => { // , 'gazetteer'
 	db[collection] = require('./json/' + collection + '.json');
 	//db[collection] = JSON.parse(fs.readFileSync('apollo-server/db/json/' + collection + '.json'));
 	return db;
@@ -81,12 +81,12 @@ db.group.forEach((group, index) => {
 });
 delete db.place;
 
-db.iwi.forEach((iwi, index) => {
-	iwi.zones = db.zone.filter(zone => zone.iwi_ids && zone.iwi_ids.includes(iwi._id));
-	iwi.previous = db.iwi[index - 1];
-	if (!iwi.previous) delete iwi.previous;
-	iwi.next = db.iwi[index + 1];
-	if (!iwi.next) delete iwi.next;
+db.tribe.forEach((tribe, index) => {
+	tribe.zones = db.zone.filter(zone => zone.tribe_ids && zone.tribe_ids.includes(tribe._id));
+	tribe.previous = db.tribe[index - 1];
+	if (!tribe.previous) delete tribe.previous;
+	tribe.next = db.tribe[index + 1];
+	if (!tribe.next) delete tribe.next;
 });
 
 db.feature.forEach((feature, index) => {
@@ -135,7 +135,7 @@ db.zone.forEach((zone, index) => {
 	if (!zone.addenda.length) delete zone.addenda;
 	zone.featured = zone.placenames.filter(placename => placename.featured);
 	if (zone.maplink && zone.maplink.map_id) zone.maplink.map = db.map.find(map => map._id == zone.maplink.map_id);
-	if (zone.iwi_ids) zone.ngaiwi = db.iwi.filter(iwi => zone.iwi_ids.includes(iwi._id));
+	if (zone.tribe_ids) zone.tribes = db.tribe.filter(tribe => zone.tribe_ids.includes(tribe._id));
 	zone.placenames.forEach((placename, index) => {
 		placename.island = db.island.find(island => island._id == placename.island_id);
 		if (!placename.island) delete placename.island;
@@ -175,54 +175,70 @@ db.zone.forEach((zone, index) => {
 });
 delete db.name;
 
-db.search = [];
+const mi = require('../../client/locales/mi.json');
+db.search = {en: [], mi: []};
 
-["Island", "Part", "Map", "Region", "Zone", "Group", "Feature", "Iwi", "Speaker"].forEach(collection => {
-	db[collection.toLowerCase()].forEach(item => {
+["island", "part", "map", "region", "zone", "feature", "tribe", "speaker"].forEach(collection => { // Group has zone
+	db[collection].forEach(item => {
 		for (const title of Object.values(item.title)) {
 			if (typeof title == "string") {
-				db.search.push({
-					_id: item._id,
-					type: collection.toLowerCase(),
-					code: item.code,
-					name: title + " (" + collection + ")",
+				db.search.en.push({
+					text: title + " (" + collection + ")",
+					value: "/" + [collection, item.slug.en].join("/"),
+				});
+				db.search.mi.push({
+					text: title + " (" + mi[collection] + ")",
+					value: "/mi/" + [mi[collection], item.slug.mi].join("/"),
 				});
 			}
 		}
 	});
 });
 
-const placenames = {};
-db.placename.forEach(placename => {
-	if (placename.zone) {
-		placename.names.forEach(name => {
-			for (let title of Object.values(name.title)) {
-				title = title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Placename)";
-				placenames[title] = {
-					_id: name._id,
-					type: "placename",
-					code: placename.code,
-					name: title,
-					zone_code: placename.zone.code,
-				};
-			}
-		});
-		if (placename.places) {
-			placename.places.forEach(place => {
-				for (let title of Object.values(place.title)) {
-					title = title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (Placename)";
-					placenames[title] = {
-						_id: place._id,
-						type: "placename",
-						code: placename.code,
-						name: title,
-						zone_code: placename.zone.code,
-					};
-				}
+db.group.forEach(item => {
+	for (const title of Object.values(item.title)) {
+		if (typeof title == "string") {
+			db.search.en.push({
+				text: title + (item.zone ? " - " + (item.zone.title.en || item.zone.title.mi) : "") + " (group)",
+				value: "/" + ["group", (item.zone ? item.zone.slug.en : null), item.slug.en].join("/"),
 			});
+			db.search.mi.push({
+				text: title + (item.zone ? " - " + (item.zone.title.mi || item.zone.title.en) : "") + " (" + mi.group + ")",
+				value: "/mi/" + [mi.group, (item.zone ? item.zone.slug.mi : null), item.slug.mi].join("/"),
+		});
 		}
 	}
 });
-db.search = db.search.concat(Object.values(placenames));
+
+const placenames = {en: {}, mi: {}};
+db.placename.forEach(placename => {
+	if (placename.zone) {
+		["names", "places"].forEach(nametype => {
+			if (placename[nametype]) {
+				placename[nametype].forEach(item => {
+					for (let title of Object.values(item.title)) {
+						placenames.en[title] = {
+							text: title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (placename)",
+							value: "/" + ["placename", placename.zone.slug.en, placename.slug.en].join("/"),
+						};
+						placenames.mi[title] = {
+							text: title + " - " + (placename.zone.title.mi || placename.zone.title.en) + " (" + mi.placename + ")",
+							value: "/mi/" + [mi.placename, placename.zone.slug.en, placename.slug.en].join("/"),
+						};
+					}
+				});
+			}
+		});
+	}
+});
+
+db.total = {};
+['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'district'].forEach(collection => {
+	db.total[collection] = db[collection].length;
+});
+
+
+db.search.en = db.search.en.concat(Object.values(placenames.en));
+db.search.mi = db.search.mi.concat(Object.values(placenames.mi));
 
 module.exports = db;

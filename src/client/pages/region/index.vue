@@ -4,15 +4,15 @@
 			{{$tc('region', 2) | titlecase}}
 		</h1>
 		<template v-for="island in islands">
-			<v-subheader :key="island.code" class="display-1 mt-5 mb-3">
-				<nuxt-link :to="localePath({name: 'island-island', params: {island: island.code}})">
-					{{localeTitle(island.title)}}
+			<v-subheader :key="island._id" class="display-1 mt-5 mb-3">
+				<nuxt-link :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
+					{{localeCurrent(island.title)}}
 				</nuxt-link>
 			</v-subheader>
-			<v-subheader v-if="localeBothTitles(island.title)" :key="island.title.mi" class="display-1 mb-4">
-				{{localeAltTitle(island.title)}}
+			<v-subheader v-if="localeBothExist(island.title)" :key="island.title.mi" class="display-1 mb-4">
+				{{localeOther(island.title)}}
 			</v-subheader>
-			<regions :key="island.code" field="island._id" :value="island._id" />
+			<regions :key="island._id" field="island._id" :value="island._id" />
 		</template>
 	</section>
 </template>
@@ -29,14 +29,16 @@
 			islands: gql`{
 				islands {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
 					}
 					regions {
 						_id
-						code
 					}
 				}
 			}`,

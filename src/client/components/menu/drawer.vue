@@ -10,21 +10,21 @@
 				<v-list-tile slot="activator">
 					<v-list-tile-title>{{$tc('location', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-group v-for="island in islands" :key="island.code" no-action sub-group>
-					<v-list-tile slot="activator" :to="localePath({name: 'island-island', params: {island: island.code}})">
-						<v-list-tile-title>{{localeTitle(island.title)}}</v-list-tile-title>
+				<v-list-group v-for="island in islands" :key="island._id" no-action sub-group>
+					<v-list-tile slot="activator" :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
+						<v-list-tile-title>{{localeCurrent(island.title)}}</v-list-tile-title>
 					</v-list-tile>
 					<template v-if="island.regions">
-						<v-list-group v-for="region in island.regions" :key="region.code" no-action sub-group>
-							<v-list-tile slot="activator" :to="localePath({name: 'region-region', params: {region: region.code}})">
-								<v-list-tile-title>{{localeTitle(region.title)}}</v-list-tile-title>
+						<v-list-group v-for="region in island.regions" :key="region._id" no-action sub-group>
+							<v-list-tile slot="activator" :to="localePath({name: 'region-region', params: {region: localeCurrent(region.slug)}})">
+								<v-list-tile-title>{{localeCurrent(region.title)}}</v-list-tile-title>
 								<!--<v-list-tile-action>
 									<v-icon>layers</v-icon>
 								</v-list-tile-action>-->
 							</v-list-tile>
 							<template v-if="region.zones">
-								<v-list-tile v-for="zone in region.zones" :key="zone.code" :to="localePath({name: 'zone-zone', params: {zone: zone.code}})">
-									<v-list-tile-title>{{localeTitle(zone.title)}}</v-list-tile-title>
+								<v-list-tile v-for="zone in region.zones" :key="zone._id" :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})">
+									<v-list-tile-title>{{localeCurrent(zone.title)}}</v-list-tile-title>
 									<!--<v-list-tile-action>
 										<v-icon>terrain</v-icon>
 									</v-list-tile-action>-->
@@ -38,40 +38,40 @@
 				<v-list-tile slot="activator" :to="localePath('map')">
 					<v-list-tile-title>{{$tc('map', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="map in maps" :key="map.code" :to="localePath({name: 'map-map', params: {map: map.code}})">
-					<v-list-tile-title>{{localeTitle(map.title)}}</v-list-tile-title>
+				<v-list-tile v-for="map in maps" :key="map._id" :to="localePath({name: 'map-map', params: {map: localeCurrent(map.slug)}})">
+					<v-list-tile-title>{{localeCurrent(map.title)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>
 			<v-list-group prepend-icon="account_circle">
 				<v-list-tile slot="activator" :to="localePath('speaker')">
 					<v-list-tile-title>{{$tc('speaker', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="speaker in speakers" :key="speaker.code" :to="localePath({name: 'speaker-speaker', params: {speaker: speaker.code}})">
-					<v-list-tile-title>{{localeTitle(speaker.title)}}</v-list-tile-title>
+				<v-list-tile v-for="speaker in speakers" :key="speaker._id" :to="localePath({name: 'speaker-speaker', params: {speaker: localeCurrent(speaker.slug)}})">
+					<v-list-tile-title>{{localeCurrent(speaker.title)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>
 			<v-list-group prepend-icon="place">
 				<v-list-tile slot="activator" :to="localePath('feature')">
 					<v-list-tile-title>{{$tc('feature', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="feature in features" :key="feature.code" :to="localePath({name: 'feature-feature', params: {feature: feature.code}})">
-					<v-list-tile-title>{{localeTitle(feature.title)}}</v-list-tile-title>
+				<v-list-tile v-for="feature in features" :key="feature._id" :to="localePath({name: 'feature-feature', params: {feature: localeCurrent(feature.slug)}})">
+					<v-list-tile-title>{{localeCurrent(feature.title)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>
 			<!--<v-list-group prepend-icon="home">
 				<v-list-tile slot="activator" :to="localePath('group')">
 					<v-list-tile-title>{{$tc('group', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="group in groups" :key="group.code" :to="localePath({name: 'group-zone-group', params: {zone: zone.code, group: group.code}})">
-					<v-list-tile-title>{{localeTitle(group.title)}}</v-list-tile-title>
+				<v-list-tile v-for="group in groups" :key="group._id" :to="localePath({name: 'group-zone-group', params: {zone: localeCurrent(zone.slug), group: localeCurrent(group.slug)}})">
+					<v-list-tile-title>{{localeCurrent(group.title)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>-->
 			<v-list-group prepend-icon="people">
-				<v-list-tile slot="activator" :to="localePath('iwi')">
-					<v-list-tile-title>{{$tc('iwi', 2) | titlecase}}</v-list-tile-title>
+				<v-list-tile slot="activator" :to="localePath('tribe')">
+					<v-list-tile-title>{{$tc('tribe', 2) | titlecase}}</v-list-tile-title>
 				</v-list-tile>
-				<v-list-tile v-for="iwi in ngaiwi" :key="iwi.code" :to="localePath({name: 'iwi-iwi', params: {iwi: iwi.code}})">
-					<v-list-tile-title>{{localeTitle(iwi.title)}}</v-list-tile-title>
+				<v-list-tile v-for="tribe in tribes" :key="tribe._id" :to="localePath({name: 'tribe-tribe', params: {tribe: localeCurrent(tribe.slug)}})">
+					<v-list-tile-title>{{localeCurrent(tribe.title)}}</v-list-tile-title>
 				</v-list-tile>
 			</v-list-group>
 		</v-list>
@@ -95,21 +95,30 @@
 			islands: gql`{
 				islands {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
 					}
 					regions {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
 						}
 						zones {
 							_id
-							code
+							slug {
+								en
+								mi
+							}
 							title {
 								en
 								mi
@@ -121,7 +130,10 @@
 			maps: gql`{
 				maps {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -131,7 +143,10 @@
 			speakers: gql`{
 				speakers {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -141,7 +156,10 @@
 			groups: gql`{
 				groups {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -151,17 +169,23 @@
 			features: gql`{
 				features {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
 					}
 				}
 			}`,
-			ngaiwi: gql`{
-				ngaiwi {
+			tribes: gql`{
+				tribes {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi

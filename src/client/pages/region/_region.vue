@@ -1,10 +1,10 @@
 <template>
 	<section v-if="region">
 		<h1 class="display-2 mt-5">
-			{{localeTitle(region.title)}}
+			{{localeCurrent(region.title)}}
 		</h1>
-		<h2 v-if="localeBothTitles(region.title)" class="display-1 mb-4">
-			{{localeAltTitle(region.title)}}
+		<h2 v-if="localeBothExist(region.title)" class="display-1 mb-4">
+			{{localeOther(region.title)}}
 		</h2>
 		<h3 class="display-1 mt-5 mb-4">
 			{{$tc('zone', 2) | titlecase}}
@@ -17,16 +17,21 @@
 	import gql from 'graphql-tag';
 	import zones from '@/components/zones/cards.vue';
 
-	const field = "code";
+	//const field = "code";
 
 	export default {
 		components: {
 			zones,
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+		},
 		apollo: {
 			region: {
-				query: gql`query region($value: String) {
-					region(filter: {${field}: $value}) {
+				query: gql`query region($slug: String, $lang: String) {
+					region(filter: {slug: $slug, lang: $lang}) {
 						_id
 						code
 						title {
@@ -37,14 +42,15 @@
 				}`,
 				variables() {
 					return {
-						value: this.$route.params.region,
+						slug: this.$route.params.region,
+						lang: this.$i18n.locale,
 					}
 				},
 			},
 		},
 		head() {
 			return {
-				title: (this.region ? this.localeTitle(this.region.title) : ""),
+				title: (this.region ? this.localeCurrent(this.region.title) : ""),
 			};
 		},
 	};

@@ -6,7 +6,7 @@ type images {
 	back: String
 }
 
-type slugs {
+type slug {
 	en: String
 	mi: String
 }
@@ -46,8 +46,7 @@ type spoken {
 
 type meaning {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	components: String
 	translation: String
@@ -88,8 +87,7 @@ type membership {
 
 type group {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	plural: Boolean
 	place: place
@@ -120,7 +118,7 @@ type addendum {
 
 type placename {
 	_id: ID!
-	code: String
+	slug: slug
 	number: Int
 	featured: Int
 	notes: notes
@@ -174,9 +172,8 @@ type audio {
 
 type zone {
 	_id: ID!
-	code: String
 	number: Int
-	slug: slugs
+	slug: slug
 	title: title
 	audio: audio
 	images: images
@@ -193,13 +190,12 @@ type zone {
 	addenda: [placename]
 	featured: [placename]
 	maplink: maplink
-	ngaiwi: [iwi]
+	tribes: [tribe]
 }
 
 type speaker {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	gender: String
 	notes: String
@@ -215,8 +211,7 @@ type speaker {
 
 type island {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	audio: audio
 	description: String
@@ -244,8 +239,7 @@ type partnotes {
 
 type part {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	audio: audio
 	dates: dates
@@ -266,8 +260,7 @@ type part {
 
 type district {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	seat: String
 	area: Int
@@ -290,8 +283,7 @@ type maplink {
 
 type map {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	dates: dates
 	images: images
@@ -306,8 +298,7 @@ type map {
 
 type region {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	images: images
 	island: island
@@ -330,8 +321,7 @@ type category {
 
 type feature {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	images: images
 	plural: String
@@ -342,15 +332,14 @@ type feature {
 	next: feature
 }
 
-type iwi {
+type tribe {
 	_id: ID!
-	code: String
-	slug: slugs
+	slug: slug
 	title: title
 	links: links
 	zones: [zone]
-	previous: iwi
-	next: iwi
+	previous: tribe
+	next: tribe
 }
 
 type gazetteer {
@@ -362,11 +351,22 @@ type gazetteer {
 }
 
 type search {
-	_id: ID!
-	type: String
-	code: String
-	name: String
-	zone_code: String
+	text: String
+	value: String
+}
+
+type total {
+	island: Int
+	part: Int
+	map: Int
+	region: Int
+	zone: Int
+	speaker: Int
+	group: Int
+	feature: Int
+	tribe: Int
+	placename: Int
+	district: Int
 }
 
 input pagination {
@@ -382,15 +382,18 @@ input sort {
 
 input find {
 	_id: String
-	code: String
+	slug: String
+	lang: String
 }
 
 input term {
 	term: String
+	lang: String
 }
 
 input filter {
 	field: String
+	lang: String
 	value: String
 }
 
@@ -466,14 +469,14 @@ type Query {
 	district(
 		filter: find
 	): district
-	ngaiwi(
+	tribes(
 		filter: filter
 		pagination: pagination
 		sort: sort
-	): [iwi]
-	iwi(
+	): [tribe]
+	tribe(
 		filter: find
-	): iwi
+	): tribe
 	placenames(
 		filter: filter
 		pagination: pagination
@@ -494,4 +497,5 @@ type Query {
 	autocomplete(
 		filter: term
 	): [search]
+	total: total
 }

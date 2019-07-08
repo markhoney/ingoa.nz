@@ -1,22 +1,22 @@
 <template>
 	<section v-if="map">
 		<h2 :id="map.code" class="display-1 mb-0 text-xs-center">
-			<nuxt-link :to="localePath({name: 'map-map', params: {map: map.code}})">{{localeTitle(map.title)}}</nuxt-link>
+			<nuxt-link :to="localePath({name: 'map-map', params: {map: localeCurrent(map.slug)}})">{{localeCurrent(map.title)}}</nuxt-link>
 		</h2>
-		<h3 class="headline mb-0 text-xs-center mb-3">{{localeAltTitle(map.title)}}</h3>
-		<img :src="map.images.portrait" :alt="localeTitles(map.title)" :id="map.code" :usemap="'#map-' + map.code">
+		<h3 class="headline mb-0 text-xs-center mb-3">{{localeOther(map.title)}}</h3>
+		<img :src="map.images.portrait" :alt="localeBoth(map.title)" :id="map._id" :usemap="'#map-' + map.code">
 		<map :name="'map-' + map.code">
 			<template v-for="region in map.regions">
 				<template v-for="zone in region.zones">
-					<nuxt-link v-for="(area, index) in zone.maplink.mapareas" :to="localePath({name: 'zone-zone', params: {zone: zone.code}})" :key="zone.code + index"
-						:shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeTitles(zone.title)" tag="area" />
-					<!--:alt="localeTitles(zone.title)" -->
+					<nuxt-link v-for="(area, index) in zone.maplink.mapareas" :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})" :key="zone._id + index"
+						:shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(zone.title)" tag="area" />
+					<!--:alt="localeBoth(zone.title)" -->
 				</template>
 			</template>
 			<template v-for="link in map.maplinks">
 				<nuxt-link v-for="(area, index) in link.mapareas"
-					:to="localePath(hash ? {name: 'island-island', params: {island: map.island.code}, hash: '#' + link.map.code} : {name: 'island-island', params: {island: map.island.code}})"
-					:key="[link.map.code, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeTitles(link.map.title)" tag="area" />
+					:to="localePath(hash ? {name: 'island-island', params: {island: localeCurrent(map.island.slug)}, hash: '#' + localeCurrent(link.map.slug)} : {name: 'island-island', params: {island: localeCurrent(map.island.slug)}})"
+					:key="[link.map._id, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(link.map.title)" tag="area" />
 			</template>
 		</map>
 		<p class="text-xs-center">{{$t('imagemap')}}</p>
@@ -28,7 +28,8 @@
 
 	export default {
 		props: {
-			code: String,
+			id: String,
+			slug: String,
 			hash: {
 				type: Boolean,
 				default: false,
@@ -39,10 +40,13 @@
 		},
 		apollo: {
 			map: {
-				query: gql`query map($code: String) {
-					map(filter: {code: $code}) {
+				query: gql`query map($id: String, $slug: String, $lang: String) {
+					map(filter: {_id: $id, slug: $slug, lang: $lang}) {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
@@ -53,10 +57,12 @@
 						}
 						regions {
 							_id
-							code
 							zones {
 								_id
-								code
+								slug {
+									en
+									mi
+								}
 								title {
 									en
 									mi
@@ -70,12 +76,14 @@
 							}
 						}
 						island {
-							code
+							slug {
+								en
+								mi
+							}
 						}
 						maplinks {
 							map {
 								_id
-								code
 								title {
 									en
 									mi
@@ -93,7 +101,9 @@
 				}`,
 				variables() {
 					return {
-						code: this.code,
+						id: this.id,
+						slug: this.slug,
+						lang: this.$i18n.locale,
 					}
 				},
 			},

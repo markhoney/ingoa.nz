@@ -1,7 +1,7 @@
 <template>
 	<v-layout row wrap>
-		<v-flex v-for="region in regions" :key="region.code" xs12 sm6 md4 class="pa-2">
-			<region :code="region.code" />
+		<v-flex v-for="region in regions" :key="region._id" xs12 sm6 md4 class="pa-2">
+			<region :id="region._id" />
 		</v-flex>
 	</v-layout>
 </template>
@@ -20,17 +20,15 @@
 		},
 		apollo: {
 			regions: {
-				query: gql`query regions($field: String, $value: String) {
-					regions(filter: {field: $field, value: $value}) {
+				query: gql`query regions($field: String, $value: String, $lang: String) {
+					regions(filter: {field: $field, value: $value, lang: $lang}) {
 						_id
-						code
 						title {
 							en
 							mi
 						}
 						zones {
 							_id
-							code
 							title {
 								en
 								mi
@@ -42,6 +40,7 @@
 					return {
 						field: this.field,
 						value: this.value,
+						lang: this.$i18n.locale,
 					}
 				},
 			},

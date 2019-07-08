@@ -1,0 +1,26 @@
+FROM keymetrics/pm2:latest-slim
+
+LABEL maintainer="Mark Honeychurch <mark@honeychurch.org>"
+
+WORKDIR /app
+
+# Bundle APP files
+COPY package.json .
+#COPY ecosystem.config.js .
+COPY pm2.json .
+COPY nuxt.config.js .
+COPY Caddyfile.dynamic ./Caddyfile
+COPY src/client ./src/client
+COPY src/server ./src/server
+
+# Install application dependencies
+ENV NPM_CONFIG_LOGLEVEL warn
+ENV BASE_URL http://localhost:80
+RUN curl https://getcaddy.com | bash -s personal http.cache,http.cors,http.realip
+RUN yarn install --production
+RUN ./node_modules/.bin/nuxt build --modern
+
+# Expose the listening ports of your app
+EXPOSE 80 443 2015 3000 4000 8000 43554
+
+#CMD ["pm2-runtime", "start", "ecosystem.config.js"]

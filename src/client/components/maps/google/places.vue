@@ -1,7 +1,7 @@
 <template>
 	<GmapMap ref="gmap" :center="{lat: -40, lng: 175}" :zoom="7" map-type-id="satellite" style="width: 100%; height: 80vh">
 		<gmap-info-window :options="{pixelOffset: {width: 0, height: -35}}" :position="info.position" :opened="info.open" @closeclick="info.open = false">
-			<nuxt-link v-if="info.id" :to="localePath({name: 'placename-zone-placename', params: {zone: info.zone, placename: info.placename}})">{{info.title}}</nuxt-link>
+			<nuxt-link v-if="info.id" :to="localePath({name: 'placename-zone-placename', params: {zone: localeCurrent(info.zone), placename: localeCurrent(info.placename)}})">{{info.title}}</nuxt-link>
 			<br>
 			{{info.text}}
 		</gmap-info-window>
@@ -35,12 +35,18 @@
 		},
 		apollo: {
 			placenames: {
-				query: gql`query placenames($field: String, $value: String) {
-					placenames(filter: {field: $field, value: $value}) {
+				query: gql`query placenames($field: String, $value: String, $lang: String) {
+					placenames(filter: {field: $field, value: $value, lang: $lang}) {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						zone {
-							code
+							slug {
+								en
+								mi
+							}
 						}
 						places {
 							_id
@@ -66,7 +72,8 @@
 				variables() {
 					return {
 						field: this.field,
-						value: this.value
+						value: this.value,
+						lang: this.$i18n.locale,
 					}
 				},
 			},
@@ -102,10 +109,10 @@
 		methods: {
 			toggleinfo: function(placename, place) {
 				this.info.position = place.location.position;
-				this.info.title = this.localeTitle(place.title);
-				this.info.placename = placename.code;
-				this.info.zone = placename.zone.code || '';
-				this.info.text = this.localeTitle(place.feature.title);
+				this.info.title = this.localeCurrent(place.title);
+				this.info.placename = placename.slug;
+				this.info.zone = placename.zone.slug || '';
+				this.info.text = this.localeCurrent(place.feature.title);
 				if (this.info.id === place._id) {
 					this.info.open = !this.info.open;
 				} else {

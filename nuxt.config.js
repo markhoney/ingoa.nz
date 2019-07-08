@@ -1,10 +1,10 @@
 const pkg = require('./package');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
-const {execute, makePromise} = require('apollo-link');
-const {createHttpLink} = require('apollo-link-http');
-const fetch = require('node-fetch');
-const gql = require('graphql-tag');
+//const {execute, makePromise} = require('apollo-link');
+//const {createHttpLink} = require('apollo-link-http');
+//const fetch = require('node-fetch');
+//const gql = require('graphql-tag');
 
 require('dotenv').config();
 
@@ -31,9 +31,9 @@ module.exports = {
 	/*serverMiddleware: [
 		{path: '/graphql', handler: '../server/apollo/middleware.js'},
 	],*/
-	css: [
+	/*css: [
 		'@/assets/style/app.styl'
-	],
+	],*/
 	loading: {color: '#f00'},
 
 	head: {
@@ -56,61 +56,10 @@ module.exports = {
 
 	generate: {
 		//dir: 'docs',
-		//routes: require('./routes'),
-		routes: function() {
-			return makePromise(execute(createHttpLink({uri: 'http://localhost:4000/graphql', fetch: fetch}), {query: gql`{
-				islands {
-					code
-				}
-				regions {
-					code
-				}
-				zones {
-					code
-				}
-				speakers {
-					code
-				}
-				groups {
-					code
-				}
-				features {
-					code
-				}
-				ngaiwi {
-					code
-				}
-#				placenames {
-#					code
-#				}
-			}`})).then(response => {
-				const staticRoutes = [
-					"about",
-					"region",
-					"island",
-					"map",
-					"zone",
-					"speaker",
-					"feature",
-					"group",
-					"iwi",
-					"old",
-					"old/contents",
-				];
-				return [
-					...staticRoutes,
-					...response.data.islands.map(island => '/island/' + island.code),
-					...response.data.regions.map(region => '/region/' + region.code),
-					...response.data.zones.map(zone => '/zone/' + zone.code),
-					...response.data.zones.map(zone => '/old/' + zone.code),
-					...response.data.speakers.map(speaker => '/speaker/' + speaker.code),
-					...response.data.groups.map(group => '/group/' + group.code),
-					...response.data.features.map(feature => '/feature/' + feature.code),
-					...response.data.ngaiwi.map(iwi => '/iwi/' + iwi.code),
-					//...response.data.placenames.map(placename => '/placename/' + placename.code),
-				];
-			}).catch(error => console.log(`received error ${error}`));
-		}
+		routes: require('./src/routes/routes'),
+		/*routes: function() {
+			return require('./routes');
+		}*/
 	},
 
 	plugins: [
@@ -143,7 +92,8 @@ module.exports = {
 				langDir: 'locales/',
 				locales: require('./src/client/locales/locales.json'),
 				parsePages: false,
-				pages: require('./src/client/locales/pages.json'),
+				pages: require('./src/client/locales/pages.js'),
+				vuex: false,
 			},
 		],
 	],
@@ -170,8 +120,6 @@ module.exports = {
 		},
 		extractCSS: true,
 		optimizeCSS: true,
-		extend(config, ctx) {
-		},
 		/*babel: {
 			presets({isServer}) {
 				return [

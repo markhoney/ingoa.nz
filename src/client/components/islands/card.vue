@@ -1,6 +1,6 @@
 <template>
 	<v-card v-if="island">
-		<nuxt-link :to="localePath({name: 'island-island', params: {island: island.code}})">
+		<nuxt-link :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
 			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
 				<slot />
 			</v-img>
@@ -9,9 +9,9 @@
 		<v-card-title primary-title>
 			<div>
 				<h3 class="headline mb-0">
-					<nuxt-link v-if="island" :to="localePath({name: 'island-island', params: {island: island.code}})">{{localeTitle(island.title)}}</nuxt-link>
+					<nuxt-link v-if="island" :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">{{localeCurrent(island.title)}}</nuxt-link>
 				</h3>
-				<h3>{{localeAltTitle(island.title)}}</h3>
+				<h3>{{localeOther(island.title)}}</h3>
 				<div>
 					<p v-html="island.description" />
 				</div>
@@ -24,14 +24,17 @@
 	import gql from 'graphql-tag';
 	export default {
 		props: {
-			code: String,
+			id: String,
 		},
 		apollo: {
 			island: {
-				query: gql`query island($code: String) {
-					island(filter: {code: $code}) {
+				query: gql`query island($id: String) {
+					island(filter: {_id: $id}) {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
@@ -44,7 +47,7 @@
 				}`,
 				variables() {
 					return {
-						code: this.code,
+						id: this.id,
 					}
 				},
 			},

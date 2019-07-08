@@ -6,7 +6,7 @@
 		<v-toolbar-side-icon @click.stop="$store.commit('toggleDrawer')" role="menu" />
 		<v-toolbar-title><!-- style="margin-top: 280px; margin-left: 65px;" -->
 			<h1>
-				<nuxt-link to="/" style="text-transform: uppercase; font-weight: bold; color: #ffffff;">
+				<nuxt-link :to="localePath('index')" style="text-transform: uppercase; font-weight: bold; color: #ffffff;">
 					{{$t('title')}}
 				</nuxt-link>
 			</h1><!-- class="grey--text text--darken-4" -->
@@ -25,7 +25,7 @@
 
 <script>
 	import mainmenu from '@/components/menu/main.vue';
-	import languages from '@/components/headers/languages.vue';
+	import languages from '@/components/headers/languageshover.vue';
 
 	export default {
 		components: {

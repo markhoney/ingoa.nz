@@ -58,11 +58,11 @@ module.exports = function(db) {
 			feature(obj, args) {
 				return getRecord(db.feature, args);
 			},
-			ngaiwi(obj, args) {
-				return getRecords(db.iwi, args);
+			tribes(obj, args) {
+				return getRecords(db.tribe, args);
 			},
-			iwi(obj, args) {
-				return getRecord(db.iwi, args);
+			tribe(obj, args) {
+				return getRecord(db.tribe, args);
 			},
 			placenames(obj, args) {
 				return getRecords(db.placename, args);
@@ -77,10 +77,13 @@ module.exports = function(db) {
 				return getRecord(db.placename, args);
 			},
 			search(obj, args) {
-				return getSearch(db.search, args.filter.term);
+				return getSearch(db.search, args);
 			},
 			autocomplete(obj, args) {
-				return getAutocomplete(db.search, args.filter.term);
+				return getAutocomplete(db.search, args);
+			},
+			total() {
+				return db.total;
 			},
 		},
 	};
@@ -102,21 +105,23 @@ function getSearch(collection, search) {
 }
 
 function getAutocomplete(collection, search) {
-	if (search.length >= 3) return collection.filter(record => record.name.includes(search));
+	if (search && search.filter && search.filter.lang && search.filter.term && search.filter.term.length >= 3) return collection[search.filter.lang].filter(record => record.name.includes(search.filter.term));
 	return [];
 }
 
 function getRecord(collection, args) {
 	if (args.filter) {
-		if (args.filter._id) return collection.find(record => args.filter._id == record._id);
-		if (args.filter.code) return collection.find(record => args.filter.code == record.code);
+		if (args.filter._id) return collection.find(record => record._id == args.filter._id);
+		//if (args.filter.code) return collection.find(record => record.code == args.filter.code);
+		//if (args.filter.slug) return collection.find(record => record.slug[args.filter.lang] == args.filter.slug);
+		if (args.filter.slug) return collection.find(record => record.slug.mi == args.filter.slug || record.slug.en == args.filter.slug);
 	}
 	return [];
 }
 
 function getRecords(collection, args) {
 	//if (args.filter) collection = collection.filter(record => record[args.filter.field] == args.filter.value);
-	if (args.filter) collection = collection.filter(record => get(record, args.filter.field) == args.filter.value);
+	if (args.filter) collection = collection.filter(record => get(record, args.filter.field + (args.filter.field.includes("slug") ? "." + args.filter.lang : "")) == args.filter.value);
 	if (args.sort && args.sort.field) {
 		collection = sortBy(collection, args.sort.field || '_id');
 		if ( args.sort.order == -1) collection.reverse();

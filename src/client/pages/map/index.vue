@@ -1,11 +1,11 @@
 <template>
 	<section>
-		<v-layout row wrap v-for="island in islands.filter(island => island.maps.length)" :key="island.code" class="elevation-2 mb-2">
+		<v-layout row wrap v-for="island in islands.filter(island => island.maps.length)" :key="island._id" class="elevation-2 mb-2">
 			<v-flex xs12>
-				<imageheader :image="island.images.landscape" :title="island.title" :to="{name: 'island-island', params: {island: island.code}}" />
+				<imageheader :image="island.images.landscape" :title="island.title" :to="{name: 'island-island', params: {island: localeCurrent(island.slug)}}" />
 			</v-flex>
-			<v-flex v-for="map in island.maps" :key="map.code" xs12 sm6 md4 class="pa-2">
-				<imagemap :code="map.code" />
+			<v-flex v-for="map in island.maps" :key="map._id" xs12 sm6 md4 class="pa-2">
+				<imagemap :id="map._id" />
 			</v-flex>
 		</v-layout>
 	</section>
@@ -25,7 +25,10 @@
 			islands: gql`{
 				islands {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -35,7 +38,6 @@
 					}
 					maps {
 						_id
-						code
 						title {
 							en
 							mi

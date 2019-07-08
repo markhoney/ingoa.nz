@@ -1,16 +1,16 @@
 <template>
 	<v-card v-if="zone">
-		<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: zone.code}})">
+		<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})">
 			<v-img :src="zone.images.landscape" height="160" alt="" />
 		</nuxt-link><!-- height="180px" -->
 		<v-card-title primary-title>
 			<div>
 				<h3 class="headline mb-0">
-					<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: zone.code}})">
-						{{localeTitle(zone.title)}}
+					<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})">
+						{{localeCurrent(zone.title)}}
 					</nuxt-link>
 				</h3>
-				<h3>{{localeAltTitle(zone.title)}}</h3>
+				<h3>{{localeOther(zone.title)}}</h3>
 			</div>
 		</v-card-title>
 	</v-card>
@@ -21,14 +21,17 @@
 
 	export default {
 		props: {
-			code: String,
+			id: String,
 		},
 		apollo: {
 			zone: {
-				query: gql`query zone($code: String) {
-					zone(filter: {code: $code}) {
+				query: gql`query zone($id: String) {
+					zone(filter: {_id: $id}) {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
@@ -40,7 +43,7 @@
 				}`,
 				variables() {
 					return {
-						code: this.code,
+						id: this.id,
 					}
 				},
 			},

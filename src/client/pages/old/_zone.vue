@@ -2,14 +2,14 @@
 	<section v-if="zone">
 		<p><nuxt-link :to="localePath({name: 'old'})">Index</nuxt-link></p>
 		<p><nuxt-link :to="localePath({name: 'old-contents'})">Contents</nuxt-link></p>
-		<p v-if="zone.previous"><nuxt-link :to="localePath({name: 'old-zone', params: {zone: zone.previous.code}})">Previous zone</nuxt-link></p>
+		<p v-if="zone.previous"><nuxt-link :to="localePath({name: 'old-zone', params: {zone: localeCurrent(zone.previous.slug)}})">Previous zone</nuxt-link></p>
 		<table style="margin: auto;">
 			<tbody>
 				<tr>
 					<td width="75">&nbsp;</td>
 					<td>
 						<h2>Ngā Ingoa o Aotearoa</h2>
-						<h1>Zone {{zone.number}} - {{localeTitle(zone.title)}}</h1>
+						<h1>Zone {{zone.number}} - {{localeCurrent(zone.title)}}</h1>
 					</td>
 				</tr>
 			</tbody>
@@ -20,8 +20,8 @@
 					<td colspan="2">
 						<a :href="zone.audio.file" target="_blank">
 							Zone {{zone.number}} - spoken by
-							<template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker.code !== 'hugh_young')">
-								{{localeTitle(speaker.title)}}<template v-if="index < zone.speakers.length - 2">, </template>
+							<template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id !== 'sp_37')">
+								{{localeCurrent(speaker.title)}}<template v-if="index < zone.speakers.length - 2">, </template>
 							</template>
 						</a>
 					</td>
@@ -34,12 +34,12 @@
 					</td>
 				</tr>
 				<tr v-for="placename in zone.placenames" :key="placename._id">
-					<td>{{placename.names.map(name => localeTitle(name.title)).join(", ")}}</td>
-					<td><template v-for="place in placename.places">{{localeTitle(place.feature.title)}}&nbsp;&nbsp;&nbsp;&nbsp;</template></td>
+					<td>{{placename.names.map(name => localeCurrent(name.title)).join(", ")}}</td>
+					<td><template v-for="place in placename.places">{{localeCurrent(place.feature.title)}}&nbsp;&nbsp;&nbsp;&nbsp;</template></td>
 				</tr>
 			</tbody>
 		</table>
-		<p v-if="zone.next"><nuxt-link :to="localePath({name: 'old-zone', params: {zone: zone.next.code}})">Next zone</nuxt-link></p>
+		<p v-if="zone.next"><nuxt-link :to="localePath({name: 'old-zone', params: {zone: localeCurrent(zone.next.slug)}})">Next zone</nuxt-link></p>
 	</section>
 </template>
 
@@ -54,18 +54,23 @@
 		},
 		apollo: {
 			zone: {
-				query: gql`query zone($code: String) {
-					zone(filter: {code: $code}) {
+				query: gql`query zone($id: String) {
+					zone(filter: {_id: $id}) {
 						_id
-						code
 						number
 						previous {
 							_id
-							code
+							slug {
+								en
+								mi
+							}
 						}
 						next {
 							_id
-							code
+							slug {
+								en
+								mi
+							}
 						}
 						title {
 							en
@@ -79,7 +84,6 @@
 						}
 						speakers {
 							_id
-							code
 							title {
 								en
 								mi
@@ -108,7 +112,7 @@
 				}`,
 				variables() {
 					return {
-						code: this.$route.params.zone,
+						id: this.$route.params.zone,
 					}
 				},
 			},

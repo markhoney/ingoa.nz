@@ -2,8 +2,8 @@
 	<section v-if="island">
 		<imageheader :image="island.images.landscape" :title="island.title" />
 		<p class="ma-5" v-html="island.description" />
-		<player :file="island.audio.file" field="island._id" :value="island._id" :common="true" :wave="true" />
-		<imagemap v-for="map in island.maps" :key="map.code" :code="map.code" :hash="true" />
+		<player :file="island.audio.file" field="island._id" :value="island._id" :common="true" />
+		<imagemap v-for="map in island.maps" :key="map._id" :id="map._id" :hash="true" />
 	</section>
 </template>
 
@@ -21,10 +21,9 @@
 		},
 		apollo: {
 			island: {
-				query: gql`query island($code: String) {
-					island(filter: {code: $code}) {
+				query: gql`query island($slug: String, $lang: String) {
+					island(filter: {slug: $slug, lang: $lang}) {
 						_id
-						code
 						title {
 							en
 							mi
@@ -38,20 +37,20 @@
 						}
 						maps {
 							_id
-							code
 						}
 					}
 				}`,
 				variables() {
 					return {
-						code: this.$route.params.island,
+						slug: this.$route.params.island,
+						lang: this.$i18n.locale,
 					}
 				},
 			},
 		},
 		head() {
 			return {
-				title: (this.island ? this.localeTitle(this.island.title) : ''),
+				title: (this.island ? this.localeCurrent(this.island.title) : ''),
 			};
 		},
 	};

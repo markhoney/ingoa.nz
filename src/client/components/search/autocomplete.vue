@@ -1,5 +1,5 @@
 <template>
-	<v-autocomplete cache-items :items="items" :search-input.sync="input" v-model="selected" prepend-icon="search" />
+	<v-autocomplete cache-items :items="autocomplete" :search-input.sync="input" v-model="selected" prepend-icon="search" label="Search" />
 </template>
 
 <script>
@@ -16,31 +16,18 @@
 		},
 		apollo: {
 			autocomplete: {
-				query: gql`query autocomplete($term: String) {
-					autocomplete(filter: {term: $term}) {
-						type
-						code
-						name
-						zone_code
+				query: gql`query autocomplete($term: String, $lang: String) {
+					autocomplete(filter: {term: $term, lang: $lang}) {
+						text
+						value
 					}
 				}`,
 				variables() {
 					return {
 						term: this.term,
+						lang: this.$i18n.locale,
 					}
 				},
-			},
-		},
-		computed: {
-			items: function() {
-				if (this.autocomplete) {
-					return this.autocomplete.map(result => {
-						return {
-							value: "/" + [result.type, result.zone_code, result.code].join("/"),
-							text: result.name,
-						};
-					});
-				}
 			},
 		},
 		watch: {

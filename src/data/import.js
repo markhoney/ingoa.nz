@@ -48,8 +48,9 @@ function importPlacenames() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.IndexName_1),
+			//code: utils.createCode(input.IndexName_1),
 			slug: {
+				en: utils.createCode(input.IndexName_1),
 				mi: utils.createCode(input.IndexName_1),
 			},
 			zone_id: input.ZoneID,
@@ -139,7 +140,7 @@ function importPlacenames() {
 				}
 				output.places.push({
 					_id: 'pl_' + input.ID + '-' + i,
-					code: utils.createCode(input['KindName_' + i]),
+					//code: utils.createCode(input['KindName_' + i]),
 					title: {
 						en: input['KindName_' + i],
 						mi: input.IndexName_1,
@@ -172,10 +173,14 @@ function importZones() {
 		var output = {
 			_id: input.ID,
 			number: parseInt(input.Number),
-			code: utils.createCode(input.Name || input.TeReo),
-			slug: {
+			//code: utils.createCode(input.Name || input.TeReo),
+			/*slug: {
 				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
 				mi: utils.createCode(input.TeReo),
+			},*/
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -200,7 +205,7 @@ function importZones() {
 			boundary: input.Boundary,
 			gazetteer: input.GazetteerDistrict,
 			speaker_ids: [],
-			iwi_ids: [],
+			tribe_ids: [],
 			notes: input.Notes,
 		};
 		for (var i = 1; i <= 4; i++) {
@@ -228,7 +233,7 @@ function importZones() {
 		}
 		for (i = 1; i <= 4; i++) {
 			if (input['IwiID_' + i]) {
-				output.iwi_ids.push(input['IwiID_' + i]);
+				output.tribe_ids.push(input['IwiID_' + i]);
 			}
 		}
 		callback(null, utils.cleanobj(output));
@@ -241,8 +246,9 @@ function importSpeakers() {
 		if (input.FirstName) {
 			var output = {
 				_id: input.ID,
-				code: utils.createCode(input.PreferredName),
+				//code: utils.createCode(input.PreferredName),
 				slug: {
+					en: utils.createCode(input.PreferredName),
 					mi: utils.createCode(input.PreferredName),
 				},
 				title: {
@@ -290,10 +296,10 @@ function importIslands() {
 		}
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name || input.TeReo),
+			//code: utils.createCode(input.Name || input.TeReo),
 			slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -323,10 +329,10 @@ function importParts() {
 		var output = {
 			_id: input.ID,
 			number: parseInt(input.Number),
-			code: utils.createCode(input.Name || input.TeReo),
+			//code: utils.createCode(input.Name || input.TeReo),
 			slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -368,10 +374,10 @@ function importMaps() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name || input.TeReo),
+			//code: utils.createCode(input.Name || input.TeReo),
 			slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -409,10 +415,10 @@ function importRegions() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name || input.TeReo),
+			//code: utils.createCode(input.Name || input.TeReo),
 			slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -436,10 +442,10 @@ function importFeatures() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name || input.TeReo),
+			//code: utils.createCode(input.Name || input.TeReo),
 			slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -467,11 +473,11 @@ function importGroups() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name || input.TeReo),
+			//code: utils.createCode(input.Name || input.TeReo),
 			zone_id: input.ZoneID,
 			slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
 			},
 			title: {
 				en: input.Name === input.TeReo ? null : input.Name,
@@ -493,12 +499,13 @@ function importGroups() {
 	openPipe('Ingoa - Groups.tsv', 'group', transformCSVtoObject);
 }
 
-function importIwi() {
+function importTribes() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name),
+			//code: utils.createCode(input.Name),
 			slug: {
+				en: utils.createCode(input.Name),
 				mi: utils.createCode(input.Name),
 			},
 			title: {
@@ -512,15 +519,16 @@ function importIwi() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Iwi.tsv', 'iwi', transformCSVtoObject);
+	openPipe('Ingoa - Iwi.tsv', 'tribe', transformCSVtoObject);
 }
 
 function importMeanings() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.CleanedName),
+			//code: utils.createCode(input.CleanedName),
 			slug: {
+				en: utils.createCode(input.CleanedName),
 				mi: utils.createCode(input.CleanedName),
 			},
 			title: {
@@ -557,9 +565,10 @@ function importDistricts() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
 			_id: input.ID,
-			code: utils.createCode(input.Name),
+			//code: utils.createCode(input.Name),
 			slug: {
 				en: utils.createCode(input.Name),
+				mi: utils.createCode(input.Name),
 			},
 			title: {
 				en: input.Name,
@@ -612,7 +621,7 @@ function importAll() {
 	importSpeakers();
 	importPlacenames();
 	importFeatures();
-	importIwi();
+	importTribes();
 	importMeanings();
 	importOverseas();
 	importDistricts();

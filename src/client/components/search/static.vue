@@ -15,7 +15,10 @@
 			islands: gql`{
 				islands {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -25,7 +28,10 @@
 			regions: gql`{
 				regions {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -35,7 +41,10 @@
 			zones: gql`{
 				zones {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -45,7 +54,10 @@
 			maps: gql`{
 				maps {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -55,7 +67,10 @@
 			speakers: gql`{
 				speakers {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -65,7 +80,10 @@
 			groups: gql`{
 				groups {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -75,17 +93,23 @@
 			features: gql`{
 				features {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
 					}
 				}
 			}`,
-			ngaiwi: gql`{
-				ngaiwi {
+			tribes: gql`{
+				tribes {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					title {
 						en
 						mi
@@ -95,7 +119,10 @@
 			placenames: gql`{
 				placenames {
 					_id
-					code
+					slug {
+						en
+						mi
+					}
 					names {
 						_id
 						title {
@@ -123,25 +150,25 @@
 					...this.speakers,
 					...this.groups,
 					...this.features,
-					...this.ngaiwi,
+					...this.tribes,
 					...this.placenames.map(placename => (placename.names || []).map(name => {
 						return {
 							...name,
 							__typename: 'name',
-							code: placename.code
+							slug: placename.slug
 						};
 					})).flat(),
 					...this.placenames.map(placename => (placename.places || []).map(place => {
 						return {
 							...place,
 							__typename: 'place',
-							code: placename.code
+							slug: placename.slug
 						};
 					})).flat(),
 				].map(data => {
 					return {
 						value: '/' + [data.__typename, data.code].join('/'),
-						text: this.localeTitle(data.title) + ' (' + data.__typename + ')'
+						text: this.localeCurrent(data.title) + ' (' + data.__typename + ')'
 					};
 				});
 			}

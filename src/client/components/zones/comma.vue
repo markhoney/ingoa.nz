@@ -1,7 +1,7 @@
 <template>
 	<p><slot />
-		<nuxt-link v-for="(zone, index) in zones" :key="zone.code" :to="localePath({name: 'zone-zone', params: {zone: zone.code}})" no-prefetch>
-			{{localeTitle(zone.title)}}<template v-if="index != (zones.length - 1)">, </template>
+		<nuxt-link v-for="(zone, index) in zones" :key="zone._id" :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})" no-prefetch>
+			{{localeCurrent(zone.title)}}<template v-if="index != (zones.length - 1)">, </template>
 		</nuxt-link>
 	</p>
 </template>
@@ -16,10 +16,13 @@
 		},
 		apollo: {
 			zones: {
-				query: gql`query zones($field: String, $value: String) {
-					zones(filter: {field: $field, value: $value}) {
+				query: gql`query zones($field: String, $value: String, $lang: String) {
+					zones(filter: {field: $field, value: $value, lang: $lang}) {
 						_id
-						code
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
@@ -29,7 +32,8 @@
 				variables() {
 					return {
 						field: this.field,
-						value: this.value
+						value: this.value,
+						lang: this.$i18n.locale,
 					}
 				},
 			},
