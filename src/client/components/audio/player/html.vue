@@ -12,18 +12,16 @@
 			stop: Number,
 		},
 		watch: {
+			file: function() {
+				this.$refs.audio.load();
+			},
 			start: function(start) {
 				if (start) {
 					this.cancelTimer();
 					this.$refs.audio.currentTime = this.start;
-					/*this.$timer = setTimeout(() => {
-						this.$refs.audio.pause();
-						//this.$refs.audio.currentTime = this.start;
-					}, (this.stop - this.start) * 1000);*/
 					this.$timer = setInterval(() => {
 						if (this.$refs.audio.currentTime > this.stop) {
 							this.$refs.audio.pause();
-							//this.$refs.audio.currentTime = this.start;
 							this.cancelTimer();
 						}
 					}, 100);

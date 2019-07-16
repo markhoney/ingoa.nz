@@ -44,6 +44,399 @@ function openPipe(input, output, transformCSVtoObject) {
 		.pipe(outputToFile);
 }
 
+function importIslands() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		let audioLocation = '';
+		let audioSize = 0;
+		if (input.ID != 'is_3') {
+			audioLocation = '/audio/island/' + input.ID + '.mp3';
+			audioSize = fs.statSync('src/client/static' + audioLocation).size;
+		}
+		var output = {
+			_id: input.ID,
+			//code: utils.createCode(input.Name || input.TeReo),
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			audio: {
+				file: audioLocation,
+				length: input.AudioLength,
+				size: audioSize,
+			},
+			links: {
+				wikipedia: input.WikiLink,
+			},
+			funding: [
+				{
+					source: input.Funding,
+					url: input.FundingLink,
+				},
+				{
+					source: input.Funding_2,
+					url: input.FundingLink_2,
+				},
+			],
+			notes: {
+				description: input.Description,
+				funding: input.Funded,
+				recording: input.Recorded,
+			}
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Islands.tsv', 'island', transformCSVtoObject);
+}
+
+function importParts() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		audioLocation = '/audio/part/' + input.ID + '.mp3';
+		audioSize = fs.statSync('src/client/static' + audioLocation).size;
+		var output = {
+			_id: input.ID,
+			number: parseInt(input.Number),
+			//code: utils.createCode(input.Name || input.TeReo),
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			audio: {
+				file: audioLocation,
+				length: input.AudioLength,
+				size: audioSize,
+			},
+			island_id: input.IslandID,
+			/*island: {
+				_id: input.IslandID,
+			},*/
+			dates: {
+				start: input.Start,
+				end: input.End,
+				launch: input.Launch,
+			},
+			location: {
+				distance: parseInt(input.DistanceKM),
+			},
+			format: input.Format,
+			funding: [
+				{
+					source: input.Funding,
+					url: input.FundingLink,
+				},
+				{
+					source: input.Funding_2,
+					url: input.FundingLink_2,
+				},
+			],
+			notes: {
+				description: input.Description,
+				creation: input.NotesText,
+				recording: input.NotesRecording,
+				funding: input.Funding,
+			},
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Parts.tsv', 'part', transformCSVtoObject);
+}
+
+function importMaps() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			//code: utils.createCode(input.Name || input.TeReo),
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			island_id: input.IslandID,
+			part_id: input.PartID,
+			dates: {
+				start: input.Start,
+				end: input.End,
+			},
+			maplinks: [],
+		};
+		for (var i = 1; i <= 2; i++) {
+			if (input['MapLinkID_' + i]) {
+				output.maplinks.push({
+					map_id: input['MapLinkID_' + i],
+					mapareas: [
+						{
+							shape: input['MapLinkShape_' + i],
+							coords: input['MapLinkCoords_' + i].split(",").map(coord => parseInt(coord)),
+						},
+					],
+				});
+			}
+		}
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Maps.tsv', 'map', transformCSVtoObject);
+}
+
+function importRegions() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			//code: utils.createCode(input.Name || input.TeReo),
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			island_id: input.IslandID,
+			part_id: input.PartID,
+			map_id: input.MapID,
+			links: {
+				wikipedia: input.WikiLink,
+			},
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Regions.tsv', 'region', transformCSVtoObject);
+}
+
+function importZones() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		const audioLocation = '/audio/zone/' + input.ID + '.mp3';
+		const audioSize = fs.statSync('src/client/static' + audioLocation).size;
+		var output = {
+			_id: input.ID,
+			number: parseInt(input.Number),
+			//code: utils.createCode(input.Name || input.TeReo),
+			/*slug: {
+				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
+				mi: utils.createCode(input.TeReo),
+			},*/
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			audio: {
+				file: audioLocation,
+				length: input.AudioLength,
+				size: audioSize,
+			},
+			region_id: input.RegionID,
+			part_id: input.PartID,
+			island_id: input.IslandID,
+			maplink: {
+				map_id: input.MapID,
+				mapareas: [],
+			},
+			areas: [],
+			district_id: input.AdminDistrictID,
+			boundary: input.Boundary,
+			gazetteer: input.GazetteerDistrict,
+			speaker_ids: [],
+			tribe_ids: [],
+			links: {
+				wikipedia: input.WikiLink_1,
+			},
+			notes: {
+				recording: input.Notes,
+			},
+		};
+		for (var i = 1; i <= 4; i++) {
+			if (input['SpeakerID_' + i]) {
+				output.speaker_ids.push(input['SpeakerID_' + i]);
+			}
+		}
+		for (i = 1; i <= 3; i++) {
+			if (input['Area_' + i] || input['TeReo_' + i]) {
+				output.areas.push({
+					title: {
+						en: input['Area_' + i],
+						mi: input['TeReo_' + i],
+					},
+				});
+			}
+		}
+		for (i = 1; i <= 2; i++) {
+			if (input['MapAreaShape_' + i]) {
+				output.maplink.mapareas.push({
+					shape: input['MapAreaShape_' + i],
+					coords: input['MapAreaCoords_' + i].split(",").map(coord => parseInt(coord)),
+				});
+			}
+		}
+		for (i = 1; i <= 4; i++) {
+			if (input['IwiID_' + i]) {
+				output.tribe_ids.push(input['IwiID_' + i]);
+			}
+		}
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Zones.tsv', 'zone', transformCSVtoObject);
+}
+
+function importSpeakers() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		if (input.FirstName) {
+			var output = {
+				_id: input.ID,
+				//code: utils.createCode(input.PreferredName),
+				slug: {
+					en: utils.createCode(input.PreferredName),
+					mi: utils.createCode(input.PreferredName),
+				},
+				title: {
+					mi: input.PreferredName,
+					ascii: utils.ascii(input.PreferredName),
+					double: utils.double(input.PreferredName),
+					parts: {
+						nick: input.Nickname,
+						title: input.Prefix,
+						alternate: input.AlternateName,
+						first: input.FirstName,
+						middle: input.MiddleNames,
+						last: input.Surname,
+						suffix: input.Suffix,
+					},
+					full: [
+						input.Prefix,
+						input.FirstName,
+						input.Nickname ? '(' + input.Nickname + ')' : null,
+						input.MiddleNames,
+						input.Surname,
+						input.Suffix,
+					].filter(a => a).join(' '),	
+				},
+				gender: input.Gender,
+				notes: {
+					description: input.Notes,
+					recording: input.Recording,
+				},
+				location: {
+					description: input.Location,
+				},
+				links: {
+					info: input.URL,
+				},
+			};
+			callback(null, utils.cleanobj(output));
+		}
+	});
+	openPipe('Ingoa - Speakers.tsv', 'speaker', transformCSVtoObject);
+}
+
+function importFeatures() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			//code: utils.createCode(input.Name || input.TeReo),
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			plural: input.Plural,
+			order: input.Hierarchy,
+			links: {
+				wikipedia: input.WikiLink,
+			},
+			category: {
+				gazetteer: input.GazetteerName,
+				osm: {
+					class: input.OSMClass,
+					type: input.OSMType,
+					landuse: input.OSMLandUse,
+				},
+			},
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Features.tsv', 'feature', transformCSVtoObject);
+}
+
+function importGroups() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			//code: utils.createCode(input.Name || input.TeReo),
+			zone_id: input.ZoneID,
+			slug: {
+				en: utils.createCode(input.Name || input.TeReo),
+				mi: utils.createCode(input.TeReo || input.Name),
+			},
+			title: {
+				en: input.Name === input.TeReo ? null : input.Name,
+				mi: input.TeReo,
+				ascii: utils.ascii(input.TeReo),
+				double: utils.double(input.TeReo),
+			},
+			feature_id: input.FeatureID,
+			/*feature: {
+				_id: input.FeatureID,
+			},*/
+			plural: input.FeaturePlural ? true : null,
+			links: {
+				wikipedia: input.WikiLink,
+			},
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Groups.tsv', 'group', transformCSVtoObject);
+}
+
+function importTribes() {
+	const transformCSVtoObject = csv.transform(function(input, callback) {
+		var output = {
+			_id: input.ID,
+			//code: utils.createCode(input.Name),
+			slug: {
+				en: utils.createCode(input.Name),
+				mi: utils.createCode(input.Name),
+			},
+			title: {
+				mi: input.Name,
+				ascii: utils.ascii(input.Name),
+				double: utils.double(input.Name),
+			},
+			links: {
+				wikipedia: input.WikiLink,
+			},
+		};
+		callback(null, utils.cleanobj(output));
+	});
+	openPipe('Ingoa - Iwi.tsv', 'tribe', transformCSVtoObject);
+}
+
 function importPlacenames() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
@@ -166,362 +559,6 @@ function importPlacenames() {
 	openPipe('Ingoa - Placenames.tsv', 'placename', transformCSVtoObject);
 }
 
-function importZones() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		const audioLocation = '/audio/zone/' + input.ID + '.mp3';
-		const audioSize = fs.statSync('src/client/static' + audioLocation).size;
-		var output = {
-			_id: input.ID,
-			number: parseInt(input.Number),
-			//code: utils.createCode(input.Name || input.TeReo),
-			/*slug: {
-				en: utils.createCode(input.Name === input.TeReo ? null : input.Name),
-				mi: utils.createCode(input.TeReo),
-			},*/
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			audio: {
-				file: audioLocation,
-				length: input.Length,
-				size: audioSize,
-			},
-			region_id: input.RegionID,
-			part_id: input.PartID,
-			island_id: input.IslandID,
-			maplink: {
-				map_id: input.MapID,
-				mapareas: [],
-			},
-			areas: [],
-			district_id: input.AdminDistrictID,
-			boundary: input.Boundary,
-			gazetteer: input.GazetteerDistrict,
-			speaker_ids: [],
-			tribe_ids: [],
-			notes: input.Notes,
-		};
-		for (var i = 1; i <= 4; i++) {
-			if (input['SpeakerID_' + i]) {
-				output.speaker_ids.push(input['SpeakerID_' + i]);
-			}
-		}
-		for (i = 1; i <= 3; i++) {
-			if (input['Area_' + i] || input['TeReo_' + i]) {
-				output.areas.push({
-					title: {
-						en: input['Area_' + i],
-						mi: input['TeReo_' + i],
-					},
-				});
-			}
-		}
-		for (i = 1; i <= 2; i++) {
-			if (input['MapAreaShape_' + i]) {
-				output.maplink.mapareas.push({
-					shape: input['MapAreaShape_' + i],
-					coords: input['MapAreaCoords_' + i].split(",").map(coord => parseInt(coord)),
-				});
-			}
-		}
-		for (i = 1; i <= 4; i++) {
-			if (input['IwiID_' + i]) {
-				output.tribe_ids.push(input['IwiID_' + i]);
-			}
-		}
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Zones.tsv', 'zone', transformCSVtoObject);
-}
-
-function importSpeakers() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		if (input.FirstName) {
-			var output = {
-				_id: input.ID,
-				//code: utils.createCode(input.PreferredName),
-				slug: {
-					en: utils.createCode(input.PreferredName),
-					mi: utils.createCode(input.PreferredName),
-				},
-				title: {
-					mi: input.PreferredName,
-					ascii: utils.ascii(input.PreferredName),
-					double: utils.double(input.PreferredName),
-					parts: {
-						nick: input.Nickname,
-						title: input.Prefix,
-						alternate: input.AlternateName,
-						first: input.FirstName,
-						middle: input.MiddleNames,
-						last: input.Surname,
-						suffix: input.Suffix,
-					},
-					full: [
-						input.Prefix,
-						input.FirstName,
-						input.Nickname ? '(' + input.Nickname + ')' : null,
-						input.MiddleNames,
-						input.Surname,
-						input.Suffix,
-					].filter(a => a).join(' '),	
-				},
-				gender: input.Gender,
-				notes: input.Notes,
-				recorded: input.Location,
-				links: {
-					info: input.URL,
-				},
-			};
-			callback(null, utils.cleanobj(output));
-		}
-	});
-	openPipe('Ingoa - Speakers.tsv', 'speaker', transformCSVtoObject);
-}
-
-function importIslands() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		let audioLocation = '';
-		let audioSize = 0;
-		if (input.ID != 'is_3') {
-			audioLocation = '/audio/island/' + input.ID + '.mp3';
-			audioSize = fs.statSync('src/client/static' + audioLocation).size;
-		}
-		var output = {
-			_id: input.ID,
-			//code: utils.createCode(input.Name || input.TeReo),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			audio: {
-				file: audioLocation,
-				length: input.Length,
-				size: audioSize,
-			},
-			description: input.Description,
-			links: {
-				wikipedia: input.Wikipedia,
-			},
-		};
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Islands.tsv', 'island', transformCSVtoObject);
-}
-
-function importParts() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		audioLocation = '/audio/part/' + input.ID + '.mp3';
-		audioSize = fs.statSync('src/client/static' + audioLocation).size;
-		var output = {
-			_id: input.ID,
-			number: parseInt(input.Number),
-			//code: utils.createCode(input.Name || input.TeReo),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			audio: {
-				file: audioLocation,
-				length: input.Length,
-				size: audioSize,
-			},
-			island_id: input.IslandID,
-			/*island: {
-				_id: input.IslandID,
-			},*/
-			dates: {
-				start: input.Start,
-				end: input.End,
-				launch: input.Launch,
-			},
-			location: {
-				distance: parseInt(input.DistanceKM),
-			},
-			funding: input.Funding,
-			format: input.Format,
-			description: input.Description,
-			notes: {
-				text: input.NotesText,
-				recording: input.NotesRecording,
-			},
-		};
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Parts.tsv', 'part', transformCSVtoObject);
-}
-
-function importMaps() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		var output = {
-			_id: input.ID,
-			//code: utils.createCode(input.Name || input.TeReo),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			island_id: input.IslandID,
-			part_id: input.PartID,
-			dates: {
-				start: input.Start,
-				end: input.End,
-			},
-			maplinks: [],
-		};
-		for (var i = 1; i <= 2; i++) {
-			if (input['MapLinkID_' + i]) {
-				output.maplinks.push({
-					map_id: input['MapLinkID_' + i],
-					mapareas: [
-						{
-							shape: input['MapLinkShape_' + i],
-							coords: input['MapLinkCoords_' + i].split(",").map(coord => parseInt(coord)),
-						},
-					],
-				});
-			}
-		}
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Maps.tsv', 'map', transformCSVtoObject);
-}
-
-function importRegions() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		var output = {
-			_id: input.ID,
-			//code: utils.createCode(input.Name || input.TeReo),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			island_id: input.IslandID,
-			part_id: input.PartID,
-			map_id: input.MapID,
-			links: {
-				wikipedia: input.Wikipedia,
-			},
-		};
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Regions.tsv', 'region', transformCSVtoObject);
-}
-
-function importFeatures() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		var output = {
-			_id: input.ID,
-			//code: utils.createCode(input.Name || input.TeReo),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			plural: input.Plural,
-			order: input.Hierarchy,
-			category: {
-				gazetteer: input.GazetteerName,
-				osm: {
-					class: input.OSMClass,
-					type: input.OSMType,
-					landuse: input.OSMLandUse,
-				},
-			},
-		};
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Features.tsv', 'feature', transformCSVtoObject);
-}
-
-function importGroups() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		var output = {
-			_id: input.ID,
-			//code: utils.createCode(input.Name || input.TeReo),
-			zone_id: input.ZoneID,
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			title: {
-				en: input.Name === input.TeReo ? null : input.Name,
-				mi: input.TeReo,
-				ascii: utils.ascii(input.TeReo),
-				double: utils.double(input.TeReo),
-			},
-			feature_id: input.FeatureID,
-			/*feature: {
-				_id: input.FeatureID,
-			},*/
-			plural: input.FeaturePlural ? true : null,
-			links: {
-				wikipedia: input.Wikipedia,
-			},
-		};
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Groups.tsv', 'group', transformCSVtoObject);
-}
-
-function importTribes() {
-	const transformCSVtoObject = csv.transform(function(input, callback) {
-		var output = {
-			_id: input.ID,
-			//code: utils.createCode(input.Name),
-			slug: {
-				en: utils.createCode(input.Name),
-				mi: utils.createCode(input.Name),
-			},
-			title: {
-				mi: input.Name,
-				ascii: utils.ascii(input.Name),
-				double: utils.double(input.Name),
-			},
-			links: {
-				wikipedia: input.Wikipedia,
-			},
-		};
-		callback(null, utils.cleanobj(output));
-	});
-	openPipe('Ingoa - Iwi.tsv', 'tribe', transformCSVtoObject);
-}
-
 function importMeanings() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		var output = {
@@ -577,6 +614,9 @@ function importDistricts() {
 			seat: input.Seat,
 			area: parseInt(input.Area),
 			population: parseInt(input.Population),
+			links: {
+				wikipedia: input.WikiLink,
+			},
 		};
 		callback(null, utils.cleanobj(output));
 	});

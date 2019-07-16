@@ -17,7 +17,7 @@
 		apollo: {
 			search: {
 				query: gql`query search($term: String) {
-					search(filter: {term: $term}) {
+					search(term: $term) {
 						type
 						code
 						name

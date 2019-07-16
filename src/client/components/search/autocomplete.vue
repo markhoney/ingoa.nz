@@ -17,7 +17,7 @@
 		apollo: {
 			autocomplete: {
 				query: gql`query autocomplete($term: String, $lang: String) {
-					autocomplete(filter: {term: $term, lang: $lang}) {
+					autocomplete(term: $term, lang: $lang) {
 						text
 						value
 					}

@@ -1,26 +1,26 @@
-ID	Number	Name	TeReo	Island	IslandID	Part	PartID	Map	MapID	GooglePlaceName	GooglePlaceID	Wikipedia
-re_1	1	Wellington	Te Whanganui ā Tara	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Wellington	ChIJy3TpSfyxOG0RcLQTomPvAAo	https://en.wikipedia.org/wiki/Wellington_Region
-re_2	2	Manawatū	Manawatū	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Manawatu	ChIJT6NU85_MQW0RMKyiQ2HvAAQ	https://en.wikipedia.org/wiki/Manawatu_District
-re_3	3	Rangitikeī	Rangitikeī	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Rangitikei	ChIJ02ZW_qBsam0R8KyiQ2HvAAQ	https://en.wikipedia.org/wiki/Rangitikei_District
-re_4	4	Taupō	Taupō	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Taupo	ChIJlTlmoTVcaW0RIq7TvZ7azEo	https://en.wikipedia.org/wiki/Taupo_District
-re_5	5	Whanganui	Whanganui	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Whanganui District	ChIJw02CFVLGam0RIK6iQ2HvAAQ	https://en.wikipedia.org/wiki/Whanganui_District
-re_6	6	Taranaki	Taranaki	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Taranaki	ChIJKbaycjcEFW0R8b8kFBWuJPQ	https://en.wikipedia.org/wiki/Taranaki
-re_7	7	Wairarapa	Wairarapa	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	South Wairarapa District	ChIJy4Fhqcs2R20RUK2iQ2HvAAQ	https://en.wikipedia.org/wiki/Wairarapa
-re_8	8	Hawkes Bay	Te Matau-a-Māui	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Hawkes Bay	ChIJwYEchkOzaW0RZyhYJpjiVAQ	https://en.wikipedia.org/wiki/Hawke%27s_Bay_Region
-re_9	9	East Coast	Te Tai Rāwhiti	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Gisborne District	ChIJywobglO-ZW0RHvjoTHu-q8w	https://en.wikipedia.org/wiki/Gisborne_District
-re_10	10	Eastern Bay of Plenty	Te Moana-a-Toi me te Urewera	North Island	is_1	Upper North Island	pa_2	Lower North Island	ma_1	Bay of Plenty	ChIJZVO9teMdb20REOnhQ55OiPs	https://en.wikipedia.org/wiki/Bay_of_Plenty
-re_11	11	Western Bay of Plenty	Waiariki	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Bay of Plenty	ChIJZVO9teMdb20REOnhQ55OiPs	https://en.wikipedia.org/wiki/Bay_of_Plenty
-re_12	12	Coromandel	Te Tara-o-te-Ika a Māui	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Coromandel	ChIJyx2VcyD6cm0RKHS5gdek8Xo	https://en.wikipedia.org/wiki/Coromandel_Peninsula
-re_13	13	Hauraki	Hauraki	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Hauraki	ChIJsTtaW3GCbW0R0KuiQ2HvAAQ	https://en.wikipedia.org/wiki/Hauraki_District
-re_14	14	King Country	Te Rohe Pōtae	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Waitomo	ChIJr-dUN26kbG0REK6iQ2HvAAQ	https://en.wikipedia.org/wiki/King_Country
-re_15	15	Waikato	Waikato	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Waikato	ChIJ9Zg2xrg5bW0RwK2iQ2HvAAQ	https://en.wikipedia.org/wiki/Waikato_District
-re_16	16	Auckland	Tāmaki	North Island	is_1	Upper North Island	pa_2	Auckland and Northland	ma_3	Auckland	ChIJ--acWvtHDW0RF5miQ2HvAAU	https://en.wikipedia.org/wiki/Auckland_Region
-re_17	17	Northland	Te Tai Tokerau	North Island	is_1	Upper North Island	pa_2	Auckland and Northland	ma_3	Northland	ChIJSXUwhBupC20RTDf7LvIIKT0	https://en.wikipedia.org/wiki/Northland_Region
-re_18	18	Other	Ētahi atu	Other	is_3	Upper North Island	pa_2					
-re_19	19	Top of the South	Te Tauihu ō te Waka	South Island	is_2	South Island	pa_3	Northern and Eastern South Island	ma_4	Tasman	ChIJp4D0-_oSO20RxHRglie6KJk	https://en.wikipedia.org/wiki/Marlborough_Region
-re_20	20	South Island East Coast	Te Tairāwhiti ō Te Waipounamu	South Island	is_2	South Island	pa_3	Northern and Eastern South Island	ma_4	Canterbury	ChIJA9l1eDPYLW0RgeJpMTBkdzM	https://en.wikipedia.org/wiki/Canterbury,_New_Zealand
-re_21	21	Otago	Ōtākau	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Otago	ChIJFe1jDnUQK6gRt_6SQX6lQmA	https://en.wikipedia.org/wiki/Otago
-re_22	22	The Southern Lakes	Ngā Roto ō te Tonga	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Queenstown Lakes District	ChIJJZSIXgcW1akRoFV5hIbvAAQ	https://en.wikipedia.org/wiki/Southern_Lakes_(New_Zealand)
-re_23	23	Southland	Murihiku	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Southland	ChIJzbQ_BcVz1KkRIhhERwwn9VU	https://en.wikipedia.org/wiki/Southland,_New_Zealand
-re_24	24	West Coast	Te Tai Poutini	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	West Coast	ChIJ2Yjvx8umJW0Romz7lRXnyOE	https://en.wikipedia.org/wiki/West_Coast,_New_Zealand
-re_25	25	Chatham Islands	Wharekauri/Rēkōhu	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Chatham Islands	ChIJM-fHqWXos3IRiC_KQFZExk8	https://en.wikipedia.org/wiki/Chatham_Islands
+ID	Number	Name	TeReo	Island	IslandID	Part	PartID	Map	MapID	GooglePlaceName	GooglePlaceID	WikiLink	Wikipedia
+re_1	1	Wellington	Te Whanganui ā Tara	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Wellington	ChIJy3TpSfyxOG0RcLQTomPvAAo	https://en.wikipedia.org/wiki/Wellington_Region	Wellington Region
+re_2	2		Manawatū	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Manawatu	ChIJT6NU85_MQW0RMKyiQ2HvAAQ	https://en.wikipedia.org/wiki/Manawatu_District	Manawatu District
+re_3	3		Rangitikeī	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Rangitikei	ChIJ02ZW_qBsam0R8KyiQ2HvAAQ	https://en.wikipedia.org/wiki/Rangitikei_District	Rangitikei District
+re_4	4		Taupō	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Taupo	ChIJlTlmoTVcaW0RIq7TvZ7azEo	https://en.wikipedia.org/wiki/Taupo_District	Taupo District
+re_5	5		Whanganui	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Whanganui District	ChIJw02CFVLGam0RIK6iQ2HvAAQ	https://en.wikipedia.org/wiki/Whanganui_District	Whanganui District
+re_6	6		Taranaki	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Taranaki	ChIJKbaycjcEFW0R8b8kFBWuJPQ	https://en.wikipedia.org/wiki/Taranaki	Taranaki
+re_7	7		Wairarapa	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	South Wairarapa District	ChIJy4Fhqcs2R20RUK2iQ2HvAAQ	https://en.wikipedia.org/wiki/Wairarapa	Wairarapa
+re_8	8	Hawkes Bay	Te Matau-a-Māui	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Hawkes Bay	ChIJwYEchkOzaW0RZyhYJpjiVAQ	https://en.wikipedia.org/wiki/Hawke%27s_Bay_Region	Hawke's Bay Region
+re_9	9	East Coast	Te Tai Rāwhiti	North Island	is_1	Lower North Island	pa_1	Lower North Island	ma_1	Gisborne District	ChIJywobglO-ZW0RHvjoTHu-q8w	https://en.wikipedia.org/wiki/Gisborne_District	Gisborne District
+re_10	10	Eastern Bay of Plenty	Te Moana-a-Toi me te Urewera	North Island	is_1	Upper North Island	pa_2	Lower North Island	ma_1	Bay of Plenty	ChIJZVO9teMdb20REOnhQ55OiPs	https://en.wikipedia.org/wiki/Bay_of_Plenty	Bay of Plenty
+re_11	11	Western Bay of Plenty	Waiariki	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Bay of Plenty	ChIJZVO9teMdb20REOnhQ55OiPs	https://en.wikipedia.org/wiki/Bay_of_Plenty	Bay of Plenty
+re_12	12	Coromandel	Te Tara-o-te-Ika a Māui	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Coromandel	ChIJyx2VcyD6cm0RKHS5gdek8Xo	https://en.wikipedia.org/wiki/Coromandel_Peninsula	Coromandel Peninsula
+re_13	13		Hauraki	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Hauraki	ChIJsTtaW3GCbW0R0KuiQ2HvAAQ	https://en.wikipedia.org/wiki/Hauraki_District	Hauraki District
+re_14	14	King Country	Te Rohe Pōtae	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Waitomo	ChIJr-dUN26kbG0REK6iQ2HvAAQ	https://en.wikipedia.org/wiki/King_Country	King Country
+re_15	15		Waikato	North Island	is_1	Upper North Island	pa_2	Central North Island	ma_2	Waikato	ChIJ9Zg2xrg5bW0RwK2iQ2HvAAQ	https://en.wikipedia.org/wiki/Waikato_District	Waikato District
+re_16	16	Auckland	Tāmaki	North Island	is_1	Upper North Island	pa_2	Auckland and Northland	ma_3	Auckland	ChIJ--acWvtHDW0RF5miQ2HvAAU	https://en.wikipedia.org/wiki/Auckland_Region	Auckland Region
+re_17	17	Northland	Te Tai Tokerau	North Island	is_1	Upper North Island	pa_2	Auckland and Northland	ma_3	Northland	ChIJSXUwhBupC20RTDf7LvIIKT0	https://en.wikipedia.org/wiki/Northland_Region	Northland Region
+re_18	18	Other	Ētahi atu	Other	is_3	Upper North Island	pa_2						
+re_19	19	Top of the South	Te Tauihu ō te Waka	South Island	is_2	South Island	pa_3	Northern and Eastern South Island	ma_4	Tasman	ChIJp4D0-_oSO20RxHRglie6KJk	https://en.wikipedia.org/wiki/Marlborough_Region	Marlborough Region
+re_20	20	South Island East Coast	Te Tairāwhiti ō Te Waipounamu	South Island	is_2	South Island	pa_3	Northern and Eastern South Island	ma_4	Canterbury	ChIJA9l1eDPYLW0RgeJpMTBkdzM	https://en.wikipedia.org/wiki/Canterbury,_New_Zealand	Canterbury, New Zealand
+re_21	21	Otago	Ōtākau	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Otago	ChIJFe1jDnUQK6gRt_6SQX6lQmA	https://en.wikipedia.org/wiki/Otago	Otago
+re_22	22	The Southern Lakes	Ngā Roto ō te Tonga	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Queenstown Lakes District	ChIJJZSIXgcW1akRoFV5hIbvAAQ	https://en.wikipedia.org/wiki/Southern_Lakes_(New_Zealand)	Southern Lakes (New Zealand)
+re_23	23	Southland	Murihiku	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Southland	ChIJzbQ_BcVz1KkRIhhERwwn9VU	https://en.wikipedia.org/wiki/Southland,_New_Zealand	Southland, New Zealand
+re_24	24	West Coast	Te Tai Poutini	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	West Coast	ChIJ2Yjvx8umJW0Romz7lRXnyOE	https://en.wikipedia.org/wiki/West_Coast,_New_Zealand	West Coast, New Zealand
+re_25	25	Chatham Islands	Wharekauri/Rēkōhu	South Island	is_2	South Island	pa_3	Southern and Western South Island	ma_5	Chatham Islands	ChIJM-fHqWXos3IRiC_KQFZExk8	https://en.wikipedia.org/wiki/Chatham_Islands	Chatham Islands

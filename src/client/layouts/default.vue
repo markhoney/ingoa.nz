@@ -14,9 +14,9 @@
 </template>
 
 <script>
-	import toolbar from '@/components/headers/toolbar.vue';
+	import toolbar from '@/components/base/headers/toolbar.vue';
 	import drawer from '@/components/menu/drawer.vue';
-	import mainfooter from '@/components/menu/footer.vue';
+	import mainfooter from '@/components/base/footer.vue';
 
 	export default {
 		components: {

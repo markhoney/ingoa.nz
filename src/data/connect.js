@@ -149,6 +149,7 @@ async function addNominatimLocations() {
 									const name = utils.simplify(placename.display_name.split(",")[0]);
 									if (name == utils.simplify(place.title.en)) placename.score += 1;
 									if (name == utils.simplify(place.title.en + feature.title.en)) placename.score += 1;
+									if (name == utils.simplify(place.title.en + feature.title.mi)) placename.score += 1;
 								});
 								placenames = placenames.sort((a, b) => a.score > b.score);
 								const foundplace = placenames[0];
@@ -211,6 +212,28 @@ function addGazetteerLocations() {
 	delete db.gazetteer;
 }
 
+async function addWikipediaIntros() {
+	const wikipedia = axios.create({baseURL: "https://en.wikipedia.org/api/rest_v1/page/summary/"});
+	for (const collection of ['island', 'region', 'district', 'zone', 'tribe', 'group', 'feature']) {
+		for (const record of db[collection]) {
+			if (record.links && record.links.wikipedia && ((record.notes && !record.notes.wikipedia) || !record.notes)) {
+			//if (record.links && record.links.wikipedia) {
+				let wiki;
+				const url = record.links.wikipedia.replace("https://en.wikipedia.org/wiki/", "");
+				try {
+					wiki = await wikipedia.get(url);
+				} catch(error) {
+					//console.log(error);
+				}
+				if (wiki && wiki.data) {
+					if (!record.notes) record.notes = {};
+					record.notes.wikipedia = wiki.data.extract;
+				}
+			}
+		}
+	}
+}
+
 function deleteNamesPlaces() {
 	delete db.name;
 	delete db.place;
@@ -218,8 +241,14 @@ function deleteNamesPlaces() {
 
 function writeData() {
 	for (const collection in db) {
+		writeCollection(collection);
+	}
+}
+
+function writeCollection(collection) {
+	if (db[collection]) {
 		fs.writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection])).replace(/^\[{/, "[\n\t{").replace(/}\]$/, "}\n]").replace(/},{/g, "},\n\t{"));
-	}	
+	}
 }
 
 async function runAll() {
@@ -243,6 +272,8 @@ async function runAll() {
 	await addNominatimLocations();
 	console.log("Adding Location Coordinates from the Gazetteer...");
 	addGazetteerLocations();
+	console.log("Adding Intros from Wikipedia...");
+	await addWikipediaIntros();
 	console.log("Deleting Names & Places...");
 	deleteNamesPlaces();
 	console.log("Writing Data...");

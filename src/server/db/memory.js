@@ -16,12 +16,21 @@ db.island.forEach((island, index) => {
 	if (!island.maps.length) delete island.maps;
 	island.regions = db.region.filter(region => region.island_id == island._id);
 	if (island.speaker_ids) island.speakers = db.speaker.filter(speaker => island.speaker_ids.includes(speaker._id));
-	island.placenames = db.placename.filter(placename => placename.zone_id == island._id);
+	island.placenames = db.placename.filter(placename => placename.island_id == island._id);
 	island.placenames.forEach((placename, index) => {
+		placename.island = island;
 		placename.previous = island.placenames[index - 1];
 		if (!placename.previous) delete placename.previous;
 		placename.next = island.placenames[index + 1];
 		if (!placename.next) delete placename.next;
+		placename.names.forEach(name => {
+			name.placename = placename;
+		});
+		if (placename.places) {
+			placename.places.forEach(place => {
+				place.placename = placename;
+			});
+		}
 	});
 });
 
@@ -34,12 +43,21 @@ db.part.forEach((part, index) => {
 	part.maps = db.map.filter(map => map.part_id == part._id);
 	part.regions = db.region.filter(region => region.part_id == part._id);
 	part.speakers = db.speaker.filter(speaker => part.speaker_ids.includes(speaker._id));
-	part.placenames = db.placename.filter(placename => placename.zone_id == part._id);
+	part.placenames = db.placename.filter(placename => placename.part_id == part._id);
 	part.placenames.forEach((placename, index) => {
+		placename.part = part;
 		placename.previous = part.placenames[index - 1];
 		if (!placename.previous) delete placename.previous;
 		placename.next = part.placenames[index + 1];
 		if (!placename.next) delete placename.next;
+		placename.names.forEach(name => {
+			name.placename = placename;
+		});
+		if (placename.places) {
+			placename.places.forEach(place => {
+				place.placename = placename;
+			});
+		}
 	});
 });
 
@@ -79,7 +97,16 @@ db.group.forEach((group, index) => {
 	group.next = db.group[index + 1];
 	if (!group.next) delete group.next;
 });
-delete db.place;
+
+db.feature.forEach((feature, index) => {
+	feature.places = db.place.filter(place => place.feature_id == feature._id);
+	feature.groups = db.group.filter(group => group.feature_id == feature._id);
+	feature.previous = db.feature[index - 1];
+	if (!feature.previous) delete feature.previous;
+	feature.next = db.feature[index + 1];
+	if (!feature.next) delete feature.next;
+});
+//delete db.place;
 
 db.tribe.forEach((tribe, index) => {
 	tribe.zones = db.zone.filter(zone => zone.tribe_ids && zone.tribe_ids.includes(tribe._id));
@@ -87,14 +114,6 @@ db.tribe.forEach((tribe, index) => {
 	if (!tribe.previous) delete tribe.previous;
 	tribe.next = db.tribe[index + 1];
 	if (!tribe.next) delete tribe.next;
-});
-
-db.feature.forEach((feature, index) => {
-	feature.placenames = db.placename.filter(placename => placename.places && placename.places.feature_id == feature._id);
-	feature.previous = db.feature[index - 1];
-	if (!feature.previous) delete feature.previous;
-	feature.next = db.feature[index + 1];
-	if (!feature.next) delete feature.next;
 });
 
 db.district.forEach((district, index) => {
@@ -131,18 +150,14 @@ db.zone.forEach((zone, index) => {
 	if (!zone.next) delete zone.next;
 	zone.speakers = db.speaker.filter(speaker => zone.speaker_ids.includes(speaker._id));
 	zone.placenames = db.placename.filter(placename => placename.zone_id == zone._id);
+	zone.groups = db.group.filter(group => group.zone_id == zone._id);
 	zone.addenda = db.placename.filter(placename => placename.addendum_ids && placename.addendum_ids.includes(zone._id));
 	if (!zone.addenda.length) delete zone.addenda;
 	zone.featured = zone.placenames.filter(placename => placename.featured);
 	if (zone.maplink && zone.maplink.map_id) zone.maplink.map = db.map.find(map => map._id == zone.maplink.map_id);
 	if (zone.tribe_ids) zone.tribes = db.tribe.filter(tribe => zone.tribe_ids.includes(tribe._id));
 	zone.placenames.forEach((placename, index) => {
-		placename.island = db.island.find(island => island._id == placename.island_id);
-		if (!placename.island) delete placename.island;
-		placename.part = db.part.find(part => part._id == placename.part_id);
-		if (!placename.part) delete placename.part;
-		placename.zone = db.zone.find(zone => zone._id == placename.zone_id);
-		if (!placename.zone) delete placename.zone;
+		placename.zone = zone;
 		if (placename.addendum_ids) placename.addendum_zones = db.zone.filter(zone => placename.addendum_ids.includes(zone._id));
 		if (placename.see) {
 			placename.see.forEach(see => {
@@ -173,7 +188,7 @@ db.zone.forEach((zone, index) => {
 		}
 	});
 });
-delete db.name;
+//delete db.name;
 
 const mi = require('../../client/locales/mi.json');
 db.search = {en: [], mi: []};
@@ -217,13 +232,15 @@ db.placename.forEach(placename => {
 			if (placename[nametype]) {
 				placename[nametype].forEach(item => {
 					for (let title of Object.values(item.title)) {
+						const zonepartisland = (placename.zone || placename.part || placename.island);
 						placenames.en[title] = {
-							text: title + " - " + (placename.zone.title.en || placename.zone.title.mi) + " (placename)",
-							value: "/" + ["placename", placename.zone.slug.en, placename.slug.en].join("/"),
+							//text: title + " - " + (placename.zone ? placename.zone.title.en || placename.zone.title.mi : (placename.island ? placename.island.title.en || placename.island.title.mi : placename.part.title.en || placename.part.title.mi)) + " (placename)",
+							text: title + " - " + (zonepartisland.title.en || zonepartisland.title.mi) + " (placename)",
+							value: "/" + ["placename", zonepartisland.slug.en, placename.slug.en].join("/"),
 						};
 						placenames.mi[title] = {
-							text: title + " - " + (placename.zone.title.mi || placename.zone.title.en) + " (" + mi.placename + ")",
-							value: "/mi/" + [mi.placename, placename.zone.slug.en, placename.slug.en].join("/"),
+							text: title + " - " + (zonepartisland.title.mi || zonepartisland.title.en) + " (" + mi.placename + ")",
+							value: "/mi/" + [mi.placename, zonepartisland.slug.mi, placename.slug.mi].join("/"),
 						};
 					}
 				});
@@ -232,13 +249,13 @@ db.placename.forEach(placename => {
 	}
 });
 
-db.total = {};
-['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'district'].forEach(collection => {
-	db.total[collection] = db[collection].length;
-});
-
-
 db.search.en = db.search.en.concat(Object.values(placenames.en));
 db.search.mi = db.search.mi.concat(Object.values(placenames.mi));
+
+db.total = {};
+['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'district', 'place', 'name'].forEach(collection => {
+	//db[collection] = db[collection].sort((a, b) => a._id - b._id);
+	db.total[collection] = db[collection].length;
+});
 
 module.exports = db;

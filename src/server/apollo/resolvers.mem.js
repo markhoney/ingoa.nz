@@ -70,11 +70,17 @@ module.exports = function(db) {
 			placename(obj, args) {
 				return getRecord(db.placename, args);
 			},
+			places(obj, args) {
+				return getRecords(db.place, args);
+			},
 			place(obj, args) {
-				return getRecord(db.placename, args);
+				return getRecord(db.place, args);
+			},
+			names(obj, args) {
+				return getRecords(db.name, args);
 			},
 			name(obj, args) {
-				return getRecord(db.placename, args);
+				return getRecord(db.name, args);
 			},
 			search(obj, args) {
 				return getSearch(db.search, args);
@@ -95,7 +101,7 @@ function getSearch(collection, search) {
 		return collection.filter(record => {
 			if (count >= 10) return false;
 			for (const term of search.split(" ")) {
-				if (!record.name.includes(term)) return false;
+				if (!record.text.includes(term)) return false;
 			}
 			count++;
 			return true;
@@ -105,25 +111,27 @@ function getSearch(collection, search) {
 }
 
 function getAutocomplete(collection, search) {
-	if (search && search.filter && search.filter.lang && search.filter.term && search.filter.term.length >= 3) return collection[search.filter.lang].filter(record => record.name.includes(search.filter.term));
+	if (search && search.lang && search.term && search.term.length >= 3) return collection[search.lang].filter(record => record.text.includes(search.term));
 	return [];
 }
 
 function getRecord(collection, args) {
-	if (args.filter) {
-		if (args.filter._id) return collection.find(record => record._id == args.filter._id);
-		//if (args.filter.code) return collection.find(record => record.code == args.filter.code);
-		//if (args.filter.slug) return collection.find(record => record.slug[args.filter.lang] == args.filter.slug);
-		if (args.filter.slug) return collection.find(record => record.slug.mi == args.filter.slug || record.slug.en == args.filter.slug);
+	if (args.find) {
+		if (args.find._id) return collection.find(record => record._id == args.find._id);
+		if (args.find.slug) return collection.find(record => record.slug.mi == args.find.slug || record.slug.en == args.find.slug);
 	}
 	return [];
 }
 
 function getRecords(collection, args) {
 	//if (args.filter) collection = collection.filter(record => record[args.filter.field] == args.filter.value);
-	if (args.filter) collection = collection.filter(record => get(record, args.filter.field + (args.filter.field.includes("slug") ? "." + args.filter.lang : "")) == args.filter.value);
+	if (args.filter && args.filter.length) {
+		args.filter.forEach(filter => {
+			collection = collection.filter(record => get(record, filter.field + (filter.field.includes("slug") ? "." + args.lang : "")) == filter.value);
+		});
+	}
 	if (args.sort && args.sort.field) {
-		collection = sortBy(collection, args.sort.field || '_id');
+		collection = sortBy(collection, [args.sort.field, '_id']);
 		if ( args.sort.order == -1) collection.reverse();
 	}
 	if (args.pagination) {

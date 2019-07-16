@@ -29,7 +29,7 @@
 		apollo: {
 			island: {
 				query: gql`query island($id: String) {
-					island(filter: {_id: $id}) {
+					island(find: {_id: $id}) {
 						_id
 						slug {
 							en

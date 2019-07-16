@@ -11,7 +11,7 @@
 		apollo: {
 			speaker: {
 				query: gql`query speaker($slug: String, $lang: String) {
-					speaker(filter: {slug: $slug, lang: $lang}) {
+					speaker(find: {slug: $slug}, lang: $lang) {
 						_id
 						title {
 							en

@@ -16,7 +16,6 @@ module.exports = {
 		graphServer: graph,
 		graphClient: (process.env.BASE_URL && !process.env.BASE_URL.includes(host) ? process.env.BASE_URL + '/graphql' : graph),
 		dev: process.env.NODE_ENV !== 'production',
-		googleMapsAPI: process.env.GOOGLE_API_KEY,
 	},
 	mode: 'universal',
 	srcDir: 'src/client/',
@@ -56,10 +55,10 @@ module.exports = {
 
 	generate: {
 		//dir: 'docs',
-		//routes: require('./src/routes/routes'),
-		routes: function() {
+		routes: require('./src/routes/dynamic'),
+		/*routes: function() {
 			return require('./routes');
-		}
+		}*/
 	},
 
 	plugins: [
@@ -72,6 +71,7 @@ module.exports = {
 
 	modules: [
 		'@nuxtjs/apollo',
+		'@nuxtjs/dotenv',
 		'@nuxtjs/pwa',
 		'@nuxtjs/sitemap',
 		'@nuxtjs/webpackmonitor',
@@ -90,9 +90,9 @@ module.exports = {
 				defaultLocale: 'en',
 				lazy: true,
 				langDir: 'locales/',
-				locales: require('./src/client/locales/locales.json'),
+				locales: require('./src/client/locales.json'),
 				parsePages: false,
-				pages: require('./src/client/locales/pages.json'),
+				pages: require('./src/routes/pages'),
 				vuex: false,
 			},
 		],

@@ -8,7 +8,7 @@
 		"prepare": "run-s prepare:nominatim:start prepare:import prepare:connect prepare:nominatim:stop",
 		"prepare:import": "node src/data/import.js",
 		"prepare:nedb": "node src/data/import.js nedb",
-		"prepare:routes": "node src/routes/staticroutes.js",
+		"prepare:routes": "node src/client/locales/staticroutes.js",
 		"prepare:connect": "node src/data/connect.js",
 		"prepare:images": "node src/client/static/img/staticmaps.js",
 		"prepare:apollo": "cross-env NODE_ENV=development cd src/apollo service:push --config=./src/server/apollo/apollo.config.js --key=service:ingoa:78h4D9zEtDLOy15k554-IA",
@@ -51,6 +51,7 @@
 	},
 	"dependencies": {
 		"@nuxtjs/apollo": "^4.0.0-rc7",
+		"@nuxtjs/dotenv": "^1.3.0",
 		"@nuxtjs/feed": "^1.1.0",
 		"@nuxtjs/google-analytics": "^2.2.0",
 		"@nuxtjs/pwa": "^3.0.0-beta.16",

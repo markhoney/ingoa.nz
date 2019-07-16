@@ -13,7 +13,7 @@
 
 <script>
 	import gql from 'graphql-tag';
-	import imageheader from '@/components/headers/image.vue';
+	import imageheader from '@/components/base/headers/image.vue';
 	import imagemap from '@/components/maps/image/map.vue';
 
 	export default {

@@ -17,10 +17,34 @@
 			imagemap,
 			regions
 		},
+		apollo: {
+			map: {
+				query: gql`query map($slug: String, $lang: String) {
+					map(find: {slug: $slug}, lang: $lang) {
+						_id
+						title {
+							en
+							mi
+						}
+					}
+				}`,
+				variables() {
+					return {
+						slug: this.$route.params.map,
+						lang: this.$i18n.locale,
+					};
+				},
+			},
+		},
 		computed: {
 			slug: function() {
 				return this.$route.params.map;
 			}
-		}
+		},
+		head() {
+			return {
+				title: (this.map ? this.localeCurrent(this.map.title) + ' (' + this.$tc('map') + ')' : ''),
+			};
+		},
 	};
 </script>

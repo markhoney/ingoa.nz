@@ -1,68 +1,68 @@
-ID	Number	Zone	Island	IslandID	Name	Seat	Area	Population
-di_1	1	127	North Island	is_1	Far North District	Kaikohe	6677	64400
-di_2	2	128	North Island	is_1	Whangarei District	Whangarei	2712	91400
-di_3	3	124	North Island	is_1	Kaipara District	Dargaville	3109	23200
-di_4	4	116	North Island	is_1	Auckland	Auckland	4940	1695900
-di_5	5	85	North Island	is_1	Thames-Coromandel District	Thames	2207	29700
-di_6	6	86	North Island	is_1	Hauraki District	Paeroa	1270	19950
-di_7	7	104	North Island	is_1	Waikato District	Ngaruawahia	4403	75300
-di_8	8	100	North Island	is_1	Matamata-Piako District	Te Aroha	1755	35200
-di_9	9	103	North Island	is_1	Hamilton City	Hamilton	110	169300
-di_10	10	94	North Island	is_1	Waipa District	Te Awamutu	1470	54000
-di_11	11	95	North Island	is_1	Otorohanga District	Otorohanga	1999	10250
-di_12	12	98	North Island	is_1	South Waikato District	Tokoroa	1819	24400
-di_13	13	93	North Island	is_1	Waitomo District	Te Kuiti	3535	9640
-di_14	14	15	North Island	is_1	Taupo District	Taupo	6333	37200
-di_15	15	73	North Island	is_1	Western Bay of Plenty District	Greerton	1951	50100
-di_16	16	76	North Island	is_1	Tauranga City	Tauranga	135	135000
-di_17	17	69	North Island	is_1	Rotorua District	Rotorua	2409	72500
-di_18	18	59	North Island	is_1	Whakatane District	Whakatane	4450	35700
-di_19	19		North Island	is_1	Kawerau District	Kawerau	24	7080
-di_20	20	53	North Island	is_1	Opotiki District	Opotiki	3089	9100
-di_21	21	46	North Island	is_1	Gisborne District	Gisborne	8386	49100
-di_22	22	42	North Island	is_1	Wairoa District	Wairoa	4077	8230
-di_23	23	40	North Island	is_1	Hastings District	Hastings	5227	80600
-di_24	24	41	North Island	is_1	Napier City	Napier	105	62800
-di_25	25	38	North Island	is_1	Central Hawke's Bay District	Waipawa	3332	14150
-di_26	26	29	North Island	is_1	New Plymouth District	New Plymouth	2205	81900
-di_27	27	24	North Island	is_1	Stratford District	Stratford	2163	9510
-di_28	28	26	North Island	is_1	South Taranaki District	Hawera	3575	28300
-di_29	29	22	North Island	is_1	Ruapehu District	Taumarunui	6734	12750
-di_30	30	20	North Island	is_1	Whanganui District	Whanganui	2373	45200
-di_31	31	19	North Island	is_1	Rangitikei District	Marton	4484	15150
-di_32	32	10	North Island	is_1	Manawatu District	Feilding	2657	30800
-di_33	33	9	North Island	is_1	Palmerston North City	Palmerston North	395	88700
-di_34	34	37	North Island	is_1	Tararua District	Dannevirke	4364	17900
-di_35	35	7	North Island	is_1	Horowhenua District	Levin	1064	33000
-di_36	36	5	North Island	is_1	Kapiti Coast District	Paraparaumu	731	53200
-di_37	37	4	North Island	is_1	Porirua City	Porirua	175	56800
-di_38	38	3	North Island	is_1	Upper Hutt City	Upper Hutt	540	43700
-di_39	39	2	North Island	is_1	Lower Hutt City	Lower Hutt	376	105900
-di_40	40	1	North Island	is_1	Wellington City	Wellington	290	216300
-di_41	41	33	North Island	is_1	Masterton District	Masterton	2300	25700
-di_42	42	33	North Island	is_1	Carterton District	Carterton	1180	9340
-di_43	43	32	North Island	is_1	South Wairarapa District	Martinborough	2387	10450
-di_44	44	140	South Island	is_2	Tasman District	Richmond	9616	52100
-di_45	45	143	South Island	is_2	Nelson City	Nelson	424	51900
-di_46	46	146	South Island	is_2	Marlborough District	Blenheim	10458	46600
-di_47	47		South Island	is_2	Buller District	Westport	7942	10150
-di_48	48	174	South Island	is_2	Grey District	Greymouth	3474	13550
-di_49	49	173	South Island	is_2	Westland District	Hokitika	11828	8890
-di_50	50	147	South Island	is_2	Kaikoura District	Kaikoura	2047	3830
-di_51	51	148	South Island	is_2	Hurunui District	Amberley	8641	12850
-di_52	52	149	South Island	is_2	Waimakariri District	Rangiora	2217	60700
-di_53	53	150	South Island	is_2	Christchurch City	Christchurch	1415	388400
-di_54	54	153	South Island	is_2	Selwyn District	Rolleston	6381	62200
-di_55	55	154	South Island	is_2	Ashburton District	Ashburton	6183	34500
-di_56	56	155	South Island	is_2	Timaru District	Timaru	2733	47300
-di_57	57	157	South Island	is_2	Mackenzie District	Fairlie	7140	4670
-di_58	58	156	South Island	is_2	Waimate District	Waimate	3554	7930
-di_59	59	177	South Island	is_2	Chatham Islands Territory	Waitangi	794	650
-di_60	60	158	South Island	is_2	Waitaki District	Oamaru	7109	22300
-di_61	61		South Island	is_2	Central Otago District	Alexandra	9956	21000
-di_62	62	162	South Island	is_2	Queenstown-Lakes District	Queenstown	8719	39100
-di_63	63	160	South Island	is_2	Dunedin City	Dunedin	3287	130700
-di_64	64	161	South Island	is_2	Clutha District	Balclutha	6334	17700
-di_65	65	164	South Island	is_2	Southland District	Invercargill	29552	31400
-di_66	66	165	South Island	is_2	Gore District	Gore	1254	12500
-di_67	67	166	South Island	is_2	Invercargill City	Invercargill	389	55200
+ID	Number	Zone	Island	IslandID	Name	WikiLink	Wikipedia	Seat	Link	Area	Population
+di_1	1	127	North Island	is_1	Far North District	https://en.wikipedia.org/wiki/Far_North_District	Far North District	Kaikohe	https://en.wikipedia.org/wiki/Kaikohe	6677	64400
+di_2	2	128	North Island	is_1	Whangarei District	https://en.wikipedia.org/wiki/Whangarei_District	Whangarei District	Whangarei	https://en.wikipedia.org/wiki/Whangarei	2712	91400
+di_3	3	124	North Island	is_1	Kaipara District	https://en.wikipedia.org/wiki/Kaipara_District	Kaipara District	Dargaville	https://en.wikipedia.org/wiki/Dargaville	3109	23200
+di_4	4	116	North Island	is_1	Auckland	https://en.wikipedia.org/wiki/Auckland_Council	Auckland Council	Auckland	https://en.wikipedia.org/wiki/Auckland	4940	1695900
+di_5	5	85	North Island	is_1	Thames-Coromandel District	https://en.wikipedia.org/wiki/Thames-Coromandel_District	Thames-Coromandel District	Thames	https://en.wikipedia.org/wiki/Thames,_New_Zealand	2207	29700
+di_6	6	86	North Island	is_1	Hauraki District	https://en.wikipedia.org/wiki/Hauraki_District	Hauraki District	Paeroa	https://en.wikipedia.org/wiki/Paeroa	1270	19950
+di_7	7	104	North Island	is_1	Waikato District	https://en.wikipedia.org/wiki/Waikato_District	Waikato District	Ngaruawahia	https://en.wikipedia.org/wiki/Ngaruawahia	4403	75300
+di_8	8	100	North Island	is_1	Matamata-Piako District	https://en.wikipedia.org/wiki/Matamata-Piako_District	Matamata-Piako District	Te Aroha	https://en.wikipedia.org/wiki/Te_Aroha	1755	35200
+di_9	9	103	North Island	is_1	Hamilton City	https://en.wikipedia.org/wiki/Hamilton,_New_Zealand	Hamilton, New Zealand	Hamilton		110	169300
+di_10	10	94	North Island	is_1	Waipa District	https://en.wikipedia.org/wiki/Waipa_District	Waipa District	Te Awamutu	https://en.wikipedia.org/wiki/Te_Awamutu	1470	54000
+di_11	11	95	North Island	is_1	Otorohanga District	https://en.wikipedia.org/wiki/Otorohanga_District	Otorohanga District	Otorohanga		1999	10250
+di_12	12	98	North Island	is_1	South Waikato District	https://en.wikipedia.org/wiki/South_Waikato_District	South Waikato District	Tokoroa	https://en.wikipedia.org/wiki/Tokoroa	1819	24400
+di_13	13	93	North Island	is_1	Waitomo District	https://en.wikipedia.org/wiki/Waitomo_District	Waitomo District	Te Kuiti	https://en.wikipedia.org/wiki/Te_Kuiti	3535	9640
+di_14	14	15	North Island	is_1	Taupo District	https://en.wikipedia.org/wiki/Taupo_District	Taupo District	Taupo	https://en.wikipedia.org/wiki/Taupo	6333	37200
+di_15	15	73	North Island	is_1	Western Bay of Plenty District	https://en.wikipedia.org/wiki/Western_Bay_of_Plenty_District	Western Bay of Plenty District	Greerton		1951	50100
+di_16	16	76	North Island	is_1	Tauranga City	https://en.wikipedia.org/wiki/Tauranga_City_Council	Tauranga City Council	Tauranga	https://en.wikipedia.org/wiki/Tauranga	135	135000
+di_17	17	69	North Island	is_1	Rotorua District	https://en.wikipedia.org/wiki/Rotorua_District	Rotorua District	Rotorua		2409	72500
+di_18	18	59	North Island	is_1	Whakatane District	https://en.wikipedia.org/wiki/Whakatane_District	Whakatane District	Whakatane		4450	35700
+di_19	19		North Island	is_1	Kawerau District	https://en.wikipedia.org/wiki/Kawerau_District	Kawerau District	Kawerau		24	7080
+di_20	20	53	North Island	is_1	Opotiki District	https://en.wikipedia.org/wiki/Opotiki_District	Opotiki District	Opotiki		3089	9100
+di_21	21	46	North Island	is_1	Gisborne District	https://en.wikipedia.org/wiki/Gisborne_District	Gisborne District	Gisborne	https://en.wikipedia.org/wiki/Gisborne,_New_Zealand	8386	49100
+di_22	22	42	North Island	is_1	Wairoa District	https://en.wikipedia.org/wiki/Wairoa_District	Wairoa District	Wairoa		4077	8230
+di_23	23	40	North Island	is_1	Hastings District	https://en.wikipedia.org/wiki/Hastings_District	Hastings District	Hastings		5227	80600
+di_24	24	41	North Island	is_1	Napier City	https://en.wikipedia.org/wiki/Napier_City,_New_Zealand	Napier City, New Zealand	Napier		105	62800
+di_25	25	38	North Island	is_1	Central Hawke's Bay District	https://en.wikipedia.org/wiki/Central_Hawke%27s_Bay_District	Central Hawke's Bay District	Waipawa	https://en.wikipedia.org/wiki/Waipawa	3332	14150
+di_26	26	29	North Island	is_1	New Plymouth District	https://en.wikipedia.org/wiki/New_Plymouth_District	New Plymouth District	New Plymouth	https://en.wikipedia.org/wiki/New_Plymouth	2205	81900
+di_27	27	24	North Island	is_1	Stratford District	https://en.wikipedia.org/wiki/Stratford_District,_New_Zealand	Stratford District, New Zealand	Stratford		2163	9510
+di_28	28	26	North Island	is_1	South Taranaki District	https://en.wikipedia.org/wiki/South_Taranaki_District	South Taranaki District	Hawera	https://en.wikipedia.org/wiki/Hawera,_New_Zealand	3575	28300
+di_29	29	22	North Island	is_1	Ruapehu District	https://en.wikipedia.org/wiki/Ruapehu_District	Ruapehu District	Taumarunui	https://en.wikipedia.org/wiki/Taumarunui	6734	12750
+di_30	30	20	North Island	is_1	Whanganui District	https://en.wikipedia.org/wiki/Whanganui_District	Whanganui District	Whanganui	https://en.wikipedia.org/wiki/Whanganui	2373	45200
+di_31	31	19	North Island	is_1	Rangitikei District	https://en.wikipedia.org/wiki/Rangitikei_District	Rangitikei District	Marton	https://en.wikipedia.org/wiki/Marton,_New_Zealand	4484	15150
+di_32	32	10	North Island	is_1	Manawatu District	https://en.wikipedia.org/wiki/Manawatu_District	Manawatu District	Feilding	https://en.wikipedia.org/wiki/Feilding	2657	30800
+di_33	33	9	North Island	is_1	Palmerston North City	https://en.wikipedia.org/wiki/Palmerston_North_City	Palmerston North City	Palmerston North		395	88700
+di_34	34	37	North Island	is_1	Tararua District	https://en.wikipedia.org/wiki/Tararua_District	Tararua District	Dannevirke	https://en.wikipedia.org/wiki/Dannevirke	4364	17900
+di_35	35	7	North Island	is_1	Horowhenua District	https://en.wikipedia.org/wiki/Horowhenua_District	Horowhenua District	Levin	https://en.wikipedia.org/wiki/Levin,_New_Zealand	1064	33000
+di_36	36	5	North Island	is_1	Kapiti Coast District	https://en.wikipedia.org/wiki/Kapiti_Coast_District	Kapiti Coast District	Paraparaumu	https://en.wikipedia.org/wiki/Paraparaumu	731	53200
+di_37	37	4	North Island	is_1	Porirua City	https://en.wikipedia.org/wiki/Porirua_City	Porirua City	Porirua		175	56800
+di_38	38	3	North Island	is_1	Upper Hutt City	https://en.wikipedia.org/wiki/Upper_Hutt_City	Upper Hutt City	Upper Hutt		540	43700
+di_39	39	2	North Island	is_1	Lower Hutt City	https://en.wikipedia.org/wiki/Lower_Hutt_City	Lower Hutt City	Lower Hutt		376	105900
+di_40	40	1	North Island	is_1	Wellington City	https://en.wikipedia.org/wiki/Wellington_City_Council	Wellington City Council	Wellington		290	216300
+di_41	41	33	North Island	is_1	Masterton District	https://en.wikipedia.org/wiki/Masterton_District	Masterton District	Masterton		2300	25700
+di_42	42	33	North Island	is_1	Carterton District	https://en.wikipedia.org/wiki/Carterton_District,_New_Zealand	Carterton District, New Zealand	Carterton		1180	9340
+di_43	43	32	North Island	is_1	South Wairarapa District	https://en.wikipedia.org/wiki/South_Wairarapa_District	South Wairarapa District	Martinborough	https://en.wikipedia.org/wiki/Martinborough	2387	10450
+di_44	44	140	South Island	is_2	Tasman District	https://en.wikipedia.org/wiki/Tasman_District_Council	Tasman District Council	Richmond	https://en.wikipedia.org/wiki/Richmond,_New_Zealand	9616	52100
+di_45	45	143	South Island	is_2	Nelson City	https://en.wikipedia.org/wiki/Nelson_City_Council	Nelson City Council	Nelson	https://en.wikipedia.org/wiki/Nelson,_New_Zealand	424	51900
+di_46	46	146	South Island	is_2	Marlborough District	https://en.wikipedia.org/wiki/Marlborough_District,_New_Zealand	Marlborough District, New Zealand	Blenheim	https://en.wikipedia.org/wiki/Blenheim,_New_Zealand	10458	46600
+di_47	47		South Island	is_2	Buller District	https://en.wikipedia.org/wiki/Buller_District	Buller District	Westport	https://en.wikipedia.org/wiki/Westport,_New_Zealand	7942	10150
+di_48	48	174	South Island	is_2	Grey District	https://en.wikipedia.org/wiki/Grey_District	Grey District	Greymouth	https://en.wikipedia.org/wiki/Greymouth,_New_Zealand	3474	13550
+di_49	49	173	South Island	is_2	Westland District	https://en.wikipedia.org/wiki/Westland_District	Westland District	Hokitika	https://en.wikipedia.org/wiki/Hokitika	11828	8890
+di_50	50	147	South Island	is_2	Kaikoura District	https://en.wikipedia.org/wiki/Kaikoura_District	Kaikoura District	Kaikoura		2047	3830
+di_51	51	148	South Island	is_2	Hurunui District	https://en.wikipedia.org/wiki/Hurunui_District	Hurunui District	Amberley	https://en.wikipedia.org/wiki/Amberley,_New_Zealand	8641	12850
+di_52	52	149	South Island	is_2	Waimakariri District	https://en.wikipedia.org/wiki/Waimakariri_District	Waimakariri District	Rangiora	https://en.wikipedia.org/wiki/Rangiora	2217	60700
+di_53	53	150	South Island	is_2	Christchurch City	https://en.wikipedia.org/wiki/Christchurch_City_Council	Christchurch City Council	Christchurch	https://en.wikipedia.org/wiki/Christchurch	1415	388400
+di_54	54	153	South Island	is_2	Selwyn District	https://en.wikipedia.org/wiki/Selwyn_District	Selwyn District	Rolleston	https://en.wikipedia.org/wiki/Rolleston,_New_Zealand	6381	62200
+di_55	55	154	South Island	is_2	Ashburton District	https://en.wikipedia.org/wiki/Ashburton_District,_New_Zealand	Ashburton District, New Zealand	Ashburton		6183	34500
+di_56	56	155	South Island	is_2	Timaru District	https://en.wikipedia.org/wiki/Timaru_District	Timaru District	Timaru		2733	47300
+di_57	57	157	South Island	is_2	Mackenzie District	https://en.wikipedia.org/wiki/Mackenzie_District	Mackenzie District	Fairlie		7140	4670
+di_58	58	156	South Island	is_2	Waimate District	https://en.wikipedia.org/wiki/Waimate_District	Waimate District	Waimate		3554	7930
+di_59	59	177	South Island	is_2	Chatham Islands Territory	https://en.wikipedia.org/wiki/Chatham_Islands	Chatham Islands	Waitangi	https://en.wikipedia.org/wiki/Waitangi,_Chatham_Islands	794	650
+di_60	60	158	South Island	is_2	Waitaki District	https://en.wikipedia.org/wiki/Waitaki_District	Waitaki District	Oamaru	https://en.wikipedia.org/wiki/Oamaru	7109	22300
+di_61	61		South Island	is_2	Central Otago District	https://en.wikipedia.org/wiki/Central_Otago_District	Central Otago District	Alexandra	https://en.wikipedia.org/wiki/Alexandra,_New_Zealand	9956	21000
+di_62	62	162	South Island	is_2	Queenstown-Lakes District	https://en.wikipedia.org/wiki/Queenstown-Lakes_District	Queenstown-Lakes District	Queenstown	https://en.wikipedia.org/wiki/Queenstown,_New_Zealand	8719	39100
+di_63	63	160	South Island	is_2	Dunedin City	https://en.wikipedia.org/wiki/Dunedin_City_Council	Dunedin City Council	Dunedin		3287	130700
+di_64	64	161	South Island	is_2	Clutha District	https://en.wikipedia.org/wiki/Clutha_District	Clutha District	Balclutha	https://en.wikipedia.org/wiki/Balclutha,_New_Zealand	6334	17700
+di_65	65	164	South Island	is_2	Southland District	https://en.wikipedia.org/wiki/Southland_District	Southland District	Invercargill	https://en.wikipedia.org/wiki/Invercargill	29552	31400
+di_66	66	165	South Island	is_2	Gore District	https://en.wikipedia.org/wiki/Gore_District,_New_Zealand	Gore District, New Zealand	Gore		1254	12500
+di_67	67	166	South Island	is_2	Invercargill City	https://en.wikipedia.org/wiki/Invercargill_City	Invercargill City	Invercargill	https://en.wikipedia.org/wiki/Invercargill	389	55200

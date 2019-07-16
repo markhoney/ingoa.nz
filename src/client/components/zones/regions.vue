@@ -21,7 +21,7 @@
 		apollo: {
 			regions: {
 				query: gql`query regions($field: String, $value: String, $lang: String) {
-					regions(filter: {field: $field, value: $value, lang: $lang}) {
+					regions(filter: [{field: $field, value: $value}], lang: $lang) {
 						_id
 						code
 						title {

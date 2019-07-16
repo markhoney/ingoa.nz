@@ -41,7 +41,7 @@
 		apollo: {
 			region: {
 				query: gql`query region($id: String) {
-					region(filter: {_id: $id}) {
+					region(find: {_id: $id}) {
 						_id
 						slug {
 							en

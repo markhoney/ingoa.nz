@@ -1,8 +1,9 @@
 <template>
 	<section v-if="zone">
 		<imageheader :image="zone.images.landscape" :title="zone.title" :right="caseInitial($tc('zone', 1)) + ' ' + zone.number" />
-		<player :file="zone.audio.file" field="zone._id" :value="zone._id" :wave="false" />
-		<gmap field="zone._id" :value="zone._id" />
+		<wikipedia v-if="zone.notes.wikipedia" :text="zone.notes.wikipedia" :link="zone.links.wikipedia" source="Wikipedia" />
+		<player :file="zone.audio.file" field="zone._id" :value="zone._id" />
+		<mapplaces field="zone._id" :value="zone._id" />
 		<h3>{{$tc('speaker', 2) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
@@ -27,9 +28,10 @@
 
 <script>
 	import gql from 'graphql-tag';
-	import imageheader from '@/components/headers/image.vue';
+	import imageheader from '@/components/base/headers/image.vue';
+	import wikipedia from '@/components/base/textboxes/quote.vue';
 	import player from '@/components/audio/zone.vue';
-	import gmap from '@/components/maps/google/places.vue';
+	import mapplaces from '@/components/maps/leaflet/places.vue';
 	import island from '@/components/islands/card.vue';
 	import region from '@/components/regions/card.vue';
 	import speaker from '@/components/speakers/card.vue';
@@ -37,8 +39,9 @@
 	export default {
 		components: {
 			imageheader,
+			wikipedia,
 			player,
-			gmap,
+			mapplaces,
 			island,
 			region,
 			speaker,
@@ -46,12 +49,18 @@
 		apollo: {
 			zone: {
 				query: gql`query zone($slug: String, $lang: String) {
-					zone(filter: {slug: $slug, lang: $lang}) {
+					zone(find: {slug: $slug}, lang: $lang) {
             _id
 						number
 						title {
 							en
 							mi
+						}
+						links {
+							wikipedia
+						}
+						notes {
+							wikipedia
 						}
 						region {
 							_id
@@ -84,14 +93,11 @@
 		},
 		head() {
 			return {
-				title: (this.zone ? this.localeCurrent(this.zone.title) : null),
+				title: (this.zone ? this.localeCurrent(this.zone.title) + ' (' + this.$tc('zone') + ')' : null),
 			};
 		},
 	};
 </script>
 
 <style scoped>
-	v-parallax {
-		border-radius: 20px;
-	}
 </style>

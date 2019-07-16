@@ -1,9 +1,9 @@
 <template>
-	<section class="elevation-4 pa-5 my-3" style="background-color: #f1f3f4; border-radius: 20px;" v-if="current">
+	<section class="elevation-4 pa-5 my-3" v-if="current">
 		<h3 :title="current.title.phonetic" class="text-xs-center display-2">
-			<!--<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: localeCurrent(current.zone.slug), placename: localeCurrent(current.slug)}})">-->
+			<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: localeCurrent((current.placename.zone || current.placename.part || current.placename.island).slug), placename: localeCurrent(current.placename.slug)}})">
 				{{current.title | maori}}
-			<!--</nuxt-link>-->
+			</nuxt-link>
 		</h3>
 		<h4 class="text-xs-center display-1">
 			<template v-if="current.title.en">({{current.title | english}})</template><template v-else>&nbsp;</template>
@@ -17,14 +17,13 @@
 				{{current.spoken.speaker.title | locale(this.locale())}}
 			</nuxt-link>
 		</h4>
-		<!--<waveplayer v-if="wave" :file="file" :time.sync="currentTime" :placenames="placenames" />
-		<htmlplayer v-else      :file="file" :time.sync="currentTime" />-->
-		<htmlplayer ref="audio" :file="file" :time.sync="currentTime" :start="start" :stop="stop" />
+		<!--<player :file="file" :time.sync="currentTime" :placenames="placenames" />-->
+		<player ref="audio" :file="file" :time.sync="currentTime" :start="start" :stop="stop" />
 		<h2>{{$tc('name', 2) | titlecase}}</h2>
 		<ol start="0">
 			<!--<li v-for="place in placelist" :key="place._id" :class="{active: place._id == current._id}"><a :href="'#' + place._id" v-html="place.title"></a></li>-->
-			<li v-if="placenames.length && placenames[0].names[0].en == 'Intro'">{{placenames[0].names[0].en}}</li>
-			<li v-for="placename in placenames.filter(placename => placename.names[0].en != 'Intro')" :key="placename._id" v-ripple="{class: 'success--text'}">
+			<li v-if="placenames.length && placenames[0].names[0].title.mi == 'Intro'">{{placenames[0].names[0].title.mi}}</li>
+			<li v-for="placename in placenames.filter(placename => placename.names[0].title.mi != 'Intro')" :key="placename._id" v-ripple="{class: 'success--text'}">
 				<!--<nuxt-link
 					v-for="(name, index) in placename.names.filter(name => 'spoken' in name)"
 					:key="name.title.ascii"
@@ -32,7 +31,7 @@
 					:class="{active: name.title == current.title}"
 					:title="common && current.common ? current.common : ''"
 				>-->
-				<span v-for="(name, index) in placename.names.filter(name => name.spoken)" :class="[name, {active: name._id == current._id}]" :key="name._id" @click="jump(name.spoken.start, name.spoken.end)">
+				<span v-for="(name, index) in placename.names.filter(name => name.spoken)" :class="['name', {active: name._id == current._id}]" :key="name._id" @click="jump(name.spoken.start, name.spoken.end)">
 					{{name.title.mi}}<template v-if="index != (placename.names.filter(name => name.spoken).length - 1)">,</template>
 				</span>
 				<!--</nuxt-link>-->
@@ -48,13 +47,12 @@
 
 <script>
 	import gql from 'graphql-tag';
-	import htmlplayer from '@/components/audio/player/html.vue';
-	//import waveplayer from '@/components/audio/player/wave.vue';
+	import player from '@/components/audio/player/html.vue';
+	//import player from '@/components/audio/player/wave.vue';
 
 	export default {
 		components: {
-			htmlplayer,
-			//waveplayer,
+			player,
 		},
 		props: {
 			file: String,
@@ -80,9 +78,25 @@
 		apollo: {
 			placenames: {
 				query: gql`query placenames($field: String, $value: String, $lang: String) {
-					placenames(filter: {field: $field, value: $value, lang: $lang}) {
+					placenames(filter: [{field: $field, value: $value}], lang: $lang) {
 						_id
+						slug {
+							en
+							mi
+						}
 						zone {
+							slug {
+								en
+								mi
+							}
+						}
+						part {
+							slug {
+								en
+								mi
+							}
+						}
+						island {
 							slug {
 								en
 								mi
@@ -133,7 +147,12 @@
 		},
 		computed: {
 			bookmarks: function() {
-				if (this.placenames) return this.placenames.map(placename => placename.names).flat().filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
+				if (this.placenames) return this.placenames.map(placename => placename.names.map(name => {
+					return {
+						...name,
+						placename: placename,
+					}
+				})).flat().filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
 				//if (this.placenames) return this.placenames.map(placename => placename.names.filter(name => name.spoken)).flat().sort((a, b) => a.spoken.start - b.spoken.start);
 				return [];
 			},
@@ -156,11 +175,15 @@
 </script>
 
 <style scoped>
+	section {
+		background-color: #f1f3f4;
+		border-radius: 20px;
+	}
 	ol {
 		column-width: 12em;
 		list-style-position: inside;
 	}
-	.title {
+	.name {
 		cursor: pointer;
 	}
 	.active {

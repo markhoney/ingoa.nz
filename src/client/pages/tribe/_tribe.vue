@@ -11,7 +11,7 @@
 		apollo: {
 			tribe: {
 				query: gql`query tribe($slug: String, $lang: String) {
-					tribe(filter: {slug: $slug, lang: $lang}) {
+					tribe(find: {slug: $slug}, lang: $lang) {
 						_id
 						title {
 							en

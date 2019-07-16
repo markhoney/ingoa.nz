@@ -26,7 +26,7 @@
 		apollo: {
 			zone: {
 				query: gql`query zone($id: String) {
-					zone(filter: {_id: $id}) {
+					zone(find: {_id: $id}) {
 						_id
 						slug {
 							en

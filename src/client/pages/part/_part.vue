@@ -11,7 +11,7 @@
 		apollo: {
 			part: {
 				query: gql`query part($slug: String, $lang: String) {
-					part(filter: {slug: $slug, lang: $lang}) {
+					part(find: {slug: $slug}, lang: $lang) {
 						_id
 						title {
 							en
@@ -29,7 +29,7 @@
 		},
 		head() {
 			return {
-				title: (this.part ? this.localeCurrent(this.part.title) : ''),
+				title: (this.part ? this.localeCurrent(this.part.title) + ' (' + this.$tc('part') + ')' : ''),
 			};
 		},
 	};

@@ -22,7 +22,7 @@
 		apollo: {
 			speaker: {
 				query: gql`query speaker($id: String) {
-					speaker(filter: {_id: $id}) {
+					speaker(find: {_id: $id}) {
 						_id
 						slug {
 							en

@@ -36,7 +36,7 @@
 		apollo: {
 			placenames: {
 				query: gql`query placenames($field: String, $value: String, $lang: String) {
-					placenames(filter: {field: $field, value: $value, lang: $lang}) {
+					placenames(filter: [{field: $field, value: $value}], lang: $lang) {
 						_id
 						slug {
 							en
@@ -102,7 +102,6 @@
 				return this.$refs.markers;
 			},
 			(val) => {
-				console.log("Watch");
 				this.zoomMap();
 			});
 		},

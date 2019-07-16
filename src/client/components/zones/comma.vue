@@ -17,7 +17,7 @@
 		apollo: {
 			zones: {
 				query: gql`query zones($field: String, $value: String, $lang: String) {
-					zones(filter: {field: $field, value: $value, lang: $lang}) {
+					zones(filter: [{field: $field, value: $value}], lang: $lang) {
 						_id
 						slug {
 							en

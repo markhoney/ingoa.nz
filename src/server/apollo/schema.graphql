@@ -30,6 +30,7 @@ type title {
 	en: String
 	mi: String
 	ascii: String
+	double: String
 	phonetic: phonetic
 	transliteration: String
 	parts: parts
@@ -50,28 +51,6 @@ type meaning {
 	title: title
 	components: String
 	translation: String
-}
-
-type name {
-	_id: ID!
-	title: title
-	spoken: spoken
-	categories: [String]
-	placename: placename
-	meaning: meaning
-	identical: [name]
-	similar: [name]
-}
-
-type place {
-	_id: ID!
-	title: title
-	plural: Boolean
-	groups: [membership]
-	location: location
-	links: links
-	placename: placename
-	feature: feature
 }
 
 type links {
@@ -97,13 +76,28 @@ type group {
 	places: [place]
 	previous: group
 	next: group
+	links: links
+	notes: notes
 }
 
-type notes {
+type placenamenotes {
 	name: String
 	speech: String
 	spelling: String
 	place: String
+}
+
+type notes {
+	description: String
+	creation: String
+	recording: String
+	funding: String
+	wikipedia: String
+}
+
+type funding {
+	source: String
+	url: String
 }
 
 type see {
@@ -114,21 +108,6 @@ type see {
 
 type addendum {
 	zone: zone
-}
-
-type placename {
-	_id: ID!
-	slug: slug
-	number: Int
-	featured: Int
-	notes: notes
-	zone: zone
-	addendum_zones: [zone]
-	see: [see]
-	previous: placename
-	next: placename
-	names: [name]
-	places: [place]
 }
 
 type googleplace {
@@ -142,6 +121,7 @@ type area {
 }
 
 type location {
+	description: String
 	googleplace: googleplace
 	source: String
 	position: position
@@ -170,45 +150,6 @@ type audio {
 	size: Int
 }
 
-type zone {
-	_id: ID!
-	number: Int
-	slug: slug
-	title: title
-	audio: audio
-	images: images
-	boundary: String
-	gazetteer: String
-	notes: String
-	areas: [area]
-	region: region
-	district: district
-	previous: zone
-	next: zone
-	speakers: [speaker]
-	placenames: [placename]
-	addenda: [placename]
-	featured: [placename]
-	maplink: maplink
-	tribes: [tribe]
-}
-
-type speaker {
-	_id: ID!
-	slug: slug
-	title: title
-	gender: String
-	notes: String
-	recorded: String
-	url: String
-	islands: [island]
-	parts: [part]
-	zones: [zone]
-	previous: speaker
-	next: speaker
-	placenames: [placename]
-}
-
 type island {
 	_id: ID!
 	slug: slug
@@ -224,17 +165,9 @@ type island {
 	regions: [region]
 	speakers: [speaker]
 	placenames: [placename]
-}
-
-type dates {
-	start: String
-	end: String
-	launch: String
-}
-
-type partnotes {
-	text: String
-	recording: String
+	funding: funding
+	links: links
+	notes: notes
 }
 
 type part {
@@ -244,10 +177,9 @@ type part {
 	audio: audio
 	dates: dates
 	distance: Int
-	funding: String
 	format: String
 	description: String
-	notes: partnotes
+	notes: notes
 	images: images
 	island: island
 	previous: part
@@ -256,29 +188,7 @@ type part {
 	regions: [region]
 	speakers: [speaker]
 	placenames: [placename]
-}
-
-type district {
-	_id: ID!
-	slug: slug
-	title: title
-	seat: String
-	area: Int
-	population: Int
-	island: island
-	zones: [zone]
-	previous: district
-	next: district
-}
-
-type maparea {
-	shape: String
-	coords: [Int]
-}
-
-type maplink {
-	map: map
-	mapareas: [maparea]
+	funding: funding
 }
 
 type map {
@@ -307,6 +217,119 @@ type region {
 	previous: region
 	next: region
 	zones: [zone]
+	links: links
+	notes: notes
+}
+
+type zone {
+	_id: ID!
+	number: Int
+	slug: slug
+	title: title
+	audio: audio
+	images: images
+	boundary: String
+	gazetteer: String
+	areas: [area]
+	region: region
+	district: district
+	previous: zone
+	next: zone
+	speakers: [speaker]
+	placenames: [placename]
+	addenda: [placename]
+	featured: [placename]
+	maplink: maplink
+	tribes: [tribe]
+	groups: [group]
+	links: links
+	notes: notes
+}
+
+type placename {
+	_id: ID!
+	slug: slug
+	number: Int
+	featured: Int
+	notes: placenamenotes
+	zone: zone
+	island: island
+	part: part
+	addendum_zones: [zone]
+	see: [see]
+	previous: placename
+	next: placename
+	names: [name]
+	places: [place]
+}
+
+type name {
+	_id: ID!
+	title: title
+	spoken: spoken
+	categories: [String]
+	placename: placename
+	meaning: meaning
+	identical: [name]
+	similar: [name]
+}
+
+type place {
+	_id: ID!
+	title: title
+	plural: Boolean
+	groups: [membership]
+	location: location
+	links: links
+	placename: placename
+	feature: feature
+}
+
+type speaker {
+	_id: ID!
+	slug: slug
+	title: title
+	gender: String
+	notes: notes
+	location: location
+	url: String
+	islands: [island]
+	parts: [part]
+	zones: [zone]
+	previous: speaker
+	next: speaker
+	placenames: [placename]
+}
+
+type dates {
+	start: String
+	end: String
+	launch: String
+}
+
+type district {
+	_id: ID!
+	slug: slug
+	title: title
+	seat: String
+	area: Int
+	population: Int
+	island: island
+	zones: [zone]
+	previous: district
+	next: district
+	links: links
+	notes: notes
+}
+
+type maparea {
+	shape: String
+	coords: [Int]
+}
+
+type maplink {
+	map: map
+	mapareas: [maparea]
 }
 
 type osm {
@@ -327,19 +350,23 @@ type feature {
 	plural: String
 	order: Int
 	category: category
-	placenames: [placename]
+	places: [place]
+	groups: [group]
 	previous: feature
 	next: feature
+	links: links
+	notes: notes
 }
 
 type tribe {
 	_id: ID!
 	slug: slug
 	title: title
-	links: links
 	zones: [zone]
 	previous: tribe
 	next: tribe
+	links: links
+	notes: notes
 }
 
 type gazetteer {
@@ -366,6 +393,8 @@ type total {
 	feature: Int
 	tribe: Int
 	placename: Int
+	place: Int
+	name: Int
 	district: Int
 }
 
@@ -383,119 +412,151 @@ input sort {
 input find {
 	_id: String
 	slug: String
-	lang: String
-}
-
-input term {
-	term: String
-	lang: String
 }
 
 input filter {
 	field: String
-	lang: String
 	value: String
 }
 
 type Query {
 	islands(
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [island]
 	island(
-		filter: find
+		find: find
+		lang: String
 	): island
 	parts(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [part]
 	part(
-		filter: find
+		find: find
+		lang: String
 	): part
 	maps(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [map]
 	map(
-		filter: find
+		find: find
+		lang: String
 	): map
 	regions(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [region]
 	region(
-		filter: find
+		find: find
+		lang: String
 	): region
 	zones(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [zone]
 	zone(
-		filter: find
+		find: find
+		lang: String
 	): zone
 	speakers(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [speaker]
 	speaker(
-		filter: find
+		find: find
+		lang: String
 	): speaker
 	groups(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [group]
 	group(
-		filter: find
+		find: find
+		lang: String
 	): group
 	features(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [feature]
 	feature(
-		filter: find
+		find: find
+		lang: String
 	): feature
 	districts(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [district]
 	district(
-		filter: find
+		find: find
+		lang: String
 	): district
 	tribes(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [tribe]
 	tribe(
-		filter: find
+		find: find
+		lang: String
 	): tribe
 	placenames(
-		filter: filter
-		pagination: pagination
+		filter: [filter]
 		sort: sort
+		pagination: pagination
+		lang: String
 	): [placename]
 	placename(
-		filter: find
+		find: find
+		lang: String
 	): placename
+	places(
+		filter: [filter]
+		sort: sort
+		pagination: pagination
+		lang: String
+	): [place]
 	place(
-		filter: find
+		find: find
+		lang: String
 	): place
+	names(
+		filter: [filter]
+		sort: sort
+		pagination: pagination
+		lang: String
+	): [name]
 	name(
-		filter: find
+		find: find
+		lang: String
 	): name
 	search(
-		filter: term
+		term: String
+		lang: String
 	): [search]
 	autocomplete(
-		filter: term
+		term: String
+		lang: String
 	): [search]
 	total: total
 }
