@@ -41,7 +41,7 @@
 		apollo: {
 			map: {
 				query: gql`query map($id: String, $slug: String, $lang: String) {
-					map(find: {_id: $id, slug: $slug}, lang: $lang) {
+					map(filter: [{_id: $id, slug: $slug}], lang: $lang) {
 						_id
 						slug {
 							en

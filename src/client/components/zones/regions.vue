@@ -8,7 +8,7 @@
 </template>
 
 <script>
-	import zones from '@/components/zones/zones.vue';
+	import zones from '@/components/zones/cards.vue';
 
 	export default {
 		components: {
@@ -16,7 +16,7 @@
 		},
 		props: {
 			field: String,
-			value: String
+			value: String,
 		},
 		apollo: {
 			regions: {

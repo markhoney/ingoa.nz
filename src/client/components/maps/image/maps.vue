@@ -3,7 +3,7 @@
 		<v-flex v-for="map in maps" :key="map._id" class="pa-2">
 			<h2 class="display-1 mb-0">{{localeCurrent(map.title)}}</h2>
 			<h3 class="headline mb-0">{{localeOther(map.title)}}</h3>
-			<imagemap :id="map._id" :hash="true" />
+			<imagemap :id="map._id" hash />
 		</v-flex>
 	</v-layout>
 </template>

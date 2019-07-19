@@ -4,7 +4,7 @@
 		<p class="ma-3" v-html="$t('introText')" />
 		<p class="ma-3" v-html="$t('instructionsText')" />
 		<islands />
-		<v-alert :value="true" class="ma-3" type="info" icon="info">
+		<v-alert value class="ma-3" type="info" icon="info">
 			<span v-html="$t('disclaimerText')" />
 		</v-alert>
 	</section>

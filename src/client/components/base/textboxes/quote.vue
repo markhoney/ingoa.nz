@@ -24,4 +24,8 @@
 </script>
 
 <style scoped>
+	blockquote {
+		font-family: sans-serif;
+		font-size: 14px;
+	}
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<section v-if="feature">
 		<h2>{{localeCurrent(feature.title)}}</h2>
-		<p v-if="feature.notes && feature.notes.wikipedia">{{feature.notes.wikipedia}}</p>
+		<wikipedia v-if="feature.notes.wikipedia" :text="feature.notes.wikipedia" :link="feature.links.wikipedia" source="Wikipedia" />
 		<!--<ul>
 			<li v-for="place in feature.places" :key="place._id">{{localeCurrent(place.title)}}</li>
 		</ul>-->
@@ -13,10 +13,12 @@
 <script>
 	import gql from 'graphql-tag';
 	import places from '@/components/places/list.vue';
+	import wikipedia from '@/components/base/textboxes/quote.vue';
 
 	export default {
 		components: {
 			places,
+			wikipedia,
 		},
 		apollo: {
 			feature: {
@@ -26,6 +28,9 @@
 						title {
 							en
 							mi
+						}
+						links {
+							wikipedia
 						}
 						notes {
 							wikipedia

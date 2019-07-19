@@ -22,9 +22,13 @@
 	export default {
 		props: {
 			id: String,
+			data: Object,
 		},
 		apollo: {
-			zone: {
+			query: {
+				skip() {
+					return (this.data ? true : false);
+				},
 				query: gql`query zone($id: String) {
 					zone(find: {_id: $id}) {
 						_id
@@ -41,11 +45,17 @@
 						}
 					}
 				}`,
+				update: response => response.island,
 				variables() {
 					return {
 						id: this.id,
 					}
 				},
+			},
+		},
+		computed: {
+			zone: function() {
+				return this.data || this.query;
 			},
 		},
 	};

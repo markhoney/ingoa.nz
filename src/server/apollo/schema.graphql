@@ -409,11 +409,6 @@ input sort {
 	order: Int
 }
 
-input find {
-	_id: String
-	slug: String
-}
-
 input filter {
 	field: String
 	value: String
@@ -422,132 +417,132 @@ input filter {
 type Query {
 	islands(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [island]
 	island(
-		find: find
+		filter: filter
 		lang: String
 	): island
 	parts(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [part]
 	part(
-		find: find
+		filter: filter
 		lang: String
 	): part
 	maps(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [map]
 	map(
-		find: find
+		filter: filter
 		lang: String
 	): map
 	regions(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [region]
 	region(
-		find: find
+		filter: filter
 		lang: String
 	): region
 	zones(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [zone]
 	zone(
-		find: find
+		filter: filter
 		lang: String
 	): zone
 	speakers(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [speaker]
 	speaker(
-		find: find
+		filter: filter
 		lang: String
 	): speaker
 	groups(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [group]
 	group(
-		find: find
+		filter: filter
 		lang: String
 	): group
 	features(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [feature]
 	feature(
-		find: find
+		filter: filter
 		lang: String
 	): feature
 	districts(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [district]
 	district(
-		find: find
+		filter: filter
 		lang: String
 	): district
 	tribes(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [tribe]
 	tribe(
-		find: find
+		filter: filter
 		lang: String
 	): tribe
 	placenames(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [placename]
 	placename(
-		find: find
+		filter: filter
 		lang: String
 	): placename
 	places(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [place]
 	place(
-		find: find
+		filter: filter
 		lang: String
 	): place
 	names(
 		filter: [filter]
+		lang: String
 		sort: sort
 		pagination: pagination
-		lang: String
 	): [name]
 	name(
-		find: find
+		filter: filter
 		lang: String
 	): name
 	search(

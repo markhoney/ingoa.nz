@@ -45,7 +45,7 @@
 
 <script>
 	import gql from 'graphql-tag';
-	import player from '@/components/audio/player/link.vue';
+	import player from '@/components/base/audio/link.vue';
 
 	export default {
 		layout: 'old',

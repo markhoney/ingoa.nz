@@ -47,8 +47,8 @@
 
 <script>
 	import gql from 'graphql-tag';
-	import player from '@/components/audio/player/html.vue';
-	//import player from '@/components/audio/player/wave.vue';
+	import player from '@/components/base/audio/html.vue';
+	//import player from '@/components/base/audio/wave.vue';
 
 	export default {
 		components: {
@@ -58,6 +58,7 @@
 			file: String,
 			field: String,
 			value: String,
+			data: Array,
 			/*wave: {
 				type: Boolean,
 				value: false,
@@ -76,7 +77,10 @@
 			};
 		},
 		apollo: {
-			placenames: {
+			query: {
+				skip() {
+					return (this.data ? true : false);
+				},
 				query: gql`query placenames($field: String, $value: String, $lang: String) {
 					placenames(filter: [{field: $field, value: $value}], lang: $lang) {
 						_id
@@ -136,6 +140,7 @@
 						}
 					}
 				}`,
+				update: response => response.placenames,
 				variables() {
 					return {
 						field: this.field,
@@ -146,6 +151,9 @@
 			},
 		},
 		computed: {
+			placenames: function() {
+				return this.data || this.query;
+			},
 			bookmarks: function() {
 				if (this.placenames) return this.placenames.map(placename => placename.names.map(name => {
 					return {

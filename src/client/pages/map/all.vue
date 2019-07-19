@@ -1,5 +1,5 @@
 <template>
-	<gmap :cluster="true" />
+	<gmap cluster />
 </template>
 
 <script>

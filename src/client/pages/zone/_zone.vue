@@ -15,12 +15,10 @@
 		<h3>{{$tc('location', 1) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<island :id="zone.region.island._id">
-					<h2>{{$tc('island', 1) | uppercase}}</h2>
-				</island>
+				<island :id="zone.region.island._id" single />
 			</v-flex>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<region :id="zone.region._id" />
+				<region :id="zone.region._id" single />
 			</v-flex>
 		</v-layout>
 	</section>
@@ -30,7 +28,7 @@
 	import gql from 'graphql-tag';
 	import imageheader from '@/components/base/headers/image.vue';
 	import wikipedia from '@/components/base/textboxes/quote.vue';
-	import player from '@/components/audio/zone.vue';
+	import player from '@/components/audio/placenames.vue';
 	import mapplaces from '@/components/maps/leaflet/places.vue';
 	import island from '@/components/islands/card.vue';
 	import region from '@/components/regions/card.vue';

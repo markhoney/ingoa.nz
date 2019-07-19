@@ -1,5 +1,5 @@
 <template>
-	<searchlist :items="sortedItems" />
+	<searchlist :data="places" />
 </template>
 
 <script>
@@ -13,10 +13,10 @@
 		props: {
 			field: String,
 			value: String,
-			items: Array,
+			data: Array,
 		},
 		apollo: {
-			places: {
+			query: {
 				skip() {
 					return (this.items ? true : false);
 				},
@@ -71,6 +71,7 @@
 						}
 					}
 				}`,
+				update: response => response.places,
 				variables() {
 					return {
 						field: this.field,
@@ -81,8 +82,8 @@
 			},
 		},
 		computed: {
-			sortedItems: function() {
-				const places = this.items || this.places;
+			places: function() {
+				const places = this.data || this.query;
 				if (places) {
 					return places.map(place => {
 						const zonepartisland = (place.placename.zone || place.placename.part || place.placename.island);

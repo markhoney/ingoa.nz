@@ -7,7 +7,7 @@
 				</v-list-tile-title>
 			</v-list-tile-content>
 		</v-list-tile>
-		<template v-for="item in (search ? items.filter(item => localeCurrent(item.title.text).toLowerCase().includes(search.toLowerCase())) : items)">
+		<template v-for="item in (search ? data.filter(item => localeCurrent(item.title.text).toLowerCase().includes(search.toLowerCase())) : data)">
 			<v-list-tile :key="item._id">
 				<v-list-tile-content>
 					<v-list-tile-title>
@@ -36,7 +36,7 @@
 <script>
 	export default {
 		props: {
-			items: Array,
+			data: Array,
 		},
 		data() {
 			return {

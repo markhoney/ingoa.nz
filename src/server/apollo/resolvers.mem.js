@@ -118,7 +118,28 @@ function getAutocomplete(collection, search) {
 function getRecord(collection, args) {
 	if (args.find) {
 		if (args.find._id) return collection.find(record => record._id == args.find._id);
-		if (args.find.slug) return collection.find(record => record.slug.mi == args.find.slug || record.slug.en == args.find.slug);
+		if (args.find.slug) return collection.find(record => {
+			const match = [record.slug.mi, record.slug.en].includes(args.find.slug);
+			if (args.find.id) {
+				return (match && [record.zone.slug.en, record.zone.slug.mi, record.part.slug.en, record.part.slug.mi, record.island.slug.en, record.island.slug.mi].includes(args.find.id));
+			}
+			return match;
+		});
+	}
+	if (args.filter && args.filter.length) {
+		const filters = args.filter.reduce((filters, filter) => {
+			filters[filter.field] = filter.value;
+			return filters;
+		}, {});
+		return collection.find(record => {
+			for (let filter of args.filter) {
+				if (filter.field.endsWith("slug") || filter.field.endsWith("title")) {
+					if (!(get(record, filter.field + ".en") == filter.value || get(record, filter.field + ".mi") == filter.value)) return false;
+				}
+				if (!get(record, filter.field) == filter.value) return false;
+			}
+			return true;
+		});
 	}
 	return [];
 }
@@ -127,7 +148,9 @@ function getRecords(collection, args) {
 	//if (args.filter) collection = collection.filter(record => record[args.filter.field] == args.filter.value);
 	if (args.filter && args.filter.length) {
 		args.filter.forEach(filter => {
-			collection = collection.filter(record => get(record, filter.field + (filter.field.includes("slug") ? "." + args.lang : "")) == filter.value);
+			if (filter.field && filter.value) {
+				collection = collection.filter(record => get(record, filter.field + (filter.field.endsWith("slug") ? "." + args.lang : "")) == filter.value);
+			}
 		});
 	}
 	if (args.sort && args.sort.field) {

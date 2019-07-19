@@ -1,8 +1,8 @@
 <template>
 	<v-card v-if="island">
-		<nuxt-link :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
+		<nuxt-link :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})" style="text-decoration: none;">
 			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
-				<slot />
+				<h3 v-if="single" style="text-transform: uppercase; font-size: 4em; text-align: center;">{{$tc('island', 1)}}</h3>
 			</v-img>
 		</nuxt-link>
 		<!-- height="180px" -->
@@ -25,11 +25,20 @@
 	export default {
 		props: {
 			id: String,
+			slug: String,
+			single: {
+				type: Boolean,
+				value: false,
+			},
+			data: Object,
 		},
 		apollo: {
-			island: {
+			query: {
+				skip() {
+					return (this.data ? true : false);
+				},
 				query: gql`query island($id: String) {
-					island(find: {_id: $id}) {
+					island(filter: [{field: "_id", value: $id}]) {
 						_id
 						slug {
 							en
@@ -45,6 +54,7 @@
 						}
 					}
 				}`,
+				update: response => response.island,
 				variables() {
 					return {
 						id: this.id,
@@ -52,5 +62,10 @@
 				},
 			},
 		},
+		computed: {
+			island: function() {
+				return this.data || this.query;
+			}
+		}
 	};
 </script>

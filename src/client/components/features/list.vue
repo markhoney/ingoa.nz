@@ -1,5 +1,5 @@
 <template>
-	<searchlist :items="items" />
+	<searchlist :data="items" />
 </template>
 
 <script>
@@ -13,11 +13,6 @@
 		props: {
 			field: String,
 			value: String,
-		},
-		data() {
-			return {
-				search: "",
-			}
 		},
 		apollo: {
 			features: {

@@ -1,5 +1,5 @@
 <template>
-	<leaflet :cluster="true" />
+	<leaflet cluster />
 </template>
 
 <script>
