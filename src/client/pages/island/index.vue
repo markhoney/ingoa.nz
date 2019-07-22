@@ -16,7 +16,7 @@
 		},
 		head() {
 			return {
-				title: 'Islands',
+				title: this.caseTitle(this.$tc('island', 2)),
 			};
 		},
 	};

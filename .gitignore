@@ -84,6 +84,7 @@ dist
 sw.*
 
 caddy.exe
+watchman.exe
 
 report.*.json
 

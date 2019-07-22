@@ -20,26 +20,30 @@
 		},
 		apollo: {
 			regions: {
-				query: gql`query regions($field: String, $value: String, $lang: String) {
-					regions(filter: [{field: $field, value: $value}], lang: $lang) {
-						_id
-						code
-						title {
-							en
-							mi
+				query() {
+					return this.$gql`query regions($field: String, $value: String) {
+						regions(filter: [{field: $field, value: $value}]) {
+							_id
+							code
+							title {
+								en
+								mi
+							}
 						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
 						field: this.field,
 						value: this.value,
-						lang: this.$i18n.locale,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
-	}
+	};
 </script>
 
 <style scoped>

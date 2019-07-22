@@ -17,7 +17,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 
 	export default {
 		props: {
@@ -25,37 +24,42 @@
 			data: Object,
 		},
 		apollo: {
-			query: {
+			remote: {
 				skip() {
 					return (this.data ? true : false);
 				},
-				query: gql`query zone($id: String) {
-					zone(find: {_id: $id}) {
-						_id
-						slug {
-							en
-							mi
+				query() {
+					return this.$gql`query zone($id: String) {
+						zone(filter: [{_id: $id}]) {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+							images {
+								landscape
+							}
 						}
-						title {
-							en
-							mi
-						}
-						images {
-							landscape
-						}
-					}
-				}`,
+					}`;
+				},
 				update: response => response.island,
 				variables() {
 					return {
 						id: this.id,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
 		computed: {
 			zone: function() {
-				return this.data || this.query;
+				return this.data || this.remote;
 			},
 		},
 	};

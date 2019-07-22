@@ -3,7 +3,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	//import {setTimeout} from 'timers';
 
 	export default {
@@ -16,18 +15,23 @@
 		},
 		apollo: {
 			search: {
-				query: gql`query search($term: String) {
-					search(term: $term) {
-						type
-						code
-						name
-						zone_code
-					}
-				}`,
+				query() {
+					return this.$gql`query search($term: String) {
+						search(term: $term) {
+							type
+							code
+							name
+							zone_code
+						}
+					}`;
+				},
 				variables() {
 					return {
 						term: this.term,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
@@ -52,7 +56,7 @@
 			},
 			selected: function(selected) {
 				this.$router.push({path: selected});
-			}
+			},
 		},
 	};
 </script>

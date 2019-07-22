@@ -3,7 +3,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 
 	export default {
 		data() {
@@ -12,133 +11,156 @@
 			}
 		},
 		apollo: {
-			islands: gql`{
-				islands {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			regions: gql`{
-				regions {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			zones: gql`{
-				zones {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			maps: gql`{
-				maps {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			speakers: gql`{
-				speakers {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			groups: gql`{
-				groups {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			features: gql`{
-				features {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			tribes: gql`{
-				tribes {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			placenames: gql`{
-				placenames {
-					_id
-					slug {
-						en
-						mi
-					}
-					names {
+			islands: {
+				query() {
+					return this.$gql`{
+						islands {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+						}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+			regions() {
+				return this.$gql`{
+					regions {
 						_id
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
 						}
 					}
-					places {
+				}`;
+			},
+			zones() {
+				return this.$gql`{
+					zones {
 						_id
+						slug {
+							en
+							mi
+						}
 						title {
 							en
 							mi
 						}
 					}
-				}
-			}`,
+				}`;
+			},
+			maps() {
+				return this.$gql`{
+					maps {
+						_id
+						slug {
+							en
+							mi
+						}
+						title {
+							en
+							mi
+						}
+					}
+				}`;
+			},
+			speakers() {
+				return this.$gql`{
+					speakers {
+						_id
+						slug {
+							en
+							mi
+						}
+						title {
+							en
+							mi
+						}
+					}
+				}`;
+			},
+			groups() {
+				return this.$gql`{
+					groups {
+						_id
+						slug {
+							en
+							mi
+						}
+						title {
+							en
+							mi
+						}
+					}
+				}`;
+			},
+			features() {
+				return this.$gql`{
+					features {
+						_id
+						slug {
+							en
+							mi
+						}
+						title {
+							en
+							mi
+						}
+					}
+				}`;
+			},
+			tribes() {
+				return this.$gql`{
+					tribes {
+						_id
+						slug {
+							en
+							mi
+						}
+						title {
+							en
+							mi
+						}
+					}
+				}`;
+			},
+			placenames() {
+				return this.$gql`{
+					placenames {
+						_id
+						slug {
+							en
+							mi
+						}
+						names {
+							_id
+							title {
+								en
+								mi
+							}
+						}
+						places {
+							_id
+							title {
+								en
+								mi
+							}
+						}
+					}
+				}`;
+			},
 		},
 		computed: {
 			suggestions() {
@@ -171,12 +193,12 @@
 						text: this.localeCurrent(data.title) + ' (' + data.__typename + ')'
 					};
 				});
-			}
+			},
 		},
 		watch: {
 			search: function(search) {
 				this.$router.push({path: search});
-			}
+			},
 		},
 	};
 </script>

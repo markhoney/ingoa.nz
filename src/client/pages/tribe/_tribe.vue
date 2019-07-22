@@ -5,31 +5,35 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 
 	export default {
 		apollo: {
 			tribe: {
-				query: gql`query tribe($slug: String, $lang: String) {
-					tribe(find: {slug: $slug}, lang: $lang) {
-						_id
-						title {
-							en
-							mi
+				query() {
+					return this.$gql`query tribe($field: String, $value: String) {
+						tribe(filter: [{field: $field, value: $value}]) {
+							_id
+							title {
+								en
+								mi
+							}
 						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
-						slug: this.$route.params.tribe,
-						lang: this.$i18n.locale,
-					}
+						field: "slug",
+						value: this.$route.params.tribe,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
 		head() {
 			return {
-				title: (this.tribe ? this.localeCurrent(this.tribe.title) : ''),
+				title: (this.tribe ? this.localeCurrent(this.tribe.title) + ' (' + this.$tc('tribe') + ')' : ''),
 			};
 		},
 	};

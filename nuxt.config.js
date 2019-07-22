@@ -1,3 +1,5 @@
+/*if (process.env.NODE_ENV != 'production')*/ require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
+
 const pkg = require('./package');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
@@ -18,7 +20,7 @@ module.exports = {
 		dev: process.env.NODE_ENV !== 'production',
 	},
 	mode: 'universal',
-	srcDir: 'src/client/',
+	srcDir: './src/client/',
 	modern: true,
 	server: {
 		host: host,
@@ -66,14 +68,15 @@ module.exports = {
 		'@/plugins/filters',
 		'@/plugins/mixins',
 		'@/plugins/googlemaps',
-		//'@/plugins/gql.js'
+		'@/plugins/eventbus',
+		'@/plugins/gql.js',
 	],
 
 	modules: [
 		'@nuxtjs/apollo',
 		'@nuxtjs/dotenv',
 		'@nuxtjs/pwa',
-		'@nuxtjs/sitemap',
+		//'@nuxtjs/sitemap',
 		'@nuxtjs/webpackmonitor',
 		'@nuxtjs/robots',
 		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],

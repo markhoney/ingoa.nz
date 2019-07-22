@@ -5,25 +5,29 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 
 	export default {
 		apollo: {
 			part: {
-				query: gql`query part($slug: String, $lang: String) {
-					part(find: {slug: $slug}, lang: $lang) {
-						_id
-						title {
-							en
-							mi
+				query() {
+					return this.$gql`query part($field: String, $value: String) {
+						part(filter: [{field: $field, value: $value}]) {
+							_id
+							title {
+								en
+								mi
+							}
 						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
-						slug: this.$route.params.part,
-						lang: this.$i18n.locale,
-					}
+						field: "slug",
+						value: this.$route.params.part,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},

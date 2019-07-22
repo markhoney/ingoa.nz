@@ -3,7 +3,6 @@
 </template>
 
 <script>
-	//import gql from 'graphql-tag';
 	import searchlist from '@/components/base/list/search.vue';
 
 	export default {
@@ -21,8 +20,8 @@
 					return (this.data ? true : false);
 				},
 				query() {
-					return this.$gql`query features($field: String, $value: String) {
-						features(filter: [{field: $field, value: $value}]) {
+					return this.$gql`query speakers($field: String, $value: String) {
+						speakers(filter: [{field: $field, value: $value}]) {
 							_id
 							slug {
 								en
@@ -32,13 +31,10 @@
 								en
 								mi
 							}
-							notes {
-								wikipedia
-							}
 						}
 					}`;
 				},
-				update: response => response.features,
+				update: response => response.speakers,
 				variables() {
 					return {
 						field: this.field,
@@ -51,21 +47,18 @@
 			},
 		},
 		computed: {
-			features: function() {
+			speakers: function() {
 				return this.data || this.remote;
 			},
 			items: function() {
-				if (this.features) {
-					return this.features.map(feature => {
+				if (this.speakers) {
+					return this.speakers.map(speaker => {
 						return {
-							_id: feature._id,
+							_id: speaker._id,
 							title: {
-								text: this.localeCurrent(feature.title),
-								link: this.localePath({name: 'feature-feature', params: {feature: this.localeCurrent(feature.slug)}}),
+								text: this.localeCurrent(speaker.title),
+								link: this.localePath({name: 'speaker-speaker', params: {speaker: this.localeCurrent(speaker.slug)}}),
 							},
-							subtitle: {
-								text: (feature.notes ? feature.notes.wikipedia : ""),
-							}
 						};
 					});
 				}

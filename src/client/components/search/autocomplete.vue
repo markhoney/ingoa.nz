@@ -3,7 +3,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	//import {setTimeout} from 'timers';
 
 	export default {
@@ -16,17 +15,22 @@
 		},
 		apollo: {
 			autocomplete: {
-				query: gql`query autocomplete($term: String, $lang: String) {
-					autocomplete(term: $term, lang: $lang) {
-						text
-						value
-					}
-				}`,
+				query() {
+					return this.$gql`query autocomplete($term: String, $lang: String) {
+						autocomplete(term: $term, lang: $lang) {
+							text
+							value
+						}
+					}`;
+				},
 				variables() {
 					return {
 						term: this.term,
 						lang: this.$i18n.locale,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
@@ -36,7 +40,7 @@
 			},
 			selected: function(selected) {
 				this.$router.push({path: selected});
-			}
+			},
 		},
 	};
 </script>

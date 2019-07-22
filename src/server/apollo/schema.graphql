@@ -422,7 +422,7 @@ type Query {
 		pagination: pagination
 	): [island]
 	island(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): island
 	parts(
@@ -432,7 +432,7 @@ type Query {
 		pagination: pagination
 	): [part]
 	part(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): part
 	maps(
@@ -442,7 +442,7 @@ type Query {
 		pagination: pagination
 	): [map]
 	map(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): map
 	regions(
@@ -452,7 +452,7 @@ type Query {
 		pagination: pagination
 	): [region]
 	region(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): region
 	zones(
@@ -462,7 +462,7 @@ type Query {
 		pagination: pagination
 	): [zone]
 	zone(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): zone
 	speakers(
@@ -472,7 +472,7 @@ type Query {
 		pagination: pagination
 	): [speaker]
 	speaker(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): speaker
 	groups(
@@ -482,7 +482,7 @@ type Query {
 		pagination: pagination
 	): [group]
 	group(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): group
 	features(
@@ -492,7 +492,7 @@ type Query {
 		pagination: pagination
 	): [feature]
 	feature(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): feature
 	districts(
@@ -502,7 +502,7 @@ type Query {
 		pagination: pagination
 	): [district]
 	district(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): district
 	tribes(
@@ -512,7 +512,7 @@ type Query {
 		pagination: pagination
 	): [tribe]
 	tribe(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): tribe
 	placenames(
@@ -522,7 +522,7 @@ type Query {
 		pagination: pagination
 	): [placename]
 	placename(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): placename
 	places(
@@ -532,7 +532,7 @@ type Query {
 		pagination: pagination
 	): [place]
 	place(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): place
 	names(
@@ -542,7 +542,7 @@ type Query {
 		pagination: pagination
 	): [name]
 	name(
-		filter: filter
+		filter: [filter]
 		lang: String
 	): name
 	search(

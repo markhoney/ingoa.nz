@@ -32,7 +32,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import comma from '@/components/base/list/comma.vue';
 	//import comma from '@/components/zones/comma.vue';
 
@@ -41,7 +40,8 @@
 			comma,
 		},
 		props: {
-			id: String,
+			field: String,
+			value: String,
 			data: Object,
 			single: {
 				type: Boolean,
@@ -49,48 +49,54 @@
 			},
 		},
 		apollo: {
-			query: {
+			remote: {
 				skip() {
 					return (this.data ? true : false);
 				},
-				query: gql`query region($id: String) {
-					region(find: {_id: $id}) {
-						_id
-						slug {
-							en
-							mi
-						}
-						title {
-							en
-							mi
-						}
-						zones {
+				query() {
+					return this.$gql`query region($field: String, $value: String) {
+						region(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
-								en
-								mi
-							}
 							slug {
 								en
 								mi
 							}
+							title {
+								en
+								mi
+							}
+							zones {
+								_id
+								title {
+									en
+									mi
+								}
+								slug {
+									en
+									mi
+								}
+							}
+							images {
+								landscape
+							}
 						}
-						images {
-							landscape
-						}
-					}
-				}`,
+					}`;
+				},
 				update: response => response.region,
 				variables() {
 					return {
-						id: this.id,
-					}
+						field: this.field,
+						value: this.value,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
 		computed: {
 			region: function() {
-				return this.data || this.query;
+				return this.data || this.remote;
 			},
 			items: function() {
 				if (this.region && this.region.zones) {

@@ -21,51 +21,56 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	export default {
 		props: {
-			id: String,
-			slug: String,
+			field: String,
+			value: String,
+			data: Object,
 			single: {
 				type: Boolean,
 				value: false,
 			},
-			data: Object,
 		},
 		apollo: {
-			query: {
+			remote: {
 				skip() {
 					return (this.data ? true : false);
 				},
-				query: gql`query island($id: String) {
-					island(filter: [{field: "_id", value: $id}]) {
-						_id
-						slug {
-							en
-							mi
+				query() {
+					return this.$gql`query island($field: String, $value: String) {
+						island(filter: [{field: $field, value: $value}]) {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+							description
+							images {
+								landscape
+							}
 						}
-						title {
-							en
-							mi
-						}
-						description
-						images {
-							landscape
-						}
-					}
-				}`,
+					}`;
+				},
 				update: response => response.island,
 				variables() {
 					return {
-						id: this.id,
-					}
+						field: this.field,
+						value: this.value,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
 		computed: {
 			island: function() {
-				return this.data || this.query;
-			}
-		}
+				return this.data || this.remote;
+			},
+		},
 	};
 </script>

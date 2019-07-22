@@ -44,33 +44,39 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	export default {
 		apollo: {
-			islands: gql`{
-				islands {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-					regions {
-						_id
-						slug {
-							en
-							mi
+			islands: {
+				query() {
+					return this.$gql`{
+						islands {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+							regions {
+								_id
+								slug {
+									en
+									mi
+								}
+								title {
+									en
+									mi
+								}
+							}
 						}
-						title {
-							en
-							mi
-						}
-					}
-				}
-			}`,
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
 		},
 	};
 </script>

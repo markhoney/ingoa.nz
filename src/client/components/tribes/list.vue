@@ -3,7 +3,6 @@
 </template>
 
 <script>
-	//import gql from 'graphql-tag';
 	import searchlist from '@/components/base/list/search.vue';
 
 	export default {
@@ -21,8 +20,8 @@
 					return (this.data ? true : false);
 				},
 				query() {
-					return this.$gql`query features($field: String, $value: String) {
-						features(filter: [{field: $field, value: $value}]) {
+					return this.$gql`query tribes($field: String, $value: String) {
+						tribes(filter: [{field: $field, value: $value}]) {
 							_id
 							slug {
 								en
@@ -32,13 +31,16 @@
 								en
 								mi
 							}
+							links {
+								wikipedia
+							}
 							notes {
 								wikipedia
 							}
 						}
 					}`;
 				},
-				update: response => response.features,
+				update: response => response.tribes,
 				variables() {
 					return {
 						field: this.field,
@@ -51,21 +53,21 @@
 			},
 		},
 		computed: {
-			features: function() {
+			tribes: function() {
 				return this.data || this.remote;
 			},
 			items: function() {
-				if (this.features) {
-					return this.features.map(feature => {
+				if (this.tribes) {
+					return this.tribes.map(tribe => {
 						return {
-							_id: feature._id,
+							_id: tribe._id,
 							title: {
-								text: this.localeCurrent(feature.title),
-								link: this.localePath({name: 'feature-feature', params: {feature: this.localeCurrent(feature.slug)}}),
+								text: this.localeCurrent(tribe.title),
+								link: this.localePath({name: 'tribe-tribe', params: {tribe: this.localeCurrent(tribe.slug)}}),
 							},
 							subtitle: {
-								text: (feature.notes ? feature.notes.wikipedia : ""),
-							}
+								text: (tribe.notes ? tribe.notes.wikipedia : ""),
+							},
 						};
 					});
 				}

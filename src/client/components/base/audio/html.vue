@@ -32,8 +32,8 @@
 		methods: {
 			cancelTimer: function() {
 				clearTimeout(this.$timer);
-			}
-		}
+			},
+		},
 	};
 </script>
 

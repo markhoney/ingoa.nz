@@ -13,32 +13,48 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 
 	export default {
 		props: {
-			id: String,
+			field: String,
+			value: String,
+			data: Object,
 		},
 		apollo: {
-			speaker: {
-				query: gql`query speaker($id: String) {
-					speaker(find: {_id: $id}) {
-						_id
-						slug {
-							en
-							mi
+			remote: {
+				skip() {
+					return (this.data ? true : false);
+				},
+				query() {
+					return this.$gql`query speaker($field: String, $value: String) {
+						speaker(filter: [{field: $field, value: $value}]) {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
 						}
-						title {
-							en
-							mi
-						}
-					}
-				}`,
+					}`;
+				},
+				update: response => response.speaker,
 				variables() {
 					return {
-						id: this.id,
-					}
+						field: this.field,
+						value: this.value,
+					};
 				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+		},
+		computed: {
+			speaker: function() {
+				return this.data || this.remote;
 			},
 		},
 	};

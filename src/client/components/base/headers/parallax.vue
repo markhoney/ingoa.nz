@@ -11,7 +11,7 @@
 		props: {
 			image: String,
 			title: Object,
-			id: String
+			id: String,
 		}
 	}
 </script>

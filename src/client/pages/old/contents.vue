@@ -44,7 +44,7 @@
 				</tr>
 				<template v-for="map in maps">
 					<tr :key="map._id">
-						<td :id="'m' + map._id" colspan="3"><imagemap :key="map._id" :id="map._id" style="margin: 20px;" /></td>
+						<td :id="'m' + map._id" colspan="3"><imagemap :key="map._id" field="_id" :value="map._id" style="margin: 20px;" /></td>
 						<td>&nbsp;</td>
 					</tr>
 					<tr :key="'header' + map._id">
@@ -74,7 +74,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import imagemap from '@/components/maps/image/map.vue';
 
 	export default {
@@ -83,50 +82,57 @@
 			imagemap,
 		},
 		apollo: {
-			maps: gql`{
-				maps {
-					_id
-					title {
-						en
-						mi
-					}
-					regions {
-						_id
-						title {
-							en
-							mi
-						}
-						zones {
+			maps: {
+				query() {
+					return this.$gql`{
+						maps {
 							_id
-							slug {
-								en
-								mi
-							}
-							number
 							title {
 								en
 								mi
 							}
-							speakers {
+							regions {
 								_id
 								title {
 									en
 									mi
 								}
-							}
-							featured {
-								_id
-								names {
+								zones {
+									_id
+									slug {
+										en
+										mi
+									}
+									number
 									title {
 										en
 										mi
 									}
+									speakers {
+										_id
+										title {
+											en
+											mi
+										}
+									}
+									featured {
+										_id
+										names {
+											title {
+												en
+												mi
+											}
+										}
+									}
 								}
 							}
 						}
-					}
-				}
-			}`,
-		}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+		},
 	};
 </script>

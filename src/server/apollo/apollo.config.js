@@ -1,6 +1,6 @@
 module.exports = {
 	service: {
-		localSchemaFile: './schema.graphql',
+		localSchemaFile: './src/server/apollo/schema.graphql',
 		endpoint: {
 			url: "http://localhost:4000"
 		},

@@ -79,7 +79,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	//import search from '@/components/search/dynamic.vue';
 	import search from '@/components/search/autocomplete.vue';
 
@@ -89,31 +88,56 @@
 		},
 		data() {
 			return {
+				drawer: false,
 			};
 		},
 		apollo: {
-			islands: gql`{
-				islands {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-					regions {
-						_id
-						slug {
-							en
-							mi
+			islands: {
+				query() {
+					return this.$gql`{
+						islands {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+							regions {
+								_id
+								slug {
+									en
+									mi
+								}
+								title {
+									en
+									mi
+								}
+								zones {
+									_id
+									slug {
+										en
+										mi
+									}
+									title {
+										en
+										mi
+									}
+								}
+							}
 						}
-						title {
-							en
-							mi
-						}
-						zones {
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+			maps: {
+				query() {
+					return this.$gql`{
+						maps {
 							_id
 							slug {
 								en
@@ -124,89 +148,97 @@
 								mi
 							}
 						}
-					}
-				}
-			}`,
-			maps: gql`{
-				maps {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			speakers: gql`{
-				speakers {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			groups: gql`{
-				groups {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			features: gql`{
-				features {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			tribes: gql`{
-				tribes {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-				}
-			}`,
-			/*drawer: gql`query {
-				drawer @client {
-					visible
-				}
-			}`,*/
-		},
-		computed: {
-			drawer: {
-				get() {
-					return this.$store.state.drawer;
+					}`;
 				},
-				set(v) {
-					this.$store.commit('setDrawer', v);
-				}
-			}
-		}
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+			speakers: {
+				query() {
+					return this.$gql`{
+						speakers {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+						}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+			groups: {
+				query() {
+					return this.$gql`{
+						groups {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+						}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+			features: {
+				query() {
+					return this.$gql`{
+						features {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+						}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+			tribes: {
+				query() {
+					return this.$gql`{
+						tribes {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+						}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
+		},
+		mounted() {
+			this.$eventbus.$on('drawer', (payload) => {
+				this.drawer = !this.drawer;
+			});
+		},
 	};
 </script>

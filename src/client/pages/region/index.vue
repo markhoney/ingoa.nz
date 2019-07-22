@@ -18,7 +18,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import regions from '@/components/regions/cards.vue';
 
 	export default {
@@ -26,26 +25,33 @@
 			regions,
 		},
 		apollo: {
-			islands: gql`{
-				islands {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-					regions {
-						_id
-					}
-				}
-			}`,
+			islands: {
+				query() {
+					return this.$gql`{
+						islands {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+							regions {
+								_id
+							}
+						}
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
 		},
 		head() {
 			return {
-				title: 'Regions',
+				title: this.caseTitle(this.$tc('region', 2)),
 			};
 		},
 	};

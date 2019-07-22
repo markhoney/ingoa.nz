@@ -15,7 +15,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import wikipedia from '@/components/base/textboxes/quote.vue';
 	import zones from '@/components/zones/cards.vue';
 
@@ -33,26 +32,31 @@
 		},
 		apollo: {
 			region: {
-				query: gql`query region($slug: String, $lang: String) {
-					region(find: {slug: $slug}, lang: $lang) {
-						_id
-						title {
-							en
-							mi
+				query() {
+					return this.$gql`query region($field: String, $value: String) {
+						region(filter: [{field: $field, value: $value}]) {
+							_id
+							title {
+								en
+								mi
+							}
+							links {
+								wikipedia
+							}
+							notes {
+								wikipedia
+							}
 						}
-						links {
-							wikipedia
-						}
-						notes {
-							wikipedia
-						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
-						slug: this.$route.params.region,
-						lang: this.$i18n.locale,
-					}
+						field: "slug",
+						value: this.$route.params.region,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},

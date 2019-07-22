@@ -7,20 +7,25 @@
 	export default {
 		apollo: {
 			placename: {
-				query: gql`query placename($slug: String, $lang: String) {
-					placename(find: {slug: $slug}, lang: $lang) {
-						_id
-						title {
-							en
-							mi
+				query() {
+					return this.$gql`query placename($field: String, $value: String) {
+						placename(filter: [{field: $field, value: $value}]) {
+							_id
+							title {
+								en
+								mi
+							}
 						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
-						slug: this.$route.params.placename,
-						lang: this.$i18n.locale,
-					}
+						field: "slug",
+						value: this.$route.params.placename,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},

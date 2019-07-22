@@ -44,7 +44,6 @@
 	</section>
 </template>
 
-
 <style scoped>
 	section {
 		background-color: #ffffee;

@@ -5,14 +5,13 @@
 				<imageheader :image="island.images.landscape" :title="island.title" :to="{name: 'island-island', params: {island: localeCurrent(island.slug)}}" />
 			</v-flex>
 			<v-flex v-for="map in island.maps" :key="map._id" xs12 sm6 md4 class="pa-2">
-				<imagemap :id="map._id" />
+				<imagemap field="_id" :value="map._id" />
 			</v-flex>
 		</v-layout>
 	</section>
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import imageheader from '@/components/base/headers/image.vue';
 	import imagemap from '@/components/maps/image/map.vue';
 
@@ -22,33 +21,40 @@
 			imagemap,
 		},
 		apollo: {
-			islands: gql`{
-				islands {
-					_id
-					slug {
-						en
-						mi
-					}
-					title {
-						en
-						mi
-					}
-					images {
-						landscape
-					}
-					maps {
-						_id
-						title {
-							en
-							mi
+			islands: {
+				query() {
+					return this.$gql`{
+						islands {
+							_id
+							slug {
+								en
+								mi
+							}
+							title {
+								en
+								mi
+							}
+							images {
+								landscape
+							}
+							maps {
+								_id
+								title {
+									en
+									mi
+								}
+							}
 						}
-					}
-				}
-			}`,
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
+			},
 		},
 		head() {
 			return {
-				title: 'maps',
+				title: this.caseTitle(this.$tc('map', 2)),
 			};
 		},
 	};

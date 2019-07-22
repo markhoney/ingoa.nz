@@ -8,7 +8,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import zone from '@/components/zones/list.vue';
 	export default {
 		components: {
@@ -16,15 +15,20 @@
 		},
 		apollo: {
 			regions: {
-				query: gql`query regions {
-					regions {
-						_id
-						title {
-							en
-							mi
+				query() {
+					return this.$gql`query regions {
+						regions {
+							_id
+							title {
+								en
+								mi
+							}
 						}
-					}
-				}`,
+					}`;
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
+				},
 			},
 		},
 	};

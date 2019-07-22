@@ -1,9 +1,10 @@
+/*if (process.env.NODE_ENV != 'production')*/ require('appmetrics-dash').attach();
 const consola = require('consola');
 const {Nuxt, Builder} = require('nuxt');
-const http = require('http');
+//const http = require('http');
 
 // Import and Set Nuxt.js options
-let config = require('../../nuxt.config.js');
+const config = require('../../nuxt.config.js');
 config.dev = process.env.dev;
 
 async function start() {
@@ -21,10 +22,11 @@ async function start() {
 	}
 
 	// Listen the server
-	http.createServer(nuxt.render).listen(port);
+	//http.createServer(nuxt.render).listen(port);
+	nuxt.listen(port, host);
 	consola.ready({
 		message: `Server listening on http://${host}:${port}`,
-		badge: true
+		badge: true,
 	});
 }
 start();

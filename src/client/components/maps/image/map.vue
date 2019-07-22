@@ -4,7 +4,7 @@
 			<nuxt-link :to="localePath({name: 'map-map', params: {map: localeCurrent(map.slug)}})">{{localeCurrent(map.title)}}</nuxt-link>
 		</h2>
 		<h3 class="headline mb-0 text-xs-center mb-3">{{localeOther(map.title)}}</h3>
-		<img :src="map.images.portrait" :alt="localeBoth(map.title)" :id="map._id" :usemap="'#map-' + map.code">
+		<img :src="map.images.portrait" :alt="localeBoth(map.title)" field="_id" :value="map._id" :usemap="'#map-' + map.code">
 		<map :name="'map-' + map.code">
 			<template v-for="region in map.regions">
 				<template v-for="zone in region.zones">
@@ -24,12 +24,11 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 
 	export default {
 		props: {
-			id: String,
-			slug: String,
+			field: String,
+			value: String,
 			hash: {
 				type: Boolean,
 				default: false,
@@ -40,71 +39,75 @@
 		},
 		apollo: {
 			map: {
-				query: gql`query map($id: String, $slug: String, $lang: String) {
-					map(filter: [{_id: $id, slug: $slug}], lang: $lang) {
-						_id
-						slug {
-							en
-							mi
-						}
-						title {
-							en
-							mi
-						}
-						dates {
-							start
-							end
-						}
-						regions {
+				query() {
+					return this.$gql`query map($field: String, $value: String) {
+						map(filter: [{field: $field, value: $value}]) {
 							_id
-							zones {
-								_id
-								slug {
-									en
-									mi
-								}
-								title {
-									en
-									mi
-								}
-								maplink {
-									mapareas {
-										shape
-										coords
-									}
-								}
-							}
-						}
-						island {
 							slug {
 								en
 								mi
 							}
-						}
-						maplinks {
-							map {
+							title {
+								en
+								mi
+							}
+							dates {
+								start
+								end
+							}
+							regions {
 								_id
-								title {
+								zones {
+									_id
+									slug {
+										en
+										mi
+									}
+									title {
+										en
+										mi
+									}
+									maplink {
+										mapareas {
+											shape
+											coords
+										}
+									}
+								}
+							}
+							island {
+								slug {
 									en
 									mi
 								}
 							}
-							mapareas {
-								shape
-								coords
+							maplinks {
+								map {
+									_id
+									title {
+										en
+										mi
+									}
+								}
+								mapareas {
+									shape
+									coords
+								}
+							}
+							images {
+								portrait
 							}
 						}
-						images {
-							portrait
-						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
-						id: this.id,
-						slug: this.slug,
-						lang: this.$i18n.locale,
-					}
+						field: this.field,
+						value: this.value,
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},

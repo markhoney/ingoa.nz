@@ -44,7 +44,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import player from '@/components/base/audio/link.vue';
 
 	export default {
@@ -54,66 +53,71 @@
 		},
 		apollo: {
 			zone: {
-				query: gql`query zone($id: String) {
-					zone(find: {_id: $id}) {
-						_id
-						number
-						previous {
+				query() {
+					return this.$gql`query zone($id: String) {
+						zone(filter: [{_id: $id}]) {
 							_id
-							slug {
-								en
-								mi
+							number
+							previous {
+								_id
+								slug {
+									en
+									mi
+								}
 							}
-						}
-						next {
-							_id
-							slug {
-								en
-								mi
+							next {
+								_id
+								slug {
+									en
+									mi
+								}
 							}
-						}
-						title {
-							en
-							mi
-						}
-						audio {
-							file
-						}
-						images {
-							landscape
-						}
-						speakers {
-							_id
 							title {
 								en
 								mi
 							}
-						}
-						placenames {
-							names {
+							audio {
+								file
+							}
+							images {
+								landscape
+							}
+							speakers {
 								_id
 								title {
 									en
 									mi
 								}
 							}
-							places {
-								_id
-								feature {
+							placenames {
+								names {
 									_id
 									title {
 										en
 										mi
 									}
 								}
+								places {
+									_id
+									feature {
+										_id
+										title {
+											en
+											mi
+										}
+									}
+								}
 							}
 						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
 						id: this.$route.params.zone,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},

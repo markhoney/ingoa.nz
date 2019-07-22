@@ -1,3 +1,5 @@
+const consola = require('consola');
+if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
 process.title = "apollo";
 const {ApolloServer} = require('apollo-server');
 const {importSchema} = require('graphql-import');
@@ -24,5 +26,9 @@ const server = new ApolloServer({
 });
 
 server.listen().then(({url}) => {
-	console.log(`🚀 Server ready at ${url}`);
+	//console.log((process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1) + " MB used");
+	consola.ready({
+		message: `Server ready at ${url}\nMetrics ready at ${url}metrics/`,
+		badge: true
+	});
 });

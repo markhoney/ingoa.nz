@@ -1,5 +1,5 @@
 import {InMemoryCache} from 'apollo-cache-inmemory';
-import {persistCache} from 'apollo-cache-persist';
+//import {persistCache} from 'apollo-cache-persist';
 
 export default function() {
 	const cache = new InMemoryCache();

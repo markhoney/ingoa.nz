@@ -46,7 +46,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import player from '@/components/base/audio/html.vue';
 	//import player from '@/components/base/audio/wave.vue';
 
@@ -77,89 +76,93 @@
 			};
 		},
 		apollo: {
-			query: {
+			remote: {
 				skip() {
 					return (this.data ? true : false);
 				},
-				query: gql`query placenames($field: String, $value: String, $lang: String) {
-					placenames(filter: [{field: $field, value: $value}], lang: $lang) {
-						_id
-						slug {
-							en
-							mi
-						}
-						zone {
-							slug {
-								en
-								mi
-							}
-						}
-						part {
-							slug {
-								en
-								mi
-							}
-						}
-						island {
-							slug {
-								en
-								mi
-							}
-						}
-						names {
+				query() {
+					return this.$gql`query placenames($field: String, $value: String) {
+						placenames(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
-								mi
+							slug {
 								en
-								ascii
+								mi
 							}
-							spoken {
-								pre
-								post
-								start
-								end
-								speaker {
-									_id
-									slug {
-										en
-										mi
-									}
-									title {
-										en
-										mi
+							zone {
+								slug {
+									en
+									mi
+								}
+							}
+							part {
+								slug {
+									en
+									mi
+								}
+							}
+							island {
+								slug {
+									en
+									mi
+								}
+							}
+							names {
+								_id
+								title {
+									mi
+									en
+									ascii
+								}
+								spoken {
+									pre
+									post
+									start
+									end
+									speaker {
+										_id
+										slug {
+											en
+											mi
+										}
+										title {
+											en
+											mi
+										}
 									}
 								}
 							}
-						}
-						places {
-							_id
-							title {
-								en
-								mi
+							places {
+								_id
+								title {
+									en
+									mi
+								}
 							}
 						}
-					}
-				}`,
+					}`;
+				},
 				update: response => response.placenames,
 				variables() {
-					return {
+					return { 
 						field: this.field,
 						value: this.value,
-						lang: this.$i18n.locale,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
 		computed: {
 			placenames: function() {
-				return this.data || this.query;
+				return this.data || this.remote;
 			},
 			bookmarks: function() {
 				if (this.placenames) return this.placenames.map(placename => placename.names.map(name => {
 					return {
 						...name,
 						placename: placename,
-					}
+					};
 				})).flat().filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
 				//if (this.placenames) return this.placenames.map(placename => placename.names.filter(name => name.spoken)).flat().sort((a, b) => a.spoken.start - b.spoken.start);
 				return [];

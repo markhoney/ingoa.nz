@@ -21,7 +21,6 @@
 </template>
 
 <script>
-	import gql from 'graphql-tag';
 	import {gmapApi} from 'vue2-google-maps';
 
 	export default {
@@ -35,46 +34,50 @@
 		},
 		apollo: {
 			placenames: {
-				query: gql`query placenames($field: String, $value: String, $lang: String) {
-					placenames(filter: [{field: $field, value: $value}], lang: $lang) {
-						_id
-						slug {
-							en
-							mi
-						}
-						zone {
+				query() {
+					return this.$gql`query placenames($field: String, $value: String) {
+						placenames(filter: [{field: $field, value: $value}]) {
+							_id
 							slug {
 								en
 								mi
 							}
-						}
-						places {
-							_id
-							title {
-								en
-								mi
-							}
-							location {
-								position {
-									lat
-									lng
-								}
-							}
-							feature {
-								title {
+							zone {
+								slug {
 									en
 									mi
 								}
 							}
+							places {
+								_id
+								title {
+									en
+									mi
+								}
+								location {
+									position {
+										lat
+										lng
+									}
+								}
+								feature {
+									title {
+										en
+										mi
+									}
+								}
+							}
 						}
-					}
-				}`,
+					}`;
+				},
 				variables() {
 					return {
 						field: this.field,
 						value: this.value,
-						lang: this.$i18n.locale,
-					}
+					};
+				},
+				watchLoading (isLoading, countModifier) {
+					this.$eventbus.$emit("loading", countModifier);
 				},
 			},
 		},
@@ -134,7 +137,7 @@
 		watch: {
 			placenames: function() {
 				//this.zoomMap();
-			}
+			},
 		},
 	};
 </script>

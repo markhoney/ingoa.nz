@@ -91,7 +91,7 @@ db.group.forEach((group, index) => {
 	group.zone = db.zone.find(zone => zone._id == group.zone_id);
 	if (!group.zone) delete group.zone;
 	group.feature = db.feature.find(feature => feature._id == group.feature_id);
-	group.places = db.place.filter(place => place.groups && place.groups.group_id == group._id);
+	group.places = db.place.filter(place => place.groups && place.groups.map(group => group.group_id).includes(group._id));
 	group.previous = db.group[index - 1];
 	if (!group.previous) delete group.previous;
 	group.next = db.group[index + 1];

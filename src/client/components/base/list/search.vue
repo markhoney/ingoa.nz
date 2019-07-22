@@ -7,8 +7,8 @@
 				</v-list-tile-title>
 			</v-list-tile-content>
 		</v-list-tile>
-		<template v-for="item in (search ? data.filter(item => localeCurrent(item.title.text).toLowerCase().includes(search.toLowerCase())) : data)">
-			<v-list-tile :key="item._id">
+		<template v-for="item in (search ? data.filter(item => item.title.text.toLowerCase().includes(search.toLowerCase())) : data)">
+			<v-list-tile v-if="item.title" :key="item._id">
 				<v-list-tile-content>
 					<v-list-tile-title>
 						<nuxt-link v-if="item.title.link" :to="item.title.link">
@@ -18,7 +18,7 @@
 							{{item.title.text}}
 						</template>
 					</v-list-tile-title>
-					<v-list-tile-sub-title v-if="item.subtitle.text">
+					<v-list-tile-sub-title v-if="item.subtitle && item.subtitle.text">
 						<nuxt-link v-if="item.subtitle.link" :to="item.subtitle.link">
 							{{item.subtitle.text}}
 						</nuxt-link>
@@ -41,7 +41,7 @@
 		data() {
 			return {
 				search: "",
-			}
+			};
 		},
-	}
+	};
 </script>

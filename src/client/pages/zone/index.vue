@@ -13,7 +13,7 @@
 		},
 		head() {
 			return {
-				title: 'Zones',
+				title: this.caseTitle(this.$tc('zone', 2)),
 			};
 		},
 	};
