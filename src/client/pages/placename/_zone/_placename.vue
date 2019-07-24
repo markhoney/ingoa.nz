@@ -15,6 +15,10 @@
 								en
 								mi
 							}
+							slug {
+								en
+								mi
+							}
 						}
 					}`;
 				},
@@ -25,8 +29,13 @@
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
+			},
+		},
+		watch: {
+			placename: function(placename) {
+				this.$store.commit('i18n/setRouteParams', {en: {placename: placename.slug.en}, mi: {placename: placename.slug.mi}});
 			},
 		},
 		head() {

@@ -10,17 +10,19 @@
 				maximum: 0,
 			}
 		},
-		mounted() {
-			this.$eventbus.$on('loading', (payload) => {
-				this.count += payload;
-				if (this.count > this.maximum) this.maximum = this.count;
-				if (this.count == 0) this.maximum = 0;
-			});
-		},
 		computed: {
+			loading: function() {
+				return this.$store.state.loading;
+			},
 			progress: function() {
-				if (this.count) return (1 - (this.count / this.maximum)) * 100;
+				if (this.loading) return (1 - (this.loading / this.maximum)) * 100;
 			},
 		},
+		watch: {
+			loading: function() {
+				if (this.loading > this.maximum) this.maximum = this.loading;
+				if (this.loading == 0) this.maximum = 0;
+			}
+		}
 	};
 </script>

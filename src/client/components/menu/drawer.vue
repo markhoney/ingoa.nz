@@ -86,11 +86,6 @@
 		components: {
 			search,
 		},
-		data() {
-			return {
-				drawer: false,
-			};
-		},
 		apollo: {
 			islands: {
 				query() {
@@ -131,7 +126,7 @@
 					}`;
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 			maps: {
@@ -151,7 +146,7 @@
 					}`;
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 			speakers: {
@@ -171,7 +166,7 @@
 					}`;
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 			groups: {
@@ -191,7 +186,7 @@
 					}`;
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 			features: {
@@ -211,7 +206,7 @@
 					}`;
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 			tribes: {
@@ -231,14 +226,19 @@
 					}`;
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 		},
-		mounted() {
-			this.$eventbus.$on('drawer', (payload) => {
-				this.drawer = !this.drawer;
-			});
+		computed: {
+			drawer: {
+				get() {
+					return this.$store.state.drawer;
+				},
+				set(v) {
+					this.$store.commit('drawerSet', v);
+				},
+			},
 		},
 	};
 </script>

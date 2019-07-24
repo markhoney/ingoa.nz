@@ -1,9 +1,9 @@
 <template>
-	<section v-if="slug" class="pa-2 my-5 elevation-4">
+	<section v-if="$route.params.map" class="pa-2 my-5 elevation-4">
 		<!--<h3 class="display-1 mt-5 mb-4">{{$tc('map', 1) | titlecase}}</h3>-->
-		<imagemap field="slug" :value="slug" hash class="text-xs-center" />
+		<imagemap field="slug" :value="$route.params.map" hash class="text-xs-center" />
 		<h3 class="display-1 mt-5 mb-4">{{$tc('region', 2) | titlecase}}</h3>
-		<regions field="map.slug" :value="slug" />
+		<regions field="map.slug" :value="$route.params.map" />
 	</section>
 </template>
 
@@ -26,24 +26,28 @@
 								en
 								mi
 							}
+							slug {
+								en
+								mi
+							}
 						}
 					}`;
 				},
 				variables() {
 					return {
 						field: "slug",
-						value: this.slug,
+						value: this.$route.params.map,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 		},
-		computed: {
-			slug: function() {
-				return this.$route.params.map;
-			},
+		watch: {
+			map: function(map) {
+				this.$store.commit('i18n/setRouteParams', {en: {map: map.slug.en}, mi: {map: map.slug.mi}});
+			}
 		},
 		head() {
 			return {

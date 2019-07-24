@@ -58,9 +58,6 @@ module.exports = {
 	generate: {
 		//dir: 'docs',
 		routes: require('./src/routes/dynamic'),
-		/*routes: function() {
-			return require('./routes');
-		}*/
 	},
 
 	plugins: [
@@ -68,7 +65,7 @@ module.exports = {
 		'@/plugins/filters',
 		'@/plugins/mixins',
 		'@/plugins/googlemaps',
-		'@/plugins/eventbus',
+		//'@/plugins/eventbus',
 		'@/plugins/gql.js',
 	],
 
@@ -96,7 +93,6 @@ module.exports = {
 				locales: require('./src/client/locales.json'),
 				parsePages: false,
 				pages: require('./src/routes/pages'),
-				vuex: false,
 			},
 		],
 	],

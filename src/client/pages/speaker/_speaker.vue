@@ -27,6 +27,10 @@
 								en
 								mi
 							}
+							slug {
+								en
+								mi
+							}
 							zones {
 								_id
 								slug {
@@ -51,8 +55,13 @@
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
+			},
+		},
+		watch: {
+			speaker: function(speaker) {
+				this.$store.commit('i18n/setRouteParams', {en: {speaker: speaker.slug.en}, mi: {speaker: speaker.slug.mi}});
 			},
 		},
 		head() {

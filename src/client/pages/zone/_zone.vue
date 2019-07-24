@@ -54,6 +54,10 @@
 								en
 								mi
 							}
+							slug {
+								en
+								mi
+							}
 							links {
 								wikipedia
 							}
@@ -89,8 +93,13 @@
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
+			},
+		},
+		watch: {
+			zone: function(zone) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {zone: zone.slug.en}, mi: {zone: zone.slug.mi}});
 			},
 		},
 		head() {

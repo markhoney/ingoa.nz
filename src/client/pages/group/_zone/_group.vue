@@ -16,15 +16,16 @@
 			wikipedia,
 		},
 		apollo: {
-			remote: {
-				skip() {
-					return (this.data ? true : false);
-				},
+			group: {
 				query() {
 					return this.$gql`query group($field: String, $value: String, $zone: String) {
 						group(filter: [{field: $field, value: $value}, {field: "zone.slug", value: $zone}]) {
 							_id
 							title {
+								en
+								mi
+							}
+							slug {
 								en
 								mi
 							}
@@ -86,7 +87,6 @@
 						}
 					}`;
 				},
-				update: response => response.group,
 				variables() {
 					return {
 						field: "slug",
@@ -95,14 +95,14 @@
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 		},
-		computed: {
-			group: function() {
-				return this.data || this.remote;
-			},
+		watch: {
+			group: function(group) {
+				this.$store.commit('i18n/setRouteParams', {en: {group: group.slug.en}, mi: {group: group.slug.mi}});
+			}
 		},
 		head() {
 			return {

@@ -2,13 +2,17 @@
 
 export const state = () => ({
 	drawer: false,
+	loading: 0,
 });
 
 export const mutations = {
-	toggleDrawer(state) {
+	drawerToggle(state) {
 		state.drawer = !state.drawer;
 	},
-	setDrawer(state, v) {
+	drawerSet(state, v) {
 		state.drawer = v;
+	},
+	loading(state, v) {
+		state.loading += v;
 	},
 };

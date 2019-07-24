@@ -10,17 +10,13 @@
 
 <script>
 	export default {
-		data() {
-			return {
-				count: 0,
-				dialog: false,
-			};
-		},
-		mounted() {
-			this.$eventbus.$on('loading', (payload) => {
-				this.count += payload;
-				this.dialog = (this.count > 0 ? true : false);
-			});
+		computed: {
+			loading: function() {
+				return this.$store.state.loading;
+			},
+			dialog: function() {
+				return (this.loading > 0 ? true : false);
+			},
 		},
 	};
 </script>

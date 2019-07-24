@@ -16,15 +16,16 @@
 			wikipedia,
 		},
 		apollo: {
-			remote: {
-				skip() {
-					return (this.data ? true : false);
-				},
+			feature: {
 				query() {
 					return this.$gql`query feature($field: String, $value: String) {
 						feature(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
+								en
+								mi
+							}
+							slug {
 								en
 								mi
 							}
@@ -37,7 +38,6 @@
 						}
 					}`;
 				},
-				update: response => response.feature,
 				variables() {
 					return {
 						field: "slug",
@@ -45,13 +45,13 @@
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
 			},
 		},
-		computed: {
-			feature: function() {
-				return this.data || this.remote;
+		watch: {
+			feature: function(feature) {
+				this.$store.commit('i18n/setRouteParams', {en: {feature: feature.slug.en}, mi: {feature: feature.slug.mi}});
 			},
 		},
 		head() {

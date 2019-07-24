@@ -40,6 +40,10 @@
 								en
 								mi
 							}
+							slug {
+								en
+								mi
+							}
 							links {
 								wikipedia
 							}
@@ -56,8 +60,13 @@
 					};
 				},
 				watchLoading (isLoading, countModifier) {
-					this.$eventbus.$emit("loading", countModifier);
+					this.$store.commit('loading', countModifier);
 				},
+			},
+		},
+		watch: {
+			region: function(region) {
+				this.$store.commit('i18n/setRouteParams', {en: {region: region.slug.en}, mi: {region: region.slug.mi}});
 			},
 		},
 		head() {
