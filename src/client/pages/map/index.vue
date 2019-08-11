@@ -2,7 +2,7 @@
 	<section>
 		<v-layout row wrap v-for="island in islands.filter(island => island.maps.length)" :key="island._id" class="elevation-2 mb-2">
 			<v-flex xs12>
-				<imageheader :image="island.images.landscape" :title="island.title" :to="{name: 'island-island', params: {island: localeCurrent(island.slug)}}" />
+				<imageheader :image="island.images.landscape" :title="island.title.locale" :to="{name: 'island-island', params: {island: localeCurrent(island.slug)}}" />
 			</v-flex>
 			<v-flex v-for="map in island.maps" :key="map._id" xs12 sm6 md4 class="pa-2">
 				<imagemap field="_id" :value="map._id" />
@@ -31,8 +31,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							images {
 								landscape
@@ -40,8 +42,10 @@
 							maps {
 								_id
 								title {
-									en
-									mi
+									locale {
+										en
+										mi
+									}
 								}
 							}
 						}

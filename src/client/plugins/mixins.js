@@ -41,18 +41,22 @@ Vue.mixin({
 			return "slug." + this.locale();
 		},
 		localeMaori(langs) {
-			//Return the langs in Maori if it exists, or in English otherwise
+			//Return the langs in Māori if it exists, or in English otherwise
 			if (langs) return langs.mi || langs.en;
 		},
 		localeEnglish(langs) {
-			//Return the langs in Maori if it exists, or in English otherwise
+			//Return the langs in English if it exists, or in Māori otherwise
 			if (langs) return langs.en || langs.mi;
+		},
+		localeCurrentOnly(langs, blank = "") {
+			//Return the langs in the currently selected i18n language if it exists, otherwise return nothing
+			if (langs) return langs[this.locale()] || blank;
 		},
 		localeCurrent(langs) {
 			//Return the langs in the currently selected i18n language if it exists, otherwise return the other langs
 			if (langs) return langs[this.locale()] || langs[this.localeAlt()];
 		},
-		localeOther(langs, blank) {
+		localeOther(langs, blank = "") {
 			//If both translations of the langs exist, return the langs in the language that isn't currently selected in i18n, otherwise return a blank placeholder
 			if (langs && langs.en && langs.mi) return langs[this.localeAlt()];
 			return blank;

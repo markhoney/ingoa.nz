@@ -28,8 +28,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							zone {
 								_id
@@ -39,7 +41,10 @@
 								}
 							}
 							notes {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 						}
 					}`;
@@ -66,11 +71,11 @@
 						return {
 							_id: group._id,
 							title: {
-								text: this.localeCurrent(group.title),
+								text: this.localeCurrent(group.title.locale),
 								link: this.localePath({name: 'group-zone-group', params: {zone: this.localeCurrent(group.zone.slug), group: this.localeCurrent(group.slug)}}),
 							},
 							subtitle: {
-								text: (group.notes ? group.notes.wikipedia : ""),
+								text: (group.notes ? this.localeCurrent(group.notes.wikipedia) : ""),
 							}
 						};
 					});

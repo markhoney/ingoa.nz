@@ -1,7 +1,7 @@
-Name	ID	Location	City	Country	Latitude	Longitude	WikiData
-Hinemihi	pn_zo_138-1	Clandon Park	Surrey	England	51.2506	-0.50818	
-Poihākena	pn_zo_138-2		Sydney	Australia	-33.8889	151.2039	Q3130
-Pouihi	pn_zo_138-3	New Zealand House	London	England	51.507752	-0.1316566	
-Rauru	pn_zo_138-4	Museum of Ethnology	Hamburg	Germany	53.5685	9.9892	
-Rua te Pupuke	pn_zo_138-5	Field Museum	Chicago	USA	41.86622	-87.61688	Q1122595
-Te Wharepuni ā Māui	pn_zo_138-6	Linden Museum	Stuttgart	Germany	48.78275	9.17	Q454416
+Name	ID	Location	City	Country	Latitude	Longitude	WikiData	WikiLink	WikiMi
+Hinemihi	pn_zo_42-8	Clandon Park	Surrey	England	51.2506	-0.50818	Q5125774	https://en.wikipedia.org/wiki/Clandon_Park_House	
+Poihākena	pn_zo_83-6		Sydney	Australia	-33.8889	151.2039	Q3130	https://en.wikipedia.org/wiki/Sydney	
+Pouihi	pn_zo_138-3	New Zealand House	London	England	51.507752	-0.1316566	Q5755096	https://en.wikipedia.org/wiki/High_Commission_of_New_Zealand,_London	
+Rauru	pn_zo_138-4	Museum of Ethnology	Hamburg	Germany	53.5685	9.9892	Q675774	https://en.wikipedia.org/wiki/Museum_am_Rothenbaum	
+Rua te Pupuke	pn_zo_138-5	Field Museum	Chicago	USA	41.86622	-87.61688	Q1122595	https://en.wikipedia.org/wiki/Field_Museum_of_Natural_History	
+Te Wharepuni ā Māui	pn_zo_138-6	Linden Museum	Stuttgart	Germany	48.78275	9.17	Q454416	https://en.wikipedia.org/wiki/Linden_Museum	

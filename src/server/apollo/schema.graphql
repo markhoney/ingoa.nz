@@ -1,14 +1,14 @@
+type locale {
+	en: String
+	mi: String
+}
+
 type images {
 	banner: String
 	landscape: String
 	portrait: String
 	front: String
 	back: String
-}
-
-type slug {
-	en: String
-	mi: String
 }
 
 type parts {
@@ -26,15 +26,24 @@ type phonetic {
 	html: String
 }
 
-type title {
-	en: String
-	mi: String
+type titles {
 	ascii: String
 	double: String
 	phonetic: phonetic
 	transliteration: String
+	plural: String
 	parts: parts
 	full: String
+}
+
+type title {
+	locale: locale
+	alt: titles
+}
+
+type metric {
+	area: Int
+	population: Int
 }
 
 type spoken {
@@ -47,15 +56,16 @@ type spoken {
 
 type meaning {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	components: String
 	translation: String
 }
 
 type links {
-	wikipedia: String
+	wikipedia: locale
 	wikidata: String
+	maorimaps: String
 	website: String
 }
 
@@ -66,7 +76,7 @@ type membership {
 
 type group {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	plural: Boolean
 	place: place
@@ -81,22 +91,22 @@ type group {
 }
 
 type placenamenotes {
-	name: String
-	speech: String
-	spelling: String
-	place: String
+	name: locale
+	speech: locale
+	spelling: locale
+	place: locale
 }
 
 type notes {
-	description: String
-	creation: String
-	recording: String
-	funding: String
-	wikipedia: String
+	description: locale
+	creation: locale
+	recording: locale
+	funding: locale
+	wikipedia: locale
 }
 
 type funding {
-	source: String
+	source: locale
 	url: String
 }
 
@@ -118,10 +128,11 @@ type googleplace {
 type area {
 	title: title
 	location: location
+	links: links
 }
 
 type location {
-	description: String
+	description: locale
 	googleplace: googleplace
 	source: String
 	position: position
@@ -152,10 +163,10 @@ type audio {
 
 type island {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	audio: audio
-	description: String
+	description: locale
 	location: location
 	images: images
 	previous: island
@@ -163,22 +174,23 @@ type island {
 	parts: [part]
 	maps: [map]
 	regions: [region]
+	sectors: [sector]
 	speakers: [speaker]
 	placenames: [placename]
 	funding: funding
+	metric: metric
 	links: links
 	notes: notes
 }
 
 type part {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	audio: audio
 	dates: dates
 	distance: Int
-	format: String
-	description: String
+	format: locale
 	notes: notes
 	images: images
 	island: island
@@ -186,6 +198,7 @@ type part {
 	next: part
 	maps: [map]
 	regions: [region]
+	sectors: [sector]
 	speakers: [speaker]
 	placenames: [placename]
 	funding: funding
@@ -193,7 +206,7 @@ type part {
 
 type map {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	dates: dates
 	images: images
@@ -202,13 +215,30 @@ type map {
 	previous: map
 	next: map
 	regions: [region]
+	sectors: [sector]
 	zones: [zone]
 	maplinks: [maplink]
 }
 
 type region {
 	_id: ID!
-	slug: slug
+	slug: locale
+	title: title
+	images: images
+	island: island
+	part: part
+	map: map
+	previous: region
+	next: region
+	zones: [zone]
+	metric: metric
+	links: links
+	notes: notes
+}
+
+type sector {
+	_id: ID!
+	slug: locale
 	title: title
 	images: images
 	island: island
@@ -221,17 +251,31 @@ type region {
 	notes: notes
 }
 
+type district {
+	_id: ID!
+	slug: locale
+	title: title
+	seat: String
+	island: island
+	zones: [zone]
+	previous: district
+	next: district
+	metric: metric
+	links: links
+	notes: notes
+}
+
 type zone {
 	_id: ID!
 	number: Int
-	slug: slug
+	slug: locale
 	title: title
 	audio: audio
 	images: images
-	boundary: String
+	boundary: locale
 	gazetteer: String
 	areas: [area]
-	region: region
+	sector: sector
 	district: district
 	previous: zone
 	next: zone
@@ -248,7 +292,7 @@ type zone {
 
 type placename {
 	_id: ID!
-	slug: slug
+	slug: locale
 	number: Int
 	featured: Int
 	notes: placenamenotes
@@ -287,7 +331,7 @@ type place {
 
 type speaker {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	gender: String
 	notes: notes
@@ -305,21 +349,6 @@ type dates {
 	start: String
 	end: String
 	launch: String
-}
-
-type district {
-	_id: ID!
-	slug: slug
-	title: title
-	seat: String
-	area: Int
-	population: Int
-	island: island
-	zones: [zone]
-	previous: district
-	next: district
-	links: links
-	notes: notes
 }
 
 type maparea {
@@ -344,10 +373,9 @@ type category {
 
 type feature {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	images: images
-	plural: String
 	order: Int
 	category: category
 	places: [place]
@@ -360,11 +388,12 @@ type feature {
 
 type tribe {
 	_id: ID!
-	slug: slug
+	slug: locale
 	title: title
 	zones: [zone]
 	previous: tribe
 	next: tribe
+	metric: metric
 	links: links
 	notes: notes
 }
@@ -445,6 +474,16 @@ type Query {
 		filter: [filter]
 		lang: String
 	): map
+	sectors(
+		filter: [filter]
+		lang: String
+		sort: sort
+		pagination: pagination
+	): [sector]
+	sector(
+		filter: [filter]
+		lang: String
+	): sector
 	regions(
 		filter: [filter]
 		lang: String

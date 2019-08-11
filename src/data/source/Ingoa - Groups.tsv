@@ -1,703 +1,703 @@
-ID	ZoneID	Zone2ID	Zone_1	Zone_2	Type	Number	Name	TeReo	Feature	FeatureID	FeaturePlural	WikiLink	Wikipedia
-gr_zo_62-a	zo_62		62		geographic	a	Lake Rotomā	Rotomā	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Rotoma	Lake Rotoma
-gr_zo_63-a	zo_63		63		geographic	a	Lake Okataina	Okataina	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Okataina	Lake Okataina
-gr_zo_81-a	zo_81		81		geographic	a	Great Mercury Island	Ahuahu	Island	fe_134		https://en.wikipedia.org/wiki/Mercury_Islands	Mercury Islands
-gr_zo_84-a	zo_84		84		geographic	a	Rabbit Islands	Motorua	Island	fe_134	1	https://en.wikipedia.org/wiki/Rabbit_Island,_New_Zealand	Rabbit Island, New Zealand
-gr_zo_112-a	zo_112		112		geographic	a	Rangitoto Island	Rangitoto	Island	fe_134		https://en.wikipedia.org/wiki/Rangitoto_Island	Rangitoto Island
-gr_zo_113-a	zo_113		113		geographic	a	Little Barrier Island	Hauturu	Island	fe_134		https://en.wikipedia.org/wiki/Little_Barrier_Island	Little Barrier Island
-gr_zo_113-b	zo_113		113		geographic	b	Great Barrier Island	Aotea	Island	fe_134		https://en.wikipedia.org/wiki/Great_Barrier_Island	Great Barrier Island
-gr_zo_116-a	zo_116		116		geographic	a	Auckland War Memorial Museum	Tāmaki Paenga Hira	Museum	fe_180		https://en.wikipedia.org/wiki/Auckland_War_Memorial_Museum	Auckland War Memorial Museum
-gr_zo_129-a	zo_129		129		geographic	a	Poor Knights Islands	Tawhiti Rahi	Island	fe_134	1	https://en.wikipedia.org/wiki/Poor_Knights_Islands	Poor Knights Islands
-gr_zo_129-b	zo_129		129		geographic	b	Hen and Chickens		Island	fe_134	1	https://en.wikipedia.org/wiki/Hen_and_Chicken_Islands	Hen and Chicken Islands
-gr_zo_129-c	zo_129		129		geographic	c	Chickens	Marotiri	Island	fe_134	1	https://en.wikipedia.org/wiki/Hen_and_Chicken_Islands	Hen and Chicken Islands
-gr_zo_132-a	zo_132		132		geographic	a	Cavalli Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Cavalli_Islands	Cavalli Islands
-gr_zo_137-a	zo_137		137		geographic	a	Three Kings Islands	Manawatāwhi	Island	fe_134	1	https://en.wikipedia.org/wiki/Three_Kings_Islands	Three Kings Islands
-gr_zo_144-a	zo_144		144		geographic	a	Pelorus Sound	Te Hoiere	Sound	fe_252		https://en.wikipedia.org/wiki/Pelorus_Sound	Pelorus Sound
-gr_zo_144-b	zo_144		144		geographic	b	Rangitoto Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Rangitoto_Islands	Rangitoto Islands
-gr_zo_144-c	zo_144		144		geographic	c	Chetwode Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Chetwode_Islands	Chetwode Islands
-gr_zo_144-d	zo_144		144		geographic	d	D'Urville Island	Rangitoto Ki Te Tonga	Island	fe_134		https://en.wikipedia.org/wiki/D%27Urville_Island_(New_Zealand)	D'Urville Island (New Zealand)
-gr_zo_145-a	zo_145		145		geographic	a	Port Underwood	Te Whanganui	Port	fe_206		https://en.wikipedia.org/wiki/Port_Underwood	Port Underwood
-gr_zo_145-b	zo_145		145		geographic	b	Queen Charlotte Sound	Tōtaranui	Sound	fe_252		https://en.wikipedia.org/wiki/Queen_Charlotte_Sound_(New_Zealand)	Queen Charlotte Sound (New Zealand)
-gr_zo_145-c	zo_145		145		geographic	c	Tory Channel	Kura Te Au	Channel	fe_45		https://en.wikipedia.org/wiki/Tory_Channel	Tory Channel
-gr_zo_145-d	zo_145	zo_144	145	144	geographic	d	Arapawa Island	Arapaoa	Island	fe_134		https://en.wikipedia.org/wiki/Arapaoa_Island	Arapaoa Island
-gr_zo_151-a	zo_151		151		geographic	a	Port Levy	Koukourarata	Port	fe_206		https://en.wikipedia.org/wiki/Port_Levy	Port Levy
-gr_zo_153-a	zo_153		153		geographic	a	Lake Ellesmere	Te Waihora	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Ellesmere_/_Te_Waihora	Lake Ellesmere / Te Waihora
-gr_zo_158-a	zo_158		158		geographic	a	Moeraki Peninsula	Moeraki	Peninsula	fe_198		https://en.wikipedia.org/wiki/Moeraki	Moeraki
-gr_zo_159-a	zo_159		159		geographic	a		Waikouaiti	Town	fe_282		https://en.wikipedia.org/wiki/Waikouaiti	Waikouaiti
-gr_zo_162-a	zo_162		162		geographic	a	Lake Hāwea	Hāwea	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_H%C4%81wea	Lake Hāwea
-gr_zo_162-b	zo_162		162		geographic	b	Lake Wānaka	Wānaka	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Wanaka	Lake Wanaka
-gr_zo_164-a	zo_164		164		geographic	a	Lake Manapōuri	Manapōuri	Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Manapouri	Lake Manapouri
-gr_zo_170-a	zo_170		170		geographic	a	Muttonbird Islands	Titi	Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands
-gr_zo_170-b	zo_170		170		geographic	b	North Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands
-gr_zo_170-c	zo_170		170		geographic	c	Breaksea Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands
-gr_zo_170-d	zo_170		170		geographic	d	West Muttonbird Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands
-gr_zo_170-e	zo_170		170		geographic	e	East Muttonbird Islands		Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands
-gr_zo_172-a	zo_172		172		geographic	a	Resolution Island	Tau Moana	Island	fe_134		https://en.wikipedia.org/wiki/Resolution_Island_(New_Zealand)	Resolution Island (New Zealand)
-gr_zo_172-b	zo_172		172		geographic	b	Chalky Inlet	Taiari	Inlet	fe_132		https://en.wikipedia.org/wiki/Chalky_Island_(New_Zealand)	Chalky Island (New Zealand)
-gr_zo_177-a	zo_177	zo_176	177	176	geographic	a	Pitt Island	Rangiauria	Island	fe_134		https://en.wikipedia.org/wiki/Pitt_Island	Pitt Island
-gr_zo_177-b	zo_177	zo_176	177	176	geographic	b	Chatham Island	Wharekauri	Island	fe_134	1	https://en.wikipedia.org/wiki/Chatham_Islands	Chatham Islands
-gr_zo_1-2	zo_1		1		community	2		Tapu te Ranga Marae	Marae complex	fe_157			
-gr_zo_2-1	zo_2		2		community	1		Tāpiri Marae	Marae complex	fe_157			
-gr_zo_2-2	zo_2		2		community	2		Waiwhetū Marae	Marae complex	fe_157			
-gr_zo_2-3	zo_2		2		community	3		Wainuiōmata Marae	Marae complex	fe_157			
-gr_zo_4-1	zo_4		4		community	1		Maraeroa Marae	Marae complex	fe_157			
-gr_zo_4-2	zo_4		4		community	2		Takapūāhia Marae	Marae complex	fe_157			
-gr_zo_4-3	zo_4		4		community	3		Hongoeka Marae	Marae complex	fe_157			
-gr_zo_6-1	zo_6		6		community	1		Katihīkū Marae	Marae complex	fe_157			
-gr_zo_6-2	zo_6		6		community	2		Raukawa Marae	Marae complex	fe_157			
-gr_zo_6-3	zo_6		6		community	3		Wehiwehi Marae	Marae complex	fe_157			
-gr_zo_6-5	zo_6		6		community	5		Tūkōrehe Marae	Marae complex	fe_157			
-gr_zo_7-1	zo_7		7		community	1		Kawiu Marae	Marae complex	fe_157			
-gr_zo_7-2	zo_7		7		community	2		Kohu-Tūroa Marae	Marae complex	fe_157			
-gr_zo_8-1	zo_8		8		community	1		Huia Marae	Marae complex	fe_157			
-gr_zo_8-2	zo_8		8		community	2		Kererū Marae	Marae complex	fe_157			
-gr_zo_8-3	zo_8		8		community	3		Matau Marae	Marae complex	fe_157			
-gr_zo_8-4	zo_8		8		community	4		Motuiti Marae	Marae complex	fe_157			
-gr_zo_8-5	zo_8		8		community	5		Paranui Marae	Marae complex	fe_157			
-gr_zo_8-6	zo_8		8		community	6		Whakawehi Marae	Marae complex	fe_157			
-gr_zo_8-7	zo_8		8		community	7		Tūranga Marae	Marae complex	fe_157			
-gr_zo_9-1	zo_9		9		community	1		Puketōtara Marae	Marae complex	fe_157			
-gr_zo_9-2	zo_9		9		community	2		Rangiōtu Marae	Marae complex	fe_157			
-gr_zo_10-1	zo_10		10		community	1		Aorangi Marae	Marae complex	fe_157			
-gr_zo_10-2	zo_10		10		community	2		Kauwhata Marae	Marae complex	fe_157			
-gr_zo_11-1	zo_11		11		community	1		Parewahawaha Marae	Marae complex	fe_157			
-gr_zo_11-2	zo_11		11		community	2		Parewanui Marae	Marae complex	fe_157			
-gr_zo_12-1	zo_12		12		community	1		Ngā Pōtaka Marae	Marae complex	fe_157			
-gr_zo_12-2	zo_12		12		community	2		Poupatatē Marae	Marae complex	fe_157			
-gr_zo_12-3	zo_12		12		community	3		Te Hiiri Marae	Marae complex	fe_157			
-gr_zo_12-4	zo_12		12		community	4		Te Hou Hou Marae	Marae complex	fe_157			
-gr_zo_12-5	zo_12		12		community	5		Tokorangi Marae	Marae complex	fe_157			
-gr_zo_13-1	zo_13		13		community	1	Whitikaupeka meeting house		Marae complex	fe_157			
-gr_zo_13-2	zo_13		13		community	2		Ōpaea Marae	Marae complex	fe_157			
-gr_zo_13-3	zo_13		13		community	3		Ōruamātua Marae	Marae complex	fe_157			
-gr_zo_14-1	zo_14		14		community	1		Tirorangi Marae	Marae complex	fe_157			
-gr_zo_14-2	zo_14		14		community	2		Maungārongo Marae	Marae complex	fe_157			
-gr_zo_14-3	zo_14		14		community	3		Rakatepauma Marae	Marae complex	fe_157			
-gr_zo_16-1	zo_16		16		community	1		Hīrangi Marae	Marae complex	fe_157			
-gr_zo_16-2	zo_16		16		community	2		Korohe Marae	Marae complex	fe_157			
-gr_zo_16-3	zo_16		16		community	3		Ōtūkou Marae	Marae complex	fe_157			
-gr_zo_16-4	zo_16		16		community	4		Tokaanu Marae	Marae complex	fe_157			
-gr_zo_16-5	zo_16		16		community	5		Waihī Marae	Marae complex	fe_157			
-gr_zo_16-6	zo_16		16		community	6		Waitetoko Marae	Marae complex	fe_157			
-gr_zo_17-1	zo_17		17		community	1		Maroa Marae	Marae complex	fe_157			
-gr_zo_17-2	zo_17		17		community	2		Mōkai Marae	Marae complex	fe_157			
-gr_zo_17-3	zo_17		17		community	3		Nukuhau Marae	Marae complex	fe_157			
-gr_zo_17-4	zo_17		17		community	4		Ōngāroto Marae	Marae complex	fe_157			
-gr_zo_17-5	zo_17		17		community	5		Oruanui Marae	Marae complex	fe_157			
-gr_zo_17-6	zo_17		17		community	6		Pākira Marae	Marae complex	fe_157			
-gr_zo_17-7	zo_17		17		community	7		Te Rangīta Marae	Marae complex	fe_157			
-gr_zo_17-8	zo_17		17		community	8	Haukapanui meeting house		Marae complex	fe_157			
-gr_zo_17-9	zo_17		17		community	9		Waipāhīhī Marae	Marae complex	fe_157			
-gr_zo_19-1	zo_19		19		community	1		Kauangaroa Marae	Marae complex	fe_157			
-gr_zo_19-2	zo_19		19		community	2		Rātana Pā	Marae complex	fe_157			
-gr_zo_19-3	zo_19		19		community	3		Tini Waitara Marae	Marae complex	fe_157			
-gr_zo_19-4	zo_19		19		community	4		Turakina Marae	Marae complex	fe_157			
-gr_zo_19-5	zo_19		19		community	5		Whangaehu Marae	Marae complex	fe_157			
-gr_zo_20-1	zo_20		20		community	1		Ātene Marae	Marae complex	fe_157			
-gr_zo_20-2	zo_20		20		community	2		Mangātoa Pā	Marae complex	fe_157			
-gr_zo_20-3	zo_20		20		community	3		Ōperiki Pā	Marae complex	fe_157			
-gr_zo_20-4	zo_20		20		community	4		Ōtoko Marae	Marae complex	fe_157			
-gr_zo_20-5	zo_20		20		community	5		Pungarehu Marae	Marae complex	fe_157			
-gr_zo_20-6	zo_20		20		community	6		Pūtiki-Wharanui Marae	Marae complex	fe_157			
-gr_zo_20-7	zo_20		20		community	7		Tawhitinui Marae	Marae complex	fe_157			
-gr_zo_20-8	zo_20		20		community	8		Te Ao Hou Marae	Marae complex	fe_157			
-gr_zo_21-1	zo_21		21		community	1		Matahiwi Marae	Marae complex	fe_157			
-gr_zo_21-2	zo_21		21		community	2		Patiarero Marae	Marae complex	fe_157			
-gr_zo_21-3	zo_21		21		community	3		Rānana Marae	Marae complex	fe_157			
-gr_zo_21-4	zo_21		21		community	4		Te Ao Mārama Marae	Marae complex	fe_157			
-gr_zo_21-5	zo_21		21		community	5		Tirorangi Marae	Marae complex	fe_157			
-gr_zo_21-6	zo_21		21		community	6		Poutama Whare Wānanga	Marae complex	fe_157			
-gr_zo_22-1	zo_22		22		community	1		Kauriki Marae	Marae complex	fe_157			
-gr_zo_22-2	zo_22		22		community	2		Manu Ariki Marae	Marae complex	fe_157			
-gr_zo_22-3	zo_22		22		community	3		Ngāpūwaiwaha Marae	Marae complex	fe_157			
-gr_zo_22-4	zo_22		22		community	4		Ngāpūwaiwaha Marae	Marae complex	fe_157			
-gr_zo_22-5	zo_22		22		community	5		Tuhua Marae	Marae complex	fe_157			
-gr_zo_22-6	zo_22		22		community	6		Wharauroa Marae	Marae complex	fe_157			
-gr_zo_24-1	zo_24		24		community	1		Ngātimaru Marae	Marae complex	fe_157			
-gr_zo_24-2	zo_24		24		community	2		Pūrangi Marae	Marae complex	fe_157			
-gr_zo_24-3	zo_24		24		community	3		Te Upoko-o-te-Whenua Marae	Marae complex	fe_157			
-gr_zo_25-1	zo_25		25		community	1		Kai-iwi Marae	Marae complex	fe_157			
-gr_zo_25-2	zo_25		25		community	2		Kai-iwi Marae	Marae complex	fe_157			
-gr_zo_25-3	zo_25		25		community	3		Moumāhaki Marae	Marae complex	fe_157			
-gr_zo_25-4	zo_25		25		community	4		Tauranga-ika	Marae complex	fe_157			
-gr_zo_25-5	zo_25		25		community	5		Pākaraka Pā	Marae complex	fe_157			
-gr_zo_25-6	zo_25		25		community	6		Takirau Marae	Marae complex	fe_157			
-gr_zo_25-7	zo_25		25		community	7		Te Ihupuku Marae	Marae complex	fe_157			
-gr_zo_25-8	zo_25		25		community	8		Whenuakura Marae	Marae complex	fe_157			
-gr_zo_26-1	zo_26		26		community	1		Taiporohēnui Marae	Marae complex	fe_157			
-gr_zo_26-2	zo_26		26		community	2		Meremere Marae	Marae complex	fe_157			
-gr_zo_26-3	zo_26		26		community	3		Ngātiki Marae	Marae complex	fe_157			
-gr_zo_26-4	zo_26		26		community	4		Pariroa Pā	Marae complex	fe_157			
-gr_zo_26-5	zo_26		26		community	5		Te Waioturi Marae	Marae complex	fe_157			
-gr_zo_26-6	zo_26		26		community	6	Rangiharuru meeting house		Marae complex	fe_157			
-gr_zo_26-7	zo_26		26		community	7		Te Tākere Marae	Marae complex	fe_157			
-gr_zo_26-8	zo_26		26		community	8		Ōhangai Marae	Marae complex	fe_157			
-gr_zo_27-1	zo_27		27		community	1		Kānihi Marae	Marae complex	fe_157			
-gr_zo_27-2	zo_27		27		community	2	Kumea-mai-te-Waka meeting house		Marae complex	fe_157			
-gr_zo_27-3	zo_27		27		community	3		Ōeo Marae	Marae complex	fe_157			
-gr_zo_27-4	zo_27		27		community	4		Taikātū Marae	Marae complex	fe_157			
-gr_zo_27-5	zo_27		27		community	5		Tawhiti-nui Marae	Marae complex	fe_157			
-gr_zo_27-6	zo_27		27		community	6		Te Weriweri Marae	Marae complex	fe_157			
-gr_zo_27-7	zo_27		27		community	7		Waiōkura Marae	Marae complex	fe_157			
-gr_zo_28-1	zo_28		28		community	1	Moana-i-Kauria meeting house		Marae complex	fe_157			
-gr_zo_28-2	zo_28		28		community	2		Parihaka Pā	Marae complex	fe_157			
-gr_zo_28-3	zo_28		28		community	3		Pōtaka Marae	Marae complex	fe_157			
-gr_zo_28-4	zo_28		28		community	4		Pūniho Marae	Marae complex	fe_157			
-gr_zo_29-1	zo_29		29		community	1		Manukorihi	Marae complex	fe_157			
-gr_zo_29-2	zo_29		29		community	2		Mururaupatu Marae	Marae complex	fe_157			
-gr_zo_29-3	zo_29		29		community	3		Ōwae Marae	Marae complex	fe_157			
-gr_zo_29-4	zo_29		29		community	4		Pukerangiora Pā	Marae complex	fe_157			
-gr_zo_29-5	zo_29		29		community	5	Rangimārie Arts & Crafts Centre		Marae complex	fe_157			
-gr_zo_33-1	zo_33		33		community	1		Te Oreore-o-te-kata-ā-Hine-Mātaki Marae	Marae complex	fe_157			
-gr_zo_37-1	zo_37		37		community	1		Mākirikiri Marae	Marae complex	fe_157			
-gr_zo_37-2	zo_37		37		community	2		Poherau Marae	Marae complex	fe_157			
-gr_zo_37-3	zo_37		37		community	3		Te Ahu-a-Turanga Marae	Marae complex	fe_157			
-gr_zo_38-1	zo_38		38		community	1		Rongaomaraeroa Marae	Marae complex	fe_157			
-gr_zo_39-1	zo_39		39		community	1		Kauheihei	Marae complex	fe_157			
-gr_zo_39-2	zo_39		39		community	2		Rākautātahi Marae	Marae complex	fe_157			
-gr_zo_39-3	zo_39		39		community	3		Tapairu Marae	Marae complex	fe_157			
-gr_zo_39-4	zo_39		39		community	4		Whatuiāpiti Marae	Marae complex	fe_157			
-gr_zo_40-1	zo_40		40		community	1		Houngarea Marae	Marae complex	fe_157			
-gr_zo_40-10	zo_40		40		community	10		Taupunga Marae	Marae complex	fe_157			
-gr_zo_40-11	zo_40		40		community	11		Waiohiki Marae	Marae complex	fe_157			
-gr_zo_40-12	zo_40		40		community	12		Waipatu Marae	Marae complex	fe_157			
-gr_zo_40-2	zo_40		40		community	2		Kahurānaki Marae	Marae complex	fe_157			
-gr_zo_40-3	zo_40		40		community	3		Kahurangi Marae	Marae complex	fe_157			
-gr_zo_40-4	zo_40		40		community	4		Korongatā Marae	Marae complex	fe_157			
-gr_zo_40-5	zo_40		40		community	5		Mangaroa Marae	Marae complex	fe_157			
-gr_zo_40-6	zo_40		40		community	6		Mihiroa Marae	Marae complex	fe_157			
-gr_zo_40-7	zo_40		40		community	7		Ruahāpia Marae	Marae complex	fe_157			
-gr_zo_40-8	zo_40		40		community	8		Taraia Marae	Marae complex	fe_157			
-gr_zo_41-1	zo_41		41		community	1		Arapaoanui Marae	Marae complex	fe_157			
-gr_zo_41-10	zo_41		41		community	10		Tāngoio Marae	Marae complex	fe_157			
-gr_zo_41-11	zo_41		41		community	11		Te Āwhina Marae	Marae complex	fe_157			
-gr_zo_41-12	zo_41		41		community	12		Te Hāroto Marae	Marae complex	fe_157			
-gr_zo_41-13	zo_41		41		community	13		Te Ūranga Waka Marae	Marae complex	fe_157			
-gr_zo_41-14	zo_41		41		community	14		Timi Kara Marae	Marae complex	fe_157			
-gr_zo_41-2	zo_41		41		community	2		Kohupātiki Marae	Marae complex	fe_157			
-gr_zo_41-3	zo_41		41		community	3		Korokipo Marae	Marae complex	fe_157			
-gr_zo_41-4	zo_41		41		community	4		Mōhaka Marae	Marae complex	fe_157			
-gr_zo_41-5	zo_41		41		community	5		Mōteo Marae	Marae complex	fe_157			
-gr_zo_41-6	zo_41		41		community	6		Ōmāhū Marae	Marae complex	fe_157			
-gr_zo_41-7	zo_41		41		community	7		Parirangi Marae	Marae complex	fe_157			
-gr_zo_41-8	zo_41		41		community	8		Poraiti Marae	Marae complex	fe_157			
-gr_zo_41-9	zo_41		41		community	9		Rūnanga Marae	Marae complex	fe_157			
-gr_zo_42-1	zo_42		42		community	1		Arimāwha Marae	Marae complex	fe_157			
-gr_zo_42-10	zo_42		42		community	10		Rangiahua Marae	Marae complex	fe_157			
-gr_zo_42-11	zo_42		42		community	11		Ruataniwha Marae	Marae complex	fe_157			
-gr_zo_42-12	zo_42		42		community	12		Tākitimu Marae	Marae complex	fe_157			
-gr_zo_42-13	zo_42		42		community	13		Taihoa Marae	Marae complex	fe_157			
-gr_zo_42-14	zo_42		42		community	14		Tawhiti-a-maru Marae	Marae complex	fe_157			
-gr_zo_42-15	zo_42		42		community	15		Te Huki Marae	Marae complex	fe_157			
-gr_zo_42-16	zo_42		42		community	16		Te Kahu-o-te-Rangi Marae	Marae complex	fe_157			
-gr_zo_42-17	zo_42		42		community	17		Te Karaona Marae	Marae complex	fe_157			
-gr_zo_42-19	zo_42		42		community	19		Te Kotahitanga Marae	Marae complex	fe_157			
-gr_zo_42-2	zo_42		42		community	2		Hikuwai Marae	Marae complex	fe_157			
-gr_zo_42-20	zo_42		42		community	20		Te Rauhina Marae	Marae complex	fe_157			
-gr_zo_42-21	zo_42		42		community	21		Tiakiwai Marae	Marae complex	fe_157			
-gr_zo_42-22	zo_42		42		community	22		Whākirangi Marae	Marae complex	fe_157			
-gr_zo_42-23	zo_42		42		community	23		Whakakī Marae	Marae complex	fe_157			
-gr_zo_42-24	zo_42		42		community	24		Whetūmārama Marae	Marae complex	fe_157			
-gr_zo_42-3	zo_42		42		community	3		Hinekōrako Marae	Marae complex	fe_157			
-gr_zo_42-4	zo_42		42		community	4		Hinemihi Marae	Marae complex	fe_157			
-gr_zo_42-5	zo_42		42		community	5		Hurumoa Marae	Marae complex	fe_157			
-gr_zo_42-6	zo_42		42		community	6		Iwitea Marae	Marae complex	fe_157			
-gr_zo_42-7	zo_42		42		community	7		Kahungunu Marae	Marae complex	fe_157			
-gr_zo_42-8	zo_42		42		community	8		Pākohai Marae	Marae complex	fe_157			
-gr_zo_42-9	zo_42		42		community	9		Pūtahi Marae	Marae complex	fe_157			
-gr_zo_43-1	zo_43		43		community	1		Kaiuku Marae	Marae complex	fe_157			
-gr_zo_43-10	zo_43		43		community	10		Tuahuru Marae	Marae complex	fe_157			
-gr_zo_43-11	zo_43		43		community	11		Wai-a-uru Marae	Marae complex	fe_157			
-gr_zo_43-2	zo_43		43		community	2		Mahanga Marae	Marae complex	fe_157			
-gr_zo_43-3	zo_43		43		community	3		Manutai Marae	Marae complex	fe_157			
-gr_zo_43-4	zo_43		43		community	4		Marahara Marae	Marae complex	fe_157			
-gr_zo_43-5	zo_43		43		community	5		Nūhaka Marae	Marae complex	fe_157			
-gr_zo_43-6	zo_43		43		community	6		Ruāwharo Marae	Marae complex	fe_157			
-gr_zo_43-7	zo_43		43		community	7		Tāne-nui-a-Rangi Marae	Marae complex	fe_157			
-gr_zo_43-8	zo_43		43		community	8		Tama Kahu Marae	Marae complex	fe_157			
-gr_zo_43-9	zo_43		43		community	9		Te Rehu Marae	Marae complex	fe_157			
-gr_zo_44-1	zo_44		44		community	1		Maraetaha Marae	Marae complex	fe_157			
-gr_zo_44-10	zo_44		44		community	10		Wakatō Marae	Marae complex	fe_157			
-gr_zo_44-2	zo_44		44		community	2		Mokonui-ā-rangi Marae	Marae complex	fe_157			
-gr_zo_44-3	zo_44		44		community	3		Muriwai Marae	Marae complex	fe_157			
-gr_zo_44-4	zo_44		44		community	4		Ngātapa Marae	Marae complex	fe_157			
-gr_zo_44-5	zo_44		44		community	5		Ōhako Marae	Marae complex	fe_157			
-gr_zo_44-6	zo_44		44		community	6		Pāhou Marae	Marae complex	fe_157			
-gr_zo_44-7	zo_44		44		community	7		Pākowhai Marae	Marae complex	fe_157			
-gr_zo_44-8	zo_44		44		community	8		Rongopai Marae	Marae complex	fe_157			
-gr_zo_44-9	zo_44		44		community	9		Tākitimu Marae	Marae complex	fe_157			
-gr_zo_45-1	zo_45		45		community	1		Mangatū Marae	Marae complex	fe_157			
-gr_zo_45-2	zo_45		45		community	2		Rangatira Marae	Marae complex	fe_157			
-gr_zo_45-3	zo_45		45		community	3		Tākipū Marae	Marae complex	fe_157			
-gr_zo_45-4	zo_45		45		community	4		Tapu-i-Hikitia Marae	Marae complex	fe_157			
-gr_zo_46-1	zo_46		46		community	1		Pārihi-Mānihi Marae	Marae complex	fe_157			
-gr_zo_46-2	zo_46		46		community	2		Tārere Marae	Marae complex	fe_157			
-gr_zo_46-3	zo_46		46		community	3		Te Kuri-a-Tuatai Marae	Marae complex	fe_157			
-gr_zo_46-4	zo_46		46		community	4		Waerenga-ā-hika Marae	Marae complex	fe_157			
-gr_zo_47-1	zo_47		47		community	1		Te Poho-o-Rāwiri Marae	Marae complex	fe_157			
-gr_zo_47-2	zo_47		47		community	2		Whāngārā Marae	Marae complex	fe_157			
-gr_zo_48-1	zo_48		48		community	1		Anaura Marae	Marae complex	fe_157			
-gr_zo_48-2	zo_48		48		community	2		Hauiti Marae	Marae complex	fe_157			
-gr_zo_48-4	zo_48		48		community	4		Kurī Marae	Marae complex	fe_157			
-gr_zo_48-5	zo_48		48		community	5	Te Amowhiu meeting house		Marae complex	fe_157			
-gr_zo_48-6	zo_48		48		community	6		Te Rāwheoro Marae	Marae complex	fe_157			
-gr_zo_49-1	zo_49		49		community	1		Kiekie Marae	Marae complex	fe_157			
-gr_zo_49-2	zo_49		49		community	2		Mihikango Marae	Marae complex	fe_157			
-gr_zo_49-3	zo_49		49		community	3		Pākirikiri Marae	Marae complex	fe_157			
-gr_zo_49-4	zo_49		49		community	4		Te Ariuru Marae	Marae complex	fe_157			
-gr_zo_49-5	zo_49		49		community	5		Tuatini Marae	Marae complex	fe_157			
-gr_zo_49-6	zo_49		49		community	6		Waiparapara Marae	Marae complex	fe_157			
-gr_zo_49-8	zo_49		49		community	8		Whareponga Marae	Marae complex	fe_157			
-gr_zo_50-1	zo_50		50		community	1		Hīruhārama Marae	Marae complex	fe_157			
-gr_zo_50-10	zo_50		50		community	10		Pōtaka Marae	Marae complex	fe_157			
-gr_zo_50-11	zo_50		50		community	11		Rāhui-o-Kehu Marae	Marae complex	fe_157			
-gr_zo_50-12	zo_50		50		community	12		Reporua Marae	Marae complex	fe_157			
-gr_zo_50-13	zo_50		50		community	13	Rauru-nui-ā-Toi meeting house		Marae complex	fe_157			
-gr_zo_50-14	zo_50		50		community	14		Taumata-puhi Marae	Marae complex	fe_157			
-gr_zo_50-15	zo_50		50		community	15		Te Aro Wera Marae	Marae complex	fe_157			
-gr_zo_50-16	zo_50		50		community	16		Te Horo Marae	Marae complex	fe_157			
-gr_zo_50-17	zo_50		50		community	17		Te Rāhui Marae	Marae complex	fe_157			
-gr_zo_50-18	zo_50		50		community	18		Tūwhakairiora Marae	Marae complex	fe_157			
-gr_zo_50-19	zo_50		50		community	19		Waiōmatatini Marae	Marae complex	fe_157			
-gr_zo_50-2	zo_50		50		community	2		Hinepare Marae	Marae complex	fe_157			
-gr_zo_50-20	zo_50		50		community	20		Waitākaro Marae	Marae complex	fe_157			
-gr_zo_50-21	zo_50		50		community	21		Whakapaorangi Marae	Marae complex	fe_157			
-gr_zo_50-22	zo_50		50		community	22		Whenua-ā-kura Marae	Marae complex	fe_157			
-gr_zo_50-23	zo_50		50		community	23		Te Araroa Marae	Marae complex	fe_157			
-gr_zo_50-3	zo_50		50		community	3		Horoera Marae	Marae complex	fe_157			
-gr_zo_50-4	zo_50		50		community	4		Kākāriki Marae	Marae complex	fe_157			
-gr_zo_50-5	zo_50		50		community	5		Kariaka Marae	Marae complex	fe_157			
-gr_zo_50-6	zo_50		50		community	6		Mākarika Marae	Marae complex	fe_157			
-gr_zo_50-7	zo_50		50		community	7		Mangahāngea Marae	Marae complex	fe_157			
-gr_zo_50-8	zo_50		50		community	8		Pāhau Marae	Marae complex	fe_157			
-gr_zo_50-9	zo_50		50		community	9		Penu Marae	Marae complex	fe_157			
-gr_zo_51-1	zo_51		51		community	1		Kaiaio Marae	Marae complex	fe_157			
-gr_zo_51-10	zo_51		51		community	10		Whangaparāoa Marae	Marae complex	fe_157			
-gr_zo_51-11	zo_51		51		community	11		Whitianga Marae	Marae complex	fe_157			
-gr_zo_51-2	zo_51		51		community	2		Maruohinemaka Marae	Marae complex	fe_157			
-gr_zo_51-3	zo_51		51		community	3		Ōtūwhare Marae	Marae complex	fe_157			
-gr_zo_51-4	zo_51		51		community	4		Pāhaoa Marae	Marae complex	fe_157			
-gr_zo_51-5	zo_51		51		community	5		Pōtaka Marae	Marae complex	fe_157			
-gr_zo_51-6	zo_51		51		community	6		Te Papa-o-Mārere Marae	Marae complex	fe_157			
-gr_zo_51-7	zo_51		51		community	7		Te Papa-o-Wharekura Marae	Marae complex	fe_157			
-gr_zo_51-8	zo_51		51		community	8		Waiōrore Marae	Marae complex	fe_157			
-gr_zo_51-9	zo_51		51		community	9		Wairūrū Marae	Marae complex	fe_157			
-gr_zo_53-1	zo_53		53		community	1		Kutarere Marae	Marae complex	fe_157			
-gr_zo_53-2	zo_53		53		community	2		Roimata Marae	Marae complex	fe_157			
-gr_zo_53-4	zo_53		53		community	4		Te Rere Pā	Marae complex	fe_157			
-gr_zo_53-5	zo_53		53		community	5		Waiotahe Pā	Marae complex	fe_157			
-gr_zo_53-6	zo_53		53		community	6	Tūtāmure meeting house		Marae complex	fe_157			
-gr_zo_53-7	zo_53		53		community	7	Irapuāia meeting house		Marae complex	fe_157			
-gr_zo_53-8	zo_53		53		community	8	Muriwai meeting house		Marae complex	fe_157			
-gr_zo_53-9	zo_53		53		community	9	Ruamoko meeting house		Marae complex	fe_157			
-gr_zo_54-1	zo_54		54		community	1		Matahī Marae	Marae complex	fe_157			
-gr_zo_54-10	zo_54		54		community	10		Tuapō Marae	Marae complex	fe_157			
-gr_zo_54-11	zo_54		54		community	11		Whakarae Marae	Marae complex	fe_157			
-gr_zo_54-12	zo_54		54		community	12	Te Poho-o-Tamatea meeting house		Marae complex	fe_157			
-gr_zo_54-13	zo_54		54		community	13		Rāroa Pā	Marae complex	fe_157			
-gr_zo_54-2	zo_54		54		community	2		Ōmuriwaka Marae	Marae complex	fe_157			
-gr_zo_54-3	zo_54		54		community	3		Piripari Marae	Marae complex	fe_157			
-gr_zo_54-4	zo_54		54		community	4	Rāhiri-o-te-Rangi meeting house		Marae complex	fe_157			
-gr_zo_54-5	zo_54		54		community	5		Tātaiahape Marae	Marae complex	fe_157			
-gr_zo_54-6	zo_54		54		community	6		Tāwhana Marae	Marae complex	fe_157			
-gr_zo_54-7	zo_54		54		community	7		Tauanui Marae	Marae complex	fe_157			
-gr_zo_54-8	zo_54		54		community	8		Te Ao Hou Marae	Marae complex	fe_157			
-gr_zo_54-9	zo_54		54		community	9		Te Pou-ā-Hīnau Marae	Marae complex	fe_157			
-gr_zo_55-1	zo_55		55		community	1		Ngāhina Marae	Marae complex	fe_157			
-gr_zo_55-10	zo_55		55		community	10		Waikirikiri Marae	Marae complex	fe_157			
-gr_zo_55-2	zo_55		55		community	2		Ōhotu Marae	Marae complex	fe_157			
-gr_zo_55-3	zo_55		55		community	3		Ōtenuku Marae	Marae complex	fe_157			
-gr_zo_55-4	zo_55		55		community	4	Ōwhakatoro meeting house		Marae complex	fe_157			
-gr_zo_55-5	zo_55		55		community	5		Tauarau Marae	Marae complex	fe_157			
-gr_zo_55-6	zo_55		55		community	6		Te Papakāinga Marae	Marae complex	fe_157			
-gr_zo_55-7	zo_55		55		community	7		Te Pou-ā-Hīnau Marae	Marae complex	fe_157			
-gr_zo_55-8	zo_55		55		community	8		Te Rewarewa Marae	Marae complex	fe_157			
-gr_zo_55-9	zo_55		55		community	9		Tōtara Marae	Marae complex	fe_157			
-gr_zo_56-1	zo_56		56		community	1		Kākānui Marae	Marae complex	fe_157			
-gr_zo_56-10	zo_56		56		community	10		Kākahu Tāpiki Marae	Marae complex	fe_157			
-gr_zo_56-11	zo_56		56		community	11		Pāpueru Marae	Marae complex	fe_157			
-gr_zo_56-2	zo_56		56		community	2		Mātaatua Marae	Marae complex	fe_157			
-gr_zo_56-3	zo_56		56		community	3		Ōhaua-te-Rangi Marae	Marae complex	fe_157			
-gr_zo_56-4	zo_56		56		community	4		Ōpūtao Marae	Marae complex	fe_157			
-gr_zo_56-5	zo_56		56		community	5		Ōtekura Marae	Marae complex	fe_157			
-gr_zo_56-6	zo_56		56		community	6		Tātāhoata Marae	Marae complex	fe_157			
-gr_zo_56-7	zo_56		56		community	7		Te Umuroa Marae	Marae complex	fe_157			
-gr_zo_56-8	zo_56		56		community	8		Uhiārae Marae	Marae complex	fe_157			
-gr_zo_56-9	zo_56		56		community	9		Tāne-nui-ā-Rangi	Marae complex	fe_157			
-gr_zo_57-1	zo_57		57		community	1		Kūhā Pā	Marae complex	fe_157			
-gr_zo_57-2	zo_57		57		community	2		Waimako Marae	Marae complex	fe_157			
-gr_zo_58-1	zo_58		58		community	1		Moewhare Marae	Marae complex	fe_157			
-gr_zo_58-2	zo_58		58		community	2		Murumurunga Marae	Marae complex	fe_157			
-gr_zo_58-3	zo_58		58		community	3		Rangitahi Pā	Marae complex	fe_157			
-gr_zo_58-4	zo_58		58		community	4		Tīpapa Marae	Marae complex	fe_157			
-gr_zo_58-5	zo_58		58		community	5		Waikotikoti Marae	Marae complex	fe_157			
-gr_zo_58-6	zo_58		58		community	6		Whirinaki Pā	Marae complex	fe_157			
-gr_zo_59-1	zo_59		59		community	1		Kōkōhīnau Marae	Marae complex	fe_157			
-gr_zo_59-10	zo_59		59		community	10		Tū-te-Ao Marae	Marae complex	fe_157			
-gr_zo_59-11	zo_59		59		community	11		Uira-roa Marae	Marae complex	fe_157			
-gr_zo_59-12	zo_59		59		community	12		Wairaka Marae	Marae complex	fe_157			
-gr_zo_59-2	zo_59		59		community	2		Ōmataroa Marae	Marae complex	fe_157			
-gr_zo_59-3	zo_59		59		community	3		Poroporo Marae	Marae complex	fe_157			
-gr_zo_59-4	zo_59		59		community	4		Puawairua Marae	Marae complex	fe_157			
-gr_zo_59-5	zo_59		59		community	5		Ruaihona Marae	Marae complex	fe_157			
-gr_zo_59-6	zo_59		59		community	6		Taiwhakāea Marae	Marae complex	fe_157			
-gr_zo_59-7	zo_59		59		community	7		Te Māpou Marae	Marae complex	fe_157			
-gr_zo_59-8	zo_59		59		community	8		Te Rangi Houhiri Marae	Marae complex	fe_157			
-gr_zo_59-9	zo_59		59		community	9		Toroa Marae	Marae complex	fe_157			
-gr_zo_60-1	zo_60		60		community	1		Ōniao Pā	Marae complex	fe_157			
-gr_zo_60-2	zo_60		60		community	2		Umutahi Pā	Marae complex	fe_157			
-gr_zo_60-3	zo_60		60		community	3		Rangitihi Pā	Marae complex	fe_157			
-gr_zo_61-1	zo_61		61		community	1		Waitahanui Pā	Marae complex	fe_157			
-gr_zo_61-2	zo_61		61		community	2		Pukehina Pā	Marae complex	fe_157			
-gr_zo_62-1	zo_62		62		community	1		Kāhumatamomoe Pā	Marae complex	fe_157			
-gr_zo_62-2	zo_62		62		community	2		Te Tākinga Pā	Marae complex	fe_157			
-gr_zo_62-3	zo_62		62		community	3		Ōhau Pā	Marae complex	fe_157			
-gr_zo_62-4	zo_62		62		community	4		Pounamunui Pā	Marae complex	fe_157			
-gr_zo_62-5	zo_62		62		community	5	Rangitihi meeting house		Marae complex	fe_157			
-gr_zo_62-6	zo_62		62		community	6	Pikiao meeting house		Marae complex	fe_157			
-gr_zo_63-1	zo_63		63		community	1		Tapuaekura Pā	Marae complex	fe_157			
-gr_zo_63-2	zo_63		63		community	2		Ruatō Pā	Marae complex	fe_157			
-gr_zo_63-3	zo_63		63		community	3		Waikohatu Pā	Marae complex	fe_157			
-gr_zo_63-4	zo_63		63		community	4		Taurua Pā	Marae complex	fe_157			
-gr_zo_63-5	zo_63		63		community	5		Te Waiiti Pā	Marae complex	fe_157			
-gr_zo_63-6	zo_63		63		community	6		Tapuaeharuru Pā	Marae complex	fe_157			
-gr_zo_63-7	zo_63		63		community	7		Punawhakarēia Pā	Marae complex	fe_157			
-gr_zo_64-1	zo_64		64		community	1		Mātai-Kōtare Pā	Marae complex	fe_157			
-gr_zo_64-2	zo_64		64		community	2		Te Ruamatā Pā	Marae complex	fe_157			
-gr_zo_64-3	zo_64		64		community	3		Pikirangi Pā	Marae complex	fe_157			
-gr_zo_66-1	zo_66		66		community	1		Waimahana Pā	Marae complex	fe_157			
-gr_zo_66-2	zo_66		66		community	2		Mātaārae Pā	Marae complex	fe_157			
-gr_zo_66-3	zo_66		66		community	3		Ōhaki Pā	Marae complex	fe_157			
-gr_zo_67-1	zo_67		67		community	1		Rongomaipāpā Pā	Marae complex	fe_157			
-gr_zo_67-2	zo_67		67		community	2		Kearoa Pā	Marae complex	fe_157			
-gr_zo_68-1	zo_68		68		community	1		Te Pākira Pā	Marae complex	fe_157			
-gr_zo_68-14	zo_68		68		community	14		Hinemihi	Marae complex	fe_157			
-gr_zo_68-2	zo_68		68		community	2		Te Iringa Pā	Marae complex	fe_157			
-gr_zo_68-3	zo_68		68		community	3		Rotowhio Pā	Marae complex	fe_157			
-gr_zo_69-1	zo_69		69		community	1		Te Papai-ō-uru Pā	Marae complex	fe_157			
-gr_zo_69-3	zo_69		69		community	3		Mātaatua Marae	Marae complex	fe_157			
-gr_zo_69-4	zo_69		69		community	4		Tūtānekai Pā	Marae complex	fe_157			
-gr_zo_69-5	zo_69		69		community	5	Apumoana meeting house		Marae complex	fe_157			
-gr_zo_69-6	zo_69		69		community	6		Hinemihi Pā	Marae complex	fe_157			
-gr_zo_69-7	zo_69		69		community	7	Hurunga-o-te-Rangi meeting house		Marae complex	fe_157			
-gr_zo_69-8	zo_69		69		community	8		Tārewa Pā	Marae complex	fe_157			
-gr_zo_69-9	zo_69		69		community	9	Tūmahaurangi meeting house		Marae complex	fe_157			
-gr_zo_71-1	zo_71		71		community	1		Tarukenga Pā	Marae complex	fe_157			
-gr_zo_71-2	zo_71		71		community	2		Rangiwewehi Pā	Marae complex	fe_157			
-gr_zo_71-3	zo_71		71		community	3		Waitetī Pā	Marae complex	fe_157			
-gr_zo_71-4	zo_71		71		community	4		Te Purei	Marae complex	fe_157			
-gr_zo_71-5	zo_71		71		community	5		Te Kurī	Marae complex	fe_157			
-gr_zo_72-1	zo_72		72		community	1	Tāwakeheimoa meeting house		Marae complex	fe_157			
-gr_zo_73-1	zo_73		73		community	1		Te Awhe Pā	Marae complex	fe_157			
-gr_zo_73-2	zo_73		73		community	2		Whakaue Pā	Marae complex	fe_157			
-gr_zo_74-1	zo_74		74		community	1		Manoeka Pā	Marae complex	fe_157			
-gr_zo_74-2	zo_74		74		community	2		Waitangi Pā	Marae complex	fe_157			
-gr_zo_74-3	zo_74		74		community	3		Te Paamu Pā	Marae complex	fe_157			
-gr_zo_74-4	zo_74		74		community	4		Rangiuru Pā	Marae complex	fe_157			
-gr_zo_74-5	zo_74		74		community	5		Te Mataī Pā	Marae complex	fe_157			
-gr_zo_74-6	zo_74		74		community	6		Te Kahika Pā	Marae complex	fe_157			
-gr_zo_75-1	zo_75		75		community	1	Tamatea-ki-te-huatahi meeting house		Marae complex	fe_157			
-gr_zo_75-2	zo_75		75		community	2	Te Hiinga o te Rā meeting house		Marae complex	fe_157			
-gr_zo_76-1	zo_76		76		community	1		Te Rereātūkāhia Marae	Marae complex	fe_157			
-gr_zo_76-10	zo_76		76		community	10		Kutaroa Marae	Marae complex	fe_157			
-gr_zo_76-11	zo_76		76		community	11		Maungatapu Marae	Marae complex	fe_157			
-gr_zo_76-12	zo_76		76		community	12		Whareroa Marae	Marae complex	fe_157			
-gr_zo_76-13	zo_76		76		community	13		Mangatawa Marae	Marae complex	fe_157			
-gr_zo_76-15	zo_76		76		community	15	Tahinga-o-te-Rā meeting house		Marae complex	fe_157			
-gr_zo_76-16	zo_76		76		community	16		Hūria Marae	Marae complex	fe_157			
-gr_zo_76-2	zo_76		76		community	2		Hairīni Marae	Marae complex	fe_157			
-gr_zo_76-3	zo_76		76		community	3		Tūāpiro Marae	Marae complex	fe_157			
-gr_zo_76-4	zo_76		76		community	4		Te Pura Wairoa Marae	Marae complex	fe_157			
-gr_zo_76-5	zo_76		76		community	5		Peterehema Marae	Marae complex	fe_157			
-gr_zo_76-7	zo_76		76		community	7		Ōpounui	Marae complex	fe_157			
-gr_zo_76-8	zo_76		76		community	8	Rangihouhiri meeting house		Marae complex	fe_157			
-gr_zo_76-9	zo_76		76		community	9		Ōpureora Marae	Marae complex	fe_157			
-gr_zo_79-1	zo_79		79		community	1	Waihī Community Marae		Marae complex	fe_157			
-gr_zo_79-2	zo_79		79		community	2		Pūkewa Marae	Marae complex	fe_157			
-gr_zo_85-1	zo_85		85		community	1		Mātai Whetū Marae	Marae complex	fe_157			
-gr_zo_86-1	zo_86		86		community	1		Ngahu Toitoi Marae	Marae complex	fe_157			
-gr_zo_86-2	zo_86		86		community	2		Te Pai ō Hauraki Marae	Marae complex	fe_157			
-gr_zo_87-1	zo_87		87		community	1		Tūī Pā	Marae complex	fe_157			
-gr_zo_88-1	zo_88		88		community	1		Mangatangi Marae	Marae complex	fe_157			
-gr_zo_88-3	zo_88		88		community	3		Tūī	Marae complex	fe_157			
-gr_zo_89-1	zo_89		89		community	1		Whakatīwai Marae	Marae complex	fe_157			
-gr_zo_90-1	zo_90		90		community	1		Mōkaukohunui Marae	Marae complex	fe_157			
-gr_zo_90-2	zo_90		90		community	2		Napinapi Pā	Marae complex	fe_157			
-gr_zo_90-3	zo_90		90		community	3		Ngā Miro ā Huiao Marae	Marae complex	fe_157			
-gr_zo_90-4	zo_90		90		community	4		Āria Marae	Marae complex	fe_157			
-gr_zo_90-5	zo_90		90		community	5		Māniaroa Marae	Marae complex	fe_157			
-gr_zo_91-1	zo_91		91		community	1		Mīringa te Kakara Marae	Marae complex	fe_157			
-gr_zo_91-2	zo_91		91		community	2		Te Hape Marae	Marae complex	fe_157			
-gr_zo_91-3	zo_91		91		community	3	Rērēahu meeting house		Marae complex	fe_157			
-gr_zo_91-4	zo_91		91		community	4		Te Ihingārangi Marae	Marae complex	fe_157			
-gr_zo_92-1	zo_92		92		community	1	Te Tokanganui-ā-Noho meeting house		Marae complex	fe_157			
-gr_zo_92-2	zo_92		92		community	2		Otewā Marae	Marae complex	fe_157			
-gr_zo_92-3	zo_92		92		community	3	Te Kōrapa meeting house		Marae complex	fe_157			
-gr_zo_92-4	zo_92		92		community	4		Te Ahoroa Marae	Marae complex	fe_157			
-gr_zo_92-5	zo_92		92		community	5		Te Kuiti Pā	Marae complex	fe_157			
-gr_zo_92-6	zo_92		92		community	6		Tomotuki Marae	Marae complex	fe_157			
-gr_zo_92-7	zo_92		92		community	7		Mōtītī Pā	Marae complex	fe_157			
-gr_zo_92-8	zo_92		92		community	8		Mangarama Marae	Marae complex	fe_157			
-gr_zo_93-1	zo_93		93		community	1		Haurua	Marae complex	fe_157			
-gr_zo_93-2	zo_93		93		community	2	Waipātōtō meeting house		Marae complex	fe_157			
-gr_zo_93-3	zo_93		93		community	3		Kaputuhi Marae	Marae complex	fe_157			
-gr_zo_94-1	zo_94		94		community	1		Kahotea Pā	Marae complex	fe_157			
-gr_zo_94-2	zo_94		94		community	2		Te Keeti Marae	Marae complex	fe_157			
-gr_zo_95-1	zo_95		95		community	1		Maketū Pā	Marae complex	fe_157			
-gr_zo_95-10	zo_95		95		community	10	Te Mānia Sleeping House		Marae complex	fe_157			
-gr_zo_95-2	zo_95		95		community	2		Ōkapu Marae	Marae complex	fe_157			
-gr_zo_95-3	zo_95		95		community	3		Taharoa Marae	Marae complex	fe_157			
-gr_zo_95-4	zo_95		95		community	4		Mōkai-kāinga Marae	Marae complex	fe_157			
-gr_zo_95-5	zo_95		95		community	5		Hīona Marae	Marae complex	fe_157			
-gr_zo_95-6	zo_95		95		community	6		Te Koraha Marae	Marae complex	fe_157			
-gr_zo_95-7	zo_95		95		community	7		Waipapa Marae	Marae complex	fe_157			
-gr_zo_95-8	zo_95		95		community	8		Rākaunui Marae	Marae complex	fe_157			
-gr_zo_95-9	zo_95		95		community	9		Te Rauāmoa Marae	Marae complex	fe_157			
-gr_zo_96-1	zo_96		96		community	1		Waingaro Marae	Marae complex	fe_157			
-gr_zo_96-2	zo_96		96		community	2		Poihākena Marae	Marae complex	fe_157			
-gr_zo_96-3	zo_96		96		community	3		Miria te Kakara Marae	Marae complex	fe_157			
-gr_zo_96-4	zo_96		96		community	4		Oneparepare Marae	Marae complex	fe_157			
-gr_zo_96-5	zo_96		96		community	5		Te Kaharoa Marae	Marae complex	fe_157			
-gr_zo_96-6	zo_96		96		community	6		Te Tihi ō Moerangi marae	Marae complex	fe_157			
-gr_zo_97-1	zo_97		97		community	1		Pou-ā-Kani Marae	Marae complex	fe_157			
-gr_zo_98-1	zo_98		98		community	1	Ngā Waka Hall		Marae complex	fe_157			
-gr_zo_98-2	zo_98		98		community	2		Papa o te Aroha Marae	Marae complex	fe_157			
-gr_zo_98-3	zo_98		98		community	3		Ōngāroto Marae	Marae complex	fe_157			
-gr_zo_98-4	zo_98		98		community	4	Pakake-Taiari meeting house		Marae complex	fe_157			
-gr_zo_98-6	zo_98		98		community	6		Te Whānau Ānoa Marae	Marae complex	fe_157			
-gr_zo_99-1	zo_99		99		community	1		Te Ruapeka Marae	Marae complex	fe_157			
-gr_zo_99-10	zo_99		99		community	10		Pāparāmu Marae	Marae complex	fe_157			
-gr_zo_99-11	zo_99		99		community	11		Te Ōmeka Marae	Marae complex	fe_157			
-gr_zo_99-12	zo_99		99		community	12		Ōkauia Pā	Marae complex	fe_157			
-gr_zo_99-2	zo_99		99		community	2		Whakaaratamaiti Marae	Marae complex	fe_157			
-gr_zo_99-3	zo_99		99		community	3		Mangakāretu Marae	Marae complex	fe_157			
-gr_zo_99-4	zo_99		99		community	4		Pikitū Marae	Marae complex	fe_157			
-gr_zo_99-5	zo_99		99		community	5		Mātiti Marae	Marae complex	fe_157			
-gr_zo_99-7	zo_99		99		community	7		Kuranui Marae	Marae complex	fe_157			
-gr_zo_99-8	zo_99		99		community	8		Ngātira Haere Marae	Marae complex	fe_157			
-gr_zo_99-9	zo_99		99		community	9		Te Ūkaipō Marae	Marae complex	fe_157			
-gr_zo_100-1	zo_100		100		community	1		Rukumoana Pā	Marae complex	fe_157			
-gr_zo_100-2	zo_100		100		community	2		Kaia te Mata Marae	Marae complex	fe_157			
-gr_zo_100-3	zo_100		100		community	3		Raungaiti Marae	Marae complex	fe_157			
-gr_zo_100-4	zo_100		100		community	4		Hukunui Marae	Marae complex	fe_157			
-gr_zo_100-5	zo_100		100		community	5		Tauwhare Marae	Marae complex	fe_157			
-gr_zo_101-1	zo_101		101		community	1		Maungatautari Marae	Marae complex	fe_157			
-gr_zo_101-2	zo_101		101		community	2	Rangiatea meeting house		Marae complex	fe_157			
-gr_zo_101-3	zo_101		101		community	3		Ōtautahanga Marae	Marae complex	fe_157			
-gr_zo_101-4	zo_101		101		community	4		Aotearoa Pā	Marae complex	fe_157			
-gr_zo_101-5	zo_101		101		community	5		Rāwhti Roa Marae	Marae complex	fe_157			
-gr_zo_102-1	zo_102		102		community	1	Ōtāwhao meeting house		Marae complex	fe_157			
-gr_zo_102-2	zo_102		102		community	2		Pūrekireki Marae	Marae complex	fe_157			
-gr_zo_102-3	zo_102		102		community	3		Te Haona Kaha Marae	Marae complex	fe_157			
-gr_zo_103-1	zo_103		103		community	1		Kirikiriroa Marae	Marae complex	fe_157			
-gr_zo_103-2	zo_103		103		community	2		Hui te Rangiora Marae	Marae complex	fe_157			
-gr_zo_103-3	zo_103		103		community	3		Miropiko	Marae complex	fe_157			
-gr_zo_103-5	zo_103		103		community	5		Ngāti Hamutana Marae	Marae complex	fe_157			
-gr_zo_104-1	zo_104		104		community	1		Tūrangawaewae Marae	Marae complex	fe_157			
-gr_zo_104-2	zo_104		104		community	2		Ngāruawāhia	Marae complex	fe_157			
-gr_zo_104-3	zo_104		104		community	3		Taupiri	Marae complex	fe_157			
-gr_zo_104-4	zo_104		104		community	4		Waikeri Pā	Marae complex	fe_157			
-gr_zo_105-1	zo_105		105		community	1		Waahi Marae	Marae complex	fe_157			
-gr_zo_105-2	zo_105		105		community	2		Te Kauri Marae	Marae complex	fe_157			
-gr_zo_105-3	zo_105		105		community	3		Te Ōhākī Marae	Marae complex	fe_157			
-gr_zo_105-4	zo_105		105		community	4		Kaitumutumu Marae	Marae complex	fe_157			
-gr_zo_106-1	zo_106		106		community	1		Taniwha Marae	Marae complex	fe_157			
-gr_zo_106-2	zo_106		106		community	2		Rangiriri	Marae complex	fe_157			
-gr_zo_106-3	zo_106		106		community	3		Horahora Marae	Marae complex	fe_157			
-gr_zo_106-4	zo_106		106		community	4		Waikare Marae	Marae complex	fe_157			
-gr_zo_106-5	zo_106		106		community	5		Te Pou o Mangatāwhiri Marae	Marae complex	fe_157			
-gr_zo_107-1	zo_107		107		community	1		Te Kotahitanga Marae	Marae complex	fe_157			
-gr_zo_107-2	zo_107		107		community	2		Ōraeroa Marae	Marae complex	fe_157			
-gr_zo_107-3	zo_107		107		community	3		Tauranganui Marae	Marae complex	fe_157			
-gr_zo_107-4	zo_107		107		community	4		Ngā Tai E Rua Marae	Marae complex	fe_157			
-gr_zo_107-5	zo_107		107		community	5	Te Ōhākīāte Puea Sleeping House		Marae complex	fe_157			
-gr_zo_107-6	zo_107		107		community	6	Ngā Hau E Wha Hall		Marae complex	fe_157			
-gr_zo_108-1	zo_108		108		community	1	Te Uwira meeting house		Marae complex	fe_157			
-gr_zo_108-2	zo_108		108		community	2		Rere-te-Whioi Marae	Marae complex	fe_157			
-gr_zo_108-3	zo_108		108		community	3		Whātāpaka Marae	Marae complex	fe_157			
-gr_zo_108-4	zo_108		108		community	4		Waiau Pā	Marae complex	fe_157			
-gr_zo_109-1	zo_109		109		community	1		Ngāti Papakura Marae	Marae complex	fe_157			
-gr_zo_110-1	zo_110		110		community	1		Umupuia Marae	Marae complex	fe_157			
-gr_zo_111-1	zo_111		111		community	1		Piritahi Marae	Marae complex	fe_157			
-gr_zo_113-1	zo_113		113		community	1		Mōtaerehe Marae	Marae complex	fe_157			
-gr_zo_113-2	zo_113		113		community	2		Kāwā Marae	Marae complex	fe_157			
-gr_zo_114-1	zo_114		114		community	1		Māngere Marae	Marae complex	fe_157			
-gr_zo_114-2	zo_114		114		community	2		Te Ihuamataoho Marae	Marae complex	fe_157			
-gr_zo_114-3	zo_114		114		community	3		Mātaatua Marae	Marae complex	fe_157			
-gr_zo_114-4	zo_114		114		community	4		Ōtara Marae	Marae complex	fe_157			
-gr_zo_114-5	zo_114		114		community	5		Ngā Hau E Whā Marae	Marae complex	fe_157			
-gr_zo_114-6	zo_114		114		community	6	Matuku Tūrēia Dining Hall		Marae complex	fe_157			
-gr_zo_114-7	zo_114		114		community	7	Parehuia meeting house		Marae complex	fe_157			
-gr_zo_114-8	zo_114		114		community	8	Aorere College		Marae complex	fe_157			
-gr_zo_116-1	zo_116		116		community	1		Ōrākei Marae	Marae complex	fe_157			
-gr_zo_116-10	zo_116		116		community	10		Ruapōtaka Marae	Marae complex	fe_157			
-gr_zo_116-11	zo_116		116		community	11	Waiatarau Community Centre		Marae complex	fe_157			
-gr_zo_116-12	zo_116		116		community	12	Kahurangi Ki Maungawhau meeting house		Marae complex	fe_157			
-gr_zo_116-13	zo_116		116		community	13		Kuru Takawaenga Marae	Marae complex	fe_157			
-gr_zo_116-14	zo_116		116		community	14		Waipapa Marae	Marae complex	fe_157			
-gr_zo_116-15	zo_116		116		community	15		Kōkiri Ki Maungarei Marae	Marae complex	fe_157			
-gr_zo_116-16	zo_116		116		community	16		Whare Hui	Marae complex	fe_157			
-gr_zo_116-2	zo_116		116		community	2		Te Tira Hōu Marae	Marae complex	fe_157			
-gr_zo_116-3	zo_116		116		community	3	St Sep's		Marae complex	fe_157			
-gr_zo_116-4	zo_116		116		community	4	Hotunui meeting house		Marae complex	fe_157			
-gr_zo_116-5	zo_116		116		community	5		Te Unga Waka Marae	Marae complex	fe_157			
-gr_zo_116-6	zo_116		116		community	6		Te Akootetūī Marae	Marae complex	fe_157			
-gr_zo_116-7	zo_116		116		community	7	Tūtahi Tonu meeting house		Marae complex	fe_157			
-gr_zo_116-8	zo_116		116		community	8		Māhurehure Marae	Marae complex	fe_157			
-gr_zo_117-1	zo_117		117		community	1		Hoani Waititi Marae	Marae complex	fe_157			
-gr_zo_117-2	zo_117		117		community	2		Kākāriki Marae	Marae complex	fe_157			
-gr_zo_117-3	zo_117		117		community	3		Ōpānuku Marae	Marae complex	fe_157			
-gr_zo_117-4	zo_117		117		community	4	Te Kōtuku meeting house		Marae complex	fe_157			
-gr_zo_119-1	zo_119		119		community	1	Te Kāmaka meeting house		Marae complex	fe_157			
-gr_zo_120-1	zo_120		120		community	1		Haranui Marae	Marae complex	fe_157			
-gr_zo_120-2	zo_120		120		community	2		Kākānui Marae	Marae complex	fe_157			
-gr_zo_120-3	zo_120		120		community	3	Whiti-te-Rā meeting house		Marae complex	fe_157			
-gr_zo_120-4	zo_120		120		community	4		Puatahi Marae	Marae complex	fe_157			
-gr_zo_122-1	zo_122		122		community	1		Rangituanui Marae	Marae complex	fe_157			
-gr_zo_123-1	zo_123		123		community	1		Kākāraea Marae	Marae complex	fe_157			
-gr_zo_123-2	zo_123		123		community	2		Te Pounga Marae	Marae complex	fe_157			
-gr_zo_124-1	zo_124		124		community	1		Taitā Marae	Marae complex	fe_157			
-gr_zo_124-10	zo_124		124		community	10	Pihirau meeting house		Marae complex	fe_157			
-gr_zo_124-2	zo_124		124		community	2		Rīpia Marae	Marae complex	fe_157			
-gr_zo_124-3	zo_124		124		community	3		Ōtūrei Marae	Marae complex	fe_157			
-gr_zo_124-4	zo_124		124		community	4		Te Houhanga Marae	Marae complex	fe_157			
-gr_zo_124-5	zo_124		124		community	5		Aoroa	Marae complex	fe_157			
-gr_zo_124-6	zo_124		124		community	6		Pouto Marae	Marae complex	fe_157			
-gr_zo_124-7	zo_124		124		community	7		Waihauā Marae	Marae complex	fe_157			
-gr_zo_124-8	zo_124		124		community	8		Tinopai Marae	Marae complex	fe_157			
-gr_zo_124-9	zo_124		124		community	9		Toetoe Marae	Marae complex	fe_157			
-gr_zo_125-1	zo_125		125		community	1		Kaihū Marae	Marae complex	fe_157			
-gr_zo_125-2	zo_125		125		community	2		Waikaraka Marae	Marae complex	fe_157			
-gr_zo_125-3	zo_125		125		community	3		Waikarā Marae	Marae complex	fe_157			
-gr_zo_125-4	zo_125		125		community	4		Pāhinui Marae	Marae complex	fe_157			
-gr_zo_125-5	zo_125		125		community	5		Matatina Marae	Marae complex	fe_157			
-gr_zo_125-6	zo_125		125		community	6		Ahikiwi Marae	Marae complex	fe_157			
-gr_zo_125-7	zo_125		125		community	7	Ngāti Toro meeting house		Marae complex	fe_157			
-gr_zo_126-1	zo_126		126		community	1		Tauteihiihi Marae	Marae complex	fe_157			
-gr_zo_126-10	zo_126		126		community	10		Tāhekeroa Marae	Marae complex	fe_157			
-gr_zo_126-11	zo_126		126		community	11		Puhi Moana Ariki Marae	Marae complex	fe_157			
-gr_zo_126-12	zo_126		126		community	12		Moehau Marae	Marae complex	fe_157			
-gr_zo_126-13	zo_126		126		community	13		Motukiore Marae	Marae complex	fe_157			
-gr_zo_126-14	zo_126		126		community	14		Mātaitauā Marae	Marae complex	fe_157			
-gr_zo_126-2	zo_126		126		community	2		Maraeroa Marae	Marae complex	fe_157			
-gr_zo_126-3	zo_126		126		community	3		Te Kotahitanga Marae	Marae complex	fe_157			
-gr_zo_126-4	zo_126		126		community	4	Te Herenga o te Aroha meeting house		Marae complex	fe_157			
-gr_zo_126-5	zo_126		126		community	5		Waiwhatawhata Marae	Marae complex	fe_157			
-gr_zo_126-6	zo_126		126		community	6		Paremata Marae	Marae complex	fe_157			
-gr_zo_126-7	zo_126		126		community	7	Te Whakamaharatanga meeting house		Marae complex	fe_157			
-gr_zo_126-8	zo_126		126		community	8	Te Piitī meeting house		Marae complex	fe_157			
-gr_zo_126-9	zo_126		126		community	9		Mōria Marae	Marae complex	fe_157			
-gr_zo_127-1	zo_127		127		community	1		Te Iringa Marae	Marae complex	fe_157			
-gr_zo_127-12	zo_127		127		community	12	Ngati Toro meeting house		Marae complex	fe_157			
-gr_zo_127-13	zo_127		127		community	13		Pātearoha Marae	Marae complex	fe_157			
-gr_zo_127-2	zo_127		127		community	2		Ngāti Koro Marae	Marae complex	fe_157			
-gr_zo_127-3	zo_127		127		community	3		Te Kotahitanga Marae	Marae complex	fe_157			
-gr_zo_127-4	zo_127		127		community	4	Te Aroha meeting house		Marae complex	fe_157			
-gr_zo_127-5	zo_127		127		community	5		Te Hūruhi Marae	Marae complex	fe_157			
-gr_zo_127-6	zo_127		127		community	6		Pukerātā Marae	Marae complex	fe_157			
-gr_zo_127-7	zo_127		127		community	7		Te Riingi Marae	Marae complex	fe_157			
-gr_zo_127-8	zo_127		127		community	8	Nukutawhiti meeting house		Marae complex	fe_157			
-gr_zo_128-1	zo_128		128		community	1		Whāngārei Terenga Parāoa Marae	Marae complex	fe_157			
-gr_zo_128-10	zo_128		128		community	10		Takahiwai Marae	Marae complex	fe_157			
-gr_zo_128-11	zo_128		128		community	11		Pā te Aroha Marae	Marae complex	fe_157			
-gr_zo_128-12	zo_128		128		community	12		Tītoki	Marae complex	fe_157			
-gr_zo_128-2	zo_128		128		community	2		Onerahi Marae	Marae complex	fe_157			
-gr_zo_128-3	zo_128		128		community	3		Pēhiāweri Marae	Marae complex	fe_157			
-gr_zo_128-4	zo_128		128		community	4		Te Maungaārongo Marae	Marae complex	fe_157			
-gr_zo_128-5	zo_128		128		community	5		Korokota Marae	Marae complex	fe_157			
-gr_zo_128-6	zo_128		128		community	6	Te Paea Soldiers' Memorial		Marae complex	fe_157			
-gr_zo_128-7	zo_128		128		community	7		Te Horo Marae	Marae complex	fe_157			
-gr_zo_128-8	zo_128		128		community	8	Paratene te Manu meeting house		Marae complex	fe_157			
-gr_zo_128-9	zo_128		128		community	9		Whakapoumahara Marae	Marae complex	fe_157			
-gr_zo_130-1	zo_130		130		community	1		Kaikou Marae	Marae complex	fe_157			
-gr_zo_130-2	zo_130		130		community	2		Mōtatau Marae	Marae complex	fe_157			
-gr_zo_130-3	zo_130		130		community	3		Akerama Marae	Marae complex	fe_157			
-gr_zo_130-4	zo_130		130		community	4	Matawaia meeting house		Marae complex	fe_157			
-gr_zo_130-5	zo_130		130		community	5		Whakapara Marae	Marae complex	fe_157			
-gr_zo_131-1	zo_131		131		community	1		Tou Rangatira	Marae complex	fe_157			
-gr_zo_131-10	zo_131		131		community	10		Tauwhara Marae	Marae complex	fe_157			
-gr_zo_131-11	zo_131		131		community	11		Te Kāretu Marae	Marae complex	fe_157			
-gr_zo_131-12	zo_131		131		community	12		Ngātiwai Marae	Marae complex	fe_157			
-gr_zo_131-13	zo_131		131		community	13	Orautu Hall		Marae complex	fe_157			
-gr_zo_131-14	zo_131		131		community	14	Te Tūriki meeting house		Marae complex	fe_157			
-gr_zo_131-15	zo_131		131		community	15	Pare meeting house		Marae complex	fe_157			
-gr_zo_131-16	zo_131		131		community	16		Maurea Pā	Marae complex	fe_157			
-gr_zo_131-17	zo_131		131		community	17	Whitiora meeting house		Marae complex	fe_157			
-gr_zo_131-2	zo_131		131		community	2		Waiōmio Marae	Marae complex	fe_157			
-gr_zo_131-3	zo_131		131		community	3		Porowini Marae	Marae complex	fe_157			
-gr_zo_131-4	zo_131		131		community	4	Punaruku meeting house		Marae complex	fe_157			
-gr_zo_131-5	zo_131		131		community	5		Te Rāwhiti Marae	Marae complex	fe_157			
-gr_zo_131-6	zo_131		131		community	6		Oromāhoe Marae	Marae complex	fe_157			
-gr_zo_131-7	zo_131		131		community	7		Mihi Wira Marae	Marae complex	fe_157			
-gr_zo_131-8	zo_131		131		community	8	Ngāti Rāhiri meeting house		Marae complex	fe_157			
-gr_zo_131-9	zo_131		131		community	9	Parawhenua meeting house		Marae complex	fe_157			
-gr_zo_132-1	zo_132		132		community	1	Te Aroha meeting house		Marae complex	fe_157			
-gr_zo_132-10	zo_132		132		community	10		Waimahana	Marae complex	fe_157			
-gr_zo_132-11	zo_132		132		community	11		Mangaiti Marae	Marae complex	fe_157			
-gr_zo_132-2	zo_132		132		community	2		Kēnana	Marae complex	fe_157			
-gr_zo_132-3	zo_132		132		community	3	Ngāipuhi meeting house		Marae complex	fe_157			
-gr_zo_132-4	zo_132		132		community	4		Te Patunga Marae	Marae complex	fe_157			
-gr_zo_132-5	zo_132		132		community	5		Takahī Marae	Marae complex	fe_157			
-gr_zo_132-6	zo_132		132		community	6		Matangirau Marae	Marae complex	fe_157			
-gr_zo_132-7	zo_132		132		community	7		Te Kiripaka Marae	Marae complex	fe_157			
-gr_zo_132-8	zo_132		132		community	8		Te Wainui Marae	Marae complex	fe_157			
-gr_zo_133-1	zo_133		133		community	1		Mangaamuka Marae	Marae complex	fe_157			
-gr_zo_133-2	zo_133		133		community	2		Motukaraka Marae	Marae complex	fe_157			
-gr_zo_133-3	zo_133		133		community	3		Ngātimanawa Marae	Marae complex	fe_157			
-gr_zo_133-4	zo_133		133		community	4		Pā te Oro Marae	Marae complex	fe_157			
-gr_zo_133-5	zo_133		133		community	5		Waihou Marae	Marae complex	fe_157			
-gr_zo_133-6	zo_133		133		community	6		Motutī Marae	Marae complex	fe_157			
-gr_zo_133-7	zo_133		133		community	7		Mātihetihe Marae	Marae complex	fe_157			
-gr_zo_133-8	zo_133		133		community	8		Waiparera Marae	Marae complex	fe_157			
-gr_zo_133-9	zo_133		133		community	9		Rāhiri Marae	Marae complex	fe_157			
-gr_zo_134-1	zo_134		134		community	1		Manukau Marae	Marae complex	fe_157			
-gr_zo_134-2	zo_134		134		community	2		Whāngāpē Marae	Marae complex	fe_157			
-gr_zo_134-3	zo_134		134		community	3		Taiao Marae	Marae complex	fe_157			
-gr_zo_135-1	zo_135		135		community	1		Rōma Marae	Marae complex	fe_157			
-gr_zo_135-2	zo_135		135		community	2		Te Kauhanga Marae	Marae complex	fe_157			
-gr_zo_135-3	zo_135		135		community	3		Te Paatū Marae	Marae complex	fe_157			
-gr_zo_135-5	zo_135		135		community	5		Te Rarawa Marae	Marae complex	fe_157			
-gr_zo_135-6	zo_135		135		community	6		Waimanoni Marae	Marae complex	fe_157			
-gr_zo_135-7	zo_135		135		community	7		Oturu Marae	Marae complex	fe_157			
-gr_zo_135-8	zo_135		135		community	8		Wainui Marae	Marae complex	fe_157			
-gr_zo_136-1	zo_136		136		community	1		Whatuwhiwhi Marae	Marae complex	fe_157			
-gr_zo_136-2	zo_136		136		community	2		Parapara Marae	Marae complex	fe_157			
-gr_zo_137-1	zo_137		137		community	1		Te Hiku o te Ika Marae	Marae complex	fe_157			
-gr_zo_137-2	zo_137		137		community	2	Waimirirangi meeting house		Marae complex	fe_157			
-gr_zo_137-3	zo_137		137		community	3		Paparore Marae	Marae complex	fe_157			
-gr_zo_137-4	zo_137		137		community	4		Karepōnia Marae	Marae complex	fe_157			
-gr_zo_137-5	zo_137		137		community	5		Waimanoni Marae	Marae complex	fe_157			
-gr_zo_139-2	zo_139		139		community	2		Hurinui Orangi Marae	Marae complex	fe_157			
-gr_zo_139-5	zo_139		139		community	5	Tama Nui o te Ao Kātoa Hall		Marae complex	fe_157			
-gr_zo_140-1	zo_140		140		community	1	Farewell Spit		Marae complex	fe_157			
-gr_zo_141-1	zo_141		141		community	1		Te Āwhina Marae	Marae complex	fe_157			
-gr_zo_143-1	zo_143		143		community	1		Whakatū Marae	Marae complex	fe_157			
-gr_zo_144-2	zo_144		144		community	2		Te Hora Marae	Marae complex	fe_157			
-gr_zo_145-1	zo_145		145		community	1		Waikawa Marae	Marae complex	fe_157			
-gr_zo_146-1	zo_146		146		community	1		Ōmaka Marae	Marae complex	fe_157			
-gr_zo_146-2	zo_146		146		community	2		Wairau Pā	Marae complex	fe_157			
-gr_zo_147-1	zo_147		147		community	1		Whakatakahanga Marae	Marae complex	fe_157			
-gr_zo_147-2	zo_147		147		community	2		Mangamaunu Marae	Marae complex	fe_157			
-gr_zo_149-1	zo_149		149		community	1		Kaiapōhia Pā	Marae complex	fe_157			
-gr_zo_149-2	zo_149		149		community	2		Tuahiwi	Marae complex	fe_157			
-gr_zo_150-1	zo_150		150		community	1		Rehua Marae	Marae complex	fe_157			
-gr_zo_150-2	zo_150		150		community	2		Ngā Hau E Whā Marae	Marae complex	fe_157			
-gr_zo_150-3	zo_150		150		community	3		Te Rau Oriwa Marae	Marae complex	fe_157			
-gr_zo_150-4	zo_150		150		community	4	Te Rongo Pai meeting house		Marae complex	fe_157			
-gr_zo_151-1	zo_151		151		community	1	Te Wheke meeting house		Marae complex	fe_157			
-gr_zo_152-1	zo_152		152		community	1		Ōnuku Marae	Marae complex	fe_157			
-gr_zo_152-2	zo_152		152		community	2		Mako Marae	Marae complex	fe_157			
-gr_zo_153-1	zo_153		153		community	1		Taumutu Marae	Marae complex	fe_157			
-gr_zo_154-1	zo_154		154		community	1		Arowhenua Pā	Marae complex	fe_157			
-gr_zo_154-2	zo_154		154		community	2		Hakatere Marae	Marae complex	fe_157			
-gr_zo_156-1	zo_156		156		community	1		Waihao Marae	Marae complex	fe_157			
-gr_zo_158-1	zo_158		158		community	1	Uenuku meeting house		Marae complex	fe_157			
-gr_zo_160-1	zo_160		160		community	1		Ōtākou Marae	Marae complex	fe_157			
-gr_zo_160-2	zo_160		160		community	2		Ārai te Uru Marae	Marae complex	fe_157			
-gr_zo_160-3	zo_160		160		community	3		Puketeraki Marae	Marae complex	fe_157			
-gr_zo_160-4	zo_160		160		community	4	Mataatua meeting house		Marae complex	fe_157			
-gr_zo_165-1	zo_165		165		community	1		Ōteikarama Marae	Marae complex	fe_157			
-gr_zo_165-2	zo_165		165		community	2		Te Hono Ki Ngāi Tāhu Marae	Marae complex	fe_157			
-gr_zo_166-1	zo_166		166		community	1		Murihiku Marae	Marae complex	fe_157			
-gr_zo_166-2	zo_166		166		community	2		Te Rau Aroha Marae	Marae complex	fe_157			
-gr_zo_173-1	zo_173		173		community	1		Tapuwae Marae	Marae complex	fe_157			
+ID	ZoneID	Zone2ID	Zone_1	Zone_2	Type	Number	Name	TeReo		MaoriMaps	Feature	FeatureID	FeaturePlural	WikiLink	Wikipedia	WikiData	WikiMi
+gr_zo_145-d	zo_145	zo_144	145	144	geographic	d	Arapawa Island	Arapaoa			Island	fe_134		https://en.wikipedia.org/wiki/Arapaoa_Island	Arapaoa Island	Q626154	https://mi.wikipedia.org/wiki/Arapaoa
+gr_zo_116-a	zo_116		116		geographic	a	Auckland War Memorial Museum	Tāmaki Paenga Hira			Museum	fe_180		https://en.wikipedia.org/wiki/Auckland_War_Memorial_Museum	Auckland War Memorial Museum	Q758657	
+gr_zo_132-a	zo_132		132		geographic	a	Cavalli Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Cavalli_Islands	Cavalli Islands	Q833981	
+gr_zo_172-b	zo_172		172		geographic	b	Chalky Inlet	Taiari			Inlet	fe_132		https://en.wikipedia.org/wiki/Chalky_Island_(New_Zealand)	Chalky Island (New Zealand)	Q1059872	
+gr_zo_177-b	zo_177	zo_176	177	176	geographic	b	Chatham Island	Wharekauri			Island	fe_134	1	https://en.wikipedia.org/wiki/Chatham_Islands	Chatham Islands	Q115459	https://mi.wikipedia.org/wiki/Wharekauri
+gr_zo_144-c	zo_144		144		geographic	c	Chetwode Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Chetwode_Islands	Chetwode Islands	Q5094212	
+gr_zo_144-d	zo_144		144		geographic	d	D'Urville Island	Rangitoto Ki Te Tonga			Island	fe_134		https://en.wikipedia.org/wiki/D%27Urville_Island_(New_Zealand)	D'Urville Island (New Zealand)	Q1273040	
+gr_zo_113-b	zo_113		113		geographic	b	Great Barrier Island	Aotea			Island	fe_134		https://en.wikipedia.org/wiki/Great_Barrier_Island	Great Barrier Island	Q1363130	https://mi.wikipedia.org/wiki/Aotea_(moutere)
+gr_zo_129-b	zo_129		129		geographic	b	Hen and Chickens				Island	fe_134	1	https://en.wikipedia.org/wiki/Hen_and_Chicken_Islands	Hen and Chicken Islands	Q610364	
+gr_zo_129-c	zo_129		129		geographic	c	Chickens	Marotiri			Island	fe_134	1	https://en.wikipedia.org/wiki/Hen_and_Chicken_Islands	Hen and Chicken Islands	Q610364	
+gr_zo_153-a	zo_153		153		geographic	a	Lake Ellesmere	Te Waihora			Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Ellesmere_/_Te_Waihora	Lake Ellesmere / Te Waihora	Q1800918	
+gr_zo_162-a	zo_162		162		geographic	a	Lake Hāwea	Hāwea			Lake	fe_147		https://en.wikipedia.org/wiki/Lake_H%C4%81wea	Lake Hāwea	Q1440634	
+gr_zo_164-a	zo_164		164		geographic	a	Lake Manapōuri	Manapōuri			Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Manapouri	Lake Manapouri	Q1192384	
+gr_zo_63-a	zo_63		63		geographic	a	Lake Okataina	Okataina			Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Okataina	Lake Okataina	Q1801031	
+gr_zo_62-a	zo_62		62		geographic	a	Lake Rotomā	Rotomā			Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Rotoma	Lake Rotoma	Q3215166	
+gr_zo_162-b	zo_162		162		geographic	b	Lake Wānaka	Wānaka			Lake	fe_147		https://en.wikipedia.org/wiki/Lake_Wanaka	Lake Wanaka	Q1192728	
+gr_zo_113-a	zo_113		113		geographic	a	Little Barrier Island	Hauturu			Island	fe_134		https://en.wikipedia.org/wiki/Little_Barrier_Island	Little Barrier Island	Q1816122	https://mi.wikipedia.org/wiki/Hauturu
+gr_zo_81-a	zo_81		81		geographic	a	Great Mercury Island	Ahuahu			Island	fe_134		https://en.wikipedia.org/wiki/Mercury_Islands	Mercury Islands	Q1655571	
+gr_zo_158-a	zo_158		158		geographic	a	Moeraki Peninsula	Moeraki			Peninsula	fe_198		https://en.wikipedia.org/wiki/Moeraki	Moeraki	Q6890239	
+gr_zo_144-a	zo_144		144		geographic	a	Pelorus Sound	Te Hoiere			Sound	fe_252		https://en.wikipedia.org/wiki/Pelorus_Sound	Pelorus Sound	Q2068304	
+gr_zo_177-a	zo_177	zo_176	177	176	geographic	a	Pitt Island	Rangiauria			Island	fe_134		https://en.wikipedia.org/wiki/Pitt_Island	Pitt Island	Q1420431	
+gr_zo_129-a	zo_129		129		geographic	a	Poor Knights Islands	Tawhiti Rahi			Island	fe_134	1	https://en.wikipedia.org/wiki/Poor_Knights_Islands	Poor Knights Islands	Q628731	
+gr_zo_151-a	zo_151		151		geographic	a	Port Levy	Koukourarata			Port	fe_206		https://en.wikipedia.org/wiki/Port_Levy	Port Levy	Q7230754	
+gr_zo_145-a	zo_145		145		geographic	a	Port Underwood	Te Whanganui			Port	fe_206		https://en.wikipedia.org/wiki/Port_Underwood	Port Underwood	Q7230997	
+gr_zo_145-b	zo_145		145		geographic	b	Queen Charlotte Sound	Tōtaranui			Sound	fe_252		https://en.wikipedia.org/wiki/Queen_Charlotte_Sound_(New_Zealand)	Queen Charlotte Sound (New Zealand)	Q25473	https://mi.wikipedia.org/wiki/Totaranui
+gr_zo_84-a	zo_84		84		geographic	a	Rabbit Islands	Motorua			Island	fe_134	1	https://en.wikipedia.org/wiki/Rabbit_Island,_New_Zealand	Rabbit Island, New Zealand	Q2124924	
+gr_zo_112-a	zo_112		112		geographic	a	Rangitoto Island	Rangitoto			Island	fe_134		https://en.wikipedia.org/wiki/Rangitoto_Island	Rangitoto Island	Q1422715	https://mi.wikipedia.org/wiki/Rangitoto
+gr_zo_144-b	zo_144		144		geographic	b	Rangitoto Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Rangitoto_Islands	Rangitoto Islands	Q1032970	
+gr_zo_172-a	zo_172		172		geographic	a	Resolution Island	Tau Moana			Island	fe_134		https://en.wikipedia.org/wiki/Resolution_Island_(New_Zealand)	Resolution Island (New Zealand)	Q2038688	
+gr_zo_104-1	zo_104		104		community	1		Tūrangawaewae Marae	Tūrangawaewae	https://maorimaps.com/marae/t%C5%ABrangawaewae	Marae complex	fe_157		https://en.wikipedia.org/wiki/T%C5%ABrangawaewae			
+gr_zo_137-a	zo_137		137		geographic	a	Three Kings Islands	Manawatāwhi			Island	fe_134	1	https://en.wikipedia.org/wiki/Three_Kings_Islands	Three Kings Islands	Q2093907	
+gr_zo_170-a	zo_170		170		geographic	a	Muttonbird Islands	Titi			Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands	Q2436938	
+gr_zo_170-b	zo_170		170		geographic	b	North Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands	Q2436938	
+gr_zo_170-c	zo_170		170		geographic	c	Breaksea Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands	Q2436938	
+gr_zo_170-d	zo_170		170		geographic	d	West Muttonbird Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands	Q2436938	
+gr_zo_170-e	zo_170		170		geographic	e	East Muttonbird Islands				Island	fe_134	1	https://en.wikipedia.org/wiki/Titi_/_Muttonbird_Islands	Titi / Muttonbird Islands	Q2436938	
+gr_zo_145-c	zo_145		145		geographic	c	Tory Channel	Kura Te Au			Channel	fe_45		https://en.wikipedia.org/wiki/Tory_Channel	Tory Channel	Q1491641	
+gr_zo_159-a	zo_159		159		geographic	a		Waikouaiti			Town	fe_282		https://en.wikipedia.org/wiki/Waikouaiti	Waikouaiti	Q1001232	
+gr_zo_1-2	zo_1		1		community	2		Tapu te Ranga Marae	Tapu te Ranga		Marae complex	fe_157					
+gr_zo_2-1	zo_2		2		community	1		Tāpiri Marae	Tāpiri		Marae complex	fe_157					
+gr_zo_2-2	zo_2		2		community	2		Waiwhetū Marae	Waiwhetū	https://maorimaps.com/marae/waiwhet%C5%AB	Marae complex	fe_157					
+gr_zo_2-3	zo_2		2		community	3		Wainuiōmata Marae	Wainuiōmata		Marae complex	fe_157					
+gr_zo_4-1	zo_4		4		community	1		Maraeroa Marae	Maraeroa		Marae complex	fe_157					
+gr_zo_4-2	zo_4		4		community	2		Takapūāhia Marae	Takapūāhia	https://maorimaps.com/marae/takapuwahia	Marae complex	fe_157					
+gr_zo_4-3	zo_4		4		community	3		Hongoeka Marae	Hongoeka	https://maorimaps.com/marae/hongoeka	Marae complex	fe_157					
+gr_zo_6-1	zo_6		6		community	1		Katihīkū Marae	Katihīkū	https://maorimaps.com/marae/katihiku	Marae complex	fe_157					
+gr_zo_6-2	zo_6		6		community	2		Raukawa Marae	Raukawa	https://maorimaps.com/marae/raukawa	Marae complex	fe_157					
+gr_zo_6-3	zo_6		6		community	3		Wehiwehi Marae	Wehiwehi	https://maorimaps.com/marae/wehiwehi	Marae complex	fe_157					
+gr_zo_6-5	zo_6		6		community	5		Tūkōrehe Marae	Tūkōrehe	https://maorimaps.com/marae/t%C5%ABkorehe	Marae complex	fe_157					
+gr_zo_7-1	zo_7		7		community	1		Kawiu Marae	Kawiu	https://maorimaps.com/marae/kawiu	Marae complex	fe_157					
+gr_zo_7-2	zo_7		7		community	2		Kohu-Tūroa Marae	Kohu-Tūroa	https://maorimaps.com/marae/kohuturoa	Marae complex	fe_157					
+gr_zo_8-1	zo_8		8		community	1		Huia Marae	Huia	https://maorimaps.com/marae/huia	Marae complex	fe_157					
+gr_zo_8-2	zo_8		8		community	2		Kererū Marae	Kererū	https://maorimaps.com/marae/kerer%C5%AB	Marae complex	fe_157					
+gr_zo_8-3	zo_8		8		community	3		Matau Marae	Matau	https://maorimaps.com/marae/matau	Marae complex	fe_157					
+gr_zo_8-4	zo_8		8		community	4		Motuiti Marae	Motuiti	https://maorimaps.com/marae/motuiti-p%C4%81	Marae complex	fe_157					
+gr_zo_8-5	zo_8		8		community	5		Paranui Marae	Paranui	https://maorimaps.com/marae/paranui-p%C4%81	Marae complex	fe_157					
+gr_zo_8-6	zo_8		8		community	6		Whakawehi Marae	Whakawehi	https://maorimaps.com/marae/whakawehi-poutu	Marae complex	fe_157					
+gr_zo_8-7	zo_8		8		community	7		Tūranga Marae	Tūranga	https://maorimaps.com/marae/te-ahu-t%C5%ABranga-i-mua	Marae complex	fe_157					
+gr_zo_9-1	zo_9		9		community	1		Puketōtara Marae	Puketōtara		Marae complex	fe_157					
+gr_zo_9-2	zo_9		9		community	2		Rangiōtu Marae	Rangiōtu		Marae complex	fe_157					
+gr_zo_10-1	zo_10		10		community	1		Aorangi Marae	Aorangi	https://maorimaps.com/marae/aorangi	Marae complex	fe_157					
+gr_zo_10-2	zo_10		10		community	2		Kauwhata Marae	Kauwhata	https://maorimaps.com/marae/kauwhata-kai-iwi-p%C4%81	Marae complex	fe_157					
+gr_zo_11-1	zo_11		11		community	1		Parewahawaha Marae	Parewahawaha	https://maorimaps.com/marae/parewahawaha-%C5%8Dhinepuhiawe	Marae complex	fe_157					
+gr_zo_11-2	zo_11		11		community	2		Parewanui Marae	Parewanui		Marae complex	fe_157					
+gr_zo_12-1	zo_12		12		community	1		Ngā Pōtaka Marae	Ngā Pōtaka	https://maorimaps.com/marae/r%C4%81t%C4%81-te-hou-hou-potaka	Marae complex	fe_157					
+gr_zo_12-2	zo_12		12		community	2		Poupatatē Marae	Poupatatē	https://maorimaps.com/marae/poupatat%C4%93	Marae complex	fe_157					
+gr_zo_12-3	zo_12		12		community	3		Te Hiiri Marae	Te Hiiri	https://maorimaps.com/marae/te-hiiri	Marae complex	fe_157					
+gr_zo_12-4	zo_12		12		community	4		Te Hou Hou Marae	Te Hou Hou	https://maorimaps.com/marae/r%C4%81t%C4%81-te-hou-hou-potaka	Marae complex	fe_157					
+gr_zo_12-5	zo_12		12		community	5		Tokorangi Marae	Tokorangi	https://maorimaps.com/marae/te-tikanga	Marae complex	fe_157					
+gr_zo_13-1	zo_13		13		community	1	Whitikaupeka meeting house				Marae complex	fe_157					
+gr_zo_13-2	zo_13		13		community	2		Ōpaea Marae	Ōpaea	https://maorimaps.com/marae/opaea	Marae complex	fe_157					
+gr_zo_13-3	zo_13		13		community	3		Ōruamātua Marae	Ōruamātua		Marae complex	fe_157					
+gr_zo_14-1	zo_14		14		community	1		Tirorangi Marae	Tirorangi	https://maorimaps.com/marae/tirorangi-p%C4%81	Marae complex	fe_157					
+gr_zo_14-2	zo_14		14		community	2		Maungārongo Marae	Maungārongo	https://maorimaps.com/marae/maung%C4%81rongo	Marae complex	fe_157					
+gr_zo_14-3	zo_14		14		community	3		Rakatepauma Marae	Rakatepauma	https://maorimaps.com/marae/raketapauma	Marae complex	fe_157					
+gr_zo_16-1	zo_16		16		community	1		Hīrangi Marae	Hīrangi	https://maorimaps.com/marae/h%C4%ABrangi	Marae complex	fe_157					
+gr_zo_16-2	zo_16		16		community	2		Korohe Marae	Korohe	https://maorimaps.com/marae/korohe	Marae complex	fe_157					
+gr_zo_16-3	zo_16		16		community	3		Ōtūkou Marae	Ōtūkou	https://maorimaps.com/marae/ot%C5%ABkou	Marae complex	fe_157					
+gr_zo_16-4	zo_16		16		community	4		Tokaanu Marae	Tokaanu	https://maorimaps.com/marae/tokaanu	Marae complex	fe_157					
+gr_zo_16-5	zo_16		16		community	5		Waihī Marae	Waihī	https://maorimaps.com/marae/waih%C4%AB	Marae complex	fe_157					
+gr_zo_16-6	zo_16		16		community	6		Waitetoko Marae	Waitetoko	https://maorimaps.com/marae/waitetoko	Marae complex	fe_157					
+gr_zo_17-1	zo_17		17		community	1		Maroa Marae	Maroa		Marae complex	fe_157					
+gr_zo_17-2	zo_17		17		community	2		Mōkai Marae	Mōkai	https://maorimaps.com/marae/m%C5%8Dkai	Marae complex	fe_157					
+gr_zo_17-3	zo_17		17		community	3		Nukuhau Marae	Nukuhau	https://maorimaps.com/marae/nukuhau-p%C4%81-rauhoto	Marae complex	fe_157					
+gr_zo_17-4	zo_17		17		community	4		Ōngāroto Marae	Ōngāroto	https://maorimaps.com/marae/%C5%8Dng%C4%81roto	Marae complex	fe_157					
+gr_zo_17-5	zo_17		17		community	5		Oruanui Marae	Oruanui	https://maorimaps.com/marae/oruanui	Marae complex	fe_157					
+gr_zo_17-6	zo_17		17		community	6		Pākira Marae	Pākira	https://maorimaps.com/marae/te-p%C4%81kira	Marae complex	fe_157					
+gr_zo_17-7	zo_17		17		community	7		Te Rangīta Marae	Te Rangīta		Marae complex	fe_157					
+gr_zo_17-8	zo_17		17		community	8	Haukapanui meeting house				Marae complex	fe_157					
+gr_zo_17-9	zo_17		17		community	9		Waipāhīhī Marae	Waipāhīhī	https://maorimaps.com/marae/waipah%C4%ABh%C4%AB	Marae complex	fe_157					
+gr_zo_19-1	zo_19		19		community	1		Kauangaroa Marae	Kauangaroa	https://maorimaps.com/marae/kauang%C4%81roa	Marae complex	fe_157					
+gr_zo_19-2	zo_19		19		community	2		Rātana Pā	Rātana		Marae complex	fe_157					
+gr_zo_19-3	zo_19		19		community	3		Tini Waitara Marae	Tini Waitara	https://maorimaps.com/marae/tini-waitara	Marae complex	fe_157					
+gr_zo_19-4	zo_19		19		community	4		Turakina Marae	Turakina	https://maorimaps.com/marae/tini-waitara	Marae complex	fe_157					
+gr_zo_19-5	zo_19		19		community	5		Whangaehu Marae	Whangaehu	https://maorimaps.com/marae/whangaehu	Marae complex	fe_157					
+gr_zo_20-1	zo_20		20		community	1		Ātene Marae	Ātene	https://maorimaps.com/marae/%C4%81tene-kakata	Marae complex	fe_157					
+gr_zo_20-2	zo_20		20		community	2		Mangātoa Pā	Mangātoa		Marae complex	fe_157					
+gr_zo_20-3	zo_20		20		community	3		Ōperiki Pā	Ōperiki		Marae complex	fe_157					
+gr_zo_20-4	zo_20		20		community	4		Ōtoko Marae	Ōtoko		Marae complex	fe_157					
+gr_zo_20-5	zo_20		20		community	5		Pungarehu Marae	Pungarehu	https://maorimaps.com/marae/pungarehu	Marae complex	fe_157					
+gr_zo_20-6	zo_20		20		community	6		Pūtiki-Wharanui Marae	Pūtiki-Wharanui	https://maorimaps.com/marae/p%C5%ABtiki-p%C4%81	Marae complex	fe_157					
+gr_zo_20-7	zo_20		20		community	7		Tawhitinui Marae	Tawhitinui		Marae complex	fe_157					
+gr_zo_20-8	zo_20		20		community	8		Te Ao Hou Marae	Te Ao Hou	https://maorimaps.com/marae/te-ao-hou	Marae complex	fe_157					
+gr_zo_21-1	zo_21		21		community	1		Matahiwi Marae	Matahiwi	https://maorimaps.com/marae/matahiwi	Marae complex	fe_157					
+gr_zo_21-2	zo_21		21		community	2		Patiarero Marae	Patiarero	https://maorimaps.com/marae/hiruh%C4%81rama-patiarero	Marae complex	fe_157					
+gr_zo_21-3	zo_21		21		community	3		Rānana Marae	Rānana	https://maorimaps.com/marae/r%C4%81nana-ruak%C4%81	Marae complex	fe_157					
+gr_zo_21-4	zo_21		21		community	4		Te Ao Mārama Marae	Te Ao Mārama		Marae complex	fe_157					
+gr_zo_21-5	zo_21		21		community	5		Tirorangi Marae	Tirorangi	https://maorimaps.com/marae/tirorangi-p%C4%81	Marae complex	fe_157					
+gr_zo_21-6	zo_21		21		community	6		Poutama Whare Wānanga	Poutama Whare Wānanga	https://maorimaps.com/marae/koriniti-p%C4%81-otukopiri	Marae complex	fe_157					
+gr_zo_22-1	zo_22		22		community	1		Kauriki Marae	Kauriki	https://maorimaps.com/marae/kauriki	Marae complex	fe_157					
+gr_zo_22-2	zo_22		22		community	2		Manu Ariki Marae	Manu Ariki		Marae complex	fe_157					
+gr_zo_22-3	zo_22		22		community	3		Ngāpūwaiwaha Marae	Ngāpūwaiwaha	https://maorimaps.com/marae/ngāpuwaiwaha	Marae complex	fe_157					
+gr_zo_22-4	zo_22		22		community	4		Ngāpūwaiwaha Marae	Ngāpūwaiwaha	https://maorimaps.com/marae/ngāpuwaiwaha	Marae complex	fe_157					
+gr_zo_22-5	zo_22		22		community	5		Tuhua Marae	Tuhua		Marae complex	fe_157					
+gr_zo_22-6	zo_22		22		community	6		Wharauroa Marae	Wharauroa	https://maorimaps.com/marae/wharauroa	Marae complex	fe_157					
+gr_zo_24-1	zo_24		24		community	1		Ngātimaru Marae	Ngātimaru		Marae complex	fe_157					
+gr_zo_24-2	zo_24		24		community	2		Pūrangi Marae	Pūrangi		Marae complex	fe_157					
+gr_zo_24-3	zo_24		24		community	3		Te Upoko-o-te-Whenua Marae	Te Upoko-o-te-Whenua		Marae complex	fe_157					
+gr_zo_25-1	zo_25		25		community	1		Kai-iwi Marae	Kai-iwi	https://maorimaps.com/marae/kai-iwi	Marae complex	fe_157					
+gr_zo_25-2	zo_25		25		community	2		Kai-iwi Marae	Kai-iwi	https://maorimaps.com/marae/kai-iwi	Marae complex	fe_157					
+gr_zo_25-3	zo_25		25		community	3		Moumāhaki Marae	Moumāhaki		Marae complex	fe_157					
+gr_zo_25-4	zo_25		25		community	4		Tauranga-ika	Tauranga-ika	https://maorimaps.com/marae/tauranga-ika	Marae complex	fe_157					
+gr_zo_25-5	zo_25		25		community	5		Pākaraka Pā	Pākaraka	https://maorimaps.com/marae/pakaraka-0	Marae complex	fe_157					
+gr_zo_25-6	zo_25		25		community	6		Takirau Marae	Takirau	https://maorimaps.com/marae/takirau	Marae complex	fe_157					
+gr_zo_25-7	zo_25		25		community	7		Te Ihupuku Marae	Te Ihupuku	https://maorimaps.com/marae/te-ihupuku-p%C4%81	Marae complex	fe_157					
+gr_zo_25-8	zo_25		25		community	8		Whenuakura Marae	Whenuakura	https://maorimaps.com/marae/whenuakura	Marae complex	fe_157					
+gr_zo_26-1	zo_26		26		community	1		Taiporohēnui Marae	Taiporohēnui	https://maorimaps.com/marae/taiporoh%C4%93nui	Marae complex	fe_157					
+gr_zo_26-2	zo_26		26		community	2		Meremere Marae	Meremere	https://maorimaps.com/marae/meremere-pukomoko-p%C4%81	Marae complex	fe_157					
+gr_zo_26-3	zo_26		26		community	3		Ngātiki Marae	Ngātiki		Marae complex	fe_157					
+gr_zo_26-4	zo_26		26		community	4		Pariroa Pā	Pariroa	https://maorimaps.com/marae/pariroa-p%C4%81	Marae complex	fe_157					
+gr_zo_26-5	zo_26		26		community	5		Te Waioturi Marae	Te Waioturi		Marae complex	fe_157					
+gr_zo_26-6	zo_26		26		community	6	Rangiharuru meeting house			https://maorimaps.com/marae/wai-o-turi	Marae complex	fe_157					
+gr_zo_26-7	zo_26		26		community	7		Te Tākere Marae	Te Tākere	https://maorimaps.com/marae/manutahi-te-takere	Marae complex	fe_157					
+gr_zo_26-8	zo_26		26		community	8		Ōhangai Marae	Ōhangai		Marae complex	fe_157					
+gr_zo_27-1	zo_27		27		community	1		Kānihi Marae	Kānihi	https://maorimaps.com/marae/kanihi-m%C4%81whitiwhiti	Marae complex	fe_157					
+gr_zo_27-2	zo_27		27		community	2	Kumea-mai-te-Waka meeting house			https://maorimaps.com/marae/ng%C4%81rongo-ketemarae	Marae complex	fe_157					
+gr_zo_27-3	zo_27		27		community	3		Ōeo Marae	Ōeo	https://maorimaps.com/marae/%C5%8Deo-p%C4%81	Marae complex	fe_157					
+gr_zo_27-4	zo_27		27		community	4		Taikātū Marae	Taikātū		Marae complex	fe_157					
+gr_zo_27-5	zo_27		27		community	5		Tawhiti-nui Marae	Tawhiti-nui		Marae complex	fe_157					
+gr_zo_27-6	zo_27		27		community	6		Te Weriweri Marae	Te Weriweri		Marae complex	fe_157					
+gr_zo_27-7	zo_27		27		community	7		Waiōkura Marae	Waiōkura	https://maorimaps.com/marae/waiokura	Marae complex	fe_157					
+gr_zo_28-1	zo_28		28		community	1	Moana-i-Kauria meeting house				Marae complex	fe_157					
+gr_zo_28-2	zo_28		28		community	2		Parihaka Pā	Parihaka	https://maorimaps.com/marae/parihaka	Marae complex	fe_157					
+gr_zo_28-3	zo_28		28		community	3		Pōtaka Marae	Pōtaka	https://maorimaps.com/marae/p%C5%8Dtaka	Marae complex	fe_157					
+gr_zo_28-4	zo_28		28		community	4		Pūniho Marae	Pūniho	https://maorimaps.com/marae/p%C5%ABniho-pa-tarawainuku	Marae complex	fe_157					
+gr_zo_29-1	zo_29		29		community	1		Manukorihi	Manukorihi	https://maorimaps.com/marae/%C5%8Dwae-manukorihi-p%C4%81	Marae complex	fe_157					
+gr_zo_29-2	zo_29		29		community	2		Mururaupatu Marae	Mururaupatu		Marae complex	fe_157					
+gr_zo_29-3	zo_29		29		community	3		Ōwae Marae	Ōwae	https://maorimaps.com/marae/%C5%8Dwae-manukorihi-p%C4%81	Marae complex	fe_157					
+gr_zo_29-4	zo_29		29		community	4		Pukerangiora Pā	Pukerangiora	https://maorimaps.com/marae/kairau	Marae complex	fe_157					
+gr_zo_29-5	zo_29		29		community	5	Rangimārie Arts & Crafts Centre				Marae complex	fe_157					
+gr_zo_33-1	zo_33		33		community	1		Te Oreore-o-te-kata-ā-Hine-Mātaki Marae	Te Oreore-o-te-kata-ā-Hine-Mātaki		Marae complex	fe_157					
+gr_zo_37-1	zo_37		37		community	1		Mākirikiri Marae	Mākirikiri	https://maorimaps.com/marae/m%C4%81kirikiri	Marae complex	fe_157					
+gr_zo_37-2	zo_37		37		community	2		Poherau Marae	Poherau		Marae complex	fe_157					
+gr_zo_37-3	zo_37		37		community	3		Te Ahu-a-Turanga Marae	Te Ahu-a-Turanga		Marae complex	fe_157					
+gr_zo_38-1	zo_38		38		community	1		Rongaomaraeroa Marae	Rongaomaraeroa		Marae complex	fe_157					
+gr_zo_39-1	zo_39		39		community	1		Kauheihei	Kauheihei		Marae complex	fe_157					
+gr_zo_39-2	zo_39		39		community	2		Rākautātahi Marae	Rākautātahi	https://maorimaps.com/marae/r%C4%81kaut%C4%81tahi	Marae complex	fe_157					
+gr_zo_39-3	zo_39		39		community	3		Tapairu Marae	Tapairu	https://maorimaps.com/marae/tapairu	Marae complex	fe_157					
+gr_zo_39-4	zo_39		39		community	4		Whatuiāpiti Marae	Whatuiāpiti		Marae complex	fe_157					
+gr_zo_40-1	zo_40		40		community	1		Houngarea Marae	Houngarea	https://maorimaps.com/marae/houngarea	Marae complex	fe_157					
+gr_zo_40-10	zo_40		40		community	10		Taupunga Marae	Taupunga	https://maorimaps.com/marae/waim%C4%81rama	Marae complex	fe_157					
+gr_zo_40-11	zo_40		40		community	11		Waiohiki Marae	Waiohiki	https://maorimaps.com/marae/waiohiki	Marae complex	fe_157					
+gr_zo_40-12	zo_40		40		community	12		Waipatu Marae	Waipatu	https://maorimaps.com/marae/waipatu	Marae complex	fe_157					
+gr_zo_40-2	zo_40		40		community	2		Kahurānaki Marae	Kahurānaki	https://maorimaps.com/marae/kahur%C4%81naki	Marae complex	fe_157					
+gr_zo_40-3	zo_40		40		community	3		Kahurangi Marae	Kahurangi		Marae complex	fe_157					
+gr_zo_40-4	zo_40		40		community	4		Korongatā Marae	Korongatā	https://maorimaps.com/marae/korongat%C4%81	Marae complex	fe_157					
+gr_zo_40-5	zo_40		40		community	5		Mangaroa Marae	Mangaroa	https://maorimaps.com/marae/mangaroa	Marae complex	fe_157					
+gr_zo_40-6	zo_40		40		community	6		Mihiroa Marae	Mihiroa	https://maorimaps.com/marae/mihiroa	Marae complex	fe_157					
+gr_zo_40-7	zo_40		40		community	7		Ruahāpia Marae	Ruahāpia	https://maorimaps.com/marae/ruah%C4%81pia	Marae complex	fe_157					
+gr_zo_40-8	zo_40		40		community	8		Taraia Marae	Taraia	https://maorimaps.com/marae/taraia	Marae complex	fe_157					
+gr_zo_41-1	zo_41		41		community	1		Arapaoanui Marae	Arapaoanui		Marae complex	fe_157					
+gr_zo_41-10	zo_41		41		community	10		Tāngoio Marae	Tāngoio	https://maorimaps.com/marae/tangoio	Marae complex	fe_157					
+gr_zo_41-11	zo_41		41		community	11		Te Āwhina Marae	Te Āwhina	https://maorimaps.com/marae/te-%C4%81whina	Marae complex	fe_157					
+gr_zo_41-12	zo_41		41		community	12		Te Hāroto Marae	Te Hāroto	https://maorimaps.com/marae/te-h%C4%81roto	Marae complex	fe_157					
+gr_zo_41-13	zo_41		41		community	13		Te Ūranga Waka Marae	Te Ūranga Waka		Marae complex	fe_157					
+gr_zo_41-14	zo_41		41		community	14		Timi Kara Marae	Timi Kara	https://maorimaps.com/marae/timikara	Marae complex	fe_157					
+gr_zo_41-2	zo_41		41		community	2		Kohupātiki Marae	Kohupātiki	https://maorimaps.com/marae/kohup%C4%81tiki	Marae complex	fe_157					
+gr_zo_41-3	zo_41		41		community	3		Korokipo Marae	Korokipo		Marae complex	fe_157					
+gr_zo_41-4	zo_41		41		community	4		Mōhaka Marae	Mōhaka	https://maorimaps.com/marae/waipapa-iwi-m%C5%8Dhaka	Marae complex	fe_157					
+gr_zo_41-5	zo_41		41		community	5		Mōteo Marae	Mōteo	https://maorimaps.com/marae/hamuera-moteo	Marae complex	fe_157					
+gr_zo_41-6	zo_41		41		community	6		Ōmāhū Marae	Ōmāhū	https://maorimaps.com/marae/om%C4%81hu	Marae complex	fe_157					
+gr_zo_41-7	zo_41		41		community	7		Parirangi Marae	Parirangi		Marae complex	fe_157					
+gr_zo_41-8	zo_41		41		community	8		Poraiti Marae	Poraiti		Marae complex	fe_157					
+gr_zo_41-9	zo_41		41		community	9		Rūnanga Marae	Rūnanga	https://maorimaps.com/marae/r%C5%ABnanga	Marae complex	fe_157					
+gr_zo_42-1	zo_42		42		community	1		Arimāwha Marae	Arimāwha	https://maorimaps.com/marae/arimawha	Marae complex	fe_157					
+gr_zo_42-10	zo_42		42		community	10		Rangiahua Marae	Rangiahua	https://maorimaps.com/marae/rangi%C4%81hua	Marae complex	fe_157					
+gr_zo_42-11	zo_42		42		community	11		Ruataniwha Marae	Ruataniwha	https://maorimaps.com/marae/ruataniwha	Marae complex	fe_157					
+gr_zo_42-12	zo_42		42		community	12		Tākitimu Marae	Tākitimu	https://maorimaps.com/marae/takitimu	Marae complex	fe_157					
+gr_zo_42-13	zo_42		42		community	13		Taihoa Marae	Taihoa	https://maorimaps.com/marae/taihoa	Marae complex	fe_157					
+gr_zo_42-14	zo_42		42		community	14		Tawhiti-a-maru Marae	Tawhiti-a-maru		Marae complex	fe_157					
+gr_zo_42-15	zo_42		42		community	15		Te Huki Marae	Te Huki	https://maorimaps.com/marae/raupunga-te-huki	Marae complex	fe_157					
+gr_zo_42-16	zo_42		42		community	16		Te Kahu-o-te-Rangi Marae	Te Kahu-o-te-Rangi	https://maorimaps.com/marae/waipapa-iwi-m%C5%8Dhaka	Marae complex	fe_157					
+gr_zo_42-17	zo_42		42		community	17		Te Karaona Marae	Te Karaona		Marae complex	fe_157					
+gr_zo_42-19	zo_42		42		community	19		Te Kotahitanga Marae	Te Kotahitanga		Marae complex	fe_157					
+gr_zo_42-2	zo_42		42		community	2		Hikuwai Marae	Hikuwai		Marae complex	fe_157					
+gr_zo_42-20	zo_42		42		community	20		Te Rauhina Marae	Te Rauhina	https://maorimaps.com/marae/kihitu	Marae complex	fe_157					
+gr_zo_42-21	zo_42		42		community	21		Tiakiwai Marae	Tiakiwai		Marae complex	fe_157					
+gr_zo_42-22	zo_42		42		community	22		Whākirangi Marae	Whākirangi		Marae complex	fe_157					
+gr_zo_42-23	zo_42		42		community	23		Whakakī Marae	Whakakī	https://maorimaps.com/marae/whakak%C4%AB	Marae complex	fe_157					
+gr_zo_42-24	zo_42		42		community	24		Whetūmārama Marae	Whetūmārama		Marae complex	fe_157					
+gr_zo_42-3	zo_42		42		community	3		Hinekōrako Marae	Hinekōrako		Marae complex	fe_157					
+gr_zo_42-4	zo_42		42		community	4		Hinemihi Marae	Hinemihi	https://maorimaps.com/marae/hinemihi	Marae complex	fe_157					
+gr_zo_42-5	zo_42		42		community	5		Hurumoa Marae	Hurumoa		Marae complex	fe_157					
+gr_zo_42-6	zo_42		42		community	6		Iwitea Marae	Iwitea	https://maorimaps.com/marae/iwitea	Marae complex	fe_157					
+gr_zo_42-7	zo_42		42		community	7		Kahungunu Marae	Kahungunu	https://maorimaps.com/marae/kahungunu-te-tahinga	Marae complex	fe_157					
+gr_zo_42-8	zo_42		42		community	8		Pākohai Marae	Pākohai	https://maorimaps.com/marae/p%C4%81k%C5%8Dwhai-p%C4%81k%C5%8Dhai	Marae complex	fe_157					
+gr_zo_42-9	zo_42		42		community	9		Pūtahi Marae	Pūtahi	https://maorimaps.com/marae/p%C5%ABtahi	Marae complex	fe_157					
+gr_zo_43-1	zo_43		43		community	1		Kaiuku Marae	Kaiuku	https://maorimaps.com/marae/kaiuku-okurarenga	Marae complex	fe_157					
+gr_zo_43-10	zo_43		43		community	10		Tuahuru Marae	Tuahuru	https://maorimaps.com/marae/tuahuru	Marae complex	fe_157					
+gr_zo_43-11	zo_43		43		community	11		Wai-a-uru Marae	Wai-a-uru		Marae complex	fe_157					
+gr_zo_43-2	zo_43		43		community	2		Mahanga Marae	Mahanga	https://maorimaps.com/marae/m%C4%81hanga-rongomaiw%C4%81hine	Marae complex	fe_157					
+gr_zo_43-3	zo_43		43		community	3		Manutai Marae	Manutai	https://maorimaps.com/marae/te-manutai	Marae complex	fe_157					
+gr_zo_43-4	zo_43		43		community	4		Marahara Marae	Marahara		Marae complex	fe_157					
+gr_zo_43-5	zo_43		43		community	5		Nūhaka Marae	Nūhaka		Marae complex	fe_157					
+gr_zo_43-6	zo_43		43		community	6		Ruāwharo Marae	Ruāwharo	https://maorimaps.com/marae/ruawharo	Marae complex	fe_157					
+gr_zo_43-7	zo_43		43		community	7		Tāne-nui-a-Rangi Marae	Tāne-nui-a-Rangi	https://maorimaps.com/marae/t%C4%81ne-nui-rangi	Marae complex	fe_157					
+gr_zo_43-8	zo_43		43		community	8		Tama Kahu Marae	Tama Kahu		Marae complex	fe_157					
+gr_zo_43-9	zo_43		43		community	9		Te Rehu Marae	Te Rehu		Marae complex	fe_157					
+gr_zo_44-1	zo_44		44		community	1		Maraetaha Marae	Maraetaha		Marae complex	fe_157					
+gr_zo_44-10	zo_44		44		community	10		Wakatō Marae	Wakatō		Marae complex	fe_157					
+gr_zo_44-2	zo_44		44		community	2		Mokonui-ā-rangi Marae	Mokonui-ā-rangi	https://maorimaps.com/marae/mokonui%C4%81rangi	Marae complex	fe_157					
+gr_zo_44-3	zo_44		44		community	3		Muriwai Marae	Muriwai	https://maorimaps.com/marae/muriwai-p%C4%81-t%C4%81manuhiri	Marae complex	fe_157					
+gr_zo_44-4	zo_44		44		community	4		Ngātapa Marae	Ngātapa	https://maorimaps.com/marae/ng%C4%81tapa	Marae complex	fe_157					
+gr_zo_44-5	zo_44		44		community	5		Ōhako Marae	Ōhako	https://maorimaps.com/marae/ohako	Marae complex	fe_157					
+gr_zo_44-6	zo_44		44		community	6		Pāhou Marae	Pāhou	https://maorimaps.com/marae/p%C4%81hou	Marae complex	fe_157					
+gr_zo_44-7	zo_44		44		community	7		Pākowhai Marae	Pākowhai	https://maorimaps.com/marae/p%C4%81k%C5%8Dwhai	Marae complex	fe_157					
+gr_zo_44-8	zo_44		44		community	8		Rongopai Marae	Rongopai	https://maorimaps.com/marae/rongopai	Marae complex	fe_157					
+gr_zo_44-9	zo_44		44		community	9		Tākitimu Marae	Tākitimu	https://maorimaps.com/marae/takitimu	Marae complex	fe_157					
+gr_zo_45-1	zo_45		45		community	1		Mangatū Marae	Mangatū	https://maorimaps.com/marae/mangat%C5%AB	Marae complex	fe_157					
+gr_zo_45-2	zo_45		45		community	2		Rangatira Marae	Rangatira	https://maorimaps.com/marae/rangatira	Marae complex	fe_157					
+gr_zo_45-3	zo_45		45		community	3		Tākipū Marae	Tākipū	https://maorimaps.com/marae/takipu	Marae complex	fe_157					
+gr_zo_45-4	zo_45		45		community	4		Tapu-i-Hikitia Marae	Tapu-i-Hikitia	https://maorimaps.com/marae/tapuihikitia	Marae complex	fe_157					
+gr_zo_46-1	zo_46		46		community	1		Pārihi-Mānihi Marae	Pārihi-Mānihi	https://maorimaps.com/marae/parihimanihi	Marae complex	fe_157					
+gr_zo_46-2	zo_46		46		community	2		Tārere Marae	Tārere		Marae complex	fe_157					
+gr_zo_46-3	zo_46		46		community	3		Te Kuri-a-Tuatai Marae	Te Kuri-a-Tuatai	https://maorimaps.com/marae/te-kur%C4%AB-tuatai-awapuni-p%C4%81	Marae complex	fe_157					
+gr_zo_46-4	zo_46		46		community	4		Waerenga-ā-hika Marae	Waerenga-ā-hika		Marae complex	fe_157					
+gr_zo_47-1	zo_47		47		community	1		Te Poho-o-Rāwiri Marae	Te Poho-o-Rāwiri	https://maorimaps.com/marae/te-poho-o-r%C4%81wiri-kaiti-p%C4%81	Marae complex	fe_157					
+gr_zo_47-2	zo_47		47		community	2		Whāngārā Marae	Whāngārā	https://maorimaps.com/marae/wh%C4%81ng%C4%81r%C4%81	Marae complex	fe_157					
+gr_zo_48-1	zo_48		48		community	1		Anaura Marae	Anaura	https://maorimaps.com/marae/hinetamatea-anaura	Marae complex	fe_157					
+gr_zo_48-2	zo_48		48		community	2		Hauiti Marae	Hauiti	https://maorimaps.com/marae/hauiti	Marae complex	fe_157					
+gr_zo_48-4	zo_48		48		community	4		Kurī Marae	Kurī		Marae complex	fe_157					
+gr_zo_48-5	zo_48		48		community	5	Te Amowhiu meeting house			https://maorimaps.com/marae/puket%C4%81wai	Marae complex	fe_157					
+gr_zo_48-6	zo_48		48		community	6		Te Rāwheoro Marae	Te Rāwheoro	https://maorimaps.com/marae/te-r%C4%81wheoro	Marae complex	fe_157					
+gr_zo_49-1	zo_49		49		community	1		Kiekie Marae	Kiekie	https://maorimaps.com/marae/kiekie	Marae complex	fe_157					
+gr_zo_49-2	zo_49		49		community	2		Mihikango Marae	Mihikango		Marae complex	fe_157					
+gr_zo_49-3	zo_49		49		community	3		Pākirikiri Marae	Pākirikiri	https://maorimaps.com/marae/p%C4%81kirikiri	Marae complex	fe_157					
+gr_zo_49-4	zo_49		49		community	4		Te Ariuru Marae	Te Ariuru	https://maorimaps.com/marae/te-ariuru	Marae complex	fe_157					
+gr_zo_49-5	zo_49		49		community	5		Tuatini Marae	Tuatini	https://maorimaps.com/marae/tuatini	Marae complex	fe_157					
+gr_zo_49-6	zo_49		49		community	6		Waiparapara Marae	Waiparapara	https://maorimaps.com/marae/waiparapara	Marae complex	fe_157					
+gr_zo_49-8	zo_49		49		community	8		Whareponga Marae	Whareponga	https://maorimaps.com/marae/whareponga	Marae complex	fe_157					
+gr_zo_50-1	zo_50		50		community	1		Hīruhārama Marae	Hīruhārama	https://maorimaps.com/marae/hiruh%C4%81rama	Marae complex	fe_157					
+gr_zo_50-10	zo_50		50		community	10		Pōtaka Marae	Pōtaka	https://maorimaps.com/marae/p%C5%8Dtaka	Marae complex	fe_157					
+gr_zo_50-11	zo_50		50		community	11		Rāhui-o-Kehu Marae	Rāhui-o-Kehu		Marae complex	fe_157					
+gr_zo_50-12	zo_50		50		community	12		Reporua Marae	Reporua	https://maorimaps.com/marae/reporua	Marae complex	fe_157					
+gr_zo_50-13	zo_50		50		community	13	Rauru-nui-ā-Toi meeting house			https://maorimaps.com/marae/rauru	Marae complex	fe_157					
+gr_zo_50-14	zo_50		50		community	14		Taumata-puhi Marae	Taumata-puhi		Marae complex	fe_157					
+gr_zo_50-15	zo_50		50		community	15		Te Aro Wera Marae	Te Aro Wera		Marae complex	fe_157					
+gr_zo_50-16	zo_50		50		community	16		Te Horo Marae	Te Horo	https://maorimaps.com/marae/te-horo	Marae complex	fe_157					
+gr_zo_50-17	zo_50		50		community	17		Te Rāhui Marae	Te Rāhui		Marae complex	fe_157					
+gr_zo_50-18	zo_50		50		community	18		Tūwhakairiora Marae	Tūwhakairiora		Marae complex	fe_157					
+gr_zo_50-19	zo_50		50		community	19		Waiōmatatini Marae	Waiōmatatini	https://maorimaps.com/marae/waiomatatini-porourangi	Marae complex	fe_157					
+gr_zo_50-2	zo_50		50		community	2		Hinepare Marae	Hinepare	https://maorimaps.com/marae/hinepare	Marae complex	fe_157					
+gr_zo_50-20	zo_50		50		community	20		Waitākaro Marae	Waitākaro		Marae complex	fe_157					
+gr_zo_50-21	zo_50		50		community	21		Whakapaorangi Marae	Whakapaorangi		Marae complex	fe_157					
+gr_zo_50-22	zo_50		50		community	22		Whenua-ā-kura Marae	Whenua-ā-kura		Marae complex	fe_157					
+gr_zo_50-23	zo_50		50		community	23		Te Araroa Marae	Te Araroa		Marae complex	fe_157					
+gr_zo_50-3	zo_50		50		community	3		Horoera Marae	Horoera	https://maorimaps.com/marae/m%C4%81tahi-o-te-tau	Marae complex	fe_157					
+gr_zo_50-4	zo_50		50		community	4		Kākāriki Marae	Kākāriki	https://maorimaps.com/marae/k%C4%81k%C4%81riki	Marae complex	fe_157					
+gr_zo_50-5	zo_50		50		community	5		Kariaka Marae	Kariaka	https://maorimaps.com/marae/kariaka	Marae complex	fe_157					
+gr_zo_50-6	zo_50		50		community	6		Mākarika Marae	Mākarika	https://maorimaps.com/marae/penu	Marae complex	fe_157					
+gr_zo_50-7	zo_50		50		community	7		Mangahāngea Marae	Mangahāngea	https://maorimaps.com/marae/mangah%C4%81nea	Marae complex	fe_157					
+gr_zo_50-8	zo_50		50		community	8		Pāhau Marae	Pāhau		Marae complex	fe_157					
+gr_zo_50-9	zo_50		50		community	9		Penu Marae	Penu	https://maorimaps.com/marae/penu	Marae complex	fe_157					
+gr_zo_51-1	zo_51		51		community	1		Kaiaio Marae	Kaiaio	https://maorimaps.com/marae/maungaroa-kaiaio	Marae complex	fe_157					
+gr_zo_51-10	zo_51		51		community	10		Whangaparāoa Marae	Whangaparāoa	https://maorimaps.com/marae/whangapar%C4%81%C5%8Da	Marae complex	fe_157					
+gr_zo_51-11	zo_51		51		community	11		Whitianga Marae	Whitianga	https://maorimaps.com/marae/whitianga	Marae complex	fe_157					
+gr_zo_51-2	zo_51		51		community	2		Maruohinemaka Marae	Maruohinemaka	https://maorimaps.com/marae/te-maru-o-hinemakah%C5%8D	Marae complex	fe_157					
+gr_zo_51-3	zo_51		51		community	3		Ōtūwhare Marae	Ōtūwhare	https://maorimaps.com/marae/%C5%8Dt%C5%ABwhare	Marae complex	fe_157					
+gr_zo_51-4	zo_51		51		community	4		Pāhaoa Marae	Pāhaoa	https://maorimaps.com/marae/p%C4%81h%C4%81%C5%8Da	Marae complex	fe_157					
+gr_zo_51-5	zo_51		51		community	5		Pōtaka Marae	Pōtaka	https://maorimaps.com/marae/p%C5%8Dtaka	Marae complex	fe_157					
+gr_zo_51-6	zo_51		51		community	6		Te Papa-o-Mārere Marae	Te Papa-o-Mārere		Marae complex	fe_157					
+gr_zo_51-7	zo_51		51		community	7		Te Papa-o-Wharekura Marae	Te Papa-o-Wharekura		Marae complex	fe_157					
+gr_zo_51-8	zo_51		51		community	8		Waiōrore Marae	Waiōrore	https://maorimaps.com/marae/wai%C5%8Drore	Marae complex	fe_157					
+gr_zo_51-9	zo_51		51		community	9		Wairūrū Marae	Wairūrū	https://maorimaps.com/marae/wair%C5%ABr%C5%AB	Marae complex	fe_157					
+gr_zo_53-1	zo_53		53		community	1		Kutarere Marae	Kutarere	https://maorimaps.com/marae/kutarere	Marae complex	fe_157					
+gr_zo_53-2	zo_53		53		community	2		Roimata Marae	Roimata	https://maorimaps.com/marae/roimata	Marae complex	fe_157					
+gr_zo_53-4	zo_53		53		community	4		Te Rere Pā	Te Rere	https://maorimaps.com/marae/terere	Marae complex	fe_157					
+gr_zo_53-5	zo_53		53		community	5		Waiotahe Pā	Waiotahe		Marae complex	fe_157					
+gr_zo_53-6	zo_53		53		community	6	Tūtāmure meeting house			https://maorimaps.com/marae/%C5%8Dmarumutu	Marae complex	fe_157					
+gr_zo_53-7	zo_53		53		community	7	Irapuāia meeting house			https://maorimaps.com/marae/%C5%8Dpeke	Marae complex	fe_157					
+gr_zo_53-8	zo_53		53		community	8	Muriwai meeting house			https://maorimaps.com/marae/opape	Marae complex	fe_157					
+gr_zo_53-9	zo_53		53		community	9	Ruamoko meeting house			https://maorimaps.com/marae/waiaua	Marae complex	fe_157					
+gr_zo_54-1	zo_54		54		community	1		Matahī Marae	Matahī	https://maorimaps.com/marae/matah%C4%AB	Marae complex	fe_157					
+gr_zo_54-10	zo_54		54		community	10		Tuapō Marae	Tuapō	https://maorimaps.com/marae/tuap%C5%8D	Marae complex	fe_157					
+gr_zo_54-11	zo_54		54		community	11		Whakarae Marae	Whakarae	https://maorimaps.com/marae/whakarae	Marae complex	fe_157					
+gr_zo_54-12	zo_54		54		community	12	Te Poho-o-Tamatea meeting house			https://maorimaps.com/marae/tauanui	Marae complex	fe_157					
+gr_zo_54-13	zo_54		54		community	13		Rāroa Pā	Rāroa	https://maorimaps.com/marae/r%C4%81roa	Marae complex	fe_157					
+gr_zo_54-2	zo_54		54		community	2		Ōmuriwaka Marae	Ōmuriwaka	https://maorimaps.com/marae/%C5%8Dmuriwaka	Marae complex	fe_157					
+gr_zo_54-3	zo_54		54		community	3		Piripari Marae	Piripari	https://maorimaps.com/marae/piripari	Marae complex	fe_157					
+gr_zo_54-4	zo_54		54		community	4	Rāhiri-o-te-Rangi meeting house			https://maorimaps.com/marae/r%C4%81hiri	Marae complex	fe_157					
+gr_zo_54-5	zo_54		54		community	5		Tātaiahape Marae	Tātaiahape	https://maorimaps.com/marae/t%C4%81tai%C4%81hape	Marae complex	fe_157					
+gr_zo_54-6	zo_54		54		community	6		Tāwhana Marae	Tāwhana		Marae complex	fe_157					
+gr_zo_54-7	zo_54		54		community	7		Tauanui Marae	Tauanui	https://maorimaps.com/marae/tauanui	Marae complex	fe_157					
+gr_zo_54-8	zo_54		54		community	8		Te Ao Hou Marae	Te Ao Hou	https://maorimaps.com/marae/te-ao-hou	Marae complex	fe_157					
+gr_zo_54-9	zo_54		54		community	9		Te Pou-ā-Hīnau Marae	Te Pou-ā-Hīnau	https://maorimaps.com/marae/te-pou-%C4%81-h%C4%ABnau-pou%C4%81h%C4%ABnau	Marae complex	fe_157					
+gr_zo_55-1	zo_55		55		community	1		Ngāhina Marae	Ngāhina	https://maorimaps.com/marae/ng%C4%81hina	Marae complex	fe_157					
+gr_zo_55-10	zo_55		55		community	10		Waikirikiri Marae	Waikirikiri	https://maorimaps.com/marae/waikirikiri	Marae complex	fe_157					
+gr_zo_55-2	zo_55		55		community	2		Ōhotu Marae	Ōhotu	https://maorimaps.com/marae/%C5%8Dhotu	Marae complex	fe_157					
+gr_zo_55-3	zo_55		55		community	3		Ōtenuku Marae	Ōtenuku	https://maorimaps.com/marae/%C5%8Dtenuku	Marae complex	fe_157					
+gr_zo_55-4	zo_55		55		community	4	Ōwhakatoro meeting house			https://maorimaps.com/marae/%C5%8Dwhakatoro-te-mauku	Marae complex	fe_157					
+gr_zo_55-5	zo_55		55		community	5		Tauarau Marae	Tauarau	https://maorimaps.com/marae/tauarau	Marae complex	fe_157					
+gr_zo_55-6	zo_55		55		community	6		Te Papakāinga Marae	Te Papakāinga		Marae complex	fe_157					
+gr_zo_55-7	zo_55		55		community	7		Te Pou-ā-Hīnau Marae	Te Pou-ā-Hīnau	https://maorimaps.com/marae/te-pou-%C4%81-h%C4%ABnau-pou%C4%81h%C4%ABnau	Marae complex	fe_157					
+gr_zo_55-8	zo_55		55		community	8		Te Rewarewa Marae	Te Rewarewa	https://maorimaps.com/marae/rewarewa	Marae complex	fe_157					
+gr_zo_55-9	zo_55		55		community	9		Tōtara Marae	Tōtara		Marae complex	fe_157					
+gr_zo_56-9	zo_56		56		community	9		Tāne-nui-ā-Rangi	Tāne-nui-ā-Rangi	https://maorimaps.com/marae/t%C4%81ne-nui-rangi	Marae complex	fe_157					
+gr_zo_56-1	zo_56		56		community	1		Kākānui Marae	Kākānui		Marae complex	fe_157					
+gr_zo_56-10	zo_56		56		community	10		Kākahu Tāpiki Marae	Kākahu Tāpiki	https://maorimaps.com/marae/otekura	Marae complex	fe_157					
+gr_zo_56-11	zo_56		56		community	11		Pāpueru Marae	Pāpueru	https://maorimaps.com/marae/p%C4%81pueru	Marae complex	fe_157					
+gr_zo_56-2	zo_56		56		community	2		Mātaatua Marae	Mātaatua	https://maorimaps.com/marae/m%C4%81taatua	Marae complex	fe_157					
+gr_zo_56-3	zo_56		56		community	3		Ōhaua-te-Rangi Marae	Ōhaua-te-Rangi		Marae complex	fe_157					
+gr_zo_56-4	zo_56		56		community	4		Ōpūtao Marae	Ōpūtao	https://maorimaps.com/marae/%C5%8Dp%C5%ABtao	Marae complex	fe_157					
+gr_zo_56-5	zo_56		56		community	5		Ōtekura Marae	Ōtekura	https://maorimaps.com/marae/otekura	Marae complex	fe_157					
+gr_zo_56-6	zo_56		56		community	6		Tātāhoata Marae	Tātāhoata	https://maorimaps.com/marae/t%C4%81t%C4%81hoata	Marae complex	fe_157					
+gr_zo_56-7	zo_56		56		community	7		Te Umuroa Marae	Te Umuroa	https://maorimaps.com/marae/te-umuroa	Marae complex	fe_157					
+gr_zo_56-8	zo_56		56		community	8		Uhiārae Marae	Uhiārae		Marae complex	fe_157					
+gr_zo_57-1	zo_57		57		community	1		Kūhā Pā	Kūhā	https://maorimaps.com/marae/k%C5%ABh%C4%81-p%C4%81-te-k%C5%ABh%C4%81-t%C4%81rewa	Marae complex	fe_157					
+gr_zo_57-2	zo_57		57		community	2		Waimako Marae	Waimako	https://maorimaps.com/marae/waimako-p%C4%81	Marae complex	fe_157					
+gr_zo_58-1	zo_58		58		community	1		Moewhare Marae	Moewhare	https://maorimaps.com/marae/moewhare	Marae complex	fe_157					
+gr_zo_58-2	zo_58		58		community	2		Murumurunga Marae	Murumurunga	https://maorimaps.com/marae/murumurunga	Marae complex	fe_157					
+gr_zo_58-3	zo_58		58		community	3		Rangitahi Pā	Rangitahi	https://maorimaps.com/marae/rangitahi	Marae complex	fe_157					
+gr_zo_58-4	zo_58		58		community	4		Tīpapa Marae	Tīpapa	https://maorimaps.com/marae/t%C4%ABpapa	Marae complex	fe_157					
+gr_zo_58-5	zo_58		58		community	5		Waikotikoti Marae	Waikotikoti	https://maorimaps.com/marae/waikotikoti	Marae complex	fe_157					
+gr_zo_58-6	zo_58		58		community	6		Whirinaki Pā	Whirinaki		Marae complex	fe_157					
+gr_zo_59-1	zo_59		59		community	1		Kōkōhīnau Marae	Kōkōhīnau	https://maorimaps.com/marae/kokohinau-tuhimata	Marae complex	fe_157					
+gr_zo_59-10	zo_59		59		community	10		Tū-te-Ao Marae	Tū-te-Ao		Marae complex	fe_157					
+gr_zo_59-11	zo_59		59		community	11		Uira-roa Marae	Uira-roa	https://maorimaps.com/marae/uiraroa	Marae complex	fe_157					
+gr_zo_59-12	zo_59		59		community	12		Wairaka Marae	Wairaka		Marae complex	fe_157					
+gr_zo_59-2	zo_59		59		community	2		Ōmataroa Marae	Ōmataroa		Marae complex	fe_157					
+gr_zo_59-3	zo_59		59		community	3		Poroporo Marae	Poroporo	https://maorimaps.com/marae/kaiwaka	Marae complex	fe_157					
+gr_zo_59-4	zo_59		59		community	4		Puawairua Marae	Puawairua	https://maorimaps.com/marae/puawairua	Marae complex	fe_157					
+gr_zo_59-5	zo_59		59		community	5		Ruaihona Marae	Ruaihona	https://maorimaps.com/marae/ruaihona	Marae complex	fe_157					
+gr_zo_59-6	zo_59		59		community	6		Taiwhakāea Marae	Taiwhakāea	https://maorimaps.com/marae/taiwhakaea	Marae complex	fe_157					
+gr_zo_59-7	zo_59		59		community	7		Te Māpou Marae	Te Māpou	https://maorimaps.com/marae/te-mapou	Marae complex	fe_157					
+gr_zo_59-8	zo_59		59		community	8		Te Rangi Houhiri Marae	Te Rangi Houhiri	https://maorimaps.com/marae/te-rangihouhiri-ii	Marae complex	fe_157					
+gr_zo_59-9	zo_59		59		community	9		Toroa Marae	Toroa		Marae complex	fe_157					
+gr_zo_60-1	zo_60		60		community	1		Ōniao Pā	Ōniao	https://maorimaps.com/marae/%C5%8Dniao	Marae complex	fe_157					
+gr_zo_60-2	zo_60		60		community	2		Umutahi Pā	Umutahi	https://maorimaps.com/marae/ng%C4%81ti-umutahi	Marae complex	fe_157					
+gr_zo_60-3	zo_60		60		community	3		Rangitihi Pā	Rangitihi	https://maorimaps.com/marae/rangitihi	Marae complex	fe_157					
+gr_zo_61-1	zo_61		61		community	1		Waitahanui Pā	Waitahanui		Marae complex	fe_157					
+gr_zo_61-2	zo_61		61		community	2		Pukehina Pā	Pukehina	https://maorimaps.com/marae/pukehina	Marae complex	fe_157					
+gr_zo_62-1	zo_62		62		community	1		Kāhumatamomoe Pā	Kāhumatamomoe	https://maorimaps.com/marae/waiatuhi	Marae complex	fe_157					
+gr_zo_62-2	zo_62		62		community	2		Te Tākinga Pā	Te Tākinga	https://maorimaps.com/marae/te-takinga-hohowai	Marae complex	fe_157					
+gr_zo_62-3	zo_62		62		community	3		Ōhau Pā	Ōhau		Marae complex	fe_157					
+gr_zo_62-4	zo_62		62		community	4		Pounamunui Pā	Pounamunui	https://maorimaps.com/marae/pounamunui-houmaitawhiti	Marae complex	fe_157					
+gr_zo_62-5	zo_62		62		community	5	Rangitihi meeting house			https://maorimaps.com/marae/rangitihi	Marae complex	fe_157					
+gr_zo_62-6	zo_62		62		community	6	Pikiao meeting house			https://maorimaps.com/marae/tokerau	Marae complex	fe_157					
+gr_zo_63-1	zo_63		63		community	1		Tapuaekura Pā	Tapuaekura	https://maorimaps.com/marae/tapuaekura-hatupatu	Marae complex	fe_157					
+gr_zo_63-2	zo_63		63		community	2		Ruatō Pā	Ruatō	https://maorimaps.com/marae/ruato-ng%C4%81-p%C5%ABmanawa	Marae complex	fe_157					
+gr_zo_63-3	zo_63		63		community	3		Waikohatu Pā	Waikohatu	https://maorimaps.com/marae/waikohatu	Marae complex	fe_157					
+gr_zo_63-4	zo_63		63		community	4		Taurua Pā	Taurua	https://maorimaps.com/marae/taurua	Marae complex	fe_157					
+gr_zo_63-5	zo_63		63		community	5		Te Waiiti Pā	Te Waiiti	https://maorimaps.com/marae/te-waiiti	Marae complex	fe_157					
+gr_zo_63-6	zo_63		63		community	6		Tapuaeharuru Pā	Tapuaeharuru	https://maorimaps.com/marae/tapuaeharuru	Marae complex	fe_157					
+gr_zo_63-7	zo_63		63		community	7		Punawhakarēia Pā	Punawhakarēia	https://maorimaps.com/marae/punawhakareia	Marae complex	fe_157					
+gr_zo_64-1	zo_64		64		community	1		Mātai-Kōtare Pā	Mātai-Kōtare		Marae complex	fe_157					
+gr_zo_64-2	zo_64		64		community	2		Te Ruamatā Pā	Te Ruamatā	https://maorimaps.com/marae/ruamat%C4%81	Marae complex	fe_157					
+gr_zo_64-3	zo_64		64		community	3		Pikirangi Pā	Pikirangi	https://maorimaps.com/marae/pikirangi	Marae complex	fe_157					
+gr_zo_66-1	zo_66		66		community	1		Waimahana Pā	Waimahana		Marae complex	fe_157					
+gr_zo_66-2	zo_66		66		community	2		Mātaārae Pā	Mātaārae	https://maorimaps.com/marae/mataarae	Marae complex	fe_157					
+gr_zo_66-3	zo_66		66		community	3		Ōhaki Pā	Ōhaki		Marae complex	fe_157					
+gr_zo_67-1	zo_67		67		community	1		Rongomaipāpā Pā	Rongomaipāpā	https://maorimaps.com/marae/rongomaipapa	Marae complex	fe_157					
+gr_zo_67-2	zo_67		67		community	2		Kearoa Pā	Kearoa	https://maorimaps.com/marae/kearoa	Marae complex	fe_157					
+gr_zo_68-1	zo_68		68		community	1		Te Pākira Pā	Te Pakira	https://maorimaps.com/marae/te-p%C4%81kira	Marae complex	fe_157					
+gr_zo_68-14	zo_68		68		community	14		Hinemihi	Hinemihi	https://maorimaps.com/marae/hinemihi-te-paparere-r%C4%81t%C5%8Drua	Marae complex	fe_157					
+gr_zo_68-2	zo_68		68		community	2		Te Iringa Pā	Te Iringa		Marae complex	fe_157					
+gr_zo_68-3	zo_68		68		community	3		Rotowhio Pā	Rotowhio		Marae complex	fe_157					
+gr_zo_69-1	zo_69		69		community	1		Te Papai-ō-uru Pā	Te Papai-ō-uru		Marae complex	fe_157					
+gr_zo_69-3	zo_69		69		community	3		Mātaatua Marae	Mātaatua	https://maorimaps.com/marae/m%C4%81taatua	Marae complex	fe_157					
+gr_zo_69-4	zo_69		69		community	4		Tūtānekai Pā	Tūtānekai		Marae complex	fe_157					
+gr_zo_69-5	zo_69		69		community	5	Apumoana meeting house			https://maorimaps.com/marae/moerangi-apumoana	Marae complex	fe_157					
+gr_zo_69-6	zo_69		69		community	6		Hinemihi Pā	Hinemihi	https://maorimaps.com/marae/hinemihi-te-paparere-r%C4%81t%C5%8Drua	Marae complex	fe_157					
+gr_zo_69-7	zo_69		69		community	7	Hurunga-o-te-Rangi meeting house			https://maorimaps.com/marae/ng%C4%81puna-hurungaterangi	Marae complex	fe_157					
+gr_zo_69-8	zo_69		69		community	8		Tārewa Pā	Tārewa		Marae complex	fe_157					
+gr_zo_69-9	zo_69		69		community	9	Tūmahaurangi meeting house			https://maorimaps.com/marae/koutu-karenga	Marae complex	fe_157					
+gr_zo_71-1	zo_71		71		community	1		Tarukenga Pā	Tarukenga	https://maorimaps.com/marae/t%C4%81rukenga	Marae complex	fe_157					
+gr_zo_71-2	zo_71		71		community	2		Rangiwewehi Pā	Rangiwewehi	https://maorimaps.com/marae/tarimano-awahou	Marae complex	fe_157					
+gr_zo_71-3	zo_71		71		community	3		Waitetī Pā	Waitetī	https://maorimaps.com/marae/waiteti	Marae complex	fe_157					
+gr_zo_71-4	zo_71		71		community	4		Te Purei	Te Purei		Marae complex	fe_157					
+gr_zo_71-5	zo_71		71		community	5		Te Kurī	Te Kurī		Marae complex	fe_157					
+gr_zo_72-1	zo_72		72		community	1	Tāwakeheimoa meeting house			https://maorimaps.com/marae/tarimano-awahou	Marae complex	fe_157					
+gr_zo_73-1	zo_73		73		community	1		Te Awhe Pā	Te Awhe	https://maorimaps.com/marae/maket%C5%AB-p%C4%81-te-awhe	Marae complex	fe_157					
+gr_zo_73-2	zo_73		73		community	2		Whakaue Pā	Whakaue		Marae complex	fe_157					
+gr_zo_74-1	zo_74		74		community	1		Manoeka Pā	Manoeka	https://maorimaps.com/marae/hei-manoeka	Marae complex	fe_157					
+gr_zo_74-2	zo_74		74		community	2		Waitangi Pā	Waitangi	https://maorimaps.com/marae/moko-waitangi	Marae complex	fe_157					
+gr_zo_74-3	zo_74		74		community	3		Te Paamu Pā	Te Paamu	https://maorimaps.com/marae/te-paamu	Marae complex	fe_157					
+gr_zo_74-4	zo_74		74		community	4		Rangiuru Pā	Rangiuru		Marae complex	fe_157					
+gr_zo_74-5	zo_74		74		community	5		Te Mataī Pā	Te Mataī	https://maorimaps.com/marae/te-matai	Marae complex	fe_157					
+gr_zo_74-6	zo_74		74		community	6		Te Kahika Pā	Te Kahika	https://maorimaps.com/marae/makahae-te-kahika	Marae complex	fe_157					
+gr_zo_75-1	zo_75		75		community	1	Tamatea-ki-te-huatahi meeting house				Marae complex	fe_157					
+gr_zo_75-2	zo_75		75		community	2	Te Hiinga o te Rā meeting house			https://maorimaps.com/marae/te-hihitaua	Marae complex	fe_157					
+gr_zo_76-1	zo_76		76		community	1		Te Rereātūkāhia Marae	Te Rereātūkāhia	https://maorimaps.com/marae/te-rereatukahia	Marae complex	fe_157					
+gr_zo_76-10	zo_76		76		community	10		Kutaroa Marae	Kutaroa		Marae complex	fe_157					
+gr_zo_76-11	zo_76		76		community	11		Maungatapu Marae	Maungatapu	https://maorimaps.com/marae/opopoti-maungatapu	Marae complex	fe_157					
+gr_zo_76-12	zo_76		76		community	12		Whareroa Marae	Whareroa	https://maorimaps.com/marae/whareroa	Marae complex	fe_157					
+gr_zo_76-13	zo_76		76		community	13		Mangatawa Marae	Mangatawa		Marae complex	fe_157					
+gr_zo_76-15	zo_76		76		community	15	Tahinga-o-te-Rā meeting house				Marae complex	fe_157					
+gr_zo_76-16	zo_76		76		community	16		Hūria Marae	Hūria	https://maorimaps.com/marae/huria-judea	Marae complex	fe_157					
+gr_zo_76-2	zo_76		76		community	2		Hairīni Marae	Hairīni	https://maorimaps.com/marae/hairini	Marae complex	fe_157					
+gr_zo_76-3	zo_76		76		community	3		Tūāpiro Marae	Tūāpiro	https://maorimaps.com/marae/tuapiro	Marae complex	fe_157					
+gr_zo_76-4	zo_76		76		community	4		Te Pura Wairoa Marae	Te Pura Wairoa		Marae complex	fe_157					
+gr_zo_76-5	zo_76		76		community	5		Peterehema Marae	Peterehema	https://maorimaps.com/marae/hangarau-peterehema	Marae complex	fe_157					
+gr_zo_76-7	zo_76		76		community	7		Ōpounui	Ōpounui		Marae complex	fe_157					
+gr_zo_76-8	zo_76		76		community	8	Rangihouhiri meeting house			https://maorimaps.com/marae/te-rangihouhiri-oruarahi	Marae complex	fe_157					
+gr_zo_76-9	zo_76		76		community	9		Ōpureora Marae	Ōpureora		Marae complex	fe_157					
+gr_zo_79-1	zo_79		79		community	1	Waihī Community Marae				Marae complex	fe_157					
+gr_zo_79-2	zo_79		79		community	2		Pūkewa Marae	Pūkewa		Marae complex	fe_157					
+gr_zo_85-1	zo_85		85		community	1		Mātai Whetū Marae	Mātai Whetū	https://maorimaps.com/marae/matai-whet%C5%AB	Marae complex	fe_157					
+gr_zo_86-1	zo_86		86		community	1		Ngahu Toitoi Marae	Ngahu Toitoi	https://maorimaps.com/marae/ngahutoitoi	Marae complex	fe_157					
+gr_zo_86-2	zo_86		86		community	2		Te Pai ō Hauraki Marae	Te Pai ō Hauraki		Marae complex	fe_157					
+gr_zo_87-1	zo_87		87		community	1		Tūī Pā	Tūī		Marae complex	fe_157					
+gr_zo_88-1	zo_88		88		community	1		Mangatangi Marae	Mangatangi	https://maorimaps.com/marae/mangatangi	Marae complex	fe_157					
+gr_zo_88-3	zo_88		88		community	3		Tūī	Tūī		Marae complex	fe_157					
+gr_zo_89-1	zo_89		89		community	1		Whakatīwai Marae	Whakatīwai	https://maorimaps.com/marae/wharekawa-kaiaua	Marae complex	fe_157					
+gr_zo_90-1	zo_90		90		community	1		Mōkaukohunui Marae	Mōkaukohunui		Marae complex	fe_157					
+gr_zo_90-2	zo_90		90		community	2		Napinapi Pā	Napinapi	https://maorimaps.com/marae/napinapi	Marae complex	fe_157					
+gr_zo_90-3	zo_90		90		community	3		Ngā Miro ā Huiao Marae	Ngā Miro ā Huiao	https://maorimaps.com/marae/rereamanu	Marae complex	fe_157					
+gr_zo_90-4	zo_90		90		community	4		Āria Marae	Āria	https://maorimaps.com/marae/te-paemate	Marae complex	fe_157					
+gr_zo_90-5	zo_90		90		community	5		Māniaroa Marae	Māniaroa	https://maorimaps.com/marae/maniaroa	Marae complex	fe_157					
+gr_zo_91-1	zo_91		91		community	1		Mīringa te Kakara Marae	Mīringa te Kakara		Marae complex	fe_157					
+gr_zo_91-2	zo_91		91		community	2		Te Hape Marae	Te Hape	https://maorimaps.com/marae/te-hape	Marae complex	fe_157					
+gr_zo_91-3	zo_91		91		community	3	Rērēahu meeting house			https://maorimaps.com/marae/mangapeehi	Marae complex	fe_157					
+gr_zo_91-4	zo_91		91		community	4		Te Ihingārangi Marae	Te Ihingārangi	https://maorimaps.com/marae/waimiha-te-ihingarangi	Marae complex	fe_157					
+gr_zo_92-1	zo_92		92		community	1	Te Tokanganui-ā-Noho meeting house			https://maorimaps.com/marae/te-tokanganui-noho-te-k%C5%ABiti-p%C4%81	Marae complex	fe_157					
+gr_zo_92-2	zo_92		92		community	2		Otewā Marae	Otewā	https://maorimaps.com/marae/otewa-p%C4%81	Marae complex	fe_157					
+gr_zo_92-3	zo_92		92		community	3	Te Kōrapa meeting house			https://maorimaps.com/marae/te-korapatu	Marae complex	fe_157					
+gr_zo_92-4	zo_92		92		community	4		Te Ahoroa Marae	Te Ahoroa	https://maorimaps.com/marae/te-ahoroa	Marae complex	fe_157					
+gr_zo_92-5	zo_92		92		community	5		Te Kuiti Pā	Te Kuiti		Marae complex	fe_157					
+gr_zo_92-6	zo_92		92		community	6		Tomotuki Marae	Tomotuki	https://maorimaps.com/marae/tomotuki-parekaitini	Marae complex	fe_157					
+gr_zo_92-7	zo_92		92		community	7		Mōtītī Pā	Mōtītī	https://maorimaps.com/marae/m%C5%8Dt%C4%ABti	Marae complex	fe_157					
+gr_zo_92-8	zo_92		92		community	8		Mangarama Marae	Mangarama	https://maorimaps.com/marae/mangarama	Marae complex	fe_157					
+gr_zo_93-1	zo_93		93		community	1		Haurua	Haurua	https://maorimaps.com/marae/rereamanu	Marae complex	fe_157					
+gr_zo_93-2	zo_93		93		community	2	Waipātōtō meeting house			https://maorimaps.com/marae/oparure-te-waipatoto	Marae complex	fe_157					
+gr_zo_93-3	zo_93		93		community	3		Kaputuhi Marae	Kaputuhi	https://maorimaps.com/marae/kaputuhi-p%C4%81	Marae complex	fe_157					
+gr_zo_94-1	zo_94		94		community	1		Kahotea Pā	Kahotea	https://maorimaps.com/marae/kahotea	Marae complex	fe_157					
+gr_zo_94-2	zo_94		94		community	2		Te Keeti Marae	Te Keeti	https://maorimaps.com/marae/te-keeti	Marae complex	fe_157					
+gr_zo_95-1	zo_95		95		community	1		Maketū Pā	Maketū	https://maorimaps.com/marae/maket%C5%AB	Marae complex	fe_157					
+gr_zo_95-10	zo_95		95		community	10	Te Mānia Sleeping House				Marae complex	fe_157					
+gr_zo_95-2	zo_95		95		community	2		Ōkapu Marae	Ōkapu	https://maorimaps.com/marae/%C5%8Dkapu	Marae complex	fe_157					
+gr_zo_95-3	zo_95		95		community	3		Taharoa Marae	Taharoa		Marae complex	fe_157					
+gr_zo_95-4	zo_95		95		community	4		Mōkai-kāinga Marae	Mōkai-kāinga	https://maorimaps.com/marae/m%C5%8Dkai-kainga	Marae complex	fe_157					
+gr_zo_95-5	zo_95		95		community	5		Hīona Marae	Hīona	https://maorimaps.com/marae/h%C4%ABona	Marae complex	fe_157					
+gr_zo_95-6	zo_95		95		community	6		Te Koraha Marae	Te Koraha	https://maorimaps.com/marae/te-k%C5%8Draha	Marae complex	fe_157					
+gr_zo_95-7	zo_95		95		community	7		Waipapa Marae	Waipapa	https://maorimaps.com/marae/waipapa	Marae complex	fe_157					
+gr_zo_95-8	zo_95		95		community	8		Rākaunui Marae	Rākaunui	https://maorimaps.com/marae/r%C4%81kaunui	Marae complex	fe_157					
+gr_zo_95-9	zo_95		95		community	9		Te Rauāmoa Marae	Te Rauāmoa		Marae complex	fe_157					
+gr_zo_96-1	zo_96		96		community	1		Waingaro Marae	Waingaro	https://maorimaps.com/marae/waingaro	Marae complex	fe_157					
+gr_zo_96-2	zo_96		96		community	2		Poihākena Marae	Poihākena	https://maorimaps.com/marae/poih%C4%81kena	Marae complex	fe_157					
+gr_zo_96-3	zo_96		96		community	3		Miria te Kakara Marae	Miria te Kakara		Marae complex	fe_157					
+gr_zo_96-4	zo_96		96		community	4		Oneparepare Marae	Oneparepare	https://maorimaps.com/marae/te-papa-o-rotu-te-oneparepare	Marae complex	fe_157					
+gr_zo_96-5	zo_96		96		community	5		Te Kaharoa Marae	Te Kaharoa	https://maorimaps.com/marae/aramiro-te-kaharoa	Marae complex	fe_157					
+gr_zo_96-6	zo_96		96		community	6		Te Tihi ō Moerangi marae	Te Tihi ō Moerangi marae	https://maorimaps.com/marae/te-tihi-o-moerangi	Marae complex	fe_157					
+gr_zo_97-1	zo_97		97		community	1		Pou-ā-Kani Marae	Pou-ā-Kani		Marae complex	fe_157					
+gr_zo_98-1	zo_98		98		community	1	Ngā Waka Hall				Marae complex	fe_157					
+gr_zo_98-2	zo_98		98		community	2		Papa o te Aroha Marae	Papa o te Aroha	https://maorimaps.com/marae/papa-o-te-aroha	Marae complex	fe_157					
+gr_zo_98-3	zo_98		98		community	3		Ōngāroto Marae	Ōngāroto	https://maorimaps.com/marae/%C5%8Dng%C4%81roto	Marae complex	fe_157					
+gr_zo_98-4	zo_98		98		community	4	Pakake-Taiari meeting house			https://maorimaps.com/marae/m%C5%8Dkai	Marae complex	fe_157					
+gr_zo_98-6	zo_98		98		community	6		Te Whānau Ānoa Marae	Te Whānau Ānoa		Marae complex	fe_157					
+gr_zo_99-1	zo_99		99		community	1		Te Ruapeka Marae	Te Ruapeka		Marae complex	fe_157					
+gr_zo_99-10	zo_99		99		community	10		Pāparāmu Marae	Pāparāmu		Marae complex	fe_157					
+gr_zo_99-11	zo_99		99		community	11		Te Ōmeka Marae	Te Ōmeka	https://maorimaps.com/node/13709	Marae complex	fe_157					
+gr_zo_99-12	zo_99		99		community	12		Ōkauia Pā	Ōkauia		Marae complex	fe_157					
+gr_zo_99-2	zo_99		99		community	2		Whakaaratamaiti Marae	Whakaaratamaiti	https://maorimaps.com/marae/whakaaratamaiti	Marae complex	fe_157					
+gr_zo_99-3	zo_99		99		community	3		Mangakāretu Marae	Mangakāretu	https://maorimaps.com/marae/mangakaretu	Marae complex	fe_157					
+gr_zo_99-4	zo_99		99		community	4		Pikitū Marae	Pikitū	https://maorimaps.com/marae/pikit%C5%AB	Marae complex	fe_157					
+gr_zo_99-5	zo_99		99		community	5		Mātiti Marae	Mātiti		Marae complex	fe_157					
+gr_zo_99-7	zo_99		99		community	7		Kuranui Marae	Kuranui		Marae complex	fe_157					
+gr_zo_99-8	zo_99		99		community	8		Ngātira Haere Marae	Ngātira Haere		Marae complex	fe_157					
+gr_zo_99-9	zo_99		99		community	9		Te Ūkaipō Marae	Te Ūkaipō	https://maorimaps.com/marae/te-%C5%ABkaip%C5%8D	Marae complex	fe_157					
+gr_zo_100-1	zo_100		100		community	1		Rukumoana Pā	Rukumoana		Marae complex	fe_157					
+gr_zo_100-2	zo_100		100		community	2		Kaia te Mata Marae	Kaia te Mata		Marae complex	fe_157					
+gr_zo_100-3	zo_100		100		community	3		Raungaiti Marae	Raungaiti	https://maorimaps.com/marae/raungaiti	Marae complex	fe_157					
+gr_zo_100-4	zo_100		100		community	4		Hukunui Marae	Hukunui		Marae complex	fe_157					
+gr_zo_100-5	zo_100		100		community	5		Tauwhare Marae	Tauwhare	https://maorimaps.com/marae/te-iti-o-hau%C4%81-tauwhare	Marae complex	fe_157					
+gr_zo_101-1	zo_101		101		community	1		Maungatautari Marae	Maungatautari	https://maorimaps.com/marae/maungatautari	Marae complex	fe_157					
+gr_zo_101-2	zo_101		101		community	2	Rangiatea meeting house			https://maorimaps.com/marae/p%C5%8Dhara	Marae complex	fe_157					
+gr_zo_101-3	zo_101		101		community	3		Ōtautahanga Marae	Ōtautahanga		Marae complex	fe_157					
+gr_zo_101-4	zo_101		101		community	4		Aotearoa Pā	Aotearoa	https://maorimaps.com/marae/aotearoa	Marae complex	fe_157					
+gr_zo_101-5	zo_101		101		community	5		Rāwhti Roa Marae	Rāwhti Roa		Marae complex	fe_157					
+gr_zo_102-1	zo_102		102		community	1	Ōtāwhao meeting house				Marae complex	fe_157					
+gr_zo_102-2	zo_102		102		community	2		Pūrekireki Marae	Pūrekireki	https://maorimaps.com/marae/p%C5%ABrekireki	Marae complex	fe_157					
+gr_zo_102-3	zo_102		102		community	3		Te Haona Kaha Marae	Te Haona Kaha		Marae complex	fe_157					
+gr_zo_103-1	zo_103		103		community	1		Kirikiriroa Marae	Kirikiriroa		Marae complex	fe_157					
+gr_zo_103-2	zo_103		103		community	2		Hui te Rangiora Marae	Hui te Rangiora		Marae complex	fe_157					
+gr_zo_103-3	zo_103		103		community	3		Miropiko	Miropiko		Marae complex	fe_157					
+gr_zo_103-5	zo_103		103		community	5		Ngāti Hamutana Marae	Ngāti Hamutana		Marae complex	fe_157					
+gr_zo_104-2	zo_104		104		community	2		Ngāruawāhia	Ngāruawāhia		Marae complex	fe_157					
+gr_zo_104-3	zo_104		104		community	3		Taupiri	Taupiri	https://maorimaps.com/marae/taupiri	Marae complex	fe_157					
+gr_zo_104-4	zo_104		104		community	4		Waikeri Pā	Waikeri		Marae complex	fe_157					
+gr_zo_105-1	zo_105		105		community	1		Waahi Marae	Waahi	https://maorimaps.com/marae/waahi	Marae complex	fe_157					
+gr_zo_105-2	zo_105		105		community	2		Te Kauri Marae	Te Kauri	https://maorimaps.com/marae/te-kauri	Marae complex	fe_157					
+gr_zo_105-3	zo_105		105		community	3		Te Ōhākī Marae	Te Ōhākī	https://maorimaps.com/marae/te-%C5%8Dh%C4%81k%C4%AB	Marae complex	fe_157					
+gr_zo_105-4	zo_105		105		community	4		Kaitumutumu Marae	Kaitumutumu	https://maorimaps.com/marae/kaitumutumu	Marae complex	fe_157					
+gr_zo_106-1	zo_106		106		community	1		Taniwha Marae	Taniwha	https://maorimaps.com/marae/taniwha	Marae complex	fe_157					
+gr_zo_106-2	zo_106		106		community	2		Rangiriri	Rangiriri	https://maorimaps.com/marae/rangiriri-pa	Marae complex	fe_157					
+gr_zo_106-3	zo_106		106		community	3		Horahora Marae	Horahora	https://maorimaps.com/marae/horahora	Marae complex	fe_157					
+gr_zo_106-4	zo_106		106		community	4		Waikare Marae	Waikare	https://maorimaps.com/marae/waikare	Marae complex	fe_157					
+gr_zo_106-5	zo_106		106		community	5		Te Pou o Mangatāwhiri Marae	Te Pou o Mangatāwhiri		Marae complex	fe_157					
+gr_zo_107-1	zo_107		107		community	1		Te Kotahitanga Marae	Te Kotahitanga	https://maorimaps.com/marae/te-kotahitanga	Marae complex	fe_157					
+gr_zo_107-2	zo_107		107		community	2		Ōraeroa Marae	Ōraeroa	https://maorimaps.com/marae/%C5%8Draeroa	Marae complex	fe_157					
+gr_zo_107-3	zo_107		107		community	3		Tauranganui Marae	Tauranganui	https://maorimaps.com/marae/tauranganui	Marae complex	fe_157					
+gr_zo_107-4	zo_107		107		community	4		Ngā Tai E Rua Marae	Ngā Tai E Rua	https://maorimaps.com/marae/ng%C4%81-tai-e-rua	Marae complex	fe_157					
+gr_zo_107-5	zo_107		107		community	5	Te Ōhākīāte Puea Sleeping House				Marae complex	fe_157					
+gr_zo_107-6	zo_107		107		community	6	Ngā Hau E Wha Hall			https://maorimaps.com/marae/ng%C4%81-hau-e-wh%C4%81-o-pukekohe	Marae complex	fe_157					
+gr_zo_108-1	zo_108		108		community	1	Te Uwira meeting house			https://maorimaps.com/marae/t%C4%81huna	Marae complex	fe_157					
+gr_zo_108-2	zo_108		108		community	2		Rere-te-Whioi Marae	Rere-te-Whioi	https://maorimaps.com/marae/reret%C4%93whioi	Marae complex	fe_157					
+gr_zo_108-3	zo_108		108		community	3		Whātāpaka Marae	Whātāpaka	https://maorimaps.com/marae/wh%C4%81t%C4%81paka	Marae complex	fe_157					
+gr_zo_108-4	zo_108		108		community	4		Waiau Pā	Waiau		Marae complex	fe_157					
+gr_zo_109-1	zo_109		109		community	1		Ngāti Papakura Marae	Ngāti Papakura		Marae complex	fe_157					
+gr_zo_110-1	zo_110		110		community	1		Umupuia Marae	Umupuia	https://maorimaps.com/marae/umupuia	Marae complex	fe_157					
+gr_zo_111-1	zo_111		111		community	1		Piritahi Marae	Piritahi	https://maorimaps.com/marae/piritahi	Marae complex	fe_157					
+gr_zo_113-1	zo_113		113		community	1		Mōtaerehe Marae	Mōtaerehe	https://maorimaps.com/marae/motairehe	Marae complex	fe_157					
+gr_zo_113-2	zo_113		113		community	2		Kāwā Marae	Kāwā	https://maorimaps.com/marae/kawa-ng%C4%81ti-wai-o-aotea	Marae complex	fe_157					
+gr_zo_114-1	zo_114		114		community	1		Māngere Marae	Māngere		Marae complex	fe_157					
+gr_zo_114-2	zo_114		114		community	2		Te Ihuamataoho Marae	Te Ihuamataoho		Marae complex	fe_157					
+gr_zo_114-3	zo_114		114		community	3		Mātaatua Marae	Mātaatua		Marae complex	fe_157					
+gr_zo_114-4	zo_114		114		community	4		Ōtara Marae	Ōtara		Marae complex	fe_157					
+gr_zo_114-5	zo_114		114		community	5		Ngā Hau E Whā Marae	Ngā Hau E Whā	https://maorimaps.com/marae/ng%C4%81-hau-e-wh%C4%81-o-pukekohe	Marae complex	fe_157					
+gr_zo_114-6	zo_114		114		community	6	Matuku Tūrēia Dining Hall				Marae complex	fe_157					
+gr_zo_114-7	zo_114		114		community	7	Parehuia meeting house				Marae complex	fe_157					
+gr_zo_114-8	zo_114		114		community	8	Aorere College				Marae complex	fe_157					
+gr_zo_116-11	zo_116		116		community	11	Waiatarau Community Centre				Marae complex	fe_157					
+gr_zo_116-1	zo_116		116		community	1		Ōrākei Marae	Ōrākei	https://maorimaps.com/marae/orakei	Marae complex	fe_157					
+gr_zo_116-10	zo_116		116		community	10		Ruapōtaka Marae	Ruapōtaka		Marae complex	fe_157					
+gr_zo_116-12	zo_116		116		community	12	Kahurangi Ki Maungawhau meeting house				Marae complex	fe_157					
+gr_zo_116-13	zo_116		116		community	13		Kuru Takawaenga Marae	Kuru Takawaenga		Marae complex	fe_157					
+gr_zo_116-14	zo_116		116		community	14		Waipapa Marae	Waipapa	https://maorimaps.com/marae/waipapa	Marae complex	fe_157					
+gr_zo_116-15	zo_116		116		community	15		Kōkiri Ki Maungarei Marae	Kōkiri Ki Maungarei		Marae complex	fe_157					
+gr_zo_116-16	zo_116		116		community	16		Whare Hui	Whare Hui		Marae complex	fe_157					
+gr_zo_116-2	zo_116		116		community	2		Te Tira Hōu Marae	Te Tira Hōu		Marae complex	fe_157					
+gr_zo_116-3	zo_116		116		community	3	St Sep's				Marae complex	fe_157					
+gr_zo_116-4	zo_116		116		community	4	Hotunui meeting house				Marae complex	fe_157					
+gr_zo_116-5	zo_116		116		community	5		Te Unga Waka Marae	Te Unga Waka		Marae complex	fe_157					
+gr_zo_116-6	zo_116		116		community	6		Te Akootetūī Marae	Te Akootetūī		Marae complex	fe_157					
+gr_zo_116-7	zo_116		116		community	7	Tūtahi Tonu meeting house				Marae complex	fe_157					
+gr_zo_116-8	zo_116		116		community	8		Māhurehure Marae	Māhurehure		Marae complex	fe_157					
+gr_zo_117-1	zo_117		117		community	1		Hoani Waititi Marae	Hoani Waititi		Marae complex	fe_157					
+gr_zo_117-2	zo_117		117		community	2		Kākāriki Marae	Kākāriki	https://maorimaps.com/marae/k%C4%81k%C4%81riki	Marae complex	fe_157					
+gr_zo_117-3	zo_117		117		community	3		Ōpānuku Marae	Ōpānuku		Marae complex	fe_157					
+gr_zo_117-4	zo_117		117		community	4	Te Kōtuku meeting house				Marae complex	fe_157					
+gr_zo_119-1	zo_119		119		community	1	Te Kāmaka meeting house				Marae complex	fe_157					
+gr_zo_120-1	zo_120		120		community	1		Haranui Marae	Haranui	https://maorimaps.com/marae/haranui-otakanini	Marae complex	fe_157					
+gr_zo_120-2	zo_120		120		community	2		Kākānui Marae	Kākānui	https://maorimaps.com/marae/k%C4%81k%C4%81nui	Marae complex	fe_157					
+gr_zo_120-3	zo_120		120		community	3	Whiti-te-Rā meeting house			https://maorimaps.com/marae/reweti	Marae complex	fe_157					
+gr_zo_120-4	zo_120		120		community	4		Puatahi Marae	Puatahi	https://maorimaps.com/marae/puatahi	Marae complex	fe_157					
+gr_zo_122-1	zo_122		122		community	1		Rangituanui Marae	Rangituanui		Marae complex	fe_157					
+gr_zo_123-1	zo_123		123		community	1		Kākāraea Marae	Kākāraea		Marae complex	fe_157					
+gr_zo_123-2	zo_123		123		community	2		Te Pounga Marae	Te Pounga	https://maorimaps.com/marae/te-pounga	Marae complex	fe_157					
+gr_zo_124-5	zo_124		124		community	5		Aoroa	Aoroa		Marae complex	fe_157					
+gr_zo_124-1	zo_124		124		community	1		Taitā Marae	Taitā	https://maorimaps.com/marae/taita	Marae complex	fe_157					
+gr_zo_124-10	zo_124		124		community	10	Pihirau meeting house				Marae complex	fe_157					
+gr_zo_124-2	zo_124		124		community	2		Rīpia Marae	Rīpia	https://maorimaps.com/marae/r%C4%ABpia	Marae complex	fe_157					
+gr_zo_124-3	zo_124		124		community	3		Ōtūrei Marae	Ōtūrei	https://maorimaps.com/marae/%C5%8Dt%C5%ABrei	Marae complex	fe_157					
+gr_zo_124-4	zo_124		124		community	4		Te Houhanga Marae	Te Houhanga	https://maorimaps.com/marae/te-houhanga	Marae complex	fe_157					
+gr_zo_124-6	zo_124		124		community	6		Pouto Marae	Pouto	https://maorimaps.com/marae/waik%C4%81retu-p%C5%8Duto	Marae complex	fe_157					
+gr_zo_124-7	zo_124		124		community	7		Waihauā Marae	Waihauā	https://maorimaps.com/marae/waihaua-arapaoa	Marae complex	fe_157					
+gr_zo_124-8	zo_124		124		community	8		Tinopai Marae	Tinopai	https://maorimaps.com/marae/ng%C4%81-tai-whakarongorua-tinopai	Marae complex	fe_157					
+gr_zo_124-9	zo_124		124		community	9		Toetoe Marae	Toetoe	https://maorimaps.com/marae/toetoe	Marae complex	fe_157					
+gr_zo_125-1	zo_125		125		community	1		Kaihū Marae	Kaihū		Marae complex	fe_157					
+gr_zo_125-2	zo_125		125		community	2		Waikaraka Marae	Waikaraka	https://maorimaps.com/marae/waikaraka	Marae complex	fe_157					
+gr_zo_125-3	zo_125		125		community	3		Waikarā Marae	Waikarā	https://maorimaps.com/marae/waikar%C4%81	Marae complex	fe_157					
+gr_zo_125-4	zo_125		125		community	4		Pāhinui Marae	Pāhinui		Marae complex	fe_157					
+gr_zo_125-5	zo_125		125		community	5		Matatina Marae	Matatina	https://maorimaps.com/marae/matatina	Marae complex	fe_157					
+gr_zo_125-6	zo_125		125		community	6		Ahikiwi Marae	Ahikiwi	https://maorimaps.com/marae/ahikiwi	Marae complex	fe_157					
+gr_zo_125-7	zo_125		125		community	7	Ngāti Toro meeting house			https://maorimaps.com/marae/mataitaua	Marae complex	fe_157					
+gr_zo_126-1	zo_126		126		community	1		Tauteihiihi Marae	Tauteihiihi	https://maorimaps.com/marae/tauteihiihi	Marae complex	fe_157					
+gr_zo_126-10	zo_126		126		community	10		Tāhekeroa Marae	Tāhekeroa	https://maorimaps.com/marae/t%C4%81heke	Marae complex	fe_157					
+gr_zo_126-11	zo_126		126		community	11		Puhi Moana Ariki Marae	Puhi Moana Ariki	https://maorimaps.com/marae/kohewhata	Marae complex	fe_157					
+gr_zo_126-12	zo_126		126		community	12		Moehau Marae	Moehau	https://maorimaps.com/marae/moehau	Marae complex	fe_157					
+gr_zo_126-13	zo_126		126		community	13		Motukiore Marae	Motukiore	https://maorimaps.com/marae/motukiore	Marae complex	fe_157					
+gr_zo_126-14	zo_126		126		community	14		Mātaitauā Marae	Mātaitauā	https://maorimaps.com/marae/mataitaua	Marae complex	fe_157					
+gr_zo_126-2	zo_126		126		community	2		Maraeroa Marae	Maraeroa	https://maorimaps.com/marae/mokonui%C4%81rangi	Marae complex	fe_157					
+gr_zo_126-3	zo_126		126		community	3		Te Kotahitanga Marae	Te Kotahitanga	https://maorimaps.com/marae/te-kotahitanga	Marae complex	fe_157					
+gr_zo_126-4	zo_126		126		community	4	Te Herenga o te Aroha meeting house				Marae complex	fe_157					
+gr_zo_126-5	zo_126		126		community	5		Waiwhatawhata Marae	Waiwhatawhata	https://maorimaps.com/marae/waiwhatawhata	Marae complex	fe_157					
+gr_zo_126-6	zo_126		126		community	6		Paremata Marae	Paremata	https://maorimaps.com/marae/paremata	Marae complex	fe_157					
+gr_zo_126-7	zo_126		126		community	7	Te Whakamaharatanga meeting house			https://maorimaps.com/marae/te-whakamaharatanga-waimamaku	Marae complex	fe_157					
+gr_zo_126-8	zo_126		126		community	8	Te Piitī meeting house			https://maorimaps.com/marae/%C5%8Dmanaia	Marae complex	fe_157					
+gr_zo_126-9	zo_126		126		community	9		Mōria Marae	Mōria		Marae complex	fe_157					
+gr_zo_127-1	zo_127		127		community	1		Te Iringa Marae	Te Iringa	https://maorimaps.com/marae/te-iringa	Marae complex	fe_157					
+gr_zo_127-12	zo_127		127		community	12	Ngati Toro meeting house				Marae complex	fe_157					
+gr_zo_127-13	zo_127		127		community	13		Pātearoha Marae	Pātearoha		Marae complex	fe_157					
+gr_zo_127-2	zo_127		127		community	2		Ngāti Koro Marae	Ngāti Koro	https://maorimaps.com/marae/painoaiho	Marae complex	fe_157					
+gr_zo_127-3	zo_127		127		community	3		Te Kotahitanga Marae	Te Kotahitanga	https://maorimaps.com/marae/te-kotahitanga	Marae complex	fe_157					
+gr_zo_127-4	zo_127		127		community	4	Te Aroha meeting house			https://maorimaps.com/marae/parakao-te-aroha	Marae complex	fe_157					
+gr_zo_127-5	zo_127		127		community	5		Te Hūruhi Marae	Te Hūruhi	https://maorimaps.com/marae/te-huruhi	Marae complex	fe_157					
+gr_zo_127-6	zo_127		127		community	6		Pukerātā Marae	Pukerātā	https://maorimaps.com/marae/pukerata-%C5%8Dtaua	Marae complex	fe_157					
+gr_zo_127-7	zo_127		127		community	7		Te Riingi Marae	Te Riingi	https://maorimaps.com/marae/te-riingi-mahuhu-ki-te-rangi	Marae complex	fe_157					
+gr_zo_127-8	zo_127		127		community	8	Nukutawhiti meeting house			https://maorimaps.com/marae/waiparera	Marae complex	fe_157					
+gr_zo_128-12	zo_128		128		community	12		Tītoki	Tītoki	https://maorimaps.com/marae/korokota	Marae complex	fe_157					
+gr_zo_128-1	zo_128		128		community	1		Whāngārei Terenga Parāoa Marae	Whāngārei Terenga Parāoa	https://maorimaps.com/marae/terenga-paraoa	Marae complex	fe_157					
+gr_zo_128-10	zo_128		128		community	10		Takahiwai Marae	Takahiwai	https://maorimaps.com/marae/takahiwai	Marae complex	fe_157					
+gr_zo_128-11	zo_128		128		community	11		Pā te Aroha Marae	Pā te Aroha	https://maorimaps.com/marae/p%C4%81-te-aroha	Marae complex	fe_157					
+gr_zo_128-2	zo_128		128		community	2		Onerahi Marae	Onerahi		Marae complex	fe_157					
+gr_zo_128-3	zo_128		128		community	3		Pēhiāweri Marae	Pēhiāweri	https://maorimaps.com/marae/pehiaweri	Marae complex	fe_157					
+gr_zo_128-4	zo_128		128		community	4		Te Maungaārongo Marae	Te Maungaārongo	https://maorimaps.com/marae/maung%C4%81rongo	Marae complex	fe_157					
+gr_zo_128-5	zo_128		128		community	5		Korokota Marae	Korokota	https://maorimaps.com/marae/korokota	Marae complex	fe_157					
+gr_zo_128-6	zo_128		128		community	6	Te Paea Soldiers' Memorial			https://maorimaps.com/marae/ng%C4%81raratunua	Marae complex	fe_157					
+gr_zo_128-7	zo_128		128		community	7		Te Horo Marae	Te Horo	https://maorimaps.com/marae/te-horo	Marae complex	fe_157					
+gr_zo_128-8	zo_128		128		community	8	Paratene te Manu meeting house			https://maorimaps.com/marae/ngunguru	Marae complex	fe_157					
+gr_zo_128-9	zo_128		128		community	9		Whakapoumahara Marae	Whakapoumahara		Marae complex	fe_157					
+gr_zo_130-1	zo_130		130		community	1		Kaikou Marae	Kaikou	https://maorimaps.com/marae/kaikou	Marae complex	fe_157					
+gr_zo_130-2	zo_130		130		community	2		Mōtatau Marae	Mōtatau	https://maorimaps.com/marae/m%C5%8Dtatau	Marae complex	fe_157					
+gr_zo_130-3	zo_130		130		community	3		Akerama Marae	Akerama	https://maorimaps.com/marae/akerama	Marae complex	fe_157					
+gr_zo_130-4	zo_130		130		community	4	Matawaia meeting house			https://maorimaps.com/marae/matawaia	Marae complex	fe_157					
+gr_zo_130-5	zo_130		130		community	5		Whakapara Marae	Whakapara	https://maorimaps.com/marae/whakapara	Marae complex	fe_157					
+gr_zo_131-1	zo_131		131		community	1		Tou Rangatira	Tou Rangatira		Marae complex	fe_157					
+gr_zo_131-10	zo_131		131		community	10		Tauwhara Marae	Tauwhara	https://maorimaps.com/marae/tauwhara	Marae complex	fe_157					
+gr_zo_131-11	zo_131		131		community	11		Te Kāretu Marae	Te Kāretu	https://maorimaps.com/marae/k%C4%81retu	Marae complex	fe_157					
+gr_zo_131-12	zo_131		131		community	12		Ngātiwai Marae	Ngātiwai	https://maorimaps.com/marae/kawa-ng%C4%81ti-wai-o-aotea	Marae complex	fe_157					
+gr_zo_131-13	zo_131		131		community	13	Orautu Hall				Marae complex	fe_157					
+gr_zo_131-14	zo_131		131		community	14	Te Tūriki meeting house				Marae complex	fe_157					
+gr_zo_131-15	zo_131		131		community	15	Pare meeting house				Marae complex	fe_157					
+gr_zo_131-16	zo_131		131		community	16		Maurea Pā	Maurea	https://maorimaps.com/marae/maurea	Marae complex	fe_157					
+gr_zo_131-17	zo_131		131		community	17	Whitiora meeting house			https://maorimaps.com/marae/whitiora	Marae complex	fe_157					
+gr_zo_131-2	zo_131		131		community	2		Waiōmio Marae	Waiōmio	https://maorimaps.com/marae/miria-waiomio	Marae complex	fe_157					
+gr_zo_131-3	zo_131		131		community	3		Porowini Marae	Porowini	https://maorimaps.com/marae/terenga-paraoa	Marae complex	fe_157					
+gr_zo_131-4	zo_131		131		community	4	Punaruku meeting house				Marae complex	fe_157					
+gr_zo_131-5	zo_131		131		community	5		Te Rāwhiti Marae	Te Rāwhiti	https://maorimaps.com/marae/te-r%C4%81whiti-omakiwi	Marae complex	fe_157					
+gr_zo_131-6	zo_131		131		community	6		Oromāhoe Marae	Oromāhoe	https://maorimaps.com/marae/orom%C4%81hoe	Marae complex	fe_157					
+gr_zo_131-7	zo_131		131		community	7		Mihi Wira Marae	Mihi Wira		Marae complex	fe_157					
+gr_zo_131-8	zo_131		131		community	8	Ngāti Rāhiri meeting house				Marae complex	fe_157					
+gr_zo_131-9	zo_131		131		community	9	Parawhenua meeting house			https://maorimaps.com/marae/parawhenua	Marae complex	fe_157					
+gr_zo_132-10	zo_132		132		community	10		Waimahana	Waimahana	https://maorimaps.com/marae/waimahana	Marae complex	fe_157					
+gr_zo_132-1	zo_132		132		community	1	Te Aroha meeting house			https://maorimaps.com/marae/parakao-te-aroha	Marae complex	fe_157					
+gr_zo_132-11	zo_132		132		community	11		Mangaiti Marae	Mangaiti	https://maorimaps.com/marae/mangaiti	Marae complex	fe_157					
+gr_zo_132-2	zo_132		132		community	2		Kēnana	Kēnana	https://maorimaps.com/marae/kenana	Marae complex	fe_157					
+gr_zo_132-3	zo_132		132		community	3	Ngāipuhi meeting house				Marae complex	fe_157					
+gr_zo_132-4	zo_132		132		community	4		Te Patunga Marae	Te Patunga	https://maorimaps.com/marae/te-p%C4%81t%C5%ABnga	Marae complex	fe_157					
+gr_zo_132-5	zo_132		132		community	5		Takahī Marae	Takahī	https://maorimaps.com/marae/takahiwai	Marae complex	fe_157					
+gr_zo_132-6	zo_132		132		community	6		Matangirau Marae	Matangirau	https://maorimaps.com/marae/matangirau	Marae complex	fe_157					
+gr_zo_132-7	zo_132		132		community	7		Te Kiripaka Marae	Te Kiripaka		Marae complex	fe_157					
+gr_zo_132-8	zo_132		132		community	8		Te Wainui Marae	Te Wainui	https://maorimaps.com/marae/te-wainui	Marae complex	fe_157					
+gr_zo_133-1	zo_133		133		community	1		Mangaamuka Marae	Mangaamuka	https://maorimaps.com/marae/mangamuka	Marae complex	fe_157					
+gr_zo_133-2	zo_133		133		community	2		Motukaraka Marae	Motukaraka	https://maorimaps.com/marae/ng%C4%81i-tupoto	Marae complex	fe_157					
+gr_zo_133-3	zo_133		133		community	3		Ngātimanawa Marae	Ngātimanawa	https://maorimaps.com/marae/ng%C4%81ti-manawa-te-waiariki	Marae complex	fe_157					
+gr_zo_133-4	zo_133		133		community	4		Pā te Oro Marae	Pā te Oro	https://maorimaps.com/marae/pateoro-te-karae	Marae complex	fe_157					
+gr_zo_133-5	zo_133		133		community	5		Waihou Marae	Waihou	https://maorimaps.com/marae/waihou-waihou-nui-rua	Marae complex	fe_157					
+gr_zo_133-6	zo_133		133		community	6		Motutī Marae	Motutī	https://maorimaps.com/marae/motuti-tamatea	Marae complex	fe_157					
+gr_zo_133-7	zo_133		133		community	7		Mātihetihe Marae	Mātihetihe	https://maorimaps.com/marae/matihetihe-mitimiti	Marae complex	fe_157					
+gr_zo_133-8	zo_133		133		community	8		Waiparera Marae	Waiparera	https://maorimaps.com/marae/waiparera	Marae complex	fe_157					
+gr_zo_133-9	zo_133		133		community	9		Rāhiri Marae	Rāhiri		Marae complex	fe_157					
+gr_zo_134-1	zo_134		134		community	1		Manukau Marae	Manukau		Marae complex	fe_157					
+gr_zo_134-2	zo_134		134		community	2		Whāngāpē Marae	Whāngāpē	https://maorimaps.com/marae/te-kotahitanga-whangap%C4%93	Marae complex	fe_157					
+gr_zo_134-3	zo_134		134		community	3		Taiao Marae	Taiao	https://maorimaps.com/marae/taiao	Marae complex	fe_157					
+gr_zo_135-1	zo_135		135		community	1		Rōma Marae	Rōma	https://maorimaps.com/marae/roma	Marae complex	fe_157					
+gr_zo_135-2	zo_135		135		community	2		Te Kauhanga Marae	Te Kauhanga	https://maorimaps.com/marae/te-kauhanga	Marae complex	fe_157					
+gr_zo_135-3	zo_135		135		community	3		Te Paatū Marae	Te Paatū	https://maorimaps.com/marae/te-paatu	Marae complex	fe_157					
+gr_zo_135-5	zo_135		135		community	5		Te Rarawa Marae	Te Rarawa	https://maorimaps.com/marae/te-rarawa	Marae complex	fe_157					
+gr_zo_135-6	zo_135		135		community	6		Waimanoni Marae	Waimanoni	https://maorimaps.com/marae/waimanoni	Marae complex	fe_157					
+gr_zo_135-7	zo_135		135		community	7		Oturu Marae	Oturu	https://maorimaps.com/marae/oturu	Marae complex	fe_157					
+gr_zo_135-8	zo_135		135		community	8		Wainui Marae	Wainui	https://maorimaps.com/marae/wainui	Marae complex	fe_157					
+gr_zo_136-1	zo_136		136		community	1		Whatuwhiwhi Marae	Whatuwhiwhi	https://maorimaps.com/marae/haiti-tai-marangai-whatuwhiwhi	Marae complex	fe_157					
+gr_zo_136-2	zo_136		136		community	2		Parapara Marae	Parapara	https://maorimaps.com/marae/parapara	Marae complex	fe_157					
+gr_zo_137-1	zo_137		137		community	1		Te Hiku o te Ika Marae	Te Hiku o te Ika		Marae complex	fe_157					
+gr_zo_137-2	zo_137		137		community	2	Waimirirangi meeting house				Marae complex	fe_157					
+gr_zo_137-3	zo_137		137		community	3		Paparore Marae	Paparore		Marae complex	fe_157					
+gr_zo_137-4	zo_137		137		community	4		Karepōnia Marae	Karepōnia	https://maorimaps.com/marae/kareponia	Marae complex	fe_157					
+gr_zo_137-5	zo_137		137		community	5		Waimanoni Marae	Waimanoni	https://maorimaps.com/marae/waimanoni	Marae complex	fe_157					
+gr_zo_139-2	zo_139		139		community	2		Hurinui Orangi Marae	Hurinui Orangi	https://maorimaps.com/marae/hurunuiorangi-hurunui-o-rangi	Marae complex	fe_157					
+gr_zo_139-5	zo_139		139		community	5	Tama Nui o te Ao Kātoa Hall				Marae complex	fe_157					
+gr_zo_140-1	zo_140		140		community	1	Farewell Spit				Marae complex	fe_157					
+gr_zo_141-1	zo_141		141		community	1		Te Āwhina Marae	Te Āwhina	https://maorimaps.com/marae/te-%C4%81whina	Marae complex	fe_157					
+gr_zo_143-1	zo_143		143		community	1		Whakatū Marae	Whakatū	https://maorimaps.com/marae/whakat%C5%AB	Marae complex	fe_157					
+gr_zo_144-2	zo_144		144		community	2		Te Hora Marae	Te Hora	https://maorimaps.com/marae/te-hora	Marae complex	fe_157					
+gr_zo_145-1	zo_145		145		community	1		Waikawa Marae	Waikawa	https://maorimaps.com/marae/waikawa	Marae complex	fe_157					
+gr_zo_146-1	zo_146		146		community	1		Ōmaka Marae	Ōmaka	https://maorimaps.com/marae/%C5%8Dmaka	Marae complex	fe_157					
+gr_zo_146-2	zo_146		146		community	2		Wairau Pā	Wairau		Marae complex	fe_157					
+gr_zo_147-1	zo_147		147		community	1		Whakatakahanga Marae	Whakatakahanga		Marae complex	fe_157					
+gr_zo_147-2	zo_147		147		community	2		Mangamaunu Marae	Mangamaunu	https://maorimaps.com/marae/mangamaunu	Marae complex	fe_157					
+gr_zo_149-2	zo_149		149		community	2		Tuahiwi	Tuahiwi	https://maorimaps.com/marae/tuahiwi	Marae complex	fe_157					
+gr_zo_149-1	zo_149		149		community	1		Kaiapōhia Pā	Kaiapōhia		Marae complex	fe_157					
+gr_zo_150-1	zo_150		150		community	1		Rehua Marae	Rehua		Marae complex	fe_157					
+gr_zo_150-2	zo_150		150		community	2		Ngā Hau E Whā Marae	Ngā Hau E Whā		Marae complex	fe_157					
+gr_zo_150-3	zo_150		150		community	3		Te Rau Oriwa Marae	Te Rau Oriwa		Marae complex	fe_157					
+gr_zo_150-4	zo_150		150		community	4	Te Rongo Pai meeting house				Marae complex	fe_157					
+gr_zo_151-1	zo_151		151		community	1	Te Wheke meeting house				Marae complex	fe_157					
+gr_zo_152-1	zo_152		152		community	1		Ōnuku Marae	Ōnuku	https://maorimaps.com/marae/%C5%8Dnuku	Marae complex	fe_157					
+gr_zo_152-2	zo_152		152		community	2		Mako Marae	Mako		Marae complex	fe_157					
+gr_zo_153-1	zo_153		153		community	1		Taumutu Marae	Taumutu	https://maorimaps.com/marae/ng%C4%81ti-moki	Marae complex	fe_157					
+gr_zo_154-1	zo_154		154		community	1		Arowhenua Pā	Arowhenua	https://maorimaps.com/marae/arowhenua	Marae complex	fe_157					
+gr_zo_154-2	zo_154		154		community	2		Hakatere Marae	Hakatere		Marae complex	fe_157					
+gr_zo_156-1	zo_156		156		community	1		Waihao Marae	Waihao	https://maorimaps.com/marae/waihao	Marae complex	fe_157					
+gr_zo_158-1	zo_158		158		community	1	Uenuku meeting house			https://maorimaps.com/marae/moeraki	Marae complex	fe_157					
+gr_zo_160-1	zo_160		160		community	1		Ōtākou Marae	Ōtākou	https://maorimaps.com/marae/%C5%8Dt%C4%81kou	Marae complex	fe_157					
+gr_zo_160-2	zo_160		160		community	2		Ārai te Uru Marae	Ārai te Uru		Marae complex	fe_157					
+gr_zo_160-3	zo_160		160		community	3		Puketeraki Marae	Puketeraki	https://maorimaps.com/marae/puketeraki	Marae complex	fe_157					
+gr_zo_160-4	zo_160		160		community	4	Mataatua meeting house				Marae complex	fe_157					
+gr_zo_165-1	zo_165		165		community	1		Ōteikarama Marae	Ōteikarama		Marae complex	fe_157					
+gr_zo_165-2	zo_165		165		community	2		Te Hono Ki Ngāi Tāhu Marae	Te Hono Ki Ngāi Tāhu		Marae complex	fe_157					
+gr_zo_166-1	zo_166		166		community	1		Murihiku Marae	Murihiku	https://maorimaps.com/marae/murihiku	Marae complex	fe_157					
+gr_zo_166-2	zo_166		166		community	2		Te Rau Aroha Marae	Te Rau Aroha	https://maorimaps.com/marae/te-rau-aroha	Marae complex	fe_157					
+gr_zo_173-1	zo_173		173		community	1		Tapuwae Marae	Tapuwae		Marae complex	fe_157					

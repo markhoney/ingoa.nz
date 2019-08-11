@@ -1,12 +1,6 @@
 /*if (process.env.NODE_ENV != 'production')*/ require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
 
 const pkg = require('./package');
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
-
-//const {execute, makePromise} = require('apollo-link');
-//const {createHttpLink} = require('apollo-link-http');
-//const fetch = require('node-fetch');
-//const gql = require('graphql-tag');
 
 require('dotenv').config();
 
@@ -61,12 +55,16 @@ module.exports = {
 	},
 
 	plugins: [
-		'@/plugins/vuetify',
+		//'@/plugins/vuetify',
 		'@/plugins/filters',
 		'@/plugins/mixins',
-		'@/plugins/googlemaps',
+		//'@/plugins/googlemaps',
 		//'@/plugins/eventbus',
 		'@/plugins/gql.js',
+	],
+
+	devModules: [
+		'@nuxtjs/vuetify',
 	],
 
 	modules: [
@@ -104,19 +102,8 @@ module.exports = {
 		},
 	},
 
-	vuetify: {
-		treeShake: true,
-		css: false,
-	},
-
 	build: {
-		transpile: ['vuetify/lib', /^vue2-google-maps($|\/)/],
-		plugins: [new VuetifyLoaderPlugin()],
-		loaders: {
-			stylus: {
-				import: ['~assets/style/variables.styl']
-			}
-		},
+		//transpile: [/^vue2-google-maps($|\/)/],
 		extractCSS: true,
 		optimizeCSS: true,
 		/*babel: {
@@ -125,11 +112,11 @@ module.exports = {
 					[
 						require.resolve('@nuxt/babel-preset-app'),
 						{
-							targets: isServer ? {node: '10'} : {ie: '11'},
+							buildTarget: isServer ? 'server' : 'client',
 							corejs: {version: 3}
 						}
 					]
-				]
+				];
 			}
 		}*/
 	}

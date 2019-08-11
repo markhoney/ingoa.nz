@@ -1,8 +1,8 @@
 <template>
 	<section>
-		<template v-for="region in regions">
-			<h2 class="headline mt5 mb4" :key="region.code">{{localeBoth(region.title)}}</h2>
-			<zones field="region._id" :value="region._id" :cards="false" :key="region.code" />
+		<template v-for="sector in sectors">
+			<h2 class="headline mt5 mb4" :key="sector.code">{{localeBoth(sector.title.locale)}}</h2>
+			<zones field="sector._id" :value="sector._id" :cards="false" :key="sector.code" />
 		</template>
 	</section>
 </template>
@@ -19,15 +19,17 @@
 			value: String,
 		},
 		apollo: {
-			regions: {
+			sectors: {
 				query() {
-					return this.$gql`query regions($field: String, $value: String) {
-						regions(filter: [{field: $field, value: $value}]) {
+					return this.$gql`query sectors($field: String, $value: String) {
+						sectors(filter: [{field: $field, value: $value}]) {
 							_id
 							code
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 					}`;

@@ -8,7 +8,7 @@ const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
 
 let db;
 function readData() {
-	db = ['island', 'part', 'map', 'region', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'meaning', 'district', 'gazetteer', 'overseas'].reduce((db, collection) => {
+	db = ['island', 'part', 'map', 'region', 'sector', 'district', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'meaning', 'gazetteer', 'overseas'].reduce((db, collection) => {
 		db[collection] = require(path.join(jsonpath, collection + '.json'));
 		//db[collection] = JSON.parse(fs.readFileSync(path.join(jsonpath, collection + '.json')));
 		return db;
@@ -25,7 +25,9 @@ function linkImages() {
 		{name: 'island', images: ['banner.png', 'landscape.png', 'portrait.png']},
 		{name: 'part', images: ['front.jpg']},
 		{name: 'map', images: ['portrait.png']},
-		{name: 'region', images: ['banner.jpg', 'landscape.png']},
+		//{name: 'region', images: ['banner.jpg', 'landscape.png']},
+		{name: 'sector', images: ['banner.jpg', 'landscape.png']},
+		//{name: 'district', images: ['banner.jpg', 'landscape.png']},
 		{name: 'zone', images: ['landscape.png']},
 	].forEach(collection => {
 		db[collection.name].forEach(record => {
@@ -97,23 +99,41 @@ function addSpeakers() {
 }
 
 function addSimilarIdentical() {
-	db.name.forEach(name => {
-		if (!name.similar_ids && name.title.mi != "Intro") {
-			const identical = db.name.filter(myname => myname.title.mi == name.title.mi);
+	const similarspath = path.join(__dirname, '..', '..', 'cache', 'similar.json');
+	let similars = {};
+	if (fs.existsSync(similarspath)) {
+		similars = require(similarspath);
+	}
+	//db.name.forEach(name => {
+	for (const name of db.name) {
+		if (!name.similar_ids && name.title.locale.mi != "Intro") {
+			const identical = db.name.filter(myname => myname.title.locale.mi == name.title.locale.mi);
 			name.identical_ids = identical.map(name => name._id);
-			const similar = db.name.filter(myname => myname.title.mi != name.title.mi).sort((a, b) => levenshtein(name.title.mi, a.title.mi) - levenshtein(name.title.mi, b.title.mi)).slice(0, 8);
-			name.similar_ids = similar.map(name => name._id);
+			//const similar = similars.find(similar => similar._id == name._id);
+			if (similars[name._id]) {
+				name.similar_ids = similars[name._id];
+			} else {
+				const similar = db.name.filter(myname => myname.title.locale.mi != name.title.locale.mi).sort((a, b) => levenshtein(name.title.locale.mi, a.title.locale.mi) - levenshtein(name.title.locale.mi, b.title.locale.mi)).slice(0, 8);
+				name.similar_ids = similar.map(name => name._id);
+				similars[name._id] = name.similar_ids;
+			}
 		}
-	});
+	}//);
+	fs.writeFileSync(similarspath, JSON.stringify(similars, null, '\t'));
 }
 
 function addMeanings() {
+	let total = 0;
 	db.name.forEach(name => {
-		if (!name.meaning_id && name.title.mi) {
-			const meaning = db.meaning.find(meaning => meaning.title.mi == name.title.mi || meaning.title.mi == name.title.ascii || meaning.title.mi == name.title.double);
-			if (meaning) name.meaning_id = meaning._id;
+		if (!name.meaning_id && name.title.locale.mi) {
+			const meaning = db.meaning.find(meaning => meaning.title.locale.mi == name.title.locale.mi || meaning.title.locale.mi == name.title.ascii || meaning.title.locale.mi == name.title.double);
+			if (meaning) {
+				name.meaning_id = meaning._id;
+				total += 1;
+			}
 		}
 	});
+	console.log(total);
 }
 
 async function addNominatimLocations() {
@@ -125,20 +145,31 @@ async function addNominatimLocations() {
 			if (placename.addendum_ids) zone = db.zone.find(zone => zone._id == placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
 			const district = db.district.find(district => district._id == zone.district_id);
 			if (district) {
+				const region = db.region.find(region => region._id == district.region_id);
 				for (const place of placename.places) {
 					if (!place.location || (place.location && !place.location.position)) {
-						const placename = place.title.en || place.title.mi;
-						const feature = db.feature.find(feature => feature._id == place.feature_id);
+						const placename = (place.title.alt ? place.title.alt.ascii : null) || place.title.locale.en || place.title.locale.mi;
 						const url = encodeURI(placename + '?addressdetails=1&extratags=1&format=json'); //&limit=1
-						let geo = {};
-						try {
-							geo = await nominatim.get(url);
-						} catch(error) {
-							//console.log(error);
+						let geo = [];
+						const cachepath = path.join(__dirname, '..', '..', 'cache', 'nominatim', placename + '.json');
+						if (fs.existsSync(cachepath)) {
+							geo = require(cachepath);
+						} else {
+							try {
+								geo = (await nominatim.get(url)).data;
+								if (geo.length) {
+									fs.writeFileSync(cachepath, JSON.stringify(geo, null, '\t'));
+								}
+							} catch(error) {
+								//console.log(error);
+							}
 						}
-						if (geo.data && geo.data.length) {
-							let placenames = geo.data.filter(placename => placename.address.region == district.title.en || placename.address.county == district.title.en);
+						if (geo && geo.length) {
+							const regions = [district.title.alt.full, district.title.locale.en, district.title.locale.en + " District", district.title.locale.mi, district.title.locale.mi + " District"];
+							if (region) regions.push(region.title.locale.en, region.title.locale.mi);
+							let placenames = geo.filter(placename => regions.filter(Boolean).some(region => [placename.address.region, placename.address.county, placename.address.state].includes(region)));
 							if (placenames.length) {
+								const feature = db.feature.find(feature => feature._id == place.feature_id);
 								placenames.forEach(placename => {
 									placename.score = 0;
 									if (placename.class == feature.category.osm.class) {
@@ -147,9 +178,9 @@ async function addNominatimLocations() {
 									}
 									if (placename.class == "landuse" && placename.type == feature.category.osm.landuse) placename.score += 2;
 									const name = utils.simplify(placename.display_name.split(",")[0]);
-									if (name == utils.simplify(place.title.en)) placename.score += 1;
-									if (name == utils.simplify(place.title.en + feature.title.en)) placename.score += 1;
-									if (name == utils.simplify(place.title.en + feature.title.mi)) placename.score += 1;
+									if (name == utils.simplify(place.title.locale.en)) placename.score += 1;
+									if (name == utils.simplify(place.title.locale.en + feature.title.locale.en)) placename.score += 1;
+									if (name == utils.simplify(place.title.locale.en + feature.title.locale.mi)) placename.score += 1;
 								});
 								placenames = placenames.sort((a, b) => a.score > b.score);
 								const foundplace = placenames[0];
@@ -179,7 +210,7 @@ async function addNominatimLocations() {
 function addGazetteerLocations() {
 	let total = 0;
 	db.gazetteer.forEach(gazetteer => {
-		gazetteer.simple = utils.simplify(gazetteer.title);
+		gazetteer.simple = utils.simplify(gazetteer.title.locale);
 	});
 	db.placename.forEach(placename => {
 		if (placename.zone_id && placename.places) {
@@ -189,7 +220,7 @@ function addGazetteerLocations() {
 			placename.places.forEach(place => {
 				if (!place.location || (place.location && !place.location.position)) {
 					const feature = db.feature.find(feature => feature._id == place.feature_id);
-					const names = [utils.simplify(place.title.mi), utils.simplify(place.title.ascii), utils.simplify(place.title.double), utils.simplify([place.title.mi, feature.title.en].join(' ')), utils.simplify([place.title.ascii, feature.title.en].join(' ')), utils.simplify([place.title.double, feature.title.en].join(' '))];
+					const names = [utils.simplify(place.title.locale.mi), utils.simplify(place.title.locale.ascii), utils.simplify(place.title.locale.double), utils.simplify([place.title.locale.mi, feature.title.locale.en].join(' ')), utils.simplify([place.title.locale.ascii, feature.title.locale.en].join(' ')), utils.simplify([place.title.locale.double, feature.title.locale.en].join(' '))];
 					let placenames = db.gazetteer.filter(gazetteer => gazetteer.district == district && names.includes(gazetteer.simple));
 					if (placenames.length) {
 						placenames.forEach(placename => {
@@ -212,26 +243,166 @@ function addGazetteerLocations() {
 	delete db.gazetteer;
 }
 
-async function addWikipediaIntros() {
-	const wikipedia = axios.create({baseURL: "https://en.wikipedia.org/api/rest_v1/page/summary/"});
-	for (const collection of ['island', 'region', 'district', 'zone', 'tribe', 'group', 'feature']) {
+async function getWikiDataInfo(url, wikidata) {
+	let wiki = false;
+	const id = url.replace("https://www.wikidata.org/wiki/", "");
+	url = id + ".json";
+	const cachepath = path.join(__dirname, '..', '..', 'cache', 'wikidata', url);
+	if (fs.existsSync(cachepath)) {
+		wiki = require(cachepath);
+	} else {
+		try {
+			wiki = (await wikidata.get(url)).data.entities[id];
+			fs.writeFileSync(cachepath, JSON.stringify(wiki, null, '\t'));
+		} catch(error) {
+			//console.log(error);
+		}
+	}
+	return wiki;
+}
+
+function caseInitial(text) {
+	if (!text) return null;
+	if (text === '') return '';
+	return text[0].toUpperCase() + text.slice(1);
+}
+
+async function addWikiDataInfos() {
+	let total = 0;
+	const wikidata = axios.create({baseURL: "https://www.wikidata.org/wiki/Special:EntityData/"});
+	for (const collection of ['island', 'region', 'sector', 'district', 'tribe', 'group', 'feature']) {
 		for (const record of db[collection]) {
-			if (record.links && record.links.wikipedia && ((record.notes && !record.notes.wikipedia) || !record.notes)) {
-			//if (record.links && record.links.wikipedia) {
-				let wiki;
-				const url = record.links.wikipedia.replace("https://en.wikipedia.org/wiki/", "");
-				try {
-					wiki = await wikipedia.get(url);
-				} catch(error) {
-					//console.log(error);
-				}
-				if (wiki && wiki.data) {
-					if (!record.notes) record.notes = {};
-					record.notes.wikipedia = wiki.data.extract;
+			if (record.links && record.links.wikidata) {
+				const wiki = await getWikiDataInfo(record.links.wikidata, wikidata);
+				if (wiki) {
+					if (wiki.sitelinks) {
+						if (!record.links.wikipedia) record.links.wikipedia = {};
+						if (!record.links.wikipedia.en && wiki.sitelinks.enwiki) record.links.wikipedia.en = wiki.sitelinks.enwiki.url;
+						if (!record.links.wikipedia.mi && wiki.sitelinks.miwiki) record.links.wikipedia.mi = wiki.sitelinks.miwiki.url;
+					}
+					if (wiki.labels) {
+						if (!record.title.locale.en && wiki.labels.en) record.title.locale.en = caseInitial(wiki.labels.en.value);
+						if (!record.title.locale.mi && wiki.labels.mi) record.title.locale.mi = caseInitial(wiki.labels.mi.value);
+					}
+					total++;
 				}
 			}
 		}
 	}
+	console.log(total);
+}
+
+async function addWikiDataZoneInfos() {
+	let total = 0;
+	const wikidata = axios.create({baseURL: "https://www.wikidata.org/wiki/Special:EntityData/"});
+	for (const zone of db.zone) {
+		for (const record of zone.areas) {
+			//console.log(record);
+			if (record.links && record.links.wikidata) {
+				const wiki = await getWikiDataInfo(record.links.wikidata, wikidata);
+				if (wiki) {
+					if (wiki.sitelinks) {
+						if (!record.links.wikipedia) record.links.wikipedia = {};
+						if (!record.links.wikipedia.en && wiki.sitelinks.enwiki) record.links.wikipedia.en = wiki.sitelinks.enwiki.url;
+						if (!record.links.wikipedia.mi && wiki.sitelinks.miwiki) record.links.wikipedia.mi = wiki.sitelinks.miwiki.url;
+					}
+					if (wiki.labels) {
+						if (!record.title.locale.en && wiki.labels.en) record.title.locale.en = caseInitial(wiki.labels.en.value);
+						if (!record.title.locale.mi && wiki.labels.mi) record.title.locale.mi = caseInitial(wiki.labels.mi.value);
+					}
+					total++;
+				}
+			}
+		}
+	}
+	console.log(total);
+}
+
+async function getWikipediaIntro(url, locale, wikipedia) {
+	let wiki;
+	url = url.replace("https://" + locale + ".wikipedia.org/wiki/", "");
+	const cachepath = path.join(__dirname, '..', '..', 'cache', 'wikipedia', locale, url + '.json');
+	if (fs.existsSync(cachepath)) {
+		wiki = require(cachepath);
+	} else {
+		try {
+			wiki = (await wikipedia.get(url)).data;
+			fs.writeFileSync(cachepath, JSON.stringify(wiki, null, '\t'));
+		} catch(error) {
+			//console.log(error);
+		}
+	}
+	return wiki;
+}
+
+async function addWikipediaIntros(locale) {
+	let total = 0;
+	const wikipedia = axios.create({baseURL: "https://" + locale + ".wikipedia.org/api/rest_v1/page/summary/"});
+	for (const collection of ['island', 'region', 'sector', 'district', 'tribe', 'group', 'feature']) {
+		for (const record of db[collection]) {
+			if (record.links && record.links.wikipedia && record.links.wikipedia[locale]) {
+				const wiki = await getWikipediaIntro(record.links.wikipedia[locale], locale, wikipedia);
+				if (wiki && wiki.extract) {
+					if (!record.notes) record.notes = {};
+					if (!record.notes.wikipedia) record.notes.wikipedia = {};
+					record.notes.wikipedia[locale] = wiki.extract;
+					total++;
+				}
+			}
+		}
+	}
+	console.log(locale + ":", total);
+}
+
+async function addWikipediaZoneIntros(locale) {
+	let total = 0;
+	const wikipedia = axios.create({baseURL: "https://" + locale + ".wikipedia.org/api/rest_v1/page/summary/"});
+	for (const zone of db.zone) {
+		for (const record of zone.areas) {
+			if (record.links && record.links.wikipedia && record.links.wikipedia[locale]) {
+				const wiki = await getWikipediaIntro(record.links.wikipedia[locale], locale, wikipedia);
+				if (wiki && wiki.extract) {
+					if (!zone.notes) zone.notes = {};
+					if (!zone.notes.wikipedia) zone.notes.wikipedia = {en: "", mi: ""};
+					zone.notes.wikipedia[locale] = (zone.notes.wikipedia[locale] + '\n\n' + wiki.extract).trim();
+					total++;
+				}
+			}
+		}
+	}
+	console.log(locale + ":", total);
+}
+
+async function getMaoriMapsInfo(url, maorimaps) {
+	let marae;
+	url = url.replace("https://maorimaps.com/marae/", "");
+	const cachepath = path.join(__dirname, '..', '..', 'cache', 'maorimaps', url + '.html');
+	if (fs.existsSync(cachepath)) {
+		//marae = require(cachepath);
+		marae = fs.readFileSync(cachepath);
+	} else {
+		try {
+			marae = (await maorimaps.get(url)).data;
+			fs.writeFileSync(cachepath, marae);
+		} catch(error) {
+			//console.log(error);
+		}
+	}
+	return marae;
+}
+
+async function addMaoriMapsInfos() {
+	let total = 0;
+	const maorimaps = axios.create({baseURL: "https://maorimaps.com/marae/"});
+	for (const record of db.group) {
+		if (record.links && record.links.maorimaps) {
+			const page = await getMaoriMapsInfo(record.links.maorimaps, maorimaps);
+			if (page) {
+				total++;
+			}
+		}
+	}
+	console.log(total);
 }
 
 function deleteNamesPlaces() {
@@ -272,8 +443,16 @@ async function runAll() {
 	await addNominatimLocations();
 	console.log("Adding Location Coordinates from the Gazetteer...");
 	addGazetteerLocations();
+	console.log("Adding Info from WikiData...");
+	await addWikiDataInfos();
+	await addWikiDataZoneInfos();
 	console.log("Adding Intros from Wikipedia...");
-	await addWikipediaIntros();
+	await addWikipediaIntros("en");
+	await addWikipediaIntros("mi");
+	await addWikipediaZoneIntros("en");
+	await addWikipediaZoneIntros("mi");
+	console.log("Adding Data from MaoriMaps...");
+	await addMaoriMapsInfos("en");
 	console.log("Deleting Names & Places...");
 	deleteNamesPlaces();
 	console.log("Writing Data...");

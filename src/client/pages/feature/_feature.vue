@@ -1,7 +1,7 @@
 <template>
 	<section v-if="feature">
-		<h2>{{localeCurrent(feature.title)}}</h2>
-		<wikipedia v-if="feature.notes && feature.notes.wikipedia" :text="feature.notes.wikipedia" :link="feature.links.wikipedia" source="Wikipedia" />
+		<h2>{{localeCurrent(feature.title.locale)}}</h2>
+		<wikipedia v-if="feature.notes && feature.notes.wikipedia" :text="localeCurrent(feature.notes.wikipedia)" :link="localeCurrent(feature.links.wikipedia)" source="Wikipedia" />
 		<places field="feature.slug" :value="$route.params.feature" context />
 	</section>
 </template>
@@ -9,6 +9,8 @@
 <script>
 	import places from '@/components/places/list.vue';
 	import wikipedia from '@/components/base/textboxes/quote.vue';
+
+	const param = "feature";
 
 	export default {
 		components: {
@@ -22,26 +24,34 @@
 						feature(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
 								mi
 							}
 							links {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 							notes {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 						}
 					}`;
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.feature,
+						field: this.field,
+						value: this.value,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -49,14 +59,22 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+		},
 		watch: {
-			feature: function(feature) {
-				this.$store.commit('i18n/setRouteParams', {en: {feature: feature.slug.en}, mi: {feature: feature.slug.mi}});
+			feature: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
 			},
 		},
 		head() {
 			return {
-				title: (this.feature ? this.localeCurrent(this.feature.title) + ' (' + this.$tc('feature') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

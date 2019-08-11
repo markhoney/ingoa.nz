@@ -1,10 +1,10 @@
 <template>
 	<section v-if="island">
-		<imageheader :image="island.images.landscape" :title="island.title" />
-		<wikipedia v-if="island.notes.wikipedia" :text="island.notes.wikipedia" :link="island.links.wikipedia" source="Wikipedia" />
-		<p class="ma-5" v-html="island.notes.description" />
+		<imageheader :image="island.images.landscape" :title="island.title.locale" />
+		<wikipedia v-if="island.notes.wikipedia" :text="localeCurrent(island.notes.wikipedia)" :link="localeCurrent(island.links.wikipedia)" source="Wikipedia" />
+		<p class="ma-5" v-html="localeCurrent(island.notes.description)" />
 		<player :file="island.audio.file" field="island._id" :value="island._id" common />
-		<imagemap v-for="map in island.maps" :key="map._id" :field="'slug.' + $i18n.locale" :value="map.slug[$i18n.locale]" hash />
+		<imagemap v-for="map in island.maps" :key="map._id" field="_id" :value="map._id" hash />
 	</section>
 </template>
 
@@ -13,7 +13,8 @@
 	import wikipedia from '@/components/base/textboxes/quote.vue';
 	import player from '@/components/audio/placenames.vue';
 	import imagemap from '@/components/maps/image/map.vue';
-	import gql from 'graphql-tag';
+
+	const param = "island";
 
 	export default {
 		components: {
@@ -22,33 +23,6 @@
 			player,
 			imagemap,
 		},
-		/*async asyncData ({app, route, store}) {
-			let {data} = await app.apolloProvider.defaultClient.query({
-				query: gql`query island($field: String, $value: String) {
-					island(filter: [{field: $field, value: $value}]) {
-						_id
-						title {
-							en
-							mi
-						}
-						slug {
-							en
-							mi
-						}
-					}
-				}`,
-				variables: {
-					field: "slug",
-					value: route.params.island,
-				},
-			});
-			store.dispatch('i18n/setRouteParams', {en: {island: data.island.slug.en}, mi: {island: data.island.slug.mi}});
-		},*/
-		data() {
-			return {
-				type: "island",
-			};
-		},
 		apollo: {
 			island: {
 				query() {
@@ -56,8 +30,10 @@
 						island(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
@@ -77,44 +53,51 @@
 								}
 							}
 							links {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 							notes {
-								wikipedia
-								description
+								wikipedia {
+									en
+									mi
+								}
+								description {
+									en
+									mi
+								}
 							}
 						}
 					}`;
 				},
-				/*prefetch: ({route}) => {
-					return {
-						field: "slug",
-						value: route.params.island,
-					};
-				},*/
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params[this.type],
+						field: this.field,
+						value: this.value,
 					};
-				},
-				result({data, loading, networkStatus}) {
-					console.log(data);
-					this.$store.dispatch('i18n/setRouteParams', {en: {[this.type]: data[this.type].slug.en}, mi: {[this.type]: data[this.type].slug.mi}});
 				},
 				watchLoading(isLoading, countModifier) {
 					this.$store.commit('loading', countModifier);
 				},
 			},
 		},
-		/*watch: {
-			island: function(island) {
-				this.$store.dispatch('i18n/setRouteParams', {en: {island: island.slug.en}, mi: {island: island.slug.mi}});
-			}
-		},*/
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+		},
+		watch: {
+			island: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
+			},
+		},
 		head() {
 			return {
-				title: (this[this.type] ? this.localeCurrent(this[this.type].title) + ' (' + this.$tc(this.type) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

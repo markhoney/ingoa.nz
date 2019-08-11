@@ -1,7 +1,7 @@
 <template>
 	<section v-if="group">
-		<h2>{{this.localeCurrent(group.title)}}</h2>
-		<wikipedia v-if="group.notes && group.notes.wikipedia" :text="group.notes.wikipedia" :link="group.links.wikipedia" source="Wikipedia" />
+		<h2>{{this.localeCurrent(group.title.locale)}}</h2>
+		<wikipedia v-if="group.notes && group.notes.wikipedia" :text="localeCurrent(group.notes.wikipedia)" :link="localeCurrent(group.links.wikipedia)" source="Wikipedia" />
 		<places :data="group.places" />
 	</section>
 </template>
@@ -9,6 +9,8 @@
 <script>
 	import places from '@/components/places/list.vue';
 	import wikipedia from '@/components/base/textboxes/quote.vue';
+
+	const param = "group";
 
 	export default {
 		components: {
@@ -22,24 +24,34 @@
 						group(filter: [{field: $field, value: $value}, {field: "zone.slug", value: $zone}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
 								mi
 							}
 							links {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 							notes {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 							places {
 								_id
 								title {
-									en
-									mi
+									locale {
+										en
+										mi
+									}
 								}
 								placename {
 									slug {
@@ -48,8 +60,10 @@
 									}
 									zone {
 										title {
-											en
-											mi
+											locale {
+												en
+												mi
+											}
 										}
 										slug {
 											en
@@ -58,8 +72,10 @@
 									}
 									part {
 										title {
-											en
-											mi
+											locale {
+												en
+												mi
+											}
 										}
 										slug {
 											en
@@ -68,8 +84,10 @@
 									}
 									island {
 										title {
-											en
-											mi
+											locale {
+												en
+												mi
+											}
 										}
 										slug {
 											en
@@ -78,8 +96,10 @@
 									}
 									names {
 										title {
-											en
-											mi
+											locale {
+												en
+												mi
+											}
 										}
 									}
 								}
@@ -89,9 +109,9 @@
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.group,
-						zone: this.$route.params.zone,
+						field: this.field,
+						value: this.value,
+						zone: this.zone,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -99,14 +119,25 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+			zone: function() {
+				return this.$route.params.zone;
+			},
+		},
 		watch: {
-			group: function(group) {
-				this.$store.commit('i18n/setRouteParams', {en: {group: group.slug.en}, mi: {group: group.slug.mi}});
-			}
+			group: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
+			},
 		},
 		head() {
 			return {
-				title: (this.group ? this.localeCurrent(this.group.title) + ' (' + this.$tc('group') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

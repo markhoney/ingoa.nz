@@ -21,8 +21,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 					}`;
@@ -31,17 +33,19 @@
 					this.$store.commit('loading', countModifier);
 				},
 			},
-			regions() {
+			sectors() {
 				return this.$gql`{
-					regions {
+					sectors {
 						_id
 						slug {
 							en
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -55,8 +59,10 @@
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -70,8 +76,10 @@
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -85,8 +93,10 @@
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -100,8 +110,10 @@
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -115,8 +127,10 @@
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -130,8 +144,10 @@
 							mi
 						}
 						title {
-							en
-							mi
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}`;
@@ -147,15 +163,19 @@
 						names {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 						places {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 					}
@@ -166,7 +186,7 @@
 			suggestions() {
 				return [
 					...this.islands,
-					...this.regions,
+					...this.sectors,
 					...this.zones,
 					...this.maps,
 					...this.speakers,
@@ -190,7 +210,7 @@
 				].map(data => {
 					return {
 						value: '/' + [data.__typename, data.code].join('/'),
-						text: this.localeCurrent(data.title) + ' (' + data.__typename + ')'
+						text: this.localeCurrent(data.title.locale) + ' (' + data.__typename + ')'
 					};
 				});
 			},

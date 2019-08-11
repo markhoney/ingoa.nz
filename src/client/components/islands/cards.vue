@@ -25,10 +25,17 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
-							description
+							notes {
+								description {
+									en
+									mi
+								}
+							}
 							images {
 								landscape
 							}

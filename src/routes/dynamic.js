@@ -24,7 +24,7 @@ module.exports = makePromise(execute(createHttpLink({uri: 'http://localhost:4000
 			mi
 		}
 	}
-	regions {
+	sectors {
 		slug {
 			en
 			mi
@@ -100,6 +100,10 @@ module.exports = makePromise(execute(createHttpLink({uri: 'http://localhost:4000
 		mi.map,
 		"region",
 		mi.region,
+		"sector",
+		mi.sector,
+		"district",
+		mi.district,
 		"zone",
 		mi.zone,
 		"tribe",

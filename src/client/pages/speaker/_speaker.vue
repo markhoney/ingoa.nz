@@ -1,17 +1,19 @@
 <template>
 	<section v-if="speaker">
-		<h2>{{this.localeCurrent(this.speaker.title)}}</h2>
+		<h2>{{this.localeCurrent(this.speaker.title.locale)}}</h2>
 		<div v-if="speaker.notes">
 			<p v-if="speaker.notes.description">{{speaker.notes.description}}</p>
 			<p v-if="speaker.notes.recording">{{speaker.notes.recording}}</p>
 		</div>
-		<p>{{this.localeCurrent(this.speaker.title)}} spoke for the following Zones:</p>
+		<p>{{this.localeCurrent(this.speaker.title.locale)}} spoke for the following Zones:</p>
 		<zones :data="speaker.zones" />
 	</section>
 </template>
 
 <script>
 	import zones from '@/components/zones/cards.vue';
+
+	const param = "speaker";
 
 	export default {
 		components: {
@@ -24,8 +26,10 @@
 						speaker(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
@@ -38,8 +42,10 @@
 									mi
 								}
 								title {
-									en
-									mi
+									locale {
+										en
+										mi
+									}
 								}
 								images {
 									landscape
@@ -50,8 +56,8 @@
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.speaker,
+						field: this.field,
+						value: this.value,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -59,14 +65,22 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+		},
 		watch: {
-			speaker: function(speaker) {
-				this.$store.commit('i18n/setRouteParams', {en: {speaker: speaker.slug.en}, mi: {speaker: speaker.slug.mi}});
+			speaker: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
 			},
 		},
 		head() {
 			return {
-				title: (this.speaker ? this.localeCurrent(this.speaker.title) + ' (' + this.$tc('speaker') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

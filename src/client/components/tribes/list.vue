@@ -28,14 +28,22 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							links {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 							notes {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 						}
 					}`;
@@ -62,11 +70,11 @@
 						return {
 							_id: tribe._id,
 							title: {
-								text: this.localeCurrent(tribe.title),
+								text: this.localeCurrent(tribe.title.locale),
 								link: this.localePath({name: 'tribe-tribe', params: {tribe: this.localeCurrent(tribe.slug)}}),
 							},
 							subtitle: {
-								text: (tribe.notes ? tribe.notes.wikipedia : ""),
+								text: (tribe.notes ? this.localeCurrent(tribe.notes.wikipedia) : ""),
 							},
 						};
 					});

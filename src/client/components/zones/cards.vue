@@ -33,8 +33,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							images {
 								landscape

@@ -3,7 +3,8 @@
 </template>
 
 <script>
-	// Need to differentiate zone, island and part in the incoming "zone" URL parameter by reading the ID prefix (e.g. zo_, is_ or pa_).
+	const param = "placename";
+
 	export default {
 		apollo: {
 			placename: {
@@ -11,10 +12,6 @@
 					return this.$gql`query placename($field: String, $value: String) {
 						placename(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
-								en
-								mi
-							}
 							slug {
 								en
 								mi
@@ -24,8 +21,9 @@
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.placename,
+						field: this.field,
+						value: this.value,
+						zone: this.zone,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -33,14 +31,25 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+			zone: function() {
+				return this.$route.params.zone;
+			},
+		},
 		watch: {
-			placename: function(placename) {
-				this.$store.commit('i18n/setRouteParams', {en: {placename: placename.slug.en}, mi: {placename: placename.slug.mi}});
+			placename: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
 			},
 		},
 		head() {
 			return {
-				title: (this.placename ? this.localeCurrent(this.placename.title) + ' (' + this.$tc('placename') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

@@ -1,8 +1,8 @@
 <template>
 	<section>
-		<div v-for="region in regions" :key="region._id">
-			<h2>{{localeCurrent(region.title)}}</h2>
-			<zone field="region._id" :value="region._id" />
+		<div v-for="sector in sectors" :key="sector._id">
+			<h2>{{localeCurrent(sector.title.locale)}}</h2>
+			<zone field="sector._id" :value="sector._id" />
 		</div>
 	</section>
 </template>
@@ -14,14 +14,16 @@
 			zone,
 		},
 		apollo: {
-			regions: {
+			sectors: {
 				query() {
-					return this.$gql`query regions {
-						regions {
+					return this.$gql`query sectors {
+						sectors {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 					}`;

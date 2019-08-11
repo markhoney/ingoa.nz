@@ -33,11 +33,11 @@ Vue.filter('titlecase', function(text) {
   }).join(' ');
 });
 
-Vue.filter('maori', (title) => { // Return the name in Maori if it exists, or in English otherwise
+Vue.filter('maori', (title) => { // Return the name in Māori if it exists, or in English otherwise
 	return title.mi;
 });
 
-Vue.filter('english', (title) => { // Return the name in Maori if it exists, or in English otherwise
+Vue.filter('english', (title) => { // Return the name in Māori if it exists, or in English otherwise
 	return title.en;
 });
 

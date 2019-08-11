@@ -7,10 +7,10 @@
 			<div>
 				<h3 class="headline mb-0">
 					<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})">
-						{{localeCurrent(zone.title)}}
+						{{localeCurrent(zone.title.locale)}}
 					</nuxt-link>
 				</h3>
-				<h3>{{localeOther(zone.title)}}</h3>
+				<h3>{{localeOther(zone.title.locale)}}</h3>
 			</div>
 		</v-card-title>
 	</v-card>
@@ -37,8 +37,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							images {
 								landscape

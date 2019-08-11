@@ -1,7 +1,7 @@
 <template>
 	<ul>
 		<li v-for="zone in zones" :key="zone._id">
-			<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})">{{localeBoth(zone.title)}}</nuxt-link>
+			<nuxt-link :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})">{{localeBoth(zone.title.locale)}}</nuxt-link>
 		</li>
 	</ul>
 </template>
@@ -23,8 +23,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 					}`;

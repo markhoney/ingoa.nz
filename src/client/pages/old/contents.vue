@@ -53,18 +53,18 @@
 						<td>SPEAKERS</td>
 						<td>SELECTED<br>NAMES</td>
 					</tr>
-					<template v-for="region in map.regions">
-						<tr :key="map._id + region._id">
+					<template v-for="sector in map.sectors">
+						<tr :key="map._id + sector._id">
 							<td align="right">&nbsp;</td>
-							<td valign="bottom"><b style="text-transform: uppercase;">{{localeCurrent(region.title)}}</b></td>
+							<td valign="bottom"><b style="text-transform: uppercase;">{{localeCurrent(sector.title.locale)}}</b></td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
-						<tr v-for="zone in region.zones" :key="map._id + region._id + zone._id">
+						<tr v-for="zone in sector.zones" :key="map._id + sector._id + zone._id">
 							<td align="right"><a :name="zone.number" />{{zone.number}}</td>
-							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: localeCurrent(zone.slug)}})">{{localeCurrent(zone.title)}}</nuxt-link></td>
-							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id != 'sp_37')">{{localeCurrent(speaker.title)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
-							<td><span v-for="(name, index) in zone.featured" :key="index">{{localeMaori(name.title)}}<br></span></td>
+							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: localeCurrent(zone.slug)}})">{{localeCurrent(zone.title.locale)}}</nuxt-link></td>
+							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id != 'sp_37')">{{localeCurrent(speaker.title.locale)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
+							<td><span v-for="(name, index) in zone.featured" :key="index">{{localeMaori(name.title.locale)}}<br></span></td>
 						</tr>
 					</template>
 				</template>
@@ -88,14 +88,18 @@
 						maps {
 							_id
 							title {
-								en
-								mi
-							}
-							regions {
-								_id
-								title {
+								locale {
 									en
 									mi
+								}
+							}
+							sectors {
+								_id
+								title {
+									locale {
+										en
+										mi
+									}
 								}
 								zones {
 									_id
@@ -105,22 +109,28 @@
 									}
 									number
 									title {
-										en
-										mi
+										locale {
+											en
+											mi
+										}
 									}
 									speakers {
 										_id
 										title {
-											en
-											mi
+											locale {
+												en
+												mi
+											}
 										}
 									}
 									featured {
 										_id
 										names {
 											title {
-												en
-												mi
+												locale {
+													en
+													mi
+												}
 											}
 										}
 									}

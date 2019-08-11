@@ -29,11 +29,16 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							notes {
-								wikipedia
+								wikipedia {
+									en
+									mi
+								}
 							}
 						}
 					}`;
@@ -60,11 +65,11 @@
 						return {
 							_id: feature._id,
 							title: {
-								text: this.localeCurrent(feature.title),
+								text: this.localeCurrent(feature.title.locale),
 								link: this.localePath({name: 'feature-feature', params: {feature: this.localeCurrent(feature.slug)}}),
 							},
 							subtitle: {
-								text: (feature.notes ? feature.notes.wikipedia : ""),
+								text: (feature.notes ? this.localeCurrentOnly(feature.notes.wikipedia) : ""),
 							}
 						};
 					});

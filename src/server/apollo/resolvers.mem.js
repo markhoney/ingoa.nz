@@ -28,6 +28,12 @@ module.exports = function(db) {
 			region(obj, args) {
 				return getRecord(db.region, args);
 			},
+			sectors(obj, args) {
+				return getRecords(db.sector, args);
+			},
+			sector(obj, args) {
+				return getRecord(db.sector, args);
+			},
 			districts(obj, args) {
 				return getRecords(db.district, args);
 			},

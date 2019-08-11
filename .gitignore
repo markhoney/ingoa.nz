@@ -89,3 +89,5 @@ watchman.exe
 report.*.json
 
 .monitor
+
+cache/

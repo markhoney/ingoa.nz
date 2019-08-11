@@ -22,11 +22,11 @@ function splitMP3(placenames, type, id) {
 				const end = secondsToTimecode(bookmark.spoken.end + 0.1);
 				const metadata = [
 					{field: "track", value: bookmark.placename.number},
-					{field: "artist", value: bookmark.spoken.speaker.title.mi},
-					{field: "title", value: bookmark.title.mi + " (" + (bookmark.placename.zone.title.en || bookmark.placename.zone.title.mi || bookmark.placename.part.title.en || bookmark.placename.part.title.mi || bookmark.placename.island.title.en || bookmark.placename.island.title.mi) + ")"},
+					{field: "artist", value: bookmark.spoken.speaker.title.locale.mi},
+					{field: "title", value: bookmark.title.locale.mi + " (" + (bookmark.placename.zone.title.locale.en || bookmark.placename.zone.title.locale.mi || bookmark.placename.part.title.locale.en || bookmark.placename.part.title.locale.mi || bookmark.placename.island.title.locale.en || bookmark.placename.island.title.locale.mi) + ")"},
 					{field: "album", value: "Ngā Ingoa o Aotearoa: An oral dictionary of Māori placenames"},
 					{field: "disc", value: bookmark.placename.zone.number || bookmark.placename.part.number || bookmark.placename.island.number},
-					{field: "language", value: (bookmark.title.en == "Intro" ? "eng" : "mri")}
+					{field: "language", value: (bookmark.title.locale.en == "Intro" ? "eng" : "mri")}
 				];
 				const meta = metadata.reduce((meta, data) => meta + `-metadata ${data.field}="${data.value}" `, "");
 				const command = `${ffmpeg} -hide_banner -loglevel quiet -i ${input} -ss ${start} -to ${end} ${meta} -c copy ${output}`;

@@ -28,8 +28,10 @@
 								mi
 							}
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 						}
 					}`;
@@ -56,7 +58,7 @@
 						return {
 							_id: speaker._id,
 							title: {
-								text: this.localeCurrent(speaker.title),
+								text: this.localeCurrent(speaker.title.locale),
 								link: this.localePath({name: 'speaker-speaker', params: {speaker: this.localeCurrent(speaker.slug)}}),
 							},
 						};

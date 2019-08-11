@@ -1,10 +1,11 @@
 <template>
 	<section v-if="tribe">
-		<h2>{{this.localeCurrent(this.tribe.title)}}</h2>
+		<h2>{{this.localeCurrent(this.tribe.title.locale)}}</h2>
 	</section>
 </template>
 
 <script>
+	const param = "tribe";
 
 	export default {
 		apollo: {
@@ -14,8 +15,10 @@
 						tribe(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
@@ -26,8 +29,8 @@
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.tribe,
+						field: this.field,
+						value: this.value,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -35,14 +38,22 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+		},
 		watch: {
-			tribe: function(tribe) {
-				this.$store.commit('i18n/setRouteParams', {en: {tribe: tribe.slug.en}, mi: {tribe: tribe.slug.mi}});
+			tribe: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
 			},
 		},
 		head() {
 			return {
-				title: (this.tribe ? this.localeCurrent(this.tribe.title) + ' (' + this.$tc('tribe') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

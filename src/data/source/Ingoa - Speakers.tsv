@@ -1,8 +1,8 @@
 ID	Number	PreferredName	Gender	Prefix	Nickname	AlternateName	FirstName	MiddleNames	Surname	Suffix	Location	Iwi	IwiID	WikiLink	Wikipedia	URL	Recording	Notes
 sp_1	1	Aila Taylor	M				Aila		Taylor		his home							Aila Taylor worked hard to preserve the North Taranaki reefs. As a result the New Plymouth list includes a number of reefs.
-sp_2	2	Apirana Tuahae Mahuika	M				Apirana	Tuahae	Mahuika		Gisborne				Apirana Mahuika	http://www.ngatiporou.com/article/he-panui-aitua		Api Mahuika was a senior kaumātua of Ngāti Porou, and very supportive of the project, patiently reading the long lists of East Coast names. We recorded in Gisborne, saving me a long trip up the coast.
+sp_2	2	Apirana Tuahae Mahuika	M				Apirana	Tuahae	Mahuika		Gisborne	Ngāti Porou	iw_37	https://en.wikipedia.org/wiki/Apirana_Mahuika	Apirana Mahuika	http://www.ngatiporou.com/article/he-panui-aitua		Api Mahuika was a senior kaumātua of Ngāti Porou, and very supportive of the project, patiently reading the long lists of East Coast names. We recorded in Gisborne, saving me a long trip up the coast.
 sp_3	3	Arapera Mikaera Rangimauriora Nitenetara (Governor)	F				Arapera	Mikaera Rangimauriora	Nitenetara	Governor	her home						Mrs Governor was blind, and I read each name for her to repeat/correct, then edited my own voice out.	
-sp_4	4	Autiti Wikiriwhi	M		Beaker		Autiti		Wikiriwhi		Wahiao							"Beaker" Wickliffe lived next to Wahiao meeting house, in a house that had half collapsed. It was apparently agreed with his family that he and the house might as well live out their time together.
+sp_4	4	Autiti Wikiriwhi	M		Beaker		Autiti		Wikiriwhi		Wahiao	Tūhourangi	iw_77					"Beaker" Wickliffe lived next to Wahiao meeting house, in a house that had half collapsed. It was apparently agreed with his family that he and the house might as well live out their time together.
 sp_5	5	Bill Solomon	M				Bill		Solomon		Maru Kaitatea	Ngāti Kuri						
 sp_6	6	Binga Haggie	M				Binga		Haggie		his home							
 sp_7	7	Bob Harris	M				Bob		Harris		his home							
@@ -32,7 +32,7 @@ sp_30	30	Hirini Moko Mead	M				Hirini	Moko	Mead		his home					https://en.wikiped
 sp_31	31	Hoana Rapatini	F				Hoana		Rapatini		her home							
 sp_32	32	Hoani Apiti	M				Hoani		Apiti		his home							
 sp_33	33	Hoani Heremaia	M				Hoani		Heremaia		his home							
-sp_34	34	Hohepa Toia	M				Hohepa		Toia		his home							Possibly misidentified as his brother Sam
+sp_34	34	Hohepa Toia	M				Hohepa		Toia		his home							Possibly misidentified as his brother Sam.
 sp_35	35	Hone Turei	M				Hone		Turei		his home							Later Sir Hone.
 sp_36	36	Huata Holmes	M				Huata		Holmes		his home							
 sp_37	37	Hugh Young	M				Hugh		Young		Parts 1 and 2, Radio NZ studios. Part 3, his home							
@@ -60,7 +60,7 @@ sp_58	58	Maaka Jones	F				Maaka		Jones		her home
 sp_59	59	Maarire Goodall	M	Dr			Maarire		Goodall		Studio 1, Broadcasting House, Bowen St, Wellington							Sir Tīpene O'Regan directed me to Maarire Goodall when I began the South Island. He was invaluable, pointing me towards most of the speakers and taking over the production of the third print volume. We were both strong-willed but eventually resolved all problems. In the course of this, he became a dear friend.
 sp_60	60	Maehe Nikora	M				Maehe	P H	Nikora		Studio 1, Broadcasting House, Bowen St, Wellington							
 sp_61	61	Aunt Magda Walscott	F	Aunt			Magda		Walscott		her home							Magda Walscott was a very senior kuia of her region, but very bright.
-sp_62	62	Mahia Whatarau-Tainui	F				Mahia		Whatarau-Tainui		Onuku marae							with Henry Robinson
+sp_62	62	Mahia Whatarau-Tainui	F				Mahia		Whatarau-Tainui		Onuku marae							With Henry Robinson
 sp_63	63	Maika Mason	M				Maika		Mason		his home							Poutini Ngai Tahu
 sp_64	64	Major Meihana	M				Major		Meihana		Tamatea Pokai Whenua							
 sp_65	65	Malcolm Hoskins	M				Malcolm		Hoskins		Kath Hemi's home							Malcom Hoskins is the youngest speaker.
@@ -71,14 +71,14 @@ sp_69	69	Maui Pomare	M				Maui		Pomare		his home
 sp_70	70	Maurice Gray	M				Maurice		Gray		his home							
 sp_71	71	Maurice Wilson	M				Maurice		Wilson		Te Puru o Aorere							
 sp_72	72	Mere Taka	F				Mere	Nutana	Taka		her home							
-sp_73	73	Mere Toia	F				Mere		Toia									co-speaker with Hohepa Toia and Sam Toia
+sp_73	73	Mere Toia	F				Mere		Toia									Co-speaker with Hohepa Toia and Sam Toia
 sp_74	74	Merimeri Penfold	F				Merimeri		Penfold		Tane Nui a Rangi							Merimeri was my first tutor of Māori, a great scholar of the language, and a beautiful speaker. She helped update Williams' Dictionary, and translated some of Shakespeare's sonnets into Māori. In 1970 she composed a haka against apartheid. It is my eternal regret that when I asked her to record her Far North names, she brought a male speaker with her, and I let her defer to him, so we only hear her say the names that he missed. I resolved to make a greater effort to include women in the South Island section.
 sp_75	75	Mita Mohi	M				Mita		Mohi		Rangiwewehi Pā							Mita Mohi is better known as a teacher of the taiaha.
 sp_76	76	Molly Hotene	F				Molly		Hotene		her home							
 sp_77	77	Naida Pou	F				Naida	Rangimarie	Pou		her home							
 sp_78	78	Nepia Nikorima	M				Nepia		Nikorima		his home							
 sp_79	79	Ngarongo Iwikatea (Iwi) Nicholson	M		Iwi		Ngarongo	Iwikatea	Nicholson		his home							
-sp_80	80	Paddy Gilroy	M				Paddy		Gilroy		his home							with George Te Au
+sp_80	80	Paddy Gilroy	M				Paddy		Gilroy		his home							With George Te Au.
 sp_81	81	Pakariki Harrison	M				Pakariki		Harrison		his home							Paki Harrison is better known as a master-carver.
 sp_82	82	Apotoro Paoro Hekenui	M	Apotoro			Paoro		Hekenui		his home							
 sp_83	83	Pauro Mareikura	M				Pauro		Mareikura		Maungarongo Marae							
@@ -91,8 +91,8 @@ sp_89	89	Rameka Cope	M				Rameka		Cope		Studio 1, Broadcasting House, Bowen St, 
 sp_90	90	Rangi Ngangana Motu	F				Rangi	Ngangana	Motu		her home							
 sp_91	91	Rangikamutua Downs	M		Rangi		Rangikamutua		Downs		his home							
 sp_92	92	Rangi Skinner	F		Rangi		Rangiwhakaewa		Skinner		her home							
-sp_93	93	Rapata Crown	M				Rapata		Crown		his home							Rapata Crown was frail when I recorded him, and died soon after
-sp_94	94	Rapata Emery	M				Rapata		Emery		his home							Rapata Emery was frail when I recorded him, and died soon after
+sp_93	93	Rapata Crown	M				Rapata		Crown		his home							Rapata Crown was frail when I recorded him, and died soon after.
+sp_94	94	Rapata Emery	M				Rapata		Emery		his home							Rapata Emery was frail when I recorded him, and died soon after.
 sp_95	95	Raureti Harris	F				Raureti		Harris		their home							and Bob Harris
 sp_96	96	Rawakata Perenara	M				Rawakata		Perenara		his home							
 sp_97	97	Rex Hiakita	M				Rex		Hiakita		his home							When I visited Rex Hiakita, he was hesitant, but a would-be rangatira from another area (with a very poor outline of a facial moko), said "Give me your machine, I'll record your names." Knowing enough not to say "No" outright, I said "Taihoa" and came back to Mr Hiakita later.

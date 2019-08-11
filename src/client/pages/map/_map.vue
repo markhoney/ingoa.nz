@@ -2,19 +2,21 @@
 	<section v-if="$route.params.map" class="pa-2 my-5 elevation-4">
 		<!--<h3 class="display-1 mt-5 mb-4">{{$tc('map', 1) | titlecase}}</h3>-->
 		<imagemap field="slug" :value="$route.params.map" hash class="text-xs-center" />
-		<h3 class="display-1 mt-5 mb-4">{{$tc('region', 2) | titlecase}}</h3>
-		<regions field="map.slug" :value="$route.params.map" />
+		<h3 class="display-1 mt-5 mb-4">{{$tc('sector', 2) | titlecase}}</h3>
+		<sectors field="map.slug" :value="$route.params.map" />
 	</section>
 </template>
 
 <script>
 	import imagemap from '@/components/maps/image/map.vue';
-	import regions from '@/components/regions/cards.vue';
+	import sectors from '@/components/sectors/cards.vue';
+
+	const param = "map";
 
 	export default {
 		components: {
 			imagemap,
-			regions
+			sectors
 		},
 		apollo: {
 			map: {
@@ -23,8 +25,10 @@
 						map(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
@@ -35,8 +39,8 @@
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.map,
+						field: this.field,
+						value: this.value,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -44,14 +48,22 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+		},
 		watch: {
-			map: function(map) {
-				this.$store.commit('i18n/setRouteParams', {en: {map: map.slug.en}, mi: {map: map.slug.mi}});
-			}
+			map: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
+			},
 		},
 		head() {
 			return {
-				title: (this.map ? this.localeCurrent(this.map.title) + ' (' + this.$tc('map') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

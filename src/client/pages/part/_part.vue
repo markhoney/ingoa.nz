@@ -1,10 +1,12 @@
 <template>
 	<section v-if="part">
-		<h2>{{this.localeCurrent(this.part.title)}}</h2>
+		<h2>{{this.localeCurrent(this.part.title.locale)}}</h2>
 	</section>
 </template>
 
 <script>
+
+	const param = "part";
 
 	export default {
 		apollo: {
@@ -14,8 +16,10 @@
 						part(filter: [{field: $field, value: $value}]) {
 							_id
 							title {
-								en
-								mi
+								locale {
+									en
+									mi
+								}
 							}
 							slug {
 								en
@@ -26,8 +30,8 @@
 				},
 				variables() {
 					return {
-						field: "slug",
-						value: this.$route.params.part,
+						field: this.field,
+						value: this.value,
 					};
 				},
 				watchLoading (isLoading, countModifier) {
@@ -35,14 +39,22 @@
 				},
 			},
 		},
+		computed: {
+			field: function() {
+				return "slug." + this.$i18n.locale;
+			},
+			value: function() {
+				return this.$route.params[param];
+			},
+		},
 		watch: {
-			part: function(part) {
-				this.$store.commit('i18n/setRouteParams', {en: {part: part.slug.en}, mi: {part: part.slug.mi}});
+			part: function(data) {
+				this.$store.dispatch('i18n/setRouteParams', {en: {[param]: data.slug.en}, mi: {[param]: data.slug.mi}});
 			},
 		},
 		head() {
 			return {
-				title: (this.part ? this.localeCurrent(this.part.title) + ' (' + this.$tc('part') + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

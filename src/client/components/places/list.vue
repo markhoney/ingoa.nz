@@ -28,6 +28,7 @@
 						places(filter: [{field: $field, value: $value}], sort: {field: "placename.slug.mi"}) {
 							_id
 							title {
+								locale {
 								en
 								mi
 							}
@@ -38,6 +39,7 @@
 								}
 								zone {
 									title {
+								locale {
 										en
 										mi
 									}
@@ -48,6 +50,7 @@
 								}
 								part {
 									title {
+								locale {
 										en
 										mi
 									}
@@ -58,6 +61,7 @@
 								}
 								island {
 									title {
+								locale {
 										en
 										mi
 									}
@@ -68,6 +72,7 @@
 								}
 								names {
 									title {
+								locale {
 										en
 										mi
 									}
@@ -99,11 +104,11 @@
 						return {
 							_id: place._id,
 							title: {
-								text: place.placename.names[0].title.mi + (this.context ? ' (' + this.localeCurrent(zonepartisland.title) + ')' : ""),
+								text: place.placename.names[0].title.locale.mi + (this.context ? ' (' + this.localeCurrent(zonepartisland.title.locale) + ')' : ""),
 								link: this.localePath({name: 'placename-zone-placename', params: {zone: this.localeCurrent(zonepartisland.slug), placename: this.localeCurrent(place.placename.slug)}}),
 							},
 							subtitle: {
-								text: this.localeCurrent(place.title),
+								text: this.localeCurrent(place.title.locale),
 							}
 						};
 					});
