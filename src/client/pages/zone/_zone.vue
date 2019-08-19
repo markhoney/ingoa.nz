@@ -1,6 +1,6 @@
 <template>
 	<section v-if="zone">
-		<imageheader :image="zone.images.landscape" :title="zone.title.locale" :right="caseInitial($tc('zone', 1)) + ' ' + zone.number" />
+		<imageheader :image="zone.images.landscape" :title="zone.name.locale" :right="caseInitial($tc('zone', 1)) + ' ' + zone.number" />
 		<wikipedia v-if="zone.notes && zone.notes.wikipedia" :text="localeCurrent(zone.notes.wikipedia)" :link="localeCurrent(zone.areas[0].links.wikipedia)" source="Wikipedia" />
 		<player :file="zone.audio.file" field="zone._id" :value="zone._id" />
 		<mapplaces field="zone._id" :value="zone._id" />
@@ -52,7 +52,7 @@
 						zone(filter: [{field: $field, value: $value}]) {
 							_id
 							number
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -96,7 +96,7 @@
 							}
 							speakers {
 								_id
-								title {
+								name {
 									locale {
 										en
 										mi
@@ -132,7 +132,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

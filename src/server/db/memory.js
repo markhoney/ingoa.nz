@@ -26,6 +26,7 @@ db.island.forEach((island, index) => {
 		if (!placename.next) delete placename.next;
 		placename.names.forEach(name => {
 			name.placename = placename;
+			if (name.spoken) name.spoken.speaker = db.speaker.find(speaker => speaker._id == name.spoken.speaker_id);
 		});
 		if (placename.places) {
 			placename.places.forEach(place => {
@@ -54,6 +55,7 @@ db.part.forEach((part, index) => {
 		if (!placename.next) delete placename.next;
 		placename.names.forEach(name => {
 			name.placename = placename;
+			if (name.spoken) name.spoken.speaker = db.speaker.find(speaker => speaker._id == name.spoken.speaker_id);
 		});
 		if (placename.places) {
 			placename.places.forEach(place => {
@@ -211,7 +213,7 @@ db.search = {en: [], mi: []};
 ["island", "part", "map", "region", "zone", "feature", "tribe", "speaker"].forEach(collection => { // Group has zone
 	db[collection].forEach(item => {
 		//console.log(item);
-		for (const locale of Object.values(item.title.locale)) {
+		for (const locale of Object.values(item.name.locale)) {
 			db.search.en.push({
 				text: locale + " (" + collection + ")",
 				value: "/" + [collection, item.slug.en].join("/"),
@@ -225,13 +227,13 @@ db.search = {en: [], mi: []};
 });
 
 db.group.forEach(item => {
-	for (const locale of Object.values(item.title.locale)) {
+	for (const locale of Object.values(item.name.locale)) {
 		db.search.en.push({
-			text: locale + (item.zone ? " - " + (item.zone.title.locale.en || item.zone.title.locale.mi) : "") + " (group)",
+			text: locale + (item.zone ? " - " + (item.zone.name.locale.en || item.zone.name.locale.mi) : "") + " (group)",
 			value: "/" + ["group", (item.zone ? item.zone.slug.en : null), item.slug.en].join("/"),
 		});
 		db.search.mi.push({
-			text: locale + (item.zone ? " - " + (item.zone.title.locale.mi || item.zone.title.locale.en) : "") + " (" + mi.group + ")",
+			text: locale + (item.zone ? " - " + (item.zone.name.locale.mi || item.zone.name.locale.en) : "") + " (" + mi.group + ")",
 			value: "/mi/" + [mi.group, (item.zone ? item.zone.slug.mi : null), item.slug.mi].join("/"),
 		});
 	}
@@ -240,24 +242,38 @@ db.group.forEach(item => {
 const placenames = {en: {}, mi: {}};
 db.placename.forEach(placename => {
 	if (placename.zone) {
-		["names", "places"].forEach(nametype => {
-			if (placename[nametype]) {
-				placename[nametype].forEach(item => {
-					for (let locale of Object.values(item.title.locale)) {
-						const zonepartisland = (placename.zone || placename.part || placename.island);
-						placenames.en[locale] = {
-							//text: title + " - " + (placename.zone ? placename.zone.title.en || placename.zone.title.mi : (placename.island ? placename.island.title.en || placename.island.title.mi : placename.part.title.en || placename.part.title.mi)) + " (placename)",
-							text: locale + " - " + (zonepartisland.title.locale.en || zonepartisland.title.locale.mi) + " (placename)",
-							value: "/" + ["placename", zonepartisland.slug.en, placename.slug.en].join("/"),
-						};
-						placenames.mi[locale] = {
-							text: locale + " - " + (zonepartisland.title.locale.mi || zonepartisland.title.locale.en) + " (" + mi.placename + ")",
-							value: "/mi/" + [mi.placename, zonepartisland.slug.mi, placename.slug.mi].join("/"),
-						};
-					}
-				});
-			}
-		});
+		if (placename.names) {
+			placename.names.forEach(name => {
+				for (let locale of Object.values(name.locale)) {
+					const zonepartisland = (placename.zone || placename.part || placename.island);
+					placenames.en[locale] = {
+						//text: title + " - " + (placename.zone ? placename.zone.title.en || placename.zone.title.mi : (placename.island ? placename.island.title.en || placename.island.title.mi : placename.part.title.en || placename.part.title.mi)) + " (placename)",
+						text: locale + " - " + (zonepartisland.name.locale.en || zonepartisland.name.locale.mi) + " (placename)",
+						value: "/" + ["placename", zonepartisland.slug.en, placename.slug.en].join("/"),
+					};
+					placenames.mi[locale] = {
+						text: locale + " - " + (zonepartisland.name.locale.mi || zonepartisland.name.locale.en) + " (" + mi.placename + ")",
+						value: "/mi/" + [mi.placename, zonepartisland.slug.mi, placename.slug.mi].join("/"),
+					};
+				}
+			});
+		}
+		if (placename.places) {
+			placename.places.forEach(place => {
+				for (let locale of Object.values(place.name.locale)) {
+					const zonepartisland = (placename.zone || placename.part || placename.island);
+					placenames.en[locale] = {
+						//text: title + " - " + (placename.zone ? placename.zone.title.en || placename.zone.title.mi : (placename.island ? placename.island.title.en || placename.island.title.mi : placename.part.title.en || placename.part.title.mi)) + " (placename)",
+						text: locale + " - " + (zonepartisland.name.locale.en || zonepartisland.name.locale.mi) + " (placename)",
+						value: "/" + ["placename", zonepartisland.slug.en, placename.slug.en].join("/"),
+					};
+					placenames.mi[locale] = {
+						text: locale + " - " + (zonepartisland.name.locale.mi || zonepartisland.name.locale.en) + " (" + mi.placename + ")",
+						value: "/mi/" + [mi.placename, zonepartisland.slug.mi, placename.slug.mi].join("/"),
+					};
+				}
+			});
+		}
 	}
 });
 

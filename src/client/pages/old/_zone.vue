@@ -9,7 +9,7 @@
 					<td width="75">&nbsp;</td>
 					<td>
 						<h2>Ngā Ingoa o Aotearoa</h2>
-						<h1>Zone {{zone.number}} - {{localeCurrent(zone.title.locale)}}</h1>
+						<h1>Zone {{zone.number}} - {{localeCurrent(zone.name.locale)}}</h1>
 					</td>
 				</tr>
 			</tbody>
@@ -21,7 +21,7 @@
 						<a :href="zone.audio.file" target="_blank">
 							Zone {{zone.number}} - spoken by
 							<template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id !== 'sp_37')">
-								{{localeCurrent(speaker.title.locale)}}<template v-if="index < zone.speakers.length - 2">, </template>
+								{{localeCurrent(speaker.name.locale)}}<template v-if="index < zone.speakers.length - 2">, </template>
 							</template>
 						</a>
 					</td>
@@ -34,8 +34,8 @@
 					</td>
 				</tr>
 				<tr v-for="placename in zone.placenames" :key="placename._id">
-					<td>{{placename.names.map(name => localeCurrent(name.title.locale)).join(", ")}}</td>
-					<td><template v-for="place in placename.places">{{localeCurrent(place.feature.title.locale)}}&nbsp;&nbsp;&nbsp;&nbsp;</template></td>
+					<td>{{placename.names.map(name => localeCurrent(name.locale)).join(", ")}}</td>
+					<td><template v-for="place in placename.places">{{localeCurrent(place.feature.name.locale)}}&nbsp;&nbsp;&nbsp;&nbsp;</template></td>
 				</tr>
 			</tbody>
 		</table>
@@ -72,7 +72,7 @@
 									mi
 								}
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -86,7 +86,7 @@
 							}
 							speakers {
 								_id
-								title {
+								name {
 									locale {
 										en
 										mi
@@ -96,7 +96,7 @@
 							placenames {
 								names {
 									_id
-									title {
+									name {
 										locale {
 											en
 											mi
@@ -107,7 +107,7 @@
 									_id
 									feature {
 										_id
-										title {
+										name {
 											locale {
 												en
 												mi

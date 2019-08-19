@@ -33,25 +33,25 @@ Vue.filter('titlecase', function(text) {
   }).join(' ');
 });
 
-Vue.filter('maori', (title) => { // Return the name in Māori if it exists, or in English otherwise
-	return title.mi;
+Vue.filter('maori', (locale) => { // Return the name in Māori if it exists, or in English otherwise
+	return locale.mi;
 });
 
-Vue.filter('english', (title) => { // Return the name in Māori if it exists, or in English otherwise
-	return title.en;
+Vue.filter('english', (locale) => { // Return the name in Māori if it exists, or in English otherwise
+	return locale.en;
 });
 
-Vue.filter('locale', (title, locale) => { // Return the name in the currently selected i18n language if it exists, otherwise return the other name
-	return title[locale] || title[localeAlt(locale)];
+Vue.filter('locale', (locale, code) => { // Return the name in the currently selected i18n language if it exists, otherwise return the other name
+	return locale[code] || locale[localeAlt(code)];
 });
 
-Vue.filter('localeAlt', (title, locale) => { // If both translations of the name exist, return the name in the language that isn't currently selected in i18n, otherwise return a blank placeholder
-	if (title.en && title.mi) return title[localeAlt(locale)];
+Vue.filter('localeAlt', (locale, code) => { // If both translations of the name exist, return the name in the language that isn't currently selected in i18n, otherwise return a blank placeholder
+	if (locale.en && locale.mi) return locale[localeAlt(code)];
 });
 
-Vue.filter('both', (title) => { // Return the name in the currently selected language, followed by the name in the alternative language in brackets, if it exists
-	if (title.en && title.mi) {
-		return title[locale] + (title[localeAlt(locale)] ? ' (' + title[localeAlt(locale)] + ')' : '');
+Vue.filter('both', (locale, code) => { // Return the name in the currently selected language, followed by the name in the alternative language in brackets, if it exists
+	if (locale.en && locale.mi) {
+		return locale[code] + (locale[localeAlt(code)] ? ' (' + locale[localeAlt(code)] + ')' : '');
 	}
-	return title[locale] || title[localeAlt(locale)];
+	return locale[code] || locale[localeAlt(code)];
 });

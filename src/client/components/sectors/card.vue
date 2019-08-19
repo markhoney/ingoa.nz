@@ -2,8 +2,8 @@
 	<v-card v-if="sector">
 		<nuxt-link :to="localePath({name: 'sector-sector', params: {sector: localeCurrent(sector.slug)}})" style="text-decoration: none;">
 			<v-img :src="sector.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
-				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeCurrent(sector.title.locale)}}</h2>
-				<h3 class="mb-1 headline">{{localeOther(sector.title.locale, '&nbsp;')}}</h3>-->
+				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeCurrent(sector.name.locale)}}</h2>
+				<h3 class="mb-1 headline">{{localeOther(sector.name.locale, '&nbsp;')}}</h3>-->
 				<!--<h2 class="display-3 mb-0">{{$tc('sector', 1) | initialcase}}</h2>-->
 				<h3 v-if="single" style="text-transform: uppercase; font-size: 4em; text-align: center;">{{$tc('sector', 1)}}</h3>
 			</v-img>
@@ -12,11 +12,11 @@
 			<div>
 				<h2 class="headline mb-0" style="clear: both;">
 					<nuxt-link :to="localePath({name: 'sector-sector', params: {sector: localeCurrent(sector.slug)}})">
-						{{localeCurrent(sector.title.locale)}}
+						{{localeCurrent(sector.name.locale)}}
 					</nuxt-link>
 				</h2>
 				<h3 class="mb-1">
-					{{localeOther(sector.title.locale, '&nbsp;')}}
+					{{localeOther(sector.name.locale, '&nbsp;')}}
 				</h3>
 				<div>
 					<!--<comma v-if="sector.zones" field="sector._id" :value="sector._id">
@@ -61,7 +61,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -69,7 +69,7 @@
 							}
 							zones {
 								_id
-								title {
+								name {
 									locale {
 										en
 										mi
@@ -107,7 +107,7 @@
 					return this.sector.zones.map(zone => {
 						return {
 							_id: zone._id,
-							title: this.localeCurrent(zone.title.locale),
+							title: this.localeCurrent(zone.name.locale),
 							link: this.localePath({name: 'zone-zone', params: {zone: this.localeCurrent(zone.slug)}}),
 						};
 					});

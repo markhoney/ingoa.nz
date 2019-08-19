@@ -1,6 +1,6 @@
 <template>
 	<section v-if="feature">
-		<h2>{{localeCurrent(feature.title.locale)}}</h2>
+		<h2>{{localeCurrent(feature.name.locale)}}</h2>
 		<wikipedia v-if="feature.notes && feature.notes.wikipedia" :text="localeCurrent(feature.notes.wikipedia)" :link="localeCurrent(feature.links.wikipedia)" source="Wikipedia" />
 		<places field="feature.slug" :value="$route.params.feature" context />
 	</section>
@@ -23,7 +23,7 @@
 					return this.$gql`query feature($field: String, $value: String) {
 						feature(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -74,7 +74,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

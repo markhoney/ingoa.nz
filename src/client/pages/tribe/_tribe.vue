@@ -1,6 +1,6 @@
 <template>
 	<section v-if="tribe">
-		<h2>{{this.localeCurrent(this.tribe.title.locale)}}</h2>
+		<h2>{{this.localeCurrent(this.tribe.name.locale)}}</h2>
 	</section>
 </template>
 
@@ -14,7 +14,7 @@
 					return this.$gql`query tribe($field: String, $value: String) {
 						tribe(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -53,7 +53,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

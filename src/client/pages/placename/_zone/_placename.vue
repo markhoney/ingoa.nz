@@ -1,5 +1,5 @@
 <template>
-	<h2>{{$route.params.placename}}</h2>
+	<h2>{{localeCurrent(placename.names[0].name.locale)}}</h2>
 </template>
 
 <script>
@@ -15,6 +15,70 @@
 							slug {
 								en
 								mi
+							}
+							names {
+								name {
+									locale {
+										en
+										mi
+									}
+								}
+							}
+							places {
+								name {
+									locale {
+										en
+										mi
+									}
+								}
+							}
+							notes {
+								name {
+									en
+									mi
+								}
+								speech {
+									en
+									mi
+								}
+								spelling {
+									en
+									mi
+								}
+								place {
+									en
+									mi
+								}
+							}
+							addendum_zones {
+								_id
+							}
+							see {
+								zone {
+									_id
+									name {
+										locale {
+											en
+											mi
+										}
+									}
+								}
+								placename {
+									_id
+								}
+								type
+							}
+							previous {
+								slug {
+									en
+									mi
+								}
+							}
+							next {
+								slug {
+									en
+									mi
+								}
 							}
 						}
 					}`;
@@ -49,7 +113,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].names[0].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

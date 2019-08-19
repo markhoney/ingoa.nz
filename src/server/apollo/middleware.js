@@ -11,7 +11,7 @@ const app = connect();
 //const db = require('../db/nedb');
 //const resolvers = require('./resolvers.nedb')(db);
 const db = require('../db/memory');
-const resolvers = require('./resolvers.mem')(db);
+const resolvers = require('./resolvers')(db);
 const server = new ApolloServer({
 	typeDefs,
 	resolvers,

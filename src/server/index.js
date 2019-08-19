@@ -23,7 +23,7 @@ if (apis.includes('graphql')) {
 	const {importSchema} = require('graphql-import');
 	const typeDefs = importSchema('./src/server/apollo/schema.graphql');
 	//const resolvers = require('./resolvers')(db);
-	const resolvers = require('./server/apollo/resolvers.mem')(db);
+	const resolvers = require('./server/apollo/resolvers')(db);
 	const {ApolloServer} = require('apollo-server-express');
 	const server = new ApolloServer({
 		typeDefs,

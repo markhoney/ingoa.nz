@@ -1,13 +1,13 @@
 <template>
-	<searchlist v-if="items" :data="items" />
+	<list v-if="items" :data="items" />
 </template>
 
 <script>
-	import searchlist from '@/components/base/list/search.vue';
+	import list from '@/components/base/list/description.vue';
 
 	export default {
 		components: {
-			searchlist,
+			list,
 		},
 		props: {
 			field: String,
@@ -27,10 +27,11 @@
 					return this.$gql`query places($field: String, $value: String) {
 						places(filter: [{field: $field, value: $value}], sort: {field: "placename.slug.mi"}) {
 							_id
-							title {
+							name {
 								locale {
-								en
-								mi
+									en
+									mi
+								}
 							}
 							placename {
 								slug {
@@ -38,10 +39,11 @@
 									mi
 								}
 								zone {
-									title {
-								locale {
-										en
-										mi
+									name {
+										locale {
+											en
+											mi
+										}
 									}
 									slug {
 										en
@@ -49,10 +51,11 @@
 									}
 								}
 								part {
-									title {
-								locale {
-										en
-										mi
+									name {
+										locale {
+											en
+											mi
+										}
 									}
 									slug {
 										en
@@ -60,10 +63,11 @@
 									}
 								}
 								island {
-									title {
-								locale {
-										en
-										mi
+									name {
+										locale {
+											en
+											mi
+										}
 									}
 									slug {
 										en
@@ -71,10 +75,11 @@
 									}
 								}
 								names {
-									title {
-								locale {
-										en
-										mi
+									name {
+										locale {
+											en
+											mi
+										}
 									}
 								}
 							}
@@ -104,11 +109,11 @@
 						return {
 							_id: place._id,
 							title: {
-								text: place.placename.names[0].title.locale.mi + (this.context ? ' (' + this.localeCurrent(zonepartisland.title.locale) + ')' : ""),
+								text: place.placename.names[0].name.locale.mi + (this.context ? ' (' + this.localeCurrent(zonepartisland.name.locale) + ')' : ""),
 								link: this.localePath({name: 'placename-zone-placename', params: {zone: this.localeCurrent(zonepartisland.slug), placename: this.localeCurrent(place.placename.slug)}}),
 							},
 							subtitle: {
-								text: this.localeCurrent(place.title.locale),
+								text: this.localeCurrent(place.name.locale),
 							}
 						};
 					});

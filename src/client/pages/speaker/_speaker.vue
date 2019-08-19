@@ -1,11 +1,11 @@
 <template>
 	<section v-if="speaker">
-		<h2>{{this.localeCurrent(this.speaker.title.locale)}}</h2>
+		<h2>{{this.localeCurrent(this.speaker.name.locale)}}</h2>
 		<div v-if="speaker.notes">
 			<p v-if="speaker.notes.description">{{speaker.notes.description}}</p>
 			<p v-if="speaker.notes.recording">{{speaker.notes.recording}}</p>
 		</div>
-		<p>{{this.localeCurrent(this.speaker.title.locale)}} spoke for the following Zones:</p>
+		<p>{{this.localeCurrent(this.speaker.name.locale)}} spoke for the following Zones:</p>
 		<zones :data="speaker.zones" />
 	</section>
 </template>
@@ -25,7 +25,7 @@
 					return this.$gql`query speaker($field: String, $value: String) {
 						speaker(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -41,7 +41,7 @@
 									en
 									mi
 								}
-								title {
+								name {
 									locale {
 										en
 										mi
@@ -80,7 +80,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

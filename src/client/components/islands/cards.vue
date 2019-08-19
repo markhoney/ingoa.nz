@@ -24,7 +24,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi

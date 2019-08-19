@@ -4,7 +4,7 @@
 			<div>
 				<h3 class="headline mb-0">
 					<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: localeCurrent(speaker.slug)}})">
-						{{localeCurrent(speaker.title.locale)}}
+						{{localeCurrent(speaker.name.locale)}}
 					</nuxt-link>
 				</h3>
 			</div>
@@ -33,7 +33,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi

@@ -32,7 +32,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -40,7 +40,7 @@
 							}
 							zones {
 								_id
-								title {
+								name {
 									locale {
 										en
 										mi

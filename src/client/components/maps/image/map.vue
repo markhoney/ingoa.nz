@@ -1,22 +1,22 @@
 <template>
 	<section v-if="map">
 		<h2 :id="map.code" class="display-1 mb-0 text-xs-center">
-			<nuxt-link :to="localePath({name: 'map-map', params: {map: localeCurrent(map.slug)}})">{{localeCurrent(map.title.locale)}}</nuxt-link>
+			<nuxt-link :to="localePath({name: 'map-map', params: {map: localeCurrent(map.slug)}})">{{localeCurrent(map.name.locale)}}</nuxt-link>
 		</h2>
-		<h3 class="headline mb-0 text-xs-center mb-3">{{localeOther(map.title.locale)}}</h3>
-		<img :src="map.images.portrait" :alt="localeBoth(map.title.locale)" field="_id" :value="map._id" :usemap="'#map-' + map.code">
+		<h3 class="headline mb-0 text-xs-center mb-3">{{localeOther(map.name.locale)}}</h3>
+		<img :src="map.images.portrait" :alt="localeBoth(map.name.locale)" field="_id" :value="map._id" :usemap="'#map-' + map.code">
 		<map :name="'map-' + map.code">
 			<template v-for="sector in map.sectors">
 				<template v-for="zone in sector.zones">
 					<nuxt-link v-for="(area, index) in zone.maplink.mapareas" :to="localePath({name: 'zone-zone', params: {zone: localeCurrent(zone.slug)}})" :key="zone._id + index"
-						:shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(zone.title.locale)" tag="area" />
-					<!--:alt="localeBoth(zone.title.locale)" -->
+						:shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(zone.name.locale)" tag="area" />
+					<!--:alt="localeBoth(zone.name.locale)" -->
 				</template>
 			</template>
 			<template v-for="link in map.maplinks">
 				<nuxt-link v-for="(area, index) in link.mapareas"
 					:to="localePath(hash ? {name: 'island-island', params: {island: localeCurrent(map.island.slug)}, hash: '#' + localeCurrent(link.map.slug)} : {name: 'island-island', params: {island: localeCurrent(map.island.slug)}})"
-					:key="[link.map._id, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(link.map.title.locale)" tag="area" />
+					:key="[link.map._id, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(link.map.name.locale)" tag="area" />
 			</template>
 		</map>
 		<p class="text-xs-center">{{$t('imagemap')}}</p>
@@ -47,7 +47,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -65,7 +65,7 @@
 										en
 										mi
 									}
-									title {
+									name {
 										locale {
 											en
 											mi
@@ -88,7 +88,7 @@
 							maplinks {
 								map {
 									_id
-									title {
+									name {
 										locale {
 											en
 											mi

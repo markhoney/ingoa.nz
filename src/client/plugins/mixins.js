@@ -40,37 +40,37 @@ Vue.mixin({
 			//Return the slug field name in the currently selected i18n language
 			return "slug." + this.locale();
 		},
-		localeMaori(langs) {
-			//Return the langs in Māori if it exists, or in English otherwise
-			if (langs) return langs.mi || langs.en;
+		localeMaori(locale) {
+			//Return the locale in Māori if it exists, or in English otherwise
+			if (locale) return locale.mi || locale.en;
 		},
-		localeEnglish(langs) {
-			//Return the langs in English if it exists, or in Māori otherwise
-			if (langs) return langs.en || langs.mi;
+		localeEnglish(locale) {
+			//Return the locale in English if it exists, or in Māori otherwise
+			if (locale) return locale.en || locale.mi;
 		},
-		localeCurrentOnly(langs, blank = "") {
-			//Return the langs in the currently selected i18n language if it exists, otherwise return nothing
-			if (langs) return langs[this.locale()] || blank;
+		localeCurrentOnly(locale, blank = "") {
+			//Return the locale in the currently selected i18n language if it exists, otherwise return nothing
+			if (locale) return locale[this.locale()] || blank;
 		},
-		localeCurrent(langs) {
-			//Return the langs in the currently selected i18n language if it exists, otherwise return the other langs
-			if (langs) return langs[this.locale()] || langs[this.localeAlt()];
+		localeCurrent(locale) {
+			//Return the locale in the currently selected i18n language if it exists, otherwise return the other locale
+			if (locale) return locale[this.locale()] || locale[this.localeAlt()];
 		},
-		localeOther(langs, blank = "") {
-			//If both translations of the langs exist, return the langs in the language that isn't currently selected in i18n, otherwise return a blank placeholder
-			if (langs && langs.en && langs.mi) return langs[this.localeAlt()];
+		localeOther(locale, blank = "") {
+			//If both translations of the locale exist, return the locale in the language that isn't currently selected in i18n, otherwise return a blank placeholder
+			if (locale && locale.en && locale.mi) return locale[this.localeAlt()];
 			return blank;
 		},
-		localeBoth(langs) {
-			//Return the langs in the currently selected language, followed by the langs in the alternative language in brackets, if it exists
-			if (langs && this.localeBothExist(langs)) {
-				return langs[this.locale()] + (langs[this.localeAlt()] ? ' (' + langs[this.localeAlt()] + ')' : '');
+		localeBoth(locale) {
+			//Return the locale in the currently selected language, followed by the locale in the alternative language in brackets, if it exists
+			if (locale && this.localeBothExist(locale)) {
+				return locale[this.locale()] + (locale[this.localeAlt()] ? ' (' + locale[this.localeAlt()] + ')' : '');
 			}
-			return langs[this.locale()] || langs[this.localeAlt()];
+			return locale[this.locale()] || locale[this.localeAlt()];
 		},
-		localeBothExist(langs) {
-			//Return true if the langs exists in both languages
-			if (langs) return langs.en && langs.mi;
+		localeBothExist(locale) {
+			//Return true if the locale exists in both languages
+			if (locale) return locale.en && locale.mi;
 		},
 	},
 });

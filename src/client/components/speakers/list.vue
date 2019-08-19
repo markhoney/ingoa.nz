@@ -1,13 +1,13 @@
 <template>
-	<searchlist :data="items" />
+	<list :data="items" search />
 </template>
 
 <script>
-	import searchlist from '@/components/base/list/search.vue';
+	import list from '@/components/base/list/description.vue';
 
 	export default {
 		components: {
-			searchlist,
+			list,
 		},
 		props: {
 			field: String,
@@ -27,7 +27,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -58,7 +58,7 @@
 						return {
 							_id: speaker._id,
 							title: {
-								text: this.localeCurrent(speaker.title.locale),
+								text: this.localeCurrent(speaker.name.locale),
 								link: this.localePath({name: 'speaker-speaker', params: {speaker: this.localeCurrent(speaker.slug)}}),
 							},
 						};

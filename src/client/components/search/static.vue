@@ -20,7 +20,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -41,7 +41,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -58,7 +58,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -75,7 +75,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -92,7 +92,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -109,7 +109,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -126,7 +126,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -143,7 +143,7 @@
 							en
 							mi
 						}
-						title {
+						name {
 							locale {
 								en
 								mi
@@ -162,7 +162,7 @@
 						}
 						names {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -171,7 +171,7 @@
 						}
 						places {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -210,7 +210,7 @@
 				].map(data => {
 					return {
 						value: '/' + [data.__typename, data.code].join('/'),
-						text: this.localeCurrent(data.title.locale) + ' (' + data.__typename + ')'
+						text: this.localeCurrent(data.name.locale) + ' (' + data.__typename + ')'
 					};
 				});
 			},

@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<div v-for="sector in sectors" :key="sector._id">
-			<h2>{{localeCurrent(sector.title.locale)}}</h2>
+			<h2>{{localeCurrent(sector.name.locale)}}</h2>
 			<zone field="sector._id" :value="sector._id" />
 		</div>
 	</section>
@@ -19,7 +19,7 @@
 					return this.$gql`query sectors {
 						sectors {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi

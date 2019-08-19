@@ -9,9 +9,9 @@
 		<v-card-title primary-title>
 			<div>
 				<h3 class="headline mb-0">
-					<nuxt-link v-if="island" :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">{{localeCurrent(island.title.locale)}}</nuxt-link>
+					<nuxt-link v-if="island" :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">{{localeCurrent(island.name.locale)}}</nuxt-link>
 				</h3>
-				<h3>{{localeOther(island.title.locale)}}</h3>
+				<h3>{{localeOther(island.name.locale)}}</h3>
 				<div>
 					<p v-html="island.description" />
 				</div>
@@ -44,7 +44,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi

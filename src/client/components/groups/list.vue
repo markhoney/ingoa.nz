@@ -1,13 +1,13 @@
 <template>
-	<searchlist :data="items" />
+	<list :data="items" search />
 </template>
 
 <script>
-	import searchlist from '@/components/base/list/search.vue';
+	import list from '@/components/base/list/description.vue';
 
 	export default {
 		components: {
-			searchlist,
+			list,
 		},
 		props: {
 			field: String,
@@ -27,7 +27,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -42,6 +42,10 @@
 							}
 							notes {
 								wikipedia {
+									en
+									mi
+								}
+								description {
 									en
 									mi
 								}
@@ -71,11 +75,11 @@
 						return {
 							_id: group._id,
 							title: {
-								text: this.localeCurrent(group.title.locale),
+								text: this.localeCurrent(group.name.locale),
 								link: this.localePath({name: 'group-zone-group', params: {zone: this.localeCurrent(group.zone.slug), group: this.localeCurrent(group.slug)}}),
 							},
 							subtitle: {
-								text: (group.notes ? this.localeCurrent(group.notes.wikipedia) : ""),
+								text: (group.notes ? this.localeCurrentOnly(group.notes.wikipedia) || this.localeCurrentOnly(group.notes.description) : ""),
 							}
 						};
 					});

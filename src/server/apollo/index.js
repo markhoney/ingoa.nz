@@ -1,5 +1,5 @@
 const consola = require('consola');
-if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
+//if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
 process.title = "apollo";
 const {ApolloServer} = require('apollo-server');
 const {importSchema} = require('graphql-import');
@@ -14,7 +14,7 @@ if (process.argv.length > 2 && process.argv[2] == 'nedb') {
 	resolvers = require('./resolvers.db')(db);
 } else {
 	const db = require('../db/memory');
-	resolvers = require('./resolvers.mem')(db);
+	resolvers = require('./resolvers')(db);
 }
 
 const server = new ApolloServer({

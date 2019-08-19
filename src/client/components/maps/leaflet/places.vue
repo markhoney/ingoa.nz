@@ -10,11 +10,11 @@
 					{{place}}
 					<l-popup>
 						<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: localeCurrent(place.placename.zone.slug), placename: localeCurrent(place.placename.slug)}})">
-							{{localeCurrent(place.title.locale)}}
+							{{localeCurrent(place.name.locale)}}
 						</nuxt-link>
 						<br>
 						Feature: <nuxt-link :to="localePath({name: 'feature-feature', params: {feature: localeCurrent(place.feature.slug)}})">
-							{{localeCurrent(place.feature.title.locale)}}
+							{{localeCurrent(place.feature.name.locale)}}
 						</nuxt-link>
 					</l-popup>
 				</l-marker>
@@ -52,7 +52,7 @@
 							}
 							places {
 								_id
-								title {
+								name {
 									locale {
 										en
 										mi
@@ -69,7 +69,7 @@
 										en
 										mi
 									}
-									title {
+									name {
 										locale {
 											en
 											mi

@@ -1,7 +1,8 @@
 <template>
 	<section v-if="group">
-		<h2>{{this.localeCurrent(group.title.locale)}}</h2>
+		<h2>{{localeCurrent(group.name.locale)}}</h2>
 		<wikipedia v-if="group.notes && group.notes.wikipedia" :text="localeCurrent(group.notes.wikipedia)" :link="localeCurrent(group.links.wikipedia)" source="Wikipedia" />
+		<p>The following places are found at {{localeCurrent(group.name.locale)}}.</p>
 		<places :data="group.places" />
 	</section>
 </template>
@@ -23,7 +24,7 @@
 					return this.$gql`query group($field: String, $value: String, $zone: String) {
 						group(filter: [{field: $field, value: $value}, {field: "zone.slug", value: $zone}]) {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -47,7 +48,7 @@
 							}
 							places {
 								_id
-								title {
+								name {
 									locale {
 										en
 										mi
@@ -59,7 +60,7 @@
 										mi
 									}
 									zone {
-										title {
+										name {
 											locale {
 												en
 												mi
@@ -71,7 +72,7 @@
 										}
 									}
 									part {
-										title {
+										name {
 											locale {
 												en
 												mi
@@ -83,7 +84,7 @@
 										}
 									}
 									island {
-										title {
+										name {
 											locale {
 												en
 												mi
@@ -95,7 +96,7 @@
 										}
 									}
 									names {
-										title {
+										name {
 											locale {
 												en
 												mi
@@ -137,7 +138,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

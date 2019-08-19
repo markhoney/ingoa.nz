@@ -1,4 +1,4 @@
-/*if (process.env.NODE_ENV != 'production')*/ require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
+//if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
 
 const pkg = require('./package');
 
@@ -65,6 +65,7 @@ module.exports = {
 
 	devModules: [
 		'@nuxtjs/vuetify',
+		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 	],
 
 	modules: [
@@ -74,11 +75,11 @@ module.exports = {
 		//'@nuxtjs/sitemap',
 		'@nuxtjs/webpackmonitor',
 		'@nuxtjs/robots',
-		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 		//['@nuxtjs/feed', {}],
 		/*['@nuxtjs/google-analytics', {
 			id: 'UA-45273295-4'
 		}],*/
+		'nuxt-helmet',
 		'nuxt-leaflet',
 		'nuxt-trailingslash-module',
 		[

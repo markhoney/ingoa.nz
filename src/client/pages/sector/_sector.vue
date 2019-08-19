@@ -1,10 +1,10 @@
 <template>
 	<section v-if="sector">
 		<h1 class="display-2 mt-5">
-			{{localeCurrent(sector.title.locale)}}
+			{{localeCurrent(sector.name.locale)}}
 		</h1>
-		<h2 v-if="localeBothExist(sector.title.locale)" class="display-1 mb-4">
-			{{localeOther(sector.title.locale)}}
+		<h2 v-if="localeBothExist(sector.name.locale)" class="display-1 mb-4">
+			{{localeOther(sector.name.locale)}}
 		</h2>
 		<wikipedia v-if="sector.notes.wikipedia" :text="localeCurrent(sector.notes.wikipedia)" :link="localeCurrent(sector.links.wikipedia)" source="Wikipedia" />
 		<h3 class="display-1 mt-5 mb-4">
@@ -36,7 +36,7 @@
 					return this.$gql`query sector($field: String, $value: String) {
 						sector(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -87,7 +87,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

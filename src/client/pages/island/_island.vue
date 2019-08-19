@@ -1,6 +1,6 @@
 <template>
 	<section v-if="island">
-		<imageheader :image="island.images.landscape" :title="island.title.locale" />
+		<imageheader :image="island.images.landscape" :title="island.name.locale" />
 		<wikipedia v-if="island.notes.wikipedia" :text="localeCurrent(island.notes.wikipedia)" :link="localeCurrent(island.links.wikipedia)" source="Wikipedia" />
 		<p class="ma-5" v-html="localeCurrent(island.notes.description)" />
 		<player :file="island.audio.file" field="island._id" :value="island._id" common />
@@ -29,7 +29,7 @@
 					return this.$gql`query island($field: String, $value: String) {
 						island(filter: [{field: $field, value: $value}]) {
 							_id
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -97,7 +97,7 @@
 		},
 		head() {
 			return {
-				title: (this[param] ? this.localeCurrent(this[param].title.locale) + ' (' + this.$tc(param) + ')' : ''),
+				title: (this[param] ? this.localeCurrent(this[param].name.locale) + ' (' + this.$tc(param) + ')' : ''),
 			};
 		},
 	};

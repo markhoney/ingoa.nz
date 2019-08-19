@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<template v-for="sector in sectors">
-			<h2 class="headline mt5 mb4" :key="sector.code">{{localeBoth(sector.title.locale)}}</h2>
+			<h2 class="headline mt5 mb4" :key="sector.code">{{localeBoth(sector.name.locale)}}</h2>
 			<zones field="sector._id" :value="sector._id" :cards="false" :key="sector.code" />
 		</template>
 	</section>
@@ -25,7 +25,7 @@
 						sectors(filter: [{field: $field, value: $value}]) {
 							_id
 							code
-							title {
+							name {
 								locale {
 									en
 									mi

@@ -7,14 +7,14 @@
 			<v-list dense>
 				<v-menu offset-x v-for="island in islands" :key="island._id">
 					<v-list-item #:activator="{on}" :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
-						<v-list-item-title v-on="on">{{localeCurrent(island.title.locale)}}</v-list-item-title>
+						<v-list-item-title v-on="on">{{localeCurrent(island.name.locale)}}</v-list-item-title>
 						<v-list-item-action class="justify-end">
 							<v-icon>play_arrow</v-icon>
 						</v-list-item-action>
 					</v-list-item>
 					<v-list dense>
 						<v-list-item v-for="sector in island.sectors" :key="sector._id" :to="localePath({name: 'sector-sector', params: {sector: localeCurrent(sector.slug)}})">
-							<v-list-item-title>{{localeCurrent(sector.title.locale)}}</v-list-item-title>
+							<v-list-item-title>{{localeCurrent(sector.name.locale)}}</v-list-item-title>
 						</v-list-item>
 					</v-list>
 				</v-menu>
@@ -27,14 +27,14 @@
 			<v-list dense>
 				<v-menu offset-x open-on-hover v-for="island in islands" :key="island._id">
 					<v-list-item slot="activator" :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
-						<v-list-item-title>{{localeCurrent(island.title.locale)}}</v-list-item-title>
+						<v-list-item-title>{{localeCurrent(island.name.locale)}}</v-list-item-title>
 						<v-list-item-action class="justify-end">
 							<v-icon>play_arrow</v-icon>
 						</v-list-item-action>
 					</v-list-item>
 					<v-list dense>
 						<v-list-item v-for="sector in island.sectors" :key="sector._id" :to="localePath({name: 'sector-sector', params: {sector: localeCurrent(sector.slug)}})">
-							<v-list-item-title>{{localeCurrent(sector.title.locale)}}</v-list-item-title>
+							<v-list-item-title>{{localeCurrent(sector.name.locale)}}</v-list-item-title>
 						</v-list-item>
 					</v-list>
 				</v-menu>
@@ -75,7 +75,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
@@ -87,7 +87,7 @@
 									en
 									mi
 								}
-								title {
+								name {
 									locale {
 										en
 										mi

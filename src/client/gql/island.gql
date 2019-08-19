@@ -1,0 +1,22 @@
+{
+	_id
+	slug {
+		en
+		mi
+	}
+	name {
+		locale {
+			en
+			mi
+		}
+	}
+	notes {
+		description {
+			en
+			mi
+		}
+	}
+	images {
+		landscape
+	}
+}

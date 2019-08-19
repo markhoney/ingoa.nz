@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const levenshtein = require('js-levenshtein');
 const axios = require('axios');
+const cheerio = require('cheerio');
 const utils = require('../server/db/utils');
 
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
@@ -98,6 +99,19 @@ function addSpeakers() {
 	});
 }
 
+function addPlacenameAudio() {
+	db.name.forEach(name => {
+		if (name.spoken) {
+			audioLocation = '/audio/placename/' + name._id + '.mp3';
+			name.spoken.audio = {
+				file: audioLocation,
+				size: fs.statSync('src/client/static' + audioLocation).size,
+				length: ((name.spoken.end + 0.1) - Math.max(0, name.spoken.start - 0.1)).toFixed(2),
+			};
+		}
+	});
+}
+
 function addSimilarIdentical() {
 	const similarspath = path.join(__dirname, '..', '..', 'cache', 'similar.json');
 	let similars = {};
@@ -106,14 +120,14 @@ function addSimilarIdentical() {
 	}
 	//db.name.forEach(name => {
 	for (const name of db.name) {
-		if (!name.similar_ids && name.title.locale.mi != "Intro") {
-			const identical = db.name.filter(myname => myname.title.locale.mi == name.title.locale.mi);
+		if (!name.similar_ids && name.locale.mi != "Intro") {
+			const identical = db.name.filter(myname => myname.locale.mi == name.locale.mi);
 			name.identical_ids = identical.map(name => name._id);
 			//const similar = similars.find(similar => similar._id == name._id);
 			if (similars[name._id]) {
 				name.similar_ids = similars[name._id];
 			} else {
-				const similar = db.name.filter(myname => myname.title.locale.mi != name.title.locale.mi).sort((a, b) => levenshtein(name.title.locale.mi, a.title.locale.mi) - levenshtein(name.title.locale.mi, b.title.locale.mi)).slice(0, 8);
+				const similar = db.name.filter(myname => myname.locale.mi != name.locale.mi).sort((a, b) => levenshtein(name.locale.mi, a.name.locale.mi) - levenshtein(name.locale.mi, b.name.locale.mi)).slice(0, 8);
 				name.similar_ids = similar.map(name => name._id);
 				similars[name._id] = name.similar_ids;
 			}
@@ -125,8 +139,8 @@ function addSimilarIdentical() {
 function addMeanings() {
 	let total = 0;
 	db.name.forEach(name => {
-		if (!name.meaning_id && name.title.locale.mi) {
-			const meaning = db.meaning.find(meaning => meaning.title.locale.mi == name.title.locale.mi || meaning.title.locale.mi == name.title.ascii || meaning.title.locale.mi == name.title.double);
+		if (!name.meaning_id && name.locale.mi) {
+			const meaning = db.meaning.find(meaning => meaning.name.locale.mi == name.locale.mi || (name.alt && meaning.name.locale.mi == name.alt.ascii) || (name.alt && meaning.name.locale.mi == name.alt.double));
 			if (meaning) {
 				name.meaning_id = meaning._id;
 				total += 1;
@@ -148,7 +162,7 @@ async function addNominatimLocations() {
 				const region = db.region.find(region => region._id == district.region_id);
 				for (const place of placename.places) {
 					if (!place.location || (place.location && !place.location.position)) {
-						const placename = (place.title.alt ? place.title.alt.ascii : null) || place.title.locale.en || place.title.locale.mi;
+						const placename = (place.name.alt ? place.name.alt.ascii : null) || place.name.locale.en || place.name.locale.mi;
 						const url = encodeURI(placename + '?addressdetails=1&extratags=1&format=json'); //&limit=1
 						let geo = [];
 						const cachepath = path.join(__dirname, '..', '..', 'cache', 'nominatim', placename + '.json');
@@ -165,8 +179,8 @@ async function addNominatimLocations() {
 							}
 						}
 						if (geo && geo.length) {
-							const regions = [district.title.alt.full, district.title.locale.en, district.title.locale.en + " District", district.title.locale.mi, district.title.locale.mi + " District"];
-							if (region) regions.push(region.title.locale.en, region.title.locale.mi);
+							const regions = [district.name.alt.full, district.name.locale.en, district.name.locale.en + " District", district.name.locale.mi, district.name.locale.mi + " District"];
+							if (region) regions.push(region.name.locale.en, region.name.locale.mi);
 							let placenames = geo.filter(placename => regions.filter(Boolean).some(region => [placename.address.region, placename.address.county, placename.address.state].includes(region)));
 							if (placenames.length) {
 								const feature = db.feature.find(feature => feature._id == place.feature_id);
@@ -178,9 +192,9 @@ async function addNominatimLocations() {
 									}
 									if (placename.class == "landuse" && placename.type == feature.category.osm.landuse) placename.score += 2;
 									const name = utils.simplify(placename.display_name.split(",")[0]);
-									if (name == utils.simplify(place.title.locale.en)) placename.score += 1;
-									if (name == utils.simplify(place.title.locale.en + feature.title.locale.en)) placename.score += 1;
-									if (name == utils.simplify(place.title.locale.en + feature.title.locale.mi)) placename.score += 1;
+									if (name == utils.simplify(place.name.locale.en)) placename.score += 1;
+									if (name == utils.simplify(place.name.locale.en + feature.name.locale.en)) placename.score += 1;
+									if (name == utils.simplify(place.name.locale.en + feature.name.locale.mi)) placename.score += 1;
 								});
 								placenames = placenames.sort((a, b) => a.score > b.score);
 								const foundplace = placenames[0];
@@ -210,7 +224,7 @@ async function addNominatimLocations() {
 function addGazetteerLocations() {
 	let total = 0;
 	db.gazetteer.forEach(gazetteer => {
-		gazetteer.simple = utils.simplify(gazetteer.title.locale);
+		gazetteer.simple = utils.simplify(gazetteer.name.en);
 	});
 	db.placename.forEach(placename => {
 		if (placename.zone_id && placename.places) {
@@ -220,7 +234,7 @@ function addGazetteerLocations() {
 			placename.places.forEach(place => {
 				if (!place.location || (place.location && !place.location.position)) {
 					const feature = db.feature.find(feature => feature._id == place.feature_id);
-					const names = [utils.simplify(place.title.locale.mi), utils.simplify(place.title.locale.ascii), utils.simplify(place.title.locale.double), utils.simplify([place.title.locale.mi, feature.title.locale.en].join(' ')), utils.simplify([place.title.locale.ascii, feature.title.locale.en].join(' ')), utils.simplify([place.title.locale.double, feature.title.locale.en].join(' '))];
+					const names = [utils.simplify(place.name.locale.mi), utils.simplify(place.name.locale.ascii), utils.simplify(place.name.locale.double), utils.simplify([place.name.locale.mi, feature.name.locale.en].join(' ')), utils.simplify([place.name.locale.ascii, feature.name.locale.en].join(' ')), utils.simplify([place.name.locale.double, feature.name.locale.en].join(' '))];
 					let placenames = db.gazetteer.filter(gazetteer => gazetteer.district == district && names.includes(gazetteer.simple));
 					if (placenames.length) {
 						placenames.forEach(placename => {
@@ -281,8 +295,8 @@ async function addWikiDataInfos() {
 						if (!record.links.wikipedia.mi && wiki.sitelinks.miwiki) record.links.wikipedia.mi = wiki.sitelinks.miwiki.url;
 					}
 					if (wiki.labels) {
-						if (!record.title.locale.en && wiki.labels.en) record.title.locale.en = caseInitial(wiki.labels.en.value);
-						if (!record.title.locale.mi && wiki.labels.mi) record.title.locale.mi = caseInitial(wiki.labels.mi.value);
+						if (!record.name.locale.en && wiki.labels.en) record.name.locale.en = caseInitial(wiki.labels.en.value);
+						if (!record.name.locale.mi && wiki.labels.mi) record.name.locale.mi = caseInitial(wiki.labels.mi.value);
 					}
 					total++;
 				}
@@ -307,8 +321,8 @@ async function addWikiDataZoneInfos() {
 						if (!record.links.wikipedia.mi && wiki.sitelinks.miwiki) record.links.wikipedia.mi = wiki.sitelinks.miwiki.url;
 					}
 					if (wiki.labels) {
-						if (!record.title.locale.en && wiki.labels.en) record.title.locale.en = caseInitial(wiki.labels.en.value);
-						if (!record.title.locale.mi && wiki.labels.mi) record.title.locale.mi = caseInitial(wiki.labels.mi.value);
+						if (!record.name.locale.en && wiki.labels.en) record.name.locale.en = caseInitial(wiki.labels.en.value);
+						if (!record.name.locale.mi && wiki.labels.mi) record.name.locale.mi = caseInitial(wiki.labels.mi.value);
 					}
 					total++;
 				}
@@ -373,16 +387,16 @@ async function addWikipediaZoneIntros(locale) {
 	console.log(locale + ":", total);
 }
 
-async function getMaoriMapsInfo(url, maorimaps) {
+async function getMaoriMapsInfo(url, locale, maorimaps) {
 	let marae;
 	url = url.replace("https://maorimaps.com/marae/", "");
-	const cachepath = path.join(__dirname, '..', '..', 'cache', 'maorimaps', url + '.html');
+	const cachepath = path.join(__dirname, '..', '..', 'cache', 'maorimaps', locale, url + '.html');
 	if (fs.existsSync(cachepath)) {
 		//marae = require(cachepath);
 		marae = fs.readFileSync(cachepath);
 	} else {
 		try {
-			marae = (await maorimaps.get(url)).data;
+			marae = (await maorimaps.get("marae/" + url, { headers: {Cookie: "SSESS04fb61a42ac94afd2a8df6d0aaa40edf=Ji1xYLRRbD31bLF5qTuRgjXU1K0_Ne5fj2iO0dbCvUE;"}})).data;
 			fs.writeFileSync(cachepath, marae);
 		} catch(error) {
 			//console.log(error);
@@ -391,13 +405,30 @@ async function getMaoriMapsInfo(url, maorimaps) {
 	return marae;
 }
 
-async function addMaoriMapsInfos() {
+async function addMaoriMapsInfos(locale) {
 	let total = 0;
-	const maorimaps = axios.create({baseURL: "https://maorimaps.com/marae/"});
+	const maorimaps = axios.create({baseURL: "https://maorimaps.com/", withCredentials: true, headers: {Cookie: "SSESS04fb61a42ac94afd2a8df6d0aaa40edf=Ji1xYLRRbD31bLF5qTuRgjXU1K0_Ne5fj2iO0dbCvUE;"}}); // , {headers: {'accept-language': locale + '-NZ'}} // , withCredentials: true
+	/*if (locale == 'en') {
+		try {
+			await maorimaps.get("home/English", {headers: {referer: 'https://maorimaps.com/'}});
+		} catch(error) {
+			console.log(error);
+		}
+	} else {
+		try {
+			await maorimaps.get("home/Te+Reo", {headers: {referer: 'https://maorimaps.com/'}});
+		} catch(error) {
+			console.log(error);
+		}
+	}*/
 	for (const record of db.group) {
 		if (record.links && record.links.maorimaps) {
-			const page = await getMaoriMapsInfo(record.links.maorimaps, maorimaps);
+			const page = await getMaoriMapsInfo(record.links.maorimaps, locale, maorimaps);
 			if (page) {
+				const $ = cheerio.load(page);
+				if (!record.notes) record.notes = {};
+				if (!record.notes.description) record.notes.description = {};
+				record.notes.description[locale] = $('.field-name-field-poi-description-body').text();
 				total++;
 			}
 		}
@@ -439,6 +470,8 @@ async function runAll() {
 	addSimilarIdentical();
 	console.log("Adding Name Meanings...");
 	addMeanings();
+	console.log("Adding Placename Audio Info...");
+	await addPlacenameAudio();
 	console.log("Adding Location Coordinates from Nominatim...");
 	await addNominatimLocations();
 	console.log("Adding Location Coordinates from the Gazetteer...");
@@ -453,6 +486,7 @@ async function runAll() {
 	await addWikipediaZoneIntros("mi");
 	console.log("Adding Data from MaoriMaps...");
 	await addMaoriMapsInfos("en");
+	await addMaoriMapsInfos("mi");
 	console.log("Deleting Names & Places...");
 	deleteNamesPlaces();
 	console.log("Writing Data...");

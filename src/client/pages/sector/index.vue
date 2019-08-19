@@ -6,11 +6,11 @@
 		<template v-for="island in islands">
 			<v-subheader :key="island._id" class="display-1 mt-5 mb-3">
 				<nuxt-link :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})">
-					{{localeCurrent(island.title.locale)}}
+					{{localeCurrent(island.name.locale)}}
 				</nuxt-link>
 			</v-subheader>
-			<v-subheader v-if="localeBothExist(island.title.locale)" :key="island.title.locale.mi" class="display-1 mb-4">
-				{{localeOther(island.title.locale)}}
+			<v-subheader v-if="localeBothExist(island.name.locale)" :key="island.name.locale.mi" class="display-1 mb-4">
+				{{localeOther(island.name.locale)}}
 			</v-subheader>
 			<sectors :key="island._id" field="island._id" :value="island._id" />
 		</template>
@@ -34,7 +34,7 @@
 								en
 								mi
 							}
-							title {
+							name {
 								locale {
 									en
 									mi
