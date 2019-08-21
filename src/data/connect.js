@@ -33,10 +33,17 @@ function linkImages() {
 	].forEach(collection => {
 		db[collection.name].forEach(record => {
 			if (!record.images) {
-				record.images = collection.images.reduce((obj, image) => {
+				/*record.images = collection.images.reduce((obj, image) => {
 					obj[image.split('.')[0]] = '/img/' + collection.name + '/' + record.slug.en + '-' + image;
 					return obj;
-				}, {});
+				}, {});*/
+				record.images = {};
+				collection.images.forEach(image => {
+					const imagepath = ['img', collection.name, record.slug.en + '-' + image];
+					if (fs.existsSync(path.join(__dirname, '..', 'client', 'static', ...imagepath))) {
+						record.images[image.split('.')[0]] = '/' + imagepath.join("/");
+					}
+				});
 			}
 		});
 	});
@@ -140,7 +147,7 @@ function addMeanings() {
 	let total = 0;
 	db.name.forEach(name => {
 		if (!name.meaning_id && name.locale.mi) {
-			const meaning = db.meaning.find(meaning => meaning.name.locale.mi == name.locale.mi || (name.alt && meaning.name.locale.mi == name.alt.ascii) || (name.alt && meaning.name.locale.mi == name.alt.double));
+			const meaning = db.meaning.find(meaning => meaning.name.locale.mi == name.locale.mi || (name.alt && name.alt.mi && meaning.name.locale.mi == name.alt.mi.ascii) || (name.alt && name.alt.mi && meaning.name.locale.mi == name.alt.mi.double));
 			if (meaning) {
 				name.meaning_id = meaning._id;
 				total += 1;
@@ -162,7 +169,7 @@ async function addNominatimLocations() {
 				const region = db.region.find(region => region._id == district.region_id);
 				for (const place of placename.places) {
 					if (!place.location || (place.location && !place.location.position)) {
-						const placename = (place.name.alt ? place.name.alt.ascii : null) || place.name.locale.en || place.name.locale.mi;
+						const placename = (place.name.alt && place.name.alt.mi ? place.name.alt.mi.ascii : null) || place.name.locale.en || place.name.locale.mi;
 						const url = encodeURI(placename + '?addressdetails=1&extratags=1&format=json'); //&limit=1
 						let geo = [];
 						const cachepath = path.join(__dirname, '..', '..', 'cache', 'nominatim', placename + '.json');
@@ -179,7 +186,7 @@ async function addNominatimLocations() {
 							}
 						}
 						if (geo && geo.length) {
-							const regions = [district.name.alt.full, district.name.locale.en, district.name.locale.en + " District", district.name.locale.mi, district.name.locale.mi + " District"];
+							const regions = [district.name.alt.en.full, district.name.locale.en, district.name.locale.en + " District", district.name.locale.mi, district.name.locale.mi + " District"];
 							if (region) regions.push(region.name.locale.en, region.name.locale.mi);
 							let placenames = geo.filter(placename => regions.filter(Boolean).some(region => [placename.address.region, placename.address.county, placename.address.state].includes(region)));
 							if (placenames.length) {

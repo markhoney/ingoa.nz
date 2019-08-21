@@ -66,8 +66,10 @@ function importIslands() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			audio: {
@@ -134,8 +136,10 @@ function importParts() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			audio: {
@@ -206,8 +210,10 @@ function importMaps() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			island_id: input.IslandID,
@@ -250,8 +256,10 @@ function importRegions() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			island_id: input.IslandID,
@@ -288,8 +296,10 @@ function importSectors() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			island_id: input.IslandID,
@@ -322,9 +332,13 @@ function importDistricts() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
-					full: input.FullName,
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
+					en: {
+						full: input.FullName,
+					},
 				},
 			},
 			island_id: input.IslandID,
@@ -367,8 +381,10 @@ function importZones() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			audio: {
@@ -456,16 +472,20 @@ function importSpeakers() {
 						mi: input.PreferredName,
 					},
 					alt: {
-						ascii: utils.ascii(input.PreferredName),
-						double: utils.double(input.PreferredName),
-						full: [
-							input.Prefix,
-							input.FirstName,
-							input.Nickname ? '(' + input.Nickname + ')' : null,
-							input.MiddleNames,
-							input.Surname,
-							input.Suffix,
-						].filter(a => a).join(' '),
+						mi: {
+							ascii: utils.ascii(input.PreferredName),
+							double: utils.double(input.PreferredName),
+						},
+						en: {
+								full: [
+								input.Prefix,
+								input.FirstName,
+								input.Nickname ? '(' + input.Nickname + ')' : null,
+								input.MiddleNames,
+								input.Surname,
+								input.Suffix,
+							].filter(a => a).join(' '),
+						},
 					},
 					parts: {
 						nick: input.Nickname,
@@ -515,9 +535,13 @@ function importFeatures() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
-					plural: input.Plural,
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
+					en: {
+						plural: input.Plural,
+					},
 				},
 			},
 			order: input.Hierarchy,
@@ -557,8 +581,10 @@ function importGroups() {
 					mi: input.TeReo,
 				},
 				alt: {
-					ascii: utils.ascii(input.TeReo),
-					double: utils.double(input.TeReo),
+					mi: {
+						ascii: utils.ascii(input.TeReo),
+						double: utils.double(input.TeReo),
+					},
 				},
 			},
 			feature_id: input.FeatureID,
@@ -593,8 +619,10 @@ function importTribes() {
 					mi: input.Name,
 				},
 				alt: {
-					ascii: utils.ascii(input.Name),
-					double: utils.double(input.Name),
+					mi: {
+						ascii: utils.ascii(input.Name),
+						double: utils.double(input.Name),
+					},
 				},
 			},
 			metric: {
@@ -654,8 +682,10 @@ function importPlacenames() {
 						mi: input[name],
 					},
 					alt: {
-						ascii: utils.ascii(input[name]),
-						double: utils.double(input[name]),
+						mi: {
+							ascii: utils.ascii(input[name]),
+							double: utils.double(input[name]),
+						},
 					},
 					categories: [],
 				};
@@ -676,7 +706,8 @@ function importPlacenames() {
 						speaker_id: input['SpeakerID_' + i],
 					};
 					if (input['PhoneticName_' + i]) {
-						names[input['IndexName_' + i]].alt.phonetic = {
+						names[input['IndexName_' + i]].alt.mi.phonetic = {
+							plain: input['PhoneticName_' + i].split("_").join(""),
 							markdown: input['PhoneticName_' + i],
 							html: utils.htmlItalics(input['PhoneticName_' + i]),
 						};
@@ -688,7 +719,7 @@ function importPlacenames() {
 			names[name]._id = 'na_' + input.ID + '-' + index;
 			output.names.push(names[name]);
 		});
-		output.names[0].alt.transliteration = input.Transliteration;
+		output.names[0].alt.en = {transliteration: input.Transliteration};
 		output.names = utils.cleanobj(output.names);
 		for (i = 1; i <= 4; i++) {
 			if (input['SeeNameID_' + i]) {
@@ -723,8 +754,10 @@ function importPlacenames() {
 							mi: input.IndexName_1,
 						},
 						alt: {
-							ascii: utils.ascii(input['KindName_' + i]),
-							double: utils.double(input['KindName_' + i]),
+							mi: {
+								ascii: utils.ascii(input['KindName_' + i]),
+								double: utils.double(input['KindName_' + i]),
+							},
 						},
 					},
 					feature_id: input['KindID_' + i],
@@ -759,8 +792,10 @@ function importMeanings() {
 					mi: input.CleanedName,
 				},
 				alt: {
-					ascii: utils.ascii(input.CleanedName),
-					double: utils.double(input.CleanedName),
+					mi: {
+						ascii: utils.ascii(input.CleanedName),
+						double: utils.double(input.CleanedName),
+					},
 				},
 			},
 			components: input.Components,

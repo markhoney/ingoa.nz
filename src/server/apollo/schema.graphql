@@ -22,29 +22,26 @@ type nameparts {
 }
 
 type phonetic {
+	plain: String
 	markdown: String
 	html: String
 }
 
-type altmi {
+type alt_mi {
 	ascii: String
 	double: String
 	phonetic: phonetic
 }
 
-type alten {
+type alt_en {
 	transliteration: String
 	plural: String
 	full: String
 }
 
 type altnames {
-	ascii: String
-	double: String
-	phonetic: phonetic
-	transliteration: String
-	plural: String
-	full: String
+	en: alt_en
+	mi: alt_mi
 }
 
 type name {
