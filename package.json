@@ -54,6 +54,7 @@
 	"dependencies": {
 		"@babel/runtime-corejs2": "^7.5.5",
 		"@babel/runtime-corejs3": "^7.5.5",
+		"@bazzite/nuxt-optimized-images": "^0.2.1",
 		"@nuxtjs/apollo": "^4.0.0-rc10",
 		"@nuxtjs/dotenv": "^1.4.0",
 		"@nuxtjs/feed": "^1.1.0",
@@ -77,9 +78,15 @@
 		"graphql-tag": "^2.10.1",
 		"graphql-tools": "^4.0.5",
 		"image-map": "^1.1.6",
+		"imagemin-gifsicle": "^6.0.1",
+		"imagemin-mozjpeg": "^8.0.0",
+		"imagemin-pngquant": "^8.0.0",
+		"imagemin-svgo": "^7.0.0",
+		"jimp": "^0.6.4",
 		"jquery": "^3.4.1",
 		"js-levenshtein": "^1.1.6",
 		"lodash": "^4.17.15",
+		"lqip-loader": "^2.2.0",
 		"nedb": "^1.8.0",
 		"nedb-async": "0.0.9",
 		"node-env-run": "^3.0.2",
@@ -90,7 +97,9 @@
 		"nuxt-trailingslash-module": "^1.1.0",
 		"pm2": "^3.5.1",
 		"purgecss": "^1.3.0",
+		"responsive-loader": "^1.2.0",
 		"sofa-api": "^0.4.0",
+		"sqip-loader": "^0.2.0",
 		"stylus": "^0.54.5",
 		"stylus-loader": "^3.0.2",
 		"vue-object-merge": "^0.1.7",
@@ -98,7 +107,8 @@
 		"vuetify": "^2.0.5",
 		"vuetify-loader": "^1.3.0",
 		"wait-on": "^3.3.0",
-		"wavesurfer.js": "^3.0.0"
+		"wavesurfer.js": "^3.0.0",
+		"webp-loader": "^0.5.0"
 	},
 	"devDependencies": {
 		"@nuxtjs/localtunnel": "^1.1.2",

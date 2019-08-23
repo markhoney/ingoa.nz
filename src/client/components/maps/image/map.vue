@@ -1,10 +1,10 @@
 <template>
 	<section v-if="map">
-		<h2 :id="map.code" class="display-1 mb-0 text-xs-center">
+		<h2 :id="map.code" class="display-1 mb-0 text-sm-center">
 			<nuxt-link :to="localePath({name: 'map-map', params: {map: localeCurrent(map.slug)}})">{{localeCurrent(map.name.locale)}}</nuxt-link>
 		</h2>
-		<h3 class="headline mb-0 text-xs-center mb-3">{{localeOther(map.name.locale)}}</h3>
-		<img :src="map.images.portrait" :alt="localeBoth(map.name.locale)" field="_id" :value="map._id" :usemap="'#map-' + map.code">
+		<h3 class="headline mb-0 text-sm-center mb-3">{{localeOther(map.name.locale)}}</h3>
+		<img :src="require(`@/assets${map.images.portrait}`)" :alt="localeBoth(map.name.locale)" field="_id" :value="map._id" :usemap="'#map-' + map.code">
 		<map :name="'map-' + map.code">
 			<template v-for="sector in map.sectors">
 				<template v-for="zone in sector.zones">
@@ -19,7 +19,7 @@
 					:key="[link.map._id, index].join('-')" :shape="area.shape" :coords="area.coords.map(coord => parseInt(coord)).join(',')" :title="localeBoth(link.map.name.locale)" tag="area" />
 			</template>
 		</map>
-		<p class="text-xs-center">{{$t('imagemap')}}</p>
+		<p class="text-sm-center">{{$t('imagemap')}}</p>
 	</section>
 </template>
 

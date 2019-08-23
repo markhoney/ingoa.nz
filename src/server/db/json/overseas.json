@@ -1,8 +1,8 @@
 [
-{"_id":"pn_zo_42-8","location":"Clandon Park","city":"Surrey","country":"England","position":{"lat":"51.2506","lng":"-0.50818"}},
-{"_id":"pn_zo_83-6","city":"Sydney","country":"Australia","position":{"lat":"-33.8889","lng":"151.2039"}},
-{"_id":"pn_zo_138-3","location":"New Zealand House","city":"London","country":"England","position":{"lat":"51.507752","lng":"-0.1316566"}},
-{"_id":"pn_zo_138-4","location":"Museum of Ethnology","city":"Hamburg","country":"Germany","position":{"lat":"53.5685","lng":"9.9892"}},
-{"_id":"pn_zo_138-5","location":"Field Museum","city":"Chicago","country":"USA","position":{"lat":"41.86622","lng":"-87.61688"}},
-{"_id":"pn_zo_138-6","location":"Linden Museum","city":"Stuttgart","country":"Germany","position":{"lat":"48.78275","lng":"9.17"}}
+	{"_id":"pn_zo_42-8","location":"Clandon Park","city":"Surrey","country":"England","position":{"lat":"51.2506","lng":"-0.50818"}},
+	{"_id":"pn_zo_83-6","city":"Sydney","country":"Australia","position":{"lat":"-33.8889","lng":"151.2039"}},
+	{"_id":"pn_zo_138-3","location":"New Zealand House","city":"London","country":"England","position":{"lat":"51.507752","lng":"-0.1316566"}},
+	{"_id":"pn_zo_138-4","location":"Museum of Ethnology","city":"Hamburg","country":"Germany","position":{"lat":"53.5685","lng":"9.9892"}},
+	{"_id":"pn_zo_138-5","location":"Field Museum","city":"Chicago","country":"USA","position":{"lat":"41.86622","lng":"-87.61688"}},
+	{"_id":"pn_zo_138-6","location":"Linden Museum","city":"Stuttgart","country":"Germany","position":{"lat":"48.78275","lng":"9.17"}}
 ]

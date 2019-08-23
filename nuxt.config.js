@@ -63,12 +63,13 @@ module.exports = {
 		'@/plugins/gql.js',
 	],
 
-	devModules: [
+	buildModules: [
 		'@nuxtjs/vuetify',
 		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 	],
 
 	modules: [
+		'@bazzite/nuxt-optimized-images',
 		'@nuxtjs/apollo',
 		'@nuxtjs/dotenv',
 		'@nuxtjs/pwa',
@@ -79,7 +80,7 @@ module.exports = {
 		/*['@nuxtjs/google-analytics', {
 			id: 'UA-45273295-4'
 		}],*/
-		'nuxt-helmet',
+		//'nuxt-helmet',
 		'nuxt-leaflet',
 		'nuxt-trailingslash-module',
 		[
@@ -96,6 +97,11 @@ module.exports = {
 		],
 	],
 
+	optimizedImages: {
+		optimizeImages: true,
+		//optimizeImagesInDev: true,
+	},
+
 	apollo: {
 		includeNodeModules: true,
 		clientConfigs: {
@@ -107,6 +113,11 @@ module.exports = {
 		//transpile: [/^vue2-google-maps($|\/)/],
 		extractCSS: true,
 		optimizeCSS: true,
+		extend(config, ctx) {
+			if (ctx.isDev) {
+				config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+			}
+		},
 		/*babel: {
 			presets({isServer}) {
 				return [

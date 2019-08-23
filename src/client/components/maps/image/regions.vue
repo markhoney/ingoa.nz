@@ -1,7 +1,7 @@
 <template>
 	<section class="pa-2 my-5 elevation-4">
 		<!--<h3 class="display-1 mt-5 mb-4">{{$tc('map', 1) | titlecase}}</h3>-->
-		<imagemap field="_id" :value="id" hash class="text-xs-center" />
+		<imagemap field="_id" :value="id" hash class="text-sm-center" />
 		<h3 class="display-1 mt-5 mb-4">{{$tc('sector', 2) | titlecase}}</h3>
 		<sectors field="map._id" :value="id" />
 	</section>

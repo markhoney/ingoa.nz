@@ -1,17 +1,17 @@
 <template>
 	<section class="elevation-4 pa-5 my-3" v-if="current">
-		<h3 :title="current.alt && current.alt.mi && current.alt.mi.phonetic ? current.alt.mi.phonetic.plain : ''" class="text-xs-center display-2">
+		<h3 :title="current.alt && current.alt.mi && current.alt.mi.phonetic ? current.alt.mi.phonetic.plain : ''" class="text-sm-center display-2">
 			<nuxt-link :to="localePath({name: 'placename-zone-placename', params: {zone: localeCurrent((current.placename.zone || current.placename.part || current.placename.island).slug), placename: localeCurrent(current.placename.slug)}})">
 				{{current.locale | maori}}
 			</nuxt-link>
 		</h3>
-		<h4 class="text-xs-center display-1">
+		<h4 class="text-sm-center display-1">
 			<template v-if="current.locale.en">({{current.locale | english}})</template><template v-else>&nbsp;</template>
 		</h4>
-		<h3 v-if="common" class="text-xs-center display-1">
+		<h3 v-if="common" class="text-sm-center display-1">
 			<span v-if="current.common">({{current.common}})</span>&nbsp;
 		</h3>
-		<h4 v-if="current.spoken.speaker" class="text-xs-center headline">
+		<h4 v-if="current.spoken.speaker" class="text-sm-center headline">
 			{{$t('spoken') | initialcase}}
 			<nuxt-link :to="localePath({name: 'speaker-speaker', params: {speaker: localeCurrent(current.spoken.speaker.slug)}})">
 				{{current.spoken.speaker.name.locale | locale(this.locale())}}

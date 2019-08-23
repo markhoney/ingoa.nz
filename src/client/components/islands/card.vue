@@ -1,7 +1,7 @@
 <template>
 	<v-card v-if="island">
 		<nuxt-link :to="localePath({name: 'island-island', params: {island: localeCurrent(island.slug)}})" style="text-decoration: none;">
-			<v-img :src="island.images.landscape" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
+			<v-img :src="require(`@/assets${island.images.landscape}`)" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
 				<h3 v-if="single" style="text-transform: uppercase; font-size: 4em; text-align: center;">{{$tc('island', 1)}}</h3>
 			</v-img>
 		</nuxt-link>

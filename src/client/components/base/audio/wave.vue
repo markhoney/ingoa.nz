@@ -18,7 +18,7 @@
 				</v-btn>-->
 			</v-flex>
 			<v-flex xs6>
-				<v-slider v-model="volume" prepend-icon="volume_down" append-icon="volume_up" class="text-xs-right" />
+				<v-slider v-model="volume" prepend-icon="volume_down" append-icon="volume_up" class="text-sm-right" />
 			</v-flex>
 		</v-layout>
 	</div>
