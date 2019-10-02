@@ -1,5 +1,5 @@
 <template>
-	<v-navigation-drawer :clipped="$vuetify.breakpoint.lgAndUp" v-model="drawer" fixed app>
+	<v-navigation-drawer :clipped="$vuetify.breakpoint.lgAndUp" v-model="drawer" fixed app temporary>
 		<v-list>
 			<v-list-item>
 				<v-list-item-content>
@@ -257,7 +257,7 @@
 		computed: {
 			drawer: {
 				get() {
-					return this.$store.state.drawer;
+					return this.$store.state.drawer || null;
 				},
 				set(v) {
 					this.$store.commit('drawerSet', v);

@@ -21,6 +21,8 @@
 </template>
 
 <script>
+	//import islandCard from '@/gql/islandCard.gql';
+	
 	export default {
 		props: {
 			field: String,

@@ -9,6 +9,7 @@
 
 <script>
 	import island from '@/components/islands/card.vue';
+	//import islandCard from '@/gql/islandCard.gql';
 
 	export default {
 		components: {

@@ -4,13 +4,44 @@ Ngā Ingoa o Aotearoa is an audio dictionary of New Zealand place names, spoken 
 
 The dataset for this dictionary details names, places, locations, groups, features, speakers, maps, iwi and other information about the place names that have been spoken and recorded.
 
+## Source Data
+
+All data for this project was collated by Hugh Young and originally made available in a series of three audio recordings with accompanying booklets.
+
+The audio recordings have been digitised as MP3, with Audacity's noise reduction filter run on them to reduce background noise.
+
+Geographical location data for some of the places has been gleaned from the LINZ New Zealand [Gazetteer of place names](https://www.linz.govt.nz/regulatory/place-names/find-place-name/new-zealand-gazetteer-place-names).
+
+
 ## Technology
 
-This project uses the [Nuxt.js](https://nuxtjs.org/) framework and [Apollo GraphQL](https://www.apollographql.com/) to host the database of spoken placenames. These services are run separately, although there is a (currently broken) script to run GraphQL as Nuxt middleware, and another script to run both GraphQL and Nuxt as middleware in [Express](https://expressjs.com/). Data is stored either as plain JavaScript object or in [NeDB](https://github.com/louischatriot/nedb) collections.
+This project uses the [Nuxt.js](https://nuxtjs.org/) framework and [Apollo GraphQL](https://www.apollographql.com/) to host the database of spoken placenames. These services are run separately, although there is a (currently broken) script to run GraphQL as Nuxt middleware, and another script to run both GraphQL and Nuxt as middleware in [Express](https://expressjs.com/). Data is stored as plain JavaScript objects, and loaded into memory before Apollo is run.
 
 GraphQL is always run on port 4000, whereas Nuxt is run on port 8000 in development and port 3000 in production. This port separation is used to make debugging of the development and production modes easier, as there are no concerns that cached development files in the browser (service workers, GraphQL data, etc) will pollute the production environment during testing, or vice versa.
 
-The site can be run in development (`yarn dev`) or production modes, with production options for both dynamically generated (`yarn prod`) and statically genrated (`yarn static`) sites. [Docker](https://www.docker.com/) container creation is supported for both the dynamic (`yarn docker:dynamic`) and static (`yarn docker:static`) production sites, using [Caddy](https://caddyserver.com/) as a proxy for the Nuxt and Apollo services.
+### Import
+
+Import of the data from a set of TSV files is done via the JavaScript file ```src/data/import.js```. Once the data has been imported into a set of JSON files, a second script - ```src/data/connect.js``` is run to make connections between different parts of the data set. None of these connections link base tables together, so as to avoid circular structures and doubling up of data. Once the data has been updated, it's saved back to the same set of JSON files. Output
+
+A final data editing step is run whenever GraphQL is launched, and this step connects data types together. This step is done in memory only, and is not saved back to the JSON files, to avoid duplication and circular dependency issues.
+
+### GraphQL
+
+The GraphQL script ```src/server/apollo/index.js``` first loads the source data into memory with the script ```src/server/db/memory.js```. Then it launches the Apollo GraphQL server on port 4000.
+
+### Nuxt
+
+Nuxt is used with i18n (Internationalisation) support, allowing the site to be offered in both English and Māori.
+
+The Apollo client handles caching of frontend data, and GraphQL data is used for each page to dynamically register locale URLs.
+
+### metrics
+
+Metrics are provided when Nuxt is running in development mode via AppMetrics.
+
+## Launching
+
+The site can be run in development (`yarn dev`) or production modes, with production options for both dynamically generated (`yarn prod`) and statically generated (`yarn static`) sites. [Docker](https://www.docker.com/) container creation is supported for both the dynamic (`yarn docker:dynamic`) and static (`yarn docker:static`) production sites, using [Caddy](https://caddyserver.com/) as a proxy for the Nuxt and Apollo services.
 
 ## Directory Structure
 
@@ -37,14 +68,6 @@ The most important folders used by this project are:
       - **json** - _Plain JSON objects_
       - **nedb** - _DB collection files_
     - **rest** - _Scripts for running a REST API_
-
-## Data
-
-All data for this project was collated by Hugh Young and originally made available in a series of three audio recordings with accompanying booklets.
-
-The audio recordings have been digitised as MP3, with Audacity's noise reduction filter run on them to reduce background noise.
-
-Geographical location data for some of the places has been gleaned from the LINZ New Zealand [Gazetteer of place names](https://www.linz.govt.nz/regulatory/place-names/find-place-name/new-zealand-gazetteer-place-names).
 
 ## Commands
 

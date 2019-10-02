@@ -1,5 +1,5 @@
 <template>
-	<v-dialog v-model="dialog" fullscreen full-width transition="">
+	<v-dialog v-model="dialog" fullscreen transition="">
 		<v-container fluid fill-height style="background-color: rgba(255, 255, 255, 0.5);">
 			<v-layout justify-center align-center>
 				<v-progress-circular indeterminate color="primary" />

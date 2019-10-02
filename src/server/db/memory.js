@@ -3,6 +3,13 @@
 const db = ['island', 'part', 'map', 'region', 'sector', 'district', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'meaning'].reduce((db, collection) => { // , 'gazetteer'
 	db[collection] = require('./json/' + collection + '.json');
 	//db[collection] = JSON.parse(fs.readFileSync('apollo-server/db/json/' + collection + '.json'));
+	db[collection].sort((a, b) => {
+		a = a._id.split("_").pop().split("-");
+		b = b._id.split("_").pop().split("-");
+		for (let i = 0; i < a.length; i++) {
+			if (a[i] != b[i]) return a[i] - b[i];
+		}
+	});
 	return db;
 }, {});
 

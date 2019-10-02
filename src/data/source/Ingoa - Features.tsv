@@ -1,11 +1,11 @@
 ID	Number	Name	Plural	TeReo	Hierarchy	GazetteerName	OSMClass	OSMType	OSMLandUse	WikiLink	WikiData	WikiMi
 fe_1	1	AIDS centre				Building	amenity	clinic	hospital			
 fe_2	2	Airbase				Building	military	airfield	military	https://en.wikipedia.org/wiki/Air_base	Q695850	
-fe_3	3	Airport				Building	aeroway	aerodrome	aerodrome	https://en.wikipedia.org/wiki/Airport	Q1248784	
+fe_3	3	Airport		Papa rererangi		Building	aeroway	aerodrome	aerodrome	https://en.wikipedia.org/wiki/Airport	Q1248784	
 fe_4	4	Anchor stone					natural	stone				
 fe_5	5	Aqueduct					historic	aqueduct		https://en.wikipedia.org/wiki/Aqueduct_(bridge)	Q474	
 fe_6	6	Area			1	Area	place	region		https://en.wikipedia.org/wiki/Area_(country_subdivision)	Q1414991	
-fe_7	7	Arena				Recreation	sport	multi	recreation_ground	https://en.wikipedia.org/wiki/Arena	Q641226	
+fe_7	7	Arena		Whare tapere		Recreation	sport	multi	recreation_ground	https://en.wikipedia.org/wiki/Arena	Q641226	
 fe_8	8	Arm				Stream	waterway	stream		https://en.wikipedia.org/wiki/Arm_(geography)	Q4792460	
 fe_9	9	Arts & crafts centre			39	Building	craft		commercial			
 fe_10	10	Bank				Bank	embankment			https://en.wikipedia.org/wiki/Bank_(geography)	Q2897058	
@@ -13,7 +13,7 @@ fe_11	11	Bar					natural			https://en.wikipedia.org/wiki/Bar_(river_morphology)	
 fe_12	12	Basin	Basins			Basin	natural			https://en.wikipedia.org/wiki/Drainage_basin	Q813672	
 fe_13	13	Bath				Lake	natural	water				
 fe_14	14	Battle site					historic	battlefield		https://en.wikipedia.org/wiki/Battlefield	Q4895508	
-fe_15	15	Bay	Bays		4	Bay	natural	bay		https://en.wikipedia.org/wiki/Bay	Q39594	
+fe_15	15	Bay	Bays	Kowhanenga	4	Bay	natural	bay		https://en.wikipedia.org/wiki/Bay	Q39594	
 fe_16	16	Beach		Tatahi		Beach	natural	beach		https://en.wikipedia.org/wiki/Beach	Q40080	
 fe_17	17	Ben				Hill	natural	peak				
 fe_18	18	Bight				Bay	natural	bay		https://en.wikipedia.org/wiki/Bight_(geography)	Q17018380	
@@ -24,7 +24,7 @@ fe_22	22	Bluff	Bluffs			Cliff	natural	cliff		https://en.wikipedia.org/wiki/Cliff
 fe_23	23	Boiling lake				Lake	natural	bay				
 fe_24	24	Borough				Locality	place	borough	residential	https://en.wikipedia.org/wiki/Borough	Q5195043	
 fe_25	25	Borstal				Building	amenity	prison		https://en.wikipedia.org/wiki/Borstal	Q746505	
-fe_26	26	Boulder	Boulders			Rock	natural	bare_rock		https://en.wikipedia.org/wiki/Boulder	Q581776	
+fe_26	26	Boulder	Boulders	Toka		Rock	natural	bare_rock		https://en.wikipedia.org/wiki/Boulder	Q581776	
 fe_27	27	Boulder bank				Rock	natural	bare_rock				
 fe_28	28	Boundary					boundary				Q1307347	
 fe_29	29	Bridge		Piriti		Bridge	man_made	bridge		https://en.wikipedia.org/wiki/Bridge	Q12280	
@@ -34,7 +34,7 @@ fe_32	32	Bush reserve				Bush	leisure	nature_reserve
 fe_33	33	Camp					tourism	camp_site		https://en.wikipedia.org/wiki/Campsite	Q1198413	
 fe_34	34	Camping area					tourism	camp_site		https://en.wikipedia.org/wiki/Campsite	Q27108230	
 fe_35	35	Camping ground					tourism	camp_site		https://en.wikipedia.org/wiki/Campsite	Q27108230	
-fe_36	36	Canal				Canal	waterway	canal		https://en.wikipedia.org/wiki/Canal	Q12284	
+fe_36	36	Canal		Kōawa		Canal	waterway	canal		https://en.wikipedia.org/wiki/Canal	Q12284	
 fe_37	37	Canoe		Waka	32		historic	ship		https://en.wikipedia.org/wiki/Canoe	Q171529	
 fe_38	38	Canoe house		Whare Waka	46	Building	historic	ship				
 fe_39	39	Cape				Cape	natural	cape		https://en.wikipedia.org/wiki/Cape_(geography)	Q185113	
@@ -50,30 +50,30 @@ fe_48	48	Church		Whare karakia	33	Building	building	church	religious	https://en.
 fe_49	49	Church house			35	Building	building	religious	religious			
 fe_50	50	City		Taone		City	place	city		https://en.wikipedia.org/wiki/City	Q515	
 fe_51	51	Cliff	Cliffs	Pari		Cliff	natural	cliff		https://en.wikipedia.org/wiki/Cliff	Q107679	
-fe_52	52	Clinic			43	Building	amenity	clinic	commercial	https://en.wikipedia.org/wiki/Clinic	Q1774898	
+fe_52	52	Clinic		Whare haumanu	43	Building	amenity	clinic	commercial	https://en.wikipedia.org/wiki/Clinic	Q1774898	
 fe_53	53	Clubrooms			45	Building	building					
 fe_54	54	Coast					natural	coastline		https://en.wikipedia.org/wiki/Coast	Q93352	
 fe_55	55	College		Kura	27	Building	amenity	college		https://en.wikipedia.org/wiki/College	Q189004	
-fe_56	56	Colliery					man_made	mineshaft		https://en.wikipedia.org/wiki/Coal_mining	Q959309	
+fe_56	56	Colliery		Huke waro			man_made	mineshaft		https://en.wikipedia.org/wiki/Coal_mining	Q959309	
 fe_57	57	Community				Locality	place	town	residential	https://en.wikipedia.org/wiki/Community	Q486972	
 fe_58	58	Community centre				Building	building		residential	https://en.wikipedia.org/wiki/Community_centre	Q77115	
 fe_59	59	Community house				Building	building		residential		Q53584699	
 fe_60	60	Community marae			20	Building	building		residential	https://en.wikipedia.org/wiki/Marae	Q186685	
 fe_61	61	Computer centre				Building	amenity	internet_cafe	retail			
-fe_62	62	Cone					natural	volcano		https://en.wikipedia.org/wiki/Volcanic_cone	Q1368970	
-fe_63	63	Convent				Building	building	religious	religious	https://en.wikipedia.org/wiki/Convent	Q1128397	
+fe_62	62	Cone		Puia koeko			natural	volcano		https://en.wikipedia.org/wiki/Volcanic_cone	Q1368970	
+fe_63	63	Convent		Whare none		Building	building	religious	religious	https://en.wikipedia.org/wiki/Convent	Q1128397	
 fe_64	64	Corner					highway		highway			
-fe_65	65	Country					place	country		https://en.wikipedia.org/wiki/Country	Q6256	
+fe_65	65	Country		Whenua			place	country		https://en.wikipedia.org/wiki/Country	Q6256	
 fe_66	66	County			2	Locality	place	county		https://en.wikipedia.org/wiki/County	Q28575	
-fe_67	67	Cove				Bay	natural	bay		https://en.wikipedia.org/wiki/Cove	Q31615	
+fe_67	67	Cove		Koko		Bay	natural	bay		https://en.wikipedia.org/wiki/Cove	Q31615	
 fe_68	68	Craft house			49	Building	building		commercial			
 fe_69	69	Crater	Craters			Crater	natural			https://en.wikipedia.org/wiki/Volcanic_crater	Q3240715	
 fe_70	70	Creche				Building	amenity	kindergarten	school	https://en.wikipedia.org/wiki/Child_care	Q364005	
 fe_71	71	Creek	Creeks				waterway	stream		https://en.wikipedia.org/wiki/Creek_(tidal)	Q63565252	
 fe_72	72	Crossing					highway	crossing			Q62059481	
 fe_73	73	Cultural centre			48	Building	building			https://en.wikipedia.org/wiki/Cultural_center	Q1329623	
-fe_74	74	Dam	Dams				waterway	dam	industrial	https://en.wikipedia.org/wiki/Dam	Q12323	
-fe_75	75	Desert				Desert	natural	sand		https://en.wikipedia.org/wiki/Desert	Q8514	
+fe_74	74	Dam	Dams	Pāwai			waterway	dam	industrial	https://en.wikipedia.org/wiki/Dam	Q12323	
+fe_75	75	Desert		Koraha		Desert	natural	sand		https://en.wikipedia.org/wiki/Desert	Q8514	
 fe_76	76	Dining hall		Whare kai	55	Building	building		residential	https://en.wikipedia.org/wiki/Cafeteria	Q661199	
 fe_77	77	Dining room				Building	building		residential	https://en.wikipedia.org/wiki/Dining_room	Q661199	
 fe_78	78	District				District	place	district		https://en.wikipedia.org/wiki/District	Q149621	
@@ -81,21 +81,21 @@ fe_79	79	Divide					natural			https://en.wikipedia.org/wiki/Drainage_divide	Q152
 fe_80	80	Domain					sport	multi	recreation_ground			
 fe_81	81	Downs					natural			https://en.wikipedia.org/wiki/Downland	Q1253315	
 fe_82	82	Entrance					waterway	river				
-fe_83	83	Estuary				Estuary	waterway	river		https://en.wikipedia.org/wiki/Estuary	Q47053	
+fe_83	83	Estuary		Pūahatanga		Estuary	waterway	river		https://en.wikipedia.org/wiki/Estuary	Q47053	
 fe_84	84	Falls					waterway	waterfall		https://en.wikipedia.org/wiki/Waterfall	Q34038	
-fe_85	85	Farm				Building	building	farm	farmyard	https://en.wikipedia.org/wiki/Farm	Q131596	
+fe_85	85	Farm		Whāma		Building	building	farm	farmyard	https://en.wikipedia.org/wiki/Farm	Q131596	
 fe_86	86	Fault					natural			https://en.wikipedia.org/wiki/Fault_(geology)	Q47089	
-fe_87	87	Ferry					historic	ship		https://en.wikipedia.org/wiki/Ferry	Q25653	
+fe_87	87	Ferry		Waka tere			historic	ship		https://en.wikipedia.org/wiki/Ferry	Q25653	
 fe_88	88	Flagpole			58		man_made	flagpole		https://en.wikipedia.org/wiki/Flag#Flagpoles	Q1971570	
 fe_89	89	Flat	Flats		44	Flat	natural			https://en.wikipedia.org/wiki/Flat_(landform)	Q18389975	
 fe_90	90	Floodway					tidal			https://en.wikipedia.org/wiki/Flood_bypass	Q5460060	
 fe_91	91	Folly					natural			https://en.wikipedia.org/wiki/Folly	Q180174	
 fe_92	92	Ford				Ford	ford			https://en.wikipedia.org/wiki/Ford_(crossing)	Q12743	
 fe_93	93	Foreshore					natural	coastline		https://en.wikipedia.org/wiki/Intertidal_zone	Q421069	
-fe_94	94	Forest			3	Forest	natural	wood	forest	https://en.wikipedia.org/wiki/Forest	Q4421	
+fe_94	94	Forest		Wao	3	Forest	natural	wood	forest	https://en.wikipedia.org/wiki/Forest	Q4421	
 fe_95	95	Forest park				Forest	natural	wood	forest			
 fe_96	96	Fork	Forks			Fork	highway					
-fe_97	97	Fort					historic	fort		https://en.wikipedia.org/wiki/Fortification	Q1785071	
+fe_97	97	Fort	Pā				historic	fort		https://en.wikipedia.org/wiki/Fortification	Q1785071	
 fe_98	98	Fortress					historic	fort		https://en.wikipedia.org/wiki/Fortification	Q57831	
 fe_99	99	Freezing works				Building	man_made	works	industrial	https://en.wikipedia.org/wiki/Slaughterhouse	Q385557	
 fe_100	100	Garden	Gardens	Māra			leisure	garden		https://en.wikipedia.org/wiki/Garden	Q1107656	
@@ -104,11 +104,11 @@ fe_102	102	Geothermal station					natural	hot_spring		https://en.wikipedia.org/w
 fe_103	103	Geriatric hospital				Building	amenity	hospital				
 fe_104	104	Geyser					natural	geyser		https://en.wikipedia.org/wiki/Geyser	Q83471	
 fe_105	105	Girls' college				Building	amenity	college				
-fe_106	106	Glacier				Glacier	natural	glacier		https://en.wikipedia.org/wiki/Glacier	Q35666	
+fe_106	106	Glacier		Awa kōpaka		Glacier	natural	glacier		https://en.wikipedia.org/wiki/Glacier	Q35666	
 fe_107	107	Glen					natural	valley		https://en.wikipedia.org/wiki/Glen	Q1976531	
-fe_108	108	Golf course				Recreation	sport	golf	recreation_ground	https://en.wikipedia.org/wiki/Golf_course	Q1048525	
+fe_108	108	Golf course		Papa hahaupōro		Recreation	sport	golf	recreation_ground	https://en.wikipedia.org/wiki/Golf_course	Q1048525	
 fe_109	109	Gong		Pahu			tourism	attraction		https://en.wikipedia.org/wiki/Gong	Q208320	
-fe_110	110	Gorge					natural	valley		https://en.wikipedia.org/wiki/Canyon	Q55462851	
+fe_110	110	Gorge		Awaawa			natural	valley		https://en.wikipedia.org/wiki/Canyon	Q55462851	
 fe_111	111	Greeting					spoken			https://en.wikipedia.org/wiki/Greeting	Q45594	
 fe_112	112	Gulf					natural			https://en.wikipedia.org/wiki/Gulf	Q1322134	
 fe_113	113	Gully					natural			https://en.wikipedia.org/wiki/Gully	Q1361400	
@@ -119,18 +119,18 @@ fe_117	117	Harbour entrance					waterway	dock	harbour
 fe_118	118	Harbour mouth					waterway	dock	harbour			
 fe_119	119	Head	Heads				natural	peninsula		https://en.wikipedia.org/wiki/Headland	Q191992	
 fe_120	120	Headland					natural	peninsula		https://en.wikipedia.org/wiki/Headland	Q191992	
-fe_121	121	High School				Building	amenity	school		https://en.wikipedia.org/wiki/Secondary_school	Q9826	
+fe_121	121	High School		Haikura		Building	amenity	school		https://en.wikipedia.org/wiki/Secondary_school	Q9826	
 fe_122	122	Hill	Hills			Hill	natural	peak		https://en.wikipedia.org/wiki/Hill	Q54050	
 fe_123	123	Home				Building	building			https://en.wikipedia.org/wiki/Home	Q7743	
 fe_124	124	Hospice				Building	amenity			https://en.wikipedia.org/wiki/Hospice	Q608152	
 fe_125	125	Hospital				Building	amenity	hospital		https://en.wikipedia.org/wiki/Hospital	Q16917	
-fe_126	126	Hostel			40	Building	tourism	hostel		https://en.wikipedia.org/wiki/Hostel	Q654772	
+fe_126	126	Hostel		Wharenoho	40	Building	tourism	hostel		https://en.wikipedia.org/wiki/Hostel	Q654772	
 fe_127	127	Hot pool	Hot pools				natural	hot_spring				
 fe_128	128	Hot spring	Hot springs				natural	hot_spring		https://en.wikipedia.org/wiki/Hot_spring	Q177380	
 fe_129	129	House			28	Building	building		residential	https://en.wikipedia.org/wiki/House	Q3947	
 fe_130	130	Hydro station				Building	power	plant		https://en.wikipedia.org/wiki/Hydroelectricity	Q15911738	
 fe_131	131	IHC school				Building	amenity	school				
-fe_132	132	Inlet					waterway	river		https://en.wikipedia.org/wiki/Inlet	Q1172599	
+fe_132	132	Inlet		Koko			waterway	river		https://en.wikipedia.org/wiki/Inlet	Q1172599	
 fe_133	133	Intro					spoken			https://en.wikipedia.org/wiki/Introduction_(writing)	Q305178	
 fe_134	134	Island	Islands	Motu	5	Island	place	island		https://en.wikipedia.org/wiki/Island	Q23442	
 fe_135	135	Islet				Island	place	islet		https://en.wikipedia.org/wiki/Islet	Q207524	
@@ -139,10 +139,10 @@ fe_137	137	Junction			11		highway			https://en.wikipedia.org/wiki/Road_junction	
 fe_138	138			Kāika			place		residential			
 fe_139	139	Kaumātua flats			29	Building	building	residential	residential	https://en.wikipedia.org/wiki/Retirement_home	Q22908	
 fe_140	140	Agathis australis		Kauri			natural	tree		https://en.wikipedia.org/wiki/Agathis	Q955413	
-fe_141	141	Kitchen			56	Building	amenity	kitchen		https://en.wikipedia.org/wiki/Kitchen	Q43164	
+fe_141	141	Kitchen		Kīhini	56	Building	amenity	kitchen		https://en.wikipedia.org/wiki/Kitchen	Q43164	
 fe_142	142			Kōhanga reo	25	Building	amenity	school		https://en.wikipedia.org/wiki/M%C4%81ori_language_revival	Q493511	
 fe_143	143	Kōkiri centre			24	Building	amenity					
-fe_144	144	Kumera god					tourism	attraction				
+fe_144	144	Kumara god					tourism	attraction				
 fe_145	145	Lagoon				Lake	natural	water		https://en.wikipedia.org/wiki/Lagoon	Q187223	
 fe_146	146	Lagoon outlet					natural	water				
 fe_147	147	Lake	Lakes			Lake	natural	water		https://en.wikipedia.org/wiki/Lake	Q23397	

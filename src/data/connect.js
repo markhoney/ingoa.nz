@@ -72,11 +72,11 @@ function createNamesPlaces() {
 function addPrePost() {
 	['island', 'part', 'zone'].forEach(collection => {
 		db[collection].forEach(record => {
-			const bookmarks = db.name.filter(name => name._id.startsWith('na_pn_' + record._id + '-')).filter(name => name.spoken).map(name => name.spoken).sort((a, b) => a.start - b.start);
-			bookmarks.forEach((spoken, index) => {
-				if (!spoken.pre) {
-					spoken.pre = parseFloat((index <= 0 ? '0' : ((bookmarks[index - 1].end + spoken.start) / 2).toFixed(2)));
-					spoken.post = parseFloat((index >= bookmarks.length - 1 ? '999' : ((spoken.end + bookmarks[index + 1].start) / 2).toFixed(2)));
+			const bookmarks = db.name.filter(name => name._id.startsWith('na_pn_' + record._id + '-')).filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
+			bookmarks.forEach((name, index) => {
+				if (!name.spoken.pre) {
+					name.spoken.pre = parseFloat((index <= 0 ? '0' : ((bookmarks[index - 1].spoken.end + name.spoken.start) / 2).toFixed(2)));
+					name.spoken.post = parseFloat((index >= bookmarks.length - 1 ? '999' : ((name.spoken.end + bookmarks[index + 1].spoken.start) / 2).toFixed(2)));
 				}
 			});
 		});

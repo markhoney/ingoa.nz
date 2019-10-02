@@ -154,7 +154,7 @@
 				},
 				update: response => response.placenames,
 				variables() {
-					return { 
+					return {
 						field: this.field,
 						value: this.value,
 					};

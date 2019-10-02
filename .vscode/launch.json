@@ -4,45 +4,43 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "server:apollo",
-			"args": ["${workspaceFolder}/src/server/apollo/index.js --watch ${workspaceFolder}/src/server/apollo --watch ${workspaceFolder}/src/server/db --ext js,graphql"],
-			"osx": {
-				"program": "${workspaceFolder}/node_modules/.bin/nodemon"
-			},
-			"linux": {
-				"program": "${workspaceFolder}/node_modules/.bin/nodemon"
-			},
-			"windows": {
-				"program": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js"
-			}
+			"name": "apollo",
+			"runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
+			"program": "${workspaceFolder}/src/server/apollo/index.js",
+			"args": ["--watch", "${workspaceFolder}/src/server/apollo", "--watch", "${workspaceFolder}/src/server/db", "--ext", "js,graphql"],
+			"restart": true,
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
 		},
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "server:nuxt",
-			"args": ["dev"],
-			"osx": {
-				"program": "${workspaceFolder}/node_modules/.bin/nuxt"
-			},
-			"linux": {
-				"program": "${workspaceFolder}/node_modules/.bin/nuxt"
-			},
-			"windows": {
-				"program": "${workspaceFolder}/node_modules/nuxt/bin/nuxt.js"
-			}
+			"name": "apollo_old",
+			"program": "${workspaceFolder}/src/server/apollo/index.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "nuxt",
+			"program": "${workspaceFolder}/node_modules/nuxt/bin/nuxt.js",
+			"args": ["dev"]
 		},
 		{
 			"type": "chrome",
 			"request": "launch",
-			"name": "client:chrome",
+			"name": "chrome",
 			"url": "http://localhost:3000",
 			"webRoot": "${workspaceFolder}"
 		}
 	],
 	"compounds": [
 		{
-			"name": "fullstack:nuxt",
-			"configurations": ["server:apollo", "server:nuxt", "client:chrome"]
+			"name": "server",
+			"configurations": ["apollo", "nuxt"]
+		},
+		{
+			"name": "all",
+			"configurations": ["apollo", "nuxt", "chrome"]
 		}
 	]
 }

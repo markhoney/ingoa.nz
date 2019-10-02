@@ -1,0 +1,6 @@
+#import "./islandCard.gql"
+{
+	islands {
+		...islandCard
+	}
+}

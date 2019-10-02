@@ -70,6 +70,7 @@ module.exports = {
 
 	modules: [
 		'@bazzite/nuxt-optimized-images',
+		'@nuxtjs/amp',
 		'@nuxtjs/apollo',
 		'@nuxtjs/dotenv',
 		'@nuxtjs/pwa',

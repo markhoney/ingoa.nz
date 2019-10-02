@@ -1,6 +1,6 @@
 <template>
 	<v-card>
-		<v-img :src="require(`@/assets${image}`)" class="white--text" height="150px">
+		<v-img :src="require(`@/assets${image}`)" class="grey darken-3 white--text" height="150px">
 			<v-card-title class="fill-height align-end">
 				<v-layout row wrap my-5>
 					<v-flex>

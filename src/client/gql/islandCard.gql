@@ -1,4 +1,4 @@
-{
+fragment islandCard on island {
 	_id
 	slug {
 		en

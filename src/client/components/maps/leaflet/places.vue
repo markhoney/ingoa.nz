@@ -1,6 +1,6 @@
 <template>
 	<div id="map-wrap" style="height: 80vh; width: 100%;">
-		<no-ssr>
+		<client-only>
 			<l-map :bounds="bounds" style="z-index: 0;"><!-- :maxBounds="[[-34.45, 166.51], [-46.64, 178.52]]" -->
 				<l-control-layers position="topright" />
 				<l-tile-layer name="Streets" url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
@@ -19,7 +19,7 @@
 					</l-popup>
 				</l-marker>
 			</l-map>
-		</no-ssr>
+		</client-only>
 	</div>
 </template>
 
