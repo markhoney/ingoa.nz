@@ -35,7 +35,67 @@ Nuxt is used with i18n (Internationalisation) support, allowing the site to be o
 
 The Apollo client handles caching of frontend data, and GraphQL data is used for each page to dynamically register locale URLs.
 
-### metrics
+#### Loading indicator
+
+Apollo's `watchLoading` method is used wherever data is requested from GraphQL to increment and decrement a loading variable in VueX:
+
+```javascript
+watchLoading (isLoading, countModifier) {
+  this.$store.commit('loading', countModifier);
+},
+```
+
+This is used to display a loading overlay in the frontend:
+
+```html
+<template>
+	<v-dialog v-model="dialog" fullscreen transition="">
+		<v-container fluid fill-height style="background-color: rgba(255, 255, 255, 0.5);">
+			<v-layout justify-center align-center>
+				<v-progress-circular indeterminate color="primary" />
+			</v-layout>
+		</v-container>
+	</v-dialog>
+</template>
+
+<script>
+	export default {
+		computed: {
+			loading: function() {
+				return this.$store.state.loading;
+			},
+			dialog: function() {
+				return (this.loading > 0 ? true : false);
+			},
+		},
+	};
+</script>
+```
+
+#### Dynamic component data
+
+A base set of re-usable components have been made in ```src/client/components/base```, and these are used by the components in ```src/client/components``` to display tiles containing data. Data components have been created to allow them to be used either with a GraphQL query property, in which case the component will fetch the data itself, or with a data property, which will pass the data to the component. This allows for a flexible approach, where a component can be fed the data it needs if the parent component already has the data, or retrieve the data if the parent does not have the required data. This approach allows the frontend to minimise the number of GraphQL database calls.
+
+The components use Apollo's skip method to skip the data query if the data prop of the component has been filled:
+
+```javascript
+skip() {
+  return (this.data ? true : false);
+},
+```
+
+If no data prop has been supplied, the component uses the `field` and `value` props to query GraphQL:
+
+```javascript
+variables() {
+  return {
+    field: this.field,
+    value: this.value,
+  };
+},
+```
+
+### Monitoring
 
 Metrics are provided when Nuxt is running in development mode via AppMetrics.
 
