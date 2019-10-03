@@ -56,6 +56,12 @@ A final data editing step is run whenever GraphQL is launched, and this step con
 
 The GraphQL script `src/server/apollo/index.js` first loads the source data into memory with the script `src/server/db/memory.js`. Then it launches the Apollo GraphQL server on port 4000.
 
+#### Apollo Playground
+
+The Apollo Playground is a useful GraphQL querying tool which is launched with Apollo in development mode:
+
+![Apollo Playground](documentation/playground.jpg)
+
 ### Nuxt
 
 Nuxt is used with i18n (Internationalisation) support, allowing the site to be offered in both English and Māori.
@@ -124,7 +130,9 @@ variables() {
 
 ### Monitoring
 
-Metrics are provided when Nuxt is running in development mode via AppMetrics.
+Metrics are provided when Nuxt is running in development mode via [AppMetrics](https://developer.ibm.com/node/monitoring-post-mortem/application-metrics-node-js/).
+
+![AppMetrics](documentation/metrics.jpg)
 
 ## Launching
 
