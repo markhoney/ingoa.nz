@@ -1,4 +1,4 @@
-//if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
+if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
 
 const pkg = require('./package');
 

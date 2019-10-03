@@ -9,7 +9,6 @@
 		"prep:tools": "npm install --global --production windows-build-tools",
 		"prep:data:import": "node src/data/import.js",
 		"prep:data:connect": "node src/data/connect.js",
-		"prep:data:nedb": "node src/data/import.js nedb",
 		"prep:audio": "node src/data/splitaudio.js",
 		"prep:nominatim": "docker start nominatim",
 		"prep:nominatim:stop": "docker stop nominatim",
