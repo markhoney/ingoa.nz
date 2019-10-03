@@ -8,9 +8,9 @@ The dataset for this dictionary details names, places, locations, groups, featur
 
 All data for this project was collated by Hugh Young and originally made available in a series of three audio recordings with accompanying booklets.
 
-The audio recordings have been digitised as MP3, with Audacity's noise reduction filter run on them to reduce background noise.
+![Booklet](src/client/assets/img/part/lower_north_island-front.jpg)
 
-Geographical location data for some of the places has been gleaned from the LINZ New Zealand [Gazetteer of place names](https://www.linz.govt.nz/regulatory/place-names/find-place-name/new-zealand-gazetteer-place-names).
+The audio recordings have been digitised as MP3, with Audacity's noise reduction filter run on them to reduce background noise.
 
 ## Technology
 
@@ -28,7 +28,7 @@ Import of the data from a set of TSV files is done via the JavaScript file `src/
 
 Once the data has been imported into a set of JSON files, a second script - `src/data/connect.js` is run to make connections between different parts of the data set, and pull in external data. None of these connections link base tables together, so as to avoid circular structures and doubling up of data. Once the data has been updated, it's saved back to the same set of JSON files.
 
-This script has dependencies, such as [Wikipedia](https://www.wikipedia.org), [WikiData](https://www.wikidata.org/), [Nominatim](https://nominatim.openstreetmap.org/) and [Maori Maps](https://maorimaps.com/), and caches files as it goes to avoid spamming these services.
+This script has dependencies, such as [Wikipedia](https://www.wikipedia.org), [WikiData](https://www.wikidata.org/), [Nominatim](https://nominatim.openstreetmap.org/), [Maori Maps](https://maorimaps.com/) and LINZ New Zealand's [Gazetteer of place names](https://www.linz.govt.nz/regulatory/place-names/find-place-name/new-zealand-gazetteer-place-names), and caches files as it goes to avoid spamming these services.
 
 #### Nominatim
 
@@ -58,7 +58,7 @@ The GraphQL script `src/server/apollo/index.js` first loads the source data into
 
 #### Apollo Playground
 
-The Apollo Playground is a useful GraphQL querying tool which is launched with Apollo in development mode:
+The Apollo Playground is a useful GraphQL querying tool which is launched with Apollo in development mode, and can be accessed at [http://localhost:4000/graphql](http://localhost:4000/graphql):
 
 ![Apollo Playground](documentation/playground.jpg)
 
