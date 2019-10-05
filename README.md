@@ -28,7 +28,7 @@ Import of the data from a set of TSV files is done via the JavaScript file `src/
 
 Once the data has been imported into a set of JSON files, a second script - `src/data/connect.js` is run to make connections between different parts of the data set, and pull in external data. None of these connections link base tables together, so as to avoid circular structures and doubling up of data. Once the data has been updated, it's saved back to the same set of JSON files.
 
-This script has dependencies, such as [Wikipedia](https://www.wikipedia.org), [WikiData](https://www.wikidata.org/), [Nominatim](https://nominatim.openstreetmap.org/), [Maori Maps](https://maorimaps.com/) and LINZ New Zealand's [Gazetteer of place names](https://www.linz.govt.nz/regulatory/place-names/find-place-name/new-zealand-gazetteer-place-names), and caches files as it goes to avoid spamming these services.
+This script has dependencies from which it downloads data, such as [Wikipedia](https://www.wikipedia.org), [WikiData](https://www.wikidata.org/), [Nominatim](https://nominatim.openstreetmap.org/), [Maori Maps](https://maorimaps.com/) and LINZ New Zealand's [Gazetteer of place names](https://www.linz.govt.nz/regulatory/place-names/find-place-name/new-zealand-gazetteer-place-names), and caches files as it goes to avoid spamming these services.
 
 #### Nominatim
 
@@ -134,10 +134,6 @@ Metrics are provided when Nuxt is running in development mode via [AppMetrics](h
 
 ![AppMetrics](documentation/metrics.jpg)
 
-## Launching
-
-The site can be run in development (`yarn dev`) or production modes, with production options for both dynamically generated (`yarn prod`) and statically generated (`yarn static`) sites. [Docker](https://www.docker.com/) container creation is supported for both the dynamic (`yarn docker:dynamic`) and static (`yarn docker:static`) production sites, using [Caddy](https://caddyserver.com/) as a proxy for the Nuxt and Apollo services.
-
 ## Directory Structure
 
 The most important folders used by this project are:
@@ -162,6 +158,10 @@ The most important folders used by this project are:
     - **db** - _Processed data files_
       - **json** - _DB collection files_
     - **rest** - _Scripts for running a REST API_
+
+## Launching
+
+The site can be run in development (`yarn dev`) or production modes, with production options for both dynamically generated (`yarn prod`) and statically generated (`yarn static`) sites. [Docker](https://www.docker.com/) container creation is supported for both the dynamic (`yarn docker:dynamic`) and static (`yarn docker:static`) production sites, using [Caddy](https://caddyserver.com/) as a proxy for the Nuxt and Apollo services.
 
 ## Commands
 
