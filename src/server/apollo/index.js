@@ -1,5 +1,5 @@
 const consola = require('consola');
-if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
+//if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
 process.title = "apollo";
 const {ApolloServer} = require('apollo-server');
 const {importSchema} = require('graphql-import');

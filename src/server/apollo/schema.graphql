@@ -257,6 +257,7 @@ type region {
 	map: map
 	previous: region
 	next: region
+	districts: [district]
 	zones: [zone]
 	metric: metric
 	links: links
@@ -284,6 +285,7 @@ type district {
 	name: name
 	seat: String
 	island: island
+	region: region
 	zones: [zone]
 	previous: district
 	next: district
@@ -431,7 +433,9 @@ type total {
 	island: Int
 	part: Int
 	map: Int
+	district: Int
 	region: Int
+	sector: Int
 	zone: Int
 	speaker: Int
 	group: Int
@@ -440,7 +444,6 @@ type total {
 	placename: Int
 	place: Int
 	name: Int
-	district: Int
 }
 
 input pagination {

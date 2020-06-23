@@ -5,6 +5,8 @@ const csv = require('csv');
 const stream = require('stream');
 const JSONStream = require('JSONStream');
 const utils = require('../server/db/utils');
+const {google} = require('googleapis');
+const {Readable} = require('stream');
 
 const sourcepath = path.join(__dirname, 'source');
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
@@ -14,6 +16,22 @@ const wikidataURL = 'https://www.wikidata.org/wiki/';
 if (!fs.existsSync(jsonpath)) {
 	fs.mkdirSync(jsonpath, 744);
 }
+
+async function getSheet(name) {
+	if (!this.sheets) {
+		this.sheets = google.sheets({
+			version: 'v4',
+			auth: process.env.GoogleAPIKey,
+		});
+	}
+	const sheet = await this.sheets.spreadsheets.values.get({
+		spreadsheetId: process.env.GoogleSheetID,
+		range: name + '!A1:ZZ10000',
+	});
+	const titles = sheet.data.values.shift();
+	return sheet.data.values.map((row) => titles.reduce((rows, title, index) => ({...rows, [title.toLowerCase()]: row[index]}), {}));
+}
+
 
 const dbStream = table => {
 	return new stream.Writable({
@@ -56,6 +74,7 @@ function importIslands() {
 		}
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
 				mi: utils.createCode(input.TeReo || input.Name),
@@ -125,6 +144,7 @@ function importParts() {
 		audioSize = fs.statSync('src/client/static' + audioLocation).size;
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			number: parseInt(input.Number),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
@@ -200,6 +220,7 @@ function importMaps() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
 				mi: utils.createCode(input.TeReo || input.Name),
@@ -246,6 +267,7 @@ function importRegions() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
 				mi: utils.createCode(input.TeReo || input.Name),
@@ -286,6 +308,7 @@ function importSectors() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
 				mi: utils.createCode(input.TeReo || input.Name),
@@ -322,6 +345,7 @@ function importDistricts() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
 				mi: utils.createCode(input.TeReo || input.Name),
@@ -370,6 +394,7 @@ function importZones() {
 		const audioSize = fs.statSync('src/client/static' + audioLocation).size;
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			number: parseInt(input.Number),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
@@ -463,6 +488,7 @@ function importSpeakers() {
 		if (input.FirstName) {
 			const output = {
 				_id: input.ID,
+				//index: parseInt(input.Number - 1),
 				slug: {
 					en: utils.createCode(input.PreferredName),
 					mi: utils.createCode(input.PreferredName),
@@ -525,6 +551,7 @@ function importFeatures() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
 				mi: utils.createCode(input.TeReo || input.Name),
@@ -570,6 +597,7 @@ function importGroups() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			zone_id: input.ZoneID,
 			slug: {
 				en: utils.createCode(input.Name || input.TeReo),
@@ -610,6 +638,7 @@ function importTribes() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.Name),
 				mi: utils.createCode(input.Name),
@@ -645,6 +674,8 @@ function importPlacenames() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number),
+			number: parseInt(input.Number),
 			slug: {
 				en: utils.createCode(input.IndexName_1),
 				mi: utils.createCode(input.IndexName_1),
@@ -652,7 +683,6 @@ function importPlacenames() {
 			zone_id: input.ZoneID,
 			part_id: input.PartID,
 			island_id: input.IslandID,
-			number: parseInt(input.Number),
 			featured: input.Featured ? true : null,
 			names: [],
 			places: [],
@@ -783,6 +813,7 @@ function importMeanings() {
 	const transformCSVtoObject = csv.transform(function(input, callback) {
 		const output = {
 			_id: input.ID,
+			//index: parseInt(input.Number - 1),
 			slug: {
 				en: utils.createCode(input.CleanedName),
 				mi: utils.createCode(input.CleanedName),

@@ -10,9 +10,13 @@ const db = ['island', 'part', 'map', 'region', 'sector', 'district', 'zone', 'sp
 			if (a[i] != b[i]) return a[i] - b[i];
 		}
 	});
+	db[collection].forEach((record, index) => {
+		record.index = index;
+	});
 	return db;
 }, {});
 
+/*
 db.island.forEach((island, index) => {
 	island.previous = db.island[index - 1];
 	if (!island.previous) delete island.previous;
@@ -213,6 +217,7 @@ db.zone.forEach((zone, index) => {
 	});
 });
 //delete db.name;
+*/
 
 const mi = require('../../client/locales/mi.json');
 db.search = {en: [], mi: []};
@@ -288,9 +293,9 @@ db.search.en = db.search.en.concat(Object.values(placenames.en));
 db.search.mi = db.search.mi.concat(Object.values(placenames.mi));
 
 db.total = {};
-['island', 'part', 'map', 'region', 'sector', 'district', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'place', 'name'].forEach(collection => {
+/*['island', 'part', 'map', 'region', 'sector', 'district', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'place', 'name'].forEach(collection => {
 	//db[collection] = db[collection].sort((a, b) => a._id - b._id);
 	db.total[collection] = db[collection].length;
-});
+});*/
 
 module.exports = db;
