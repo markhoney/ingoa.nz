@@ -141,6 +141,6 @@
 		"nuxt-memwatch": "^0.1.2",
 		"purgecss-webpack-plugin": "^2.2.0",
 		"rimraf": "^3.0.0",
-		"tar": "^6.0.2"
+		"tar": "^6.1.2"
 	}
 }
