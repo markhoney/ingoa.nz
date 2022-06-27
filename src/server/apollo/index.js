@@ -1,5 +1,5 @@
 const consola = require('consola');
-//if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
+//if (process.env.NODE_ENV !== 'production') require('appmetrics-dash').attach({url: '/metrics', console: consola, title: 'GraphQL'});
 process.title = "apollo";
 const {ApolloServer} = require('apollo-server');
 const {importSchema} = require('graphql-import');
@@ -17,7 +17,7 @@ const server = new ApolloServer({
 	resolvers,
 	tracing: process.env.dev,
 	//engine: (process.env.dev ? {apiKey: process.env.APOLLO_ENGINE_KEY} : null)
-	engine: (process.env.NODE_ENV == 'production' ? null : {apiKey: process.env.APOLLO_ENGINE_KEY})
+	engine: (process.env.NODE_ENV === 'production' ? null : {apiKey: process.env.APOLLO_ENGINE_KEY})
 });
 
 server.listen().then(({url}) => {
