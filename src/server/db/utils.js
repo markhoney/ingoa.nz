@@ -100,12 +100,12 @@ exports.longVowelMacrons = function(name) {
 
 exports.double = function(name) {
 	const nomacrons = exports.longVowelMacrons(name);
-	if (nomacrons != name) return nomacrons;
+	if (nomacrons !== name) return nomacrons;
 };
 
 exports.ascii = function(name) {
 	const nomacrons = exports.removeMacrons(name);
-	if (nomacrons != name) return nomacrons;
+	if (nomacrons !== name) return nomacrons;
 };
 
 exports.simplify = function(name) {
