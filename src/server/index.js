@@ -26,8 +26,8 @@ const {useSofa, OpenAPI} = require('sofa-api'); // @hofstadter-io/
 
 const apolloServer = new ApolloServer({
 	schema,
-	tracing: process.env.NODE_ENV != 'production',
-	//engine: (process.env.NODE_ENV != 'production' ? {apiKey: process.env.APOLLO_ENGINE_KEY} : null),
+	tracing: process.env.NODE_ENV !== 'production',
+	//engine: (process.env.NODE_ENV !== 'production' ? {apiKey: process.env.APOLLO_ENGINE_KEY} : null),
 });
 
 
@@ -40,7 +40,7 @@ const openAPI = OpenAPI({
 });
 
 const app = express();
-// if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: metrics, title: 'API'});
+// if (process.env.NODE_ENV !== 'production') require('appmetrics-dash').attach({url: metrics, title: 'API'});
 apolloServer.applyMiddleware({app});
 app.get('/', (req, res) => res.send(path));
 app.use('/api', useSofa({
@@ -57,5 +57,5 @@ app.use('/api', swaggerUi.serve, swaggerUi.setup(openAPI.get(), {layout: "Standa
 app.listen({port: port}, () => {
 	console.log(`GraphQL Server ready at http://localhost:${port}${path.GraphQL}`);
 	console.log(`REST Server ready at http://localhost:${port}${path.REST}`);
-	if (process.env.NODE_ENV != 'production') console.log(`Metrics ready at http://localhost:${port}${metrics}`);
+	if (process.env.NODE_ENV !== 'production') console.log(`Metrics ready at http://localhost:${port}${metrics}`);
 });
