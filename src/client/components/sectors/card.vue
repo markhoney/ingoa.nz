@@ -1,7 +1,7 @@
 <template>
 	<v-card v-if="sector">
 		<nuxt-link :to="localePath({name: 'sector-sector', params: {sector: localeCurrent(sector.slug)}})" style="text-decoration: none;">
-			<v-img :src="require(`@/assets${sector.images.landscape}`)" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
+			<v-img :src="require(`~/assets${sector.images.landscape}`)" height="160" class="white--text" style="padding: 20px; filter: grayscale(50%);" alt="">
 				<!--<h2 class="display-1 mb-0" style="clear: both;">{{localeCurrent(sector.name.locale)}}</h2>
 				<h3 class="mb-1 headline">{{localeOther(sector.name.locale, '&nbsp;')}}</h3>-->
 				<!--<h2 class="display-3 mb-0">{{$tc('sector', 1) | initialcase}}</h2>-->

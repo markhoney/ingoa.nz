@@ -31,7 +31,7 @@ module.exports = {
 		{path: '/graphql', handler: '../server/apollo/middleware.js'},
 	],*/
 	/*css: [
-		'@/assets/style/app.styl'
+		'~/assets/style/app.styl'
 	],*/
 	loading: {color: '#f00'},
 

@@ -4,13 +4,13 @@
 		<drawer />
 		<toolbar />
 		<!--<progressbar />-->
-		<v-content>
+		<v-main>
 			<v-container fill-height>
 				<v-layout justify-center>
 					<router-view />
 				</v-layout>
 			</v-container>
-		</v-content>
+		</v-main>
 		<mainfooter />
 	</v-app>
 </template>

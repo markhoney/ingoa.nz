@@ -2,9 +2,9 @@
 	<section v-if="zone">
 		<imageheader :image="zone.images.landscape" :title="zone.name.locale" :right="caseInitial($tc('zone', 1)) + ' ' + zone.number" />
 		<wikipedia v-if="zone.notes && zone.notes.wikipedia" :text="localeCurrent(zone.notes.wikipedia)" :link="localeCurrent(zone.areas[0].links.wikipedia)" source="Wikipedia" />
+		<!--<mapplaces field="zone._id" :value="zone._id" />-->
 		<player :file="zone.audio.file" field="zone._id" :value="zone._id" />
-		<mapplaces field="zone._id" :value="zone._id" />
-		<h3>{{$tc('speaker', 2) | initialcase}}</h3>
+		<h3 class="headline">{{$tc('speaker', 2) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
 				<template v-for="speaker in zone.speakers.filter(speaker => speaker._id != 'sp_37')">

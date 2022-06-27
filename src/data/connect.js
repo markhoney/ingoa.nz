@@ -22,6 +22,7 @@ function getSpeakers(placenames) {
 }
 
 function linkImages() {
+	let total = 0;
 	[
 		{name: 'island', images: ['banner.png', 'landscape.png', 'portrait.png']},
 		{name: 'part', images: ['front.jpg']},
@@ -40,28 +41,38 @@ function linkImages() {
 				record.images = {};
 				collection.images.forEach(image => {
 					const imagepath = ['img', collection.name, record.slug.en + '-' + image];
-					if (fs.existsSync(path.join(__dirname, '..', 'client', 'static', ...imagepath))) {
+					if (fs.existsSync(path.join(__dirname, '..', 'client', 'assets', ...imagepath))) {
+						total++;
 						record.images[image.split('.')[0]] = '/' + imagepath.join("/");
 					}
 				});
 			}
 		});
 	});
+	console.log(total);
 }
 
 function addPlacenameIDs() {
+	let total = 0;
 	db.placename.forEach(placename => {
 		if (placename.places) {
 			placename.places.forEach(place => {
 				//if (!place.zone_id) place.zone_id = placename.zone_id;
-				if (!place.placename_id) place.placename_id = placename._id;
+				if (!place.placename_id) {
+					total++;
+					place.placename_id = placename._id;
+				}
 			});
 		}
 		placename.names.forEach(name => {
 			//if (!name.zone_id) name.zone_id = placename.zone_id;
-			if (!name.placename_id) name.placename_id = placename._id;
+			if (!name.placename_id) {
+				total++;
+				name.placename_id = placename._id;
+			}
 		});
 	});
+	console.log(total);
 }
 
 function createNamesPlaces() {
@@ -70,45 +81,57 @@ function createNamesPlaces() {
 }
 
 function addPrePost() {
+	let total = 0;
 	['island', 'part', 'zone'].forEach(collection => {
 		db[collection].forEach(record => {
 			const bookmarks = db.name.filter(name => name._id.startsWith('na_pn_' + record._id + '-')).filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
 			bookmarks.forEach((name, index) => {
 				if (!name.spoken.pre) {
+					total++;
 					name.spoken.pre = parseFloat((index <= 0 ? '0' : ((bookmarks[index - 1].spoken.end + name.spoken.start) / 2).toFixed(2)));
 					name.spoken.post = parseFloat((index >= bookmarks.length - 1 ? '999' : ((name.spoken.end + bookmarks[index + 1].spoken.start) / 2).toFixed(2)));
 				}
 			});
 		});
 	});
+	console.log(total);
 }
 
 function addSpeakers() {
+	let total = 0;
 	db.island.forEach(island => {
 		if (!island.speaker_ids) {
+			total++;
 			speakers = getSpeakers(db.placename.filter(placename => placename.island_id == island._id));
 			island.speaker_ids = speakers.map(speaker => speaker._id);
 		}
 	});
-
+	console.log(total);
+	total = 0;
 	db.part.forEach(part => {
 		if (!part.speaker_ids) {
+			total++;
 			speakers = getSpeakers(db.placename.filter(placename => placename.part_id == part._id));
 			part.speaker_ids = speakers.map(speaker => speaker._id);
 		}
 	});
-
+	console.log(total);
+	total = 0;
 	db.zone.forEach(zone => {
 		if (!zone.speaker_ids) {
+			total++;
 			speakers = getSpeakers(db.placename.filter(placename => placename.zone_id == zone._id));
 			zone.speaker_ids = speakers.map(speaker => speaker._id);
 		}
 	});
+	console.log(total);
 }
 
 function addPlacenameAudio() {
+	let total = 0;
 	db.name.forEach(name => {
 		if (name.spoken) {
+			total++;
 			audioLocation = '/audio/placename/' + name._id + '.mp3';
 			name.spoken.audio = {
 				file: audioLocation,
@@ -117,9 +140,11 @@ function addPlacenameAudio() {
 			};
 		}
 	});
+	console.log(total);
 }
 
 function addSimilarIdentical() {
+	let total = 0;
 	const similarspath = path.join(__dirname, '..', '..', 'cache', 'similar.json');
 	let similars = {};
 	if (fs.existsSync(similarspath)) {
@@ -134,6 +159,7 @@ function addSimilarIdentical() {
 			if (similars[name._id]) {
 				name.similar_ids = similars[name._id];
 			} else {
+				total++;
 				const similar = db.name.filter(myname => myname.locale.mi != name.locale.mi).sort((a, b) => levenshtein(name.locale.mi, a.name.locale.mi) - levenshtein(name.locale.mi, b.name.locale.mi)).slice(0, 8);
 				name.similar_ids = similar.map(name => name._id);
 				similars[name._id] = name.similar_ids;
@@ -141,6 +167,7 @@ function addSimilarIdentical() {
 		}
 	}//);
 	fs.writeFileSync(similarspath, JSON.stringify(similars, null, '\t'));
+	console.log(total);
 }
 
 function addMeanings() {
@@ -150,7 +177,7 @@ function addMeanings() {
 			const meaning = db.meaning.find(meaning => meaning.name.locale.mi == name.locale.mi || (name.alt && name.alt.mi && meaning.name.locale.mi == name.alt.mi.ascii) || (name.alt && name.alt.mi && meaning.name.locale.mi == name.alt.mi.double));
 			if (meaning) {
 				name.meaning_id = meaning._id;
-				total += 1;
+				total++;
 			}
 		}
 	});
@@ -194,14 +221,14 @@ async function addNominatimLocations() {
 								placenames.forEach(placename => {
 									placename.score = 0;
 									if (placename.class == feature.category.osm.class) {
-										placename.score += 1;
-										if (placename.type == feature.category.osm.type) placename.score += 1;
+										placename.score++;
+										if (placename.type == feature.category.osm.type) placename.score++;
 									}
 									if (placename.class == "landuse" && placename.type == feature.category.osm.landuse) placename.score += 2;
 									const name = utils.simplify(placename.display_name.split(",")[0]);
 									if (name == utils.simplify(place.name.locale.en)) placename.score += 1;
-									if (name == utils.simplify(place.name.locale.en + feature.name.locale.en)) placename.score += 1;
-									if (name == utils.simplify(place.name.locale.en + feature.name.locale.mi)) placename.score += 1;
+									if (name == utils.simplify(place.name.locale.en + feature.name.locale.en)) placename.score++;
+									if (name == utils.simplify(place.name.locale.en + feature.name.locale.mi)) placename.score++;
 								});
 								placenames = placenames.sort((a, b) => a.score > b.score);
 								const foundplace = placenames[0];
@@ -217,7 +244,7 @@ async function addNominatimLocations() {
 									wikidata: (foundplace.extratags.wikidata ? "https://www.wikidata.org/wiki/" + foundplace.extratags.wikidata : null),
 									website: foundplace.extratags.website,
 								};
-								total += 1;
+								total++;
 							}
 						}
 					}
@@ -246,7 +273,7 @@ function addGazetteerLocations() {
 					if (placenames.length) {
 						placenames.forEach(placename => {
 							placename.score = 0;
-							if (placename.feature == feature.category.gazetteer) placename.score += 1;
+							if (placename.feature == feature.category.gazetteer) placename.score++;
 						});
 						placenames = placenames.sort((a, b) => a.score > b.score);
 						const foundplace = placenames[0];
@@ -254,7 +281,7 @@ function addGazetteerLocations() {
 						place.location = place.location || {};
 						place.location.source = "gazetteer";
 						place.location.position = foundplace.position;
-						total += 1;
+						total++;
 					}
 				}
 			});

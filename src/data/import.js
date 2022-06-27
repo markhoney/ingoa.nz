@@ -1,3 +1,4 @@
+require('dotenv').config();
 require('events').EventEmitter.prototype._maxListeners = 20;
 const fs = require('fs');
 const path = require('path');
@@ -6,7 +7,6 @@ const stream = require('stream');
 const JSONStream = require('JSONStream');
 const utils = require('../server/db/utils');
 const {google} = require('googleapis');
-const {Readable} = require('stream');
 
 const sourcepath = path.join(__dirname, 'source');
 const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
@@ -26,42 +26,23 @@ async function getSheet(name) {
 	}
 	const sheet = await this.sheets.spreadsheets.values.get({
 		spreadsheetId: process.env.GoogleSheetID,
-		range: name + '!A1:ZZ10000',
+		range: name + '!A1:ZZ100000',
 	});
 	const titles = sheet.data.values.shift();
-	return sheet.data.values.map((row) => titles.reduce((rows, title, index) => ({...rows, [title.toLowerCase()]: row[index]}), {}));
+	return sheet.data.values.map((row) => titles.reduce((rows, title, index) => ({...rows, [title]: row[index]}), {}));
 }
 
-
-const dbStream = table => {
-	return new stream.Writable({
-		objectMode: true,
-		write: async (input, encoding, next) => {
-			db[table].asyncInsert(input);
-			next();
-		},
-	});
-};
-
-function openPipe(input, output, transformCSVtoObject) {
-	let inputtsv = fs.createReadStream(path.join(sourcepath, input));
-	const outputObjecttoDB = dbStream(output);
+async function openPipe(input, output, transformCSVtoObject) {
 	const outputJSON = JSONStream.stringify('[\n', ',\n', '\n]\n');
 	const outputToFile = fs.createWriteStream(path.join(jsonpath, output + '.json'));
-	let inputCSV = csv.parse({
-		auto_parse: true,
-		delimiter: '	',
-		trim: true,
-		skip_empty_lines: true,
-		columns: true,
-		escape: '\\',
-		quote: '~',
-	});
-	inputtsv
-		.pipe(inputCSV)
+	const items = await getSheet(input);
+	const readable = new stream.Readable({objectMode: true});
+	readable
 		.pipe(transformCSVtoObject)
 		.pipe(outputJSON)
 		.pipe(outputToFile);
+	items.forEach((item) => readable.push(item));
+	readable.push(null);
 }
 
 function importIslands() {
@@ -135,7 +116,7 @@ function importIslands() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Islands.tsv', 'island', transformCSVtoObject);
+	openPipe('Islands', 'island', transformCSVtoObject);
 }
 
 function importParts() {
@@ -213,7 +194,7 @@ function importParts() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Parts.tsv', 'part', transformCSVtoObject);
+	openPipe('Parts', 'part', transformCSVtoObject);
 }
 
 function importMaps() {
@@ -260,7 +241,7 @@ function importMaps() {
 		}
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Maps.tsv', 'map', transformCSVtoObject);
+	openPipe('Maps', 'map', transformCSVtoObject);
 }
 
 function importRegions() {
@@ -301,7 +282,7 @@ function importRegions() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Regions.tsv', 'region', transformCSVtoObject);
+	openPipe('Regions', 'region', transformCSVtoObject);
 }
 
 function importSectors() {
@@ -338,7 +319,7 @@ function importSectors() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Sectors.tsv', 'sector', transformCSVtoObject);
+	openPipe('Sectors', 'sector', transformCSVtoObject);
 }
 
 function importDistricts() {
@@ -385,7 +366,7 @@ function importDistricts() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Districts.tsv', 'district', transformCSVtoObject);
+	openPipe('Districts', 'district', transformCSVtoObject);
 }
 
 function importZones() {
@@ -480,7 +461,7 @@ function importZones() {
 		}
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Zones.tsv', 'zone', transformCSVtoObject);
+	openPipe('Zones', 'zone', transformCSVtoObject);
 }
 
 function importSpeakers() {
@@ -544,7 +525,7 @@ function importSpeakers() {
 			callback(null, utils.cleanobj(output));
 		}
 	});
-	openPipe('Ingoa - Speakers.tsv', 'speaker', transformCSVtoObject);
+	openPipe('Speakers', 'speaker', transformCSVtoObject);
 }
 
 function importFeatures() {
@@ -590,7 +571,7 @@ function importFeatures() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Features.tsv', 'feature', transformCSVtoObject);
+	openPipe('Features', 'feature', transformCSVtoObject);
 }
 
 function importGroups() {
@@ -631,7 +612,7 @@ function importGroups() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Groups.tsv', 'group', transformCSVtoObject);
+	openPipe('Groups', 'group', transformCSVtoObject);
 }
 
 function importTribes() {
@@ -667,7 +648,7 @@ function importTribes() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Iwi.tsv', 'tribe', transformCSVtoObject);
+	openPipe('Iwi', 'tribe', transformCSVtoObject);
 }
 
 function importPlacenames() {
@@ -806,7 +787,7 @@ function importPlacenames() {
 		}
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Placenames.tsv', 'placename', transformCSVtoObject);
+	openPipe('Placenames', 'placename', transformCSVtoObject);
 }
 
 function importMeanings() {
@@ -834,7 +815,7 @@ function importMeanings() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Meanings.tsv', 'meaning', transformCSVtoObject);
+	openPipe('Meanings', 'meaning', transformCSVtoObject);
 }
 
 function importOverseas() {
@@ -851,7 +832,7 @@ function importOverseas() {
 		};
 		callback(null, utils.cleanobj(output));
 	});
-	openPipe('Ingoa - Overseas.tsv', 'overseas', transformCSVtoObject);
+	openPipe('Overseas', 'overseas', transformCSVtoObject);
 }
 
 function importGazetteer() {

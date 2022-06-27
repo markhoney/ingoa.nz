@@ -117,7 +117,8 @@ exports.simplify = function(name) {
 
 exports.createCode = function(name) {
 	if (name) {
-		return exports.replace(name, Object.assign({}, macrons, superscripts, punctuation)).toLowerCase();
+		name = name.split(' | ')[0];
+		return exports.replace(name, Object.assign({}, macrons, superscripts, punctuation, simplify)).toLowerCase();
 		//return exports.replace(name.en || name.mi, Object.assign({}, macrons, superscripts, punctuation)).toLowerCase();
 	}
 };
@@ -126,11 +127,22 @@ exports.createCodeNew = function(name) {
 	return exports.replace(name.en || name.mi, Object.assign({}, macrons, superscripts, punctuation)).toLowerCase();
 };
 
-exports.createSlug = name => {
+exports.createSlug = (name) => {
 	return {
 		en: utils.createCode(name.en === island.name.mi ? null : island.name.en),
 		mi: utils.createCode(name.mi),
 	};
+};
+
+exports.getSingle = (word) => {
+	const split = word.split(' | ');
+	return word[0];
+};
+
+exports.getPlural = (word) => {
+	const split = word.split(' | ');
+	if (word.length > 1) return word[1];
+	return word[0];
 };
 
 exports.cleanobj = function(o) {

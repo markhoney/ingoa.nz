@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
+// if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: '/metrics', title: 'Nuxt.js'});
 
 const pkg = require('./package');
 
@@ -13,7 +13,7 @@ module.exports = {
 		graphClient: (process.env.BASE_URL && !process.env.BASE_URL.includes(host) ? process.env.BASE_URL + '/graphql' : graph),
 		dev: process.env.NODE_ENV !== 'production',
 	},
-	mode: 'universal',
+	// mode: 'universal',
 	srcDir: './src/client/',
 	modern: true,
 	server: {
@@ -27,7 +27,7 @@ module.exports = {
 		{path: '/graphql', handler: '../server/apollo/middleware.js'},
 	],*/
 	/*css: [
-		'@/assets/style/app.styl'
+		'~/assets/style/app.styl'
 	],*/
 	loading: {color: '#f00'},
 
@@ -65,11 +65,11 @@ module.exports = {
 
 	buildModules: [
 		'@nuxtjs/vuetify',
+		'@aceforth/nuxt-optimized-images',
 		//['@nuxtjs/localtunnel', {subdomain: 'ingoa'}],
 	],
 
 	modules: [
-		'@bazzite/nuxt-optimized-images',
 		'@nuxtjs/amp',
 		'@nuxtjs/apollo',
 		'@nuxtjs/dotenv',
@@ -99,7 +99,8 @@ module.exports = {
 	],
 
 	optimizedImages: {
-		optimizeImages: true,
+		inlineImageLimit: -1,
+		imagesName: () => '[path][name].[ext]',
 		//optimizeImagesInDev: true,
 	},
 
@@ -116,9 +117,12 @@ module.exports = {
 		optimizeCSS: true,
 		extend(config, ctx) {
 			if (ctx.isDev) {
-				config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+				config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map';
 			}
 		},
+		/* filenames: {
+			img: () => '[path][name].[ext]',
+		}, */
 		/*babel: {
 			presets({isServer}) {
 				return [

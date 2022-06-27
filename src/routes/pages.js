@@ -1,6 +1,8 @@
+const en = require('../client/locales/en.json');
 const mi = require('../client/locales/mi.json');
+const utils = require('../server/db/utils');
 
-function removeSpaces(text) {
+function createCode(text) {
 	return text.split(" ").join("");
 }
 
@@ -10,108 +12,108 @@ module.exports = {
 		"mi": "/"
 	},
 	"about": {
-		"en": "/about",
-		"mi": "/" + removeSpaces(mi.about),
+		"en": "/" + createCode(en.about),
+		"mi": "/" + createCode(mi.about),
 	},
 	"license": {
-		"en": "/license",
-		"mi": "/" + removeSpaces(mi.license),
+		"en": "/" + createCode(en.license),
+		"mi": "/" + createCode(mi.license),
 	},
 	"island": {
-		"en": "/island",
-		"mi": "/" + removeSpaces(mi.island),
+		"en": "/" + createCode(en.island),
+		"mi": "/" + createCode(mi.island),
 	},
 	"island/_island": {
-		"en": "/island/:island",
-		"mi": "/" + removeSpaces(mi.island) + "/:island",
+		"en": "/" + createCode(en.island) + "/:island",
+		"mi": "/" + createCode(mi.island) + "/:island",
 	},
 	"part": {
-		"en": "/part",
-		"mi": "/" + removeSpaces(mi.part),
+		"en": "/" + createCode(en.part),
+		"mi": "/" + createCode(mi.part),
 	},
 	"part/_part": {
-		"en": "/part/:part",
-		"mi": "/" + removeSpaces(mi.part) + "/:part",
+		"en": "/" + createCode(en.part) + "/:part",
+		"mi": "/" + createCode(mi.part) + "/:part",
 	},
 	"map": {
-		"en": "/map",
-		"mi": "/" + removeSpaces(mi.map),
+		"en": "/" + createCode(en.map),
+		"mi": "/" + createCode(mi.map),
 	},
 	"map/_map": {
-		"en": "/map/:map",
-		"mi": "/" + removeSpaces(mi.map) + "/:map",
+		"en": "/" + createCode(en.map) + "/:map",
+		"mi": "/" + createCode(mi.map) + "/:map",
 	},
 	"region": {
-		"en": "/region",
-		"mi": "/" + removeSpaces(mi.region),
+		"en": "/" + createCode(en.region),
+		"mi": "/" + createCode(mi.region),
 	},
 	"region/_region": {
-		"en": "/region/:region",
-		"mi": "/" + removeSpaces(mi.region) + "/:region",
+		"en": "/" + createCode(en.region) + "/:region",
+		"mi": "/" + createCode(mi.region) + "/:region",
 	},
 	"zone": {
-		"en": "/zone",
-		"mi": "/" + removeSpaces(mi.zone),
+		"en": "/" + createCode(en.zone),
+		"mi": "/" + createCode(mi.zone),
 	},
 	"zone/_zone": {
-		"en": "/zone/:zone",
-		"mi": "/" + removeSpaces(mi.zone) + "/:zone",
+		"en": "/" + createCode(en.zone) + "/:zone",
+		"mi": "/" + createCode(mi.zone) + "/:zone",
 	},
 	"tribe": {
-		"en": "/tribe",
-		"mi": "/" + removeSpaces(mi.tribe),
+		"en": "/" + createCode(en.tribe),
+		"mi": "/" + createCode(mi.tribe),
 	},
 	"tribe/_tribe": {
-		"en": "/tribe/:tribe",
-		"mi": "/" + removeSpaces(mi.tribe) + "/:tribe",
+		"en": "/" + createCode(en.tribe) + "/:tribe",
+		"mi": "/" + createCode(mi.tribe) + "/:tribe",
 	},
 	"speaker": {
-		"en": "/speaker",
-		"mi": "/" + removeSpaces(mi.speaker),
+		"en": "/" + createCode(en.speaker),
+		"mi": "/" + createCode(mi.speaker),
 	},
 	"speaker/_speaker": {
-		"en": "/speaker/:speaker",
-		"mi": "/" + removeSpaces(mi.speaker) + "/:speaker",
+		"en": "/" + createCode(en.speaker) + "/:speaker",
+		"mi": "/" + createCode(mi.speaker) + "/:speaker",
 	},
 	"feature": {
-		"en": "/feature",
-		"mi": "/" + removeSpaces(mi.feature),
+		"en": "/" + createCode(en.feature),
+		"mi": "/" + createCode(mi.feature),
 	},
 	"feature/_feature": {
-		"en": "/feature/:feature",
-		"mi": "/" + removeSpaces(mi.feature) + "/:feature",
+		"en": "/" + createCode(en.feature) + "/:feature",
+		"mi": "/" + createCode(mi.feature) + "/:feature",
 	},
 	"group": {
-		"en": "/group",
-		"mi": "/" + removeSpaces(mi.group),
+		"en": "/" + createCode(en.group),
+		"mi": "/" + createCode(mi.group),
 	},
 	"group/_zone/_group": {
-		"en": "/group/:zone/:group",
-		"mi": "/" + removeSpaces(mi.group) + "/:zone/:group",
+		"en": "/" + createCode(en.group) + "/:zone/:group",
+		"mi": "/" + createCode(mi.group) + "/:zone/:group",
 	},
 	"placename": {
-		"en": "/placename",
-		"mi": "/" + removeSpaces(mi.placename),
+		"en": "/" + createCode(en.placename),
+		"mi": "/" + createCode(mi.placename),
 	},
 	"placename/_zone/_placename": {
-		"en": "/placename/:zone/:placename",
-		"mi": "/" + removeSpaces(mi.placename) + "/:zone/:placename",
+		"en": "/" + createCode(en.placename) + "/:zone/:placename",
+		"mi": "/" + createCode(mi.placename) + "/:zone/:placename",
 	},
 	/*"place": {
 		"en": "/place",
-		"mi": "/" + removeSpaces(mi.place),
+		"mi": "/" + createCode(mi.place),
 	},
 	"place/_zone/_place": {
 		"en": "/place/:zone/:place",
-		"mi": "/" + removeSpaces(mi.place) + "/:zone/:place"
+		"mi": "/" + createCode(mi.place) + "/:zone/:place"
 	},
 	"name": {
 		"en": "/name",
-		"mi": "/" + removeSpaces(mi.name),
+		"mi": "/" + createCode(mi.name),
 	},
 	"name/_zone/_name": {
 		"en": "/name/:zone/:name",
-		"mi": "/" + removeSpaces(mi.name) + "/:zone/:name"
+		"mi": "/" + createCode(mi.name) + "/:zone/:name"
 	},*/
 	"old": {
 		"en": "/old",

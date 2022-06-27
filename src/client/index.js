@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach();
+// if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach();
 const consola = require('consola');
 const {Nuxt, Builder} = require('nuxt');
 //const http = require('http');

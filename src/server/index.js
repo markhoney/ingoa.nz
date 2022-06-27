@@ -40,7 +40,7 @@ const openAPI = OpenAPI({
 });
 
 const app = express();
-if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: metrics, title: 'API'});
+// if (process.env.NODE_ENV != 'production') require('appmetrics-dash').attach({url: metrics, title: 'API'});
 apolloServer.applyMiddleware({app});
 app.get('/', (req, res) => res.send(path));
 app.use('/api', useSofa({

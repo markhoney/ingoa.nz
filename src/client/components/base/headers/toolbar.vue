@@ -1,6 +1,6 @@
 <template>
 	<v-app-bar :clipped-left="$vuetify.breakpoint.lgAndUp" flat prominent app fixed dark height="100">
-		<!-- :style="{'background': `url(${require('@/assets/img/tukutuku/VerticalBlack.jpg')});`}" -->
+		<!-- :style="{'background': `url(${require('~/assets/img/tukutuku/VerticalBlack.jpg')});`}" -->
 		<!-- <div style="background: url('/img/header.jpg') center left no-repeat; position: absolute; left: 0; top: 0; width: 100vw; height: 200px;"></div> -->
 		<!--<v-parallax src="/img/header.jpg" style="width: 100%; margin: 0; padding: 0; filter: grayscale(50%); height: 100px;">
 		<section style="background: url('/img/foreground.png') bottom left no-repeat; height: 100%; margin: 0; filter: grayscale(0%);">-->
