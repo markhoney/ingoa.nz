@@ -1,4 +1,4 @@
-const fs = require('fs');
+const {existsSync, statSync, readFileSync, writeFileSync} = require('fs'); // readFileSync
 const path = require('path');
 const levenshtein = require('js-levenshtein');
 const axios = require('axios');
@@ -9,28 +9,28 @@ const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
 
 let db;
 function readData() {
-	db = ['island', 'part', 'map', 'region', 'sector', 'district', 'zone', 'speaker', 'group', 'feature', 'tribe', 'placename', 'meaning', 'gazetteer', 'overseas'].reduce((db, collection) => {
+	db = ['islands', 'parts', 'maps', 'regions', 'sectors', 'districts', 'zones', 'speakers', 'groups', 'features', 'iwi', 'placenames', 'meanings', 'gazetteer', 'overseas'].reduce((db, collection) => {
 		db[collection] = require(path.join(jsonpath, collection + '.json'));
-		//db[collection] = JSON.parse(fs.readFileSync(path.join(jsonpath, collection + '.json')));
+		//db[collection] = JSON.parse(readFileSync(path.join(jsonpath, collection + '.json')));
 		return db;
 	}, {});
 }
 
 function getSpeakers(placenames) {
 	const speakers = placenames.map(placename => placename.names).flat().filter(name => name.spoken).map(name => name.spoken.speaker_id);
-	return db.speaker.filter(speaker => speaker._id != "sp_37" && speakers.includes(speaker._id));
+	return db.speakers.filter(speaker => speaker.id !== "sp_37" && speakers.includes(speaker.id));
 }
 
 function linkImages() {
 	let total = 0;
 	[
-		{name: 'island', images: ['banner.png', 'landscape.png', 'portrait.png']},
-		{name: 'part', images: ['front.jpg']},
-		{name: 'map', images: ['portrait.png']},
-		//{name: 'region', images: ['banner.jpg', 'landscape.png']},
-		{name: 'sector', images: ['banner.jpg', 'landscape.png']},
-		//{name: 'district', images: ['banner.jpg', 'landscape.png']},
-		{name: 'zone', images: ['landscape.png']},
+		{name: 'islands', images: ['banner.png', 'landscape.png', 'portrait.png']},
+		{name: 'parts', images: ['front.jpg']},
+		{name: 'maps', images: ['portrait.png']},
+		//{name: 'regions', images: ['banner.jpg', 'landscape.png']},
+		{name: 'sectors', images: ['banner.jpg', 'landscape.png']},
+		//{name: 'districts', images: ['banner.jpg', 'landscape.png']},
+		{name: 'zones', images: ['landscape.png']},
 	].forEach(collection => {
 		db[collection.name].forEach(record => {
 			if (!record.images) {
@@ -41,7 +41,7 @@ function linkImages() {
 				record.images = {};
 				collection.images.forEach(image => {
 					const imagepath = ['img', collection.name, record.slug.en + '-' + image];
-					if (fs.existsSync(path.join(__dirname, '..', 'client', 'assets', ...imagepath))) {
+					if (existsSync(path.join(__dirname, '..', 'client', 'assets', ...imagepath))) {
 						total++;
 						record.images[image.split('.')[0]] = '/' + imagepath.join("/");
 					}
@@ -54,13 +54,13 @@ function linkImages() {
 
 function addPlacenameIDs() {
 	let total = 0;
-	db.placename.forEach(placename => {
+	db.placenames.forEach(placename => {
 		if (placename.places) {
 			placename.places.forEach(place => {
 				//if (!place.zone_id) place.zone_id = placename.zone_id;
 				if (!place.placename_id) {
 					total++;
-					place.placename_id = placename._id;
+					place.placename_id = placename.id;
 				}
 			});
 		}
@@ -68,7 +68,7 @@ function addPlacenameIDs() {
 			//if (!name.zone_id) name.zone_id = placename.zone_id;
 			if (!name.placename_id) {
 				total++;
-				name.placename_id = placename._id;
+				name.placename_id = placename.id;
 			}
 		});
 	});
@@ -76,15 +76,15 @@ function addPlacenameIDs() {
 }
 
 function createNamesPlaces() {
-	db.name = db.placename.map(placename => placename.names).flat();
-	db.place = db.placename.filter(placename => placename.places).map(placename => placename.places).flat();
+	db.names = db.placenames.map(placename => placename.names).flat();
+	db.places = db.placenames.filter(placename => placename.places).map(placename => placename.places).flat();
 }
 
 function addPrePost() {
 	let total = 0;
-	['island', 'part', 'zone'].forEach(collection => {
+	['islands', 'parts', 'zones'].forEach(collection => {
 		db[collection].forEach(record => {
-			const bookmarks = db.name.filter(name => name._id.startsWith('na_pn_' + record._id + '-')).filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
+			const bookmarks = db.names.filter(name => name.id.startsWith('na_pn_' + record.id + '-')).filter(name => name.spoken).sort((a, b) => a.spoken.start - b.spoken.start);
 			bookmarks.forEach((name, index) => {
 				if (!name.spoken.pre) {
 					total++;
@@ -99,29 +99,29 @@ function addPrePost() {
 
 function addSpeakers() {
 	let total = 0;
-	db.island.forEach(island => {
+	db.islands.forEach(island => {
 		if (!island.speaker_ids) {
 			total++;
-			speakers = getSpeakers(db.placename.filter(placename => placename.island_id == island._id));
-			island.speaker_ids = speakers.map(speaker => speaker._id);
+			speakers = getSpeakers(db.placenames.filter(placename => placename.island_id === island.id));
+			island.speaker_ids = speakers.map(speaker => speaker.id);
 		}
 	});
 	console.log(total);
 	total = 0;
-	db.part.forEach(part => {
+	db.parts.forEach(part => {
 		if (!part.speaker_ids) {
 			total++;
-			speakers = getSpeakers(db.placename.filter(placename => placename.part_id == part._id));
-			part.speaker_ids = speakers.map(speaker => speaker._id);
+			speakers = getSpeakers(db.placenames.filter(placename => placename.part_id === part.id));
+			part.speaker_ids = speakers.map(speaker => speaker.id);
 		}
 	});
 	console.log(total);
 	total = 0;
-	db.zone.forEach(zone => {
+	db.zones.forEach(zone => {
 		if (!zone.speaker_ids) {
 			total++;
-			speakers = getSpeakers(db.placename.filter(placename => placename.zone_id == zone._id));
-			zone.speaker_ids = speakers.map(speaker => speaker._id);
+			speakers = getSpeakers(db.placenames.filter(placename => placename.zone_id === zone.id));
+			zone.speaker_ids = speakers.map(speaker => speaker.id);
 		}
 	});
 	console.log(total);
@@ -129,13 +129,13 @@ function addSpeakers() {
 
 function addPlacenameAudio() {
 	let total = 0;
-	db.name.forEach(name => {
+	db.names.forEach(name => {
 		if (name.spoken) {
 			total++;
-			audioLocation = '/audio/placename/' + name._id + '.mp3';
+			audioLocation = '/audio/placename/' + name.id + '.mp3';
 			name.spoken.audio = {
 				file: audioLocation,
-				size: fs.statSync('src/client/static' + audioLocation).size,
+				size: statSync('src/client/static' + audioLocation).size,
 				length: ((name.spoken.end + 0.1) - Math.max(0, name.spoken.start - 0.1)).toFixed(2),
 			};
 		}
@@ -147,36 +147,37 @@ function addSimilarIdentical() {
 	let total = 0;
 	const similarspath = path.join(__dirname, '..', '..', 'cache', 'similar.json');
 	let similars = {};
-	if (fs.existsSync(similarspath)) {
+	if (existsSync(similarspath)) {
 		similars = require(similarspath);
 	}
-	//db.name.forEach(name => {
-	for (const name of db.name) {
-		if (!name.similar_ids && name.locale.mi != "Intro") {
-			const identical = db.name.filter(myname => myname.locale.mi == name.locale.mi);
-			name.identical_ids = identical.map(name => name._id);
-			//const similar = similars.find(similar => similar._id == name._id);
-			if (similars[name._id]) {
-				name.similar_ids = similars[name._id];
+	//db.names.forEach(name => {
+	for (const name of db.names) {
+		if (!name.similar_ids && name.locale.mi !== "Intro") {
+			const identical = db.names.filter(myname => myname.locale.mi === name.locale.mi);
+			name.identical_ids = identical.map(name => name.id);
+			//const similar = similars.find(similar => similar.id === name.id);
+			if (similars[name.id]) {
+				total++;
+				name.similar_ids = similars[name.id];
 			} else {
 				total++;
-				const similar = db.name.filter(myname => myname.locale.mi != name.locale.mi).sort((a, b) => levenshtein(name.locale.mi, a.name.locale.mi) - levenshtein(name.locale.mi, b.name.locale.mi)).slice(0, 8);
-				name.similar_ids = similar.map(name => name._id);
-				similars[name._id] = name.similar_ids;
+				const similar = db.names.filter(myname => myname.locale.mi !== name.locale.mi).sort((a, b) => levenshtein(name.locale.mi, a.name.locale.mi) - levenshtein(name.locale.mi, b.name.locale.mi)).slice(0, 8);
+				name.similar_ids = similar.map(name => name.id);
+				similars[name.id] = name.similar_ids;
 			}
 		}
 	}//);
-	fs.writeFileSync(similarspath, JSON.stringify(similars, null, '\t'));
+	writeFileSync(similarspath, JSON.stringify(similars, null, '\t'));
 	console.log(total);
 }
 
 function addMeanings() {
 	let total = 0;
-	db.name.forEach(name => {
+	db.names.forEach(name => {
 		if (!name.meaning_id && name.locale.mi) {
-			const meaning = db.meaning.find(meaning => meaning.name.locale.mi == name.locale.mi || (name.alt && name.alt.mi && meaning.name.locale.mi == name.alt.mi.ascii) || (name.alt && name.alt.mi && meaning.name.locale.mi == name.alt.mi.double));
+			const meaning = db.meanings.find(meaning => meaning.name.locale.mi === name.locale.mi || (name.alt && name.alt.mi && meaning.name.locale.mi === name.alt.mi.ascii) || (name.alt && name.alt.mi && meaning.name.locale.mi === name.alt.mi.double));
 			if (meaning) {
-				name.meaning_id = meaning._id;
+				name.meaning_id = meaning.id;
 				total++;
 			}
 		}
@@ -187,26 +188,26 @@ function addMeanings() {
 async function addNominatimLocations() {
 	let total = 0;
 	const nominatim = axios.create({baseURL: "http://localhost:8080/search/"});
-	for (const placename of db.placename) {
+	for (const placename of db.placenames) {
 		if (placename.zone_id && placename.places) {
-			let zone = db.zone.find(zone => zone._id == placename.zone_id);
-			if (placename.addendum_ids) zone = db.zone.find(zone => zone._id == placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
-			const district = db.district.find(district => district._id == zone.district_id);
+			let zone = db.zones.find(zone => zone.id === placename.zone_id);
+			if (placename.addendum_ids) zone = db.zones.find(zone => zone.id === placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
+			const district = db.districts.find(district => district.id === zone.district_id);
 			if (district) {
-				const region = db.region.find(region => region._id == district.region_id);
+				const region = db.regions.find(region => region.id === district.region_id);
 				for (const place of placename.places) {
 					if (!place.location || (place.location && !place.location.position)) {
 						const placename = (place.name.alt && place.name.alt.mi ? place.name.alt.mi.ascii : null) || place.name.locale.en || place.name.locale.mi;
 						const url = encodeURI(placename + '?addressdetails=1&extratags=1&format=json'); //&limit=1
 						let geo = [];
 						const cachepath = path.join(__dirname, '..', '..', 'cache', 'nominatim', placename + '.json');
-						if (fs.existsSync(cachepath)) {
+						if (existsSync(cachepath)) {
 							geo = require(cachepath);
 						} else {
 							try {
 								geo = (await nominatim.get(url)).data;
 								if (geo.length) {
-									fs.writeFileSync(cachepath, JSON.stringify(geo, null, '\t'));
+									writeFileSync(cachepath, JSON.stringify(geo, null, '\t'));
 								}
 							} catch(error) {
 								//console.log(error);
@@ -217,18 +218,18 @@ async function addNominatimLocations() {
 							if (region) regions.push(region.name.locale.en, region.name.locale.mi);
 							let placenames = geo.filter(placename => regions.filter(Boolean).some(region => [placename.address.region, placename.address.county, placename.address.state].includes(region)));
 							if (placenames.length) {
-								const feature = db.feature.find(feature => feature._id == place.feature_id);
+								const feature = db.features.find(feature => feature.id === place.feature_id);
 								placenames.forEach(placename => {
 									placename.score = 0;
-									if (placename.class == feature.category.osm.class) {
+									if (placename.class === feature.category.osm.class) {
 										placename.score++;
-										if (placename.type == feature.category.osm.type) placename.score++;
+										if (placename.type === feature.category.osm.type) placename.score++;
 									}
-									if (placename.class == "landuse" && placename.type == feature.category.osm.landuse) placename.score += 2;
+									if (placename.class === "landuse" && placename.type === feature.category.osm.landuse) placename.score += 2;
 									const name = utils.simplify(placename.display_name.split(",")[0]);
-									if (name == utils.simplify(place.name.locale.en)) placename.score += 1;
-									if (name == utils.simplify(place.name.locale.en + feature.name.locale.en)) placename.score++;
-									if (name == utils.simplify(place.name.locale.en + feature.name.locale.mi)) placename.score++;
+									if (name === utils.simplify(place.name.locale.en)) placename.score += 1;
+									if (name === utils.simplify(place.name.locale.en + feature.name.locale.en)) placename.score++;
+									if (name === utils.simplify(place.name.locale.en + feature.name.locale.mi)) placename.score++;
 								});
 								placenames = placenames.sort((a, b) => a.score > b.score);
 								const foundplace = placenames[0];
@@ -260,20 +261,20 @@ function addGazetteerLocations() {
 	db.gazetteer.forEach(gazetteer => {
 		gazetteer.simple = utils.simplify(gazetteer.name.en);
 	});
-	db.placename.forEach(placename => {
+	db.placenames.forEach(placename => {
 		if (placename.zone_id && placename.places) {
-			let zone = db.zone.find(zone => zone._id == placename.zone_id);
-			if (placename.addendum_ids) zone = db.zone.find(zone => zone._id == placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
+			let zone = db.zones.find(zone => zone.id === placename.zone_id);
+			if (placename.addendum_ids) zone = db.zones.find(zone => zone.id === placename.addendum_ids[0]); // If this is an addendum to another zone, use that zone
 			const district = zone.gazetteer;
 			placename.places.forEach(place => {
 				if (!place.location || (place.location && !place.location.position)) {
-					const feature = db.feature.find(feature => feature._id == place.feature_id);
+					const feature = db.features.find(feature => feature.id === place.feature_id);
 					const names = [utils.simplify(place.name.locale.mi), utils.simplify(place.name.locale.ascii), utils.simplify(place.name.locale.double), utils.simplify([place.name.locale.mi, feature.name.locale.en].join(' ')), utils.simplify([place.name.locale.ascii, feature.name.locale.en].join(' ')), utils.simplify([place.name.locale.double, feature.name.locale.en].join(' '))];
-					let placenames = db.gazetteer.filter(gazetteer => gazetteer.district == district && names.includes(gazetteer.simple));
+					let placenames = db.gazetteer.filter(gazetteer => gazetteer.district === district && names.includes(gazetteer.simple));
 					if (placenames.length) {
 						placenames.forEach(placename => {
 							placename.score = 0;
-							if (placename.feature == feature.category.gazetteer) placename.score++;
+							if (placename.feature === feature.category.gazetteer) placename.score++;
 						});
 						placenames = placenames.sort((a, b) => a.score > b.score);
 						const foundplace = placenames[0];
@@ -296,12 +297,12 @@ async function getWikiDataInfo(url, wikidata) {
 	const id = url.replace("https://www.wikidata.org/wiki/", "");
 	url = id + ".json";
 	const cachepath = path.join(__dirname, '..', '..', 'cache', 'wikidata', url);
-	if (fs.existsSync(cachepath)) {
+	if (existsSync(cachepath)) {
 		wiki = require(cachepath);
 	} else {
 		try {
 			wiki = (await wikidata.get(url)).data.entities[id];
-			fs.writeFileSync(cachepath, JSON.stringify(wiki, null, '\t'));
+			writeFileSync(cachepath, JSON.stringify(wiki, null, '\t'));
 		} catch(error) {
 			//console.log(error);
 		}
@@ -318,7 +319,7 @@ function caseInitial(text) {
 async function addWikiDataInfos() {
 	let total = 0;
 	const wikidata = axios.create({baseURL: "https://www.wikidata.org/wiki/Special:EntityData/"});
-	for (const collection of ['island', 'region', 'sector', 'district', 'tribe', 'group', 'feature']) {
+	for (const collection of ['islands', 'regions', 'sectors', 'districts', 'iwi', 'groups', 'features']) {
 		for (const record of db[collection]) {
 			if (record.links && record.links.wikidata) {
 				const wiki = await getWikiDataInfo(record.links.wikidata, wikidata);
@@ -343,7 +344,7 @@ async function addWikiDataInfos() {
 async function addWikiDataZoneInfos() {
 	let total = 0;
 	const wikidata = axios.create({baseURL: "https://www.wikidata.org/wiki/Special:EntityData/"});
-	for (const zone of db.zone) {
+	for (const zone of db.zones) {
 		for (const record of zone.areas) {
 			//console.log(record);
 			if (record.links && record.links.wikidata) {
@@ -363,19 +364,19 @@ async function addWikiDataZoneInfos() {
 			}
 		}
 	}
-	console.log(total);
+	console.log('zones:', total);
 }
 
 async function getWikipediaIntro(url, locale, wikipedia) {
 	let wiki;
 	url = url.replace("https://" + locale + ".wikipedia.org/wiki/", "");
 	const cachepath = path.join(__dirname, '..', '..', 'cache', 'wikipedia', locale, url + '.json');
-	if (fs.existsSync(cachepath)) {
+	if (existsSync(cachepath)) {
 		wiki = require(cachepath);
 	} else {
 		try {
 			wiki = (await wikipedia.get(url)).data;
-			fs.writeFileSync(cachepath, JSON.stringify(wiki, null, '\t'));
+			writeFileSync(cachepath, JSON.stringify(wiki, null, '\t'));
 		} catch(error) {
 			//console.log(error);
 		}
@@ -386,7 +387,7 @@ async function getWikipediaIntro(url, locale, wikipedia) {
 async function addWikipediaIntros(locale) {
 	let total = 0;
 	const wikipedia = axios.create({baseURL: "https://" + locale + ".wikipedia.org/api/rest_v1/page/summary/"});
-	for (const collection of ['island', 'region', 'sector', 'district', 'tribe', 'group', 'feature']) {
+	for (const collection of ['islands', 'regions', 'sectors', 'districts', 'iwi', 'groups', 'features']) {
 		for (const record of db[collection]) {
 			if (record.links && record.links.wikipedia && record.links.wikipedia[locale]) {
 				const wiki = await getWikipediaIntro(record.links.wikipedia[locale], locale, wikipedia);
@@ -405,7 +406,7 @@ async function addWikipediaIntros(locale) {
 async function addWikipediaZoneIntros(locale) {
 	let total = 0;
 	const wikipedia = axios.create({baseURL: "https://" + locale + ".wikipedia.org/api/rest_v1/page/summary/"});
-	for (const zone of db.zone) {
+	for (const zone of db.zones) {
 		for (const record of zone.areas) {
 			if (record.links && record.links.wikipedia && record.links.wikipedia[locale]) {
 				const wiki = await getWikipediaIntro(record.links.wikipedia[locale], locale, wikipedia);
@@ -425,13 +426,13 @@ async function getMaoriMapsInfo(url, locale, maorimaps) {
 	let marae;
 	url = url.replace("https://maorimaps.com/marae/", "");
 	const cachepath = path.join(__dirname, '..', '..', 'cache', 'maorimaps', locale, url + '.html');
-	if (fs.existsSync(cachepath)) {
+	if (existsSync(cachepath)) {
 		//marae = require(cachepath);
-		marae = fs.readFileSync(cachepath);
+		marae = readFileSync(cachepath);
 	} else {
 		try {
 			marae = (await maorimaps.get("marae/" + url, { headers: {Cookie: "SSESS04fb61a42ac94afd2a8df6d0aaa40edf=Ji1xYLRRbD31bLF5qTuRgjXU1K0_Ne5fj2iO0dbCvUE;"}})).data;
-			fs.writeFileSync(cachepath, marae);
+			writeFileSync(cachepath, marae);
 		} catch(error) {
 			//console.log(error);
 		}
@@ -442,7 +443,7 @@ async function getMaoriMapsInfo(url, locale, maorimaps) {
 async function addMaoriMapsInfos(locale) {
 	let total = 0;
 	const maorimaps = axios.create({baseURL: "https://maorimaps.com/", withCredentials: true, headers: {Cookie: "SSESS04fb61a42ac94afd2a8df6d0aaa40edf=Ji1xYLRRbD31bLF5qTuRgjXU1K0_Ne5fj2iO0dbCvUE;"}}); // , {headers: {'accept-language': locale + '-NZ'}} // , withCredentials: true
-	/*if (locale == 'en') {
+	/*if (locale === 'en') {
 		try {
 			await maorimaps.get("home/English", {headers: {referer: 'https://maorimaps.com/'}});
 		} catch(error) {
@@ -455,7 +456,7 @@ async function addMaoriMapsInfos(locale) {
 			console.log(error);
 		}
 	}*/
-	for (const record of db.group) {
+	for (const record of db.groups) {
 		if (record.links && record.links.maorimaps) {
 			const page = await getMaoriMapsInfo(record.links.maorimaps, locale, maorimaps);
 			if (page) {
@@ -467,12 +468,49 @@ async function addMaoriMapsInfos(locale) {
 			}
 		}
 	}
+	console.log(locale + ':', total);
+}
+
+function addNextPrevious(collection, wrap = false) {
+	let total = 0;
+	collection.forEach((item, index) => {
+		if (!item.previous_id && collection[index - 1]) {
+			total++;
+			item.previous_id = collection[index - 1].id;
+		}
+		if (!item.next_id && collection[index + 1]) {
+			total++;
+			item.next_id = collection[index + 1].id;
+		}
+		if (wrap) {
+			if (!item.previous_id) {
+				total++;
+				item.previous_id = collection[collection.length - 1].id;
+			}
+			if (!item.next_id) {
+				total++;
+				item.next_id = collection[0].id;
+			}
+		}
+	});
 	console.log(total);
 }
 
+function allNextPrevious() {
+	for (const collection of Object.keys(db)) {
+		if (['gazetteer', 'meanings', 'groups', 'features'].includes(collection)) {
+			// Do nothing
+		} else if (collection === 'placenames') {
+			// Add next/previous by zone
+		} else {
+			addNextPrevious(db[collection]);
+		}
+	}
+}
+
 function deleteNamesPlaces() {
-	delete db.name;
-	delete db.place;
+	delete db.names;
+	delete db.places;
 }
 
 function writeData() {
@@ -483,7 +521,8 @@ function writeData() {
 
 function writeCollection(collection) {
 	if (db[collection]) {
-		fs.writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection])).replace(/^\[{/, "[\n\t{").replace(/}\]$/, "}\n]").replace(/},{/g, "},\n\t{"));
+		// writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection])).replace(/^\[{/, "[\n\t{").replace(/}\]$/, "}\n]").replace(/},{/g, "},\n\t{"));
+		writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection]), null, '\t'));
 	}
 }
 
@@ -523,6 +562,8 @@ async function runAll() {
 	await addMaoriMapsInfos("mi");
 	console.log("Deleting Names & Places...");
 	deleteNamesPlaces();
+	console.log('Adding Next & Previous IDs...');
+	allNextPrevious();
 	console.log("Writing Data...");
 	writeData();
 }

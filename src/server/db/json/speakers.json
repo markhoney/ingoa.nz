@@ -1,0 +1,4240 @@
+[
+	{
+		"id": "sp_1",
+		"slug": {
+			"en": "ailataylor",
+			"mi": "ailataylor"
+		},
+		"name": {
+			"locale": {
+				"mi": "Aila Taylor"
+			},
+			"alt": {
+				"en": {
+					"full": "Aila Taylor"
+				}
+			},
+			"parts": {
+				"first": "Aila",
+				"last": "Taylor"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Aila Taylor worked hard to preserve the North Taranaki reefs. As a result the New Plymouth list includes a number of reefs."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"next_id": "sp_2"
+	},
+	{
+		"id": "sp_2",
+		"slug": {
+			"en": "apiranatuahaemahuika",
+			"mi": "apiranatuahaemahuika"
+		},
+		"name": {
+			"locale": {
+				"mi": "Apirana Tuahae Mahuika"
+			},
+			"alt": {
+				"en": {
+					"full": "Apirana Tuahae Mahuika"
+				}
+			},
+			"parts": {
+				"first": "Apirana",
+				"middle": "Tuahae",
+				"last": "Mahuika"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Api Mahuika was a senior kaumātua of Ngāti Porou, and very supportive of the project, patiently reading the long lists of East Coast names. We recorded in Gisborne, saving me a long trip up the coast."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Gisborne"
+			}
+		},
+		"links": {
+			"info": "http://www.ngatiporou.com/article/he-panui-aitua"
+		},
+		"previous_id": "sp_1",
+		"next_id": "sp_3"
+	},
+	{
+		"id": "sp_3",
+		"slug": {
+			"en": "araperamikaerarangimaurioranitenetaragovernor",
+			"mi": "araperamikaerarangimaurioranitenetaragovernor"
+		},
+		"name": {
+			"locale": {
+				"mi": "Arapera Mikaera Rangimauriora Nitenetara (Governor)"
+			},
+			"alt": {
+				"en": {
+					"full": "Arapera Mikaera Rangimauriora Nitenetara Governor"
+				}
+			},
+			"parts": {
+				"first": "Arapera",
+				"middle": "Mikaera Rangimauriora",
+				"last": "Nitenetara",
+				"suffix": "Governor"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"recording": {
+				"en": "Mrs Governor was blind, and I read each name for her to repeat/correct, then edited my own voice out."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_2",
+		"next_id": "sp_4"
+	},
+	{
+		"id": "sp_4",
+		"slug": {
+			"en": "autitiwikiriwhi",
+			"mi": "autitiwikiriwhi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Autiti Wikiriwhi"
+			},
+			"alt": {
+				"en": {
+					"full": "Autiti (Beaker) Wikiriwhi"
+				}
+			},
+			"parts": {
+				"nick": "Beaker",
+				"first": "Autiti",
+				"last": "Wikiriwhi"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "\"Beaker\" Wickliffe lived next to Wahiao meeting house, in a house that had half collapsed. It was apparently agreed with his family that he and the house might as well live out their time together."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Wahiao"
+			}
+		},
+		"previous_id": "sp_3",
+		"next_id": "sp_5"
+	},
+	{
+		"id": "sp_5",
+		"slug": {
+			"en": "billsolomon",
+			"mi": "billsolomon"
+		},
+		"name": {
+			"locale": {
+				"mi": "Bill Solomon"
+			},
+			"alt": {
+				"en": {
+					"full": "Bill Solomon"
+				}
+			},
+			"parts": {
+				"first": "Bill",
+				"last": "Solomon"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Maru Kaitatea"
+			}
+		},
+		"previous_id": "sp_4",
+		"next_id": "sp_6"
+	},
+	{
+		"id": "sp_6",
+		"slug": {
+			"en": "bingahaggie",
+			"mi": "bingahaggie"
+		},
+		"name": {
+			"locale": {
+				"mi": "Binga Haggie"
+			},
+			"alt": {
+				"en": {
+					"full": "Binga Haggie"
+				}
+			},
+			"parts": {
+				"first": "Binga",
+				"last": "Haggie"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_5",
+		"next_id": "sp_7"
+	},
+	{
+		"id": "sp_7",
+		"slug": {
+			"en": "bobharris",
+			"mi": "bobharris"
+		},
+		"name": {
+			"locale": {
+				"mi": "Bob Harris"
+			},
+			"alt": {
+				"en": {
+					"full": "Bob Harris"
+				}
+			},
+			"parts": {
+				"first": "Bob",
+				"last": "Harris"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_6",
+		"next_id": "sp_8"
+	},
+	{
+		"id": "sp_8",
+		"slug": {
+			"en": "charlessolomon",
+			"mi": "charlessolomon"
+		},
+		"name": {
+			"locale": {
+				"mi": "Charles Solomon"
+			},
+			"alt": {
+				"en": {
+					"full": "Charles Solomon"
+				}
+			},
+			"parts": {
+				"first": "Charles",
+				"last": "Solomon"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Chartes Solomon was the son of Tommy Solomon, the last \"full blooded\" Moriori of the Chatham Islands. I included him more for his historical importance, with the help of his son Māui Solomon, since he did not speak the Moriori language. It has since undergone a revival. He was blind and I read him each name. He lived in Temuka, and he gave me some sense of what it meant to say the Moriori died \"of despair\"."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_7",
+		"next_id": "sp_9"
+	},
+	{
+		"id": "sp_9",
+		"slug": {
+			"en": "danpomana",
+			"mi": "danpomana"
+		},
+		"name": {
+			"locale": {
+				"mi": "Dan Pomana"
+			},
+			"alt": {
+				"en": {
+					"full": "Dan Pomana"
+				}
+			},
+			"parts": {
+				"first": "Dan",
+				"last": "Pomana"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_8",
+		"next_id": "sp_10"
+	},
+	{
+		"id": "sp_10",
+		"slug": {
+			"en": "derekasher",
+			"mi": "derekasher"
+		},
+		"name": {
+			"locale": {
+				"mi": "Derek Asher"
+			},
+			"alt": {
+				"en": {
+					"full": "Derek Asher"
+				}
+			},
+			"parts": {
+				"first": "Derek",
+				"last": "Asher"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_9",
+		"next_id": "sp_11"
+	},
+	{
+		"id": "sp_11",
+		"slug": {
+			"en": "eddiematehaere",
+			"mi": "eddiematehaere"
+		},
+		"name": {
+			"locale": {
+				"mi": "Eddie Matehaere"
+			},
+			"alt": {
+				"en": {
+					"full": "Eddie Matehaere"
+				}
+			},
+			"parts": {
+				"first": "Eddie",
+				"last": "Matehaere"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_10",
+		"next_id": "sp_12"
+	},
+	{
+		"id": "sp_12",
+		"slug": {
+			"en": "eileenngahere",
+			"mi": "eileenngahere"
+		},
+		"name": {
+			"locale": {
+				"mi": "Eileen Ngahere"
+			},
+			"alt": {
+				"en": {
+					"full": "Eileen Ngahere"
+				}
+			},
+			"parts": {
+				"first": "Eileen",
+				"last": "Ngahere"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_11",
+		"next_id": "sp_13"
+	},
+	{
+		"id": "sp_13",
+		"slug": {
+			"en": "eueramanuera",
+			"mi": "eueramanuera"
+		},
+		"name": {
+			"locale": {
+				"mi": "Euera Manuera"
+			},
+			"alt": {
+				"en": {
+					"full": "Euera Manuera"
+				}
+			},
+			"parts": {
+				"first": "Euera",
+				"last": "Manuera"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "I visited Eruera Manuera one afternoon, and he was nearly asleep. His family told me he was better in the morrning, and so it proved. He died very soon after we recorded the names."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_12",
+		"next_id": "sp_14"
+	},
+	{
+		"id": "sp_14",
+		"slug": {
+			"en": "frazertehiko",
+			"mi": "frazertehiko"
+		},
+		"name": {
+			"locale": {
+				"mi": "Frazer te Hiko"
+			},
+			"alt": {
+				"en": {
+					"full": "Frazer te Hiko"
+				}
+			},
+			"parts": {
+				"first": "Frazer",
+				"last": "te Hiko"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_13",
+		"next_id": "sp_15"
+	},
+	{
+		"id": "sp_15",
+		"slug": {
+			"en": "georgeheitihawkins",
+			"mi": "georgeheitihawkins"
+		},
+		"name": {
+			"locale": {
+				"mi": "George Heiti Hawkins"
+			},
+			"alt": {
+				"en": {
+					"full": "George Hawkins"
+				}
+			},
+			"parts": {
+				"first": "George",
+				"last": "Hawkins"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_14",
+		"next_id": "sp_16"
+	},
+	{
+		"id": "sp_16",
+		"slug": {
+			"en": "georgekereama",
+			"mi": "georgekereama"
+		},
+		"name": {
+			"locale": {
+				"mi": "George Kereama"
+			},
+			"alt": {
+				"en": {
+					"full": "George Kereama"
+				}
+			},
+			"parts": {
+				"first": "George",
+				"last": "Kereama"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_15",
+		"next_id": "sp_17"
+	},
+	{
+		"id": "sp_17",
+		"slug": {
+			"en": "georgeteau",
+			"mi": "georgeteau"
+		},
+		"name": {
+			"locale": {
+				"mi": "George Te Au"
+			},
+			"alt": {
+				"en": {
+					"full": "George Te Au"
+				}
+			},
+			"parts": {
+				"first": "George",
+				"last": "Te Au"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Paddy Gilroy's home"
+			}
+		},
+		"previous_id": "sp_16",
+		"next_id": "sp_18"
+	},
+	{
+		"id": "sp_18",
+		"slug": {
+			"en": "gordonpongakingidavis",
+			"mi": "gordonpongakingidavis"
+		},
+		"name": {
+			"locale": {
+				"mi": "Gordon Ponga Kingi Davis"
+			},
+			"alt": {
+				"en": {
+					"full": "Gordon Davis"
+				}
+			},
+			"parts": {
+				"first": "Gordon",
+				"last": "Davis"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_17",
+		"next_id": "sp_19"
+	},
+	{
+		"id": "sp_19",
+		"slug": {
+			"en": "hakithompson",
+			"mi": "hakithompson"
+		},
+		"name": {
+			"locale": {
+				"mi": "Haki Thompson"
+			},
+			"alt": {
+				"en": {
+					"full": "Haki Thompson"
+				}
+			},
+			"parts": {
+				"first": "Haki",
+				"last": "Thompson"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_18",
+		"next_id": "sp_20"
+	},
+	{
+		"id": "sp_20",
+		"slug": {
+			"en": "hakiwihongi",
+			"mi": "hakiwihongi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Haki Wihongi"
+			},
+			"alt": {
+				"en": {
+					"full": "Haki Wihongi"
+				}
+			},
+			"parts": {
+				"first": "Haki",
+				"last": "Wihongi"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_19",
+		"next_id": "sp_21"
+	},
+	{
+		"id": "sp_21",
+		"slug": {
+			"en": "hannahmoarimeihana",
+			"mi": "hannahmoarimeihana"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hannah Moari Meihana"
+			},
+			"alt": {
+				"en": {
+					"full": "Hannah Meihana"
+				}
+			},
+			"parts": {
+				"first": "Hannah",
+				"last": "Meihana"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_20",
+		"next_id": "sp_22"
+	},
+	{
+		"id": "sp_22",
+		"slug": {
+			"en": "revhareteraharahakake",
+			"mi": "revhareteraharahakake"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rev Hare Te Raharaha Kake"
+			},
+			"alt": {
+				"en": {
+					"full": "Rev Hare Te Raharaha Kake"
+				}
+			},
+			"parts": {
+				"title": "Rev",
+				"first": "Hare",
+				"middle": "Te Raharaha",
+				"last": "Kake"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_21",
+		"next_id": "sp_23"
+	},
+	{
+		"id": "sp_23",
+		"slug": {
+			"en": "hemikonore",
+			"mi": "hemikonore"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hemi Konore"
+			},
+			"alt": {
+				"en": {
+					"full": "Hemi Konore"
+				}
+			},
+			"parts": {
+				"first": "Hemi",
+				"last": "Konore"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_22",
+		"next_id": "sp_24"
+	},
+	{
+		"id": "sp_24",
+		"slug": {
+			"en": "hemiwaenga",
+			"mi": "hemiwaenga"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hemi Waenga"
+			},
+			"alt": {
+				"en": {
+					"full": "Hemi Waenga"
+				}
+			},
+			"parts": {
+				"first": "Hemi",
+				"last": "Waenga"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_23",
+		"next_id": "sp_25"
+	},
+	{
+		"id": "sp_25",
+		"slug": {
+			"en": "henarepetua",
+			"mi": "henarepetua"
+		},
+		"name": {
+			"locale": {
+				"mi": "Henare Petua"
+			},
+			"alt": {
+				"en": {
+					"full": "Henare Petuha"
+				}
+			},
+			"parts": {
+				"first": "Henare",
+				"last": "Petuha"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_24",
+		"next_id": "sp_26"
+	},
+	{
+		"id": "sp_26",
+		"slug": {
+			"en": "heporasybilyoung",
+			"mi": "heporasybilyoung"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hepora (Sybil) Young"
+			},
+			"alt": {
+				"en": {
+					"full": "Hepora Young"
+				}
+			},
+			"parts": {
+				"alternate": "Sybil",
+				"first": "Hepora",
+				"last": "Young"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_25",
+		"next_id": "sp_27"
+	},
+	{
+		"id": "sp_27",
+		"slug": {
+			"en": "hikaiaamohia",
+			"mi": "hikaiaamohia"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hikaia Amohia"
+			},
+			"alt": {
+				"en": {
+					"full": "Hikaia Amohia"
+				}
+			},
+			"parts": {
+				"first": "Hikaia",
+				"last": "Amohia"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_26",
+		"next_id": "sp_28"
+	},
+	{
+		"id": "sp_28",
+		"slug": {
+			"en": "hikohohepa",
+			"mi": "hikohohepa"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hiko Hohepa"
+			},
+			"alt": {
+				"en": {
+					"full": "Hiko Hohepa"
+				}
+			},
+			"parts": {
+				"first": "Hiko",
+				"last": "Hohepa"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_27",
+		"next_id": "sp_29"
+	},
+	{
+		"id": "sp_29",
+		"slug": {
+			"en": "hirakahi",
+			"mi": "hirakahi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hira Kahi"
+			},
+			"alt": {
+				"en": {
+					"full": "Hira Kahi"
+				}
+			},
+			"parts": {
+				"first": "Hira",
+				"last": "Kahi"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_28",
+		"next_id": "sp_30"
+	},
+	{
+		"id": "sp_30",
+		"slug": {
+			"en": "hirinimokomead",
+			"mi": "hirinimokomead"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hirini Moko Mead"
+			},
+			"alt": {
+				"en": {
+					"full": "Hirini Moko Mead"
+				}
+			},
+			"parts": {
+				"first": "Hirini",
+				"middle": "Moko",
+				"last": "Mead"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"links": {
+			"info": "https://en.wikipedia.org/wiki/Sidney_Moko_Mead"
+		},
+		"previous_id": "sp_29",
+		"next_id": "sp_31"
+	},
+	{
+		"id": "sp_31",
+		"slug": {
+			"en": "hoanarapatini",
+			"mi": "hoanarapatini"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hoana Rapatini"
+			},
+			"alt": {
+				"en": {
+					"full": "Hoana Rapatini"
+				}
+			},
+			"parts": {
+				"first": "Hoana",
+				"last": "Rapatini"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_30",
+		"next_id": "sp_32"
+	},
+	{
+		"id": "sp_32",
+		"slug": {
+			"en": "hoaniapiti",
+			"mi": "hoaniapiti"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hoani Apiti"
+			},
+			"alt": {
+				"en": {
+					"full": "Hoani Apiti"
+				}
+			},
+			"parts": {
+				"first": "Hoani",
+				"last": "Apiti"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_31",
+		"next_id": "sp_33"
+	},
+	{
+		"id": "sp_33",
+		"slug": {
+			"en": "hoaniheremaia",
+			"mi": "hoaniheremaia"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hoani Heremaia"
+			},
+			"alt": {
+				"en": {
+					"full": "Hoani Heremaia"
+				}
+			},
+			"parts": {
+				"first": "Hoani",
+				"last": "Heremaia"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_32",
+		"next_id": "sp_34"
+	},
+	{
+		"id": "sp_34",
+		"slug": {
+			"en": "hohepatoia",
+			"mi": "hohepatoia"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hohepa Toia"
+			},
+			"alt": {
+				"en": {
+					"full": "Hohepa Toia"
+				}
+			},
+			"parts": {
+				"first": "Hohepa",
+				"last": "Toia"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Possibly misidentified as his brother Sam."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_33",
+		"next_id": "sp_35"
+	},
+	{
+		"id": "sp_35",
+		"slug": {
+			"en": "honeturei",
+			"mi": "honeturei"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hone Turei"
+			},
+			"alt": {
+				"en": {
+					"full": "Hone Turei"
+				}
+			},
+			"parts": {
+				"first": "Hone",
+				"last": "Turei"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Later Sir Hone."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_34",
+		"next_id": "sp_36"
+	},
+	{
+		"id": "sp_36",
+		"slug": {
+			"en": "huataholmes",
+			"mi": "huataholmes"
+		},
+		"name": {
+			"locale": {
+				"mi": "Huata Holmes"
+			},
+			"alt": {
+				"en": {
+					"full": "Huata Holmes"
+				}
+			},
+			"parts": {
+				"first": "Huata",
+				"last": "Holmes"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_35",
+		"next_id": "sp_37"
+	},
+	{
+		"id": "sp_37",
+		"slug": {
+			"en": "hughyoung",
+			"mi": "hughyoung"
+		},
+		"name": {
+			"locale": {
+				"mi": "Hugh Young"
+			},
+			"alt": {
+				"en": {
+					"full": "Hugh Young"
+				}
+			},
+			"parts": {
+				"first": "Hugh",
+				"last": "Young"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Parts 1 and 2, Radio NZ studios. Part 3, his home"
+			}
+		},
+		"previous_id": "sp_36",
+		"next_id": "sp_38"
+	},
+	{
+		"id": "sp_38",
+		"slug": {
+			"en": "huhureretukukino",
+			"mi": "huhureretukukino"
+		},
+		"name": {
+			"locale": {
+				"mi": "Huhurere Tukukino"
+			},
+			"alt": {
+				"en": {
+					"full": "Huhurere Tukukino"
+				}
+			},
+			"parts": {
+				"first": "Huhurere",
+				"last": "Tukukino"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_37",
+		"next_id": "sp_39"
+	},
+	{
+		"id": "sp_39",
+		"slug": {
+			"en": "huirangiwaikerepuru",
+			"mi": "huirangiwaikerepuru"
+		},
+		"name": {
+			"locale": {
+				"mi": "Huirangi Waikerepuru"
+			},
+			"alt": {
+				"en": {
+					"full": "Huirangi Waikerepuru"
+				}
+			},
+			"parts": {
+				"first": "Huirangi",
+				"last": "Waikerepuru"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_38",
+		"next_id": "sp_40"
+	},
+	{
+		"id": "sp_40",
+		"slug": {
+			"en": "islandlove",
+			"mi": "islandlove"
+		},
+		"name": {
+			"locale": {
+				"mi": "Island Love"
+			},
+			"alt": {
+				"en": {
+					"full": "Island Love"
+				}
+			},
+			"parts": {
+				"first": "Island",
+				"last": "Love"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_39",
+		"next_id": "sp_41"
+	},
+	{
+		"id": "sp_41",
+		"slug": {
+			"en": "jacktekapengamcclutchie",
+			"mi": "jacktekapengamcclutchie"
+		},
+		"name": {
+			"locale": {
+				"mi": "Jack Te Kapenga McClutchie"
+			},
+			"alt": {
+				"en": {
+					"full": "Jack Te Kapenga McClutchie"
+				}
+			},
+			"parts": {
+				"first": "Jack",
+				"middle": "Te Kapenga",
+				"last": "McClutchie"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_40",
+		"next_id": "sp_42"
+	},
+	{
+		"id": "sp_42",
+		"slug": {
+			"en": "jackreihana",
+			"mi": "jackreihana"
+		},
+		"name": {
+			"locale": {
+				"mi": "Jack Reihana"
+			},
+			"alt": {
+				"en": {
+					"full": "Jack Reihana"
+				}
+			},
+			"parts": {
+				"first": "Jack",
+				"last": "Reihana"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_41",
+		"next_id": "sp_43"
+	},
+	{
+		"id": "sp_43",
+		"slug": {
+			"en": "auntiejanemanahi",
+			"mi": "auntiejanemanahi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Auntie Jane Manahi"
+			},
+			"alt": {
+				"en": {
+					"full": "Auntie Jane Manahi"
+				}
+			},
+			"parts": {
+				"title": "Auntie",
+				"first": "Jane",
+				"last": "Manahi"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "Aunt Jane Manahi was another old-school kuia, beautifully spoken in both English and Māori, who would brook no nonsense from any young whippersnapper."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_42",
+		"next_id": "sp_44"
+	},
+	{
+		"id": "sp_44",
+		"slug": {
+			"en": "jimkaihau",
+			"mi": "jimkaihau"
+		},
+		"name": {
+			"locale": {
+				"mi": "Jim Kaihau"
+			},
+			"alt": {
+				"en": {
+					"full": "Jim Kaihau"
+				}
+			},
+			"parts": {
+				"first": "Jim",
+				"last": "Kaihau"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_43",
+		"next_id": "sp_45"
+	},
+	{
+		"id": "sp_45",
+		"slug": {
+			"en": "joemalcolm",
+			"mi": "joemalcolm"
+		},
+		"name": {
+			"locale": {
+				"mi": "Joe Malcolm"
+			},
+			"alt": {
+				"en": {
+					"full": "Joe Malcolm"
+				}
+			},
+			"parts": {
+				"first": "Joe",
+				"last": "Malcolm"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Tarawhai"
+			}
+		},
+		"previous_id": "sp_44",
+		"next_id": "sp_46"
+	},
+	{
+		"id": "sp_46",
+		"slug": {
+			"en": "joetoki",
+			"mi": "joetoki"
+		},
+		"name": {
+			"locale": {
+				"mi": "Joe Toki"
+			},
+			"alt": {
+				"en": {
+					"full": "Joe Toki"
+				}
+			},
+			"parts": {
+				"first": "Joe",
+				"last": "Toki"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_45",
+		"next_id": "sp_47"
+	},
+	{
+		"id": "sp_47",
+		"slug": {
+			"en": "johnhenrybird,qso",
+			"mi": "johnhenrybird,qso"
+		},
+		"name": {
+			"locale": {
+				"mi": "John Henry Bird, QSO"
+			},
+			"alt": {
+				"en": {
+					"full": "John Henry Bird QSO"
+				}
+			},
+			"parts": {
+				"first": "John",
+				"middle": "Henry",
+				"last": "Bird",
+				"suffix": "QSO"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"recording": {
+				"en": "We recorded in the meeting house, and some women were weaving at the other end. I asked if they could stop, but Mr Bird said, no, their work is tapu too."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Apa-hapai-taketake"
+			}
+		},
+		"previous_id": "sp_46",
+		"next_id": "sp_48"
+	},
+	{
+		"id": "sp_48",
+		"slug": {
+			"en": "johnrangihau",
+			"mi": "johnrangihau"
+		},
+		"name": {
+			"locale": {
+				"mi": "John Rangihau"
+			},
+			"alt": {
+				"en": {
+					"full": "John Rangihau"
+				}
+			},
+			"parts": {
+				"first": "John",
+				"last": "Rangihau"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "I had known John Rangihou since 1971 and of course he was best qualified to speak for Ngai Tūhoe. It was only by chance that I recorded Waimana without him. It took months to find us both free. We recorded in Studio 1 of Broadcasting House of blessed memory. You can hear his love of the places in his voice. (This is true of many other speakers as well)."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Studio 1, Broadcasting House, Bowen St, Wellington"
+			}
+		},
+		"links": {
+			"info": "https://teara.govt.nz/en/biographies/5r6/rangihau-john-te-rangianiwaniwa"
+		},
+		"previous_id": "sp_47",
+		"next_id": "sp_49"
+	},
+	{
+		"id": "sp_49",
+		"slug": {
+			"en": "johntangiora",
+			"mi": "johntangiora"
+		},
+		"name": {
+			"locale": {
+				"mi": "John Tangiora"
+			},
+			"alt": {
+				"en": {
+					"full": "John Tangiora"
+				}
+			},
+			"parts": {
+				"first": "John",
+				"last": "Tangiora"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "I recorded John Tangiora in a tearing hurry, having driven from Ruatoki via Murupara and a back road to Taupo and Napier, and he and Pauline had an appointment not long after. He was in failing health."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_48",
+		"next_id": "sp_50"
+	},
+	{
+		"id": "sp_50",
+		"slug": {
+			"en": "johnsonhuiarangikenny",
+			"mi": "johnsonhuiarangikenny"
+		},
+		"name": {
+			"locale": {
+				"mi": "Johnson Huiarangi Kenny"
+			},
+			"alt": {
+				"en": {
+					"full": "Johnson Huiarangi Kenny"
+				}
+			},
+			"parts": {
+				"first": "Johnson",
+				"middle": "Huiarangi",
+				"last": "Kenny"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_49",
+		"next_id": "sp_51"
+	},
+	{
+		"id": "sp_51",
+		"slug": {
+			"en": "karapuketapu",
+			"mi": "karapuketapu"
+		},
+		"name": {
+			"locale": {
+				"mi": "Kara Puketapu"
+			},
+			"alt": {
+				"en": {
+					"full": "Kara Puketapu"
+				}
+			},
+			"parts": {
+				"first": "Kara",
+				"last": "Puketapu"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Kara Puketapu was chosen by Te Ati Awa as their speaker, and uses a strong Taranaki accent with silent Hs. I discussed with him whether he should make some concession to the previous occupants of Wellington Harbour, Ngati Ira and Ngai Tara. He said \"We'll see how it goes\" or words to that effect. He made some effort to aspirate \"Hātaitai\", but the effect is uncomfortable."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_50",
+		"next_id": "sp_52"
+	},
+	{
+		"id": "sp_52",
+		"slug": {
+			"en": "kathhemi",
+			"mi": "kathhemi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Kath Hemi"
+			},
+			"alt": {
+				"en": {
+					"full": "Kath Hemi"
+				}
+			},
+			"parts": {
+				"first": "Kath",
+				"last": "Hemi"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "Omaka marae"
+			}
+		},
+		"previous_id": "sp_51",
+		"next_id": "sp_53"
+	},
+	{
+		"id": "sp_53",
+		"slug": {
+			"en": "kellydavis",
+			"mi": "kellydavis"
+		},
+		"name": {
+			"locale": {
+				"mi": "Kelly Davis"
+			},
+			"alt": {
+				"en": {
+					"full": "Kelly Davis"
+				}
+			},
+			"parts": {
+				"first": "Kelly",
+				"last": "Davis"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_52",
+		"next_id": "sp_54"
+	},
+	{
+		"id": "sp_54",
+		"slug": {
+			"en": "kepatanirau",
+			"mi": "kepatanirau"
+		},
+		"name": {
+			"locale": {
+				"mi": "Kepa Tanirau"
+			},
+			"alt": {
+				"en": {
+					"full": "Kepa Tanirau"
+				}
+			},
+			"parts": {
+				"first": "Kepa",
+				"last": "Tanirau"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_53",
+		"next_id": "sp_55"
+	},
+	{
+		"id": "sp_55",
+		"slug": {
+			"en": "korotawa",
+			"mi": "korotawa"
+		},
+		"name": {
+			"locale": {
+				"mi": "Koro Tawa"
+			},
+			"alt": {
+				"en": {
+					"full": "Koro Tawa"
+				}
+			},
+			"parts": {
+				"first": "Koro",
+				"last": "Tawa"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_54",
+		"next_id": "sp_56"
+	},
+	{
+		"id": "sp_56",
+		"slug": {
+			"en": "leeluke",
+			"mi": "leeluke"
+		},
+		"name": {
+			"locale": {
+				"mi": "Lee Luke"
+			},
+			"alt": {
+				"en": {
+					"full": "Lee Luke"
+				}
+			},
+			"parts": {
+				"first": "Lee",
+				"last": "Luke"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_55",
+		"next_id": "sp_57"
+	},
+	{
+		"id": "sp_57",
+		"slug": {
+			"en": "lenamanuel",
+			"mi": "lenamanuel"
+		},
+		"name": {
+			"locale": {
+				"mi": "Lena Manuel"
+			},
+			"alt": {
+				"en": {
+					"full": "Lena Manuel"
+				}
+			},
+			"parts": {
+				"first": "Lena",
+				"last": "Manuel"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "Lena Manuel was a stalwart of the Māori Women's Welfare League, and I had met her in that context in Wellington, but in the event we recorded in her home in Wairoa. I always had an uphill job persuading women to speak. My standard line was that women needed to know about placenames in composing waiata. I now wish I had worked harder at it."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_56",
+		"next_id": "sp_58"
+	},
+	{
+		"id": "sp_58",
+		"slug": {
+			"en": "maakajones",
+			"mi": "maakajones"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maaka Jones"
+			},
+			"alt": {
+				"en": {
+					"full": "Maaka Jones"
+				}
+			},
+			"parts": {
+				"first": "Maaka",
+				"last": "Jones"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_57",
+		"next_id": "sp_59"
+	},
+	{
+		"id": "sp_59",
+		"slug": {
+			"en": "maariregoodall",
+			"mi": "maariregoodall"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maarire Goodall"
+			},
+			"alt": {
+				"en": {
+					"full": "Dr Maarire Goodall"
+				}
+			},
+			"parts": {
+				"title": "Dr",
+				"first": "Maarire",
+				"last": "Goodall"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Sir Tīpene O'Regan directed me to Maarire Goodall when I began the South Island. He was invaluable, pointing me towards most of the speakers and taking over the production of the third print volume. We were both strong-willed but eventually resolved all problems. In the course of this, he became a dear friend."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Studio 1, Broadcasting House, Bowen St, Wellington"
+			}
+		},
+		"previous_id": "sp_58",
+		"next_id": "sp_60"
+	},
+	{
+		"id": "sp_60",
+		"slug": {
+			"en": "maehenikora",
+			"mi": "maehenikora"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maehe Nikora"
+			},
+			"alt": {
+				"en": {
+					"full": "Maehe P H Nikora"
+				}
+			},
+			"parts": {
+				"first": "Maehe",
+				"middle": "P H",
+				"last": "Nikora"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Studio 1, Broadcasting House, Bowen St, Wellington"
+			}
+		},
+		"previous_id": "sp_59",
+		"next_id": "sp_61"
+	},
+	{
+		"id": "sp_61",
+		"slug": {
+			"en": "auntmagdawalscott",
+			"mi": "auntmagdawalscott"
+		},
+		"name": {
+			"locale": {
+				"mi": "Aunt Magda Walscott"
+			},
+			"alt": {
+				"en": {
+					"full": "Aunt Magda Walscott"
+				}
+			},
+			"parts": {
+				"title": "Aunt",
+				"first": "Magda",
+				"last": "Walscott"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "Magda Walscott was a very senior kuia of her region, but very bright."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_60",
+		"next_id": "sp_62"
+	},
+	{
+		"id": "sp_62",
+		"slug": {
+			"en": "mahiawhatarautainui",
+			"mi": "mahiawhatarautainui"
+		},
+		"name": {
+			"locale": {
+				"mi": "Mahia Whatarau-Tainui"
+			},
+			"alt": {
+				"en": {
+					"full": "Mahia Whatarau-Tainui"
+				}
+			},
+			"parts": {
+				"first": "Mahia",
+				"last": "Whatarau-Tainui"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "With Henry Robinson"
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Onuku marae"
+			}
+		},
+		"previous_id": "sp_61",
+		"next_id": "sp_63"
+	},
+	{
+		"id": "sp_63",
+		"slug": {
+			"en": "maikamason",
+			"mi": "maikamason"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maika Mason"
+			},
+			"alt": {
+				"en": {
+					"full": "Maika Mason"
+				}
+			},
+			"parts": {
+				"first": "Maika",
+				"last": "Mason"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Poutini Ngai Tahu"
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_62",
+		"next_id": "sp_64"
+	},
+	{
+		"id": "sp_64",
+		"slug": {
+			"en": "majormeihana",
+			"mi": "majormeihana"
+		},
+		"name": {
+			"locale": {
+				"mi": "Major Meihana"
+			},
+			"alt": {
+				"en": {
+					"full": "Major Meihana"
+				}
+			},
+			"parts": {
+				"first": "Major",
+				"last": "Meihana"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Tamatea Pokai Whenua"
+			}
+		},
+		"previous_id": "sp_63",
+		"next_id": "sp_65"
+	},
+	{
+		"id": "sp_65",
+		"slug": {
+			"en": "malcolmhoskins",
+			"mi": "malcolmhoskins"
+		},
+		"name": {
+			"locale": {
+				"mi": "Malcolm Hoskins"
+			},
+			"alt": {
+				"en": {
+					"full": "Malcolm Hoskins"
+				}
+			},
+			"parts": {
+				"first": "Malcolm",
+				"last": "Hoskins"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Malcom Hoskins is the youngest speaker."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Kath Hemi's home"
+			}
+		},
+		"previous_id": "sp_64",
+		"next_id": "sp_66"
+	},
+	{
+		"id": "sp_66",
+		"slug": {
+			"en": "manahipaewai",
+			"mi": "manahipaewai"
+		},
+		"name": {
+			"locale": {
+				"mi": "Manahi Paewai"
+			},
+			"alt": {
+				"en": {
+					"full": "Manahi Paewai"
+				}
+			},
+			"parts": {
+				"first": "Manahi",
+				"last": "Paewai"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"recording": {
+				"en": "We recorded in the evening and birdsong adds to the track."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_65",
+		"next_id": "sp_67"
+	},
+	{
+		"id": "sp_67",
+		"slug": {
+			"en": "matawhapompeydurie",
+			"mi": "matawhapompeydurie"
+		},
+		"name": {
+			"locale": {
+				"mi": "Matawha (Pompey) Durie"
+			},
+			"alt": {
+				"en": {
+					"full": "Matawha (Pompey) Durie"
+				}
+			},
+			"parts": {
+				"nick": "Pompey",
+				"first": "Matawha",
+				"last": "Durie"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Mr Durie knew far more names around the family home and Aorangi marae - names for humps and dips in the land, it seemed."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his son Mason Durie's home"
+			}
+		},
+		"previous_id": "sp_66",
+		"next_id": "sp_68"
+	},
+	{
+		"id": "sp_68",
+		"slug": {
+			"en": "matengabaker",
+			"mi": "matengabaker"
+		},
+		"name": {
+			"locale": {
+				"mi": "Matenga Baker"
+			},
+			"alt": {
+				"en": {
+					"full": "Matenga Baker"
+				}
+			},
+			"parts": {
+				"first": "Matenga",
+				"last": "Baker"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"recording": {
+				"en": "We recorded Mr Baker on a winter day with a crackling fire. "
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_67",
+		"next_id": "sp_69"
+	},
+	{
+		"id": "sp_69",
+		"slug": {
+			"en": "mauipomare",
+			"mi": "mauipomare"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maui Pomare"
+			},
+			"alt": {
+				"en": {
+					"full": "Maui Pomare"
+				}
+			},
+			"parts": {
+				"first": "Maui",
+				"last": "Pomare"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_68",
+		"next_id": "sp_70"
+	},
+	{
+		"id": "sp_70",
+		"slug": {
+			"en": "mauricegray",
+			"mi": "mauricegray"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maurice Gray"
+			},
+			"alt": {
+				"en": {
+					"full": "Maurice Gray"
+				}
+			},
+			"parts": {
+				"first": "Maurice",
+				"last": "Gray"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_69",
+		"next_id": "sp_71"
+	},
+	{
+		"id": "sp_71",
+		"slug": {
+			"en": "mauricewilson",
+			"mi": "mauricewilson"
+		},
+		"name": {
+			"locale": {
+				"mi": "Maurice Wilson"
+			},
+			"alt": {
+				"en": {
+					"full": "Maurice Wilson"
+				}
+			},
+			"parts": {
+				"first": "Maurice",
+				"last": "Wilson"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Te Puru o Aorere"
+			}
+		},
+		"previous_id": "sp_70",
+		"next_id": "sp_72"
+	},
+	{
+		"id": "sp_72",
+		"slug": {
+			"en": "meretaka",
+			"mi": "meretaka"
+		},
+		"name": {
+			"locale": {
+				"mi": "Mere Taka"
+			},
+			"alt": {
+				"en": {
+					"full": "Mere Nutana Taka"
+				}
+			},
+			"parts": {
+				"first": "Mere",
+				"middle": "Nutana",
+				"last": "Taka"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_71",
+		"next_id": "sp_73"
+	},
+	{
+		"id": "sp_73",
+		"slug": {
+			"en": "meretoia",
+			"mi": "meretoia"
+		},
+		"name": {
+			"locale": {
+				"mi": "Mere Toia"
+			},
+			"alt": {
+				"en": {
+					"full": "Mere Toia"
+				}
+			},
+			"parts": {
+				"first": "Mere",
+				"last": "Toia"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "Co-speaker with Hohepa Toia and Sam Toia"
+			}
+		},
+		"previous_id": "sp_72",
+		"next_id": "sp_74"
+	},
+	{
+		"id": "sp_74",
+		"slug": {
+			"en": "merimeripenfold",
+			"mi": "merimeripenfold"
+		},
+		"name": {
+			"locale": {
+				"mi": "Merimeri Penfold"
+			},
+			"alt": {
+				"en": {
+					"full": "Merimeri Penfold"
+				}
+			},
+			"parts": {
+				"first": "Merimeri",
+				"last": "Penfold"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "Merimeri was my first tutor of Māori, a great scholar of the language, and a beautiful speaker. She helped update Williams' Dictionary, and translated some of Shakespeare's sonnets into Māori. In 1970 she composed a haka against apartheid. It is my eternal regret that when I asked her to record her Far North names, she brought a male speaker with her, and I let her defer to him, so we only hear her say the names that he missed. I resolved to make a greater effort to include women in the South Island section."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Tane Nui a Rangi"
+			}
+		},
+		"previous_id": "sp_73",
+		"next_id": "sp_75"
+	},
+	{
+		"id": "sp_75",
+		"slug": {
+			"en": "mitamohi",
+			"mi": "mitamohi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Mita Mohi"
+			},
+			"alt": {
+				"en": {
+					"full": "Mita Mohi"
+				}
+			},
+			"parts": {
+				"first": "Mita",
+				"last": "Mohi"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Mita Mohi is better known as a teacher of the taiaha."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Rangiwewehi Pā"
+			}
+		},
+		"previous_id": "sp_74",
+		"next_id": "sp_76"
+	},
+	{
+		"id": "sp_76",
+		"slug": {
+			"en": "mollyhotene",
+			"mi": "mollyhotene"
+		},
+		"name": {
+			"locale": {
+				"mi": "Molly Hotene"
+			},
+			"alt": {
+				"en": {
+					"full": "Molly Hotene"
+				}
+			},
+			"parts": {
+				"first": "Molly",
+				"last": "Hotene"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_75",
+		"next_id": "sp_77"
+	},
+	{
+		"id": "sp_77",
+		"slug": {
+			"en": "naidapou",
+			"mi": "naidapou"
+		},
+		"name": {
+			"locale": {
+				"mi": "Naida Pou"
+			},
+			"alt": {
+				"en": {
+					"full": "Naida Rangimarie Pou"
+				}
+			},
+			"parts": {
+				"first": "Naida",
+				"middle": "Rangimarie",
+				"last": "Pou"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_76",
+		"next_id": "sp_78"
+	},
+	{
+		"id": "sp_78",
+		"slug": {
+			"en": "nepianikorima",
+			"mi": "nepianikorima"
+		},
+		"name": {
+			"locale": {
+				"mi": "Nepia Nikorima"
+			},
+			"alt": {
+				"en": {
+					"full": "Nepia Nikorima"
+				}
+			},
+			"parts": {
+				"first": "Nepia",
+				"last": "Nikorima"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_77",
+		"next_id": "sp_79"
+	},
+	{
+		"id": "sp_79",
+		"slug": {
+			"en": "ngarongoiwikateaiwinicholson",
+			"mi": "ngarongoiwikateaiwinicholson"
+		},
+		"name": {
+			"locale": {
+				"mi": "Ngarongo Iwikatea (Iwi) Nicholson"
+			},
+			"alt": {
+				"en": {
+					"full": "Ngarongo (Iwi) Iwikatea Nicholson"
+				}
+			},
+			"parts": {
+				"nick": "Iwi",
+				"first": "Ngarongo",
+				"middle": "Iwikatea",
+				"last": "Nicholson"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_78",
+		"next_id": "sp_80"
+	},
+	{
+		"id": "sp_80",
+		"slug": {
+			"en": "paddygilroy",
+			"mi": "paddygilroy"
+		},
+		"name": {
+			"locale": {
+				"mi": "Paddy Gilroy"
+			},
+			"alt": {
+				"en": {
+					"full": "Paddy Gilroy"
+				}
+			},
+			"parts": {
+				"first": "Paddy",
+				"last": "Gilroy"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "With George Te Au."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_79",
+		"next_id": "sp_81"
+	},
+	{
+		"id": "sp_81",
+		"slug": {
+			"en": "pakarikiharrison",
+			"mi": "pakarikiharrison"
+		},
+		"name": {
+			"locale": {
+				"mi": "Pakariki Harrison"
+			},
+			"alt": {
+				"en": {
+					"full": "Pakariki Harrison"
+				}
+			},
+			"parts": {
+				"first": "Pakariki",
+				"last": "Harrison"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Paki Harrison is better known as a master-carver."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_80",
+		"next_id": "sp_82"
+	},
+	{
+		"id": "sp_82",
+		"slug": {
+			"en": "apotoropaorohekenui",
+			"mi": "apotoropaorohekenui"
+		},
+		"name": {
+			"locale": {
+				"mi": "Apotoro Paoro Hekenui"
+			},
+			"alt": {
+				"en": {
+					"full": "Apotoro Paoro Hekenui"
+				}
+			},
+			"parts": {
+				"title": "Apotoro",
+				"first": "Paoro",
+				"last": "Hekenui"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_81",
+		"next_id": "sp_83"
+	},
+	{
+		"id": "sp_83",
+		"slug": {
+			"en": "pauromareikura",
+			"mi": "pauromareikura"
+		},
+		"name": {
+			"locale": {
+				"mi": "Pauro Mareikura"
+			},
+			"alt": {
+				"en": {
+					"full": "Pauro Mareikura"
+				}
+			},
+			"parts": {
+				"first": "Pauro",
+				"last": "Mareikura"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Maungarongo Marae"
+			}
+		},
+		"previous_id": "sp_82",
+		"next_id": "sp_84"
+	},
+	{
+		"id": "sp_84",
+		"slug": {
+			"en": "peterkeremeta",
+			"mi": "peterkeremeta"
+		},
+		"name": {
+			"locale": {
+				"mi": "Peter Keremeta"
+			},
+			"alt": {
+				"en": {
+					"full": "Peter Keremeta"
+				}
+			},
+			"parts": {
+				"first": "Peter",
+				"last": "Keremeta"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Waenganui dining hall, Parawera"
+			}
+		},
+		"previous_id": "sp_83",
+		"next_id": "sp_85"
+	},
+	{
+		"id": "sp_85",
+		"slug": {
+			"en": "pineahamurray",
+			"mi": "pineahamurray"
+		},
+		"name": {
+			"locale": {
+				"mi": "Pineaha Murray"
+			},
+			"alt": {
+				"en": {
+					"full": "Pineaha Murray"
+				}
+			},
+			"parts": {
+				"first": "Pineaha",
+				"last": "Murray"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Tane Nui a Rangi"
+			}
+		},
+		"previous_id": "sp_84",
+		"next_id": "sp_86"
+	},
+	{
+		"id": "sp_86",
+		"slug": {
+			"en": "pukeraurangitutea",
+			"mi": "pukeraurangitutea"
+		},
+		"name": {
+			"locale": {
+				"mi": "Pukerau Rangitutea"
+			},
+			"alt": {
+				"en": {
+					"full": "Pukerau Rangitutea"
+				}
+			},
+			"parts": {
+				"first": "Pukerau",
+				"last": "Rangitutea"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"recording": {
+				"en": "The first recording, at his home in the evening, was a technical disaster for some reason, and I went back later, in the morning, and our recording on the meeting house porch was much more successful. Like many others, he showed his dedication to this project by agreeing undergo the tedious process of recording the names clearly and without background noise, not once but twice."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "The porch of Hoturoa"
+			}
+		},
+		"previous_id": "sp_85",
+		"next_id": "sp_87"
+	},
+	{
+		"id": "sp_87",
+		"slug": {
+			"en": "puniamollyhotene",
+			"mi": "puniamollyhotene"
+		},
+		"name": {
+			"locale": {
+				"mi": "Punia (Molly) Hotene"
+			},
+			"alt": {
+				"en": {
+					"full": "Punia Hotene"
+				}
+			},
+			"parts": {
+				"alternate": "Molly",
+				"first": "Punia",
+				"last": "Hotene"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_86",
+		"next_id": "sp_88"
+	},
+	{
+		"id": "sp_88",
+		"slug": {
+			"en": "rakiihiatau",
+			"mi": "rakiihiatau"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rakiihia Tau"
+			},
+			"alt": {
+				"en": {
+					"full": "Rakiihia Tau"
+				}
+			},
+			"parts": {
+				"first": "Rakiihia",
+				"last": "Tau"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_87",
+		"next_id": "sp_89"
+	},
+	{
+		"id": "sp_89",
+		"slug": {
+			"en": "ramekacope",
+			"mi": "ramekacope"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rameka Cope"
+			},
+			"alt": {
+				"en": {
+					"full": "Rameka Cope"
+				}
+			},
+			"parts": {
+				"first": "Rameka",
+				"last": "Cope"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Studio 1, Broadcasting House, Bowen St, Wellington"
+			}
+		},
+		"previous_id": "sp_88",
+		"next_id": "sp_90"
+	},
+	{
+		"id": "sp_90",
+		"slug": {
+			"en": "ranginganganamotu",
+			"mi": "ranginganganamotu"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rangi Ngangana Motu"
+			},
+			"alt": {
+				"en": {
+					"full": "Rangi Ngangana Motu"
+				}
+			},
+			"parts": {
+				"first": "Rangi",
+				"middle": "Ngangana",
+				"last": "Motu"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_89",
+		"next_id": "sp_91"
+	},
+	{
+		"id": "sp_91",
+		"slug": {
+			"en": "rangikamutuadowns",
+			"mi": "rangikamutuadowns"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rangikamutua Downs"
+			},
+			"alt": {
+				"en": {
+					"full": "Rangikamutua (Rangi) Downs"
+				}
+			},
+			"parts": {
+				"nick": "Rangi",
+				"first": "Rangikamutua",
+				"last": "Downs"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_90",
+		"next_id": "sp_92"
+	},
+	{
+		"id": "sp_92",
+		"slug": {
+			"en": "rangiskinner",
+			"mi": "rangiskinner"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rangi Skinner"
+			},
+			"alt": {
+				"en": {
+					"full": "Rangiwhakaewa (Rangi) Skinner"
+				}
+			},
+			"parts": {
+				"nick": "Rangi",
+				"first": "Rangiwhakaewa",
+				"last": "Skinner"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_91",
+		"next_id": "sp_93"
+	},
+	{
+		"id": "sp_93",
+		"slug": {
+			"en": "rapatacrown",
+			"mi": "rapatacrown"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rapata Crown"
+			},
+			"alt": {
+				"en": {
+					"full": "Rapata Crown"
+				}
+			},
+			"parts": {
+				"first": "Rapata",
+				"last": "Crown"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Rapata Crown was frail when I recorded him, and died soon after."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_92",
+		"next_id": "sp_94"
+	},
+	{
+		"id": "sp_94",
+		"slug": {
+			"en": "rapataemery",
+			"mi": "rapataemery"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rapata Emery"
+			},
+			"alt": {
+				"en": {
+					"full": "Rapata Emery"
+				}
+			},
+			"parts": {
+				"first": "Rapata",
+				"last": "Emery"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Rapata Emery was frail when I recorded him, and died soon after."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_93",
+		"next_id": "sp_95"
+	},
+	{
+		"id": "sp_95",
+		"slug": {
+			"en": "rauretiharris",
+			"mi": "rauretiharris"
+		},
+		"name": {
+			"locale": {
+				"mi": "Raureti Harris"
+			},
+			"alt": {
+				"en": {
+					"full": "Raureti Harris"
+				}
+			},
+			"parts": {
+				"first": "Raureti",
+				"last": "Harris"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "and Bob Harris"
+			}
+		},
+		"location": {
+			"description": {
+				"en": "their home"
+			}
+		},
+		"previous_id": "sp_94",
+		"next_id": "sp_96"
+	},
+	{
+		"id": "sp_96",
+		"slug": {
+			"en": "rawakataperenara",
+			"mi": "rawakataperenara"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rawakata Perenara"
+			},
+			"alt": {
+				"en": {
+					"full": "Rawakata Perenara"
+				}
+			},
+			"parts": {
+				"first": "Rawakata",
+				"last": "Perenara"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_95",
+		"next_id": "sp_97"
+	},
+	{
+		"id": "sp_97",
+		"slug": {
+			"en": "rexhiakita",
+			"mi": "rexhiakita"
+		},
+		"name": {
+			"locale": {
+				"mi": "Rex Hiakita"
+			},
+			"alt": {
+				"en": {
+					"full": "Rex Hiakita"
+				}
+			},
+			"parts": {
+				"first": "Rex",
+				"last": "Hiakita"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "When I visited Rex Hiakita, he was hesitant, but a would-be rangatira from another area (with a very poor outline of a facial moko), said \"Give me your machine, I'll record your names.\" Knowing enough not to say \"No\" outright, I said \"Taihoa\" and came back to Mr Hiakita later."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_96",
+		"next_id": "sp_98"
+	},
+	{
+		"id": "sp_98",
+		"slug": {
+			"en": "robertkeepa",
+			"mi": "robertkeepa"
+		},
+		"name": {
+			"locale": {
+				"mi": "Robert Keepa"
+			},
+			"alt": {
+				"en": {
+					"full": "Robert Keepa"
+				}
+			},
+			"parts": {
+				"first": "Robert",
+				"last": "Keepa"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_97",
+		"next_id": "sp_99"
+	},
+	{
+		"id": "sp_99",
+		"slug": {
+			"en": "rossgregory",
+			"mi": "rossgregory"
+		},
+		"name": {
+			"locale": {
+				"mi": "Ross Gregory"
+			},
+			"alt": {
+				"en": {
+					"full": "Ross Gregory"
+				}
+			},
+			"parts": {
+				"first": "Ross",
+				"last": "Gregory"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_98",
+		"next_id": "sp_100"
+	},
+	{
+		"id": "sp_100",
+		"slug": {
+			"en": "rukotua",
+			"mi": "rukotua"
+		},
+		"name": {
+			"locale": {
+				"mi": "Ru Kotua"
+			},
+			"alt": {
+				"en": {
+					"full": "Ru Kotua"
+				}
+			},
+			"parts": {
+				"first": "Ru",
+				"last": "Kotua"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Ru Kotua initially baulked at recording the names when I showed him a list written in the double-vowel orthography. He wanted nothing to do with it. The first volume was entirely so written in the first instance, and the double vowels were laboriously converted to macrons by the incredibly patient Radio NZ typing pool. When I showed Mr Kotua the version with macrons, he thought they were the greatest thing since sliced bread and all objection evaporated."
+			},
+			"recording": {
+				"en": "The recording, outside in a field near Takapau, went happily with birds chirping in the background."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "a field near Takapau"
+			}
+		},
+		"previous_id": "sp_99",
+		"next_id": "sp_101"
+	},
+	{
+		"id": "sp_101",
+		"slug": {
+			"en": "rukabroughton",
+			"mi": "rukabroughton"
+		},
+		"name": {
+			"locale": {
+				"mi": "Ruka Broughton"
+			},
+			"alt": {
+				"en": {
+					"full": "Ruka Broughton"
+				}
+			},
+			"parts": {
+				"first": "Ruka",
+				"last": "Broughton"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his office, Victoria University of Wellington"
+			}
+		},
+		"links": {
+			"info": "Ruka Broughton"
+		},
+		"previous_id": "sp_100",
+		"next_id": "sp_102"
+	},
+	{
+		"id": "sp_102",
+		"slug": {
+			"en": "samtoia",
+			"mi": "samtoia"
+		},
+		"name": {
+			"locale": {
+				"mi": "Sam Toia"
+			},
+			"alt": {
+				"en": {
+					"full": "Sam Toia"
+				}
+			},
+			"parts": {
+				"first": "Sam",
+				"last": "Toia"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Possibly misidentified as his brother Hohepa"
+			}
+		},
+		"previous_id": "sp_101",
+		"next_id": "sp_103"
+	},
+	{
+		"id": "sp_103",
+		"slug": {
+			"en": "sonnywaru",
+			"mi": "sonnywaru"
+		},
+		"name": {
+			"locale": {
+				"mi": "Sonny Waru"
+			},
+			"alt": {
+				"en": {
+					"full": "Sonny Waru"
+				}
+			},
+			"parts": {
+				"first": "Sonny",
+				"last": "Waru"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Recording western Taranaki was a tossup between Sony Waru and Huirangi Waikerpuru.I didn't know when I chose Sonny Waru that he was only affiliated to Taranaki through Pariʰaka. (His first name, Taniwharau, gives away his Waikato origin.) Nonetheless he has lived there so long his accent is fully Taranaki."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Stratford Park"
+			}
+		},
+		"previous_id": "sp_102",
+		"next_id": "sp_104"
+	},
+	{
+		"id": "sp_104",
+		"slug": {
+			"en": "taituroa",
+			"mi": "taituroa"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tai Turoa"
+			},
+			"alt": {
+				"en": {
+					"full": "Tai Turoa"
+				}
+			},
+			"parts": {
+				"first": "Tai",
+				"last": "Turoa"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_103",
+		"next_id": "sp_105"
+	},
+	{
+		"id": "sp_105",
+		"slug": {
+			"en": "tairongoamoamo",
+			"mi": "tairongoamoamo"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tairongo Amoamo"
+			},
+			"alt": {
+				"en": {
+					"full": "Tairongo Amoamo"
+				}
+			},
+			"parts": {
+				"first": "Tairongo",
+				"last": "Amoamo"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_104",
+		"next_id": "sp_106"
+	},
+	{
+		"id": "sp_106",
+		"slug": {
+			"en": "tamihanatukapua",
+			"mi": "tamihanatukapua"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tamihana Tukapua"
+			},
+			"alt": {
+				"en": {
+					"full": "Tamihana Tukapua"
+				}
+			},
+			"parts": {
+				"first": "Tamihana",
+				"last": "Tukapua"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_105",
+		"next_id": "sp_107"
+	},
+	{
+		"id": "sp_107",
+		"slug": {
+			"en": "tarawarawarakatene",
+			"mi": "tarawarawarakatene"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tarawara (Wara) Katene"
+			},
+			"alt": {
+				"en": {
+					"full": "Tarawara (Wara) Katene"
+				}
+			},
+			"parts": {
+				"nick": "Wara",
+				"first": "Tarawara",
+				"last": "Katene"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_106",
+		"next_id": "sp_108"
+	},
+	{
+		"id": "sp_108",
+		"slug": {
+			"en": "tarawaukira",
+			"mi": "tarawaukira"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tarawau Kira"
+			},
+			"alt": {
+				"en": {
+					"full": "Tarawau Kira"
+				}
+			},
+			"parts": {
+				"first": "Tarawau",
+				"last": "Kira"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_107",
+		"next_id": "sp_109"
+	},
+	{
+		"id": "sp_109",
+		"slug": {
+			"en": "tatanewesley",
+			"mi": "tatanewesley"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tatane Wesley"
+			},
+			"alt": {
+				"en": {
+					"full": "Tatane Wesley"
+				}
+			},
+			"parts": {
+				"first": "Tatane",
+				"last": "Wesley"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Tamatea meeting house, Otākou marae"
+			}
+		},
+		"previous_id": "sp_108",
+		"next_id": "sp_110"
+	},
+	{
+		"id": "sp_110",
+		"slug": {
+			"en": "tawhaotioke",
+			"mi": "tawhaotioke"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tawhao Tioke"
+			},
+			"alt": {
+				"en": {
+					"full": "Tawhao Tioke"
+				}
+			},
+			"parts": {
+				"first": "Tawhao",
+				"last": "Tioke"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_109",
+		"next_id": "sp_111"
+	},
+	{
+		"id": "sp_111",
+		"slug": {
+			"en": "tawhikingi",
+			"mi": "tawhikingi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tawhi Kingi"
+			},
+			"alt": {
+				"en": {
+					"full": "Tawhi Kingi"
+				}
+			},
+			"parts": {
+				"first": "Tawhi",
+				"last": "Kingi"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_110",
+		"next_id": "sp_112"
+	},
+	{
+		"id": "sp_112",
+		"slug": {
+			"en": "teaonuitaxikapua",
+			"mi": "teaonuitaxikapua"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Aonui (Taxi) Kapua"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Aonui (Taxi) Kapua"
+				}
+			},
+			"parts": {
+				"nick": "Taxi",
+				"first": "Te Aonui",
+				"last": "Kapua"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "The Tauhara Centre"
+			}
+		},
+		"previous_id": "sp_111",
+		"next_id": "sp_113"
+	},
+	{
+		"id": "sp_113",
+		"slug": {
+			"en": "teaputakiwairuaparatakauri",
+			"mi": "teaputakiwairuaparatakauri"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Aputa ki Wairua Parata Kauri"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Aputa ki Wairua Parata Kauri"
+				}
+			},
+			"parts": {
+				"first": "Te Aputa ki Wairua",
+				"middle": "Parata",
+				"last": "Kauri"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"recording": {
+				"en": "Mrs Kauri smoked constantly and was short of breath throughout the recording. (She died soon after.) You can hear her pride when she says her ancestor's name, Wi Parata."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_112",
+		"next_id": "sp_114"
+	},
+	{
+		"id": "sp_114",
+		"slug": {
+			"en": "teauedavis",
+			"mi": "teauedavis"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Aue Davis"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Aue Davis"
+				}
+			},
+			"parts": {
+				"first": "Te Aue",
+				"last": "Davis"
+			}
+		},
+		"gender": "F",
+		"location": {
+			"description": {
+				"en": "Broadcasting House, Wellington"
+			}
+		},
+		"previous_id": "sp_113",
+		"next_id": "sp_115"
+	},
+	{
+		"id": "sp_115",
+		"slug": {
+			"en": "temahingapeterwhite",
+			"mi": "temahingapeterwhite"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Mahinga Peter White"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Mahinga White"
+				}
+			},
+			"parts": {
+				"alternate": "Peter",
+				"first": "Te Mahinga",
+				"last": "White"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_114",
+		"next_id": "sp_116"
+	},
+	{
+		"id": "sp_116",
+		"slug": {
+			"en": "tematamorehu",
+			"mi": "tematamorehu"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Mata Morehu"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Mata Morehu"
+				}
+			},
+			"parts": {
+				"first": "Te Mata",
+				"last": "Morehu"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_115",
+		"next_id": "sp_117"
+	},
+	{
+		"id": "sp_117",
+		"slug": {
+			"en": "tematuaoterangiboytomoana",
+			"mi": "tematuaoterangiboytomoana"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Matua-o-te-Rangi (Boy) Tomoana"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Matua-o-te-Rangi (Boy) Tomoana"
+				}
+			},
+			"parts": {
+				"nick": "Boy",
+				"first": "Te Matua-o-te-Rangi",
+				"last": "Tomoana"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Heretaunga"
+			}
+		},
+		"previous_id": "sp_116",
+		"next_id": "sp_118"
+	},
+	{
+		"id": "sp_118",
+		"slug": {
+			"en": "teohomaurijosstewart",
+			"mi": "teohomaurijosstewart"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Ohomauri (Jos) Stewart"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Ohomauri (Jos) Stewart"
+				}
+			},
+			"parts": {
+				"nick": "Jos",
+				"first": "Te Ohomauri",
+				"last": "Stewart"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_117",
+		"next_id": "sp_119"
+	},
+	{
+		"id": "sp_119",
+		"slug": {
+			"en": "teotanereti",
+			"mi": "teotanereti"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Otane Reti"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Otane Reti"
+				}
+			},
+			"parts": {
+				"first": "Te Otane",
+				"last": "Reti"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_118",
+		"next_id": "sp_120"
+	},
+	{
+		"id": "sp_120",
+		"slug": {
+			"en": "terinotirikatene",
+			"mi": "terinotirikatene"
+		},
+		"name": {
+			"locale": {
+				"mi": "Te Rino Tirikatene"
+			},
+			"alt": {
+				"en": {
+					"full": "Te Rino Tirikatene"
+				}
+			},
+			"parts": {
+				"first": "Te Rino",
+				"last": "Tirikatene"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Rino Tirikātene was a son of Sir Eruera Tirikātene MP and a brother of Whetū Tirikātene-Sullivan MP. He died while standing for Parliament himself, and his son Rino took the seat. He had no tribal affiliation to the Marton region, but was the best possible person to say the names of the many buildings at Rātana."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his office"
+			}
+		},
+		"previous_id": "sp_119",
+		"next_id": "sp_121"
+	},
+	{
+		"id": "sp_121",
+		"slug": {
+			"en": "tokoruatekani",
+			"mi": "tokoruatekani"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tokorua Te Kani"
+			},
+			"alt": {
+				"en": {
+					"full": "Tokorua Te Kani"
+				}
+			},
+			"parts": {
+				"first": "Tokorua",
+				"last": "Te Kani"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_120",
+		"next_id": "sp_122"
+	},
+	{
+		"id": "sp_122",
+		"slug": {
+			"en": "tombailey",
+			"mi": "tombailey"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tom Bailey"
+			},
+			"alt": {
+				"en": {
+					"full": "Tom Bailey"
+				}
+			},
+			"parts": {
+				"first": "Tom",
+				"last": "Bailey"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_121",
+		"next_id": "sp_123"
+	},
+	{
+		"id": "sp_123",
+		"slug": {
+			"en": "tomgemmell",
+			"mi": "tomgemmell"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tom Gemmell"
+			},
+			"alt": {
+				"en": {
+					"full": "Tom Gemmell"
+				}
+			},
+			"parts": {
+				"first": "Tom",
+				"last": "Gemmell"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_122",
+		"next_id": "sp_124"
+	},
+	{
+		"id": "sp_124",
+		"slug": {
+			"en": "tomngatai",
+			"mi": "tomngatai"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tom Ngatai"
+			},
+			"alt": {
+				"en": {
+					"full": "Tom Ngatai"
+				}
+			},
+			"parts": {
+				"first": "Tom",
+				"last": "Ngatai"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_123",
+		"next_id": "sp_125"
+	},
+	{
+		"id": "sp_125",
+		"slug": {
+			"en": "tomairangikameta",
+			"mi": "tomairangikameta"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tomairangi Kameta"
+			},
+			"alt": {
+				"en": {
+					"full": "Tomairangi Kameta"
+				}
+			},
+			"parts": {
+				"first": "Tomairangi",
+				"last": "Kameta"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_124",
+		"next_id": "sp_126"
+	},
+	{
+		"id": "sp_126",
+		"slug": {
+			"en": "tukawekaikereama",
+			"mi": "tukawekaikereama"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tukawekai Kereama"
+			},
+			"alt": {
+				"en": {
+					"full": "Tukawekai Kereama"
+				}
+			},
+			"parts": {
+				"first": "Tukawekai",
+				"last": "Kereama"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_125",
+		"next_id": "sp_127"
+	},
+	{
+		"id": "sp_127",
+		"slug": {
+			"en": "tukutahigalvin",
+			"mi": "tukutahigalvin"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tukutahi Galvin"
+			},
+			"alt": {
+				"en": {
+					"full": "Tukutahi Galvin"
+				}
+			},
+			"parts": {
+				"first": "Tukutahi",
+				"last": "Galvin"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_126",
+		"next_id": "sp_128"
+	},
+	{
+		"id": "sp_128",
+		"slug": {
+			"en": "tupatepahaujimturner",
+			"mi": "tupatepahaujimturner"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tupa te Pahau (Jim) Turner"
+			},
+			"alt": {
+				"en": {
+					"full": "Tupa (Jim) te Pahau Turner"
+				}
+			},
+			"parts": {
+				"nick": "Jim",
+				"first": "Tupa",
+				"middle": "te Pahau",
+				"last": "Turner"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_127",
+		"next_id": "sp_129"
+	},
+	{
+		"id": "sp_129",
+		"slug": {
+			"en": "tupipuriri",
+			"mi": "tupipuriri"
+		},
+		"name": {
+			"locale": {
+				"mi": "Tupi Puriri"
+			},
+			"alt": {
+				"en": {
+					"full": "Tupi Puriri"
+				}
+			},
+			"parts": {
+				"first": "Tupi",
+				"last": "Puriri"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_128",
+		"next_id": "sp_130"
+	},
+	{
+		"id": "sp_130",
+		"slug": {
+			"en": "turielkington",
+			"mi": "turielkington"
+		},
+		"name": {
+			"locale": {
+				"mi": "Turi Elkington"
+			},
+			"alt": {
+				"en": {
+					"full": "Turi Elkington"
+				}
+			},
+			"parts": {
+				"first": "Turi",
+				"last": "Elkington"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Finding a speaker for Nelson proved difficult, but I had been introduced to Mr Elkington in Waipukurau when I was recording in that area. He had already been enthusiastic for the project, though of course he declined to speak the names so far from his home, so I had no hesitation in going back to him."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_129",
+		"next_id": "sp_131"
+	},
+	{
+		"id": "sp_131",
+		"slug": {
+			"en": "turoaroyal",
+			"mi": "turoaroyal"
+		},
+		"name": {
+			"locale": {
+				"mi": "Turoa Royal"
+			},
+			"alt": {
+				"en": {
+					"full": "Turoa Royal"
+				}
+			},
+			"parts": {
+				"first": "Turoa",
+				"last": "Royal"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_130",
+		"next_id": "sp_132"
+	},
+	{
+		"id": "sp_132",
+		"slug": {
+			"en": "vicwilson",
+			"mi": "vicwilson"
+		},
+		"name": {
+			"locale": {
+				"mi": "Vic Wilson"
+			},
+			"alt": {
+				"en": {
+					"full": "Vic Wilson"
+				}
+			},
+			"parts": {
+				"first": "Vic",
+				"last": "Wilson"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_131",
+		"next_id": "sp_133"
+	},
+	{
+		"id": "sp_133",
+		"slug": {
+			"en": "waiharakekewaiwaitere",
+			"mi": "waiharakekewaiwaitere"
+		},
+		"name": {
+			"locale": {
+				"mi": "Waiharakeke (Wai) Waitere"
+			},
+			"alt": {
+				"en": {
+					"full": "Waiharakeke (Wai) Waitere"
+				}
+			},
+			"parts": {
+				"nick": "Wai",
+				"first": "Waiharakeke",
+				"last": "Waitere"
+			}
+		},
+		"gender": "F",
+		"notes": {
+			"description": {
+				"en": "Mrs Wai Waitere was a kuia of the old school, a wonderfully distinguished lady, who spoke both beautiful English and Māori. We recorded in her villa in Pūtiki."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "her home"
+			}
+		},
+		"previous_id": "sp_132",
+		"next_id": "sp_134"
+	},
+	{
+		"id": "sp_134",
+		"slug": {
+			"en": "wharengaiobillpiotutengaehe",
+			"mi": "wharengaiobillpiotutengaehe"
+		},
+		"name": {
+			"locale": {
+				"mi": "Wharengaio (Bill) Pio Tutengaehe"
+			},
+			"alt": {
+				"en": {
+					"full": "Wharengaio (Bill) Pio Tutengaehe"
+				}
+			},
+			"parts": {
+				"nick": "Bill",
+				"first": "Wharengaio",
+				"middle": "Pio",
+				"last": "Tutengaehe"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_133",
+		"next_id": "sp_135"
+	},
+	{
+		"id": "sp_135",
+		"slug": {
+			"en": "wihuata",
+			"mi": "wihuata"
+		},
+		"name": {
+			"locale": {
+				"mi": "Wi Huata"
+			},
+			"alt": {
+				"en": {
+					"full": "Canon Wi Huata"
+				}
+			},
+			"parts": {
+				"title": "Canon",
+				"first": "Wi",
+				"last": "Huata"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "Takapuwahia Marae"
+			}
+		},
+		"previous_id": "sp_134",
+		"next_id": "sp_136"
+	},
+	{
+		"id": "sp_136",
+		"slug": {
+			"en": "wiremukerekere",
+			"mi": "wiremukerekere"
+		},
+		"name": {
+			"locale": {
+				"mi": "Wiremu Kere Kere"
+			},
+			"alt": {
+				"en": {
+					"full": "Wiremu Kere Kere"
+				}
+			},
+			"parts": {
+				"first": "Wiremu",
+				"last": "Kere Kere"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Wiremu Kere Kere was my starting point in finding the network of speakers. We shared an office suite in Radio NZ Special Projects for several years."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "Kelvin Chambers, Wellington"
+			}
+		},
+		"previous_id": "sp_135",
+		"next_id": "sp_137"
+	},
+	{
+		"id": "sp_137",
+		"slug": {
+			"en": "wiremuohia",
+			"mi": "wiremuohia"
+		},
+		"name": {
+			"locale": {
+				"mi": "Wiremu Ohia"
+			},
+			"alt": {
+				"en": {
+					"full": "Wiremu Ohia"
+				}
+			},
+			"parts": {
+				"first": "Wiremu",
+				"last": "Ohia"
+			}
+		},
+		"gender": "M",
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"previous_id": "sp_136",
+		"next_id": "sp_138"
+	},
+	{
+		"id": "sp_138",
+		"slug": {
+			"en": "wiremuparker",
+			"mi": "wiremuparker"
+		},
+		"name": {
+			"locale": {
+				"mi": "Wiremu Parker"
+			},
+			"alt": {
+				"en": {
+					"full": "Wiremu (Bill) Parker"
+				}
+			},
+			"parts": {
+				"nick": "Bill",
+				"first": "Wiremu",
+				"last": "Parker"
+			}
+		},
+		"gender": "M",
+		"notes": {
+			"description": {
+				"en": "Wiremu Parker was a pioneer of Māori broadcasting. He coined the term 'te reo irirangi' for radio. Because he was unable to speak for his home territory for obscure reasons, I asked him to read the title names. I recorded him outside in the Wellington Botanic Gardens just of Salamanca Road."
+			}
+		},
+		"location": {
+			"description": {
+				"en": "his home"
+			}
+		},
+		"links": {
+			"info": "https://teara.govt.nz/en/biographies/5p11/parker-william-leonard"
+		},
+		"previous_id": "sp_137",
+		"next_id": "sp_139"
+	},
+	{
+		"id": "sp_139",
+		"slug": {
+			"en": "wiremukepasasuwihapi",
+			"mi": "wiremukepasasuwihapi"
+		},
+		"name": {
+			"locale": {
+				"mi": "Wiremu Kepa (Sasu) Wihapi"
+			},
+			"alt": {
+				"en": {
+					"full": "Wiremu (Sasu) Kepa Wihapi"
+				}
+			},
+			"parts": {
+				"nick": "Sasu",
+				"first": "Wiremu",
+				"middle": "Kepa",
+				"last": "Wihapi"
+			}
+		},
+		"gender": "M",
+		"previous_id": "sp_138"
+	}
+]
