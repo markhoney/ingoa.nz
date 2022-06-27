@@ -26,7 +26,7 @@ function splitMP3(placenames, type, id) {
 					{field: "title", value: bookmark.name.locale.mi + " (" + (bookmark.placename.zone ? bookmark.placename.zone.name.locale.en || bookmark.placename.zone.name.locale.mi : (bookmark.placename.part ? bookmark.placename.part.name.locale.en || bookmark.placename.part.name.locale.mi : bookmark.placename.island.name.locale.en || bookmark.placename.island.name.locale.mi)) + ")"},
 					{field: "album", value: "Ngā Ingoa o Aotearoa: An oral dictionary of Māori placenames"},
 					{field: "disc", value: (bookmark.placename.zone ? bookmark.placename.zone.number : (bookmark.placename.part ? bookmark.placename.part.number : bookmark.placename.island.number))},
-					{field: "language", value: (bookmark.name.locale.en == "Intro" ? "eng" : "mri")}
+					{field: "language", value: (bookmark.name.locale.en === "Intro" ? "eng" : "mri")}
 				];
 				const meta = metadata.reduce((meta, data) => meta + `-metadata ${data.field}="${data.value}" `, "");
 				const command = `${ffmpeg} -hide_banner -loglevel quiet -i ${input} -ss ${start} -to ${end} ${meta} -c copy ${output}`;
