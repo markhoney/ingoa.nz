@@ -135,7 +135,7 @@
 		"localtunnel": "^2.0.0",
 		"media-split": "^5.1.0",
 		"mp3-split": "^4.1.0",
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.7",
 		"nodemon": "^2.0.4",
 		"nuxt-helmet": "^2.0.0",
 		"nuxt-memwatch": "^0.1.2",
