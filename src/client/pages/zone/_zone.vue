@@ -7,7 +7,7 @@
 		<h3 class="headline">{{$tc('speaker', 2) | initialcase}}</h3>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 md4 class="pa-2">
-				<template v-for="speaker in zone.speakers.filter(speaker => speaker._id != 'sp_37')">
+				<template v-for="speaker in zone.speakers.filter(speaker => speaker._id !== 'sp_37')">
 					<speaker field="_id" :value="speaker._id" :key="speaker._id" />
 				</template>
 			</v-flex>

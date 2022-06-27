@@ -21,7 +21,7 @@
 		watch: {
 			loading: function() {
 				if (this.loading > this.maximum) this.maximum = this.loading;
-				if (this.loading == 0) this.maximum = 0;
+				if (this.loading === 0) this.maximum = 0;
 			}
 		}
 	};

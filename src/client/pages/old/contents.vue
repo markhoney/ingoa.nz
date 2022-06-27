@@ -63,7 +63,7 @@
 						<tr v-for="zone in sector.zones" :key="map._id + sector._id + zone._id">
 							<td align="right"><a :name="zone.number" />{{zone.number}}</td>
 							<td><nuxt-link :to="localePath({name: 'old-zone', params: {zone: localeCurrent(zone.slug)}})">{{localeCurrent(zone.name.locale)}}</nuxt-link></td>
-							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id != 'sp_37')">{{localeCurrent(speaker.name.locale)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
+							<td><template v-for="(speaker, index) in zone.speakers.filter(speaker => speaker._id !== 'sp_37')">{{localeCurrent(speaker.name.locale)}}<template v-if="index < zone.speakers.length - 1">, </template></template></td>
 							<td><span v-for="(name, index) in zone.featured" :key="index">{{localeMaori(name.locale)}}<br></span></td>
 						</tr>
 					</template>

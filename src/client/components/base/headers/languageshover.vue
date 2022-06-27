@@ -1,9 +1,9 @@
 <template>
 	<v-toolbar-items @mouseover="hover = true" @mouseleave="hover = false">
-		<nuxt-link v-for="locale in $i18n.locales" :key="locale.code" :to="switchLocalePath(locale.code)" :class="[(hover && $i18n.locale == locale.code) || (!hover && $i18n.locale != locale.code) ? 'hidden' : '', 'mt-4']">
+		<nuxt-link v-for="locale in $i18n.locales" :key="locale.code" :to="switchLocalePath(locale.code)" :class="[(hover && $i18n.locale === locale.code) || (!hover && $i18n.locale !== locale.code) ? 'hidden' : '', 'mt-4']">
 			<figure>
 				<img :src="require(`~/assets${locale.image}`)" alt="" align="right">
-				<figcaption>{{($i18n.locale != locale.code ? "Switch to " : "") + locale.name}}</figcaption>
+				<figcaption>{{($i18n.locale !== locale.code ? "Switch to " : "") + locale.name}}</figcaption>
 			</figure>
 		</nuxt-link>
 	</v-toolbar-items>

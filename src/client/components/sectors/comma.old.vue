@@ -1,7 +1,7 @@
 <template>
 	<p><slot />
 		<nuxt-link v-for="(sector, index) in sectors" :key="sector._id" :to="localePath({name: 'sector-sector', params: {sector: localeCurrent(sector.slug)}})" no-prefetch>
-			{{localeCurrent(sector.name.locale)}}<template v-if="index != (sector.length - 1)">, </template>
+			{{localeCurrent(sector.name.locale)}}<template v-if="index !== (sector.length - 1)">, </template>
 		</nuxt-link>
 	</p>
 </template>

@@ -21,18 +21,18 @@
 		<player ref="audio" :file="file" :time.sync="currentTime" :start="start" :stop="stop" />
 		<h2>{{$tc('name', 2) | titlecase}}</h2>
 		<ol start="0">
-			<!--<li v-for="place in placelist" :key="place._id" :class="{active: place._id == current._id}"><a :href="'#' + place._id" v-html="place.name.locale"></a></li>-->
-			<li v-if="placenames.length && placenames[0].names[0].locale.mi == 'Intro'">{{placenames[0].names[0].locale.mi}}</li>
-			<li v-for="placename in placenames.filter(placename => placename.names[0].locale.mi != 'Intro')" :key="placename._id" v-ripple="{class: 'success--text'}">
+			<!--<li v-for="place in placelist" :key="place._id" :class="{active: place._id === current._id}"><a :href="'#' + place._id" v-html="place.name.locale"></a></li>-->
+			<li v-if="placenames.length && placenames[0].names[0].locale.mi === 'Intro'">{{placenames[0].names[0].locale.mi}}</li>
+			<li v-for="placename in placenames.filter(placename => placename.names[0].locale.mi !== 'Intro')" :key="placename._id" v-ripple="{class: 'success--text'}">
 				<!--<nuxt-link
 					v-for="(name, index) in placename.names.filter(name => 'spoken' in name)"
 					:key="name.alt.mi.ascii"
 					:to="localePath({name: 'zone-zone-placename', params: {zone: localeCurrent(placename.zone.slug), placename: localeCurrent(placename.slug)}})"
-					:class="{active: name.locale == current.name.locale}"
+					:class="{active: name.locale === current.name.locale}"
 					:title="common && current.common ? current.common : ''"
 				>-->
-				<span v-for="(name, index) in placename.names.filter(name => name.spoken)" :class="['name', {active: name._id == current._id}]" :key="name._id" @click="jump(name.spoken.start, name.spoken.end)">
-					{{name.locale.mi}}<template v-if="index != (placename.names.filter(name => name.spoken).length - 1)">,</template>
+				<span v-for="(name, index) in placename.names.filter(name => name.spoken)" :class="['name', {active: name._id === current._id}]" :key="name._id" @click="jump(name.spoken.start, name.spoken.end)">
+					{{name.locale.mi}}<template v-if="index !== (placename.names.filter(name => name.spoken).length - 1)">,</template>
 				</span>
 				<!--</nuxt-link>-->
 				<!--<nuxt-link v-if="placename.names.filter(name => 'spoken' in name).length === 0" :to="localePath({name: 'zone-zone-placename', params: {zone: localeCurrent(placename.zone.slug), placename: localeCurrent(placename.slug)}})">-->
