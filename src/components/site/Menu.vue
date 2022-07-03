@@ -8,7 +8,7 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav mb-2 mb-md-0">
 						<li class="nav-item"><g-link class="nav-link" to="/">Home</g-link></li>
-						<li class="nav-item"><g-link class="nav-link" to="/islands">Islands</g-link></li>
+						<li v-for="item in items" :key="item" class="nav-item"><g-link class="nav-link" :to="'/' + item.toLowerCase()">{{item}}</g-link></li>
 					</ul>
 				</div>
 				<search class="m-2" />
@@ -22,5 +22,10 @@
 	export default {
 		// components: {Search, Dark},
 		components: {Search},
+		data() {
+			return {
+				items: ['Islands', 'Parts', 'Maps', 'Regions', 'Sectors', 'Districts', 'Zones', 'Groups', 'Features', 'Iwi', 'Placenames'],
+			};
+		},
 	};
 </script>
