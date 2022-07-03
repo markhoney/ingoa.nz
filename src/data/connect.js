@@ -156,8 +156,8 @@ function addSimilarIdentical(db) {
 	}
 	//db.names.forEach(name => {
 	for (const name of db.names) {
-		if (!name.similar && name.locale.mi !== "Intro") {
-			const identical = db.names.filter(myname => myname.locale.mi === name.locale.mi);
+		if (!name.similar && name.name.locale.mi !== "Intro") {
+			const identical = db.names.filter(myname => myname.name.locale.mi === name.name.locale.mi);
 			name.identical = {placename_ids: identical.map(name => name.id)};
 			//const similar = similars.find(similar => similar.id === name.id);
 			if (similars[name.id]) {
@@ -165,7 +165,7 @@ function addSimilarIdentical(db) {
 				name.similar = {placename_ids: similars[name.id]};
 			} else {
 				total++;
-				const similar = db.names.filter(myname => myname.locale.mi !== name.locale.mi).sort((a, b) => levenshtein(name.locale.mi, a.name.locale.mi) - levenshtein(name.locale.mi, b.name.locale.mi)).slice(0, 8);
+				const similar = db.names.filter(myname => myname.name.locale.mi !== name.name.locale.mi).sort((a, b) => levenshtein(name.name.locale.mi, a.name.locale.mi) - levenshtein(name.name.locale.mi, b.name.locale.mi)).slice(0, 8);
 				name.similar = {placename_ids: similar.map(name => name.id)};
 				similars[name.id] = name.similar.placename_ids;
 			}
@@ -179,8 +179,8 @@ function addSimilarIdentical(db) {
 function addMeanings(db) {
 	let total = 0;
 	db.names.forEach(name => {
-		if (!name.meaning_id && name.locale.mi) {
-			const meaning = db.meanings.find((meaning) => meaning.name.locale.mi === name.locale.mi || (name.ascii && meaning.name.locale.mi === name.ascii.mi) || (name.double && meaning.name.locale.mi === name.double.mi));
+		if (!name.meaning_id && name.name.locale.mi) {
+			const meaning = db.meanings.find((meaning) => meaning.name.locale.mi === name.name.locale.mi || (name.name.ascii && meaning.name.locale.mi === name.name.ascii.mi) || (name.name.double && meaning.name.locale.mi === name.name.double.mi));
 			if (meaning) {
 				name.meaning_id = meaning.id;
 				total++;

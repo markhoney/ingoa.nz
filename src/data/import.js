@@ -377,15 +377,17 @@ const imports = {
 		['IndexName_1', 'IndexName_2', 'IndexName_3', 'UnspokenName_1', 'ExtendedName_1', 'ExtendedName_2', 'VariantName_1', 'MisspelledName_1'].forEach(name => {
 			if (input[name]) {
 				const newname = {
-					locale: {
-						en: input.CommonName_1,
-						mi: input[name],
-					},
-					ascii: {
-						mi: utils.ascii(input[name]),
-					},
-					double: {
-						mi: utils.double(input[name]),
+					name: {
+						locale: {
+							en: input.CommonName_1,
+							mi: input[name],
+						},
+						ascii: {
+							mi: utils.ascii(input[name]),
+						},
+						double: {
+							mi: utils.double(input[name]),
+						},
 					},
 					categories: [],
 				};
@@ -419,7 +421,7 @@ const imports = {
 			names[name].id = 'na_' + input.ID + '-' + index;
 			output.names.push(names[name]);
 		});
-		output.names[0].transliteration = {en: input.Transliteration};
+		output.names[0].name.transliteration = {en: input.Transliteration};
 		output.names = utils.cleanobj(output.names);
 		for (i = 1; i <= 4; i++) {
 			if (input['SeeNameID_' + i]) {
