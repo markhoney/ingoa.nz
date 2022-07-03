@@ -1,33 +1,24 @@
 const pluralise = require('pluralize');
-const importData = require('./import');
-const connectData = require('./connect');
 const utils = require('./utils');
-
-function capitalise(word) {
-	return word.charAt(0).toUpperCase() + word.slice(1);
-}
-
-function isObject(obj) {
-	return obj instanceof Object && Object.getPrototypeOf(obj) == Object.prototype;
-}
+const getDB = require('./db');
 
 function addReferences(name, collection, record, path = '') {
 	for (const field of Object.keys(record)) {
-		if (isObject(record[field])) {
+		if (utils.isObj(record[field])) {
 			addReferences(name, collection, record[field], path + field + '.');
 		} else if (Array.isArray(record[field])) {
-			if (isObject(record[field][0])) addReferences(name, collection, record[field][0], path + field + '.');
+			if (utils.isObj(record[field][0])) addReferences(name, collection, record[field][0], path + field + '.');
 		}
 		if (field.endsWith('_id')) {
 			const type = field.replace('_id', '');
 			if (['next', 'previous'].includes(type)) {
 				collection.addReference(path + type, name);
 			} else {
-				collection.addReference(path + type, capitalise(type));
+				collection.addReference(path + type, utils.case.sentence(type));
 			}
 		} else if (field.endsWith('_ids')) {
 			const type = field.replace('_ids', '');
-			collection.addReference(path + pluralise.plural(type), capitalise(type));
+			collection.addReference(path + pluralise.plural(type), utils.case.sentence(type));
 		}
 	}
 }
@@ -35,10 +26,10 @@ function addReferences(name, collection, record, path = '') {
 function renameFields(record) {
 	for (const field of Object.keys(record)) {
 		let type;
-		if (isObject(record[field])) {
+		if (utils.isObj(record[field])) {
 			renameFields(record[field]);
 		} else if (Array.isArray(record[field])) {
-			if (isObject(record[field][0])) for (const item of record[field]) renameFields(item);
+			if (utils.isObj(record[field][0])) for (const item of record[field]) renameFields(item);
 		}
 		if (field.endsWith('_id')) {
 			type = field.replace('_id', '');
@@ -56,15 +47,14 @@ function renameFields(record) {
 module.exports = class Ingoa {
 	constructor(api) {
 		api.loadSource(async ({addCollection, addSchemaResolvers}) => {
-			// const db = require('./load-data');
-			const db = await connectData(await importData());
+			const db = await getDB(true);
 			const collections = {};
 			for (const collection of Object.keys(db)) {
-				const typeName = capitalise(pluralise.singular(collection));
+				const typeName = utils.case.sentence(pluralise.singular(collection));
 				collections[collection] = addCollection({typeName});
 			}
 			for (const collection of Object.keys(collections)) {
-				const typeName = capitalise(pluralise.singular(collection));
+				const typeName = utils.case.sentence(pluralise.singular(collection));
 				// addReferences(typeName, collections[collection], db[collection][0]);
 				for (const node of db[collection]) {
 					addReferences(typeName, collections[collection], node);
