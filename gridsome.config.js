@@ -1,8 +1,14 @@
 const siteName = 'Nga Ingoa';
 
-const search = ['Island', 'Zone', ''];
+const collections = ['Island', 'Part', 'Map', 'Region', 'Sector', 'District', 'Zone', 'Group', 'Feature', 'Iwi', 'Placename'];
+
+function getItemsNames(items) {
+	if (!items) return [];
+	return items.map((item) => getNames(item.name)).flat();
+}
 
 function getNames(name) {
+	if (!name) return [];
 	return [
 		name.locale?.en,
 		name.locale?.mi,
@@ -24,17 +30,17 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-flexsearch',
 			options: {
-				searchFields: ['names'],
-				collections: search.map((collection) => ({
+				searchFields: ['namelist'],
+				collections: collections.map((collection) => ({
 					typeName: collection,
 					indexName: collection,
 					fields: ['name'],
-					transform: (collection) => ({
-						...collection,
-						names: [...new Set([
-							...getNames(collection),
-							...collection.names?.map((name) => getNames(name)).flat(),
-							...collection.places?.map((place) => getNames(place)).flat(),
+					transform: (node) => ({
+						...node,
+						namelist: [...new Set([
+							...getNames(node.name),
+							...getItemsNames(node.names),
+							...getItemsNames(node.places),
 						])],
 					}),
 				})),
@@ -43,7 +49,7 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-feed',
 			options: {
-				contentTypes: search,
+				contentTypes: collections,
 				feedOptions: {
 					title: siteName,
 					// description: '',
@@ -102,18 +108,6 @@ module.exports = {
 		},
 	],
 	templates: {
-		Island: '/:id',
-		Part: '/:id',
-		Zone: [
-			{
-				path: '/zone/:id',
-				component: './src/templates/Zone.vue',
-			},
-			{
-				name: 'old',
-				path: '/old/:id',
-				component: './src/templates/OldZone.vue',
-			},
-		],
+		...collections.reduce((templates, type) => ({...templates, [type]: `/${type.toLowerCase()}/:id`}), {}),
 	},
 };
