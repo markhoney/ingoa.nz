@@ -2,10 +2,10 @@ require('dotenv').config();
 require('events').EventEmitter.prototype._maxListeners = 20;
 const {existsSync, mkdirSync, writeFileSync, statSync} = require('fs');
 const path = require('path');
-const utils = require('../server/db/utils');
+const utils = require('./utils');
 const {getSheet} = require('./googleapi.js');
 
-const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
+const jsonpath = path.join(__dirname, 'json');
 
 const wikidataURL = 'https://www.wikidata.org/wiki/';
 
@@ -13,58 +13,163 @@ if (!existsSync(jsonpath)) {
 	mkdirSync(jsonpath, 744);
 }
 
+function getName(input) {
+	return {
+		locale: {
+			en: input.Name === input.TeReo ? null : input.Name,
+			mi: input.TeReo,
+		},
+		ascii: {
+			mi: utils.ascii(input.TeReo),
+		},
+		double: {
+			mi: utils.double(input.TeReo),
+		},
+		plural: {
+			en: input.Plural,
+		},
+		full: {
+			en: input.FullName,
+		},
+	};
+}
+
+function getSlug(input) {
+	return {
+		en: utils.createCode(input.Name || input.TeReo),
+		mi: utils.createCode(input.TeReo || input.Name),
+	};
+}
+
+function getAudio(input, type) {
+	const audioLocation = `/audio/${type}/${input.ID}.mp3`;
+	if (existsSync('static' + audioLocation)) return {
+		file: audioLocation,
+		length: input.AudioLength,
+		size: statSync('static' + audioLocation).size,
+	};
+}
+
+function getLinks(input) {
+	return {
+		wikipedia: {
+			en: input.WikiLink,
+			mi: input.WikiMi,
+		},
+		wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
+		info: input.URL,
+		maorimaps: input.MaoriMaps,
+	};
+}
+
+function getFunding(input) {
+	return [
+		{
+			source: {
+				en: input.Funding,
+			},
+			url: input.FundingLink,
+		},
+		{
+			source: {
+				en: input.Funding_2,
+			},
+			url: input.FundingLink_2,
+		},
+	];
+}
+
+function getDates(input) {
+	return {
+		start: input.Start,
+		end: input.End,
+		launch: input.Launch,
+	};
+}
+
+function getMetrics(input) {
+	return {
+		area: parseInt(input.Area),
+		population: parseInt(input.Population),
+	};
+}
+
+function getLocation(input) {
+	return {
+		description: {
+			en: input.Location,
+		},
+		city: input.City,
+		country: input.Country,
+		position: {
+			lat: parseFloat(input.Latitude || input.crd_latitude),
+			lng: parseFloat(input.Longitude || input.crd_longitude),
+		},
+		boundary: {
+			en: input.Boundary,
+		},
+		travelled: {
+			km: parseInt(input.DistanceKM),
+		},
+	};
+}
+
+function getNotes(input) {
+	return {
+		description: {
+			en: input.Note_Description,
+		},
+		creation: {
+			en: input.Note_Text,
+		},
+		recording: {
+			en: input.Note_Recording,
+		},
+		funding: {
+			en: input.Note_Funding,
+		},
+		format: {
+			en: input.Format,
+		},
+		location: {
+			en: input.Note_Location,
+		},
+		name: {
+			en: input.Note_Name,
+		},
+		speech: {
+			en: input.Note_Speech,
+		},
+		spelling: {
+			en: input.Note_Spelling,
+		},
+		place: {
+			en: input.Note_Place,
+		},
+	};
+}
+
+function getBase(input, type) {
+	return {
+		id: input.ID,
+		//index: parseInt(input.Number - 1),
+		name: getName(input),
+		slug: getSlug(input),
+		audio: getAudio(input, type),
+		links: getLinks(input),
+		funding: getFunding(input),
+		dates: getDates(input),
+		metrics: getMetrics(input),
+		location: getLocation(input),
+		notes: getNotes(input),
+	};
+}
+
 const imports = {
 	islands: (input) => {
 		const audioLocation = input.ID === 'is_3' ? '' : '/audio/island/' + input.ID + '.mp3';
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
-			audio: {
-				file: audioLocation,
-				length: input.AudioLength,
-				size: audioLocation ? statSync('src/client/static' + audioLocation).size : 0,
-			},
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-			},
-			funding: [
-				{
-					source: {
-						en: input.Funding,
-					},
-					url: input.FundingLink,
-				},
-				{
-					source: {
-						en: input.Funding_2,
-					},
-					url: input.FundingLink_2,
-				},
-			],
-			metric: {
-				area: parseInt(input.Area),
-				population: parseInt(input.Population),
-			},
+			...getBase(input, 'island'),
 			notes: {
 				description: {
 					en: input.Description,
@@ -80,104 +185,18 @@ const imports = {
 		return output;
 	},
 	parts: (input) => {
-		const audioLocation = '/audio/part/' + input.ID + '.mp3';
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
+			...getBase(input, 'part'),
 			number: parseInt(input.Number),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
-			audio: {
-				file: audioLocation,
-				length: input.AudioLength,
-				size: statSync('src/client/static' + audioLocation).size,
-			},
 			island_id: input.IslandID,
-			/*island: {
-				id: input.IslandID,
-			},*/
-			dates: {
-				start: input.Start,
-				end: input.End,
-				launch: input.Launch,
-			},
-			location: {
-				distance: parseInt(input.DistanceKM),
-			},
-			format: {
-				en: input.Format,
-			},
-			funding: [
-				{
-					source: {
-						en: input.Funding,
-					},
-					url: input.FundingLink,
-				},
-				{
-					source: {
-						en: input.Funding_2,
-					},
-					url: input.FundingLink_2,
-				},
-			],
-			notes: {
-				description: {
-					en: input.Description,
-				},
-				creation: {
-					en: input.NotesText,
-				},
-				recording: {
-					en: input.NotesRecording,
-				},
-				funding: {
-					en: input.Funding,
-				},
-			},
 		};
 		return output;
 	},
 	maps: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
+			...getBase(input),
 			island_id: input.IslandID,
 			part_id: input.PartID,
-			dates: {
-				start: input.Start,
-				end: input.End,
-			},
 			maplinks: [],
 		};
 		for (let i = 1; i <= 2; i++) {
@@ -197,144 +216,38 @@ const imports = {
 	},
 	regions: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
+			...getBase(input),
 			island_id: input.IslandID,
 			part_id: input.PartID,
 			map_id: input.MapID,
-			metric: {
-				area: parseInt(input.Area),
-				population: parseInt(input.Population),
-			},
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-			},
 		};
 		return output;
 	},
 	sectors: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
+			...getBase(input),
 			island_id: input.IslandID,
 			part_id: input.PartID,
 			map_id: input.MapID,
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-			},
 		};
 		return output;
 	},
 	districts: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-					en: {
-						full: input.FullName,
-					},
-				},
-			},
+			...getBase(input),
 			island_id: input.IslandID,
 			//part_id: input.PartID,
 			//map_id: input.MapID,
 			region_id: input.RegionID,
 			sector_id: input.SectorID,
 			seat: input.Seat,
-			metric: {
-				area: parseInt(input.Area),
-				population: parseInt(input.Population),
-			},
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-			},
 		};
 		return output;
 	},
 	zones: (input) => {
-		const audioLocation = '/audio/zone/' + input.ID + '.mp3';
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
+			...getBase(input, 'zone'),
 			number: parseInt(input.Number),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
-			audio: {
-				file: audioLocation,
-				length: input.AudioLength,
-				size: statSync('src/client/static' + audioLocation).size,
-			},
 			//island_id: input.IslandID,
 			//part_id: input.PartID,
 			//map_id: input.MapID,
@@ -346,18 +259,9 @@ const imports = {
 				mapareas: [],
 			},
 			areas: [],
-			district_id: input.DistrictID,
-			boundary: {
-				en: input.Boundary,
-			},
 			gazetteer: input.GazetteerDistrict,
 			speaker_ids: [],
-			tribe_ids: [],
-			notes: {
-				recording: {
-					en: input.Notes,
-				},
-			},
+			iwi_ids: [],
 		};
 		for (let i = 1; i <= 4; i++) {
 			if (input['SpeakerID_' + i]) {
@@ -393,100 +297,41 @@ const imports = {
 		}
 		for (i = 1; i <= 4; i++) {
 			if (input['IwiID_' + i]) {
-				output.tribe_ids.push(input['IwiID_' + i]);
+				output.iwi_ids.push(input['IwiID_' + i]);
 			}
 		}
 		return output;
 	},
 	speakers: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.PreferredName),
-				mi: utils.createCode(input.PreferredName),
-			},
-			name: {
-				locale: {
-					mi: input.PreferredName,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.PreferredName),
-						double: utils.double(input.PreferredName),
-					},
-					en: {
-							full: [
-							input.Prefix,
-							input.FirstName,
-							input.Nickname ? '(' + input.Nickname + ')' : null,
-							input.MiddleNames,
-							input.Surname,
-							input.Suffix,
-						].filter(a => a).join(' '),
-					},
-				},
-				parts: {
-					nick: input.Nickname,
-					title: input.Prefix,
-					alternate: input.AlternateName,
-					first: input.FirstName,
-					middle: input.MiddleNames,
-					last: input.Surname,
-					suffix: input.Suffix,
-				},
-			},
+			...getBase(input),
 			gender: input.Gender,
-			notes: {
-				description: {
-					en: input.Notes,
-				},
-				recording: {
-					en: input.Recording,
-				},
-			},
-			location: {
-				description: {
-					en: input.Location,
-				},
-			},
-			links: {
-				info: input.URL,
-			},
+		};
+		output.name.full = {
+			en: [
+				input.Prefix,
+				input.FirstName,
+				input.Nickname ? '(' + input.Nickname + ')' : null,
+				input.MiddleNames,
+				input.Surname,
+				input.Suffix,
+			].filter(a => a).join(' '),
+		};
+		output.name.parts = {
+			nick: input.Nickname,
+			title: input.Prefix,
+			alternate: input.AlternateName,
+			first: input.FirstName,
+			middle: input.MiddleNames,
+			last: input.Surname,
+			suffix: input.Suffix,
 		};
 		return output;
 	},
 	features: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-					en: {
-						plural: input.Plural,
-					},
-				},
-			},
+			...getBase(input),
 			order: input.Hierarchy,
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-			},
 			category: {
 				gazetteer: input.GazetteerName,
 				osm: {
@@ -500,82 +345,23 @@ const imports = {
 	},
 	groups: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
+			...getBase(input),
 			zone_id: input.ZoneID,
-			slug: {
-				en: utils.createCode(input.Name || input.TeReo),
-				mi: utils.createCode(input.TeReo || input.Name),
-			},
-			name: {
-				locale: {
-					en: input.Name === input.TeReo ? null : input.Name,
-					mi: input.TeReo,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.TeReo),
-						double: utils.double(input.TeReo),
-					},
-				},
-			},
 			feature_id: input.FeatureID,
-			/*feature: {
-				id: input.FeatureID,
-			},*/
 			plural: input.FeaturePlural ? true : null,
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-				maorimaps: input.MaoriMaps,
-			},
 		};
 		return output;
 	},
 	iwi: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.Name),
-				mi: utils.createCode(input.Name),
-			},
-			name: {
-				locale: {
-					mi: input.Name,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.Name),
-						double: utils.double(input.Name),
-					},
-				},
-			},
-			metric: {
-				population: parseInt(input["2013"]),
-			},
-			links: {
-				wikipedia: {
-					en: input.WikiLink,
-					mi: input.WikiMi,
-				},
-				wikidata: (input.WikiData ? wikidataURL + input.WikiData : null),
-			},
+			...getBase(input),
 		};
 		return output;
 	},
 	placenames: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number),
+			...getBase(input),
 			number: parseInt(input.Number),
-			slug: {
-				en: utils.createCode(input.IndexName_1),
-				mi: utils.createCode(input.IndexName_1),
-			},
 			zone_id: input.ZoneID,
 			part_id: input.PartID,
 			island_id: input.IslandID,
@@ -583,20 +369,8 @@ const imports = {
 			names: [],
 			places: [],
 			see: [],
-			addendum_ids: [],
-			notes: {
-				name: {
-					en: input.Note_Name,
-				},
-				speech: {
-					en: input.Note_Speech,
-				},
-				spelling: {
-					en: input.Note_Spelling,
-				},
-				place: {
-					en: input.Note_Place,
-				},
+			addendum: {
+				zone_ids: [],
 			},
 		};
 		const names = {};
@@ -607,11 +381,11 @@ const imports = {
 						en: input.CommonName_1,
 						mi: input[name],
 					},
-					alt: {
-						mi: {
-							ascii: utils.ascii(input[name]),
-							double: utils.double(input[name]),
-						},
+					ascii: {
+						mi: utils.ascii(input[name]),
+					},
+					double: {
+						mi: utils.double(input[name]),
 					},
 					categories: [],
 				};
@@ -632,10 +406,10 @@ const imports = {
 						speaker_id: input['SpeakerID_' + i],
 					};
 					if (input['PhoneticName_' + i]) {
-						names[input['IndexName_' + i]].alt.mi.phonetic = {
-							plain: input['PhoneticName_' + i].split("_").join(""),
-							markdown: input['PhoneticName_' + i],
-							html: utils.htmlItalics(input['PhoneticName_' + i]),
+						names[input['IndexName_' + i]].phonetic = {
+							plain: {mi: input['PhoneticName_' + i].split("_").join("")},
+							markdown: {mi: input['PhoneticName_' + i]},
+							html: {mi: utils.htmlItalics(input['PhoneticName_' + i])},
 						};
 					}
 				}
@@ -645,7 +419,7 @@ const imports = {
 			names[name].id = 'na_' + input.ID + '-' + index;
 			output.names.push(names[name]);
 		});
-		output.names[0].alt.en = {transliteration: input.Transliteration};
+		output.names[0].transliteration = {en: input.Transliteration};
 		output.names = utils.cleanobj(output.names);
 		for (i = 1; i <= 4; i++) {
 			if (input['SeeNameID_' + i]) {
@@ -655,7 +429,7 @@ const imports = {
 					type: input.SeeType,
 				});
 			} else if (input['SeeZoneID_' + i]) {
-				output.addendum_ids.push(input['SeeZoneID_' + i]);
+				output.addendum.zone_ids.push(input['SeeZoneID_' + i]);
 			}
 		}
 		for (i = 1; i <= 7; i++) {
@@ -664,7 +438,9 @@ const imports = {
 				if (input['Super_' + i]) {
 					groups.push({
 						group_id: 'gr_zo_' + input.ZoneID.slice(3) + '-' + input['Super_' + i],
-						subgroup_id: input['Super_' + i + '.a'] ? 'gr_zo_' + input.ZoneID.slice(3) + '-' + input['Super_' + i] + '-' + input['Super_' + i + '.a'] : null,
+						sub: {
+							group_id: input['Super_' + i + '.a'] ? 'gr_zo_' + input.ZoneID.slice(3) + '-' + input['Super_' + i] + '-' + input['Super_' + i + '.a'] : null,
+						},
 					});
 				}
 				if (input['Super_' + i + '.1']) {
@@ -704,23 +480,7 @@ const imports = {
 	},
 	meanings: (input) => {
 		const output = {
-			id: input.ID,
-			//index: parseInt(input.Number - 1),
-			slug: {
-				en: utils.createCode(input.CleanedName),
-				mi: utils.createCode(input.CleanedName),
-			},
-			name: {
-				locale: {
-					mi: input.CleanedName,
-				},
-				alt: {
-					mi: {
-						ascii: utils.ascii(input.CleanedName),
-						double: utils.double(input.CleanedName),
-					},
-				},
-			},
+			...getBase(input),
 			components: input.Components,
 			translation: input.Meaning,
 		};
@@ -728,14 +488,7 @@ const imports = {
 	},
 	overseas: (input) => {
 		const output = {
-			id: input.ID,
-			location: input.Location,
-			city: input.City,
-			country: input.Country,
-			position: {
-				lat: input.Latitude,
-				lng: input.Longitude,
-			}
+			...getBase(input),
 		};
 		return output;
 	},
@@ -746,10 +499,6 @@ const imports = {
 			},
 			district: input.land_district,
 			feature: input.feat_type,
-			position: {
-				lat: parseFloat(input.crd_latitude),
-				lng: parseFloat(input.crd_longitude),
-			},
 		};
 		return output;
 	},
@@ -760,23 +509,30 @@ const sheets = {
 	gazetteer: '1PVqlKVo4X6fjDaLwEMHRRfqU0SIU_KXT2FM-kIPyWVk',
 };
 
-async function cache(page, sheet, tab = page.charAt(0).toUpperCase() + page.slice(1)) {
+async function getData(page, sheet, tab = page.charAt(0).toUpperCase() + page.slice(1)) {
 	console.log('Importing', page);
 	const table = await getSheet(sheet, tab);
 	console.log('Processing', page);
 	const data = table.map((item) => utils.cleanobj(imports[page](item)));
-	console.log('Writing', page);
-	writeFileSync(path.join(jsonpath, page.toLowerCase() + '.json'), JSON.stringify(utils.cleanobj(data), null, '\t'));
+	if (require.main === module) {
+		console.log('Writing', page);
+		writeFileSync(path.join(jsonpath, page.toLowerCase() + '.json'), JSON.stringify(utils.cleanobj(data), null, '\t'));
+	}
+	return data;
 }
 
 const pages = Object.keys(imports);
 
-async function importAll() {
-	const data = {};
+module.exports = async () => {
+	const db = {};
 	for (const page of pages) {
-		if (page === 'gazetteer') cache(page, sheets.gazetteer, 'gaz_names.csv');
-		else cache(page, sheets.ingoa);
+		if (page === 'gazetteer') db[page] = await getData(page, sheets.gazetteer, 'gaz_names.csv');
+		else db[page] = await getData(page, sheets.ingoa);
 	}
-}
+	return db;
+};
 
-importAll();
+// if run directly
+if (require.main === module) {
+	module.exports();
+}

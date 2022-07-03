@@ -1,0 +1,277 @@
+[
+	{
+		"id": "ma_1",
+		"name": {
+			"locale": {
+				"en": "Lower North Island",
+				"mi": "Te Upoko (manawa me ngā tira) o te Ika"
+			},
+			"ascii": {
+				"mi": "Te Upoko (manawa me nga tira) o te Ika"
+			},
+			"double": {
+				"mi": "Te Upoko (manawa me ngaa tira) o te Ika"
+			}
+		},
+		"slug": {
+			"en": "lowernorthisland",
+			"mi": "teupokomanawamengatiraoteika"
+		},
+		"dates": {
+			"start": "1984",
+			"end": "1985"
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"maplinks": [
+			{
+				"map_id": "ma_2",
+				"mapareas": [
+					{
+						"shape": "poly",
+						"coords": [
+							112,
+							357,
+							210,
+							339,
+							334,
+							267,
+							315,
+							147,
+							1,
+							1
+						]
+					}
+				]
+			}
+		],
+		"next_id": "ma_2"
+	},
+	{
+		"id": "ma_2",
+		"name": {
+			"locale": {
+				"en": "Central North Island",
+				"mi": "Te Waenganui o te Ika"
+			}
+		},
+		"slug": {
+			"en": "centralnorthisland",
+			"mi": "tewaenganuioteika"
+		},
+		"dates": {
+			"start": "1986",
+			"end": "1991"
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"maplinks": [
+			{
+				"map_id": "ma_1",
+				"mapareas": [
+					{
+						"shape": "poly",
+						"coords": [
+							89,
+							560,
+							222,
+							512,
+							483,
+							464,
+							622,
+							452,
+							6655,
+							357,
+							673,
+							364,
+							674,
+							560
+						]
+					}
+				]
+			},
+			{
+				"map_id": "ma_3",
+				"mapareas": [
+					{
+						"shape": "poly",
+						"coords": [
+							202,
+							218,
+							122,
+							232,
+							148,
+							321,
+							163,
+							341,
+							153,
+							353,
+							110,
+							397,
+							115,
+							397
+						]
+					}
+				]
+			}
+		],
+		"previous_id": "ma_1",
+		"next_id": "ma_3"
+	},
+	{
+		"id": "ma_3",
+		"name": {
+			"locale": {
+				"en": "Auckland and Northland",
+				"mi": "Tāmaki me te Hiku o te Ika"
+			},
+			"ascii": {
+				"mi": "Tamaki me te Hiku o te Ika"
+			},
+			"double": {
+				"mi": "Taamaki me te Hiku o te Ika"
+			}
+		},
+		"slug": {
+			"en": "aucklandandnorthland",
+			"mi": "tamakimetehikuoteika"
+		},
+		"dates": {
+			"start": "1988",
+			"end": "1991"
+		},
+		"island_id": "is_1",
+		"part_id": "pa_2",
+		"maplinks": [
+			{
+				"map_id": "ma_2",
+				"mapareas": [
+					{
+						"shape": "poly",
+						"coords": [
+							293,
+							693,
+							293,
+							663,
+							310,
+							621,
+							364,
+							630,
+							372,
+							652,
+							388,
+							642,
+							403,
+							604,
+							451,
+							604,
+							451,
+							507,
+							548,
+							507,
+							548,
+							693
+						]
+					}
+				]
+			}
+		],
+		"previous_id": "ma_2",
+		"next_id": "ma_4"
+	},
+	{
+		"id": "ma_4",
+		"name": {
+			"locale": {
+				"en": "Northern and Eastern South Island",
+				"mi": "Te Raki me te Tairawhiti o Te Waipounamu"
+			}
+		},
+		"slug": {
+			"en": "northernandeasternsouthisland",
+			"mi": "terakimetetairawhitiotewaipounamu"
+		},
+		"dates": {
+			"start": "1991",
+			"end": "1994"
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"maplinks": [
+			{
+				"map_id": "ma_5",
+				"mapareas": [
+					{
+						"shape": "poly",
+						"coords": [
+							124,
+							500,
+							167,
+							560,
+							560,
+							413,
+							193,
+							53,
+							237,
+							93,
+							243,
+							211
+						]
+					}
+				]
+			}
+		],
+		"previous_id": "ma_3",
+		"next_id": "ma_5"
+	},
+	{
+		"id": "ma_5",
+		"name": {
+			"locale": {
+				"en": "Southern and Western South Island",
+				"mi": "Te Tonga me te Taihauāuru o Te Waipounamu"
+			},
+			"ascii": {
+				"mi": "Te Tonga me te Taihauauru o Te Waipounamu"
+			},
+			"double": {
+				"mi": "Te Tonga me te Taihauaauru o Te Waipounamu"
+			}
+		},
+		"slug": {
+			"en": "southernandwesternsouthisland",
+			"mi": "tetongametetaihauauruotewaipounamu"
+		},
+		"dates": {
+			"start": "1991",
+			"end": "1994"
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"maplinks": [
+			{
+				"map_id": "ma_4",
+				"mapareas": [
+					{
+						"shape": "poly",
+						"coords": [
+							387,
+							387,
+							25,
+							420,
+							60,
+							150,
+							490,
+							370,
+							490,
+							454,
+							360,
+							454
+						]
+					}
+				]
+			}
+		],
+		"previous_id": "ma_4"
+	}
+]

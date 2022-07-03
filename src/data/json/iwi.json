@@ -1,0 +1,2939 @@
+[
+	{
+		"id": "iw_1",
+		"name": {
+			"locale": {
+				"mi": "Kai Tahu"
+			}
+		},
+		"slug": {
+			"en": "kaitahu",
+			"mi": "kaitahu"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81i_Tahu",
+				"mi": "https://mi.wikipedia.org/wiki/K%C4%81i_Tahu"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q371230"
+		},
+		"metrics": {
+			"population": 54819
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāi Tahu, or Kāi Tahu, is the principal Māori iwi (tribe) of the southern region of New Zealand. Its takiwā is the largest in New Zealand, and extends from White Bluffs / Te Parinui o Whiti, Mount Mahanga and Kahurangi Point in the north to Stewart Island in the south. The takiwā comprises 18 rūnanga corresponding to traditional settlements.",
+				"mi": "Ko Ngāi Tahu he iwi o Te Wai-pounamu, Aotearoa."
+			}
+		},
+		"next_id": "iw_2"
+	},
+	{
+		"id": "iw_2",
+		"name": {
+			"locale": {
+				"mi": "Kawerau"
+			}
+		},
+		"slug": {
+			"en": "kawerau",
+			"mi": "kawerau"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_Kawerau",
+				"mi": "https://mi.wikipedia.org/wiki/Kawerua"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7690843"
+		},
+		"metrics": {
+			"population": 150
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Kawerau ā Maki, Te Kawerau a Maki, or Te Kawerau-a-Maki is a Māori iwi (tribe) of the Auckland Region of New Zealand. It had 251 registered adult members as of June 2017. Auckland Council gave it land for a marae at Te Henga in 2018; it has no wharenui yet.",
+				"mi": "Ko Kawerua he nohanga o Te Tai-tokerau. E ai ki Toitū Te Whenua, he nohanga he wāhi nohoia e te tangata, engari kāore anō kia tae te nui o te taupori ki te nui e taea ai te kī he tāone tonu tēnei. Ko Te Tai-tokerau tētahi o ngā takiwā o Aotearoa; koia tonu te rohe o Ngā Puhi me ērā atu iwi rongonui o reira."
+			}
+		},
+		"previous_id": "iw_1",
+		"next_id": "iw_3"
+	},
+	{
+		"id": "iw_3",
+		"name": {
+			"locale": {
+				"mi": "Moriori"
+			}
+		},
+		"slug": {
+			"en": "moriori",
+			"mi": "moriori"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Moriori"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1758372"
+		},
+		"metrics": {
+			"population": 738
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "The Moriori are the indigenous Polynesian people of the Chatham Islands, New Zealand. Moriori originated from Māori settlers from the New Zealand mainland around the year 1500. This was near the time of the shift from the Archaic to Classic Māori culture on the main islands of New Zealand. Oral tradition records multiple waves of migration to the Chatham Islands. Over several centuries these settlers' culture diverged from mainland Māori, developing a distinctive dialect, mythology, artistic expression and way of life."
+			}
+		},
+		"previous_id": "iw_2",
+		"next_id": "iw_4"
+	},
+	{
+		"id": "iw_4",
+		"name": {
+			"locale": {
+				"mi": "Muaupoko"
+			}
+		},
+		"slug": {
+			"en": "muaupoko",
+			"mi": "muaupoko"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Mua%C5%ABpoko",
+				"mi": "https://mi.wikipedia.org/wiki/Mua%C5%ABpoko"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q6930811"
+		},
+		"metrics": {
+			"population": 2694
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Muaūpoko is a Māori iwi on the Kapiti Coast of New Zealand. \t",
+				"mi": "Ko Muaūpoko tētahi o ngā iwi o Kurahaupō waka, kei Horowhenua, kei Manawatū e noho ana."
+			}
+		},
+		"previous_id": "iw_3",
+		"next_id": "iw_5"
+	},
+	{
+		"id": "iw_5",
+		"name": {
+			"locale": {
+				"mi": "Ngā Paimate"
+			},
+			"ascii": {
+				"mi": "Nga Paimate"
+			},
+			"double": {
+				"mi": "Ngaa Paimate"
+			}
+		},
+		"slug": {
+			"en": "ngapaimate",
+			"mi": "ngapaimate"
+		},
+		"previous_id": "iw_4",
+		"next_id": "iw_6"
+	},
+	{
+		"id": "iw_6",
+		"name": {
+			"locale": {
+				"mi": "Ngā Rauru (Kītahi)"
+			},
+			"ascii": {
+				"mi": "Nga Rauru (Kitahi)"
+			},
+			"double": {
+				"mi": "Ngaa Rauru (Kiitahi)"
+			}
+		},
+		"slug": {
+			"en": "ngaraurukitahi",
+			"mi": "ngaraurukitahi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81_Rauru",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81_Rauru"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023204"
+		},
+		"metrics": {
+			"population": 4179
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngā Rauru is a Māori iwi in the Wanganui region of New Zealand. In the 2006 census, 4,047 Māori claimed affiliation to Ngā Rauru, representing 12 hapu.",
+				"mi": "Ko Ngā Rauru he iwi e noho ana kei te rohe o Taranaki, kei te hauāuru o Te Ika-a-Māui, Aotearoa. E 3,090 te taupori i te 2001. Ko Aotea te waka; ko Taranaki te maunga; ko Rauru-kītahi te tangata; ko Ngā Rauru te iwi.Ko Rauru kī tahi, e kore te kupu e whati"
+			}
+		},
+		"previous_id": "iw_5",
+		"next_id": "iw_7"
+	},
+	{
+		"id": "iw_7",
+		"name": {
+			"locale": {
+				"mi": "Ngā Ruahine"
+			},
+			"ascii": {
+				"mi": "Nga Ruahine"
+			},
+			"double": {
+				"mi": "Ngaa Ruahine"
+			}
+		},
+		"slug": {
+			"en": "ngaruahine",
+			"mi": "ngaruahine"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81_Ruahine",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81_Ruahine"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q10967369"
+		},
+		"metrics": {
+			"population": 4803
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāruahine is a Māori iwi of New Zealand located in South Taranaki, North Island.",
+				"mi": "Ko Ngā Ruahine he iwi e noho ana kei te rohe o Taranaki, kei te hauāuru o Te Ika-a-Māui, Aotearoa. Ko Aotea te waka; ko Taranaki te maunga; ko Rauru-kītahi te tangata; ko Ngā Ruahine te iwi."
+			}
+		},
+		"previous_id": "iw_6",
+		"next_id": "iw_8"
+	},
+	{
+		"id": "iw_8",
+		"name": {
+			"locale": {
+				"mi": "Ngāpuhi"
+			},
+			"ascii": {
+				"mi": "Ngapuhi"
+			},
+			"double": {
+				"mi": "Ngaapuhi"
+			}
+		},
+		"slug": {
+			"en": "ngapuhi",
+			"mi": "ngapuhi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81puhi",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81_Puhi"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1283558"
+		},
+		"metrics": {
+			"population": 125601
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāpuhi is a Māori iwi located in the Northland region of New Zealand, and centred in the Hokianga, the Bay of Islands, and Whangarei.",
+				"mi": "Ko Ngāpuhi he iwi nui, nō Te Tai-tokerau, Te Ika-a-Māui, Aotearoa. Kua tae ki te 125,601 ngā mema i te 2013. Ko ngā waka ko Māhūhū, ko Māmari, ko Mataatua, ko Ngātokimatawhaorua, ko Ruakaramea."
+			}
+		},
+		"previous_id": "iw_7",
+		"next_id": "iw_9"
+	},
+	{
+		"id": "iw_9",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Aorangi"
+			},
+			"ascii": {
+				"mi": "Ngati Aorangi"
+			},
+			"double": {
+				"mi": "Ngaati Aorangi"
+			}
+		},
+		"slug": {
+			"en": "ngatiaorangi",
+			"mi": "ngatiaorangi"
+		},
+		"previous_id": "iw_8",
+		"next_id": "iw_10"
+	},
+	{
+		"id": "iw_10",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Apa"
+			},
+			"ascii": {
+				"mi": "Ngati Apa"
+			},
+			"double": {
+				"mi": "Ngaati Apa"
+			}
+		},
+		"slug": {
+			"en": "ngatiapa",
+			"mi": "ngatiapa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Apa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023216"
+		},
+		"metrics": {
+			"population": 2970
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Apa is a Māori iwi (tribe) in Rangitikei District of New Zealand. Its rohe extend between the Mangawhero, Whangaehu, Turakina and Rangitīkei rivers. This area is bounded by Whanganui River in the north-west, and Manawatu River in the south-east. The marae in this district include Tini wai tara, Whangaehu, Kauangaroa, and Parewanui."
+			}
+		},
+		"previous_id": "iw_9",
+		"next_id": "iw_11"
+	},
+	{
+		"id": "iw_11",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Apakura"
+			},
+			"ascii": {
+				"mi": "Ngati Apakura"
+			},
+			"double": {
+				"mi": "Ngaati Apakura"
+			}
+		},
+		"slug": {
+			"en": "ngatiapakura",
+			"mi": "ngatiapakura"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Waikato_Tainui#Ng%C4%81ti_Apakura",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Apakura"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659650"
+		},
+		"metrics": {
+			"population": 2874
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Waikato Tainui, Waikato or Tainui is a group of Māori people iwi based in Waikato Region, in the western central region of New Zealand's North Island. It is part of the larger Tainui confederation of Polynesian settlers who arrived to New Zealand on the Tainui waka. The tribe is named after the Waikato River, which plays a large part in its history and culture.",
+				"mi": "Ko Ngāti Apakura tētahi o ngā hapū o Ngāti Maniapoto. Ko Ngāti Maniapoto he iwi nui, kei Waikato e noho ana. Ko Kakepuku te maunga, ko Waikato te awa, ko Tainui te waka.Taku ara ko Tūrongo;\nI wawaea ki te Tai Rāwhiti,\nKo Māhinaarangi, i au e!\nKo te rua rā i moe ai a Raukawa\nNā Raukawa ko Rereahu;\nNā Rereahu ko Maniapoto\nHe ara tautika mai ki ahau!\n\n\n\nure"
+			}
+		},
+		"previous_id": "iw_10",
+		"next_id": "iw_12"
+	},
+	{
+		"id": "iw_12",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Awa"
+			},
+			"ascii": {
+				"mi": "Ngati Awa"
+			},
+			"double": {
+				"mi": "Ngaati Awa"
+			}
+		},
+		"slug": {
+			"en": "ngatiawa",
+			"mi": "ngatiawa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Awa",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Awa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023219"
+		},
+		"metrics": {
+			"population": 16182
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Awa is a Māori iwi (tribe) centred in the eastern Bay of Plenty Region of New Zealand. It is made of 22 hapu (subtribes), with 15,258 people claiming affiliation to the iwi in 2006. The Ngāti Awa people are primarily located in towns on the Rangitaiki Plain, including Whakatane, Kawerau, Edgecumbe, Te Teko and Matata. Two urban hapu also exist in Auckland and Wellington.",
+				"mi": "Ko Ngāti Awa he iwi o Te Ika-a-Māui o Aotearoa. 13,044 ngā mema i te 2001. Nā Te Runanga o Ngāti Awa Māori Trust Board Act 1988 i whakatūria ai tō te iwi runanga. Ko Pūtauaki te maunga, ko Mātaatua te waka. Ka raupatutia ō rātou whenua i te 1864, koia te raupatu tuatahi."
+			}
+		},
+		"previous_id": "iw_11",
+		"next_id": "iw_13"
+	},
+	{
+		"id": "iw_13",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Hauā"
+			},
+			"ascii": {
+				"mi": "Ngati Haua"
+			},
+			"double": {
+				"mi": "Ngaati Hauaa"
+			}
+		},
+		"slug": {
+			"en": "ngatihaua",
+			"mi": "ngatihaua"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Haua",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Hau%C4%81"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023222"
+		},
+		"metrics": {
+			"population": 5598
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Hauā is a Māori iwi of the eastern Waikato of New Zealand. It is part of the Tainui confederation. Its traditional area includes Matamata, Cambridge, Maungakawa, the Horotiu district along the Waikato River and the Maungatautari district, and its eastern boundary is the Kaimai Range. Leaders of the tribe have included Te Waharoa, his son Wiremu Tamihana and Tamihana's son Tupu Taingakawa. The tribe has played a prominent role in the Māori King Movement, with Tamihana and descendants being known as the \"Kingmakers\".",
+				"mi": "Ko Ngāti Hauā he iwi kei Waikato e noho ana i Te Ika-a-Māui o Aotearoa. Ko Maungatautari te maunga, ko Waikato te awa. Ko Tainui, ko Tākitimu ngā waka."
+			}
+		},
+		"previous_id": "iw_12",
+		"next_id": "iw_14"
+	},
+	{
+		"id": "iw_14",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Hauiti"
+			},
+			"ascii": {
+				"mi": "Ngati Hauiti"
+			},
+			"double": {
+				"mi": "Ngaati Hauiti"
+			}
+		},
+		"slug": {
+			"en": "ngatihauiti",
+			"mi": "ngatihauiti"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Hauiti"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023221"
+		},
+		"metrics": {
+			"population": 1029
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Hauiti is a Māori iwi of New Zealand it is centred in the Rangitīkei in the lower North Island."
+			}
+		},
+		"previous_id": "iw_13",
+		"next_id": "iw_15"
+	},
+	{
+		"id": "iw_15",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Hei"
+			},
+			"ascii": {
+				"mi": "Ngati Hei"
+			},
+			"double": {
+				"mi": "Ngaati Hei"
+			}
+		},
+		"slug": {
+			"en": "ngatihei",
+			"mi": "ngatihei"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Hei",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Hei"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023224"
+		},
+		"metrics": {
+			"population": 513
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Hei is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Hei tētahi o ngā iwi o Hauraki, ā, ko ngā uri o Hotunui. Ko Moehau rāua ko Te Aroha ngā maunga, ko Waihou te awa, ko Tainui te waka.\n"
+			}
+		},
+		"previous_id": "iw_14",
+		"next_id": "iw_16"
+	},
+	{
+		"id": "iw_16",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Hikairo"
+			},
+			"ascii": {
+				"mi": "Ngati Hikairo"
+			},
+			"double": {
+				"mi": "Ngaati Hikairo"
+			}
+		},
+		"slug": {
+			"en": "ngatihikairo",
+			"mi": "ngatihikairo"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Waikato_Tainui#Other_hap%C5%AB"
+			}
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Waikato Tainui, Waikato or Tainui is a group of Māori people iwi based in Waikato Region, in the western central region of New Zealand's North Island. It is part of the larger Tainui confederation of Polynesian settlers who arrived to New Zealand on the Tainui waka. The tribe is named after the Waikato River, which plays a large part in its history and culture."
+			}
+		},
+		"previous_id": "iw_15",
+		"next_id": "iw_17"
+	},
+	{
+		"id": "iw_17",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Hine"
+			},
+			"ascii": {
+				"mi": "Ngati Hine"
+			},
+			"double": {
+				"mi": "Ngaati Hine"
+			}
+		},
+		"slug": {
+			"en": "ngatihine",
+			"mi": "ngatihine"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Hine"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7022129"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Hine is an iwi with a rohe in Northland, New Zealand. It is part of the wider Ngāpuhi iwi. Ngāti Hine is descended from a female ancestor, Hineamaru, a great granddaughter of Rāhiri who settled in the Waiomio Valley, near Kawakawa. The prominent leader in the early years of European contact was Te Ruki Kawiti (1770s–1854)."
+			}
+		},
+		"previous_id": "iw_16",
+		"next_id": "iw_18"
+	},
+	{
+		"id": "iw_18",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kahu"
+			},
+			"ascii": {
+				"mi": "Ngati Kahu"
+			},
+			"double": {
+				"mi": "Ngaati Kahu"
+			}
+		},
+		"slug": {
+			"en": "ngatikahu",
+			"mi": "ngatikahu"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Kahu",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kahu"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023227"
+		},
+		"metrics": {
+			"population": 8580
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Kahu is a Māori iwi of Northland, New Zealand. The iwi is one of the six Muriwhenua iwi of the far north of the North Island. Ngāti Kahu take their name from their founding ancestress, Kahutianui, and link their ancestry back to the waka Māmaru. The captain of Māmaru was Te Parata who married Kahutianui.",
+				"mi": "Ko Ngāti Kahu he iwi nō te raki, nō te takiwā o Kaitaia i Te Ika-a-Māui."
+			}
+		},
+		"previous_id": "iw_17",
+		"next_id": "iw_19"
+	},
+	{
+		"id": "iw_19",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kahukura"
+			},
+			"ascii": {
+				"mi": "Ngati Kahukura"
+			},
+			"double": {
+				"mi": "Ngaati Kahukura"
+			}
+		},
+		"slug": {
+			"en": "ngatikahukura",
+			"mi": "ngatikahukura"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Korok%C4%AB_Kahukura",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kahukura"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q28180816"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Korokī Kahukura is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Kahukura tētahi o ngā hapū o Ngāti Raukawa. Ko Ngāti Raukawa he iwi nui, kei Waikato ētahi e noho ana, kei Raukawa moana ētahi. Ko Maungatautari te maunga, ko Waikato te awa, ko Tainui te waka.\n"
+			}
+		},
+		"previous_id": "iw_18",
+		"next_id": "iw_20"
+	},
+	{
+		"id": "iw_20",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kahungunu"
+			},
+			"ascii": {
+				"mi": "Ngati Kahungunu"
+			},
+			"double": {
+				"mi": "Ngaati Kahungunu"
+			}
+		},
+		"slug": {
+			"en": "ngatikahungunu",
+			"mi": "ngatikahungunu"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Kahungunu_ki_Wairarapa",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kahungunu"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q27963137"
+		},
+		"metrics": {
+			"population": 8376
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Kahungunu ki Wairarapa is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Kahungunu he iwi o te rāwhiti o Te Ika-a-Māui, Aotearoa."
+			}
+		},
+		"previous_id": "iw_19",
+		"next_id": "iw_21"
+	},
+	{
+		"id": "iw_21",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kanohi"
+			},
+			"ascii": {
+				"mi": "Ngati Kanohi"
+			},
+			"double": {
+				"mi": "Ngaati Kanohi"
+			}
+		},
+		"slug": {
+			"en": "ngatikanohi",
+			"mi": "ngatikanohi"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_K%C5%8Dnohi"
+			}
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Ngāti Kōnohi tētahi o ngā hapū o Ngāti Porou. Kei te Te Tai-rāwhiti e noho ana, i Te Ika-a-Māui. Ko ngā waka ko Horouta, ko Tākitimu.\n"
+			}
+		},
+		"previous_id": "iw_20",
+		"next_id": "iw_22"
+	},
+	{
+		"id": "iw_22",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kauwhata"
+			},
+			"ascii": {
+				"mi": "Ngati Kauwhata"
+			},
+			"double": {
+				"mi": "Ngaati Kauwhata"
+			}
+		},
+		"slug": {
+			"en": "ngatikauwhata",
+			"mi": "ngatikauwhata"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Kauwhata",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kauwhata"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659611"
+		},
+		"metrics": {
+			"population": 1335
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Raukawa is a Māori iwi with traditional bases in the Waikato, Taupo and Manawatū/Horowhenua regions of New Zealand. In 2006, 29,418 Māori registered their affiliation with Ngāti Raukawa.",
+				"mi": "Ko Ngāti Kauwhata tētahi o ngā hapū o Ngāti Raukawa. Ko Ngāti Raukawa he iwi nui, kei Waikato ētahi e noho ana, kei Raukawa moana ētahi. Ko Maungatautari te maunga, ko Waikato te awa, ko Tainui te waka.\n"
+			}
+		},
+		"previous_id": "iw_21",
+		"next_id": "iw_23"
+	},
+	{
+		"id": "iw_23",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kea"
+			},
+			"ascii": {
+				"mi": "Ngati Kea"
+			},
+			"double": {
+				"mi": "Ngaati Kea"
+			}
+		},
+		"slug": {
+			"en": "ngatikea",
+			"mi": "ngatikea"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Kea_Ng%C4%81ti_Tuar%C4%81",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kea"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659885"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Kea Ngāti Tuarā is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Kea tētahi o ngā hapū o Ngāti Maru. Ko Ngāti Maru he iwi nui, nō Hauraki; ko Marutūahu, te tama a Hotunui, tō rātou tupuna. Kei Hauraki taua iwi e noho ana i Te Ika-a-Māui o Aotearoa. Ko Moehau rāua ko Te Aroha ngā maunga, ko Waihou te awa. Ko Tainui te waka.\n"
+			}
+		},
+		"previous_id": "iw_22",
+		"next_id": "iw_24"
+	},
+	{
+		"id": "iw_24",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kinohaku"
+			},
+			"ascii": {
+				"mi": "Ngati Kinohaku"
+			},
+			"double": {
+				"mi": "Ngaati Kinohaku"
+			}
+		},
+		"slug": {
+			"en": "ngatikinohaku",
+			"mi": "ngatikinohaku"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kinohaku"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659659"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Ngāti Kinohaku tētahi o ngā hapū o Ngāti Maniapoto. Ko Ngāti Maniapoto he iwi nui, kei Waikato e noho ana. Ko Kakepuku te maunga, ko Waikato te awa, ko Tainui te waka.Taku ara ko Tūrongo;\nI wawaea ki te Tai Rāwhiti,\nKo Māhinaarangi, i au e!\nKo te rua rā i moe ai a Raukawa\nNā Raukawa ko Rereahu;\nNā Rereahu ko Maniapoto\nHe ara tautika mai ki ahau!"
+			}
+		},
+		"previous_id": "iw_23",
+		"next_id": "iw_25"
+	},
+	{
+		"id": "iw_25",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Koata"
+			},
+			"ascii": {
+				"mi": "Ngati Koata"
+			},
+			"double": {
+				"mi": "Ngaati Koata"
+			}
+		},
+		"slug": {
+			"en": "ngatikoata",
+			"mi": "ngatikoata"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Koata",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Koata"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q16880242"
+		},
+		"metrics": {
+			"population": 1341
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Koata or Ngāti Kōata is a Māori iwi of New Zealand, originating on the west coast of Waikato, but now mainly at the northern tip of South Island.",
+				"mi": "Ko Ngāti Koata tētahi o ngā hapū o Ngāti Toa. Ko Ngāti Toa tonu tētahi o ngā iwi o Tainui. E rua ngā rohe noho a Ngāti Toa; kei Waikato tētahi, kei Raukawa tētahi. He iwi tēnei kei ngā whenua e pātata ana ki Raukawa Moana i waenganui i te Te Ika-a-Māui me Te Wai-pounamu, Aotearoa, e noho ana. Ko Te Rauparaha te rangatira rongonui nō te wā i tae mai ai te Pākehā."
+			}
+		},
+		"previous_id": "iw_24",
+		"next_id": "iw_26"
+	},
+	{
+		"id": "iw_26",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Koroki"
+			},
+			"ascii": {
+				"mi": "Ngati Koroki"
+			},
+			"double": {
+				"mi": "Ngaati Koroki"
+			}
+		},
+		"slug": {
+			"en": "ngatikoroki",
+			"mi": "ngatikoroki"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Korok%C4%AB_Kahukura"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q28180816"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Korokī Kahukura is a Māori iwi of New Zealand."
+			}
+		},
+		"previous_id": "iw_25",
+		"next_id": "iw_27"
+	},
+	{
+		"id": "iw_27",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Kuia"
+			},
+			"ascii": {
+				"mi": "Ngati Kuia"
+			},
+			"double": {
+				"mi": "Ngaati Kuia"
+			}
+		},
+		"slug": {
+			"en": "ngatikuia",
+			"mi": "ngatikuia"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Kuia",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Kuia_(Tainui)"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023230"
+		},
+		"metrics": {
+			"population": 1794
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Kuia is a Māori iwi of the Northern South Island in New Zealand. They first settled in the Pelorus Sound, and later spread to the Marlborough Sounds, Nelson and Tasman districts to Taitapu on the West Coast, and as far south as the Nelson Lakes National Park. Ngāti Kuia tradition states that their founding tupuna Matua Hautere, a descendant of Kupe, came to Te Waipounamu in his waka Te Hoiere, guided by the kaitiaki Kaikaiawaro.",
+				"mi": "Ko Ngāti Kuia (Tainui) he iwi kei Waikato e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae"
+			}
+		},
+		"previous_id": "iw_26",
+		"next_id": "iw_28"
+	},
+	{
+		"id": "iw_28",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Māhuta"
+			},
+			"ascii": {
+				"mi": "Ngati Mahuta"
+			},
+			"double": {
+				"mi": "Ngaati Maahuta"
+			}
+		},
+		"slug": {
+			"en": "ngatimahuta",
+			"mi": "ngatimahuta"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Mahuta",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Mahuta"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023235"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Mahuta is a sub-tribe of the Waikato tribe of Māori in the North Island of New Zealand. The territory (rohe) of Ngāti Mahuta is the Kāwhia and Huntly areas of the Waikato region.",
+				"mi": "Ko Ngāti Mahuta he iwi kei Waikato e noho ana. Ko Taupiri te maunga, ko Waikato te awa, ko Tūrangawaewae te marae, ko Tainui te waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae"
+			}
+		},
+		"previous_id": "iw_27",
+		"next_id": "iw_29"
+	},
+	{
+		"id": "iw_29",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Mamoe"
+			},
+			"ascii": {
+				"mi": "Ngati Mamoe"
+			},
+			"double": {
+				"mi": "Ngaati Mamoe"
+			}
+		},
+		"slug": {
+			"en": "ngatimamoe",
+			"mi": "ngatimamoe"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/K%C4%81ti_Mamoe",
+				"mi": "https://mi.wikipedia.org/wiki/K%C4%81ti_M%C4%81moe"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1163411"
+		},
+		"metrics": {
+			"population": 3111
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Kāti Māmoe is a historic Māori iwi. Originally from the Heretaunga (Hastings) area they moved in the 16th century to the South Island which at the time was occupied by Waitaha.",
+				"mi": "Ko Kāti Māmoe tētahi o ngā iwi o Kāi Tahu. Kei te Te Wai-pounamu. Ko te waka ko Tākitimu.\n"
+			}
+		},
+		"previous_id": "iw_28",
+		"next_id": "iw_30"
+	},
+	{
+		"id": "iw_30",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Mahanga"
+			},
+			"ascii": {
+				"mi": "Ngati Mahanga"
+			},
+			"double": {
+				"mi": "Ngaati Mahanga"
+			}
+		},
+		"slug": {
+			"en": "ngatimahanga",
+			"mi": "ngatimahanga"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_M%C4%81hanga",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_M%C4%81hanga"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659619"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "The Ngāti Māhanga tribe is part of the Waikato Confederation of Tribes. The tribe's Ancestral Estate extended from Raglan Harbour to the West Bank of the Waikato River in the city of Hamilton, New Zealand. The Waikato Land Confiscation of 1864 meant that Ngāti Māhanga and their associated hapu were pushed to the West of the Waipa River.",
+				"mi": "Ko Ngāti Māhanga tētahi o ngā hapū o Waikato."
+			}
+		},
+		"previous_id": "iw_29",
+		"next_id": "iw_31"
+	},
+	{
+		"id": "iw_31",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Manawa"
+			},
+			"ascii": {
+				"mi": "Ngati Manawa"
+			},
+			"double": {
+				"mi": "Ngaati Manawa"
+			}
+		},
+		"slug": {
+			"en": "ngatimanawa",
+			"mi": "ngatimanawa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Manawa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023233"
+		},
+		"metrics": {
+			"population": 2253
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Manawa is a Māori iwi of New Zealand."
+			}
+		},
+		"previous_id": "iw_30",
+		"next_id": "iw_32"
+	},
+	{
+		"id": "iw_32",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Maniapoto"
+			},
+			"ascii": {
+				"mi": "Ngati Maniapoto"
+			},
+			"double": {
+				"mi": "Ngaati Maniapoto"
+			}
+		},
+		"slug": {
+			"en": "ngatimaniapoto",
+			"mi": "ngatimaniapoto"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Maniapoto",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Maniapoto"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1984412"
+		},
+		"metrics": {
+			"population": 35361
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Maniapoto is an iwi (tribe) based in the Waikato-Waitomo region of New Zealand's North Island. It is part of the Tainui confederation, the members of which trace their whakapapa (genealogy) back to people who arrived in New Zealand on the waka (canoe) Tainui. The 2006 New Zealand census shows the iwi to have a membership of 33,627, making it the 7th biggest iwi in New Zealand.",
+				"mi": "He iwi nui a Ngāti Maniapoto, kei te rohe o Tainui e noho ana. Ko Tainui te waka. I te tau 2001 27,168 te tokomaha o ngā tāngata i hono atu ki Ngāti Maniapoto.\nKa whakapapa atu a Ngāti Maniapoto ki te tūpuna Maniapoto, tētehi rangatira o Tainui. I mōhio whānuitia mō tōna matatau ki te whawhai, ki te mau taiaha hoki."
+			}
+		},
+		"previous_id": "iw_31",
+		"next_id": "iw_33"
+	},
+	{
+		"id": "iw_33",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Maru"
+			},
+			"ascii": {
+				"mi": "Ngati Maru"
+			},
+			"double": {
+				"mi": "Ngaati Maru"
+			}
+		},
+		"slug": {
+			"en": "ngatimaru",
+			"mi": "ngatimaru"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Maru_(Taranaki)",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Maru"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023239"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Maru is a Māori iwi of inland Taranaki in New Zealand. They are descended from Maruwharanui, the eldest son of Pito Haranui and his wife, Manauea. Pito Haranui belonged to an ancient Taranaki people known as the Kahui-Maru, whose genealogy predates the arrival of Toi.",
+				"mi": "Ko Ngati Maru, he iwi Marutuahu no Hauraki."
+			}
+		},
+		"previous_id": "iw_32",
+		"next_id": "iw_34"
+	},
+	{
+		"id": "iw_34",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Mutunga"
+			},
+			"ascii": {
+				"mi": "Ngati Mutunga"
+			},
+			"double": {
+				"mi": "Ngaati Mutunga"
+			}
+		},
+		"slug": {
+			"en": "ngatimutunga",
+			"mi": "ngatimutunga"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Mutunga"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023241"
+		},
+		"metrics": {
+			"population": 2514
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Mutunga is a Māori iwi (tribe) of New Zealand, whose original rohe were in north Taranaki. They migrated from Taranaki, first to Wellington, and then to the Chatham Islands in the 1830s. The rohe of the iwi includes Wharekauri, Te Whanga Lagoon and Waitangi on Chatham Island, and Pitt Island, also part of the Chatham Islands. The principal marae are at Urenui in Taranaki, and the Chatham Islands."
+			}
+		},
+		"previous_id": "iw_33",
+		"next_id": "iw_35"
+	},
+	{
+		"id": "iw_35",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Pāoa"
+			},
+			"ascii": {
+				"mi": "Ngati Paoa"
+			},
+			"double": {
+				"mi": "Ngaati Paaoa"
+			}
+		},
+		"slug": {
+			"en": "ngatipaoa",
+			"mi": "ngatipaoa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Paoa",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Paoa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023242"
+		},
+		"metrics": {
+			"population": 3456
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Pāoa is a Māori iwi (tribe) of the Hauraki region of New Zealand. Its traditional lands stretch from the western side of the Hauraki Plains to Auckland. They also settled on Hauraki Gulf islands such as Waiheke.",
+				"mi": "Ko Ngāti Paoa tētahi o ngā iwi o Hauraki, o Waikato hoki, ā, ko ngā uri o Paoa. Ko Tainui te waka. Ko Ngāti Paoa ngā uri o te tupuna, o Paoa. Ko tētahi āhuatanga nui mōna, mō Paoa, e pā ana ki ana moenga wāhine. Nō tētahi o ngā wāhine o Paoa, nō Tauhākari, ka herea a Ngāti Paoa ki ngā tātai rangatira o Waikato. Nō Hauraki kē tētahi o ana wāhine, ko Tukutuku tērā. No konei ka herea ai a Ngāti Paoa ki ngā tātai rangatira o Hauraki. Ko ērā ngā taha e rua o Ngāti Paoa; he iwi nō Waikato, he iwi anō nō Hauraki.Me titiro ki ngā wā o mua; rapua ngā mea kua ngaro.\n"
+			}
+		},
+		"previous_id": "iw_34",
+		"next_id": "iw_36"
+	},
+	{
+		"id": "iw_36",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Pikiao"
+			},
+			"ascii": {
+				"mi": "Ngati Pikiao"
+			},
+			"double": {
+				"mi": "Ngaati Pikiao"
+			}
+		},
+		"slug": {
+			"en": "ngatipikiao",
+			"mi": "ngatipikiao"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Pikiao",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Pikiao"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023244"
+		},
+		"metrics": {
+			"population": 8001
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Pikiao is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Pikiao tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_35",
+		"next_id": "iw_37"
+	},
+	{
+		"id": "iw_37",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Porou"
+			},
+			"ascii": {
+				"mi": "Ngati Porou"
+			},
+			"double": {
+				"mi": "Ngaati Porou"
+			}
+		},
+		"slug": {
+			"en": "ngatiporou",
+			"mi": "ngatiporou"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Porou",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Porou"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1984414"
+		},
+		"metrics": {
+			"population": 71049
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Porou is a Māori iwi traditionally located in the East Cape and Gisborne regions of the North Island of New Zealand. Ngāti Porou is affiliated with the 28th Maori Battalion and has the second-largest affiliation of any iwi in New Zealand, with 71,910 registered members in 2006. The traditional rohe or tribal area of Ngāti Porou extends from Pōtikirua and Lottin Point in the north to Te Toka-a-Taiau in the south.",
+				"mi": "Ko Ngāti Porou he iwi, ko Waiapu te awa, ko Hikurangi te maunga. Ko Horouta, ko Tākitimu ngā waka. Ko Hikurangi te maunga, ko ngā kāinga noho kei Uawa, Te Araroa, Tūranga-nui-a-Kiwa, Anaura, Tokomaru Bay, Te Puia, kei Te Tai-rāwhiti o Te Ika-a-Māui o Aotearoa."
+			}
+		},
+		"previous_id": "iw_36",
+		"next_id": "iw_38"
+	},
+	{
+		"id": "iw_38",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rangi-te-Aorere"
+			},
+			"ascii": {
+				"mi": "Ngati Rangi-te-Aorere"
+			},
+			"double": {
+				"mi": "Ngaati Rangi-te-Aorere"
+			}
+		},
+		"slug": {
+			"en": "ngatirangiteaorere",
+			"mi": "ngatirangiteaorere"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Rangiteaorere",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Rangiteaorere"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023255"
+		},
+		"metrics": {
+			"population": 435
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Rangiteaorere is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Rangiteaorere tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_37",
+		"next_id": "iw_39"
+	},
+	{
+		"id": "iw_39",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Ranginui"
+			},
+			"ascii": {
+				"mi": "Ngati Ranginui"
+			},
+			"double": {
+				"mi": "Ngaati Ranginui"
+			}
+		},
+		"slug": {
+			"en": "ngatiranginui",
+			"mi": "ngatiranginui"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Ranginui",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Ranginui"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023252"
+		},
+		"metrics": {
+			"population": 8967
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Ranginui is a Māori iwi (tribe) in Bay of Plenty, New Zealand. Its rohe extends from Waihi in the north, to the Kaimai Range in the west, to south of Te Puke in the south, and to Tauranga in the east. The rohe does not extend offshore to Matakana Island or Mayor Island / Tuhua.",
+				"mi": "Ko Ngāti Ranginui he iwi o Tauranga-moana i Te Ika-a-Māui o Aotearoa. E 6,120 te taupori i te 2001. Ko Tākitimu te waka."
+			}
+		},
+		"previous_id": "iw_38",
+		"next_id": "iw_40"
+	},
+	{
+		"id": "iw_40",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rangiteauira"
+			},
+			"ascii": {
+				"mi": "Ngati Rangiteauira"
+			},
+			"double": {
+				"mi": "Ngaati Rangiteauira"
+			}
+		},
+		"slug": {
+			"en": "ngatirangiteauira",
+			"mi": "ngatirangiteauira"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Rangi",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Rangi_Te_Auria"
+			}
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Rangi is an iwi of the central North Island, New Zealand. Mainly around the areas of Ohakune and the Upper Whanganui River. Ngāti Rangi are the original people of the land. Paerangi was the chief of Ngāti Rangi, he was one of the first to arrive in New Zealand, many years if not a hundred years before the great fleet. They believe they arrived in New Zealand on a Manu, not a waka.",
+				"mi": "Ko Ngāti Rangi Te Auria tētahi o ngā hapū o Te Āti Haunui-a-Pāpārangi. Ko Te Āti Haunui-a-Pāpārangi tonu he iwi e noho ana kei ngā tahataha o te awa o Whanganui, kei te hauāuru o Te Ika-a-Māui, Aotearoa. Ko Aotea te waka; ko Ruapehu te maunga; ko Whanganui te awa; ko Turi te tangata."
+			}
+		},
+		"previous_id": "iw_39",
+		"next_id": "iw_41"
+	},
+	{
+		"id": "iw_41",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rangitihi"
+			},
+			"ascii": {
+				"mi": "Ngati Rangitihi"
+			},
+			"double": {
+				"mi": "Ngaati Rangitihi"
+			}
+		},
+		"slug": {
+			"en": "ngatirangitihi",
+			"mi": "ngatirangitihi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Rangitihi",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Rangitihi"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q17055843"
+		},
+		"metrics": {
+			"population": 2298
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Rangitihi is a Māori iwi of Aotearoa New Zealand, located in the Bay of Plenty.",
+				"mi": "Ko Ngāti Rangitihi tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_40",
+		"next_id": "iw_42"
+	},
+	{
+		"id": "iw_42",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rangituhia"
+			},
+			"ascii": {
+				"mi": "Ngati Rangituhia"
+			},
+			"double": {
+				"mi": "Ngaati Rangituhia"
+			}
+		},
+		"slug": {
+			"en": "ngatirangituhia",
+			"mi": "ngatirangituhia"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Rangituhia"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659897"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Rangituhia tētehi o ngā hapū o Ngāti Rangi. Ko Ngāti Rangi te iwi e noho ana kei te maru o Ruapehu, kei te puku o Te Ika-a-Māui, Aotearoa."
+			}
+		},
+		"previous_id": "iw_41",
+		"next_id": "iw_43"
+	},
+	{
+		"id": "iw_43",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rangiwewehi"
+			},
+			"ascii": {
+				"mi": "Ngati Rangiwewehi"
+			},
+			"double": {
+				"mi": "Ngaati Rangiwewehi"
+			}
+		},
+		"slug": {
+			"en": "ngatirangiwewehi",
+			"mi": "ngatirangiwewehi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Rangiwewehi",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Rangiwewehi"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023258"
+		},
+		"metrics": {
+			"population": 2835
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Rangiwewehi is an iwi of the Te Arawa confederation of tribes.",
+				"mi": "Ko Ngāti Rangiwewehi tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_42",
+		"next_id": "iw_44"
+	},
+	{
+		"id": "iw_44",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rarua"
+			},
+			"ascii": {
+				"mi": "Ngati Rarua"
+			},
+			"double": {
+				"mi": "Ngaati Rarua"
+			}
+		},
+		"slug": {
+			"en": "ngatirarua",
+			"mi": "ngatirarua"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_R%C4%81rua",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_R%C4%81rua"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023267"
+		},
+		"metrics": {
+			"population": 981
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Rārua are descendants of the Polynesian explorers who arrived in Aotearoa aboard the waka (canoe) Tainui.",
+				"mi": "Ko Ngāti Rārua he iwi kei Te Tau Ihu o Te Waka a Maui e noho ana. Ko Tainui te waka."
+			}
+		},
+		"previous_id": "iw_43",
+		"next_id": "iw_45"
+	},
+	{
+		"id": "iw_45",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Raukawa"
+			},
+			"ascii": {
+				"mi": "Ngati Raukawa"
+			},
+			"double": {
+				"mi": "Ngaati Raukawa"
+			}
+		},
+		"slug": {
+			"en": "ngatiraukawa",
+			"mi": "ngatiraukawa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Raukawa",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Raukawa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1984427"
+		},
+		"metrics": {
+			"population": 10053
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Raukawa is a Māori iwi with traditional bases in the Waikato, Taupo and Manawatū/Horowhenua regions of New Zealand. In 2006, 29,418 Māori registered their affiliation with Ngāti Raukawa.",
+				"mi": "Ko Ngāti Raukawa tētahi o ngā iwi o Tainui. E rua ngā rohe tūranga o Ngāti Raukawa; kei Waikato tētahi, kei te Tonga tētahi. Ko Tainui te waka. E 24,000 te taupori i te 2001."
+			}
+		},
+		"previous_id": "iw_44",
+		"next_id": "iw_46"
+	},
+	{
+		"id": "iw_46",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Rora"
+			},
+			"ascii": {
+				"mi": "Ngati Rora"
+			},
+			"double": {
+				"mi": "Ngaati Rora"
+			}
+		},
+		"slug": {
+			"en": "ngatirora",
+			"mi": "ngatirora"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Rora"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659673"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Ngāti Rora tētahi o ngā hapū o Ngāti Maniapoto. Ko Ngāti Maniapoto he iwi nui, kei Waikato e noho ana. Ko Kakepuku te maunga, ko Waikato te awa, ko Tainui te waka.Taku ara ko Tūrongo;\nI wawaea ki te Tai Rāwhiti,\nKo Māhinaarangi, i au e!\nKo te rua rā i moe ai a Raukawa\nNā Raukawa ko Rereahu;\nNā Rereahu ko Maniapoto\nHe ara tautika mai ki ahau!"
+			}
+		},
+		"previous_id": "iw_45",
+		"next_id": "iw_47"
+	},
+	{
+		"id": "iw_47",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Ruanui"
+			},
+			"ascii": {
+				"mi": "Ngati Ruanui"
+			},
+			"double": {
+				"mi": "Ngaati Ruanui"
+			}
+		},
+		"slug": {
+			"en": "ngatiruanui",
+			"mi": "ngatiruanui"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Ruanui",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Ruanui"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023270"
+		},
+		"metrics": {
+			"population": 7260
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Ruanui is a Māori iwi traditionally based in the Taranaki region of New Zealand. In the 2006 census, 7,035 people claimed affiliation to the iwi. However, most members now live outside the traditional areas of the iwi.",
+				"mi": "Ko Ngāti Ruanui he iwi e noho ana kei te rohe o Pātea, kei te hauāuru o Te Ika-a-Māui, Aotearoa. E 5,286 te taupori i te 2001. Ko Aotea te waka; ko Taranaki te maunga; ko Waingongoro te awa; ko Turi te tangata; ko Ngāti Ruanui te iwi.Pakupaku noa koe, e Pātea, me hoki a Rau i konei"
+			}
+		},
+		"previous_id": "iw_46",
+		"next_id": "iw_48"
+	},
+	{
+		"id": "iw_48",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tū"
+			},
+			"ascii": {
+				"mi": "Ngati Tu"
+			},
+			"double": {
+				"mi": "Ngaati Tuu"
+			}
+		},
+		"slug": {
+			"en": "ngatitu",
+			"mi": "ngatitu"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_T%C5%AB"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25662132"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Ngāti Tū tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_47",
+		"next_id": "iw_49"
+	},
+	{
+		"id": "iw_49",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tūwhao"
+			},
+			"ascii": {
+				"mi": "Ngati Tuwhao"
+			},
+			"double": {
+				"mi": "Ngaati Tuuwhao"
+			}
+		},
+		"slug": {
+			"en": "ngatituwhao",
+			"mi": "ngatituwhao"
+		},
+		"previous_id": "iw_48",
+		"next_id": "iw_50"
+	},
+	{
+		"id": "iw_50",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tūwharetoa"
+			},
+			"ascii": {
+				"mi": "Ngati Tuwharetoa"
+			},
+			"double": {
+				"mi": "Ngaati Tuuwharetoa"
+			}
+		},
+		"slug": {
+			"en": "ngatituwharetoa",
+			"mi": "ngatituwharetoa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_T%C5%ABwharetoa",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_T%C5%ABwharetoa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023290"
+		},
+		"metrics": {
+			"population": 35877
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Tūwharetoa is an iwi descended from Ngātoro-i-rangi, the priest who navigated the Arawa canoe to New Zealand. The Tūwharetoa region extends from Te Awa o te Atua at Matata across the central plateau of the North Island to the lands around Mount Tongariro and Lake Taupo.",
+				"mi": "Ko Ngāti Tūwharetoa he iwi rangatira e noho ana ki te puku o Te Ika-a-Māui o Aotearoa. E 29,301 te taupori i te 2001. Ko tētehi kupu whakataukī nō rātou \"ko Tūwharetoa te Iwi, Tūwharetoa ki Pūtauaki, ko Tūwharetoa ki Waiariki ko Tūwharetoa ki Tongariro.\" Arā, ka kitea i konei e toru ngā wahanga o te Iwi nei arā ko Tūwharetoa ki Pūtauaki, ko Tūwharetoa ki Waiariki, ko Tūwharetoa ki Tongariro. Ko Te Heuheu Tukino te ariki o Ngāti Tūwharetoa. I tēnei wā ko Tumu Te Heuheu Tukino VII terā. Kātahi ka puta te kupu: \"Ko Tongariro te maunga; ko Taupō-nui-a-Tia te moana; ko Tūwharetoa te iwi, ko Te Heuheu te tangata\". Ko te rohe: Mai i te Te Awa-o-te-atua ki Tauhara, Ki Tongariro huri noa ki Te Takaputiraha o Tutetawha ki Tuhua Maunga. Ko ngā awa: Tongariro, Waikato, Tarawera. Ko ngā tāone: Kawerau, Tūrangi, Taupō-nui-a-Tia."
+			}
+		},
+		"previous_id": "iw_49",
+		"next_id": "iw_51"
+	},
+	{
+		"id": "iw_51",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tai"
+			},
+			"ascii": {
+				"mi": "Ngati Tai"
+			},
+			"double": {
+				"mi": "Ngaati Tai"
+			}
+		},
+		"slug": {
+			"en": "ngatitai",
+			"mi": "ngatitai"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81i_Tai_ki_T%C4%81maki",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Tai"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q28438435"
+		},
+		"metrics": {
+			"population": 2301
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāi Tai ki Tāmaki is a Māori tribe that is based in the area around Clevedon, part of the Auckland region. It is one of the twelve members of the Hauraki Collective of tribes.",
+				"mi": "Ko Ngāti Tai tētahi o ngā iwi o Hauraki. Ko ngā tūpuna o Ngāti Tai i tae mai ki a Hauraki i runga i a Tainui waka, i te whitinga mai o taua waka ki a Tāmaki-makau-rau me Tikapa Moana hoki; ko Ngāti Tai te tuatahi o ngā iwi o Tainui waka i noho ki Hauraki. Ko Te Keteanatāua tētahi o ngā rangatira o Tainui waka i terā wā, ā, ko Taihauā te tama a Te Keteanatāua. Nō Taihauā i puta mai te iwi nei, a Ngāti Tai. Ko Taikehu tētahi atu o ngā tūpuna. I muri ake, i heke mai he rōpu nui o Ngāi Tai ki Hauraki, i haere mai rātou nō Tōrere, ki a Tāmaki-makau-rau, tō rātou haere mai he whakawhanaungatanga ki a Ngāti Tai."
+			}
+		},
+		"previous_id": "iw_50",
+		"next_id": "iw_52"
+	},
+	{
+		"id": "iw_52",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tama"
+			},
+			"ascii": {
+				"mi": "Ngati Tama"
+			},
+			"double": {
+				"mi": "Ngaati Tama"
+			}
+		},
+		"slug": {
+			"en": "ngatitama",
+			"mi": "ngatitama"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Tama",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Tama"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023276"
+		},
+		"metrics": {
+			"population": 378
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Tama is a historic Māori iwi of present-day New Zealand which whakapapas back to Tama Ariki, the chief navigator on the Tokomaru waka. The Iwi of Ngati Tama is located in north Taranaki around Poutama. On its northern boundary are the Tainui and Waikato/Maniapoto tribes, and on the southern boundary is Ngati Mutunga. The close geographical proximity of Tainui's Ngati Toa and Ngati Mutunga explains the long, continuous, and close relationship among the three Iwi.",
+				"mi": "Ko Ngāti Tama he iwi kei Taranaki ētahi, kei Wharekauri ētahi, kei Te Wai-pounamu ētahi e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae\n"
+			}
+		},
+		"previous_id": "iw_51",
+		"next_id": "iw_53"
+	},
+	{
+		"id": "iw_53",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tamaterā"
+			},
+			"ascii": {
+				"mi": "Ngati Tamatera"
+			},
+			"double": {
+				"mi": "Ngaati Tamateraa"
+			}
+		},
+		"slug": {
+			"en": "ngatitamatera",
+			"mi": "ngatitamatera"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Tamater%C4%81",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Tamater%C4%81"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023279"
+		},
+		"metrics": {
+			"population": 2577
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Tamaterā is a Māori iwi (tribe) of the Hauraki region of New Zealand, descended from Tamaterā, the second son of Marutūāhu. It is a major tribe within the Marutūāhu confederation and its leaders have been prominent in Hauraki history and Marutūāhu tribal affairs.",
+				"mi": "Ko Ngāti Tamaterā tētehi o ngā Marutuahu iwi o Hauraki, ā, ko ngā uri o Hotunui raua ko Mihirawhiti, nga matua a Marutuahu."
+			}
+		},
+		"previous_id": "iw_52",
+		"next_id": "iw_54"
+	},
+	{
+		"id": "iw_54",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tarāwhai"
+			},
+			"ascii": {
+				"mi": "Ngati Tarawhai"
+			},
+			"double": {
+				"mi": "Ngaati Taraawhai"
+			}
+		},
+		"slug": {
+			"en": "ngatitarawhai",
+			"mi": "ngatitarawhai"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Tar%C4%81whai",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Tar%C4%81whai"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023277"
+		},
+		"metrics": {
+			"population": 282
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Tarāwhai is a Māori iwi of the Rotorua area of New Zealand.",
+				"mi": "Ko Ngāti Tarāwhai tētehi o ngā iwi o Te Arawa. Ko Waikohatu ko Hinemihi anō hoki ngā marae o Ngāti Tarāwhai."
+			}
+		},
+		"previous_id": "iw_53",
+		"next_id": "iw_55"
+	},
+	{
+		"id": "iw_55",
+		"name": {
+			"locale": {
+				"mi": "Ngāti te Ata"
+			},
+			"ascii": {
+				"mi": "Ngati te Ata"
+			},
+			"double": {
+				"mi": "Ngaati te Ata"
+			}
+		},
+		"slug": {
+			"en": "ngatiteata",
+			"mi": "ngatiteata"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Te_Ata",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Te_Ata"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q16978020"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Te Ata is a Māori Iwi of New Zealand.",
+				"mi": "Ko Ngāti Te Ata he iwi kei Waikato e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae\n"
+			}
+		},
+		"previous_id": "iw_54",
+		"next_id": "iw_56"
+	},
+	{
+		"id": "iw_56",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Toa Rangatira"
+			},
+			"ascii": {
+				"mi": "Ngati Toa Rangatira"
+			},
+			"double": {
+				"mi": "Ngaati Toa Rangatira"
+			}
+		},
+		"slug": {
+			"en": "ngatitoarangatira",
+			"mi": "ngatitoarangatira"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Toarangatira",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Toa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1984446"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Toa, Ngāti Toarangatira or Ngāti Toa Rangatira, is a Māori iwi (tribe) in the lower North Island and upper South Island of New Zealand. Its rohe extends from Whanganui in the north, Palmerston North in the east, and Kaikoura and Hokitika in the south. Ngāti Toa remains a small iwi with a population of only about 4500. It has four marae: Takapūwāhia and Hongoeka in Porirua, and Whakatū and Wairau in the north of the South Island. Ngāti Toa's governing body has the name Te Rūnanga o Toa Rangatira.",
+				"mi": "Ko Ngāti Toa tētahi o ngā iwi o Tainui. E rua ngā rohe noho a Ngāti Toa; kei Waikato tētahi, kei Raukawa tētahi. Ko Tainui te waka. He iwi tēnei kei ngā whenua e pātata ana ki Raukawa Moana i waenganui i te Te Ika-a-Māui me Te Wai-pounamu, Aotearoa, e noho ana. Ko Te Rauparaha te rangatira rongonui nō te wā i tae mai ai te Pākehā."
+			}
+		},
+		"previous_id": "iw_55",
+		"next_id": "iw_57"
+	},
+	{
+		"id": "iw_57",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Tuara"
+			},
+			"ascii": {
+				"mi": "Ngati Tuara"
+			},
+			"double": {
+				"mi": "Ngaati Tuara"
+			}
+		},
+		"slug": {
+			"en": "ngatituara",
+			"mi": "ngatituara"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Kea_Ng%C4%81ti_Tuar%C4%81",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Tuara"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659885"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Kea Ngāti Tuarā is a Māori iwi of New Zealand.",
+				"mi": "Ko Ngāti Tuara tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_56",
+		"next_id": "iw_58"
+	},
+	{
+		"id": "iw_58",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Uenuku"
+			},
+			"ascii": {
+				"mi": "Ngati Uenuku"
+			},
+			"double": {
+				"mi": "Ngaati Uenuku"
+			}
+		},
+		"slug": {
+			"en": "ngatiuenuku",
+			"mi": "ngatiuenuku"
+		},
+		"previous_id": "iw_57",
+		"next_id": "iw_59"
+	},
+	{
+		"id": "iw_59",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Uenuku-Kopako"
+			},
+			"ascii": {
+				"mi": "Ngati Uenuku-Kopako"
+			},
+			"double": {
+				"mi": "Ngaati Uenuku-Kopako"
+			}
+		},
+		"slug": {
+			"en": "ngatiuenukukopako",
+			"mi": "ngatiuenukukopako"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Uenuku_K%C5%8Dpako"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7877467"
+		},
+		"metrics": {
+			"population": 477
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Ngāti Uenuku Kōpako tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_58",
+		"next_id": "iw_60"
+	},
+	{
+		"id": "iw_60",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Wai"
+			},
+			"ascii": {
+				"mi": "Ngati Wai"
+			},
+			"double": {
+				"mi": "Ngaati Wai"
+			}
+		},
+		"slug": {
+			"en": "ngatiwai",
+			"mi": "ngatiwai"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Wai"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023293"
+		},
+		"metrics": {
+			"population": 5667
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngātiwai or Ngāti Wai is a Māori iwi of the east coast of the Northland Region of New Zealand. Its historical tribal area or rohe stretched from Cape Brett in the north to Takatū Point on Tawharanui Peninsula in the south and out to Great Barrier Island, the Poor Knights Islands and other offshore islands."
+			}
+		},
+		"previous_id": "iw_59",
+		"next_id": "iw_61"
+	},
+	{
+		"id": "iw_61",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Wairere"
+			},
+			"ascii": {
+				"mi": "Ngati Wairere"
+			},
+			"double": {
+				"mi": "Ngaati Wairere"
+			}
+		},
+		"slug": {
+			"en": "ngatiwairere",
+			"mi": "ngatiwairere"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Waikato_Tainui#Ng%C4%81ti_Wairere",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Wairere"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659712"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Waikato Tainui, Waikato or Tainui is a group of Māori people iwi based in Waikato Region, in the western central region of New Zealand's North Island. It is part of the larger Tainui confederation of Polynesian settlers who arrived to New Zealand on the Tainui waka. The tribe is named after the Waikato River, which plays a large part in its history and culture.",
+				"mi": "Ko Ngāti Wairere he iwi kei Waikato e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae"
+			}
+		},
+		"previous_id": "iw_60",
+		"next_id": "iw_62"
+	},
+	{
+		"id": "iw_62",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Whātua"
+			},
+			"ascii": {
+				"mi": "Ngati Whatua"
+			},
+			"double": {
+				"mi": "Ngaati Whaatua"
+			}
+		},
+		"slug": {
+			"en": "ngatiwhatua",
+			"mi": "ngatiwhatua"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Wh%C4%81tua",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Wh%C4%81tua"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1112181"
+		},
+		"metrics": {
+			"population": 14784
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Whātua is a Māori iwi (tribe) of the lower Northland Peninsula of New Zealand's North Island. It comprises a confederation of four hapū (subtribes) interconnected both by ancestry and by association over time: Te Uri-o-Hau, Te Roroa, Te Taoū, and Ngāti Whātua-o-Ōrākei. The four hapū can act together or separately as independent tribes.",
+				"mi": "Ko Ngāti Whātua he iwi kei Te Tai-tokerau, kei Tāmaki-makau-rau rānei e noho ana, i Te Ika-a-Māui. Ko ngā waka ko Māhūhū, ko Kurahaupō. Nō te wā o te hainatanga o te Tiriti, ko Apihai Te Kawau Te Tawa te rangatira e mōhiotia ana e te Pākehā. Ko Tarahawaiki tōna matua; ko Mokorua tōna whaea. I mate a Apihai i te 1869."
+			}
+		},
+		"previous_id": "iw_61",
+		"next_id": "iw_63"
+	},
+	{
+		"id": "iw_63",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Whakāue"
+			},
+			"ascii": {
+				"mi": "Ngati Whakaue"
+			},
+			"double": {
+				"mi": "Ngaati Whakaaue"
+			}
+		},
+		"slug": {
+			"en": "ngatiwhakaue",
+			"mi": "ngatiwhakaue"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Whakaue",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Whakaue"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023291"
+		},
+		"metrics": {
+			"population": 8340
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Whakaue is a Māori iwi of New Zealand. The tribe lives in the Rotorua district and descends from the Arawa waka.",
+				"mi": "Ko Ngāti Whakaue tētehi o ngā iwi o Te Arawa. Ko Ngongotahā te maunga; ko Rotorua-nui-a-Kahu te moana; ko Te Papaiouru te marae matua. He huhua hoki ra wona Marae. He iwi e kawe ana i te ingoa o te tupuna nei a Whakauekaipapa.\nTokoono nga Koromatua engari he huhua hoki ra nga hapu o Ngati Whakaue. E noho noa ana tetehi wahanga o Ngati Whakaue ki te taha tai moana i Maketu."
+			}
+		},
+		"previous_id": "iw_62",
+		"next_id": "iw_64"
+	},
+	{
+		"id": "iw_64",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Whanaunga"
+			},
+			"ascii": {
+				"mi": "Ngati Whanaunga"
+			},
+			"double": {
+				"mi": "Ngaati Whanaunga"
+			}
+		},
+		"slug": {
+			"en": "ngatiwhanaunga",
+			"mi": "ngatiwhanaunga"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Whanaunga",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Whanaunga"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023294"
+		},
+		"metrics": {
+			"population": 624
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Whanaunga is a Māori iwi (tribe) of the Coromandel Peninsula in New Zealand, descended from Whanaunga, the third son of Marutūāhu.",
+				"mi": "Ko Ngāti Whanaunga tētahi o ngā iwi o Hauraki, ā, ko ngā uri o Hotunui. Ko Moehau rāua ko Te Aroha ngā maunga, ko Waihou te awa, ko Tainui te waka.\n"
+			}
+		},
+		"previous_id": "iw_63",
+		"next_id": "iw_65"
+	},
+	{
+		"id": "iw_65",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Whare"
+			},
+			"ascii": {
+				"mi": "Ngati Whare"
+			},
+			"double": {
+				"mi": "Ngaati Whare"
+			}
+		},
+		"slug": {
+			"en": "ngatiwhare",
+			"mi": "ngatiwhare"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81ti_Whare"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023296"
+		},
+		"metrics": {
+			"population": 1254
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Whare is a Māori iwi of New Zealand. It is part of a group of tribes participating in the \"treelords\" Treaty of Waitangi settlement with the New Zealand government involving Central North Island forestry land and cash."
+			}
+		},
+		"previous_id": "iw_64",
+		"next_id": "iw_66"
+	},
+	{
+		"id": "iw_66",
+		"name": {
+			"locale": {
+				"mi": "Ngāti Whititama"
+			},
+			"ascii": {
+				"mi": "Ngati Whititama"
+			},
+			"double": {
+				"mi": "Ngaati Whititama"
+			}
+		},
+		"slug": {
+			"en": "ngatiwhititama",
+			"mi": "ngatiwhititama"
+		},
+		"previous_id": "iw_65",
+		"next_id": "iw_67"
+	},
+	{
+		"id": "iw_67",
+		"name": {
+			"locale": {
+				"mi": "Ngai Tūhoe"
+			},
+			"ascii": {
+				"mi": "Ngai Tuhoe"
+			},
+			"double": {
+				"mi": "Ngai Tuuhoe"
+			}
+		},
+		"slug": {
+			"en": "ngaituhoe",
+			"mi": "ngaituhoe"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/T%C5%ABhoe",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81i_T%C5%ABhoe"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023212"
+		},
+		"metrics": {
+			"population": 34887
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāi Tūhoe, often known simply as Tūhoe, is a Māori iwi (\"tribe\") of New Zealand. It takes its name from an ancestral figure, Tūhoe-pōtiki. Tūhoe is a Māori-language word meaning \"steep\" or \"high noon\". Tūhoe people also bear the sobriquet Nga Tamariki o te Kohu. Tūhoe traditional land is at Te Urewera in the eastern North Island, a steep, heavily forested area which includes Lake Waikaremoana. Tūhoe traditionally relied on the forest for their needs. The tribe had its main centres of population in the small mountain valleys of Ahikereru and Ruatahuna, with Maungapohatu, the inner sanctum of the Urewera, as their sacred mountain. The Tūhoe country had a great reputation among the neighbouring tribes as a graveyard for invading forces.",
+				"mi": "Ko Ngāi Tūhoe, Tūhoe rānei, he iwi kei Te Urewera e noho ana. Ko Maungapōhatu te maunga tapu, ko Waikaremoana te wai kaukau, ko Tauranga, ko Ōhinemataroa, ko Rangitāiki, ko Whirinaki ngā awa. Ko Ngāi Tūhoe te iwi.Tūhoe, maumau kai, maumau taonga, maumau tāngata ki te pō.\nKotahi nā Tūhoe ka kata te pō."
+			}
+		},
+		"previous_id": "iw_66",
+		"next_id": "iw_68"
+	},
+	{
+		"id": "iw_68",
+		"name": {
+			"locale": {
+				"mi": "Ngai Tai"
+			}
+		},
+		"slug": {
+			"en": "ngaitai",
+			"mi": "ngaitai"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81i_Tai_ki_T%C4%81maki"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023205"
+		},
+		"metrics": {
+			"population": 498
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāi Tai ki Tāmaki is a Māori tribe that is based in the area around Clevedon, part of the Auckland region. It is one of the twelve members of the Hauraki Collective of tribes."
+			}
+		},
+		"previous_id": "iw_67",
+		"next_id": "iw_69"
+	},
+	{
+		"id": "iw_69",
+		"name": {
+			"locale": {
+				"mi": "Ngai Takoto"
+			}
+		},
+		"slug": {
+			"en": "ngaitakoto",
+			"mi": "ngaitakoto"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81i_Takoto",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81i_Takoto"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q12717191"
+		},
+		"metrics": {
+			"population": 1113
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāi Takoto is a Māori iwi from Northland, New Zealand. The iwi is one of the six Muriwhenua iwi of the far north of the North Island. Ngāi Takoto trace their whakapapa (ancestry) back to Tuwhakatere, and trace their arrival in New Zealand to the Kurahaupo waka (canoe). The rohe of the iwi is focused on the upper North Island and extends to Kermadec Islands, Three Kings Island, Cape Reinga, Pao Island, Ninety Mile Beach, Waimimiha River, Ohaku hills, Whangatane River, Rangaunu Harbour and North Cape.",
+				"mi": "Ko Ngāi Takoto tētahi o ngā iwi o Te Aupouri. Kei te Te Tai-tokerau e noho ana, i Te Ika-a-Māui. Ko ngā waka ko Māhūhū, ko Kurahaupō.\n"
+			}
+		},
+		"previous_id": "iw_68",
+		"next_id": "iw_70"
+	},
+	{
+		"id": "iw_70",
+		"name": {
+			"locale": {
+				"mi": "Ngai te Rangi"
+			}
+		},
+		"slug": {
+			"en": "ngaiterangi",
+			"mi": "ngaiterangi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Ng%C4%81i_Te_Rangi",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81i_Te_Rangi"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q6981120"
+		},
+		"metrics": {
+			"population": 12924
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāi Te Rangi or Ngāiterangi is a Māori iwi, based in Tauranga, New Zealand. Its rohe extends to Mayor Island / Tuhua and Bowentown in the north, to the Kaimai Range in the west, south of Te Puke and to Maketu in the east.",
+				"mi": "Ko Ngāi Te Rangi he iwi nō Tauranga-moana, Aotearoa; e 9,561 te taupori i te 2001. Ko Mauao te Maunga; ko Te Awanui te moana; ko Ngāiterangi te Iwi; ko Mātaatua te waka; ko Te Rangihouhiri te tangata.E papaki tū ana ngā tai ki Mauao\nI whakanukunukuhia i whakanekenekehia\nI whiua reretia e Hoturoa a Wahinerua ki te wai\nKi tai wīwī ki tai wāwā, ki tai papaki onepū\nKi te whaiao, ki te ao marama\nTīhei, mauri ora!"
+			}
+		},
+		"previous_id": "iw_69",
+		"next_id": "iw_71"
+	},
+	{
+		"id": "iw_71",
+		"name": {
+			"locale": {
+				"mi": "Parewahawaha"
+			}
+		},
+		"slug": {
+			"en": "parewahawaha",
+			"mi": "parewahawaha"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Parewahawaha"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659624"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Ngāti Parewahawaha tētahi o ngā hapū o Ngāti Raukawa. Ko Ngāti Raukawa he iwi nui, kei Waikato ētahi e noho ana, kei Raukawa moana ētahi. Ko Maungatautari te maunga, ko Waikato te awa, ko Tainui te waka.\n"
+			}
+		},
+		"previous_id": "iw_70",
+		"next_id": "iw_72"
+	},
+	{
+		"id": "iw_72",
+		"name": {
+			"locale": {
+				"mi": "Poutini Kai Tahu"
+			}
+		},
+		"slug": {
+			"en": "poutinikaitahu",
+			"mi": "poutinikaitahu"
+		},
+		"previous_id": "iw_71",
+		"next_id": "iw_73"
+	},
+	{
+		"id": "iw_73",
+		"name": {
+			"locale": {
+				"mi": "Rangitāne"
+			},
+			"ascii": {
+				"mi": "Rangitane"
+			},
+			"double": {
+				"mi": "Rangitaane"
+			}
+		},
+		"slug": {
+			"en": "rangitane",
+			"mi": "rangitane"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Rangit%C4%81ne",
+				"mi": "https://mi.wikipedia.org/wiki/Rangit%C4%81ne"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7292868"
+		},
+		"metrics": {
+			"population": 2217
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Rangitāne is a Māori iwi (tribe). Their rohe (territory) is in the Manawatū, Horowhenua, Wairarapa and Marlborough areas of New Zealand.",
+				"mi": "Ko Rangitāne ngā uri a Whātonga, tētahi o ngā rangatira tokotoru o te waka o Kurahaupō. Ka tau te waka rā ki Nukutaurua, ki Te Māhia, i te tau 1350. Ka ū ki reira, ka whakakōhatuhia e te tohunga e Hau."
+			}
+		},
+		"previous_id": "iw_72",
+		"next_id": "iw_74"
+	},
+	{
+		"id": "iw_74",
+		"name": {
+			"locale": {
+				"mi": "Rangitāne (Tāne-nui-ā-Rangi)"
+			},
+			"ascii": {
+				"mi": "Rangitane (Tane-nui-a-Rangi)"
+			},
+			"double": {
+				"mi": "Rangitaane (Taane-nui-aa-Rangi)"
+			}
+		},
+		"slug": {
+			"en": "rangitanetanenuiarangi",
+			"mi": "rangitanetanenuiarangi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Rangit%C4%81ne",
+				"mi": "https://mi.wikipedia.org/wiki/Rangit%C4%81ne"
+			}
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Rangitāne is a Māori iwi (tribe). Their rohe (territory) is in the Manawatū, Horowhenua, Wairarapa and Marlborough areas of New Zealand.",
+				"mi": "Ko Rangitāne ngā uri a Whātonga, tētahi o ngā rangatira tokotoru o te waka o Kurahaupō. Ka tau te waka rā ki Nukutaurua, ki Te Māhia, i te tau 1350. Ka ū ki reira, ka whakakōhatuhia e te tohunga e Hau."
+			}
+		},
+		"previous_id": "iw_73",
+		"next_id": "iw_75"
+	},
+	{
+		"id": "iw_75",
+		"name": {
+			"locale": {
+				"mi": "Rongomaiwahine"
+			}
+		},
+		"slug": {
+			"en": "rongomaiwahine",
+			"mi": "rongomaiwahine"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Rongomaiwahine",
+				"mi": "https://mi.wikipedia.org/wiki/Ng%C4%81ti_Rongomaiwahine"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7023259"
+		},
+		"metrics": {
+			"population": 4473
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Ngāti Rongomaiwahine or Rongomaiwahine is a Māori iwi (tribe) traditionally centred in the Mahia Peninsula on the North Island of New Zealand. In the 2006 census, 4,254 people identified as Rongomaiwahine; by the 2013 census, this has increased to 4,473 people. It is closely connected to the Ngāti Kahungunu iwi.",
+				"mi": "Ko Ngāti Rongomaiwahine tē iwi. Kei te Te Tai-rāwhiti e noho ana, i Te Ika-a-Māui. Ko nga waka ko Kurahaupo raua ko Takitimu."
+			}
+		},
+		"previous_id": "iw_74",
+		"next_id": "iw_76"
+	},
+	{
+		"id": "iw_76",
+		"name": {
+			"locale": {
+				"mi": "Rongowhakāta"
+			},
+			"ascii": {
+				"mi": "Rongowhakata"
+			},
+			"double": {
+				"mi": "Rongowhakaata"
+			}
+		},
+		"slug": {
+			"en": "rongowhakata",
+			"mi": "rongowhakata"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Rongowhakaata",
+				"mi": "https://mi.wikipedia.org/wiki/Rongowhakaata"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7365670"
+		},
+		"metrics": {
+			"population": 4920
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Rongowhakaata is a Māori iwi of the Gisborne region of New Zealand.",
+				"mi": "Ko Rongowhakaata he iwi o Tūranga-nui-a-Kiwa i te Te Tai-rāwhiti o Te Ika-a-Māui, Aotearoa. Ko Tākitimu me Horouta nga waka."
+			}
+		},
+		"previous_id": "iw_75",
+		"next_id": "iw_77"
+	},
+	{
+		"id": "iw_77",
+		"name": {
+			"locale": {
+				"mi": "Tūhourangi"
+			},
+			"ascii": {
+				"mi": "Tuhourangi"
+			},
+			"double": {
+				"mi": "Tuuhourangi"
+			}
+		},
+		"slug": {
+			"en": "tuhourangi",
+			"mi": "tuhourangi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/T%C5%ABhourangi",
+				"mi": "https://mi.wikipedia.org/wiki/T%C5%ABhourangi"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7851701"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Tuhourangi or Tūhourangi is a Māori iwi of New Zealand with a rohe centered on Lake Tarawera.",
+				"mi": "Ko Tūhourangi tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_76",
+		"next_id": "iw_78"
+	},
+	{
+		"id": "iw_78",
+		"name": {
+			"locale": {
+				"mi": "Tapuika"
+			}
+		},
+		"slug": {
+			"en": "tapuika",
+			"mi": "tapuika"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Tapuika",
+				"mi": "https://mi.wikipedia.org/wiki/Tapuika"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7684860"
+		},
+		"metrics": {
+			"population": 2022
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Tapuika is a Māori iwi of New Zealand.",
+				"mi": "Ko Tapuika tētehi o ngā iwi o Te Arawa waka. Ko te rohe o taua waka mai i Maketū ki Tongariro."
+			}
+		},
+		"previous_id": "iw_77",
+		"next_id": "iw_79"
+	},
+	{
+		"id": "iw_79",
+		"name": {
+			"locale": {
+				"mi": "Taranaki (Tai Hau-a-uru)"
+			}
+		},
+		"slug": {
+			"en": "taranakitaihauauru",
+			"mi": "taranakitaihauauru"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Taranaki_(iwi)",
+				"mi": "https://mi.wikipedia.org/wiki/Taranaki_(iwi)"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7685391"
+		},
+		"metrics": {
+			"population": 6087
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Taranaki (Tuturu) is a Māori iwi of New Zealand.",
+				"mi": "Ko ngā iwi o Taranaki ēnei:Ngāti Ruanui"
+			}
+		},
+		"previous_id": "iw_78",
+		"next_id": "iw_80"
+	},
+	{
+		"id": "iw_80",
+		"name": {
+			"locale": {
+				"mi": "Taunui Awhiro"
+			}
+		},
+		"slug": {
+			"en": "taunuiawhiro",
+			"mi": "taunuiawhiro"
+		},
+		"previous_id": "iw_79",
+		"next_id": "iw_81"
+	},
+	{
+		"id": "iw_81",
+		"name": {
+			"locale": {
+				"mi": "Te Āti Awa"
+			},
+			"ascii": {
+				"mi": "Te Ati Awa"
+			},
+			"double": {
+				"mi": "Te Aati Awa"
+			}
+		},
+		"slug": {
+			"en": "teatiawa",
+			"mi": "teatiawa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_Atiawa",
+				"mi": "https://mi.wikipedia.org/wiki/Te_%C4%80ti_Awa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7691049"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Āti Awa is a Māori iwi with traditional bases in the Taranaki and Wellington regions of New Zealand. Approximately 17,000 people registered their affiliation to Te Āti Awa in 2001, with around 10,000 in Taranaki, 2,000 in Wellington and around 5,000 of unspecified regional location.",
+				"mi": "Ko Te Āti Awa he iwi nō Taranaki, Aotearoa."
+			}
+		},
+		"previous_id": "iw_80",
+		"next_id": "iw_82"
+	},
+	{
+		"id": "iw_82",
+		"name": {
+			"locale": {
+				"mi": "Te Āti Hau"
+			},
+			"ascii": {
+				"mi": "Te Ati Hau"
+			},
+			"double": {
+				"mi": "Te Aati Hau"
+			}
+		},
+		"slug": {
+			"en": "teatihau",
+			"mi": "teatihau"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Te_%C4%80ti_Hau"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659717"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Te Āti Hau he iwi kei Waikato e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae\n"
+			}
+		},
+		"previous_id": "iw_81",
+		"next_id": "iw_83"
+	},
+	{
+		"id": "iw_83",
+		"name": {
+			"locale": {
+				"mi": "Te Aitanga ā Māhaki"
+			},
+			"ascii": {
+				"mi": "Te Aitanga a Mahaki"
+			},
+			"double": {
+				"mi": "Te Aitanga aa Maahaki"
+			}
+		},
+		"slug": {
+			"en": "teaitangaamahaki",
+			"mi": "teaitangaamahaki"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_Aitanga-a-M%C4%81haki",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Aitanga-a-M%C4%81haki"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7690742"
+		},
+		"metrics": {
+			"population": 6258
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Aitanga-a-Mahaki is one of the three principal Māori iwi of the Tūranga district; the others being Rongowhakaata and Ngai Tamanuhiri. It is numerically the largest of the three, with 6,258 affiliated members as of 2013.",
+				"mi": "Ko Te Aitanga-a-Māhaki tētahi o ngā iwi o Rongowhakaata. He iwi a Rongowhakaata kei te takiwā o Tūranga-nui-a-Kiwa e noho ana, i te Te Tai-rāwhiti o Te Ika-a-Māui, Aotearoa. Ko Tākitimu te waka.\n"
+			}
+		},
+		"previous_id": "iw_82",
+		"next_id": "iw_84"
+	},
+	{
+		"id": "iw_84",
+		"name": {
+			"locale": {
+				"mi": "Te Aki Tai"
+			}
+		},
+		"slug": {
+			"en": "teakitai",
+			"mi": "teakitai"
+		},
+		"links": {
+			"wikipedia": {
+				"mi": "https://mi.wikipedia.org/wiki/Te_Akitai_(Ng%C4%81ti_Tamaoho)"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25662276"
+		},
+		"notes": {
+			"wikipedia": {
+				"mi": "Ko Te Akitai  tētahi o ngā hapū o Ngāti Tamaoho, he iwi kei Waikato e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae\n"
+			}
+		},
+		"previous_id": "iw_83",
+		"next_id": "iw_85"
+	},
+	{
+		"id": "iw_85",
+		"name": {
+			"locale": {
+				"mi": "Te Aupōuri"
+			},
+			"ascii": {
+				"mi": "Te Aupouri"
+			},
+			"double": {
+				"mi": "Te Aupoouri"
+			}
+		},
+		"slug": {
+			"en": "teaupouri",
+			"mi": "teaupouri"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_Aup%C5%8Duri",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Aupouri"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q845686"
+		},
+		"metrics": {
+			"population": 8697
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Aupōuri is the second northernmost Māori iwi, located north of Kaitaia, Northland, New Zealand, a region known as the Te Hiku o te Ika. The iwi is one of the six Muriwhenua iwi of the far north of the North Island.",
+				"mi": "Ko Te Rarawa he iwi kei te Te Tai-tokerau e noho ana, i Te Ika-a-Māui. Ko ngā waka ko Māhūhū, ko Kurahaupō.\n"
+			}
+		},
+		"previous_id": "iw_84",
+		"next_id": "iw_86"
+	},
+	{
+		"id": "iw_86",
+		"name": {
+			"locale": {
+				"mi": "Te Māhurehure"
+			},
+			"ascii": {
+				"mi": "Te Mahurehure"
+			},
+			"double": {
+				"mi": "Te Maahurehure"
+			}
+		},
+		"slug": {
+			"en": "temahurehure",
+			"mi": "temahurehure"
+		},
+		"previous_id": "iw_85",
+		"next_id": "iw_87"
+	},
+	{
+		"id": "iw_87",
+		"name": {
+			"locale": {
+				"mi": "Te Patuwai"
+			}
+		},
+		"slug": {
+			"en": "tepatuwai",
+			"mi": "tepatuwai"
+		},
+		"previous_id": "iw_86",
+		"next_id": "iw_88"
+	},
+	{
+		"id": "iw_88",
+		"name": {
+			"locale": {
+				"mi": "Te Rarawa"
+			}
+		},
+		"slug": {
+			"en": "terarawa",
+			"mi": "terarawa"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_Rarawa",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Rarawa"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7690952"
+		},
+		"metrics": {
+			"population": 16512
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Rarawa is a Māori iwi of Northland, New Zealand. The iwi is one of five Muriwhenua iwi of the far north of the North Island.",
+				"mi": "Ko Te Rarawa he iwi kei te Te Tai-tokerau e noho ana, i Te Ika-a-Māui. Ko ngā waka ko Māhūhū, ko Māmari, ko Kurahaupō, ko Ngātokimatawhaorua, ko Ruakaramea, ko Tinana.\n"
+			}
+		},
+		"previous_id": "iw_87",
+		"next_id": "iw_89"
+	},
+	{
+		"id": "iw_89",
+		"name": {
+			"locale": {
+				"mi": "Te Whānau ā Apanui"
+			},
+			"ascii": {
+				"mi": "Te Whanau a Apanui"
+			},
+			"double": {
+				"mi": "Te Whaanau aa Apanui"
+			}
+		},
+		"slug": {
+			"en": "tewhanauaapanui",
+			"mi": "tewhanauaapanui"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_Wh%C4%81nau-%C4%81-Apanui",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Wh%C4%81nau-a-Apanui"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7691037"
+		},
+		"metrics": {
+			"population": 12951
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Whānau-ā-Apanui is a Māori iwi located in the eastern Bay of Plenty and East Coast regions of New Zealand's North Island. In 2006, the iwi registered 11,808 members, representing 13 hapū.",
+				"mi": "Ko Te Whānau-a-Apanui he iwi nō Te Moana-a-Toi, Aotearoa. Ko Apanui Ringamutu te tipuna taketake o tēnei iwi. I a Apanui e taitama tonu ana, ka tukuna ki a ia he rohe whenua i Te Tai-rāwhiti tae noa atu ki Mōtū awa. Nā ōna uri te whenua i whakakī. Ka whakahokia anō ngā painga mā te hapori e ngā hua o te patu tohorā. Tae noa ki ēnei rā, ka whakahaerengia ai Te Whānau-a-Apanui ngā rawa o te moana, o te hao ika, o ngā poraka whenua paina me ētahi atu painga whai hua i tukuna iho e ngā tīpuna. Ko Mataatua te waka.Mai i Taumata o Apanui ki Pōtaka\nKo Whanokao te maunga\nKo Mōtū te awa\nKo Whakaari te puia\nKo Apanui te tangata\nKo Te Whānau-a-Apanui te iwi"
+			}
+		},
+		"previous_id": "iw_88",
+		"next_id": "iw_90"
+	},
+	{
+		"id": "iw_90",
+		"name": {
+			"locale": {
+				"mi": "Waiohua"
+			}
+		},
+		"slug": {
+			"en": "waiohua",
+			"mi": "waiohua"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Te_%C4%80kitai_Waiohua",
+				"mi": "https://mi.wikipedia.org/wiki/Wai-o-Hua"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q25659719"
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Te Ākitai Waiohua is a Māori iwi of the Auckland Region of New Zealand. They are descended from Kiwi Tamaki, the grandson of Huakaiwaka, himself the ancestor of Waiohua iwi.",
+				"mi": "Ko Wai-o-Hua he iwi kei Waikato e noho ana. Ka huri te titiro ki Taupiri maunga, ki te awa o Waikato, ki Tūrangawaewae marae, ana, ko ngā uri o Tainui waka.Ko Arekahānara tōku haona kaha\nKo Kemureti tōku oko horoi\nKo Ngāruawāhia tōku tūrangawaewae"
+			}
+		},
+		"previous_id": "iw_89",
+		"next_id": "iw_91"
+	},
+	{
+		"id": "iw_91",
+		"name": {
+			"locale": {
+				"mi": "Waitaha"
+			}
+		},
+		"slug": {
+			"en": "waitaha",
+			"mi": "waitaha"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Waitaha_(Bay_of_Plenty_iwi)"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q2540772"
+		},
+		"metrics": {
+			"population": 975
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Waitaha is a Māori iwi of New Zealand. The tribe lives in the Bay of Plenty region and descends from the Arawa waka."
+			}
+		},
+		"previous_id": "iw_90",
+		"next_id": "iw_92"
+	},
+	{
+		"id": "iw_92",
+		"name": {
+			"locale": {
+				"mi": "Whakatōhea"
+			},
+			"ascii": {
+				"mi": "Whakatohea"
+			},
+			"double": {
+				"mi": "Whakatoohea"
+			}
+		},
+		"slug": {
+			"en": "whakatohea",
+			"mi": "whakatohea"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Whakat%C5%8Dhea",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Whakat%C5%8Dhea"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q7691020"
+		},
+		"metrics": {
+			"population": 12177
+		},
+		"notes": {
+			"wikipedia": {
+				"en": "Whakatōhea is a Māori iwi located in the eastern Bay of Plenty region of New Zealand. The iwi comprises six hapu: Ngāi Tamahaua, Ngāti Ira, Ngāti Ngahere, Ngāti Patumoana, Ngāti Ruatākena and Ūpokorehe. In the 2006 Census, 12,072 people claimed an affiliation with Whakatōhea.",
+				"mi": "Ko Te Whakatōhea he iwi mai i Te Moana-a-Tairongo (Ōhiwa), ki Ōpōtiki, tae noa ki Ōpape e noho ana. E 9,948 te taupori i te 2001. \"Ko te Poari o Te Whakatōhea te kaiwhakahaere o ngā rawa o te iwi, pēnei i ētahi whare nunui me ētahi pāmu e rua. I tua atu, kei te āwhina te Poari i ngā whare kōhungahunga me ngā ratonga hauora a te iwi. Kua tū ētahi kaupapa whakaako i ngā mahi pāmu, te whāngai manuhiri, te ahuwhenua, te ruku moana tae noa ki ngā mahi arumoni, te whakahaere pakihi, ngā mahi rorohiko. Kua pakari a Te Whakatōhea ki te kuhu ki ngā whitiwhitinga kōrero me te kāwanatanga kia hua ai he whakataunga whānui mō ōna kerēme\".Tangohia mai te taura i taku kakī kia waiata ahau i taku waiata"
+			}
+		},
+		"previous_id": "iw_91"
+	}
+]

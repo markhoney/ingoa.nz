@@ -1,0 +1,594 @@
+[
+	{
+		"id": "re_1",
+		"name": {
+			"locale": {
+				"en": "Northland",
+				"mi": "Te Tai Tokerau"
+			}
+		},
+		"slug": {
+			"en": "northland",
+			"mi": "tetaitokerau"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Northland_Region",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Tai-tokerau"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q59596"
+		},
+		"metrics": {
+			"area": 12498,
+			"population": 179100
+		},
+		"island_id": "is_1",
+		"part_id": "pa_2",
+		"map_id": "ma_3",
+		"notes": {
+			"wikipedia": {
+				"en": "The Northland Region is the northernmost of New Zealand's 16 local government regions. New Zealanders often call it the Far North or, because of its mild climate, the Winterless North. The main population centre is the city of Whangarei, and the largest town is Kerikeri.",
+				"mi": "Ko Te Tai Tokerau he takiwā kei te raki o Te Ika-a-Māui, Aotearoa. Ko Te Tai Tokerau te rohe whakateraki o ngā rohe 16 o ngā rohe kāwanatanga ā-kāinga o Aotearoa. Nā te pai o te ahuarangi kua huaina te rohe te Raki Hōtoke Kore. Ko te tāone nui rawa ko Whangārei, ā, ko Kerikeri te tāone tuarua."
+			}
+		},
+		"next_id": "re_2"
+	},
+	{
+		"id": "re_2",
+		"name": {
+			"locale": {
+				"en": "Auckland",
+				"mi": "Tāmaki-makau-rau"
+			},
+			"ascii": {
+				"mi": "Tamaki-makau-rau"
+			},
+			"double": {
+				"mi": "Taamaki-makau-rau"
+			}
+		},
+		"slug": {
+			"en": "auckland",
+			"mi": "tamakimakaurau"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Auckland_Region",
+				"mi": "https://mi.wikipedia.org/wiki/T%C4%81maki-makau-rau_(takiw%C4%81)"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q726917"
+		},
+		"metrics": {
+			"area": 4940,
+			"population": 1695900
+		},
+		"island_id": "is_1",
+		"part_id": "pa_2",
+		"map_id": "ma_3",
+		"notes": {
+			"wikipedia": {
+				"en": "The Auckland Region is one of the sixteen regions of New Zealand, named for the city of Auckland, the country's largest urban area. The region encompasses the Auckland metropolitan area, smaller towns, rural areas, and the islands of the Hauraki Gulf. Containing 35 percent of the nation's residents, it has by far the largest population and economy of any region of New Zealand, but the second-smallest land area.",
+				"mi": "Ko te takiwā o Tāmaki-makau-rau kei Te Ika-a-Māui, i Aotearoa. Kei waenganui te tāone o Tāmaki-makau-rau i te takiwā. Koia te tāone nui o Aotearoa."
+			}
+		},
+		"previous_id": "re_1",
+		"next_id": "re_3"
+	},
+	{
+		"id": "re_3",
+		"name": {
+			"locale": {
+				"mi": "Waikato"
+			}
+		},
+		"slug": {
+			"en": "waikato",
+			"mi": "waikato"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Waikato",
+				"mi": "https://mi.wikipedia.org/wiki/Waikato"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q139918"
+		},
+		"metrics": {
+			"area": 23900,
+			"population": 468800
+		},
+		"island_id": "is_1",
+		"part_id": "pa_2",
+		"map_id": "ma_2",
+		"notes": {
+			"wikipedia": {
+				"en": "Waikato is a local government region of the upper North Island of New Zealand. It covers the Waikato District, Hauraki, Coromandel Peninsula, the northern King Country, much of the Taupo District, and parts of Rotorua District. It is governed by the Waikato Regional Council.",
+				"mi": "Ko Waikato he takiwā ki Te Ika-a-Māui, Aotearoa. Ko Hauraki, ko Te Tai-hauāuru he takiwā anō ki roto i taua takiwā, i Waikato."
+			}
+		},
+		"previous_id": "re_2",
+		"next_id": "re_4"
+	},
+	{
+		"id": "re_4",
+		"name": {
+			"locale": {
+				"en": "Bay of Plenty",
+				"mi": "Te Moana-a-Toi"
+			}
+		},
+		"slug": {
+			"en": "bayofplenty",
+			"mi": "temoanaatoi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Bay_of_Plenty",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Moana-a-Toi"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q2192924"
+		},
+		"metrics": {
+			"area": 12071,
+			"population": 305700
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"map_id": "ma_2",
+		"notes": {
+			"wikipedia": {
+				"en": "The Bay of Plenty is a bight in the northern coast of New Zealand's North Island. It stretches 260 km from the Coromandel Peninsula in the west to Cape Runaway in the east. The Bay of Plenty Region is situated around this body of water, also incorporating several large islands in the bay. The bay was named by James Cook after he noticed the abundant food supplies at several Māori villages there, in stark contrast to the earlier observations he had made in Poverty Bay.",
+				"mi": "Ko te Moana-a-Toi he takiwā, he moana o Te Ika-a-Māui, Aotearoa. Ko te roanga o te ingoa ko te Moana-a-Toi-te-huitahi."
+			}
+		},
+		"previous_id": "re_3",
+		"next_id": "re_5"
+	},
+	{
+		"id": "re_5",
+		"name": {
+			"locale": {
+				"en": "Gisborne",
+				"mi": "Te Tai Rāwhiti"
+			},
+			"ascii": {
+				"mi": "Te Tai Rawhiti"
+			},
+			"double": {
+				"mi": "Te Tai Raawhiti"
+			}
+		},
+		"slug": {
+			"en": "gisborne",
+			"mi": "tetairawhiti"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Gisborne_District",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Tai-r%C4%81whiti"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q140246"
+		},
+		"metrics": {
+			"area": 8386,
+			"population": 49100
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"map_id": "ma_1",
+		"notes": {
+			"wikipedia": {
+				"en": "The Gisborne District is an area of northeastern New Zealand governed by the Gisborne District Council. A unitary authority, it is also known as the Gisborne Region. It is named after its largest settlement, the city of Gisborne. The region is also commonly referred to as the East Coast.",
+				"mi": "Ko Te Tai-rāwhiti he takiwā ki Te Ika-a-Māui, Aotearoa"
+			}
+		},
+		"previous_id": "re_4",
+		"next_id": "re_6"
+	},
+	{
+		"id": "re_6",
+		"name": {
+			"locale": {
+				"en": "Hawke's Bay",
+				"mi": "Te Matau-a-Māui"
+			},
+			"ascii": {
+				"mi": "Te Matau-a-Maui"
+			},
+			"double": {
+				"mi": "Te Matau-a-Maaui"
+			}
+		},
+		"slug": {
+			"en": "hawke'sbay",
+			"mi": "tematauamaui"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Hawke%27s_Bay_Region",
+				"mi": "https://mi.wikipedia.org/wiki/Heretaunga,_takiw%C4%81"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q251825"
+		},
+		"metrics": {
+			"area": 14137,
+			"population": 165900
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"map_id": "ma_1",
+		"notes": {
+			"wikipedia": {
+				"en": "Hawke's Bay Region is a region of New Zealand on the east coast of the North Island. It is governed by Hawke's Bay Regional Council, which sits in the city of Napier. The region's name derives from Hawke Bay, which was named by Captain James Cook in honour of Admiral Edward Hawke.",
+				"mi": "Ko Heretaunga he takiwā o Te Ika-a-Māui, Aotearoa."
+			}
+		},
+		"previous_id": "re_5",
+		"next_id": "re_7"
+	},
+	{
+		"id": "re_7",
+		"name": {
+			"locale": {
+				"mi": "Taranaki"
+			}
+		},
+		"slug": {
+			"en": "taranaki",
+			"mi": "taranaki"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Taranaki",
+				"mi": "https://mi.wikipedia.org/wiki/Taranaki"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q140207"
+		},
+		"metrics": {
+			"area": 7254,
+			"population": 119600
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"map_id": "ma_1",
+		"notes": {
+			"wikipedia": {
+				"en": "Taranaki is a region in the west of New Zealand's North Island. It is named after its main geographical feature, the stratovolcano of Mount Taranaki.",
+				"mi": "Ko Taranaki — 2,518 m — he maunga ki Te Tai-hauāuru o Te Ika-a-Māui o Aotearoa, he takiwā hoki."
+			}
+		},
+		"previous_id": "re_6",
+		"next_id": "re_8"
+	},
+	{
+		"id": "re_8",
+		"name": {
+			"locale": {
+				"en": "Manawatu-Wanganui",
+				"mi": "Manawatū-Whanganui"
+			},
+			"ascii": {
+				"mi": "Manawatu-Whanganui"
+			},
+			"double": {
+				"mi": "Manawatuu-Whanganui"
+			}
+		},
+		"slug": {
+			"en": "manawatuwanganui",
+			"mi": "manawatuwhanganui"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Manawatu-Wanganui",
+				"mi": "https://mi.wikipedia.org/wiki/Manawat%C5%AB-Whanganui"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q139907"
+		},
+		"metrics": {
+			"area": 22221,
+			"population": 234500
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"map_id": "ma_1",
+		"notes": {
+			"wikipedia": {
+				"en": "Manawatu-Wanganui is a region in the lower half of the North Island of New Zealand, whose main population centres are the cities of Palmerston North and Whanganui. It is administered by the Manawatu-Wanganui Regional Council, which for trading purposes is known as Horizons Regional Council.",
+				"mi": "Ko Manawatū-Whanganui he takiwā ki Te Ika-a-Māui, Aotearoa. Ko Te Papa-i-oea te taone nui o taua takiwā."
+			}
+		},
+		"previous_id": "re_7",
+		"next_id": "re_9"
+	},
+	{
+		"id": "re_9",
+		"name": {
+			"locale": {
+				"en": "Wellington",
+				"mi": "Te Whanga-nui-a-Tara"
+			}
+		},
+		"slug": {
+			"en": "wellington",
+			"mi": "tewhanganuiatara"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Wellington_Region",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Whanga-nui-a-Tara"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q856010"
+		},
+		"metrics": {
+			"area": 8049,
+			"population": 521500
+		},
+		"island_id": "is_1",
+		"part_id": "pa_1",
+		"map_id": "ma_1",
+		"notes": {
+			"wikipedia": {
+				"en": "The Wellington Region is a local government region of New Zealand that occupies the southern end of the North Island. The region covers an area of 8,049 square kilometres (3,108 sq mi), and is home to a population of 521,500.",
+				"mi": "Ko Te Whanga-nui-a-Tara te tāone matua o Aotearoa, ki Te-Upoko-O-Te Ika-a-Māui."
+			}
+		},
+		"previous_id": "re_8",
+		"next_id": "re_10"
+	},
+	{
+		"id": "re_10",
+		"name": {
+			"locale": {
+				"en": "Tasman",
+				"mi": "Te Tai-o-Aorere"
+			}
+		},
+		"slug": {
+			"en": "tasman",
+			"mi": "tetaioaorere"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Tasman_Region",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Tai-o-Aorere"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q666142"
+		},
+		"metrics": {
+			"area": 9616,
+			"population": 52100
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_4",
+		"notes": {
+			"wikipedia": {
+				"en": "Tasman District is a local government district in the north of the South Island of New Zealand. It borders the Canterbury Region, West Coast Region, Marlborough Region and Nelson City. It is administered by the Tasman District Council, a unitary authority, which sits at Richmond, with community boards serving outlying communities in Motueka and Golden Bay / Mohua.",
+				"mi": "Ko Te Tai-o-Aorere he takiwā ki te raki o Te Wai-pounamu, Aotearoa. Ki te Reo Pākehā, ko Tasman, ko Nelson ngā takiwā o roto."
+			}
+		},
+		"previous_id": "re_9",
+		"next_id": "re_11"
+	},
+	{
+		"id": "re_11",
+		"name": {
+			"locale": {
+				"en": "Nelson",
+				"mi": "Whakatū"
+			},
+			"ascii": {
+				"mi": "Whakatu"
+			},
+			"double": {
+				"mi": "Whakatuu"
+			}
+		},
+		"slug": {
+			"en": "nelson",
+			"mi": "whakatu"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Nelson,_New_Zealand",
+				"mi": "https://mi.wikipedia.org/wiki/Whakatu"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1995856"
+		},
+		"metrics": {
+			"area": 424,
+			"population": 51900
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_4",
+		"notes": {
+			"wikipedia": {
+				"en": "Nelson is a city on the eastern shores of Tasman Bay. Nelson is the oldest city in the South Island and the second-oldest settled city in New Zealand – it was established in 1841 and was proclaimed a city by royal charter in 1858.",
+				"mi": "Ko Whakatu he nohanga o te takiwā o Heretaunga. E ai ki Toitū Te Whenua, he nohanga he wāhi e nohoia ana e te tangata, engari kāore anō kia tae te taupori ki te nui e taea ai te kī he tāone tonu taua wāhi rā."
+			}
+		},
+		"previous_id": "re_10",
+		"next_id": "re_12"
+	},
+	{
+		"id": "re_12",
+		"name": {
+			"locale": {
+				"en": "Marlborough",
+				"mi": "Te Tauihu-o-te-waka"
+			}
+		},
+		"slug": {
+			"en": "marlborough",
+			"mi": "tetauihuotewaka"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Marlborough_Region",
+				"mi": "https://mi.wikipedia.org/wiki/Tauihu"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q140083"
+		},
+		"metrics": {
+			"area": 10458,
+			"population": 46600
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_4",
+		"notes": {
+			"wikipedia": {
+				"en": "The Marlborough Region, commonly known simply as Marlborough, is one of the regions of New Zealand, located in the northeast of the South Island. Marlborough is a unitary authority, both a region and a district, and its council is located at Blenheim. It has a population of 46,600.",
+				"mi": "Ko Tauihu he takiwā ki te raki o Te Wai-pounamu, Aotearoa."
+			}
+		},
+		"previous_id": "re_11",
+		"next_id": "re_13"
+	},
+	{
+		"id": "re_13",
+		"name": {
+			"locale": {
+				"en": "West Coast",
+				"mi": "Te Tai Poutini"
+			}
+		},
+		"slug": {
+			"en": "westcoast",
+			"mi": "tetaipoutini"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/West_Coast,_New_Zealand",
+				"mi": "https://mi.wikipedia.org/wiki/Te_Tai-poutini"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q541468"
+		},
+		"metrics": {
+			"area": 23244,
+			"population": 32600
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_5",
+		"notes": {
+			"wikipedia": {
+				"en": "The West Coast is a region of New Zealand on the west coast of the South Island that is administered by the West Coast Regional Council. It comprises the territorial authorities of Buller District, Grey District and Westland District. The principal towns are Westport, Greymouth, and Hokitika. The region is one of the more remote and most sparsely populated areas of the country.",
+				"mi": "Ko Te Tai-poutini he takiwā o Te Wai-pounamu, Aotearoa. Ko Māwhera te taone nui."
+			}
+		},
+		"previous_id": "re_12",
+		"next_id": "re_14"
+	},
+	{
+		"id": "re_14",
+		"name": {
+			"locale": {
+				"en": "Canterbury",
+				"mi": "Waitaha"
+			}
+		},
+		"slug": {
+			"en": "canterbury",
+			"mi": "waitaha"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Canterbury,_New_Zealand",
+				"mi": "https://mi.wikipedia.org/wiki/Waitaha"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q657004"
+		},
+		"metrics": {
+			"area": 44508,
+			"population": 624000
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_4",
+		"notes": {
+			"wikipedia": {
+				"en": "Canterbury is a region of New Zealand, located in the central-eastern South Island. The region covers an area of 44,508 square kilometres (17,185 sq mi), and is home to a population of 624,000.",
+				"mi": "Ko Waitaha he takiwā o Te Wai-pounamu. Ko Ōtautahi te taone nui o taua takiwā."
+			}
+		},
+		"previous_id": "re_13",
+		"next_id": "re_15"
+	},
+	{
+		"id": "re_15",
+		"name": {
+			"locale": {
+				"en": "Otago",
+				"mi": "Ōtākou"
+			},
+			"ascii": {
+				"mi": "Otakou"
+			},
+			"double": {
+				"mi": "Ootaakou"
+			}
+		},
+		"slug": {
+			"en": "otago",
+			"mi": "otakou"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Otago",
+				"mi": "https://mi.wikipedia.org/wiki/%C5%8Ct%C4%81kou"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q692912"
+		},
+		"metrics": {
+			"area": 31209,
+			"population": 229200
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_5",
+		"notes": {
+			"wikipedia": {
+				"en": "Otago is a region of New Zealand in the south of the South Island administered by the Otago Regional Council. It has an area of approximately 32,000 square kilometres (12,000 sq mi), making it the country's third largest local government region. Its population was 229,200 in June 2018.",
+				"mi": "Ko Ōtākou he takiwā ki te tonga o Te Wai-pounamu, Aotearoa."
+			}
+		},
+		"previous_id": "re_14",
+		"next_id": "re_16"
+	},
+	{
+		"id": "re_16",
+		"name": {
+			"locale": {
+				"en": "Southland",
+				"mi": "Murihiku"
+			}
+		},
+		"slug": {
+			"en": "southland",
+			"mi": "murihiku"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Southland,_New_Zealand",
+				"mi": "https://mi.wikipedia.org/wiki/Murihiku"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q864971"
+		},
+		"metrics": {
+			"area": 31195,
+			"population": 99100
+		},
+		"island_id": "is_2",
+		"part_id": "pa_3",
+		"map_id": "ma_5",
+		"notes": {
+			"wikipedia": {
+				"en": "Southland is New Zealand's southernmost region. It consists mainly of the southwestern portion of the South Island and Stewart Island / Rakiura. It includes Southland District, Gore District and the city of Invercargill. The region covers over 3.1 million hectares and spans over 3,400 km of coast.",
+				"mi": "Ko Murihiku he takiwā ki te tonga o Te Waipounamu. Ko Waihopai te tāone nui o reira."
+			}
+		},
+		"previous_id": "re_15"
+	}
+]

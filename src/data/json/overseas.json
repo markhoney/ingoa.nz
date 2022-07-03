@@ -1,0 +1,195 @@
+[
+	{
+		"id": "pn_zo_42-8",
+		"name": {
+			"locale": {
+				"mi": "Hinemihi"
+			}
+		},
+		"slug": {
+			"en": "hinemihi",
+			"mi": "hinemihi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Clandon_Park_House"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q5125774"
+		},
+		"location": {
+			"description": {
+				"en": "Clandon Park"
+			},
+			"city": "Surrey",
+			"country": "England",
+			"position": {
+				"lat": 51.2506,
+				"lng": -0.50818
+			}
+		},
+		"next_id": "pn_zo_83-6"
+	},
+	{
+		"id": "pn_zo_83-6",
+		"name": {
+			"locale": {
+				"mi": "Poihākena"
+			},
+			"ascii": {
+				"mi": "Poihakena"
+			},
+			"double": {
+				"mi": "Poihaakena"
+			}
+		},
+		"slug": {
+			"en": "poihakena",
+			"mi": "poihakena"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Sydney"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q3130"
+		},
+		"location": {
+			"city": "Sydney",
+			"country": "Australia",
+			"position": {
+				"lat": -33.8889,
+				"lng": 151.2039
+			}
+		},
+		"previous_id": "pn_zo_42-8",
+		"next_id": "pn_zo_138-3"
+	},
+	{
+		"id": "pn_zo_138-3",
+		"name": {
+			"locale": {
+				"mi": "Pouihi"
+			}
+		},
+		"slug": {
+			"en": "pouihi",
+			"mi": "pouihi"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/High_Commission_of_New_Zealand,_London"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q5755096"
+		},
+		"location": {
+			"description": {
+				"en": "New Zealand House"
+			},
+			"city": "London",
+			"country": "England",
+			"position": {
+				"lat": 51.507752,
+				"lng": -0.1316566
+			}
+		},
+		"previous_id": "pn_zo_83-6",
+		"next_id": "pn_zo_138-4"
+	},
+	{
+		"id": "pn_zo_138-4",
+		"name": {
+			"locale": {
+				"mi": "Rauru"
+			}
+		},
+		"slug": {
+			"en": "rauru",
+			"mi": "rauru"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Museum_am_Rothenbaum"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q675774"
+		},
+		"location": {
+			"description": {
+				"en": "Museum of Ethnology"
+			},
+			"city": "Hamburg",
+			"country": "Germany",
+			"position": {
+				"lat": 53.5685,
+				"lng": 9.9892
+			}
+		},
+		"previous_id": "pn_zo_138-3",
+		"next_id": "pn_zo_138-5"
+	},
+	{
+		"id": "pn_zo_138-5",
+		"name": {
+			"locale": {
+				"mi": "Rua te Pupuke"
+			}
+		},
+		"slug": {
+			"en": "ruatepupuke",
+			"mi": "ruatepupuke"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Field_Museum_of_Natural_History"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q1122595"
+		},
+		"location": {
+			"description": {
+				"en": "Field Museum"
+			},
+			"city": "Chicago",
+			"country": "USA",
+			"position": {
+				"lat": 41.86622,
+				"lng": -87.61688
+			}
+		},
+		"previous_id": "pn_zo_138-4",
+		"next_id": "pn_zo_138-6"
+	},
+	{
+		"id": "pn_zo_138-6",
+		"name": {
+			"locale": {
+				"mi": "Te Wharepuni ā Māui"
+			},
+			"ascii": {
+				"mi": "Te Wharepuni a Maui"
+			},
+			"double": {
+				"mi": "Te Wharepuni aa Maaui"
+			}
+		},
+		"slug": {
+			"en": "tewharepuniamaui",
+			"mi": "tewharepuniamaui"
+		},
+		"links": {
+			"wikipedia": {
+				"en": "https://en.wikipedia.org/wiki/Linden_Museum"
+			},
+			"wikidata": "https://www.wikidata.org/wiki/Q454416"
+		},
+		"location": {
+			"description": {
+				"en": "Linden Museum"
+			},
+			"city": "Stuttgart",
+			"country": "Germany",
+			"position": {
+				"lat": 48.78275,
+				"lng": 9.17
+			}
+		},
+		"previous_id": "pn_zo_138-5"
+	}
+]

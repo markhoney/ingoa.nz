@@ -3,25 +3,24 @@ const path = require('path');
 const levenshtein = require('js-levenshtein');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const utils = require('../server/db/utils');
+const utils = require('./utils');
 
-const jsonpath = path.join(__dirname, '..', 'server', 'db', 'json');
+const jsonpath = path.join(__dirname, 'json');
 
-let db;
 function readData() {
-	db = ['islands', 'parts', 'maps', 'regions', 'sectors', 'districts', 'zones', 'speakers', 'groups', 'features', 'iwi', 'placenames', 'meanings', 'gazetteer', 'overseas'].reduce((db, collection) => {
+	return ['islands', 'parts', 'maps', 'regions', 'sectors', 'districts', 'zones', 'speakers', 'groups', 'features', 'iwi', 'placenames', 'meanings', 'gazetteer', 'overseas'].reduce((db, collection) => {
 		db[collection] = require(path.join(jsonpath, collection + '.json'));
 		//db[collection] = JSON.parse(readFileSync(path.join(jsonpath, collection + '.json')));
 		return db;
 	}, {});
 }
 
-function getSpeakers(placenames) {
+function getSpeakers(db, placenames) {
 	const speakers = placenames.map(placename => placename.names).flat().filter(name => name.spoken).map(name => name.spoken.speaker_id);
 	return db.speakers.filter(speaker => speaker.id !== "sp_37" && speakers.includes(speaker.id));
 }
 
-function linkImages() {
+function linkImages(db) {
 	let total = 0;
 	[
 		{name: 'islands', images: ['banner.png', 'landscape.png', 'portrait.png']},
@@ -50,9 +49,10 @@ function linkImages() {
 		});
 	});
 	console.log(total);
+	return db;
 }
 
-function addPlacenameIDs() {
+function addPlacenameIDs(db) {
 	let total = 0;
 	db.placenames.forEach(placename => {
 		if (placename.places) {
@@ -73,14 +73,15 @@ function addPlacenameIDs() {
 		});
 	});
 	console.log(total);
+	return db;
 }
 
-function createNamesPlaces() {
+function createNamesPlaces(db) {
 	db.names = db.placenames.map(placename => placename.names).flat();
 	db.places = db.placenames.filter(placename => placename.places).map(placename => placename.places).flat();
 }
 
-function addPrePost() {
+function addPrePost(db) {
 	let total = 0;
 	['islands', 'parts', 'zones'].forEach(collection => {
 		db[collection].forEach(record => {
@@ -95,14 +96,15 @@ function addPrePost() {
 		});
 	});
 	console.log(total);
+	return db;
 }
 
-function addSpeakers() {
+function addSpeakers(db) {
 	let total = 0;
 	db.islands.forEach(island => {
 		if (!island.speaker_ids) {
 			total++;
-			speakers = getSpeakers(db.placenames.filter(placename => placename.island_id === island.id));
+			speakers = getSpeakers(db, db.placenames.filter(placename => placename.island_id === island.id));
 			island.speaker_ids = speakers.map(speaker => speaker.id);
 		}
 	});
@@ -111,7 +113,7 @@ function addSpeakers() {
 	db.parts.forEach(part => {
 		if (!part.speaker_ids) {
 			total++;
-			speakers = getSpeakers(db.placenames.filter(placename => placename.part_id === part.id));
+			speakers = getSpeakers(db, db.placenames.filter(placename => placename.part_id === part.id));
 			part.speaker_ids = speakers.map(speaker => speaker.id);
 		}
 	});
@@ -120,14 +122,15 @@ function addSpeakers() {
 	db.zones.forEach(zone => {
 		if (!zone.speaker_ids) {
 			total++;
-			speakers = getSpeakers(db.placenames.filter(placename => placename.zone_id === zone.id));
+			speakers = getSpeakers(db, db.placenames.filter(placename => placename.zone_id === zone.id));
 			zone.speaker_ids = speakers.map(speaker => speaker.id);
 		}
 	});
 	console.log(total);
+	return db;
 }
 
-function addPlacenameAudio() {
+function addPlacenameAudio(db) {
 	let total = 0;
 	db.names.forEach(name => {
 		if (name.spoken) {
@@ -135,15 +138,16 @@ function addPlacenameAudio() {
 			audioLocation = '/audio/placename/' + name.id + '.mp3';
 			name.spoken.audio = {
 				file: audioLocation,
-				size: statSync('src/client/static' + audioLocation).size,
+				size: statSync('static' + audioLocation).size,
 				length: ((name.spoken.end + 0.1) - Math.max(0, name.spoken.start - 0.1)).toFixed(2),
 			};
 		}
 	});
 	console.log(total);
+	return db;
 }
 
-function addSimilarIdentical() {
+function addSimilarIdentical(db) {
 	let total = 0;
 	const similarspath = path.join(__dirname, '..', '..', 'cache', 'similar.json');
 	let similars = {};
@@ -152,30 +156,31 @@ function addSimilarIdentical() {
 	}
 	//db.names.forEach(name => {
 	for (const name of db.names) {
-		if (!name.similar_ids && name.locale.mi !== "Intro") {
+		if (!name.similar && name.locale.mi !== "Intro") {
 			const identical = db.names.filter(myname => myname.locale.mi === name.locale.mi);
-			name.identical_ids = identical.map(name => name.id);
+			name.identical = {placename_ids: identical.map(name => name.id)};
 			//const similar = similars.find(similar => similar.id === name.id);
 			if (similars[name.id]) {
 				total++;
-				name.similar_ids = similars[name.id];
+				name.similar = {placename_ids: similars[name.id]};
 			} else {
 				total++;
 				const similar = db.names.filter(myname => myname.locale.mi !== name.locale.mi).sort((a, b) => levenshtein(name.locale.mi, a.name.locale.mi) - levenshtein(name.locale.mi, b.name.locale.mi)).slice(0, 8);
-				name.similar_ids = similar.map(name => name.id);
-				similars[name.id] = name.similar_ids;
+				name.similar = {placename_ids: similar.map(name => name.id)};
+				similars[name.id] = name.similar.placename_ids;
 			}
 		}
 	}//);
 	writeFileSync(similarspath, JSON.stringify(similars, null, '\t'));
 	console.log(total);
+	return db;
 }
 
-function addMeanings() {
+function addMeanings(db) {
 	let total = 0;
 	db.names.forEach(name => {
 		if (!name.meaning_id && name.locale.mi) {
-			const meaning = db.meanings.find(meaning => meaning.name.locale.mi === name.locale.mi || (name.alt && name.alt.mi && meaning.name.locale.mi === name.alt.mi.ascii) || (name.alt && name.alt.mi && meaning.name.locale.mi === name.alt.mi.double));
+			const meaning = db.meanings.find((meaning) => meaning.name.locale.mi === name.locale.mi || (name.ascii && meaning.name.locale.mi === name.ascii.mi) || (name.double && meaning.name.locale.mi === name.double.mi));
 			if (meaning) {
 				name.meaning_id = meaning.id;
 				total++;
@@ -183,9 +188,10 @@ function addMeanings() {
 		}
 	});
 	console.log(total);
+	return db;
 }
 
-async function addNominatimLocations() {
+async function addNominatimLocations(db) {
 	let total = 0;
 	const nominatim = axios.create({baseURL: "http://localhost:8080/search/"});
 	for (const placename of db.placenames) {
@@ -214,7 +220,7 @@ async function addNominatimLocations() {
 							}
 						}
 						if (geo && geo.length) {
-							const regions = [district.name.alt.en.full, district.name.locale.en, district.name.locale.en + " District", district.name.locale.mi, district.name.locale.mi + " District"];
+							const regions = [district.name.full.en, district.name.locale.en, district.name.locale.en + " District", district.name.locale.mi, district.name.locale.mi + " District"];
 							if (region) regions.push(region.name.locale.en, region.name.locale.mi);
 							let placenames = geo.filter(placename => regions.filter(Boolean).some(region => [placename.address.region, placename.address.county, placename.address.state].includes(region)));
 							if (placenames.length) {
@@ -241,7 +247,7 @@ async function addNominatimLocations() {
 									lng: foundplace.lon,
 								};
 								place.links = {
-									wikipedia: (foundplace.extratags.wikipedia ? "https://en.wikipedia.org/wiki/" + foundplace.extratags.wikipedia.split(":")[1] : null),
+									wikipedia: {en: (foundplace.extratags.wikipedia ? "https://en.wikipedia.org/wiki/" + foundplace.extratags.wikipedia.split(":")[1] : null)},
 									wikidata: (foundplace.extratags.wikidata ? "https://www.wikidata.org/wiki/" + foundplace.extratags.wikidata : null),
 									website: foundplace.extratags.website,
 								};
@@ -254,9 +260,10 @@ async function addNominatimLocations() {
 		}
 	}
 	console.log(total);
+	return db;
 }
 
-function addGazetteerLocations() {
+function addGazetteerLocations(db) {
 	let total = 0;
 	db.gazetteer.forEach(gazetteer => {
 		gazetteer.simple = utils.simplify(gazetteer.name.en);
@@ -288,8 +295,9 @@ function addGazetteerLocations() {
 			});
 		}
 	});
-	console.log(total);
 	delete db.gazetteer;
+	console.log(total);
+	return db;
 }
 
 async function getWikiDataInfo(url, wikidata) {
@@ -316,7 +324,7 @@ function caseInitial(text) {
 	return text[0].toUpperCase() + text.slice(1);
 }
 
-async function addWikiDataInfos() {
+async function addWikiDataInfos(db) {
 	let total = 0;
 	const wikidata = axios.create({baseURL: "https://www.wikidata.org/wiki/Special:EntityData/"});
 	for (const collection of ['islands', 'regions', 'sectors', 'districts', 'iwi', 'groups', 'features']) {
@@ -339,9 +347,10 @@ async function addWikiDataInfos() {
 		}
 	}
 	console.log(total);
+	return db;
 }
 
-async function addWikiDataZoneInfos() {
+async function addWikiDataZoneInfos(db) {
 	let total = 0;
 	const wikidata = axios.create({baseURL: "https://www.wikidata.org/wiki/Special:EntityData/"});
 	for (const zone of db.zones) {
@@ -365,6 +374,7 @@ async function addWikiDataZoneInfos() {
 		}
 	}
 	console.log('zones:', total);
+	return db;
 }
 
 async function getWikipediaIntro(url, locale, wikipedia) {
@@ -384,7 +394,7 @@ async function getWikipediaIntro(url, locale, wikipedia) {
 	return wiki;
 }
 
-async function addWikipediaIntros(locale) {
+async function addWikipediaIntros(db, locale) {
 	let total = 0;
 	const wikipedia = axios.create({baseURL: "https://" + locale + ".wikipedia.org/api/rest_v1/page/summary/"});
 	for (const collection of ['islands', 'regions', 'sectors', 'districts', 'iwi', 'groups', 'features']) {
@@ -401,9 +411,10 @@ async function addWikipediaIntros(locale) {
 		}
 	}
 	console.log(locale + ":", total);
+	return db;
 }
 
-async function addWikipediaZoneIntros(locale) {
+async function addWikipediaZoneIntros(db, locale) {
 	let total = 0;
 	const wikipedia = axios.create({baseURL: "https://" + locale + ".wikipedia.org/api/rest_v1/page/summary/"});
 	for (const zone of db.zones) {
@@ -420,6 +431,7 @@ async function addWikipediaZoneIntros(locale) {
 		}
 	}
 	console.log(locale + ":", total);
+	return db;
 }
 
 async function getMaoriMapsInfo(url, locale, maorimaps) {
@@ -440,7 +452,7 @@ async function getMaoriMapsInfo(url, locale, maorimaps) {
 	return marae;
 }
 
-async function addMaoriMapsInfos(locale) {
+async function addMaoriMapsInfos(db, locale) {
 	let total = 0;
 	const maorimaps = axios.create({baseURL: "https://maorimaps.com/", withCredentials: true, headers: {Cookie: "SSESS04fb61a42ac94afd2a8df6d0aaa40edf=Ji1xYLRRbD31bLF5qTuRgjXU1K0_Ne5fj2iO0dbCvUE;"}}); // , {headers: {'accept-language': locale + '-NZ'}} // , withCredentials: true
 	/*if (locale === 'en') {
@@ -469,6 +481,7 @@ async function addMaoriMapsInfos(locale) {
 		}
 	}
 	console.log(locale + ':', total);
+	return db;
 }
 
 function addNextPrevious(collection, wrap = false) {
@@ -494,9 +507,10 @@ function addNextPrevious(collection, wrap = false) {
 		}
 	});
 	console.log(total);
+	return collection;
 }
 
-function allNextPrevious() {
+function allNextPrevious(db) {
 	for (const collection of Object.keys(db)) {
 		if (['gazetteer', 'meanings', 'groups', 'features'].includes(collection)) {
 			// Do nothing
@@ -506,66 +520,81 @@ function allNextPrevious() {
 			addNextPrevious(db[collection]);
 		}
 	}
+	return db;
 }
 
-function deleteNamesPlaces() {
+function deleteNamesPlaces(db) {
 	delete db.names;
 	delete db.places;
+	return db;
 }
 
-function writeData() {
+function cleanData(db) {
+	return utils.cleanobj(db);
+}
+
+function writeData(db) {
 	for (const collection in db) {
-		writeCollection(collection);
+		writeCollection(db, collection);
 	}
 }
 
-function writeCollection(collection) {
+function writeCollection(db, collection) {
 	if (db[collection]) {
 		// writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection])).replace(/^\[{/, "[\n\t{").replace(/}\]$/, "}\n]").replace(/},{/g, "},\n\t{"));
 		writeFileSync(path.join(jsonpath, collection + '.json'), JSON.stringify(utils.cleanobj(db[collection]), null, '\t'));
 	}
 }
 
-async function runAll() {
-	console.log("Reading Data...");
-	readData();
+module.exports = async (db, cache) => {
+	if (cache) {
+		console.log("Reading Data...");
+		db = readData();
+	}
 	console.log("Adding Image Links...");
-	linkImages();
+	linkImages(db);
 	console.log("Adding Placename IDs...");
-	addPlacenameIDs();
+	addPlacenameIDs(db);
 	console.log("Creating Names & Places Arrays...");
-	createNamesPlaces();
+	createNamesPlaces(db);
 	console.log("Adding Pre and Post Times to Spoken Names...");
-	addPrePost();
+	addPrePost(db);
 	console.log("Adding Speakers to Zones, Parts & Islands...");
-	addSpeakers();
+	addSpeakers(db);
 	console.log("Adding Similar & Identical Names...");
-	addSimilarIdentical();
+	addSimilarIdentical(db);
 	console.log("Adding Name Meanings...");
-	addMeanings();
+	addMeanings(db);
 	console.log("Adding Placename Audio Info...");
-	await addPlacenameAudio();
+	await addPlacenameAudio(db);
 	console.log("Adding Location Coordinates from Nominatim...");
-	await addNominatimLocations();
+	await addNominatimLocations(db);
 	console.log("Adding Location Coordinates from the Gazetteer...");
-	addGazetteerLocations();
+	addGazetteerLocations(db);
 	console.log("Adding Info from WikiData...");
-	await addWikiDataInfos();
-	await addWikiDataZoneInfos();
+	await addWikiDataInfos(db);
+	await addWikiDataZoneInfos(db);
 	console.log("Adding Intros from Wikipedia...");
-	await addWikipediaIntros("en");
-	await addWikipediaIntros("mi");
-	await addWikipediaZoneIntros("en");
-	await addWikipediaZoneIntros("mi");
+	await addWikipediaIntros(db, "en");
+	await addWikipediaIntros(db, "mi");
+	await addWikipediaZoneIntros(db, "en");
+	await addWikipediaZoneIntros(db, "mi");
 	console.log("Adding Data from MaoriMaps...");
-	await addMaoriMapsInfos("en");
-	await addMaoriMapsInfos("mi");
+	await addMaoriMapsInfos(db, "en");
+	await addMaoriMapsInfos(db, "mi");
 	console.log("Deleting Names & Places...");
-	deleteNamesPlaces();
+	deleteNamesPlaces(db);
 	console.log('Adding Next & Previous IDs...');
-	allNextPrevious();
-	console.log("Writing Data...");
-	writeData();
-}
+	allNextPrevious(db);
+	console.log("Cleaning Data...");
+	db = cleanData(db);
+	if (cache) {
+		console.log("Writing Data...");
+		writeData(db);
+	}
+	return db;
+};
 
-runAll();
+if (require.main === module) {
+	module.exports(null, true);
+}
