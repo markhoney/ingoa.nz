@@ -248,6 +248,9 @@ var exports = module.exports = {
 		}
 		return $page;
 	},
+	isObj(obj) {
+		return obj instanceof Object && Object.getPrototypeOf(obj) == Object.prototype;
+	},
 };
 
 //return name.toLowerCase().replace(/ /g, '_').replace(/\//g, '-').replace(/\(/g, '').replace(/\)/g, '').replace(/ʰ/g, 'h').replace(/ā/g, 'a').replace(/ē/g, 'e').replace(/ī/g, 'i').replace(/ō/g, 'o').replace(/ū/g, 'u');
