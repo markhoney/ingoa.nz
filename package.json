@@ -12,6 +12,7 @@
 		"prep:audio": "node src/data/splitaudio.js",
 		"prep:nominatim": "docker start nominatim",
 		"prep:nominatim:stop": "docker stop nominatim",
+		"cache": "npm run prep:data:import && npm run prep:data:connect",
 		"prep:images": "node src/data/images.js",
 		"explore": "gridsome explore",
 		"dev": "gridsome develop",
