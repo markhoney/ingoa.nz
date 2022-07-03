@@ -91,3 +91,4 @@ report.*.json
 .monitor
 
 cache/
+src/.temp
