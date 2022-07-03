@@ -71,7 +71,9 @@
 			searchResults() {
 				if (this.value.length < 3) return [];
 				console.log(this.$search.search({query: this.value, limit: 999}));
-				return this.$search.search({query: this.value, limit: 999}).map((result) => result.node);
+				const results = this.$search.search({query: this.value, limit: 999}).map((result) => result.node);
+				// console.log(results);
+				return results;
 			}
 		},
 		methods: {
