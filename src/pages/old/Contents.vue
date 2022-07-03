@@ -139,9 +139,11 @@
 						id
 					}
 					names {
-						locale {
-							en
-							mi
+						name {
+							locale {
+								en
+								mi
+							}
 						}
 					}
 				}

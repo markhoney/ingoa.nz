@@ -6,7 +6,7 @@
 
 <page-query>
 	query item($id: ID!) {
-		item: island(id: $id) {
+		item: speaker(id: $id) {
 			id
 			name {
 				locale {

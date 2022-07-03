@@ -1,14 +1,14 @@
 <template>
 	<ul>
 		<li v-for="item in $clean($page.items)" :key="item.id">
-			<g-link :to="'/islands/' + item.id">{{item.name.locale.en}}</g-link> ({{item.name.locale.mi}})
+			<g-link :to="'/sectors/' + item.id">{{item.name.locale.en}}</g-link> ({{item.name.locale.mi}})
 		</li>
 	</ul>
 </template>
 
 <page-query>
 	{
-		items: allIsland(sortBy: "id", order: ASC) {
+		items: allSector(sortBy: "id", order: ASC) {
 			edges {
 				node {
 					id
@@ -28,7 +28,7 @@
 	export default {
 		metaInfo () {
 			return {
-				title: 'Islands',
+				title: 'Sectors',
 			}
 		},
 	};

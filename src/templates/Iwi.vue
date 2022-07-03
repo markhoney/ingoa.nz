@@ -6,11 +6,10 @@
 
 <page-query>
 	query item($id: ID!) {
-		item: island(id: $id) {
+		item: iwi(id: $id) {
 			id
 			name {
 				locale {
-					en
 					mi
 				}
 			}
