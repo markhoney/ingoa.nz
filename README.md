@@ -8,7 +8,7 @@ The dataset for this dictionary details names, places, locations, groups, featur
 
 All data for this project was collated by Hugh Young and originally made available in a series of three audio recordings with accompanying booklets.
 
-![Booklet](src/client/assets/img/part/lower_north_island-front.jpg)
+![Booklet](src/assets/img/part/lower_north_island-front.jpg)
 
 The audio recordings have been digitised as MP3, with Audacity's noise reduction filter run on them to reduce background noise.
 
@@ -107,7 +107,7 @@ This is used to display a loading overlay in the frontend:
 
 #### Dynamic component data
 
-A base set of re-usable components have been made in `src/client/components/base`, and these are used by the components in `src/client/components` to display tiles containing data. Data components have been created to allow them to be used either with a GraphQL query property, in which case the component will fetch the data itself, or with a data property, which will pass the data to the component. This allows for a flexible approach, where a component can be fed the data it needs if the parent component already has the data, or retrieve the data if the parent does not have the required data. This approach allows the frontend to minimise the number of GraphQL database calls.
+A base set of re-usable components have been made in `src/components/base`, and these are used by the components in `src/components` to display tiles containing data. Data components have been created to allow them to be used either with a GraphQL query property, in which case the component will fetch the data itself, or with a data property, which will pass the data to the component. This allows for a flexible approach, where a component can be fed the data it needs if the parent component already has the data, or retrieve the data if the parent does not have the required data. This approach allows the frontend to minimise the number of GraphQL database calls.
 
 The components use Apollo's skip method to skip the data query if the data prop of the component has been filled:
 
@@ -173,9 +173,9 @@ This list of commands is not exhaustive, but rather is a listing of the main com
 
 `yarn prep:data:connect` - Make data connections between the NeDB collections.
 
-`yarn prep:images` - Download satellite images from google maps - for Islands, Regions, Zones, etc. These files are saved to subfolders in `src/client/assets/img`.
+`yarn prep:images` - Download satellite images from google maps - for Islands, Regions, Zones, etc. These files are saved to subfolders in `src/assets/img`.
 
-`yarn prep:audio` - Split the zone based audio files into separate MP3s for each spoken word. These files are saved to subfolders in `src/client/static/audio`
+`yarn prep:audio` - Split the zone based audio files into separate MP3s for each spoken word. These files are saved to subfolders in `static/audio`
 
 `yarn prep:apollo` - Upload apollo schema to allow Apollo Engine analysis
 
