@@ -1,3 +1,6 @@
 <template>
-	<h1>Welcome!</h1>
+	<article>
+		<h1>{{$t('title')}}</h1>
+		<h2>{{$t('subtitle')}}</h2>
+	</article>
 </template>
