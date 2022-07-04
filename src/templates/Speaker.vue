@@ -10,7 +10,6 @@
 			id
 			name {
 				locale {
-					en
 					mi
 				}
 			}
