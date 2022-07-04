@@ -1,5 +1,7 @@
 const pluralise = require('pluralize');
 const utils = require('./utils');
+const changeCase = require('change-case');
+
 const getDB = require('./db');
 
 function addReferences(name, collection, record, path = '') {
@@ -14,11 +16,11 @@ function addReferences(name, collection, record, path = '') {
 			if (['next', 'previous'].includes(type)) {
 				collection.addReference(path + type, name);
 			} else {
-				collection.addReference(path + type, utils.case.sentence(type));
+				collection.addReference(path + type, changeCase.sentenceCase(type));
 			}
 		} else if (field.endsWith('_ids')) {
 			const type = field.replace('_ids', '');
-			collection.addReference(path + pluralise.plural(type), utils.case.sentence(type));
+			collection.addReference(path + pluralise.plural(type), changeCase.sentenceCase(type));
 		}
 	}
 }
@@ -50,11 +52,11 @@ module.exports = class Ingoa {
 			const db = await getDB(true);
 			const collections = {};
 			for (const collection of Object.keys(db)) {
-				const typeName = utils.case.sentence(pluralise.singular(collection));
+				const typeName = changeCase.sentenceCase(pluralise.singular(collection));
 				collections[collection] = addCollection({typeName});
 			}
 			for (const collection of Object.keys(collections)) {
-				const typeName = utils.case.sentence(pluralise.singular(collection));
+				const typeName = changeCase.sentenceCase(pluralise.singular(collection));
 				// addReferences(typeName, collections[collection], db[collection][0]);
 				for (const node of db[collection]) {
 					addReferences(typeName, collections[collection], node);
