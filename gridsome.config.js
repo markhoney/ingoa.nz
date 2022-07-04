@@ -1,6 +1,6 @@
-const siteName = 'Nga Ingoa';
+const siteName = 'Ngā Ingoa';
 
-const collections = ['Island', 'Part', 'Map', 'Region', 'Sector', 'District', 'Zone', 'Group', 'Feature', 'Iwi', 'Placename'];
+const collections = ['Island', 'Part', 'Map', 'Region', 'Sector', 'District', 'Zone', 'Group', 'Feature', 'Iwi', 'Placename', 'Speaker'];
 
 function getItemsNames(items) {
 	if (!items) return [];
@@ -25,6 +25,7 @@ module.exports = {
 	// siteUrl: '',
 	// siteDescription: '',
 	siteUrl: 'https://ingoa.nz',
+	titleTemplate: `%s | ${siteName}`,
 	plugins: [
 		'~/src/data/gridsome-source-ingoa.js',
 		{
@@ -108,6 +109,6 @@ module.exports = {
 		},
 	],
 	templates: {
-		...collections.reduce((templates, type) => ({...templates, [type]: `/${type.toLowerCase()}/:id`}), {}),
+		...collections.reduce((templates, type) => ({...templates, [type]: `/${type.toLowerCase()}s/:id`}), {}),
 	},
 };
