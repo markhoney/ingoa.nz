@@ -1,6 +1,0 @@
-ID	Number	Name	TeReo	Island	IslandID	Part	PartID	Start	End	MapLink_1	MapLinkID_1	MapLinkShape_1	MapLinkCoords_1	MapLink_2	MapLinkID_2	MapLinkShape_2	MapLinkCoords_2
-ma_1	1	Lower North Island	Te Upoko (manawa me ngā tira) o te Ika	North Island	is_1	Lower North Island	pa_1	1984	1985	Central North Island	ma_2	poly	112,357,210,339,334,267,315,147,1,1				
-ma_2	2	Central North Island	Te Waenganui o te Ika	North Island	is_1	Lower North Island	pa_1	1986	1991	Lower North Island	ma_1	poly	89,560,222,512,483,464,622,452,6655,357,673,364,674,560	Auckland and Northland	ma_3	poly	202,0,218,122,232,148,321,163,341,153,353,110,397,115,397,0
-ma_3	3	Auckland and Northland	Tāmaki me te Hiku o te Ika	North Island	is_1	Upper North Island	pa_2	1988	1991	Central North Island	ma_2	poly	293,693,293,663,310,621,364,630,372,652,388,642,403,604,451,604,451,507,548,507,548,693				
-ma_4	4	Northern and Eastern South Island	Te Raki me te Tairawhiti o Te Waipounamu	South Island	is_2	South Island	pa_3	1991	1994	Southern and Western South Island	ma_5	poly	124,500,167,560,0,560,0,413,193,53,237,93,243,211				
-ma_5	5	Southern and Western South Island	Te Tonga me te Taihauāuru o Te Waipounamu	South Island	is_2	South Island	pa_3	1991	1994	Northern and Eastern South Island	ma_4	poly	387,0,387,25,420,60,150,490,370,490,454,360,454,0				
