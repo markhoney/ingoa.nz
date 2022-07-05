@@ -103,8 +103,8 @@ module.exports = {
 				},
 				fallbackLocale: 'en-nz',
 				defaultLocale: 'en-nz',
-				// enablePathGeneration: false,
-				// routes: require('./src/routes.js')
+				enablePathGeneration: false,
+				routes: require('./src/locales/routes.js')
 			},
 		},
 	],
