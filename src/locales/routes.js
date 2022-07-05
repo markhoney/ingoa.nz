@@ -53,6 +53,6 @@ delete routes.en;
 routes['mi-nz'] = routes.mi;
 delete routes.mi;
 
-console.log(routes);
+// console.log(routes);
 
 module.exports = routes;
