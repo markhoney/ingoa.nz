@@ -9,41 +9,30 @@
 	"codelicenseText": "The code used in this project is released under the <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GPL3 License</a>, and is available on <a href=\"https://github.com/markhoney/ingoa.nz\">GitHub</a>.",
 	"aboutText": "Ngā Ingoa o Aotearoa (The Names of New Zealand) is probably the first \"pronouncing dictionary\" that is literally \"pronouncing\". The 8,200 <a href=\"/name\">names</a> are spoken by 132 native <a href=\"/speaker\">speakers</a> of Māori, chosen by each other as the best speakers for their areas.",
 	"imagemap": "Click on a zone on the map to be taken to that zone (hover over the map to see the names of the zones).",
-	"home": "home | homes",
 	"location": "location | locations",
-	"island": "island | islands",
-	"part": "part | parts",
-	"map": "map | maps",
-	"sector": "sector | sectors",
-	"region": "region | regions",
-	"zone": "zone | zones",
+	"home": "home | homes",
+	"type": {
+		"island": "island | islands",
+		"part": "part | parts",
+		"map": "map | maps",
+		"district": "district | districts",
+		"sector": "sector | sectors",
+		"region": "region | regions",
+		"zone": "zone | zones",
+		"placename": "placename | placenames",
+		"feature": "feature | features",
+		"speaker": "speaker | speakers",
+		"group": "group | groups",
+		"iwi": "iwi"
+	},
+	"hapu": "hapū",
+	"tribe": "tribe | tribes",
+	"subtribe": "subtribe | subtribes",
 	"place": "place | places",
 	"name": "name | names",
-	"placename": "place name | place names",
-	"feature": "feature | features",
 	"search": "search | searches",
-	"speaker": "speaker | speakers",
-	"group": "group | groups",
-	"tribe": "tribe | tribes",
-	"iwi": "iwi",
-	"subtribe": "subtribe | subtribes",
-	"hapu": "hapū",
 	"spoken": "spoken by",
 	"detail": "detail | details",
 	"about": "about",
-	"license": "license | licenses",
-	"$vuetify": {
-		"dataIterator": {
-			"rowsPerPageText": "Items per page:",
-			"rowsPerPageAll": "All",
-			"pageText": "{0}-{1} of {2}",
-			"noResultsText": "No matching records found",
-			"nextPage": "Next page",
-			"prevPage": "Previous page"
-		},
-		"dataTable": {
-			"rowsPerPageText": "Rows per page:"
-		},
-		"noDataText": "No data available"
-	}
+	"license": "license | licenses"
 }

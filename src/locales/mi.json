@@ -11,39 +11,28 @@
 	"imagemap": "Click on a zone on the map to be taken to that zone (hover over the map to see the names of the zones).",
 	"home": "kāinga",
 	"location": "wāhi",
-	"island": "motu",
-	"part": "wāhanga",
-	"map": "mahere",
-	"sector": "rāngai",
-	"region": "whaitua",
-	"zone": "hauni",
+	"type": {
+		"island": "motu",
+		"part": "wāhanga",
+		"map": "mahere",
+		"district": "rohe",
+		"sector": "rāngai",
+		"region": "whaitua",
+		"zone": "hauni",
+		"placename": "ingoa wāhi",
+		"feature": "momo",
+		"search": "rapu",
+		"speaker": "kaikōrero",
+		"group": "kohinga",
+		"iwi": "iwi"
+	},
 	"place": "wāhi",
 	"name": "ingoa",
-	"placename": "ingoa wāhi",
-	"feature": "momo",
-	"search": "rapu",
-	"speaker": "kaikōrero",
-	"group": "kohinga",
 	"tribe": "iwi",
-	"iwi": "iwi",
 	"subtribe": "hapū",
 	"hapu": "hapū",
 	"spoken": "i kōrerotia e",
 	"detail": "mōhiohio",
 	"about": "mo",
-	"license": "kirimana",
-	"$vuetify": {
-		"dataIterator": {
-			"rowsPerPageText": "Items per page:",
-			"rowsPerPageAll": "Katoa",
-			"pageText": "{0}-{1} of {2}",
-			"noResultsText": "No matching records found",
-			"nextPage": "Whārangi kei mua",
-			"prevPage": "Whārangi kei muri"
-		},
-		"dataTable": {
-			"rowsPerPageText": "Rows per page:"
-		},
-		"noDataText": "No data available"
-	}
+	"license": "kirimana"
 }

@@ -1,0 +1,16 @@
+[
+	{
+		"code": "en",
+		"iso": "en-NZ",
+		"name": "English",
+		"image": "/img/language/en.png",
+		"file": "en.json"
+	},
+	{
+		"code": "mi",
+		"iso": "mi-NZ",
+		"name": "Māori",
+		"image": "/img/language/mi.png",
+		"file": "mi.json"
+	}
+]
