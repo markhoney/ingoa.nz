@@ -9,7 +9,7 @@
 
 <page-query>
 	{
-		allGroup(sortBy: "id", order: ASC) {
+		allMap(sortBy: "id", order: ASC) {
 			edges {
 				node {
 					id

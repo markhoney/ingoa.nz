@@ -1,14 +1,15 @@
 <template>
 	<ul>
-		<li v-for="item in $clean($page.items)" :key="item.id">
-			<g-link :to="'/iwi/' + item.id">{{item.name.locale.en}}</g-link> ({{item.name.locale.mi}})
+		<li v-for="item in $q.simplify($page)" :key="item.id">
+			<g-link :to="$tp(`/${$tc('type.' + type, 2)}/${item.id}`)">{{$tf.first(item.name.locale)}}</g-link>
+			<template v-if="$tf.complete(item.name.locale)"> ({{$tf.other(item.name.locale)}})</template>
 		</li>
 	</ul>
 </template>
 
 <page-query>
 	{
-		items: allIwi(sortBy: "id", order: ASC) {
+		allIwi(sortBy: "id", order: ASC) {
 			edges {
 				node {
 					id
@@ -25,9 +26,14 @@
 
 <script>
 	export default {
+		computed: {
+			type() {
+				return this.$q.type(this.$page);
+			}
+		},
 		metaInfo () {
 			return {
-				title: 'Iwi',
+				title: this.$case.sentenceCase(this.$tc('type.' + this.type, 2)),
 			}
 		},
 	};

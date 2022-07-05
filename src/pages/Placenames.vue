@@ -9,7 +9,7 @@
 
 <page-query>
 	{
-		allGroup(sortBy: "id", order: ASC) {
+		allPlacename(sortBy: "id", order: ASC) {
 			edges {
 				node {
 					id
